@@ -1,0 +1,1 @@
+prediction_id,created_at,resolved_at,target,horizon,forecast_type,forecast_value,outcome,brier_score,log_loss,absolute_error,interval_hit,benchmark_score,notes
