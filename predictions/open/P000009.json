@@ -1,0 +1,16 @@
+{
+  "id": "P000009",
+  "target": "SECTOR_LEADERSHIP",
+  "horizon": "1m",
+  "resolution_at": "2026-09-08 close",
+  "forecast_type": "ranking",
+  "forecast": {"probability_up": null, "point_estimate": "Information Technology top-3 S&P sector", "lower_80": null, "upper_80": null},
+  "benchmark": {"name": "equal_sector_chance", "value": "3/11"},
+  "resolution_rule": "Success if S&P 500 Information Technology sector ranks among top three GICS sectors by total return from Aug. 7 close through Sep. 8 close.",
+  "created_at": "2026-08-08T10:30:00-04:00",
+  "evidence_cutoff": "2026-08-08T10:30:00-04:00",
+  "rationale": ["Weak labor data creates easing pressure.", "Inflation/geopolitical risk remains large enough to prevent a narrow forecast.", "Cross-asset confirmation is more informative than SPX alone."],
+  "hypothesis_links": ["H001", "H002", "H003"],
+  "surprising_if": ["Outcome materially contradicts the linked causal story."],
+  "status": "open"
+}
