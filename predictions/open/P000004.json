@@ -1,0 +1,16 @@
+{
+  "id": "P000004",
+  "created_at": "2026-08-08T10:30:00-04:00",
+  "evidence_cutoff": "2026-08-08T10:30:00-04:00",
+  "target": "SPX",
+  "horizon": "3m",
+  "resolution_at": "2026-11-09 close",
+  "forecast_type": "distribution",
+  "forecast": {"probability_up": 0.55, "point_estimate": 7915, "lower_80": 6825, "upper_80": 8920},
+  "benchmark": {"name": "no_change", "value": 7757.64},
+  "resolution_rule": "Probability terminal close exceeds 7,757.64. Use official/index-provider or major financial-data close, consistently.",
+  "rationale": ["Record-high momentum and strong technology leadership support the upside base rate.", "Payroll contraction and major inflation releases create near-term downside/event risk.", "High nominal yields constrain valuation expansion."],
+  "hypothesis_links": ["H001", "H002", "H003", "H004"],
+  "surprising_if": ["Credit spreads widen sharply while SPX remains persistently at new highs."],
+  "status": "open"
+}
