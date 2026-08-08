@@ -1,0 +1,16 @@
+{
+  "id": "P000007",
+  "target": "WTI",
+  "horizon": "1m",
+  "resolution_at": "2026-09-08 settlement",
+  "forecast_type": "interval",
+  "forecast": {"point_estimate": 78.0, "lower_80": 68.0, "upper_80": 91.0},
+  "benchmark": {"name": "no_change", "value": 78.18},
+  "resolution_rule": "Resolve against front-month NYMEX WTI settlement, using a consistent roll convention documented at resolution.",
+  "created_at": "2026-08-08T10:30:00-04:00",
+  "evidence_cutoff": "2026-08-08T10:30:00-04:00",
+  "rationale": ["Weak labor data creates easing pressure.", "Inflation/geopolitical risk remains large enough to prevent a narrow forecast.", "Cross-asset confirmation is more informative than SPX alone."],
+  "hypothesis_links": ["H001", "H002", "H003"],
+  "surprising_if": ["Outcome falls outside the stated 80% interval or materially contradicts the linked causal story."],
+  "status": "open"
+}
