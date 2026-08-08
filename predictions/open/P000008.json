@@ -1,0 +1,16 @@
+{
+  "id": "P000008",
+  "target": "HY_OAS",
+  "horizon": "1m",
+  "resolution_at": "2026-09-08",
+  "forecast_type": "interval",
+  "forecast": {"point_estimate": 3.05, "lower_80": 2.55, "upper_80": 3.85},
+  "benchmark": {"name": "latest_verified", "value": 2.84},
+  "resolution_rule": "Resolve against FRED series BAMLH0A0HYM2 for 2026-09-08 or nearest available observation. Baseline is stale July 28 observation and must not be misrepresented.",
+  "created_at": "2026-08-08T10:30:00-04:00",
+  "evidence_cutoff": "2026-08-08T10:30:00-04:00",
+  "rationale": ["Weak labor data creates easing pressure.", "Inflation/geopolitical risk remains large enough to prevent a narrow forecast.", "Cross-asset confirmation is more informative than SPX alone."],
+  "hypothesis_links": ["H001", "H002", "H003"],
+  "surprising_if": ["Outcome falls outside the stated 80% interval or materially contradicts the linked causal story."],
+  "status": "open"
+}
