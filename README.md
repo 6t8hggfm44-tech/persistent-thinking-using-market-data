@@ -8,6 +8,14 @@ Maintain and continuously improve a falsifiable causal model of the U.S. equity 
 
 The objective is **out-of-sample calibration and predictive improvement**, not trading profit.
 
+## Persistent default
+
+Substantive market, macroeconomic, cross-asset, or forecasting questions should automatically consult this repository when its accumulated model, forecasts, assumptions, or prior error history could materially improve the answer. The user should not need to explicitly request GitHub access.
+
+Not every finance question belongs here. Simple factual lookups, personal budgeting arithmetic, or questions unrelated to the modeled system can be answered directly. New material should be preserved only when it changes the causal world model, creates or resolves a forecast, records a meaningful prediction error, modifies an assumption, or adds durable evidence relevant to future forecasting.
+
+Repository conclusions remain provisional. Fresh data and better evidence may revise them; prior forecasts and material belief changes should remain auditable rather than being rewritten after outcomes are known.
+
 ## Initial scope
 
 The agent models a compact cross-asset state vector:
