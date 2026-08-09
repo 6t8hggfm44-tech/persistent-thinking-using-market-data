@@ -16,6 +16,14 @@ Not every finance question belongs here. Simple factual lookups, personal budget
 
 Repository conclusions remain provisional. Fresh data and better evidence may revise them; prior forecasts and material belief changes should remain auditable rather than being rewritten after outcomes are known.
 
+## Economy handoff boundary
+
+The structural Economy repository, `6t8hggfm44-tech/economy-`, develops broad mechanisms and long-horizon hypotheses. It may submit a candidate implication to Market only through a complete, timestamped handoff packet.
+
+Market independently decides whether to accept, modify, or reject the candidate. An accepted candidate becomes a Market prediction only after Market fixes the variable, universe, direction or probability distribution, evidence cutoff, horizon, benchmark, resolution source, resolution rule, and failure condition **before** the outcome, and assigns its own prediction ID.
+
+Broad Economy narratives are not Market predictions. A Market result may feed back to Economy only when the forecast genuinely discriminated among structural explanations; one result does not automatically validate or erase a broad structural thesis.
+
 ## Initial scope
 
 The agent models a compact cross-asset state vector:
