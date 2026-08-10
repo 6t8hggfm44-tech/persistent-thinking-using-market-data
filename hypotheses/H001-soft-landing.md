@@ -1,7 +1,7 @@
 # H001: Soft Landing
 
 **Prior weight:** 0.25  
-**Current weight:** 0.30  
+**Current weight:** 0.31  
 **Status:** Active competing hypothesis
 
 ## Thesis
@@ -24,3 +24,4 @@ Weak labor data accompanied by stable credit and resilient earnings should favor
 ## Update history
 - Baseline prior 0.25.
 - 2026-08-08 posterior 0.30.
+- 2026-08-10 posterior 0.31: strong aggregate earnings and equity resilience modestly support H001 relative to H002, but oil/yield pressure prevents a larger increase.
