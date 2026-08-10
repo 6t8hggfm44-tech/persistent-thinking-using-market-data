@@ -1,7 +1,7 @@
 # H002: Late-Cycle Recession
 
 **Prior weight:** 0.25  
-**Current weight:** 0.32  
+**Current weight:** 0.28  
 **Status:** Active competing hypothesis
 
 ## Thesis
@@ -23,3 +23,4 @@ If labor weakness persists over 1–3 months and credit spreads materially widen
 ## Update history
 - Baseline prior 0.25.
 - 2026-08-08 posterior 0.32.
+- 2026-08-10 posterior 0.28: current aggregate earnings remain strong and equities stayed near record levels despite the oil/yield shock; fresh credit confirmation is still unavailable. The July labor weakness remains important, so H002 is reduced rather than rejected.
