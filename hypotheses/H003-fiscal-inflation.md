@@ -1,7 +1,7 @@
 # H003: Fiscal / Inflation Regime
 
 **Prior weight:** 0.25  
-**Current weight:** 0.27  
+**Current weight:** 0.30  
 **Status:** Active competing hypothesis
 
 ## Thesis
@@ -23,3 +23,4 @@ Inflation surprises should transmit more strongly into long yields and equity va
 ## Update history
 - Baseline prior 0.25.
 - 2026-08-08 posterior 0.27.
+- 2026-08-10 posterior 0.30: WTI rose 5.1% and the 10-year yield moved to roughly 4.70% despite weak labor data, while Treasury issuance remained salient. This strengthens the state-dependent inflation/term-premium channel but does not yet establish persistent inflation.
