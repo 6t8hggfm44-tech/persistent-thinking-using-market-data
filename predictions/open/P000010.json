@@ -1,0 +1,27 @@
+{
+  "id": "P000010",
+  "created_at": "2026-08-10T17:05:00-04:00",
+  "evidence_cutoff": "2026-08-10T17:05:00-04:00",
+  "model_version": "0.2.1",
+  "target": "SPX",
+  "horizon": "1d",
+  "resolution_at": "2026-08-11 close",
+  "forecast_type": "distribution",
+  "forecast": {"probability_up": 0.47, "point_estimate": 7745, "lower_80": 7625, "upper_80": 7870},
+  "benchmarks": [
+    {"name": "no_change", "value": 7753.11},
+    {"name": "one_day_recent_trend", "value": 7748.58}
+  ],
+  "resolution_rule": "Up-event succeeds if the official/index-provider or consistently sourced S&P 500 close on 2026-08-11 exceeds the 2026-08-10 close of 7,753.11. Resolve the point and 80% interval against the same close source.",
+  "rationale": [
+    "The updated model gives modest near-term downside pressure to the active oil/inflation/long-yield channel.",
+    "Strong aggregate earnings and the market's resilience to the Aug. 10 oil shock limit conviction in a risk-off move.",
+    "The July CPI release is not due until Aug. 12, leaving Tuesday primarily exposed to positioning and geopolitical/oil developments rather than a scheduled macro discriminator."
+  ],
+  "hypothesis_links": ["H001", "H002", "H003", "H004"],
+  "surprising_if": [
+    "SPX rises more than 1.5% while WTI and long yields also rise materially without a positive earnings or policy catalyst.",
+    "SPX closes outside the stated 80% interval."
+  ],
+  "status": "open"
+}
