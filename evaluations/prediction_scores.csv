@@ -1,1 +1,2 @@
 prediction_id,created_at,resolved_at,target,horizon,forecast_type,forecast_value,outcome,brier_score,log_loss,absolute_error,interval_hit,benchmark_score,notes
+P000001,2026-08-08T10:30:00-04:00,2026-08-10T16:05:00-04:00,SPX,1d,distribution,"p_up=0.49;point=7750;80%=[7618,7889]","7753.11; up_event=false",0.2401,0.673345,3.11,1,4.53,"AP close; no-change MAE=4.53; point-forecast skill vs no-change=0.313466; n=1 insufficient for learning assessment"
