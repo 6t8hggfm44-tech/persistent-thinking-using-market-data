@@ -1,21 +1,20 @@
 # Current Market State
 
 **Model version:** 0.2.1  
-**Status:** Live baseline, first scored update  
-**Evidence cutoff:** 2026-08-10T17:05:00-04:00
+**Status:** Live baseline, second scored cycle; no material model revision on Aug. 11  
+**Evidence cutoff:** 2026-08-11T17:03:43-04:00
 
 ## OBSERVATIONS
 
-- S&P 500 closed Monday, Aug. 10 at **7,753.11**, down 0.1% from the Aug. 7 record close of 7,757.64.
-- WTI settled Aug. 10 at **$82.13**, up 5.1% on the day, as Iranian demands reduced expectations for a rapid reopening of the Strait of Hormuz.
-- The U.S. 10-year Treasury yield was reported around **4.70%**, up roughly 4 bp, while markets prepared for about $125 billion of Treasury issuance during the week.
-- Aggregate S&P 500 earnings evidence remains strong: with nearly 90% of companies reported, BofA analysis cited by Reuters put EPS growth around 30% year over year after specified exclusions, with a 76% beat rate.
-- Fresh verified high-yield OAS data was not available to this run; the prior credit observation remains stale and is not updated synthetically.
-- P000001 resolved at SPX 7,753.11. The 0.49 up-probability correctly leaned slightly toward a down close, the point forecast missed by 3.11 points, and the 80% interval covered. This single result is descriptive only.
+- P000010 resolved first: the S&P 500 closed Tuesday, Aug. 11 at **7,728.20**, below the Aug. 10 close of 7,753.11. The forecast assigned 0.47 probability to an up close, so its slight downside lean was correct; Brier score **0.2209**, log loss **0.634878**, point MAE **16.80**, and the 80% interval covered. The point forecast beat both listed point benchmarks, but **n=2 resolved forecasts is far too small to infer learning**.
+- WTI rose again to roughly **$83.2**, extending the Aug. 10 jump as supply-disruption and Middle East risks persisted.
+- The U.S. 10-year Treasury yield eased to around **4.683%**, despite higher oil.
+- July CPI is due Aug. 12; pre-release market coverage cited consensus around **+0.1% m/m, 3.4% y/y headline** and **+0.2% m/m, 2.5% y/y core**.
+- Fresh verified high-yield OAS data was still not available to this run; the credit cross-check remains explicitly stale.
 
 ## INFERENCE
 
-The current mix is less supportive of H002 than the Aug. 8 baseline because earnings and equity resilience have not yet confirmed the recession story. At the same time, the oil shock and renewed rise in long yields show that weaker labor does not mechanically translate into easier financial conditions. The inflation/issuance channel is currently active enough to keep H003 near the top of the hypothesis set.
+Aug. 11 does not justify a material hypothesis-weight change. The continuing oil shock is evidence for the H003 inflation/geopolitical channel, but the simultaneous decline in long yields warns against a one-factor inflation interpretation. The modest equity decline and small-cap resilience do not confirm H002. The imminent CPI release is a substantially cleaner discriminator than another round of narrative fitting to one day's price action.
 
 ## Current regime
 
@@ -30,28 +29,28 @@ The current mix is less supportive of H002 than the Aug. 8 baseline because earn
 | H003 Fiscal/inflation regime | 0.30 |
 | H004 Productivity boom | 0.11 |
 
-No hypothesis is dominant. H001 and H003 are effectively co-leading; H002 remains material but now lacks the credit/earnings confirmation its own thesis requires.
+**Weights unchanged from Aug. 10.** H001 remains the numerical leader by one point, but H001 and H003 are effectively co-leading. The Skeptic review specifically attacked H001 and concluded that neither P000010's correct direction nor one modest down session warrants a belief update before CPI/credit evidence.
 
 ## Most important causal claims
 
-1. Weakening labor data reduces policy-tightening pressure, but the effect on long yields and equities is **state-dependent**: oil/inflation shocks and Treasury-supply/term-premium pressure can offset it.
-2. Long yields near 4.7% remain a meaningful valuation constraint even with weak labor data.
-3. Credit remains the key unresolved cross-check: a labor slowdown without sustained spread widening is more consistent with H001 than H002.
-4. Oil/geopolitical risk is not merely a background tail risk; the Aug. 10 move demonstrates an active commodity-to-inflation/discount-rate channel.
-5. Strong current earnings reduce the probability that a broad earnings contraction is already underway, but they are lagging evidence and do not rule out a later downturn.
+1. Weakening labor data can reduce the expected policy path, but commodity inflation and Treasury-supply/term-premium pressure can offset that effect on long yields.
+2. Oil and long yields must be treated as partially independent channels: Aug. 11 showed oil rising while the 10-year yield fell.
+3. Credit remains the key unresolved cross-check between H001 and H002; without fresh spreads, recession confirmation remains incomplete.
+4. Current earnings resilience reduces the probability that a broad earnings contraction is already underway, but remains lagging evidence.
+5. CPI and the cross-asset reaction should be evaluated jointly: the same inflation print can have different implications depending on yields, credit, and equity breadth.
 
 ## Three largest uncertainties
 
-1. Whether the July jobs contraction persists or is revised/noisy.
-2. Whether July CPI confirms moderation or shows enough persistence to sustain the long-yield constraint.
-3. Whether fresh credit data validates labor weakness or instead remains resilient alongside earnings.
+1. Whether July labor weakness persists or is revised/noisy.
+2. Whether July CPI confirms moderation or reopens the inflation/rate-hike channel.
+3. Whether fresh credit data validates labor weakness or remains resilient alongside earnings.
 
 ## What would surprise the model?
 
-- Material credit widening and deteriorating breadth while earnings remain strong and labor weakness does not persist.
-- A benign CPI print followed by persistently rising long yields without a clear supply/term-premium explanation.
+- A benign CPI print followed by a sustained rise in long yields without a clear supply/term-premium explanation.
+- A hot CPI print with materially lower long yields and stronger equities absent an offsetting growth/policy catalyst.
 - Persistent labor weakness with credit spreads staying tight and earnings estimates remaining resilient for several weeks.
 
 ## Update discipline
 
-P000001 did **not** cause a material model revision: its outcome was close to both the point forecast and no-change benchmark and was not diagnostically surprising. The 0.2.1 weight shift is instead attributable to post-cutoff evidence on earnings resilience, the Aug. 10 oil shock, and the rise in long yields. This separation is intentional to avoid hindsight assimilation.
+P000010 was scored before model assessment. Its correct downside direction did **not** cause a hypothesis revision. Post-cutoff evidence was then ingested and the Skeptic attacked H001. Because the new evidence is mixed and a higher-information CPI discriminator is imminent, the causal graph and hypothesis weights remain unchanged at model version 0.2.1. This is an intentional anti-hindsight/noise decision rather than a failure to update.
