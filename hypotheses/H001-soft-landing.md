@@ -1,7 +1,7 @@
 # H001: Soft Landing
 
 **Prior weight:** 0.25  
-**Current weight:** 0.31  
+**Current weight:** 0.35  
 **Status:** Active competing hypothesis
 
 ## Thesis
@@ -25,3 +25,4 @@ Weak labor data accompanied by stable credit and resilient earnings should favor
 - Baseline prior 0.25.
 - 2026-08-08 posterior 0.30.
 - 2026-08-10 posterior 0.31: strong aggregate earnings and equity resilience modestly support H001 relative to H002, but oil/yield pressure prevents a larger increase.
+- 2026-08-12 posterior 0.35: July CPI was contained and fresh HY OAS remained tight at 2.72%, providing the missing credit cross-check against immediate recession confirmation. The increase is deliberately modest because CPI matched consensus rather than surprising positively, recent oil pressure may pass through with a lag, and July labor weakness remains unresolved.
