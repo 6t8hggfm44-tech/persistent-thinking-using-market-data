@@ -1,0 +1,27 @@
+{
+  "id": "P000013",
+  "created_at": "2026-08-12T17:54:19-04:00",
+  "evidence_cutoff": "2026-08-12T17:54:19-04:00",
+  "model_version": "0.2.2",
+  "target": "SPX",
+  "horizon": "1d",
+  "resolution_at": "2026-08-13 close",
+  "forecast_type": "distribution",
+  "forecast": {"probability_up": 0.51, "point_estimate": 7755, "lower_80": 7605, "upper_80": 7900},
+  "benchmarks": [
+    {"name": "no_change", "value": 7748.50},
+    {"name": "one_day_recent_trend", "value": 7768.80}
+  ],
+  "resolution_rule": "Up-event succeeds if the official/index-provider or consistently sourced S&P 500 close on 2026-08-13 exceeds the 2026-08-12 close of 7,748.50. Resolve the point and 80% interval against the same close source.",
+  "rationale": [
+    "Contained CPI, a lower post-CPI yield response, fresh tight HY spreads, and resilient breadth give H001 a modest lead.",
+    "July PPI is due before the Aug. 13 open and the oil/inflation channel remains active, so the forecast stays near-neutral rather than extrapolating the CPI-day rise.",
+    "Recent AI-related earnings support the index but are sufficiently concentrated that they should not be treated as a broad macro signal."
+  ],
+  "hypothesis_links": ["H001", "H002", "H003", "H004"],
+  "surprising_if": [
+    "PPI is benign and the 10-year yield does not rise materially, yet SPX falls more than 1.5% without another identifiable shock.",
+    "SPX closes outside the stated 80% interval."
+  ],
+  "status": "open"
+}
