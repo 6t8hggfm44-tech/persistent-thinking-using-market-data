@@ -22,3 +22,4 @@ Earnings and real output should remain stronger than implied by labor inputs alo
 ## Update history
 - Baseline prior 0.25.
 - 2026-08-08 posterior 0.11.
+- 2026-08-14 posterior **0.11 unchanged**: the post-Aug. 12 evidence concerns inflation, layoffs, consumer demand, rates, oil, and index behavior rather than a direct productivity or broadening test. AI-related earnings strength is insufficient by itself to raise H004 without evidence that productivity gains are diffusing into broader real output/margins.
