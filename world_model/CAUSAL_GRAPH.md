@@ -5,9 +5,13 @@ This is a human-readable causal map. Arrows are hypotheses, not facts.
 ```text
 growth ──> earnings ──> equity cash-flow expectations ──> equity prices
    │
-   └──> labor ──> inflation pressure ──> policy rates ──> discount rates ──> valuations
+   └──> labor ──> income / consumer demand ──> real activity / growth
+                         │
+                         ├──> earnings / cash-flow expectations ──> equity prices
+                         └──> inflation pressure ──> expected policy path ──> discount rates ──> equity prices
 
 weak labor ──> expected policy path ──> short/intermediate yields
+weak consumer demand ──> expected policy path ──> yields
 
 fiscal impulse ──> growth
 fiscal impulse ──> issuance ──> term premium / long yields ──> financial conditions
@@ -17,6 +21,7 @@ liquidity ──> risk appetite / valuation
 
 geopolitical shocks ──> commodity prices ──> inflation expectations ──> long yields / policy constraint
 commodity shocks ──> retail energy prices / input costs ──(lagged, state-dependent)──> measured inflation
+commodity shocks ──> real household purchasing power / consumer demand
 commodity shocks ──> margins
 
 positioning ──> short-horizon price response
@@ -29,5 +34,11 @@ Weak labor does not imply falling long yields mechanically. The Aug. 10 evidence
 ## Timing refinement added 2026-08-12
 
 A spot commodity shock is not a contemporaneous one-for-one CPI shock. Pass-through depends on timing, retail gasoline/refining dynamics, inventories, substitution, and indirect input-cost transmission. July CPI showed falling monthly energy prices even though spot oil moved sharply higher in August. Therefore July CPI cannot be used retroactively as a clean falsification of an August oil-shock channel; the channel must be tested prospectively in later price data and market inflation expectations.
+
+## Opposing-channel consumer-demand refinement added 2026-08-14
+
+A negative consumer-demand shock can affect equities through **opposing causal channels**. Weaker demand can lower expected earnings/cash flows, which is equity-negative, while also lowering the expected policy path and discount rates, which can be equity-positive. The Aug. 14 combination of unexpectedly weak retail/control-group sales, lower Treasury yields, and only a modest S&P decline illustrates why index price alone cannot identify the dominant growth mechanism. Future model discrimination should prefer joint observations across growth, yields, credit, labor, and earnings breadth rather than inferring macro strength directly from a resilient index.
+
+Retail sales are nominal, goods-heavy, revision-prone, and sensitive to timing effects; the demand node therefore should be updated from repeated evidence rather than one release.
 
 Every material edge should eventually carry sign, expected lag, confidence, evidence, and known failure conditions.
