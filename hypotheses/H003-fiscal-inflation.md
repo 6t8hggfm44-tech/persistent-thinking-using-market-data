@@ -1,29 +1,30 @@
 # H003: Fiscal / Inflation Regime
 
 **Prior weight:** 0.25  
-**Current weight:** 0.26  
-**Status:** Active competing hypothesis
+**Current weight:** 0.28  
+**Status:** Active competing hypothesis; re-strengthened tail
 
 ## Thesis
-Persistent fiscal impulse and issuance pressure keep nominal growth, inflation risk, and long yields structurally elevated.
+Persistent fiscal impulse and duration-supply pressure keep nominal growth, inflation risk, and long yields structurally elevated.
 
 ## Evidence expected if true
 - Sticky inflation despite softer labor/growth.
 - Elevated term premium / long yields.
-- Continued issuance pressure and rate-sensitive valuation constraint.
+- Continued Treasury or private duration-supply pressure and rate-sensitive valuation constraint.
 - Commodity shocks transmit strongly into inflation expectations and later measured inflation.
 
 ## Evidence surprising if true
 - Durable disinflation with falling long yields despite strong nominal activity.
 - Repeated soft inflation prints and lower long yields even while commodity shocks persist, absent a compensating growth deterioration.
-- Fiscal expansion without observable rate or inflation pressure.
+- Fiscal/private duration expansion without observable rate or inflation pressure.
 
 ## Distinguishing prediction
-Inflation/commodity surprises should transmit more strongly into long yields and equity valuation under H003 than under H001; persistent oil pressure should eventually appear in inflation expectations or later price data if this channel is dominant.
+Inflation/commodity surprises and unusually heavy duration supply should transmit more strongly into long yields and equity valuation under H003 than under H001; persistent oil pressure should eventually appear in inflation expectations or later price data if this channel is dominant.
 
 ## Update history
 - Baseline prior 0.25.
 - 2026-08-08 posterior 0.27.
 - 2026-08-10 posterior 0.30: WTI rose 5.1% and the 10-year yield moved to roughly 4.70% despite weak labor data, while Treasury issuance remained salient. This strengthened the state-dependent inflation/term-premium channel but did not establish persistent inflation.
 - 2026-08-12 posterior 0.29: July CPI and core CPI were contained and long yields eased after the release, modestly weakening an immediate inflation-reacceleration interpretation. H003 remained near co-leading status because the 10-year yield was still elevated, headline inflation remained above target, and the latest oil shock was too recent to have been fully tested by July consumer-price data.
-- 2026-08-14 posterior **0.26**: July PPI was unchanged versus +0.2% consensus and long yields fell after weak retail data, weakening the near-term version of the inflation/term-premium path. H003 remains material because PPI is still +4.7% y/y, WTI/Brent rose materially for the week amid supply disruption, and August energy pressure has not yet been tested in later price data.
+- 2026-08-14 posterior 0.26: July PPI was unchanged versus +0.2% consensus and long yields fell after weak retail data, weakening the near-term version of the inflation/term-premium path. H003 remained material because PPI was still +4.7% y/y, WTI/Brent rose materially for the week amid supply disruption, and August energy pressure had not yet been tested in later price data.
+- 2026-08-17 posterior **0.28**: Brent rose to $90.87 and WTI to $84.50 while the 10-year Treasury yield rose to 4.724% and the 30-year to 5.3103% despite recent weak demand data. That combination revives the state-dependent oil/duration-supply mechanism. Reuters/Barclays commentary also raised heavy AI-related corporate debt issuance as a possible additional long-end supply channel; this is recorded as a provisional mechanism, not as proved attribution.
