@@ -14,7 +14,9 @@ weak labor ──> expected policy path ──> short/intermediate yields
 weak consumer demand ──> expected policy path ──> yields
 
 fiscal impulse ──> growth
-fiscal impulse ──> issuance ──> term premium / long yields ──> financial conditions
+fiscal impulse ──> Treasury issuance ──> duration supply / term premium ──> long yields ──> financial conditions
+
+AI / corporate capex financing ──> corporate bond issuance ──> private duration supply ──> long yields / financial conditions
 
 credit stress ──> financial conditions ──> growth
 liquidity ──> risk appetite / valuation
@@ -40,5 +42,11 @@ A spot commodity shock is not a contemporaneous one-for-one CPI shock. Pass-thro
 A negative consumer-demand shock can affect equities through **opposing causal channels**. Weaker demand can lower expected earnings/cash flows, which is equity-negative, while also lowering the expected policy path and discount rates, which can be equity-positive. The Aug. 14 combination of unexpectedly weak retail/control-group sales, lower Treasury yields, and only a modest S&P decline illustrates why index price alone cannot identify the dominant growth mechanism. Future model discrimination should prefer joint observations across growth, yields, credit, labor, and earnings breadth rather than inferring macro strength directly from a resilient index.
 
 Retail sales are nominal, goods-heavy, revision-prone, and sensitive to timing effects; the demand node therefore should be updated from repeated evidence rather than one release.
+
+## Private-duration supply refinement added 2026-08-17
+
+The model now distinguishes **Treasury duration supply** from potentially material **private corporate duration supply**. On Aug. 17 the 10-year and 30-year Treasury yields rose despite recent soft demand data; Reuters reported market commentary attributing part of the long-end pressure to fiscal concerns and heavy AI-related corporate debt issuance. This motivates, but does not prove, a candidate path from large corporate capex-financing needs through bond issuance to duration supply and long yields.
+
+This edge is **provisional and low-confidence**. A single session cannot identify the cause of a long-yield move. It should gain confidence only if periods of unusually heavy corporate duration issuance repeatedly coincide with long-end pressure after controlling qualitatively for growth, inflation, Treasury supply, and policy expectations. It should be weakened or removed if future long-end behavior does not differ when private issuance pressure changes.
 
 Every material edge should eventually carry sign, expected lag, confidence, evidence, and known failure conditions.
