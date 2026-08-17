@@ -1,72 +1,70 @@
 # Current Market State
 
-**Model version:** 0.2.3  
-**Status:** Live Friday-reviewed state; six resolved binary-probability components; learning still unassessable by protocol threshold  
-**Evidence cutoff:** 2026-08-14T17:25:18-04:00
+**Model version:** 0.2.4  
+**Status:** Live Monday state; six resolved binary-probability components; learning still unassessable by protocol threshold  
+**Evidence cutoff:** 2026-08-17T17:37:38-04:00
 
 ## OBSERVATIONS
 
-- P000013 and P000002 were resolved and scored before this model update. P000013: S&P 500 closed Aug. 13 at **7,798.99**; p(up)=0.51 resolved true, Brier **0.2401**, log loss **0.673345**, point MAE **43.99**, 80% interval hit. Its point estimate beat no-change but lost to its precommitted recent-trend benchmark. P000002: Aug. 14 weekly S&P 500 close **7,785.76**; p(up)=0.52 resolved true, Brier **0.2304**, log loss **0.653926**, point MAE **10.76**, 80% interval hit, and the point estimate beat no-change.
-- Across the six resolved binary-probability components now on record, mean Brier is **0.227400** and mean log loss is **0.647876**. The targets are heterogeneous and n=6 is far below the precommitted 30-forecast threshold for even a preliminary learning assessment.
-- Across the five resolved S&P direction components, mean Brier is **0.232380** and mean log loss **0.657884**. All five probabilities happened to fall on the ultimately correct side of 0.50, but they were tightly clustered near 0.50; this is weak discrimination and a tiny sample, not evidence of calibrated skill.
-- Across the five resolved S&P point forecasts, mean absolute error is **16.632** versus **25.670** for matched no-change benchmarks, corresponding to descriptive MAE skill of **+0.352**. On the three observations with a precommitted recent-trend benchmark, mean model MAE is **23.097** versus **31.927** for recent trend, descriptive skill **+0.277**. These samples are too small and compositionally mixed to support a learning claim.
-- All five resolved S&P 80% intervals covered; the mean width is **374.2 index points**, including a 660-point weekly interval. Coverage above nominal in such a tiny sample does not establish interval skill and may partly reflect wide ranges.
-- July final-demand PPI was **0.0% m/m** versus Reuters-consensus **+0.2%**, with goods -0.7%, services +0.2%, and final demand +4.7% y/y. BLS reported energy -3.1% and gasoline -5.7% m/m.
-- Initial jobless claims rose to **209,000** for the week ended Aug. 8 while continuing claims fell to roughly **1.78 million**; layoffs remain low even as the earlier hiring/payroll signal is weak.
-- July retail sales fell **0.6% m/m** versus Reuters-consensus +0.1%; the GDP-relevant control group fell **0.4%** versus consensus +0.3%. Sales were still +5.0% y/y. Prime Day timing, gasoline receipts, and fading tax-refund support create identifiable one-month distortions.
-- The 10-year Treasury yield was quoted near **4.631%** after the retail report, down from roughly 4.640%; this is a market quote, not yet treated as the final H.15 daily observation.
-- WTI settled Aug. 14 at **$82.40** and Brent at **$88.52**; both rose on the day and were up about 5.4% and 6.0% respectively for the week amid tanker attacks and constrained Strait of Hormuz traffic.
-- S&P 500 ended Aug. 14 at **7,785.76**, down 0.2% on the day but up 0.4% for the week, remaining near its record despite weak retail data.
-- No sufficiently fresh, authoritative post-Aug. 11 HY OAS observation was verified in this cycle. The prior 2.72% reading is not silently promoted to an Aug. 14 observation.
+- No currently live forecast reached its resolution horizon in this cycle. P000014 resolves at the Aug. 21 S&P 500 close; P000015 resolves from the initial July industrial-production release on Aug. 18 at 09:15 ET. Lifetime scoring therefore remains unchanged.
+- Across six resolved binary-probability components, mean Brier remains **0.227400** and mean log loss **0.647876**. The targets are heterogeneous and n=6 is far below the precommitted 30-forecast threshold for even a preliminary learning assessment.
+- Across five resolved S&P direction components, mean Brier is **0.232380** and mean log loss **0.657884**. Across five S&P point forecasts, mean absolute error is **16.632** versus **25.670** for matched no-change benchmarks. On three observations with a precommitted recent-trend benchmark, mean model MAE is **23.097** versus **31.927** for recent trend. These are descriptive only at the current sample size.
+- FRED updated the ICE BofA US High Yield Index Option-Adjusted Spread series on Aug. 17 with the Aug. 14 close at **2.67%**, down from 2.71% on Aug. 13 and 2.72% on Aug. 11. This was newly available after the prior evidence cutoff and restores a fresh credit cross-check.
+- The August Empire State Manufacturing Survey general business conditions index rose to **20.6**, its highest level in four years and above a Wall Street Journal consensus of 12. New orders and shipments were positive; input-price pressure rose while prices received declined.
+- S&P 500 closed Aug. 17 at **7,745.06**, down **0.52%**. Energy was the only positive major S&P sector, up 0.87%. This price action is recorded as an endpoint, not as direct evidence of a macro cause.
+- Brent settled at **$90.87/bbl** (+2.65%) and WTI at **$84.50/bbl** (+2.55%) as U.S.-Iran negotiations remained stalled and Strait of Hormuz shipping remained restricted.
+- Reuters reported the benchmark 10-year Treasury yield at **4.724%** (+2.79 bp) and the 30-year at **5.3103%** (+4.43 bp), the latter the highest since 2007. Long yields therefore rose despite the prior-cycle weak retail data and benign July inflation prints.
 
 ## INFERENCE
 
-The new evidence narrows the soft-landing lead rather than reversing it. Benign PPI, low layoffs, and lower yields reduce immediate H003 pressure and still argue against an already-active broad recession. But the retail/control-group miss is a material new demand warning that makes H002 more plausible than it was on Aug. 12. The strongest H001 cross-check—fresh credit—was not available this cycle, so confidence should not be maintained merely because no widening was observed.
+Fresh credit and the strong regional manufacturing survey weaken the case that the earlier labor/retail softness has already become a broad recession mechanism. H001 therefore retains a narrow lead and H002 gives back part of its Aug. 14 increase.
 
-The most important structural refinement is that **consumer-demand weakness has opposing market channels**: it can reduce expected earnings/cash flows while simultaneously lowering policy-rate expectations and discount rates. Therefore a resilient S&P 500 after weak retail data is causally ambiguous rather than a clean soft-landing confirmation. Joint evidence from growth, yields, credit, labor, and earnings breadth is more identifying than index price alone.
+At the same time, the oil rebound and rising long yields materially strengthen the still-active H003 tail. The important observation is not merely that yields rose, but that the long end rose while recent demand data were soft. That is consistent with the model's pre-existing warning that easier-policy expectations can be offset by duration supply, fiscal/term-premium pressure, and commodity/inflation risk.
+
+Reuters/Barclays commentary attributes part of the long-end move to fiscal concerns and heavy AI-related corporate debt issuance. The model now treats **private corporate duration supply** as a provisional additional long-yield channel alongside Treasury issuance. That causal attribution is not considered proved by one session and must earn confidence prospectively.
 
 ## Current regime
 
-**Late-cycle expansion with a narrow soft-landing lead, materially increased consumer-demand downside risk, and a still-active supply-driven energy/inflation tail.**
+**Late-cycle expansion with a narrow soft-landing lead, less immediate credit-confirmed recession risk than on Aug. 14, but a re-strengthened oil/long-rate inflation-and-duration-supply tail.**
 
 ## Hypothesis weights
 
 | Hypothesis | Weight |
 |---|---:|
-| H001 Soft landing | 0.34 |
-| H002 Late-cycle recession | 0.29 |
-| H003 Fiscal/inflation regime | 0.26 |
+| H001 Soft landing | 0.35 |
+| H002 Late-cycle recession | 0.26 |
+| H003 Fiscal/inflation regime | 0.28 |
 | H004 Productivity boom | 0.11 |
 
-**Change from Aug. 12:** H001 -0.01, H002 +0.04, H003 -0.03, H004 unchanged. H001 remains the numerical leader but H002 is now the closest rival; H003 remains substantial because the oil/geopolitical channel is live despite softer July price data.
+**Change from Aug. 14:** H001 +0.01, H002 -0.03, H003 +0.02, H004 unchanged. The net update is deliberately modest because the fresh evidence is internally conflicting: tight credit/strong regional manufacturing push toward H001 while oil/long yields push toward H003.
 
 ## Skeptic result
 
-The Skeptic attacked H001 before the update. Its strongest case was that benign inflation and lower yields can arise from weakening demand, not only from an ideal soft landing; retail/control-group weakness following prior labor softness may therefore be early H002 evidence. It also rejected the inference that record-adjacent equities prove macro resilience and noted that fresh credit confirmation was missing. Counterevidence includes low jobless claims, positive y/y retail sales, identifiable Prime Day/gasoline distortions, and benign PPI. The result is a modest H001 reduction rather than a regime flip.
+The Skeptic attacked H001 before the update. Its strongest countercase is that tight HY spreads can lag a downturn, the Empire State survey is regional and volatile, and the combination of rising oil plus very high long yields can tighten financial conditions enough to derail a benign landing even if current inflation prints are softer. Earlier national labor and retail weakness remains unresolved. The counterweight is that HY OAS actually tightened to 2.67% and regional factory activity surprised strongly to the upside, which is difficult to reconcile with an already broad H002 contraction. The result is a small H001 increase, a larger H002 reduction, and a simultaneous H003 increase rather than a single-narrative update.
 
 ## Most important causal claims
 
-1. Weak labor or consumer demand can reduce the expected policy path and yields while simultaneously weakening cash-flow expectations; the net equity response is state-dependent and therefore not a clean growth indicator by itself.
-2. Commodity/inflation risk and Treasury-supply/term-premium pressure can offset easier-policy effects on long yields, but Aug. 13-14 evidence did not show that channel dominating: yields declined after benign PPI/weak retail while oil remained volatile.
-3. Credit remains a key cross-check between H001 and H002. The last verified 2.72% HY OAS reading favored H001, but the lack of a fresh post-Aug. 11 observation means no new credit evidence is claimed this cycle.
-4. Commodity shocks pass into measured inflation with lags and state dependence; July PPI cannot fully test an August geopolitical oil shock.
-5. Technology/AI earnings can support headline equity indexes without proving broad macro strength; breadth and non-tech earnings remain necessary cross-checks.
+1. Weak labor or consumer demand can lower the expected policy path and yields while simultaneously weakening cash-flow expectations; the net equity response is state-dependent and is not a clean growth indicator by itself.
+2. Commodity/inflation risk, Treasury issuance/term-premium pressure, and potentially private corporate duration supply can offset the easier-policy channel in long yields. The Aug. 17 long-end move is consistent with this mechanism but does not uniquely identify it.
+3. Credit remains the strongest cross-check between H001 and H002. The newly available Aug. 14 HY OAS of 2.67% argues against current broad credit stress, while not ruling out future deterioration.
+4. Commodity shocks pass into measured inflation with lags and state dependence; the latest oil move must be tested in later inflation expectations and price data rather than retrofitted into July inflation releases.
+5. Technology/AI can support earnings and equity valuations while also requiring large financing flows; any proposed private-duration channel must be separated from actual productivity evidence.
 
 ## Three largest uncertainties
 
-1. Whether the July retail/control-group weakness persists after Prime Day and gasoline/tax-refund distortions fade.
-2. Whether weak hiring becomes layoffs, widening credit spreads, and broad earnings deterioration.
-3. Whether renewed oil/geopolitical pressure passes through strongly enough to revive inflation and long-yield pressure despite softer demand.
+1. Whether the July retail/control-group weakness persists into national real-activity data, beginning with July industrial production on Aug. 18.
+2. Whether tight credit spreads remain contained if labor/consumer weakness continues.
+3. Whether renewed oil pressure and long-end duration supply keep yields elevated enough to tighten financial conditions despite softer expected policy.
 
 ## What would surprise the model?
 
-- Several subsequent growth indicators rebound while claims stay low and fresh credit spreads widen materially anyway.
-- Retail/industrial/housing weakness persists and layoffs rise, yet credit and broad earnings remain unusually resilient for multiple weeks.
-- Oil stays elevated or rises further, later inflation measures accelerate, and long yields still decline without a sufficiently large growth shock.
-- S&P 500 produces a large sustained move while growth, rates, credit, and earnings breadth provide no confirming causal channel.
+- July industrial production and subsequent housing/consumer data weaken materially while HY spreads remain near current tight levels for several weeks and broad earnings remain strong.
+- Oil stays near or above current levels yet later inflation expectations, price data, and long yields all fall materially without a large growth shock.
+- Long yields fall sharply after weak activity data despite continued heavy Treasury/private duration supply, weakening the newly refined supply-channel interpretation.
+- Credit widens rapidly despite continued positive activity surveys and low layoffs.
 
 ## Forecast-error linkage and update discipline
 
-P000013's **directional event resolved correctly**, but its point forecast missed by 43.99 points and **lost to the recent-trend benchmark**. This error does not justify changing macro hypothesis weights; it does justify resisting any claim that the near-0.5 directional streak demonstrates short-horizon price skill and preserving simple benchmark comparisons. P000002 beat no-change but likewise receives no causal credit for the model revision.
+No forecast resolved in this cycle, so **no forecast result is used to justify v0.2.4**. All lifetime scoring metrics are carried forward unchanged. The weight changes and causal refinement are tied only to evidence newly available after the Aug. 14 cutoff: fresh HY OAS, the Aug. 17 Empire State survey, the Aug. 17 oil move, the Aug. 17 long-yield move, and contemporaneous market breadth.
 
-The v0.2.3 weight changes are driven by the separately recorded post-cutoff PPI, claims, retail/control-group, yield, and oil evidence—not by whether P000013/P000002 happened to resolve favorably. The consumer-demand causal refinement is motivated by the observed opposing cash-flow and discount-rate channels exposed by the Aug. 14 retail/yield/price response. No historical forecast content or resolution rule was altered.
+The precommitted P000015 industrial-production forecast remains the highest-information near-term test of whether the prior retail/labor weakness is reaching national real activity.
