@@ -1,0 +1,43 @@
+{
+  "id": "P000017",
+  "created_at": "2026-08-18T17:18:59-04:00",
+  "evidence_cutoff": "2026-08-18T17:18:59-04:00",
+  "model_version": "0.2.5",
+  "target": "US_INITIAL_JOBLESS_CLAIMS_WEEK_ENDING_2026-08-15",
+  "horizon": "event",
+  "resolution_at": "2026-08-20 08:30 ET initial release",
+  "forecast_type": "distribution_and_binary_probability",
+  "forecast": {
+    "event": "initial seasonally adjusted jobless claims for week ending 2026-08-15 are >=220000",
+    "probability": 0.36,
+    "point_estimate": 211000,
+    "lower_80": 193000,
+    "upper_80": 232000,
+    "units": "claims"
+  },
+  "benchmarks": [
+    {
+      "name": "neutral_binary",
+      "probability": 0.50,
+      "note": "Protocol comparator only; not claimed to be the strongest empirical base-rate benchmark for the >=220k event."
+    },
+    {
+      "name": "latest_observation_no_change",
+      "value": 209000,
+      "note": "Initial claims for week ending 2026-08-08 reported on Aug. 13; fixed as the point no-change benchmark."
+    }
+  ],
+  "resolution_rule": "Use the first U.S. Department of Labor weekly unemployment-insurance release published 2026-08-20. Resolve the binary event TRUE if seasonally adjusted initial claims for the week ending 2026-08-15 are 220,000 or higher, otherwise FALSE. Score Brier and log loss. Score the 211,000 point estimate by absolute error versus the same first-release value and record whether the 80% interval covers. Do not substitute later revisions unless the Department of Labor corrects the initial release before scoring.",
+  "rationale": [
+    "The latest verified claims reading was 209,000, so low layoffs still argue against an already broad H002 contraction despite July payroll, retail, consumer-goods, and housing weakness.",
+    "July housing and consumer-goods weakness create a prospective transmission risk into layoffs; a rise to >=220,000 would be a materially more discriminating H002 confirmation than another aggregate equity-price move.",
+    "Positive July industrial production and tight latest-verified credit spreads prevent assigning a high probability to a claims jump, so the event is forecast below even at 0.36.",
+    "The forecast is intentionally tied to the first release so subsequent revisions cannot be used for hindsight adjustment."
+  ],
+  "hypothesis_links": ["H001", "H002"],
+  "surprising_if": [
+    "Claims are >=240,000, indicating a much faster transmission from household-side weakness into layoffs than the current model expects.",
+    "Claims remain below 200,000 while housing/consumer weakness persists, strengthening the low-churn soft-landing interpretation and weakening near-term H002 transmission."
+  ],
+  "status": "open"
+}
