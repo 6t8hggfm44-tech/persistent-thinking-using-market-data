@@ -1,0 +1,60 @@
+{
+  "original_forecast": {
+    "id": "P000016",
+    "created_at": "2026-08-17T17:37:38-04:00",
+    "evidence_cutoff": "2026-08-17T17:37:38-04:00",
+    "model_version": "0.2.4",
+    "target": "US_10Y_TREASURY_CONSTANT_MATURITY_2026-08-18",
+    "horizon": "1d",
+    "resolution_at": "first Federal Reserve/FRED publication of the observation dated 2026-08-18",
+    "forecast_type": "distribution_and_binary_probability",
+    "forecast": {
+      "event": "10-year Treasury constant-maturity rate for 2026-08-18 is >= 4.70%",
+      "probability": 0.58,
+      "point_estimate": 4.72,
+      "lower_80": 4.61,
+      "upper_80": 4.84,
+      "units": "percent"
+    },
+    "benchmarks": [
+      {
+        "name": "neutral_binary",
+        "probability": 0.50,
+        "note": "Precommitted neutral comparator for the >=4.70% event."
+      },
+      {
+        "name": "current_market_quote_context",
+        "value": 4.724,
+        "note": "Reuters Aug. 17 post-close benchmark 10-year note yield; context/no-change proxy only, not assumed numerically identical to the Federal Reserve constant-maturity series."
+      }
+    ],
+    "resolution_rule": "Use the first Federal Reserve H.15/FRED DGS10 observation explicitly dated 2026-08-18. Resolve the binary event TRUE if that first-published value is 4.70% or higher and FALSE if it is below 4.70%. Score probability with Brier and log loss. Score the point estimate by absolute error and record whether the 80% interval covers. Do not substitute later revisions unless the Federal Reserve corrects the initial release before scoring.",
+    "rationale": [
+      "The Aug. 17 market 10-year quote was already near 4.724% and the 30-year yield reached its highest level since 2007, so a >=4.70% next-day constant-maturity reading is slightly more likely than not.",
+      "Renewed oil pressure plus Treasury/private-duration supply can keep long yields elevated even if softer activity lowers the expected policy path, directly testing the v0.2.4 state-dependent long-yield mechanism.",
+      "P000015 may reveal weak July industrial production on Aug. 18; such a result would normally pull yields lower, so the probability is only 0.58 rather than a high-confidence persistence call.",
+      "The absolute 4.70% threshold was fixed before the Aug. 18 industrial-production and housing releases and is close enough to the current yield to be meaningfully discriminating."
+    ],
+    "hypothesis_links": ["H001", "H002", "H003"],
+    "surprising_if": [
+      "The 10-year rate falls below 4.60% despite continued oil pressure and no large positive duration-demand shock, indicating the growth/policy channel dominates the newly emphasized supply channel.",
+      "The 10-year rate rises above 4.85% after benign or weak activity data without a fresh inflation, fiscal, supply, or geopolitical catalyst."
+    ],
+    "status": "open"
+  },
+  "resolution": {
+    "resolved_at": "2026-08-18T17:18:59-04:00",
+    "outcome": {"us_10y_cmt_percent": 4.71, "event_ge_4_70": true},
+    "source": "U.S. Treasury Daily Treasury Par Yield Curve Rates, observation dated 2026-08-18: 10-year CMT 4.71%. Treasury derives these CMTs from Federal Reserve Bank of New York indicative bid-side quotations near 3:30 PM. The contemporaneous FRED crawl had not yet refreshed, so the official Treasury table was used to verify the dated value corresponding to the H.15/FRED series.",
+    "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+    "scores": {
+      "brier": 0.1764,
+      "log_loss": 0.544727,
+      "absolute_error": 0.01,
+      "interval_hit": 1,
+      "neutral_binary_brier": 0.25,
+      "prior_market_quote_context_absolute_error": 0.014
+    },
+    "audit_note": "Forecast content above is preserved verbatim. The >=4.70% event resolved TRUE at 4.71%; the point forecast missed by 0.01 percentage point and the 80% interval covered. This single near-threshold success is evidence only for this forecast score and does not identify the private-duration mechanism or establish learning. Scored before post-cutoff evidence was used for model revision."
+  }
+}
