@@ -1,0 +1,41 @@
+{
+  "original_forecast": {
+    "id": "P000015",
+    "created_at": "2026-08-14T17:25:18-04:00",
+    "evidence_cutoff": "2026-08-14T17:25:18-04:00",
+    "model_version": "0.2.3",
+    "target": "US_INDUSTRIAL_PRODUCTION_MOM_JUL_2026",
+    "horizon": "event",
+    "resolution_at": "2026-08-18 09:15 ET release",
+    "forecast_type": "binary_probability",
+    "forecast": {"event": "initial July 2026 total industrial production month-over-month change <= 0.0%", "probability": 0.57},
+    "benchmarks": [
+      {"name": "neutral_binary", "probability": 0.50, "note": "Fixed prospective comparator because no stable timestamped analyst consensus for this exact binary event was verified at the evidence cutoff."},
+      {"name": "latest_observation", "value": "+0.1% m/m in June 2026", "note": "Context only; not a probability benchmark."}
+    ],
+    "resolution_rule": "Resolve TRUE if the initial Federal Reserve G.17 Industrial Production and Capacity Utilization release for July 2026 reports total industrial production changed by 0.0% or less from June to July. Resolve FALSE if the initial published change is +0.1% or higher. Use the first Federal Reserve release and do not substitute later revisions unless the Fed corrects the initial release before scoring.",
+    "rationale": [
+      "The July retail/control-group miss following earlier labor weakness raises the probability that demand softness reached real activity, favoring H002 relative to H001.",
+      "Low initial claims and strong second-quarter industrial growth prevent a high-confidence contraction call; H001 remains the model's narrow overall leader.",
+      "This release is more causally discriminating than another near-0.5 index-direction forecast because weak industrial output would directly reinforce the growth-downside branch rather than relying on the net market-price response."
+    ],
+    "hypothesis_links": ["H001", "H002", "H004"],
+    "surprising_if": [
+      "Industrial production rises +0.5% m/m or more despite the recent retail/labor weakness.",
+      "Industrial production is <=0.0% but subsequent fresh credit, layoffs, and earnings breadth all remain strongly expansionary, implying the weak print was sector-specific/noisy rather than H002 confirmation."
+    ],
+    "status": "open"
+  },
+  "resolution": {
+    "resolved_at": "2026-08-18T17:18:59-04:00",
+    "outcome": {"initial_total_industrial_production_mom": "+0.2%", "event_le_0_0": false},
+    "source": "Federal Reserve G.17 current release dated 2026-08-18: total industrial production grew 0.2% in July; preliminary first release.",
+    "source_url": "https://www.federalreserve.gov/releases/g17/Current/default.htm",
+    "scores": {
+      "brier": 0.3249,
+      "log_loss": 0.843970,
+      "neutral_binary_brier": 0.25
+    },
+    "audit_note": "Forecast content above is preserved verbatim. The event resolved FALSE because first-release total industrial production rose 0.2% m/m. The 0.57 downside probability therefore scored worse than the precommitted neutral binary comparator. Scored before post-cutoff evidence was used for model revision."
+  }
+}
