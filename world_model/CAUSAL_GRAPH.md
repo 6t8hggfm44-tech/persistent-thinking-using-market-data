@@ -17,6 +17,9 @@ fiscal impulse ──> growth
 fiscal impulse ──> Treasury issuance ──> duration supply / term premium ──> long yields ──> financial conditions
 
 AI / corporate capex financing ──> corporate bond issuance ──> private duration supply ──> long yields / financial conditions
+AI / capex / defense demand ──> business-equipment & high-tech output ──> aggregate industrial production
+household-demand weakness ──> consumer-goods / auto output
+housing financial conditions ──> residential construction activity
 
 credit stress ──> financial conditions ──> growth
 liquidity ──> risk appetite / valuation
@@ -48,5 +51,11 @@ Retail sales are nominal, goods-heavy, revision-prone, and sensitive to timing e
 The model now distinguishes **Treasury duration supply** from potentially material **private corporate duration supply**. On Aug. 17 the 10-year and 30-year Treasury yields rose despite recent soft demand data; Reuters reported market commentary attributing part of the long-end pressure to fiscal concerns and heavy AI-related corporate debt issuance. This motivates, but does not prove, a candidate path from large corporate capex-financing needs through bond issuance to duration supply and long yields.
 
 This edge is **provisional and low-confidence**. A single session cannot identify the cause of a long-yield move. It should gain confidence only if periods of unusually heavy corporate duration issuance repeatedly coincide with long-end pressure after controlling qualitatively for growth, inflation, Treasury supply, and policy expectations. It should be weakened or removed if future long-end behavior does not differ when private issuance pressure changes.
+
+## Composition-sensitive activity refinement added 2026-08-18
+
+Aggregate industrial production is now treated explicitly as a **mixture of potentially opposing sector channels**, not a sufficient statistic for broad demand. July 2026 total IP rose 0.2% while consumer-goods output fell 0.4%, business-equipment output rose 0.8%, and high-tech/defense categories were strong; housing simultaneously weakened sharply.
+
+This means an AI/capex/defense boom can keep aggregate industrial output positive while household-sensitive activity deteriorates. Conversely, weak consumer categories do not establish broad contraction if investment-linked production is expanding. H001/H002/H004 discrimination should therefore use the aggregate jointly with sector composition, housing, labor, credit, and earnings breadth. This is a direct market application of the existing Universal ambiguous-endpoint safeguard rather than a new causal law.
 
 Every material edge should eventually carry sign, expected lag, confidence, evidence, and known failure conditions.
