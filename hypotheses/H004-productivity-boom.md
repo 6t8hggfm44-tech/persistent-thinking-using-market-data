@@ -1,7 +1,7 @@
 # H004: Productivity Boom
 
 **Prior weight:** 0.25  
-**Current weight:** 0.11  
+**Current weight:** 0.12  
 **Status:** Active competing hypothesis
 
 ## Thesis
@@ -22,4 +22,5 @@ Earnings and real output should remain stronger than implied by labor inputs alo
 ## Update history
 - Baseline prior 0.25.
 - 2026-08-08 posterior 0.11.
-- 2026-08-14 posterior **0.11 unchanged**: the post-Aug. 12 evidence concerns inflation, layoffs, consumer demand, rates, oil, and index behavior rather than a direct productivity or broadening test. AI-related earnings strength is insufficient by itself to raise H004 without evidence that productivity gains are diffusing into broader real output/margins.
+- 2026-08-14 posterior 0.11 unchanged: the post-Aug. 12 evidence concerns inflation, layoffs, consumer demand, rates, oil, and index behavior rather than a direct productivity or broadening test. AI-related earnings strength is insufficient by itself to raise H004 without evidence that productivity gains are diffusing into broader real output/margins.
+- 2026-08-18 posterior **0.12**: the July G.17 release supplies more direct real-output evidence than prior earnings anecdotes: business-equipment output rose 0.8%, information-processing equipment rose strongly, and semiconductor/high-tech production contributed materially to manufacturing growth while household-facing sectors weakened. This raises H004 only 0.01 because sector concentration is not yet evidence of broad economy-wide productivity diffusion, and high long rates remain a material constraint.
