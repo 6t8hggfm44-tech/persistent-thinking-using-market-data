@@ -1,71 +1,73 @@
 # Current Market State
 
-**Model version:** 0.2.5  
-**Status:** Live Tuesday state; eight resolved binary-probability components; learning still unassessable by protocol threshold  
-**Evidence cutoff:** 2026-08-18T17:18:59-04:00
+**Model version:** 0.2.6  
+**Status:** Live Wednesday state; eight resolved binary-probability components; learning still unassessable by protocol threshold  
+**Evidence cutoff:** 2026-08-19T17:34:00-04:00
 
 ## OBSERVATIONS
 
-- P000015 resolved FALSE: initial July total industrial production rose **0.2% m/m** rather than <=0.0%. Brier **0.3249**, log loss **0.843970**; worse than the precommitted neutral binary Brier of 0.25.
-- P000016 resolved TRUE: the Aug. 18 official 10-year CMT was **4.71%**, above the 4.70% threshold. Brier **0.1764**, log loss **0.544727**, point MAE **0.01 pp**, 80% interval hit.
-- Across eight resolved binary-probability components, mean Brier is now **0.233213** and mean log loss **0.659494**. The sample remains far below the 30-resolution learning threshold; no learning claim is permitted.
-- The Federal Reserve's first July G.17 release reported total industrial production **+0.2% m/m** and manufacturing **+0.2%**. Consumer-goods production fell **0.4%**, while business-equipment production rose **0.8%** and defense-and-space equipment rose **1.8%**. Capacity utilization edged to **76.3%**.
-- July single-family housing starts fell **9.9%** to an 808,000 annualized rate, the lowest since November 2022; total starts fell **12.4%** to 1.239 million. Pending existing-home sales fell **2.3%**.
-- The official Aug. 18 Treasury CMT curve showed the 10-year at **4.71%** and 30-year at **5.28%**, versus 4.72% and 5.31% on Aug. 17. Intraday market yields were higher before easing.
-- Reuters reported WTI settling near **$84.94** and Brent near **$91.02**. The S&P 500 closed **7,691.76** (-0.69%), Nasdaq fell 1.33%, and the semiconductor index fell 5%; this market move is treated as an endpoint rather than direct causal evidence.
+- No forecast reached its resolution horizon in this cycle. P000014 remains open through the Aug. 21 S&P close; P000017 remains open through the Aug. 20 initial-claims release.
+- Across eight resolved binary-probability components, mean Brier remains **0.233213** and mean log loss **0.659494**. The sample remains far below the 30-resolution learning threshold; no learning claim is permitted.
+- The Aug. 19 release of the July 28-29 FOMC minutes showed that **several** participants were prepared to raise rates and **many** judged higher rates would be needed if inflation failed to move toward 2%. The July meeting held the target range at 3.50%-3.75%, with three dissents for a 25 bp hike.
+- Treasury announced larger long-duration nominal-coupon liquidity-support buybacks: the maximum per operation in the 10-30 year sector will rise from $2 billion to at least $4 billion for the Sep. 9-Nov. 4 period.
+- The official Treasury CMT curve moved from **4.71% to 4.65%** at 10 years and from **5.28% to 5.19%** at 30 years between Aug. 18 and Aug. 19.
+- Brent settled at **$91.62** and WTI at **$85.83**, their highest closes since July 24, while U.S. crude inventories rose 4.4 million barrels.
+- The S&P 500 stabilized modestly higher on Aug. 19 after the prior session's decline. The equity endpoint is not treated as direct evidence about the causal macro mechanism.
+- Prior-cycle observations remain relevant state, not new evidence: July total industrial production and manufacturing both rose 0.2%, consumer-goods production fell 0.4%, business-equipment production rose 0.8%, single-family housing starts fell 9.9%, and the latest verified HY OAS remained tight.
 
 ## INFERENCE
 
-The July industrial-production release weakens the specific H002 claim that recent consumer/labor softness had already produced aggregate industrial contraction. P000015's prospective downside event failed and must count against that branch.
+The July FOMC minutes strengthen H003's **conditional policy-constraint** branch: if inflation remains persistent, the Fed appears more willing to tighten than a simple soft-landing narrative assumes. However, the minutes describe the July information set and predate subsequent softer inflation and employment data, so they should not be treated as a current rate-hike decision.
 
-However, the internal composition prevents a broad H001 victory: consumer-goods output and housing are weak while business equipment, high tech, construction supplies, and defense are strong. Aggregate output is therefore masking opposing sector channels.
+The renewed oil rise keeps the lagged inflation and household-purchasing-power channels live. The simultaneous crude-inventory build is a real counterweight and prevents treating the oil price as pure evidence of physical scarcity.
 
-H003 remains a close rival because oil and long rates stay elevated despite weak housing. P000016's correct near-threshold rate forecast is consistent with the state-dependent long-yield mechanism, but it does not identify fiscal supply, private corporate duration supply, or any single cause.
+Treasury's expanded long-end buyback program changes interpretation of the yield endpoint. Long rates are now explicitly affected by a **debt-management/liquidity-support pathway** in addition to growth, inflation, Treasury issuance, private duration supply, and risk premia. The Aug. 19 long-yield decline is consistent with that intervention mattering, but it cannot establish the announcement as the sole cause.
 
-H004 receives its first modest increase since baseline because the July G.17 composition supplies direct real-output evidence that AI/high-tech/business-equipment demand is supporting manufacturing. One concentrated sectoral contribution is not yet evidence of economy-wide productivity diffusion.
+The main macro state therefore remains mixed: investment/high-tech output is supporting aggregate activity while housing/household-sensitive categories are weak; oil and the Fed reaction function constrain the benign path; Treasury debt-management policy can partly offset long-end financial-condition pressure.
 
 ## Current regime
 
-**Late-cycle expansion with a narrow soft-landing lead, a clear investment/AI-versus-household composition split, and a close oil/long-rate inflation-and-duration-supply rival.**
+**Late-cycle expansion with a narrow soft-landing lead, a close inflation/policy-constraint rival, a persistent investment/AI-versus-household composition split, and newly explicit Treasury debt-management influence on long yields.**
 
 ## Hypothesis weights
 
 | Hypothesis | Weight |
 |---|---:|
-| H001 Soft landing | 0.34 |
+| H001 Soft landing | 0.33 |
 | H002 Late-cycle recession | 0.25 |
-| H003 Fiscal/inflation regime | 0.29 |
+| H003 Fiscal/inflation regime | 0.30 |
 | H004 Productivity boom | 0.12 |
 
-**Change from Aug. 17:** H001 -0.01, H002 -0.01, H003 +0.01, H004 +0.01. The small changes reflect genuinely mixed evidence rather than forcing one narrative.
+**Change from Aug. 18:** H001 -0.01, H003 +0.01, H002/H004 unchanged. The move is deliberately small because the hawkish minutes and oil persistence are partly offset by their stale information set and by lower long yields after Treasury's buyback announcement.
 
 ## Skeptic result
 
-The Skeptic attacked H001 before the update. Its strongest countercase is that positive aggregate industrial production is unusually composition-dependent: household-facing output and housing weakened while AI-linked equipment and defense output rose. High oil and long rates can continue tightening housing and household financial conditions. Thus positive total IP does not by itself establish a broad soft landing.
+The Skeptic attacked H001 before the update. Its strongest case is that H001 can be squeezed between H003 and H002: persistent energy pressure may keep inflation high enough to prevent easing while household/housing weakness remains unresolved. A hawkish conditional Fed reaction function would then amplify rather than cushion restrictive financial conditions.
 
-The counterweight is that the precommitted P000015 aggregate contraction event actually failed, total industrial production and manufacturing both rose 0.2%, and the latest verified credit cross-check remained tight. H002 therefore cannot be increased simply because housing weakened. The posterior shifts only modestly and adds a composition-sensitive activity refinement rather than rewriting the model around one release.
+The countercase is that the minutes predate softer post-meeting data, Treasury's official long yields fell materially on Aug. 19, aggregate July industrial production remained positive, and no fresh credit-stress or layoff confirmation had arrived by the cutoff. H001 therefore remains the leader, but H003 gains modestly.
 
 ## Most important causal claims
 
 1. Weak labor or consumer demand can lower expected policy rates while weakening cash-flow expectations; equity price alone is an ambiguous growth signal.
 2. Commodity/inflation risk, Treasury issuance/term-premium pressure, and potentially private corporate duration supply can offset easier-policy pressure in long yields.
-3. **Aggregate industrial production can mask opposing sector channels.** AI/capex/defense demand can lift business-equipment/high-tech output while consumer goods, autos, housing, or other household-sensitive activity weaken. Composition and breadth should be read jointly with the aggregate.
-4. Credit remains the strongest cross-check between H001 and H002; the latest verified HY OAS remains tight, but must be refreshed rather than assumed.
-5. Commodity shocks pass into measured inflation with lags and state dependence; August oil pressure must be tested prospectively in later inflation expectations and price data.
+3. **Treasury debt-management / liquidity-support buybacks can independently affect long-end liquidity, net duration absorption, term premium, and long yields.** Long-yield moves should therefore not be treated as unique readouts of inflation, growth, or fiscal stress.
+4. Aggregate industrial production can mask opposing sector channels: AI/capex/defense demand can lift business-equipment/high-tech output while consumer goods, autos, housing, or other household-sensitive activity weaken.
+5. Credit remains the strongest cross-check between H001 and H002; the latest verified HY OAS is tight, but it must be refreshed rather than assumed.
+6. Commodity shocks pass into measured inflation with lags and state dependence; August oil pressure must be tested prospectively in later inflation expectations and price data.
 
 ## Three largest uncertainties
 
 1. Whether household-side weakness spreads into layoffs/claims, credit, and broader real activity while investment/high-tech output remains strong.
-2. Whether elevated oil and long yields persist long enough to tighten financial conditions materially.
-3. Whether AI/high-tech manufacturing strength broadens into measurable economy-wide productivity/margin gains or remains concentrated.
+2. Whether elevated oil keeps inflation sufficiently persistent to trigger the hawkish conditional reaction function revealed in the July FOMC minutes.
+3. Whether Treasury buyback-induced long-end relief persists, materially eases financial conditions, or is overwhelmed by inflation/fiscal/private-duration pressure.
 
 ## What would surprise the model?
 
 - Initial jobless claims rise materially while credit spreads widen and investment/high-tech production stays strong, showing household weakness spreading despite the current capex offset.
 - Housing/consumer weakness persists but layoffs and credit remain benign for several more weeks and aggregate output stays positive, favoring H001 over H002.
-- Oil remains near current levels while later inflation expectations and long yields fall materially without a large growth shock, weakening H003.
-- High-tech/business-equipment output strength persists but broader productivity, margins, or beneficiary breadth do not improve, weakening H004's interpretation of the sectoral signal.
+- Oil remains near current levels while later inflation expectations and price data soften enough that Fed rhetoric/reaction-function evidence turns materially less hawkish, weakening H003.
+- Long yields quickly return to or exceed pre-buyback levels despite the expanded Treasury program without a new inflation/growth shock, suggesting the intervention channel is too small to matter or is being dominated by supply/risk-premium pressure.
 
 ## Forecast-error linkage and update discipline
 
-P000015's miss is explicitly linked to a **small H002 reduction and a composition-sensitive refinement**, not a wholesale rejection of the recession branch. P000016's success is linked only to modest support for persistent-elevated-rate conditions; it is **not** treated as evidence that the provisional private-duration-supply mechanism is true. All post-scoring weight changes are also tied to evidence newly available after the Aug. 17 cutoff.
+No forecast resolved on Aug. 19, so **no weight or structural change is attributed to forecast success or failure**. The H001/H003 adjustment and Treasury-buyback causal refinement are tied only to evidence first available after the Aug. 18 cutoff. P000015's prior miss and P000016's prior success remain preserved without reinterpretation.
