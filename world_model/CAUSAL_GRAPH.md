@@ -15,6 +15,7 @@ weak consumer demand ──> expected policy path ──> yields
 
 fiscal impulse ──> growth
 fiscal impulse ──> Treasury issuance ──> duration supply / term premium ──> long yields ──> financial conditions
+Treasury debt-management / liquidity-support buybacks ──> long-end liquidity & net duration absorption ──> term premium / long yields ──> financial conditions
 
 AI / corporate capex financing ──> corporate bond issuance ──> private duration supply ──> long yields / financial conditions
 AI / capex / defense demand ──> business-equipment & high-tech output ──> aggregate industrial production
@@ -57,5 +58,13 @@ This edge is **provisional and low-confidence**. A single session cannot identif
 Aggregate industrial production is now treated explicitly as a **mixture of potentially opposing sector channels**, not a sufficient statistic for broad demand. July 2026 total IP rose 0.2% while consumer-goods output fell 0.4%, business-equipment output rose 0.8%, and high-tech/defense categories were strong; housing simultaneously weakened sharply.
 
 This means an AI/capex/defense boom can keep aggregate industrial output positive while household-sensitive activity deteriorates. Conversely, weak consumer categories do not establish broad contraction if investment-linked production is expanding. H001/H002/H004 discrimination should therefore use the aggregate jointly with sector composition, housing, labor, credit, and earnings breadth. This is a direct market application of the existing Universal ambiguous-endpoint safeguard rather than a new causal law.
+
+## Treasury debt-management / liquidity-support refinement added 2026-08-19
+
+Treasury's Aug. 19 announcement that long-duration nominal-coupon liquidity-support buybacks will rise from $2 billion to at least $4 billion per operation adds an explicit **policy/liquidity pathway into the long end of the curve**. Treasury's official CMT curve then fell from 4.71% to 4.65% at 10 years and from 5.28% to 5.19% at 30 years between Aug. 18 and Aug. 19.
+
+The timing is consistent with the announcement affecting long-end liquidity and net duration absorption, but it does not identify the buyback as the sole cause of the yield move. This refinement therefore weakens any inference that a long-yield change uniquely reveals growth, inflation, fiscal supply, or private-duration pressure. Future rate interpretation should jointly inspect policy expectations, inflation compensation/commodity pressure, issuance, debt-management actions, and growth/credit evidence where available.
+
+This is an application of Universal UL-0004 / FM-006, not a claim that Treasury can permanently set long yields or that the Aug. 19 intervention proves market stress.
 
 Every material edge should eventually carry sign, expected lag, confidence, evidence, and known failure conditions.
