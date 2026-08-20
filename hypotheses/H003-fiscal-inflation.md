@@ -1,7 +1,7 @@
 # H003: Fiscal / Inflation Regime
 
 **Prior weight:** 0.25  
-**Current weight:** 0.30  
+**Current weight:** 0.31  
 **Status:** Active competing hypothesis; close macro rival
 
 ## Thesis
@@ -29,4 +29,5 @@ Inflation/commodity surprises and unusually heavy duration supply should transmi
 - 2026-08-14 posterior 0.26: July PPI was unchanged versus +0.2% consensus and long yields fell after weak retail data, weakening the near-term version of the inflation/term-premium path. H003 remained material because PPI was still +4.7% y/y, WTI/Brent rose materially for the week amid supply disruption, and August energy pressure had not yet been tested in later price data.
 - 2026-08-17 posterior 0.28: Brent rose to $90.87 and WTI to $84.50 while the 10-year Treasury yield rose to 4.724% and the 30-year to 5.3103% despite recent weak demand data. That combination revives the state-dependent oil/duration-supply mechanism. Reuters/Barclays commentary also raised heavy AI-related corporate debt issuance as a possible additional long-end supply channel; this is recorded as a provisional mechanism, not as proved attribution.
 - 2026-08-18 posterior 0.29: P000016's >=4.70% 10-year CMT event resolved true at 4.71%, while WTI/Brent remained near $84.94/$91.02 and long rates stayed elevated despite sharply weak housing data. This adds modest support to the state-dependent long-rate/inflation-risk path. The increase is only 0.01 because the official 10-year CMT actually eased 1 bp from Aug. 17 and the forecast result does not identify fiscal or private-duration supply as the cause.
-- 2026-08-19 posterior **0.30**: July FOMC minutes showed broader conditional willingness to raise rates if inflation remains above target, while Brent/WTI closed at their highest levels since July 24. H003 rises only 0.01 because the minutes predate subsequent softer inflation/employment data and Treasury's announced expansion of long-end buybacks drove a material decline in 10- and 30-year CMT yields, demonstrating that the long-yield endpoint can be altered by debt-management/liquidity policy rather than uniquely identifying inflation or fiscal pressure.
+- 2026-08-19 posterior 0.30: July FOMC minutes showed broader conditional willingness to raise rates if inflation remains above target, while Brent/WTI closed at their highest levels since July 24. H003 rises only 0.01 because the minutes predate subsequent softer inflation/employment data and Treasury's announced expansion of long-end buybacks drove a material decline in 10- and 30-year CMT yields, demonstrating that the long-yield endpoint can be altered by debt-management/liquidity policy rather than uniquely identifying inflation or fiscal pressure.
+- 2026-08-20 posterior **0.31**: Brent rose to $93.78 and WTI to $87.83 as conflict/sanctions risk intensified, keeping the prospective energy-to-inflation / real-income / policy-constraint channel active. H003 gains only 0.01 because the Philadelphia Fed price indexes eased, the 10-year CMT ended at 4.69% rather than breaking sharply higher, and spot energy still requires prospective pass-through confirmation in inflation expectations and later price data.
