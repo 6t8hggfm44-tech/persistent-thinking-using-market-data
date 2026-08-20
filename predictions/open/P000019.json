@@ -1,0 +1,48 @@
+{
+  "id": "P000019",
+  "created_at": "2026-08-20T17:03:00-04:00",
+  "evidence_cutoff": "2026-08-20T17:03:00-04:00",
+  "model_version": "0.2.7",
+  "target": "SP_GLOBAL_US_MANUFACTURING_PMI_FLASH_AUG_2026",
+  "horizon": "event",
+  "resolution_at": "2026-08-21 09:45 ET first flash release",
+  "forecast_type": "distribution_and_binary_probability",
+  "forecast": {
+    "event": "S&P Global US Manufacturing PMI flash August 2026 is >=54.0",
+    "probability": 0.56,
+    "point_estimate": 54.2,
+    "lower_80": 52.5,
+    "upper_80": 55.9,
+    "units": "index_points"
+  },
+  "benchmarks": [
+    {
+      "name": "published_consensus_point",
+      "value": 53.7,
+      "note": "Barron's Aug. 17 calendar consensus for the Aug. 21 Manufacturing PMI release; frozen at forecast creation."
+    },
+    {
+      "name": "july_no_change",
+      "value": 53.9,
+      "note": "July comparison value reported in the same pre-release calendar; frozen as the no-change point benchmark."
+    },
+    {
+      "name": "neutral_binary",
+      "probability": 0.50,
+      "note": "Protocol comparator for the >=54.0 event; the published consensus is a point benchmark rather than a probability."
+    }
+  ],
+  "resolution_rule": "Use the first S&P Global US flash PMI release published 2026-08-21. Resolve the binary event TRUE if the August flash Manufacturing PMI is 54.0 or higher, otherwise FALSE. Score probability with Brier and log loss. Score the 54.2 point estimate and frozen 53.7 consensus / 53.9 no-change benchmarks by absolute error, and record whether the 80% interval covers. Do not substitute a later final PMI revision for the flash release.",
+  "rationale": [
+    "August Empire State activity at 20.6 and Philadelphia Fed current activity at 47.4, with Philadelphia employment at 27.9, provide two regional signals that national manufacturing may hold at or above July's expansion pace.",
+    "July industrial production/manufacturing remained positive and business-equipment/high-tech output was strong, keeping H001/H004-compatible industrial resilience in the state model.",
+    "The forecast is only modestly above even because regional surveys are noisy and compositionally narrow, Philadelphia new orders/shipments eased from July, and the intensified Iran/energy shock can disrupt demand, supply chains, and input costs.",
+    "The 54.0 threshold sits just above both the 53.7 published consensus and 53.9 July comparison, making the forecast a discriminating test rather than a generic expansion call."
+  ],
+  "hypothesis_links": ["H001", "H002", "H003", "H004"],
+  "surprising_if": [
+    "The flash manufacturing PMI is <=51.5 despite strong August Empire State and Philadelphia headline readings, indicating that regional surveys badly overstated national manufacturing resilience.",
+    "The flash manufacturing PMI is >=56.0 while price pressure also remains contained, implying broader activity strength than the current narrow-soft-landing model allows."
+  ],
+  "status": "open"
+}
