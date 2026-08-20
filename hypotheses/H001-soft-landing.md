@@ -1,7 +1,7 @@
 # H001: Soft Landing
 
 **Prior weight:** 0.25  
-**Current weight:** 0.33  
+**Current weight:** 0.35  
 **Status:** Active competing hypothesis; narrow leader
 
 ## Thesis
@@ -31,4 +31,5 @@ Weak labor or demand data accompanied by low layoffs, stable credit, resilient e
 - 2026-08-14 posterior 0.34: July PPI was softer than consensus and layoffs remained low, but retail sales (-0.6% m/m) and the GDP-relevant control group (-0.4%) materially undershot consensus after earlier labor weakness. The decline is small because event timing/gasoline effects distort one month and sales remain +5.0% y/y. Fresh post-Aug. 11 credit data were not verified, so the prior tight-spread cross-check is not silently carried forward as new evidence.
 - 2026-08-17 posterior 0.35: the newly available Aug. 14 HY OAS tightened to 2.67% and the August Empire State activity index surprised strongly at 20.6, arguing against an already broad contraction. The increase is only 0.01 because national retail/labor softness remains unresolved and the same cycle brought renewed oil pressure and higher long yields, strengthening a non-benign H003 path.
 - 2026-08-18 posterior 0.34: total industrial production and manufacturing both rose 0.2%, supporting continued expansion, but consumer-goods output fell 0.4%, single-family starts dropped 9.9%, and long rates/oil remained elevated. The evidence is increasingly compositionally split rather than uniformly benign, so H001 remains the leader but loses 0.01.
-- 2026-08-19 posterior **0.33**: the July FOMC minutes revealed a more hawkish conditional reaction function, with several participants ready to hike and many expecting higher rates if inflation fails to return toward 2%, while WTI/Brent reached their highest closes since July 24. H001 loses only 0.01 because those minutes predate subsequent softer inflation/labor data and Treasury's expanded long-end buyback announcement lowered official 10- and 30-year CMT yields materially, easing financial conditions at the margin.
+- 2026-08-19 posterior 0.33: the July FOMC minutes revealed a more hawkish conditional reaction function, with several participants ready to hike and many expecting higher rates if inflation fails to return toward 2%, while WTI/Brent reached their highest closes since July 24. H001 loses only 0.01 because those minutes predate subsequent softer inflation/labor data and Treasury's expanded long-end buyback announcement lowered official 10- and 30-year CMT yields materially, easing financial conditions at the margin.
+- 2026-08-20 posterior **0.35**: initial claims printed 206,000 and the Philadelphia Fed current-activity/employment indexes were very strong, directly weakening the near-term layoff/generalized-contraction branch of H002. The increase is limited to 0.02 because continued claims rose, low initial claims can coexist with weak hiring, the Philadelphia survey is regional, and Brent/WTI rose sharply enough to strengthen the competing H003 energy/policy-constraint path.
