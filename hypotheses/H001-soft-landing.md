@@ -1,8 +1,8 @@
 # H001: Soft Landing
 
 **Prior weight:** 0.25  
-**Current weight:** 0.35  
-**Status:** Active competing hypothesis; narrow leader
+**Current weight:** 0.34  
+**Status:** Active competing hypothesis; close rival to H003
 
 ## Thesis
 Disinflation continues without a major contraction; earnings and financial conditions remain broadly supportive.
@@ -21,7 +21,7 @@ Disinflation continues without a major contraction; earnings and financial condi
 - Repeated material declines in real consumer demand and activity.
 
 ## Distinguishing prediction
-Weak labor or demand data accompanied by low layoffs, stable credit, resilient earnings, and subsequent growth stabilization should favor H001 over H002.
+Weak labor or demand data accompanied by low layoffs, stable credit, resilient earnings, and subsequent growth stabilization should favor H001 over H002. Strong activity accompanied by falling inflation pressure and sustainably easier long-rate conditions should favor H001 over H003.
 
 ## Update history
 - Baseline prior 0.25.
@@ -32,4 +32,5 @@ Weak labor or demand data accompanied by low layoffs, stable credit, resilient e
 - 2026-08-17 posterior 0.35: the newly available Aug. 14 HY OAS tightened to 2.67% and the August Empire State activity index surprised strongly at 20.6, arguing against an already broad contraction. The increase is only 0.01 because national retail/labor softness remains unresolved and the same cycle brought renewed oil pressure and higher long yields, strengthening a non-benign H003 path.
 - 2026-08-18 posterior 0.34: total industrial production and manufacturing both rose 0.2%, supporting continued expansion, but consumer-goods output fell 0.4%, single-family starts dropped 9.9%, and long rates/oil remained elevated. The evidence is increasingly compositionally split rather than uniformly benign, so H001 remains the leader but loses 0.01.
 - 2026-08-19 posterior 0.33: the July FOMC minutes revealed a more hawkish conditional reaction function, with several participants ready to hike and many expecting higher rates if inflation fails to return toward 2%, while WTI/Brent reached their highest closes since July 24. H001 loses only 0.01 because those minutes predate subsequent softer inflation/labor data and Treasury's expanded long-end buyback announcement lowered official 10- and 30-year CMT yields materially, easing financial conditions at the margin.
-- 2026-08-20 posterior **0.35**: initial claims printed 206,000 and the Philadelphia Fed current-activity/employment indexes were very strong, directly weakening the near-term layoff/generalized-contraction branch of H002. The increase is limited to 0.02 because continued claims rose, low initial claims can coexist with weak hiring, the Philadelphia survey is regional, and Brent/WTI rose sharply enough to strengthen the competing H003 energy/policy-constraint path.
+- 2026-08-20 posterior 0.35: initial claims printed 206,000 and the Philadelphia Fed current-activity/employment indexes were very strong, directly weakening the near-term layoff/generalized-contraction branch of H002. The increase is limited to 0.02 because continued claims rose, low initial claims can coexist with weak hiring, the Philadelphia survey is regional, and Brent/WTI rose sharply enough to strengthen the competing H003 energy/policy-constraint path.
+- 2026-08-21 posterior **0.34**: flash services PMI at 56.8 and composite output at 56.0 strongly argue against immediate generalized contraction, but the same release still showed elevated price pressure while Brent settled at $94.39 and long Treasury yields rebounded. P000019 also showed that regional manufacturing headlines overstated national manufacturing strength. H001 therefore retains substantial support but loses 0.01 to H003 because strong demand is not benign if it keeps the inflation/policy constraint binding.
