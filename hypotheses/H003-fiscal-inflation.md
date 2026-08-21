@@ -1,8 +1,8 @@
 # H003: Fiscal / Inflation Regime
 
 **Prior weight:** 0.25  
-**Current weight:** 0.31  
-**Status:** Active competing hypothesis; close macro rival
+**Current weight:** 0.35  
+**Status:** Active competing hypothesis; narrow leader
 
 ## Thesis
 Persistent fiscal impulse and duration-supply pressure keep nominal growth, inflation risk, and long yields structurally elevated.
@@ -12,6 +12,7 @@ Persistent fiscal impulse and duration-supply pressure keep nominal growth, infl
 - Elevated term premium / long yields.
 - Continued Treasury or private duration-supply pressure and rate-sensitive valuation constraint.
 - Commodity shocks transmit strongly into inflation expectations and later measured inflation.
+- Strong nominal activity can coexist with restrictive policy expectations rather than automatically producing easier financial conditions.
 
 ## Evidence surprising if true
 - Durable disinflation with falling long yields despite strong nominal activity.
@@ -19,7 +20,7 @@ Persistent fiscal impulse and duration-supply pressure keep nominal growth, infl
 - Fiscal/private duration expansion without observable rate or inflation pressure.
 
 ## Distinguishing prediction
-Inflation/commodity surprises and unusually heavy duration supply should transmit more strongly into long yields and equity valuation under H003 than under H001; persistent oil pressure should eventually appear in inflation expectations or later price data if this channel is dominant.
+Inflation/commodity surprises and unusually heavy duration supply should transmit more strongly into long yields and equity valuation under H003 than under H001; persistent oil pressure should eventually appear in inflation expectations or later price data if this channel is dominant. Strong activity accompanied by firmer policy expectations or persistently high long yields favors H003 over a benign H001 interpretation.
 
 ## Update history
 - Baseline prior 0.25.
@@ -30,4 +31,5 @@ Inflation/commodity surprises and unusually heavy duration supply should transmi
 - 2026-08-17 posterior 0.28: Brent rose to $90.87 and WTI to $84.50 while the 10-year Treasury yield rose to 4.724% and the 30-year to 5.3103% despite recent weak demand data. That combination revives the state-dependent oil/duration-supply mechanism. Reuters/Barclays commentary also raised heavy AI-related corporate debt issuance as a possible additional long-end supply channel; this is recorded as a provisional mechanism, not as proved attribution.
 - 2026-08-18 posterior 0.29: P000016's >=4.70% 10-year CMT event resolved true at 4.71%, while WTI/Brent remained near $84.94/$91.02 and long rates stayed elevated despite sharply weak housing data. This adds modest support to the state-dependent long-rate/inflation-risk path. The increase is only 0.01 because the official 10-year CMT actually eased 1 bp from Aug. 17 and the forecast result does not identify fiscal or private-duration supply as the cause.
 - 2026-08-19 posterior 0.30: July FOMC minutes showed broader conditional willingness to raise rates if inflation remains above target, while Brent/WTI closed at their highest levels since July 24. H003 rises only 0.01 because the minutes predate subsequent softer inflation/employment data and Treasury's announced expansion of long-end buybacks drove a material decline in 10- and 30-year CMT yields, demonstrating that the long-yield endpoint can be altered by debt-management/liquidity policy rather than uniquely identifying inflation or fiscal pressure.
-- 2026-08-20 posterior **0.31**: Brent rose to $93.78 and WTI to $87.83 as conflict/sanctions risk intensified, keeping the prospective energy-to-inflation / real-income / policy-constraint channel active. H003 gains only 0.01 because the Philadelphia Fed price indexes eased, the 10-year CMT ended at 4.69% rather than breaking sharply higher, and spot energy still requires prospective pass-through confirmation in inflation expectations and later price data.
+- 2026-08-20 posterior 0.31: Brent rose to $93.78 and WTI to $87.83 as conflict/sanctions risk intensified, keeping the prospective energy-to-inflation / real-income / policy-constraint channel active. H003 gains only 0.01 because the Philadelphia Fed price indexes eased, the 10-year CMT ended at 4.69% rather than breaking sharply higher, and spot energy still requires prospective pass-through confirmation in inflation expectations and later price data.
+- 2026-08-21 posterior **0.35**: Brent settled at $94.39, the 10-year/30-year Treasury yields rebounded to roughly 4.73%/5.266% after only brief buyback relief, and Reuters documented $220 billion of 2026 AI-hyperscaler debt issuance with wider tech spreads and larger new-issue concessions. At the same time, flash services/composite activity accelerated strongly while price pressures remained elevated. This combination strengthens the H003 version in which resilient nominal demand, energy pressure, and public/private duration supply keep the policy and long-rate constraint binding. The increase is limited to 0.04 because later inflation pass-through is not yet observed and a single yield move cannot identify the dominant cause.
