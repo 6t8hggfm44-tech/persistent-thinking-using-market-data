@@ -19,7 +19,8 @@ weak consumer demand ──> expected policy path ──> yields
 
 fiscal impulse ──> growth
 fiscal impulse ──> Treasury issuance ──> duration supply / term premium ──> long yields ──> financial conditions
-Treasury debt-management / liquidity-support buybacks ──> long-end liquidity & net duration absorption ──> term premium / long yields ──> financial conditions
+Treasury buyback announcement / communication ──> expectations about future liquidity & duration absorption ──> term premium / long yields
+executed Treasury liquidity-support buybacks ──> realized long-end liquidity & net duration absorption ──> term premium / long yields ──> financial conditions
 
 AI / corporate capex financing ──> corporate bond issuance ──> private duration supply ──> investor absorption cost / corporate spreads ──> financing conditions
 private duration supply ──> cross-market duration competition ──> long yields / financial conditions
@@ -64,19 +65,24 @@ Post-cutoff evidence on Aug. 21 materially strengthens the existence of the chan
 
 The edge is therefore upgraded from **low** to **moderate confidence** as a private-financing mechanism. It is still not legitimate to assign a specific Treasury-yield move to AI issuance alone. Fiscal supply, inflation expectations, growth, Fed policy expectations, global duration supply, and Treasury debt-management remain competing explanations. The proper prospective test is whether periods of unusually heavy private duration supply are associated with higher relative concessions/spreads and long-end pressure after accounting qualitatively for those rivals.
 
-## Composition-sensitive activity refinement added 2026-08-18
+## Composition-sensitive activity refinement added 2026-08-18; reinforced 2026-08-24
 
-Aggregate industrial production is treated explicitly as a **mixture of potentially opposing sector channels**, not a sufficient statistic for broad demand. July 2026 total IP rose 0.2% while consumer-goods output fell 0.4%, business-equipment output rose 0.8%, and high-tech/defense categories were strong; housing simultaneously weakened sharply.
+Aggregate industrial production and broad activity indexes are treated explicitly as **mixtures of potentially opposing sector channels**, not sufficient statistics for broad demand. July 2026 total IP rose 0.2% while consumer-goods output fell 0.4%, business-equipment output rose 0.8%, and high-tech/defense categories were strong; housing simultaneously weakened sharply.
 
-This means an AI/capex/defense boom can keep aggregate industrial output positive while household-sensitive activity deteriorates. Conversely, weak consumer categories do not establish broad contraction if investment-linked production is expanding. H001/H002/H004 discrimination should therefore use the aggregate jointly with sector composition, housing, labor, credit, and earnings breadth. This is a direct market application of the existing Universal ambiguous-endpoint safeguard rather than a new causal law.
+The July CFNAI released Aug. 24 supplies an independent national cross-check on the same composition issue: the headline fell to -0.08, but the dominant negative category was personal consumption/housing (-0.09), while the employment contribution improved to -0.01. The later August flash services/composite readings were strong. This combination reinforces bifurcation rather than identifying either broad contraction or broad strength from one aggregate sign.
 
-## Treasury debt-management / liquidity-support refinement added 2026-08-19; persistence narrowed 2026-08-21
+This means an AI/capex/defense boom can keep aggregate industrial output positive while household-sensitive activity deteriorates. Conversely, weak consumer categories do not establish broad contraction if investment-linked production and services are expanding. H001/H002/H004 discrimination should therefore use aggregates jointly with sector composition, housing, labor, credit, and earnings breadth.
 
-Treasury's Aug. 19 announcement that long-duration nominal-coupon liquidity-support buybacks will rise from $2 billion to at least $4 billion per operation added an explicit **policy/liquidity pathway into the long end of the curve**. Treasury's official CMT curve fell from 4.71% to 4.65% at 10 years and from 5.28% to 5.19% at 30 years between Aug. 18 and Aug. 19.
+## Treasury debt-management / liquidity-support refinement added 2026-08-19; persistence narrowed 2026-08-21; flow attribution corrected 2026-08-24
 
-The Aug. 21 rebound to roughly **4.73% / 5.266%** on the 10-/30-year shows that the initial relief was not persistent. The model therefore reclassifies this channel as a **tactical liquidity/duration buffer**, not a durable structural override. Buybacks can alter market functioning, net duration absorption, and term premium at the margin, but their effect can be overwhelmed by growth, inflation, fiscal supply, private duration, or policy expectations.
+Treasury's Aug. 19 announcement that long-duration nominal-coupon liquidity-support buybacks would increase coincided with a material rally in the long end. The official CMT curve fell from 4.71% to 4.65% at 10 years and from 5.28% to 5.19% at 30 years between Aug. 18 and Aug. 19. The Aug. 21 rebound showed that this relief was not persistent.
 
-This refinement weakens any inference that either the initial rally or subsequent selloff uniquely identifies the buyback mechanism. It remains an application of Universal UL-0004 / FM-006.
+**Correction from Aug. 24 evidence:** Reuters reported that the enlarged long-duration buybacks had **not yet been executed** and were scheduled to begin Sept. 10. Therefore the pre-Sept. 10 yield response cannot be evidence of realized purchase-flow or realized duration absorption. The model now separates two channels:
+
+1. **Announcement / expectations / communication channel:** policy announcements can immediately change expectations about future liquidity, future net duration absorption, and official reaction functions, moving yields before any transaction occurs.
+2. **Realized purchase-flow channel:** only actual executed buybacks can directly alter realized market liquidity and net duration absorption. This channel must not receive empirical credit before purchases occur.
+
+Treasury also said the regular auction schedule would continue, so buybacks should not be modeled as mechanically eliminating structural issuance pressure. The channel remains a tactical liquidity/duration tool rather than a durable structural override. This correction is an application of source-layer and causal-identification discipline: timing/announcement evidence is not transaction-flow evidence.
 
 ## Labor-flow asymmetry refinement added 2026-08-20
 
