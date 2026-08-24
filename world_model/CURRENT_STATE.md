@@ -71,4 +71,4 @@ The response is that H003's structural branches remain live: Brent remains above
 ## Forecast status
 
 - **P000020 remains open:** 57% probability that the Aug. 27 first DOL release shows initial claims <220,000 **and** continuing claims >=1.800 million. It remains the direct test of the low-fire / sticky-reemployment labor split.
-- The next high-information near-term target is the Aug. 26 first BEA July core-PCE release. Because July predates most of the late-August oil shock, it should test **underlying core inflation persistence**, not be mislabeled as an oil-pass-through test.
+- **P000021 newly issued from v0.2.9:** 36% probability that the Aug. 26 first BEA release reports July core PCE **>=0.3% m/m**; point estimate 0.2%, 80% interval 0.1%-0.4%. The frozen published consensus point is 0.2%. This tests underlying core-inflation persistence between H001 and H003 and must not be used as a test of the later August oil-pass-through branch.
