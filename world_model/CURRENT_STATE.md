@@ -1,82 +1,74 @@
 # Current Market State
 
-**Model version:** 0.2.8  
-**Status:** Friday weekly state; twelve resolved binary-probability components; learning still unassessable by protocol threshold  
-**Evidence cutoff:** 2026-08-21T17:24:57-04:00
+**Model version:** 0.2.9  
+**Status:** Monday state; no forecast resolved this cycle; twelve resolved binary-probability components; learning still unassessable by protocol threshold  
+**Evidence cutoff:** 2026-08-24T17:36:26-04:00
+
+## Auditor result
+
+**No forecast horizon expired before this evidence cutoff.** P000020 remains open for the Aug. 27 first DOL claims release. Lifetime scoring therefore remains unchanged at **n=12**, mean Brier **0.225092**, mean log loss **0.642572**. No model revision receives credit from forecast outcomes in this cycle.
 
 ## OBSERVATIONS
 
-- P000014 resolved before model revision: the S&P 500 closed **7,674.37** on Aug. 21 versus the frozen Aug. 14 reference 7,785.76, so the weekly up-event was FALSE. Brier **0.2401**, log loss **0.673345**, point MAE **105.63**, 80% interval hit. The 7,780 point forecast modestly beat frozen no-change MAE **111.39** and recent-trend MAE **139.51**.
-- P000019 resolved before model revision: August flash U.S. Manufacturing PMI was **53.2**, so the >=54.0 event was FALSE. Brier **0.3136**, log loss **0.820981**, point MAE **1.0**, 80% interval hit. The forecast lost to both the 53.7 published-consensus point benchmark (0.5 MAE) and 53.9 July no-change benchmark (0.7 MAE), and to neutral binary Brier 0.25.
-- Across twelve resolved binary-probability components, lifetime mean Brier is **0.225092** and mean log loss **0.642572**. This remains far below the precommitted 30-resolution threshold; no learning claim is permitted.
-- August flash Services PMI rose to **56.8** from 54.6 and Composite Output to **56.0** from 54.5; services hiring was reported at its strongest pace in 19 months. Manufacturing PMI eased to 53.2 and factory output/order momentum was softer.
-- S&P Global reported that input and selling-price growth eased somewhat in August but remained elevated.
-- Brent settled at **$94.39** and WTI at **$87.06**, up **6.39%** and **5.66%** for the week.
-- U.S. Treasury yields rebounded after the earlier buyback-driven relief: Reuters reported the 10-year near **4.73%** and 30-year near **5.266%** on Aug. 21.
-- Reuters, citing BNP Paribas data, reported **$220 billion** of 2026 AI-hyperscaler debt issuance as of Aug. 10 versus **$12.5 billion** in the comparable prior-year period. Technology investment-grade spreads were around **89 bp**, 9 bp wider than the overall IG market, and recent deals required larger concessions.
-- No fresh post-Aug. 20 HY OAS observation was verified this cycle.
+- July CFNAI, released Aug. 24, was **-0.08** versus revised +0.06 in June; the three-month average fell to -0.04. Personal consumption/housing contributed **-0.09**, production +0.01, sales/orders/inventories +0.02, and employment -0.01, an improvement from -0.05.
+- Treasury Secretary Scott Bessent said Treasury will keep its regular auction schedule despite larger long-duration buybacks. Reuters reported that the enlarged buybacks **have not yet executed** and are scheduled to begin **Sept. 10**.
+- Brent settled at **$92.17** and WTI at **$85.01** on Aug. 24, each down **2.35%**, despite expanded Iran-related sanctions. Strait of Hormuz traffic remained constrained.
+- Reuters reported that emergency and commercial oil buffers have been drawn down materially during the current disruption, preserving an energy upside-tail risk despite Monday's price decline.
+- U.S. equities were softer with technology leading the decline, while Treasury yields and oil fell. The market-price endpoints are treated as weakly identifying rather than direct causal evidence.
 
 ## INFERENCE
 
-The national flash PMI materially weakens H002's current generalized-contraction branch. Services and composite activity accelerated, services hiring strengthened, and manufacturing remained above 50 even though it slowed.
+The July CFNAI is fresh national confirmation of the existing **composition/bifurcation** model rather than evidence of a generalized contraction. The largest negative category was personal consumption/housing while employment contribution improved, and later August flash services/composite activity was strong. This modestly strengthens H002's delayed household-downturn branch without overturning the evidence against an immediate broad recession.
 
-P000019 is a useful negative forecast result: the model over-weighted strong Empire State and Philadelphia headline surveys as evidence that national manufacturing would hold above July/consensus. The error does **not** imply that manufacturing is weak in absolute terms; it implies that regional headline surveys need an explicit aggregation/sector bridge before being translated into a national PMI forecast.
+Monday's oil decline and lower yields are mild contrary evidence to the immediate H003 squeeze, but one session is not enough to infer durable disinflation. Oil remains elevated and physical/buffer risks remain active.
 
-The same strong activity data do not uniquely support H001. With price pressures still elevated, oil near $94 Brent, long yields rebounding, and private/public duration supply heavy, strong nominal demand can keep the policy and financing constraint binding. This is the leading H003 counter-interpretation.
-
-The private-duration pathway receives stronger external support: AI-related bond issuance is large enough that investors are demanding wider spreads and new-issue concessions. This supports the **existence** of a supply-absorption channel but does not identify the magnitude of its causal contribution to Treasury yields.
-
-The Treasury buyback pathway is refined rather than discarded. The Aug. 19 intervention produced a material short-run long-end rally, but the Aug. 21 rebound shows that the effect should be treated as a tactical liquidity/duration buffer, not a durable substitute for underlying fiscal, inflation, growth, or private-duration forces.
+The most material model correction is causal rather than directional: **pre-Sept. 10 yield moves cannot be evidence of realized enlarged-buyback purchase flow.** Treasury's Aug. 19 announcement can have an immediate expectations/liquidity-signaling effect, but the realized purchase-flow / duration-absorption channel is distinct and has not yet been tested. The regular auction schedule continuing also means buybacks do not mechanically erase structural Treasury supply.
 
 ## Current regime
 
-**Resilient late-cycle expansion with strong services activity, uneven manufacturing/household sectors, and a now-slightly-leading inflation/duration-policy constraint over the benign soft-landing interpretation.**
+**Resilient but bifurcated late-cycle expansion, with household/housing weakness and strong services, while H001 soft landing and H003 inflation/duration constraint are now co-leading.**
 
 ## Hypothesis weights
 
 | Hypothesis | Weight |
 |---|---:|
 | H001 Soft landing | 0.34 |
-| H002 Late-cycle recession | 0.19 |
-| H003 Fiscal/inflation regime | 0.35 |
+| H002 Late-cycle recession | 0.20 |
+| H003 Fiscal/inflation regime | 0.34 |
 | H004 Productivity boom | 0.12 |
 
-**Change from Aug. 20:** H001 -0.01, H002 -0.03, H003 +0.04, H004 unchanged. The broad PMI activity/hiring evidence lowers H002. H003 gains because strong demand coexists with persistent energy pressure, rebounding long yields, and newly documented private-duration absorption costs. H001 remains close because the same activity strength is genuine evidence against contraction, and later inflation pass-through is not yet observed.
+**Change from Aug. 21:** H001 unchanged, H002 +0.01, H003 -0.01, H004 unchanged. July CFNAI's household/housing weakness restores a small amount of H002 weight. Monday's oil/yield relief and the buyback-flow attribution correction trim H003 slightly. H001 does not gain because the same national activity evidence is weaker than trend. H004 receives no direct productivity evidence.
 
 ## Skeptic result
 
-The Skeptic attacked H001 before the update. Its strongest case is that **strong growth is sign-ambiguous between H001 and H003**: robust services can be benign if inflation and yields ease, but it can instead keep the Fed and long-rate constraint tight when energy and price pressure persist. P000019 further shows that regional manufacturing strength did not generalize cleanly to the national index. The energy shock, long-yield rebound, and AI debt supply therefore prevent the strong PMI from being mapped mechanically into a soft-landing upgrade.
+The Skeptic attacked H003, the pre-update 0.35 leader. Its strongest case is that additional Iran sanctions produced lower rather than higher oil, July national activity was below trend, and the Aug. 24 Treasury clarification proves that enlarged-buyback purchase flow cannot explain the Aug. 19 yield rally because the purchases had not happened. H003 risks becoming unfalsifiable if every yield move is assigned post hoc to a different branch.
 
-The response is that H002 still loses substantial weight because composite/services activity and hiring are too strong for an already generalized contraction. The main contest shifts from H001-vs-H002 toward **H001-vs-H003**.
+The response is that H003's structural branches remain live: Brent remains above $90, physical energy buffers/flows remain constrained, regular Treasury auction supply continues, private-duration absorption costs remain observed, and August services demand is strong enough that lower yields cannot simply be attributed to generalized contraction. The appropriate update is therefore modest.
 
 ## Material causal changes
 
-1. **Strong activity is now conditioned on the inflation/rate response.** Growth strength plus easing prices/yields favors H001; growth strength plus persistent price pressure/higher policy expectations/long yields favors H003.
-2. **Regional-survey-to-national-manufacturing bridge added.** Empire/Philadelphia headlines are noisy and compositionally different from national PMI; future forecasts must use multiple regional components, national production composition, inventories/orders, and supply disruptions rather than linear headline extrapolation.
-3. **Private AI-duration supply confidence raised from low to moderate.** The scale of issuance and observed spread/concession response establish a real absorption-cost channel, while causal attribution to Treasury yields remains uncertain.
-4. **Treasury buybacks reclassified as a tactical buffer.** Debt-management actions can temporarily alter long-end liquidity and duration absorption, but one intervention cannot be assumed to suppress the structural clearing yield persistently.
+1. **Treasury buyback channel split into announcement versus realized-flow mechanisms.** Announcements can move expectations before execution; realized liquidity/duration absorption can receive causal credit only after purchases occur. This corrects loose prior wording and prevents a timing/source-layer error.
+2. **Composition-sensitive activity model reinforced, not newly invented.** July CFNAI independently confirms that an aggregate below-trend reading can coexist with improving employment contribution and later strong services because household/housing weakness dominates the aggregate.
+3. **No learning credit assigned.** No forecast resolved under v0.2.8 today; the system remains at n=12, below the precommitted learning threshold.
 
 ## Most important causal claims
 
 1. Weak labor demand can first show up as reduced hiring/re-employment without rising initial claims; initial and continued claims should be evaluated jointly.
-2. Strong real/nominal activity is not automatically a soft-landing signal: the accompanying inflation, policy, and yield response determines whether it favors H001 or H003.
-3. Regional manufacturing surveys are intermediate signals, not a direct substitute for national manufacturing measures.
-4. Commodity/inflation risk, Treasury issuance/term premium, private corporate duration supply, and Treasury debt-management all affect long yields; one yield move remains weakly identifying.
-5. AI/capex/defense demand can support aggregate activity while household-sensitive sectors weaken, but financing the AI buildout can itself tighten financial conditions.
-6. Commodity shocks pass into measured inflation with lags and state dependence; the August oil shock must be tested in later inflation expectations and price data.
+2. Strong activity is not automatically a soft-landing signal: the accompanying inflation, policy, and yield response determines whether it favors H001 or H003.
+3. Aggregate activity measures require composition checks; household/housing weakness can coexist with strong services/capex-linked activity.
+4. Regional manufacturing surveys are intermediate signals, not direct substitutes for national manufacturing measures.
+5. Commodity/inflation risk, Treasury issuance/term premium, private corporate duration supply, and Treasury policy communication/executed flows affect long yields through distinct channels; one yield move remains weakly identifying.
+6. Commodity shocks pass into measured inflation with lags and state dependence; July PCE can test underlying core persistence but cannot test the later August oil shock.
 
 ## What would surprise the model?
 
-- Strong services/composite activity persists while both inflation expectations and long yields fall materially despite oil remaining near current levels; that would weaken H003 and favor H001.
-- Initial claims stay near 200,000 while continued claims rise persistently and payroll/hiring measures weaken for several more weeks; that would imply a more durable low-fire/weak-reemployment regime than a simple soft-landing labor story.
-- National manufacturing accelerates sharply next month while regional surveys remain volatile, suggesting P000019 was timing noise rather than evidence for an aggregation problem.
-- AI-related corporate issuance remains exceptionally heavy but tech spreads/concessions and long-end yields normalize without offsetting policy changes, weakening the private-duration-supply edge.
-- Oil remains near the current range but later inflation expectations and price data fail to firm, materially weakening H003's pass-through branch.
+- Strong services/composite activity persists while core inflation, inflation expectations, and long yields all fall materially despite oil remaining elevated; that would favor H001 over H003.
+- Initial claims stay near 200,000 while continuing claims rise persistently and broader hiring/payroll measures weaken; that would strengthen the low-fire/weak-reemployment labor regime.
+- Household/housing weakness broadens into employment, production, credit, and earnings deterioration despite current strong services; that would raise H002 materially.
+- After enlarged Treasury buybacks actually begin, long-end liquidity/yields show no detectable response even around comparable operations, weakening the realized-flow branch.
+- Oil remains near or above current levels but later inflation expectations and price data fail to firm, weakening H003's pass-through branch.
 
-## Forecast-error linkage and update discipline
+## Forecast status
 
-P000019 is the material forecast error informing this cycle's methodological model revision. Its loss to both consensus and no-change point benchmarks is specifically linked to the new regional-to-national aggregation safeguard. The model is **not** revised toward weaker broad growth solely because the manufacturing forecast missed; the same first flash release showed very strong services/composite activity.
-
-P000014's weekly S&P outcome does not drive macro weights. The point forecast modestly beat its frozen benchmarks, but the equity endpoint is causally ambiguous and the large absolute move remains inside a broad interval.
-
-No model change is credited merely because a post-hoc story can explain either outcome. All new causal updates are tied to separately recorded post-cutoff evidence and the prospectively frozen forecast errors above.
+- **P000020 remains open:** 57% probability that the Aug. 27 first DOL release shows initial claims <220,000 **and** continuing claims >=1.800 million. It remains the direct test of the low-fire / sticky-reemployment labor split.
+- The next high-information near-term target is the Aug. 26 first BEA July core-PCE release. Because July predates most of the late-August oil shock, it should test **underlying core inflation persistence**, not be mislabeled as an oil-pass-through test.
