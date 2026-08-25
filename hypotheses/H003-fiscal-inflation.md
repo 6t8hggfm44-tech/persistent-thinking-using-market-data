@@ -2,7 +2,7 @@
 
 **Prior weight:** 0.25  
 **Current weight:** 0.34  
-**Status:** Active competing hypothesis; co-leading with H001
+**Status:** Active competing hypothesis; narrow leader over H001
 
 ## Thesis
 Persistent fiscal impulse and duration-supply pressure keep nominal growth, inflation risk, and long yields structurally elevated.
@@ -34,3 +34,4 @@ Inflation/commodity surprises and unusually heavy duration supply should transmi
 - 2026-08-20 posterior 0.31: Brent rose to $93.78 and WTI to $87.83 as conflict/sanctions risk intensified, keeping the prospective energy-to-inflation / real-income / policy-constraint channel active. H003 gains only 0.01 because the Philadelphia Fed price indexes eased, the 10-year CMT ended at 4.69% rather than breaking sharply higher, and spot energy still requires prospective pass-through confirmation in inflation expectations and later price data.
 - 2026-08-21 posterior 0.35: Brent settled at $94.39, the 10-year/30-year Treasury yields rebounded to roughly 4.73%/5.266% after only brief announcement-driven buyback relief, and Reuters documented $220 billion of 2026 AI-hyperscaler debt issuance with wider tech spreads and larger new-issue concessions. At the same time, flash services/composite activity accelerated strongly while price pressures remained elevated. This combination strengthens the H003 version in which resilient nominal demand, energy pressure, and public/private duration supply keep the policy and long-rate constraint binding. The increase is limited to 0.04 because later inflation pass-through is not yet observed and a single yield move cannot identify the dominant cause.
 - 2026-08-24 posterior **0.34**: Brent fell 2.35% to $92.17 despite expanded Iran sanctions and Treasury yields eased, modestly weakening the immediate energy/duration squeeze. More importantly, Treasury clarified that the enlarged long-duration buybacks have not yet executed and begin Sept. 10; therefore pre-Sept. 10 yield relief cannot validate a realized purchase-flow channel. The downgrade is only 0.01 because oil remains elevated, physical/buffer risks persist, regular Treasury auctions continue, and August services activity remains strong enough that a simple demand-collapse explanation is incomplete.
+- 2026-08-25 posterior **0.34 unchanged**: Brent and WTI fell sharply to $88.58/$82.36, weakening the immediate energy-escalation branch, but consumer inflation expectations rose to 5.8% and Boston Fed President Collins kept a conditional tightening path live if disinflation stalls. Housing weakness supplies a credible rival disinflation channel. The offsetting evidence leaves H003 unchanged and narrowly leading only because H001 shifts 0.01 toward H002.
