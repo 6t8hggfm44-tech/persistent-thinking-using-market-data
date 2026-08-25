@@ -1,7 +1,7 @@
 # H002: Late-Cycle Recession
 
 **Prior weight:** 0.25  
-**Current weight:** 0.20  
+**Current weight:** 0.21  
 **Status:** Active competing hypothesis; reduced but unresolved downside rival
 
 ## Thesis
@@ -33,3 +33,4 @@ If labor and consumer-demand weakness persist over 1–3 months and are followed
 - 2026-08-20 posterior 0.22: P000017's >=220,000 claims event resolved false at 206,000 and the Philadelphia Fed current-activity index rose to 47.4 with a strong employment reading. Together these are material contrary evidence to the specific thesis that earlier household weakness is already transmitting into generalized layoffs/activity contraction. H002 remains live because continued claims rose, hiring can weaken without layoffs, housing/retail softness remains unresolved, and the energy shock can create a later contraction pathway.
 - 2026-08-21 posterior 0.19: August flash services PMI rose to 56.8, composite output to 56.0, and services hiring accelerated, providing broad national evidence against a current generalized contraction. Manufacturing still expanded at 53.2 even though P000019 missed high. H002 loses 0.03, but remains live because housing/consumer weakness, slow re-employment, high long rates, and the energy shock can still create a delayed downturn. No fresh post-Aug. 20 credit-spread observation was verified today.
 - 2026-08-24 posterior **0.20**: July CFNAI fell to -0.08 and its personal-consumption/housing component contributed -0.09, supplying a fresh national cross-check that household-sensitive weakness was not confined to one retail or housing release. The increase is only 0.01 because employment contribution improved and the later August flash services/composite data remain too strong for a current generalized contraction.
+- 2026-08-25 posterior **0.21**: July new-home sales fell 10.5% to 607,000, below consensus, and the August Expectations Index fell to 68.2, reinforcing the delayed household-demand weakness branch. The increase is limited to 0.01 because the Present Situation Index and jobs differential improved, spot oil fell sharply, and strong August services still argue against a current generalized contraction.
