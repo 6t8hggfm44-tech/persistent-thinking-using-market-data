@@ -108,4 +108,10 @@ The forecast error indicates that regional headline surveys should not be linear
 
 This change is linked to a preserved out-of-sample forecast error and is intended to improve later national-activity forecasts; it should receive no learning credit until those later forecasts resolve.
 
+## AI investment-demand versus realized-productivity refinement added 2026-08-26
+
+Nvidia's fiscal-Q2 results and July capital-goods data supply direct evidence of **very strong AI/investment demand**, but they do not directly measure economy-wide productivity. The causal model therefore keeps two distinct stages: AI/capex spending is an input/investment-demand node; H004's productivity-boom thesis requires later evidence that this investment raises output per unit of labor/capital, broad real output, operating efficiency, margins, or real incomes.
+
+This prevents a proxy-scope substitution in which semiconductor vendor revenue, data-center buildout, or capital spending is treated as if it were already realized aggregate productivity. Strong AI demand can simultaneously support H001 through investment resilience, H003 through financing/duration and nominal-demand pressure, and only **conditionally** H004 if subsequent output-efficiency evidence appears. No H004 weight is added from investment demand alone.
+
 Every material edge should eventually carry sign, expected lag, confidence, evidence, and known failure conditions.
