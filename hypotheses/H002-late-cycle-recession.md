@@ -1,7 +1,7 @@
 # H002: Late-Cycle Recession
 
 **Prior weight:** 0.25  
-**Current weight:** 0.21  
+**Current weight:** 0.20  
 **Status:** Active competing hypothesis; reduced but unresolved downside rival
 
 ## Thesis
@@ -34,3 +34,4 @@ If labor and consumer-demand weakness persist over 1–3 months and are followed
 - 2026-08-21 posterior 0.19: August flash services PMI rose to 56.8, composite output to 56.0, and services hiring accelerated, providing broad national evidence against a current generalized contraction. Manufacturing still expanded at 53.2 even though P000019 missed high. H002 loses 0.03, but remains live because housing/consumer weakness, slow re-employment, high long rates, and the energy shock can still create a delayed downturn. No fresh post-Aug. 20 credit-spread observation was verified today.
 - 2026-08-24 posterior **0.20**: July CFNAI fell to -0.08 and its personal-consumption/housing component contributed -0.09, supplying a fresh national cross-check that household-sensitive weakness was not confined to one retail or housing release. The increase is only 0.01 because employment contribution improved and the later August flash services/composite data remain too strong for a current generalized contraction.
 - 2026-08-25 posterior **0.21**: July new-home sales fell 10.5% to 607,000, below consensus, and the August Expectations Index fell to 68.2, reinforcing the delayed household-demand weakness branch. The increase is limited to 0.01 because the Present Situation Index and jobs differential improved, spot oil fell sharply, and strong August services still argue against a current generalized contraction.
+- 2026-08-26 posterior **0.20**: July real PCE was essentially flat, so household weakness remains real, but July durable-goods/capital-goods data, upward Q2 revisions to consumer spending and private domestic demand, sharply higher corporate profits, and extraordinary AI-linked investment demand are contrary to a current generalized contraction. H002 loses only 0.01 because housing and forward household expectations remain weak and tomorrow's joint initial/continued-claims forecast is still a direct test of whether labor weakness is broadening.
