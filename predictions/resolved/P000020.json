@@ -1,0 +1,81 @@
+{
+  "original_forecast": {
+    "id": "P000020",
+    "created_at": "2026-08-21T17:24:57-04:00",
+    "evidence_cutoff": "2026-08-21T17:24:57-04:00",
+    "model_version": "0.2.8",
+    "target": "US_WEEKLY_CLAIMS_JOINT_FLOW_TEST_2026_08_27",
+    "horizon": "event",
+    "resolution_at": "2026-08-27 08:30 ET first DOL release",
+    "forecast_type": "joint_binary_probability_and_two_point_distributions",
+    "forecast": {
+      "event": "first-release initial claims for week ending 2026-08-22 are <220000 AND continuing claims for week ending 2026-08-15 are >=1800000",
+      "probability": 0.57,
+      "initial_claims_point": 209000,
+      "initial_claims_lower_80": 194000,
+      "initial_claims_upper_80": 225000,
+      "continuing_claims_point": 1812000,
+      "continuing_claims_lower_80": 1750000,
+      "continuing_claims_upper_80": 1870000,
+      "units": "claims"
+    },
+    "benchmarks": [
+      {
+        "name": "neutral_joint_binary",
+        "probability": 0.50,
+        "note": "Protocol comparator for the joint event; not claimed to be an empirical base rate."
+      },
+      {
+        "name": "latest_observation_no_change",
+        "initial_claims": 206000,
+        "continuing_claims": 1799000,
+        "joint_event_under_benchmark": false,
+        "note": "Frozen from the first Aug. 20 DOL release."
+      },
+      {
+        "name": "published_calendar_point_forecast",
+        "initial_claims": 210000,
+        "continuing_claims": 1811000,
+        "joint_event_under_benchmark": true,
+        "note": "Trading Economics calendar forecast visible at the Aug. 21 evidence cutoff; frozen as an external point comparator, not a probability benchmark."
+      }
+    ],
+    "resolution_rule": "Use the first U.S. Department of Labor weekly unemployment-insurance release published 2026-08-27. Resolve the joint event TRUE only if seasonally adjusted initial claims for the week ending 2026-08-22 are below 220,000 AND seasonally adjusted continuing claims for the week ending 2026-08-15 are at least 1,800,000. Otherwise resolve FALSE. Score the 0.57 joint probability by Brier and log loss. Score the two point estimates separately by absolute error versus the same first-release values, compare each against frozen no-change and published-calendar point benchmarks, and record each 80% interval hit. Do not substitute later revisions unless DOL corrects the initial release before scoring.",
+    "rationale": [
+      "The Aug. 20 release showed low separations at 206,000 initial claims but continuing claims at 1.799 million, consistent with the newly separated low-fire / slower-reemployment pathway.",
+      "The Aug. 21 services PMI and hiring strength argue against an imminent layoff wave, keeping the <220,000 initial-claims leg more likely than not.",
+      "Continuing claims have remained stickier than initial claims and the external calendar point forecast is 1.811 million, so the >=1.800 million continuing-claims leg directly tests whether weak re-employment can coexist with low layoffs.",
+      "A joint event is used rather than two highly correlated headline forecasts to avoid inflating sample size while still testing the causal split introduced in v0.2.7."
+    ],
+    "hypothesis_links": ["H001", "H002"],
+    "surprising_if": [
+      "Initial claims are >=230,000 and continuing claims are >=1.830 million, indicating a faster transition from low-hire weakness into separations than the model expects.",
+      "Initial claims are <200,000 and continuing claims are <1.760 million, indicating both low layoffs and materially faster re-employment than the current low-fire/sticky-duration model expects."
+    ],
+    "status": "open"
+  },
+  "resolution": {
+    "resolved_at": "2026-08-27T17:34:30-04:00",
+    "outcome": {
+      "initial_claims": 203000,
+      "continuing_claims": 1778000,
+      "joint_event": false
+    },
+    "source": "U.S. Department of Labor, Unemployment Insurance Weekly Claims, first release published 2026-08-27 at 08:30 EDT. Initial claims for week ending Aug. 22 were 203,000; insured unemployment/continuing claims for week ending Aug. 15 were 1,778,000.",
+    "source_url": "https://www.dol.gov/ui/data.pdf",
+    "scores": {
+      "brier": 0.3249,
+      "log_loss": 0.843970,
+      "neutral_joint_binary_brier": 0.25,
+      "initial_claims_absolute_error": 6000,
+      "initial_claims_interval_hit": 1,
+      "initial_claims_no_change_absolute_error": 3000,
+      "initial_claims_published_calendar_absolute_error": 7000,
+      "continuing_claims_absolute_error": 34000,
+      "continuing_claims_interval_hit": 1,
+      "continuing_claims_no_change_absolute_error": 21000,
+      "continuing_claims_published_calendar_absolute_error": 33000
+    },
+    "audit_note": "Forecast content above is preserved without hindsight alteration. The <220,000 initial-claims leg resolved TRUE at 203,000, but the >=1.800 million continuing-claims leg resolved FALSE at 1.778 million, so the joint event resolved FALSE. The 0.57 probability lost to the neutral 0.50 Brier comparator. Both model point estimates were inside their 80% intervals, but the initial-claims point lost to frozen no-change while narrowly beating the external calendar point, and the continuing-claims point lost to both frozen no-change and the external calendar point. This is negative out-of-sample evidence for the specific near-term sticky-reemployment formulation used in v0.2.8, not a refutation of labor-flow asymmetry in general."
+  }
+}
