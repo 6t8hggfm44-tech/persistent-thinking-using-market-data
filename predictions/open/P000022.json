@@ -1,0 +1,50 @@
+{
+  "id": "P000022",
+  "created_at": "2026-08-27T17:34:30-04:00",
+  "evidence_cutoff": "2026-08-27T17:34:30-04:00",
+  "model_version": "0.2.12",
+  "target": "US_10Y_CMT_2026_08_28_POST_JACKSON_HOLE",
+  "horizon": "1d",
+  "resolution_at": "2026-08-28 official Treasury daily par yield curve publication",
+  "forecast_type": "distribution_and_binary_probability",
+  "forecast": {
+    "event": "official 2026-08-28 10-year Treasury constant-maturity/par yield is >=4.70%",
+    "probability": 0.47,
+    "point_estimate": 4.69,
+    "lower_80": 4.57,
+    "upper_80": 4.81,
+    "units": "percent"
+  },
+  "benchmarks": [
+    {
+      "name": "neutral_binary",
+      "probability": 0.50,
+      "note": "Protocol comparator; not an empirical base rate."
+    },
+    {
+      "name": "latest_observation_no_change",
+      "point_estimate": 4.67,
+      "event_under_benchmark": false,
+      "note": "Frozen from the official Treasury Aug. 27 10-year par yield."
+    },
+    {
+      "name": "one_day_recent_trend",
+      "point_estimate": 4.68,
+      "event_under_benchmark": false,
+      "note": "Frozen simple extrapolation of the Aug. 26 to Aug. 27 official CMT move, 4.66% to 4.67%."
+    }
+  ],
+  "resolution_rule": "Use the official U.S. Treasury daily par yield curve/CMT table for 2026-08-28. Resolve TRUE if the published 10-year value is 4.70% or higher at Treasury's published precision, otherwise FALSE. Score the 0.47 probability with Brier and log loss; score the 4.69 point estimate by absolute error against the same value; compare point error with the frozen 4.67 no-change and 4.68 one-day recent-trend benchmarks; record 80% interval coverage. Do not substitute intraday market quotes or later corrections unless Treasury revises the dated official value before scoring.",
+  "rationale": [
+    "H003 remains the narrow leader at 0.35, and several Fed officials used Jackson Hole to emphasize persistent inflation risk, creating upside yield risk around Chair Warsh's Aug. 28 remarks.",
+    "The official Aug. 27 10-year yield is only 4.67% and monthly core inflation was contained at 0.2%, so a >=4.70% event is kept slightly below even rather than treated as a base case.",
+    "P000020's failure reduced the recession/labor-stress branch, which makes a large safe-haven rally less likely, but one-day yield movement remains multiply determined by policy communication, inflation expectations, term premium, positioning and Treasury-specific factors.",
+    "The forecast is designed to test whether the current inflation/policy-constraint state produces an observable long-yield repricing after the highest-profile near-term policy communication event."
+  ],
+  "hypothesis_links": ["H001", "H003"],
+  "surprising_if": [
+    "The 10-year CMT is >=4.82%, indicating much stronger policy/term-premium pressure than the forecast distribution expects.",
+    "The 10-year CMT is <=4.56% despite hawkish inflation commentary, indicating a much stronger benign/disinflation or growth-risk/rate-relief response than expected."
+  ],
+  "status": "open"
+}
