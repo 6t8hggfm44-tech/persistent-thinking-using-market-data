@@ -1,0 +1,56 @@
+{
+  "id": "P000023",
+  "created_at": "2026-08-28T18:07:44-04:00",
+  "evidence_cutoff": "2026-08-28T18:07:44-04:00",
+  "model_version": "0.2.13",
+  "target": "US_CORE_CPI_MOM_AUG_2026_FIRST_RELEASE",
+  "horizon": "14d",
+  "resolution_at": "2026-09-11 08:30 ET first BLS CPI release",
+  "forecast_type": "binary_probability_and_point_distribution",
+  "forecast": {
+    "event": "first-release August 2026 CPI excluding food and energy month-over-month change is >=0.3%",
+    "probability": 0.54,
+    "point_estimate": 0.3,
+    "lower_80": 0.1,
+    "upper_80": 0.4,
+    "units": "percent month-over-month"
+  },
+  "benchmarks": [
+    {
+      "name": "neutral_binary",
+      "probability": 0.50,
+      "note": "Protocol comparator; not an empirical base rate."
+    },
+    {
+      "name": "latest_observation_no_change",
+      "point_estimate": 0.2,
+      "event_under_benchmark": false,
+      "note": "Frozen from the first July 2026 CPI release: core CPI +0.2% m/m."
+    },
+    {
+      "name": "two_release_recent_mean",
+      "point_estimate": 0.1,
+      "event_under_benchmark": false,
+      "note": "Frozen simple mean of first-release June 2026 core CPI 0.0% and July 2026 core CPI 0.2%."
+    }
+  ],
+  "benchmark_note": "No sufficiently stable timestamped external consensus for the Sept. 11 August core-CPI release was located at the Aug. 28 evidence cutoff, so no later consensus will be retrofitted into the original forecast record.",
+  "resolution_rule": "Use the first U.S. Bureau of Labor Statistics CPI release published 2026-09-11 at 08:30 ET. Resolve TRUE if the seasonally adjusted August 2026 CPI excluding food and energy month-over-month change is 0.3% or higher at BLS's published precision; otherwise FALSE. Score the 0.54 probability with Brier and log loss. Score the 0.3% point estimate by absolute error and compare it with the frozen July no-change point of 0.2% and the frozen June-July two-release mean of 0.1%. Record whether the realized value lies in the 0.1%-0.4% 80% interval. Do not substitute later revisions or a later-created consensus benchmark.",
+  "rationale": [
+    "H003 is the narrow leader at 0.36 versus H001 at 0.34 after Warsh's Aug. 28 speech made the current price-stability reaction function unusually explicit, while H001 remains close because oil fell sharply and medium-term inflation expectations remain broadly anchored.",
+    "Warsh said recent better summer inflation readings had not convinced him that the underlying trend had improved; that raises the probability of renewed core persistence above a pure recent-trend extrapolation.",
+    "July core CPI was only 0.2% m/m and June was 0.0%, so the model keeps the >=0.3% event only modestly above even rather than making a high-confidence inflation-reacceleration call.",
+    "Core CPI is chosen rather than headline CPI because the immediate oil/Hormuz channel weakened sharply this week; the target more directly tests H003's underlying-inflation/policy-constraint branch against H001's benign-disinflation branch.",
+    "The interval is not widened despite geopolitical uncertainty because the experiment's 80% intervals have covered every resolved interval-bearing forecast so far; preserving sharpness is part of the calibration test."
+  ],
+  "hypothesis_links": ["H001", "H003"],
+  "surprising_if": [
+    "Core CPI is <=0.0% m/m while contemporaneous activity and labor remain resilient, materially strengthening H001's benign-disinflation branch.",
+    "Core CPI is >=0.5% m/m despite lower late-August oil, indicating much stronger underlying price persistence than the current distribution assigns."
+  ],
+  "source_notes": [
+    "BLS September 2026 schedule lists the August CPI release for 2026-09-11 at 08:30 ET.",
+    "Reuters reported July core CPI +0.2% m/m and June core CPI 0.0% m/m in their respective first-release coverage."
+  ],
+  "status": "open"
+}
