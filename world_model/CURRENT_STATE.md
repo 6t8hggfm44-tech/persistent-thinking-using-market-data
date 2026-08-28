@@ -52,6 +52,7 @@ The key identification warning is that the 10-year yield is a downstream endpoin
 
 ## Forecast status
 - **P000022 resolved TRUE:** Brier 0.2809, log loss 0.755023; point MAE 4 bp versus no-change 6 bp and recent trend 5 bp; interval hit.
+- **P000023 open:** 54% probability first-release August core CPI is >=0.3% m/m on Sept. 11; point 0.3%, 80% interval 0.1%-0.4%. Frozen point benchmarks are July no-change at 0.2% and the June-July two-release mean at 0.1%; no later consensus will be retrofitted.
 - Longer-horizon legacy forecasts remain governed by their original horizons and resolution rules.
 
 ## What would surprise the model?
