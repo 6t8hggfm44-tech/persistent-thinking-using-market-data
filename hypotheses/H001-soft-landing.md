@@ -1,7 +1,7 @@
 # H001: Soft Landing
 
 **Prior weight:** 0.25  
-**Current weight:** 0.33  
+**Current weight:** 0.34  
 **Status:** Active competing hypothesis; close second behind H003
 
 ## Thesis
@@ -36,3 +36,6 @@ Weak labor or demand data accompanied by low layoffs, stable credit, resilient e
 - 2026-08-21 posterior 0.34: flash services PMI at 56.8 and composite output at 56.0 strongly argue against immediate generalized contraction, but the same release still showed elevated price pressure while Brent settled at $94.39 and long Treasury yields rebounded. P000019 also showed that regional manufacturing headlines overstated national manufacturing strength. H001 therefore retains substantial support but loses 0.01 to H003 because strong demand is not benign if it keeps the inflation/policy constraint binding.
 - 2026-08-24 posterior **0.34 unchanged**: Monday oil and yields eased, which modestly helps the benign-inflation/rate side of H001, but July CFNAI fell below trend with a sharp consumption/housing drag. The cross-signals offset. Treasury's clarification that enlarged buybacks have not yet executed changes the causal interpretation of prior yield moves but does not itself establish a soft landing.
 - 2026-08-25 posterior **0.33**: July new-home sales fell 10.5% to 607,000 and forward consumer expectations weakened, adding another household/housing confirmation. The sharp oil decline is supportive of the benign inflation channel, but consumer inflation expectations rose and current labor perceptions improved rather than collapsing. Only 0.01 shifts from H001 to H002; this is not treated as evidence of a generalized recession.
+- 2026-08-26 posterior **0.33 unchanged**: July monthly core PCE was contained at 0.2% and oil fell, both supportive of benign disinflation, while stronger capital-goods/private-demand and profit data argued against recession. H003 nevertheless gained from still-high annual inflation plus demand resilience, so H001 remained unchanged rather than receiving a favorable-score boost from P000021.
+- 2026-08-27 posterior **0.34**: P000020's specific sticky-reemployment joint event failed because continuing claims fell to 1.778 million while initial claims remained only 203,000. The prospective labor result transfers 0.01 from H002 to H001. This is support for current labor resilience, not proof that all hiring weakness has disappeared.
+- 2026-08-28 posterior **0.34 unchanged**: Brent and WTI ended the week more than 5%/4% lower and Warsh said medium-term inflation expectations remain broadly anchored, both preserving the benign path. But his explicit inflation-first reaction-function language and the official 10-year yield rise to 4.73% prevent an upgrade. H001 remains nearly tied with H003 rather than being rejected.
