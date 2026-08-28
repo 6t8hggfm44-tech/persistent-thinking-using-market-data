@@ -1,56 +1,61 @@
 # Current Market State
 
-**Model version:** 0.2.12  
-**Status:** Thursday state; P000020 resolved; fourteen resolved binary-probability components; learning still unassessable by protocol threshold  
-**Evidence cutoff:** 2026-08-27T17:34:30-04:00
+**Model version:** 0.2.13  
+**Status:** Friday post-close state; P000022 resolved; fifteen resolved binary-probability components; no demonstrated learning  
+**Evidence cutoff:** 2026-08-28T18:07:44-04:00
 
 ## Auditor result
-P000020 resolved before post-cutoff evidence was used for model revision. DOL reported initial claims 203,000 and continuing claims 1.778 million. The joint event `<220k initial AND >=1.800m continuing` resolved FALSE because the continuing-claims leg failed. The 0.57 probability scored Brier **0.3249** and log loss **0.843970**, worse than the neutral 0.50 comparator. Initial point error was 6,000 versus 3,000 no-change and 7,000 external-calendar error; continuing point error was 34,000 versus 21,000 no-change and 33,000 external-calendar error. Both 80% intervals covered.
+P000022 was resolved before post-Aug. 27 evidence was used for model revision. Treasury's official Aug. 28 daily par yield curve reported the 10-year rate at **4.73%**, so the precommitted `>=4.70%` event resolved TRUE. The 0.47 probability scored Brier **0.2809** and log loss **0.755023**, worse than the neutral 0.50 comparator. The 4.69 point estimate had **4 bp** absolute error versus **6 bp** for frozen no-change and **5 bp** for the frozen one-day recent-trend benchmark. The 4.57%-4.81% 80% interval covered.
 
-Lifetime scoring is now **n=14**, mean Brier **0.225400**, mean log loss **0.642937**. The sample remains far below the precommitted 30-resolution threshold and targets are heterogeneous. **No learning claim is permitted.**
+Lifetime scoring is now **n=15**, mean Brier **0.229100**, mean log loss **0.650410**. Descriptive skill versus a neutral 0.50 probability comparator is **+0.0836 Brier skill** and **+0.0617 log-loss skill**, but targets are heterogeneous and the sample is only half of the precommitted 30-resolution minimum. **No learning claim is permitted.**
 
 ## OBSERVATIONS
-- DOL: 203k initial claims; 1.778m continuing claims; both lower than the prior revised week.
-- Advance July goods-trade deficit widened to $118.8b; exports fell 2.9%, imports rose 3.7%, with capital goods an important import contributor.
-- Brent settled $89.70 and WTI $83.53; oil rebounded but remained below last week's highs.
-- Treasury official Aug. 27 par curve: 10-year 4.67%, 30-year 5.19%, each 1 bp above Aug. 26.
-- Several Fed officials emphasized persistent inflation risk and openness to further tightening if progress stalls.
-- S&P 500 closed 7,730.99, up 0.72%, with technology leadership dominant.
+- Fed Chair Kevin Warsh said current labor conditions are consistent with full employment, described prices as the Fed's predominant current focus, said recent better inflation readings had not established a changed underlying trend, and said the Fed must see inflation moving clearly and sufficiently quickly to 2% or it has “work to do.” He also said medium-term inflation expectations remain broadly anchored and committed to a discipline rather than a specific decision.
+- BLS's preliminary March 2026 CES benchmark revision estimated total nonfarm employment 79,000 lower (-0.1%) and private employment 178,000 lower (-0.1%) over the relevant 12-month benchmark period; the final revision is due in February 2027.
+- Treasury's official 10-year par yield rose **4.67% -> 4.73%** and the 30-year **5.19% -> 5.22%** from Aug. 27 to Aug. 28.
+- Brent settled **$89.31** and WTI **$83.40**, down more than 5% and 4% for the week amid tentative/choppy recovery in Hormuz flows and reopening rumors.
+- Final August University of Michigan sentiment was **51.7**. The S&P 500 closed **7,711.76**, down 0.25% Friday but up 0.49% for the week; breadth was negative Friday without a disorderly broad selloff.
 
 ## INFERENCE
-P000020 is negative out-of-sample evidence for the **specific sticky-reemployment formulation** used in v0.2.8. The low-fire leg survived, but a single continuing-claims observation near 1.8m was too fragile to justify a durable re-employment-regime inference. Continuing claims remain useful, but future labor-regime updates should require persistence or corroboration from hiring, vacancies, payroll breadth, unemployment duration, or similar measures.
+The strongest new information is a cleaner read on the **policy reaction function**, not a new macro causal edge. Warsh's direct statement that labor is consistent with full employment while inflation progress remains inadequate strengthens H003's policy-constraint branch. This is higher-quality evidence about policy intent than inferring intent from a yield or equity move.
 
-The larger goods deficit may subtract from measured Q3 GDP, but strong capital-goods imports make the composition inconsistent with a simple domestic-demand-collapse story. This reinforces the existing composition/growth-accounting safeguard rather than adding a new edge.
+At the same time, the immediate **energy-escalation branch weakened materially** as oil fell sharply over the week, and Warsh said medium-term inflation expectations remain anchored. Those observations preserve H001 as a close rival and prevent a larger H003 upgrade.
 
-Today's oil rebound and Fed inflation warnings keep H003's policy-constraint branch alive, while the resilient claims data modestly weaken H002. The 10-year yield's limited move prevents a larger H003 upgrade.
+The BLS benchmark revision supports the idea that hiring growth has been weaker than headline unemployment/claims alone suggest, especially in the private sector. It does **not** reverse P000020's error-linked revision: current claims still do not support promoting one continuing-claims threshold into a durable sticky-reemployment regime. The labor-flow split remains useful, but it needs corroboration from payroll breadth, vacancies, hiring, unemployment duration and future claims.
+
+P000022 is deliberately read in two layers: the point forecast modestly beat simple yield benchmarks, but the binary probability lost to neutral. The realized 6 bp rise is compatible with H003 yet does not identify the speech, inflation persistence, term premium, or positioning as the sole cause.
 
 ## Current regime
-**Resilient expansion with household/housing softness and still-elevated inflation. H003 remains the narrow leader because inflation/policy risk persists, while H001 gains modestly from labor resilience; H002 loses weight because the prospectively tested sticky-reemployment signal failed to persist this week.**
+**Resilient but bifurcated expansion with weak household sentiment/housing, low current layoffs, still-high underlying inflation, and a Fed reaction function focused primarily on price stability. H003 remains the narrow leader because the policy constraint is explicit even as the immediate oil shock eases; H001 remains close because energy is falling and inflation expectations are still broadly anchored.**
 
 ## Hypothesis weights
 | Hypothesis | Weight |
 |---|---:|
 | H001 Soft landing | 0.34 |
-| H002 Late-cycle recession | 0.19 |
-| H003 Fiscal/inflation regime | 0.35 |
+| H002 Late-cycle recession | 0.18 |
+| H003 Fiscal/inflation regime | 0.36 |
 | H004 Productivity boom | 0.12 |
 
-**Change from Aug. 26:** H001 +0.01, H002 -0.01, H003 unchanged, H004 unchanged. The transfer is driven by P000020's failed continuing-claims leg plus the fresh low-claims release, not by post-hoc reinterpretation of the forecast.
+**Change from Aug. 27:** H001 unchanged, H002 -0.01, H003 +0.01, H004 unchanged. The small transfer from H002 to H003 reflects direct Warsh reaction-function evidence and his full-employment assessment, while the modest/old benchmark revision and weak sentiment preserve H002 as a delayed rival. Lower oil and anchored expectations prevent moving weight from H001.
 
 ## Skeptic result
-The Skeptic attacked H003. The strongest H001 case is that both initial and continuing claims improved, oil remains below last week's peak despite today's rebound, and long yields did not break sharply higher despite hawkish Fed communication. H003 risks becoming too flexible if every sign of strength is automatically classified as inflationary. The response is that annual inflation remains high, Fed officials continue to flag upside risk, and energy/geopolitical pressure has not disappeared. The appropriate update is therefore small.
+The Skeptic attacked H003. The strongest H001 countercase is that oil has fallen sharply, medium-term inflation expectations remain anchored, and Warsh explicitly avoided a fixed policy decision. If growth remains resilient while August inflation cools and long yields subsequently retreat, Friday's rate move will look like a transitory communication/positioning response rather than confirmation of a persistent inflation regime. H003 would become unfalsifiable if every strong activity print, every high yield, and every policy comment were automatically classified as inflationary while contrary oil and household evidence were discounted.
+
+The key identification warning is that the 10-year yield is a downstream endpoint with multiple causes. The model therefore does not attribute the 4.67% -> 4.73% move to Warsh alone.
 
 ## Material model changes
-1. **Sticky-reemployment confidence narrowed.** One near-threshold continuing-claims print is not enough to define a durable labor regime; require persistence/corroboration.
-2. **H002 -0.01 to H001.** The specific labor-flow deterioration forecast failed while layoffs also remained low.
-3. **No structural causal edge added.** Existing labor-flow, composition, commodity, and policy-reaction channels are sufficient.
-4. **No learning credit.** n=14 remains insufficient and P000020 itself worsened lifetime scores.
+1. **Reaction-function evidence strengthened, not structurally changed.** Direct Chair communication now provides stronger evidence that current policy is price-focused while labor is judged near full employment; no new causal edge is needed.
+2. **Immediate energy branch weakened.** A >5% weekly Brent decline means H003 is currently more a core-inflation/policy/duration thesis than an oil-escalation thesis.
+3. **H002 -0.01 to H003.** The direct current-policy/labor assessment outweighs the modest backward-looking benchmark revision, while H002 remains live through household/hiring weakness.
+4. **No H004 promotion.** Warsh explicitly treated AI productivity as an open question; AI investment remains input evidence, not realized aggregate productivity.
+5. **No learning credit.** P000022's binary score worsened lifetime proper scores even though its point estimate beat simple rate benchmarks.
 
 ## Forecast status
-- **P000020 resolved FALSE:** Brier 0.3249, log loss 0.843970; both point forecasts remained inside 80% intervals but lost to no-change on MAE.
-- **P000022 open:** 47% probability the official Aug. 28 10-year Treasury CMT is >=4.70%; point 4.69%, 80% interval 4.57%-4.81%. This tests whether Chair Warsh's Jackson Hole communication plus the current inflation/policy backdrop produces a material long-yield repricing.
+- **P000022 resolved TRUE:** Brier 0.2809, log loss 0.755023; point MAE 4 bp versus no-change 6 bp and recent trend 5 bp; interval hit.
+- Longer-horizon legacy forecasts remain governed by their original horizons and resolution rules.
 
 ## What would surprise the model?
-- A sustained rise in initial and continuing claims together with widening credit stress would materially revive H002.
-- Strong growth with monthly core inflation near 0.2% or lower and sustainably falling long yields would favor H001 over H003.
-- A post-Jackson-Hole 10-year CMT above roughly 4.80% would imply substantially stronger policy/term-premium pressure than the current one-day distribution assigns.
+- August employment data showing a clear synchronized deterioration in payrolls, unemployment, participation-adjusted labor conditions and subsequent claims/credit would revive H002 materially.
+- August core inflation near 0.1% m/m or lower, accompanied by resilient activity and a sustained decline in long yields, would materially favor H001 over H003.
+- Continued oil relief plus anchored inflation expectations **without** any easing in the policy/long-rate constraint would imply that non-energy core inflation, duration supply or term premium is doing more work than the current model can cleanly identify.
+- Broad evidence of economy-wide output-per-input gains attributable to AI investment would be required before H004 can rise materially.
