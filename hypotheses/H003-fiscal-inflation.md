@@ -1,7 +1,7 @@
 # H003: Fiscal / Inflation Regime
 
 **Prior weight:** 0.25  
-**Current weight:** 0.35  
+**Current weight:** 0.36  
 **Status:** Active competing hypothesis; narrow leader over H001
 
 ## Thesis
@@ -36,3 +36,5 @@ Inflation/commodity surprises and unusually heavy duration supply should transmi
 - 2026-08-24 posterior **0.34**: Brent fell 2.35% to $92.17 despite expanded Iran sanctions and Treasury yields eased, modestly weakening the immediate energy/duration squeeze. More importantly, Treasury clarified that the enlarged long-duration buybacks have not yet executed and begin Sept. 10; therefore pre-Sept. 10 yield relief cannot validate a realized purchase-flow channel. The downgrade is only 0.01 because oil remains elevated, physical/buffer risks persist, regular Treasury auctions continue, and August services activity remains strong enough that a simple demand-collapse explanation is incomplete.
 - 2026-08-25 posterior **0.34 unchanged**: Brent and WTI fell sharply to $88.58/$82.36, weakening the immediate energy-escalation branch, but consumer inflation expectations rose to 5.8% and Boston Fed President Collins kept a conditional tightening path live if disinflation stalls. Housing weakness supplies a credible rival disinflation channel. The offsetting evidence leaves H003 unchanged and narrowly leading only because H001 shifts 0.01 toward H002.
 - 2026-08-26 posterior **0.35**: July core PCE at 0.2% m/m and further oil declines are contrary evidence to an immediate inflation-acceleration/energy-escalation version of H003. However, headline PCE remained 3.7% y/y and core 3.3% y/y while capital-goods demand, revised Q2 private domestic demand, and corporate profits were stronger than a broad recession story; immediate post-data rate-hike pricing also firmed. H003 gains only 0.01, transferred from H002, because this stronger-demand-plus-still-high-inflation combination keeps the policy-constraint branch live. The 0.2% core monthly print and lower oil prevent a larger increase.
+- 2026-08-27 posterior **0.35 unchanged**: oil rebounded but remained below the prior week's peak, several Fed officials emphasized inflation risk, and the 10-year CMT edged only to 4.67%. P000020 weakened H002 rather than directly validating H003. The Skeptic's warning against classifying every strong activity print as inflationary prevents an upgrade.
+- 2026-08-28 posterior **0.36**: Warsh directly stated that current labor conditions are consistent with full employment, that the Fed's predominant current focus should be prices, and that recent better inflation readings have not established a changed underlying trend. The official 10-year CMT rose to 4.73%. H003 receives only +0.01, transferred from H002, because Warsh also said medium-term inflation expectations remain anchored, committed to a discipline rather than a specific decision, and oil ended the week sharply lower. The one-day yield move is not treated as causal identification of H003.
