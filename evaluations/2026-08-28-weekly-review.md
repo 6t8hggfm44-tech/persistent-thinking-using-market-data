@@ -122,7 +122,7 @@ Weights at the prior Friday close and today:
 | H003 Fiscal/inflation regime | 0.35 | 0.36 | +0.01 |
 | H004 Productivity boom | 0.12 | 0.12 | 0.00 |
 
-The small net change masks real intrawEEK movement: Aug. 24 was 0.34/0.20/0.34/0.12; Aug. 25 0.33/0.21/0.34/0.12; Aug. 26 0.33/0.20/0.35/0.12; Aug. 27 0.34/0.19/0.35/0.12; Aug. 28 0.34/0.18/0.36/0.12. The system is therefore not silently presenting today's weights as though the path were smooth.
+The small net change masks real intraweek movement: Aug. 24 was 0.34/0.20/0.34/0.12; Aug. 25 0.33/0.21/0.34/0.12; Aug. 26 0.33/0.20/0.35/0.12; Aug. 27 0.34/0.19/0.35/0.12; Aug. 28 0.34/0.18/0.36/0.12. The system is therefore not silently presenting today's weights as though the path were smooth.
 
 H003's current lead comes primarily from the explicit price-focused reaction function and still-high underlying inflation, not from the week's oil path; oil actually moved against the immediate energy branch. H001 remains close because energy fell and medium-term inflation expectations remain anchored. H002 remains alive through household weakness and historically weak hiring, but current low layoffs and strong private demand prevent a larger weight. H004 is held fixed because investment inputs still do not establish realized productivity.
 
@@ -149,7 +149,7 @@ The correct status is therefore: **the system is producing auditable error-linke
 
 This directly tests the current H003-versus-H001 contest. Core CPI is chosen rather than headline CPI because the immediate oil/Hormuz branch weakened sharply this week; the question is whether **underlying** inflation remains sticky enough to justify the price-focused policy constraint. July core CPI was 0.2% and June 0.0%, so the probability is only modestly above even. A <=0.1% print with resilient activity would materially favor H001; >=0.4% would strengthen H003. No later consensus will be retrofitted into the forecast because none was sufficiently stable at the evidence cutoff.
 
-The Aug. 4 Employment Situation remains an important earlier observation for H002 and the Fed reaction function, but P000023 is the cleaner discriminator between the two leading hypotheses.
+The Sept. 4 Employment Situation remains an important earlier observation for H002 and the Fed reaction function, but P000023 is the cleaner discriminator between the two leading hypotheses.
 
 ## 8. Transferability review
 
