@@ -1,7 +1,7 @@
 # H002: Late-Cycle Recession
 
 **Prior weight:** 0.25  
-**Current weight:** 0.20  
+**Current weight:** 0.18  
 **Status:** Active competing hypothesis; reduced but unresolved downside rival
 
 ## Thesis
@@ -35,3 +35,5 @@ If labor and consumer-demand weakness persist over 1–3 months and are followed
 - 2026-08-24 posterior **0.20**: July CFNAI fell to -0.08 and its personal-consumption/housing component contributed -0.09, supplying a fresh national cross-check that household-sensitive weakness was not confined to one retail or housing release. The increase is only 0.01 because employment contribution improved and the later August flash services/composite data remain too strong for a current generalized contraction.
 - 2026-08-25 posterior **0.21**: July new-home sales fell 10.5% to 607,000, below consensus, and the August Expectations Index fell to 68.2, reinforcing the delayed household-demand weakness branch. The increase is limited to 0.01 because the Present Situation Index and jobs differential improved, spot oil fell sharply, and strong August services still argue against a current generalized contraction.
 - 2026-08-26 posterior **0.20**: July real PCE was essentially flat, so household weakness remains real, but July durable-goods/capital-goods data, upward Q2 revisions to consumer spending and private domestic demand, sharply higher corporate profits, and extraordinary AI-linked investment demand are contrary to a current generalized contraction. H002 loses only 0.01 because housing and forward household expectations remain weak and tomorrow's joint initial/continued-claims forecast is still a direct test of whether labor weakness is broadening.
+- 2026-08-27 posterior **0.19**: P000020's 57% low-initial/high-continuing joint event failed because continuing claims dropped to 1.778 million while initial claims were only 203,000. The direct prospective test weakens the specific sticky-reemployment formulation and shifts 0.01 to H001. The broader low-hire/low-fire possibility remains open and now requires corroboration beyond one continuing-claims threshold.
+- 2026-08-28 posterior **0.18**: the preliminary CES benchmark revision shows historically weaker hiring than previously recorded, especially private employment, and weak sentiment preserves downside risk. But the total benchmark revision is modest and backward-looking, current claims remain low, Warsh characterizes labor as full employment, and the weekly equity response is not broad stress confirmation. H002 therefore loses another 0.01 to H003's policy-constraint branch while remaining a live delayed-downturn rival.
