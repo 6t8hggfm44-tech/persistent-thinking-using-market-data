@@ -1,0 +1,65 @@
+{
+  "id": "P000024",
+  "created_at": "2026-08-31T17:12:44-04:00",
+  "evidence_cutoff": "2026-08-31T17:12:44-04:00",
+  "model_version": "0.2.13",
+  "target": "US_ISM_MANUFACTURING_PMI_AUG_2026_FIRST_RELEASE",
+  "horizon": "1d",
+  "resolution_at": "2026-09-01 10:00 ET first ISM Manufacturing PMI release",
+  "forecast_type": "binary_probability_and_point_distribution",
+  "forecast": {
+    "event": "first-release August 2026 ISM Manufacturing PMI is >=55.0",
+    "probability": 0.42,
+    "point_estimate": 54.4,
+    "lower_80": 51.0,
+    "upper_80": 57.5,
+    "units": "PMI index points"
+  },
+  "benchmarks": [
+    {
+      "name": "latest_observation_no_change",
+      "point_estimate": 55.6,
+      "event_under_benchmark": true,
+      "note": "Frozen from ISM's first July 2026 Manufacturing PMI release."
+    },
+    {
+      "name": "external_calendar_consensus",
+      "point_estimate": 55.2,
+      "event_under_benchmark": true,
+      "captured_at": "2026-08-31T17:12:44-04:00",
+      "note": "Current Investing.com calendar forecast captured at the evidence cutoff."
+    },
+    {
+      "name": "FactSet_consensus",
+      "point_estimate": 55.8,
+      "event_under_benchmark": true,
+      "note": "Morningstar's Aug. 28 weekly calendar reported a FactSet consensus of 55.8. Preserved separately because external consensus snapshots disagree."
+    },
+    {
+      "name": "neutral_binary",
+      "probability": 0.50,
+      "note": "Protocol comparator; not an empirical base rate."
+    }
+  ],
+  "benchmark_note": "External consensus is not unique: a current economic calendar shows 55.2 while Morningstar reported a 55.8 FactSet consensus on Aug. 28. Both are frozen rather than selecting one after the outcome. No later consensus will be retrofitted.",
+  "resolution_rule": "Use the first Institute for Supply Management Manufacturing PMI report released 2026-09-01 at 10:00 ET. Resolve TRUE if the August 2026 headline Manufacturing PMI is 55.0 or higher at ISM's published one-decimal precision; otherwise FALSE. Score the 0.42 probability with Brier and log loss. Score the 54.4 point estimate by absolute error against the frozen 55.6 no-change, 55.2 current-calendar, and 55.8 FactSet point benchmarks. Record whether the realized value lies inside the 51.0-57.5 80% interval. Do not substitute later revisions or a consensus captured after the evidence cutoff.",
+  "rationale": [
+    "July ISM Manufacturing PMI was 55.6, providing a strong same-series anchor, but the Aug. 21 national flash manufacturing PMI was softer at 53.2.",
+    "Aug. 31 regional evidence is sharply conflicting: Dallas Fed production/new orders accelerated while Chicago PMI fell to 47.1. The v0.2.8 error-linked safeguard says regional headlines should not be linearly extrapolated into a national manufacturing index.",
+    "The forecast therefore places the >=55 event below even odds and below external point consensuses without making a high-confidence contraction call. It deliberately preserves a wide enough interval for survey-method and regional-composition differences while remaining sharper than the system's very broad legacy macro intervals.",
+    "This forecast is designed to test whether the regional-to-national bridge correction improves subsequent national-manufacturing forecasting; it receives no learning credit until resolved and compared with frozen benchmarks."
+  ],
+  "hypothesis_links": ["H001", "H002", "H003", "H004"],
+  "surprising_if": [
+    "The first-release ISM Manufacturing PMI is >=58.0, implying much stronger national carry-through from July/regional strength than the forecast distribution allows.",
+    "The first-release ISM Manufacturing PMI is <=50.0, implying a much sharper national manufacturing deterioration than current national and regional evidence suggests."
+  ],
+  "source_notes": [
+    "ISM's release calendar states Manufacturing PMI is released on the first business day of the month at 10:00 a.m. ET and lists September 1 for the September 2026 release cycle.",
+    "ISM's July 2026 report recorded Manufacturing PMI at 55.6.",
+    "Dallas Fed's Aug. 31 Texas Manufacturing Outlook Survey recorded production 16.1 and new orders 22.0.",
+    "Current Chicago PMI calendar reporting recorded August at 47.1 versus 57.6 prior; its duplicate date labeling is a data-quality caution, not a basis for changing the value.",
+    "External point consensus snapshots disagree (55.2 current calendar; 55.8 FactSet via Morningstar), so both are frozen prospectively."
+  ],
+  "status": "open"
+}
