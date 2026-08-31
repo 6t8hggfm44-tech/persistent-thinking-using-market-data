@@ -1,32 +1,28 @@
 # Current Market State
 
 **Model version:** 0.2.13  
-**Status:** Friday post-close state; P000022 resolved; fifteen resolved binary-probability components; no demonstrated learning  
-**Evidence cutoff:** 2026-08-28T18:07:44-04:00
+**Status:** Monday post-close evidence state; no forecast horizon expired; no structural model change; P000024 issued  
+**Evidence cutoff:** 2026-08-31T17:12:44-04:00
 
 ## Auditor result
-P000022 was resolved before post-Aug. 27 evidence was used for model revision. Treasury's official Aug. 28 daily par yield curve reported the 10-year rate at **4.73%**, so the precommitted `>=4.70%` event resolved TRUE. The 0.47 probability scored Brier **0.2809** and log loss **0.755023**, worse than the neutral 0.50 comparator. The 4.69 point estimate had **4 bp** absolute error versus **6 bp** for frozen no-change and **5 bp** for the frozen one-day recent-trend benchmark. The 4.57%-4.81% 80% interval covered.
-
-Lifetime scoring is now **n=15**, mean Brier **0.229100**, mean log loss **0.650410**. Descriptive skill versus a neutral 0.50 probability comparator is **+0.0836 Brier skill** and **+0.0617 log-loss skill**, but targets are heterogeneous and the sample is only half of the precommitted 30-resolution minimum. **No learning claim is permitted.**
+No forecast horizon expired before this cycle's evidence intake. Legacy one-month forecasts P000003 and P000006–P000009 resolve on Sept. 8; P000023 resolves Sept. 11. Lifetime probability scoring therefore remains **n=15**, mean Brier **0.229100**, mean log loss **0.650410**. Descriptive skill versus a neutral 0.50 comparator is unchanged, targets remain heterogeneous/dependent, and the precommitted 30-resolution minimum remains unmet. **No learning claim is permitted.**
 
 ## OBSERVATIONS
-- Fed Chair Kevin Warsh said current labor conditions are consistent with full employment, described prices as the Fed's predominant current focus, said recent better inflation readings had not established a changed underlying trend, and said the Fed must see inflation moving clearly and sufficiently quickly to 2% or it has “work to do.” He also said medium-term inflation expectations remain broadly anchored and committed to a discipline rather than a specific decision.
-- BLS's preliminary March 2026 CES benchmark revision estimated total nonfarm employment 79,000 lower (-0.1%) and private employment 178,000 lower (-0.1%) over the relevant 12-month benchmark period; the final revision is due in February 2027.
-- Treasury's official 10-year par yield rose **4.67% -> 4.73%** and the 30-year **5.19% -> 5.22%** from Aug. 27 to Aug. 28.
-- Brent settled **$89.31** and WTI **$83.40**, down more than 5% and 4% for the week amid tentative/choppy recovery in Hormuz flows and reopening rumors.
-- Final August University of Michigan sentiment was **51.7**. The S&P 500 closed **7,711.76**, down 0.25% Friday but up 0.49% for the week; breadth was negative Friday without a disorderly broad selloff.
+- Reuters reported renewed U.S.–Iran military exchanges on Aug. 31. U.S. crude and Brent were both about **+2.54%**, near **$85.51** and **$90.34** during the U.S. session. Reuters separately reported U.S. Strategic Petroleum Reserve crude stocks down about **3.1 million barrels to 286.6 million**, the lowest since November 1982.
+- Treasury's official Aug. 31 par yield curve reported the **10-year at 4.75%**, up from **4.73%** on Aug. 28, and the **30-year at 5.25%**, up from **5.22%**.
+- The Dallas Fed August Texas Manufacturing Outlook Survey strengthened materially: production **16.1**, new orders **22.0**, capacity utilization **12.8**, shipments **14.1**, general business activity **11.6**.
+- August Chicago PMI was reported at **47.1**, down from **57.6** and well below the published 57.8 expectation. The economic-calendar source contains inconsistent duplicate date labeling for the same August value, so the reading is treated as a regional observation with timestamp uncertainty rather than a precise release-timing signal.
+- Reuters reported market pricing of a September Fed hike near **64%**, up from roughly 35% before Chair Warsh's Aug. 28 comments. This is recorded as a market-expectations endpoint, not independent causal confirmation.
 
 ## INFERENCE
-The strongest new information is a cleaner read on the **policy reaction function**, not a new macro causal edge. Warsh's direct statement that labor is consistent with full employment while inflation progress remains inadequate strengthens H003's policy-constraint branch. This is higher-quality evidence about policy intent than inferring intent from a yield or equity move.
+The most important state change is that the **near-term energy-escalation branch of H003 has reactivated** after weakening on Aug. 28. Renewed conflict, higher oil and a depleted SPR increase the relevance of the existing geopolitical-shock -> commodity -> inflation/policy-constraint pathway. This does not establish that underlying core inflation has reaccelerated; oil pass-through is lagged and state-dependent, and supply-flow/demand offsets remain material.
 
-At the same time, the immediate **energy-escalation branch weakened materially** as oil fell sharply over the week, and Warsh said medium-term inflation expectations remain anchored. Those observations preserve H001 as a close rival and prevent a larger H003 upgrade.
+The official 10-year/30-year yield rise is compatible with persistent policy/term-premium pressure but does not identify its cause. Warsh communication, oil, expected Fed policy, duration supply, positioning and geopolitical risk can produce the same endpoint.
 
-The BLS benchmark revision supports the idea that hiring growth has been weaker than headline unemployment/claims alone suggest, especially in the private sector. It does **not** reverse P000020's error-linked revision: current claims still do not support promoting one continuing-claims threshold into a durable sticky-reemployment regime. The labor-flow split remains useful, but it needs corroboration from payroll breadth, vacancies, hiring, unemployment duration and future claims.
-
-P000022 is deliberately read in two layers: the point forecast modestly beat simple yield benchmarks, but the binary probability lost to neutral. The realized 6 bp rise is compatible with H003 yet does not identify the speech, inflation persistence, term premium, or positioning as the sole cause.
+The Dallas/Chicago split is useful precisely because it is **not** a clean directional national signal. It reinforces the error-linked v0.2.8 rule that regional surveys require a national aggregation bridge. It is not legitimate to count Dallas strength and Chicago weakness as independent evidence for whichever macro story is preferred.
 
 ## Current regime
-**Resilient but bifurcated expansion with weak household sentiment/housing, low current layoffs, still-high underlying inflation, and a Fed reaction function focused primarily on price stability. H003 remains the narrow leader because the policy constraint is explicit even as the immediate oil shock eases; H001 remains close because energy is falling and inflation expectations are still broadly anchored.**
+**Resilient but bifurcated expansion with weak household/housing pockets, low recent layoffs, still-high underlying inflation risk, and a price-focused Fed reaction function. H003 remains the narrow leader. Its immediate energy branch has reactivated, but Monday's move is still an event shock rather than proof of persistent core inflation; H001 remains close and H002 remains a live labor-data rival.**
 
 ## Hypothesis weights
 | Hypothesis | Weight |
@@ -36,27 +32,25 @@ P000022 is deliberately read in two layers: the point forecast modestly beat sim
 | H003 Fiscal/inflation regime | 0.36 |
 | H004 Productivity boom | 0.12 |
 
-**Change from Aug. 27:** H001 unchanged, H002 -0.01, H003 +0.01, H004 unchanged. The small transfer from H002 to H003 reflects direct Warsh reaction-function evidence and his full-employment assessment, while the modest/old benchmark revision and weak sentiment preserve H002 as a delayed rival. Lower oil and anchored expectations prevent moving weight from H001.
+**Change from Aug. 28:** none. The energy branch moved against H001 and toward H003, but the evidence is too event-driven and multiply determined to justify another weight update before labor/core-inflation discriminators arrive. Holding weights is deliberate, not omission.
 
 ## Skeptic result
-The Skeptic attacked H003. The strongest H001 countercase is that oil has fallen sharply, medium-term inflation expectations remain anchored, and Warsh explicitly avoided a fixed policy decision. If growth remains resilient while August inflation cools and long yields subsequently retreat, Friday's rate move will look like a transitory communication/positioning response rather than confirmation of a persistent inflation regime. H003 would become unfalsifiable if every strong activity print, every high yield, and every policy comment were automatically classified as inflationary while contrary oil and household evidence were discounted.
+The Skeptic attacked H003. Monday's oil rebound is caused by renewed military conflict after a sharp prior-week decline and may reverse again; it does not by itself demonstrate sticky underlying inflation. Chicago's contractionary regional reading and Dallas's strong regional reading show continued real-economy bifurcation rather than a single inflationary-growth story. Long yields and Fed-hike probabilities are downstream market endpoints exposed to the same shared inputs and should not be double-counted as independent confirmations.
 
-The key identification warning is that the 10-year yield is a downstream endpoint with multiple causes. The model therefore does not attribute the 4.67% -> 4.73% move to Warsh alone.
+A broad labor deterioration on Sept. 4 would materially revive H002. Benign core CPI on Sept. 11 with resilient activity would favor H001 over H003. Persistent energy pressure plus resilient labor and sticky core inflation would be a much stronger H003 discriminator than Monday's market move.
 
 ## Material model changes
-1. **Reaction-function evidence strengthened, not structurally changed.** Direct Chair communication now provides stronger evidence that current policy is price-focused while labor is judged near full employment; no new causal edge is needed.
-2. **Immediate energy branch weakened.** A >5% weekly Brent decline means H003 is currently more a core-inflation/policy/duration thesis than an oil-escalation thesis.
-3. **H002 -0.01 to H003.** The direct current-policy/labor assessment outweighs the modest backward-looking benchmark revision, while H002 remains live through household/hiring weakness.
-4. **No H004 promotion.** Warsh explicitly treated AI productivity as an open question; AI investment remains input evidence, not realized aggregate productivity.
-5. **No learning credit.** P000022's binary score worsened lifetime proper scores even though its point estimate beat simple rate benchmarks.
+**None.** No hypothesis weight changed and no causal edge was added. The existing geopolitical-energy pathway already represents the mechanism observed today. The H003 energy branch is marked reactivated as a state update, not a structural revision. Because there is no material model change, `meta/MODEL_CHANGELOG.md` is not altered this cycle.
 
 ## Forecast status
-- **P000022 resolved TRUE:** Brier 0.2809, log loss 0.755023; point MAE 4 bp versus no-change 6 bp and recent trend 5 bp; interval hit.
-- **P000023 open:** 54% probability first-release August core CPI is >=0.3% m/m on Sept. 11; point 0.3%, 80% interval 0.1%-0.4%. Frozen point benchmarks are July no-change at 0.2% and the June-July two-release mean at 0.1%; no later consensus will be retrofitted.
-- Longer-horizon legacy forecasts remain governed by their original horizons and resolution rules.
+- **Lifetime scores unchanged:** n=15, mean Brier 0.229100, mean log loss 0.650410.
+- **P000023 open:** 54% probability first-release August core CPI is >=0.3% m/m on Sept. 11; point 0.3%, 80% interval 0.1%-0.4%.
+- **P000024 open:** 42% probability first-release August ISM Manufacturing PMI is >=55.0 on Sept. 1; point 54.4, 80% interval 51.0-57.5. Frozen point benchmarks: July no-change 55.6, current external-calendar consensus 55.2, and Aug. 28 FactSet consensus 55.8. Conflicting consensus snapshots are preserved rather than selectively chosen after resolution.
+- **Legacy one-month forecasts P000003 and P000006–P000009 remain open to Sept. 8** under their original immutable rules.
 
 ## What would surprise the model?
-- August employment data showing a clear synchronized deterioration in payrolls, unemployment, participation-adjusted labor conditions and subsequent claims/credit would revive H002 materially.
-- August core inflation near 0.1% m/m or lower, accompanied by resilient activity and a sustained decline in long yields, would materially favor H001 over H003.
-- Continued oil relief plus anchored inflation expectations **without** any easing in the policy/long-rate constraint would imply that non-energy core inflation, duration supply or term premium is doing more work than the current model can cleanly identify.
-- Broad evidence of economy-wide output-per-input gains attributable to AI investment would be required before H004 can rise materially.
+- Sept. 1 ISM Manufacturing >=58 or <=50 would materially exceed P000024's expected range of national carry-through from conflicting regional evidence.
+- Sept. 4 employment data showing synchronized deterioration in payrolls, unemployment, subsequent claims/credit and labor breadth would revive H002 materially.
+- Sept. 11 core CPI near 0.1% m/m or lower, alongside resilient activity and easing long yields, would materially favor H001 over H003.
+- Persistent oil/geopolitical escalation without corresponding inflation-expectation or later core-price transmission would imply the commodity-to-policy channel is weaker or more offset than the current H003 narrative assumes.
+- Broad economy-wide output-per-input gains attributable to AI investment remain necessary before H004 can rise materially.
