@@ -1,8 +1,8 @@
 # H003: Fiscal / Inflation Regime
 
 **Prior weight:** 0.25  
-**Current weight:** 0.36  
-**Status:** Active competing hypothesis; narrow leader over H001
+**Current weight:** 0.38  
+**Status:** Active competing hypothesis; leader over H001
 
 ## Thesis
 Persistent fiscal impulse and duration-supply pressure keep nominal growth, inflation risk, and long yields structurally elevated.
@@ -38,3 +38,4 @@ Inflation/commodity surprises and unusually heavy duration supply should transmi
 - 2026-08-26 posterior **0.35**: July core PCE at 0.2% m/m and further oil declines are contrary evidence to an immediate inflation-acceleration/energy-escalation version of H003. However, headline PCE remained 3.7% y/y and core 3.3% y/y while capital-goods demand, revised Q2 private domestic demand, and corporate profits were stronger than a broad recession story; immediate post-data rate-hike pricing also firmed. H003 gains only 0.01, transferred from H002, because this stronger-demand-plus-still-high-inflation combination keeps the policy-constraint branch live. The 0.2% core monthly print and lower oil prevent a larger increase.
 - 2026-08-27 posterior **0.35 unchanged**: oil rebounded but remained below the prior week's peak, several Fed officials emphasized inflation risk, and the 10-year CMT edged only to 4.67%. P000020 weakened H002 rather than directly validating H003. The Skeptic's warning against classifying every strong activity print as inflationary prevents an upgrade.
 - 2026-08-28 posterior **0.36**: Warsh directly stated that current labor conditions are consistent with full employment, that the Fed's predominant current focus should be prices, and that recent better inflation readings have not established a changed underlying trend. The official 10-year CMT rose to 4.73%. H003 receives only +0.01, transferred from H002, because Warsh also said medium-term inflation expectations remain anchored, committed to a discipline rather than a specific decision, and oil ended the week sharply lower. The one-day yield move is not treated as causal identification of H003.
+- 2026-09-04 posterior **0.38**: August payrolls surprised strongly at +162K with 4.1% unemployment and upward prior-month revisions, while Brent/WTI ended the week sharply higher and Reuters reported higher market-implied September hike odds. This combination fits H003's strong-activity-plus-binding-policy-constraint branch better than yesterday's state. The increase is limited to 0.02 because wage growth was only 3.1% y/y, participation rose, oil pass-through is not yet measured in core inflation, and futures pricing is not the Fed decision. P000023 remains the cleaner underlying-inflation test.
