@@ -1,0 +1,51 @@
+{
+  "id": "P000027",
+  "created_at": "2026-09-04T17:21:38-04:00",
+  "evidence_cutoff": "2026-09-04T17:21:38-04:00",
+  "model_version": "0.2.14",
+  "target": "FOMC_SEP_2026_POLICY_DECISION",
+  "horizon": "12d",
+  "resolution_at": "2026-09-16 14:00 ET FOMC statement",
+  "forecast_type": "binary_probability",
+  "forecast": {
+    "event": "the Federal Open Market Committee raises both bounds of the federal-funds target range by at least 25 basis points at the September 15-16, 2026 meeting",
+    "probability": 0.58
+  },
+  "benchmarks": [
+    {
+      "name": "Reuters_Fed_funds_futures_snapshot_Citi_story",
+      "probability": 0.61,
+      "captured_at": "2026-09-04T17:21:38-04:00",
+      "note": "Reuters reported about 61% September-hike probability after the August jobs release, up from 52% before it. This is a market-implied comparator, not ground truth."
+    },
+    {
+      "name": "Reuters_Fed_funds_futures_snapshot_US_close_story",
+      "probability": 0.584,
+      "captured_at": "2026-09-04T17:21:38-04:00",
+      "note": "A separate Reuters close report cited 58.4%, illustrating intraday/provider snapshot variation. Both contemporaneous snapshots are preserved rather than selecting one after resolution."
+    },
+    {
+      "name": "neutral_binary",
+      "probability": 0.50,
+      "note": "Protocol comparator only; not an empirical base rate."
+    }
+  ],
+  "resolution_rule": "Use the official Federal Reserve FOMC statement released for the September 15-16, 2026 meeting. Resolve TRUE if the statement/implementation action raises both the lower and upper bounds of the federal-funds target range by 25 basis points or more relative to the target range in force immediately before the meeting; otherwise resolve FALSE. Score p=0.58 with Brier and log loss and compare against the frozen 0.61 and 0.584 market-implied probability snapshots plus neutral 0.50. A hawkish hold, dissent, projection change, or later intermeeting action does not count as TRUE. Do not update the forecast probability after CPI, PPI, speeches, or market repricing.",
+  "rationale": [
+    "The already-updated v0.2.14 model assigns H003 a 0.38 lead after August payrolls rose 162K with unemployment at 4.1%, reducing the immediate labor-side constraint on a hike.",
+    "Renewed weekly oil pressure and previously elevated services price diffusion keep the inflation-risk branch active, while the Fed's recent reaction-function communication has emphasized price stability.",
+    "The probability remains slightly below the 61% Reuters market snapshot because wage growth was moderate at 3.1% y/y, participation improved, Governor Waller has articulated a disinflation/hold case, and August CPI has not yet been observed.",
+    "This forecast is distinct from P000023: P000023 tests the inflation state; P000027 tests the policy mapping from the full information set to the September decision."
+  ],
+  "hypothesis_links": ["H001", "H002", "H003"],
+  "surprising_if": [
+    "The FOMC holds rates despite first-release August core CPI >=0.3% m/m, resilient labor, and still-elevated energy pressure; that would weaken the model's current H003 policy-reaction mapping.",
+    "The FOMC hikes despite first-release August core CPI <=0.1% m/m and a material retreat in energy/policy expectations; that would imply a tighter reaction function than v0.2.14 assumes."
+  ],
+  "source_notes": [
+    "Federal Reserve calendar lists the FOMC meeting for September 15-16, 2026, with the statement at 2:00 p.m. ET on September 16.",
+    "Reuters Sep. 4 post-payroll coverage reported approximately 61% and, in a separate close snapshot, 58.4% market-implied probabilities of a September hike. The differing snapshots are frozen as separate external comparators.",
+    "BLS first August Employment Situation release: payrolls +162K, unemployment 4.1%, average hourly earnings +3.1% y/y."
+  ],
+  "status": "open"
+}
