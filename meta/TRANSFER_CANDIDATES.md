@@ -29,3 +29,19 @@ These are provisional lessons surfaced by the market experiment. They are not un
 **Failure/scope condition:** The lesson applies only when there is a defensible causal reason to expect opposing paths. Inventing extra pathways after an outcome would itself be hindsight assimilation. The competing channels and preferred discriminating measurements should be stated prospectively where possible.
 
 **Provenance:** `evidence/2026-08-14-weekly-cycle.md`; `world_model/CAUSAL_GRAPH.md`; `evaluations/2026-08-14-weekly-review.md`; model version 0.2.3.
+
+## TC-2026-003 — Coarse-event success can conceal a magnitude/distribution miss
+
+**Status:** Provisional; one live market example; likely refinement of existing Universal baseline/proxy-scope safeguards.
+
+**Observation:** P000025 assigned 0.32 probability to the joint event that August first-release payroll growth would be <=25K and unemployment >=4.2%. The event resolved FALSE at +162K / 4.1%, so the probability earned a favorable Brier score of 0.1024. But the forecast's continuous payroll point was only 38K, missed by 124K, lost to both frozen external payroll points, and the realized payroll value lay outside the -45K to 130K 80% interval. The forecast's precommitted strong-labor surprise condition also occurred.
+
+**Methodological inference:** Success on a thresholded/classification projection of a forecast should not automatically validate the underlying magnitude or distribution model. When a continuous target exists, preserve and score both the event probability and the magnitude/interval forecast; a coarse event can resolve correctly for many values that are far from the model's central expectation.
+
+**Why it may transfer:** The same issue occurs in risk classification, scientific threshold tests, medical/engineering alarms, policy triggers, and decision systems. A model can correctly classify “above/below threshold” while substantially misestimating how far from the threshold the system actually is, which can matter for causal interpretation and downstream decisions.
+
+**Failure/scope condition:** Not every binary forecast has a meaningful continuous latent target, and adding artificial point estimates merely to create another metric would be counterproductive. The lesson applies when the continuous magnitude is already part of the model or materially affects interpretation.
+
+**Expected behavioral change:** Where practical, score the coarsened event and the underlying continuous forecast separately, and do not grant causal/model-learning credit from the event score when the magnitude forecast fails badly. Preserve precommitted surprise conditions as an additional check against this form of false reassurance.
+
+**Provenance:** `predictions/resolved/P000025.json`; `evaluations/2026-09-04-weekly-review.md`; model version 0.2.14.
