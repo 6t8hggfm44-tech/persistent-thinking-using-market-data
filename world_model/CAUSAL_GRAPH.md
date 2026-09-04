@@ -114,4 +114,27 @@ Nvidia's fiscal-Q2 results and July capital-goods data supply direct evidence of
 
 This prevents a proxy-scope substitution in which semiconductor vendor revenue, data-center buildout, or capital spending is treated as if it were already realized aggregate productivity. Strong AI demand can simultaneously support H001 through investment resilience, H003 through financing/duration and nominal-demand pressure, and only **conditionally** H004 if subsequent output-efficiency evidence appears. No H004 weight is added from investment demand alone.
 
+## Net-payroll measurement bridge refinement added 2026-09-04
+
+P000025 assigned a 38K point estimate to August nonfarm payroll growth using weak July JOLTS hiring, ADP and other hiring indicators while preserving a low-layoff view. The first BLS release instead reported **+162K**, outside the forecast's 80% payroll interval and satisfying its precommitted surprise condition. This is negative out-of-sample evidence for treating those hiring proxies as a near-direct forecast of the monthly CES net payroll change.
+
+The labor branch is therefore refined as follows:
+
+```text
+labor demand ──> gross hiring flow ───────────┐
+                                              ├──> monthly establishment net-payroll change
+labor demand ──> separation / layoff flow ───┤
+                                              │
+sector mix / establishment coverage /        │
+seasonal adjustment / timing ────────────────┘
+
+separation / layoff flow ──> initial jobless claims
+hiring flow + separation flow ──> JOLTS gross flows / vacancies / quits
+labor supply + employment matching ──> household employment / unemployment / participation
+```
+
+Initial claims remain a useful direct proxy for separation flow and JOLTS remains a useful gross-flow measure, but neither is a sufficient statistic for the CES monthly net employment change. ADP, surveys, JOLTS, claims, household employment and CES payrolls should be treated as related but non-identical measurements with different scopes, sampling frames and timing. Future payroll forecasts require an explicit bridge across these measurements rather than assuming that a weak gross-hiring proxy implies a proportionately weak net payroll print.
+
+The refinement **does not erase** the broader asynchronous-labor insight. Low layoffs can coexist with weak hiring indicators, and later deterioration remains possible. It narrows the model from a confident “low-hire/low-fire” monthly payroll characterization to **low layoffs + mixed/asynchronous hiring evidence + separately measured net payroll growth**. This change receives no predictive-learning credit until later forecasts generated under it resolve.
+
 Every material edge should eventually carry sign, expected lag, confidence, evidence, and known failure conditions.
