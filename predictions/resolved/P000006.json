@@ -1,0 +1,33 @@
+{
+  "original_forecast": {
+    "id": "P000006",
+    "target": "US10Y",
+    "horizon": "1m",
+    "resolution_at": "2026-09-08 close",
+    "forecast_type": "interval",
+    "forecast": {"point_estimate": 4.62, "lower_80": 4.30, "upper_80": 4.95},
+    "benchmark": {"name": "no_change", "value": 4.64},
+    "resolution_rule": "Resolve against the U.S. 10-year Treasury constant-maturity yield for 2026-09-08 or nearest prior published trading day.",
+    "created_at": "2026-08-08T10:30:00-04:00",
+    "evidence_cutoff": "2026-08-08T10:30:00-04:00",
+    "rationale": ["Weak labor data creates easing pressure.", "Inflation/geopolitical risk remains large enough to prevent a narrow forecast.", "Cross-asset confirmation is more informative than SPX alone."],
+    "hypothesis_links": ["H001", "H002", "H003"],
+    "surprising_if": ["Outcome falls outside the stated 80% interval or materially contradicts the linked causal story."],
+    "status": "open"
+  },
+  "resolution": {
+    "resolved_at": "2026-09-08T17:50:37-04:00",
+    "outcome": {
+      "us_10y_constant_maturity_percent": 4.80
+    },
+    "source": "U.S. Department of the Treasury, Daily Treasury Par Yield Curve Rates for 2026-09-08.",
+    "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/",
+    "scores": {
+      "point_absolute_error_pp": 0.18,
+      "interval_hit": 1,
+      "no_change_absolute_error_pp": 0.16,
+      "point_skill_vs_no_change": -0.125
+    },
+    "audit_note": "Original forecast content is preserved without hindsight alteration. The official 4.80% outcome remained inside the frozen 4.30%-4.95% 80% interval. The 4.62% point missed by 18 bp versus 16 bp for frozen no-change, so this record supplies no point-forecast skill versus that benchmark. No probability was assigned, so no Brier or log score is manufactured."
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "P000028",
+  "created_at": "2026-09-08T17:50:37-04:00",
+  "evidence_cutoff": "2026-09-08T17:50:37-04:00",
+  "model_version": "0.2.14",
+  "target": "US_PPI_FINAL_DEMAND_MOM_AUG_2026_FIRST_RELEASE",
+  "horizon": "2d",
+  "resolution_at": "2026-09-10 08:30 ET first BLS Producer Price Index release for August 2026",
+  "forecast_type": "binary_probability_and_point_distribution",
+  "forecast": {
+    "event": "first-release August 2026 PPI for final demand, seasonally adjusted, increases by at least 0.4% m/m",
+    "probability": 0.53,
+    "point_estimate": 0.4,
+    "lower_80": -0.2,
+    "upper_80": 0.9,
+    "units": "percent m/m"
+  },
+  "benchmarks": [
+    {
+      "name": "Investing_com_calendar_consensus",
+      "point_estimate": 0.4,
+      "captured_at": "2026-09-08T17:50:37-04:00",
+      "note": "Timestamped calendar snapshot for the Sep. 10 August PPI release. A point at the event threshold is not a probability forecast and must not be converted into a favorable proper-score comparator after resolution."
+    },
+    {
+      "name": "latest_observation_no_change",
+      "point_estimate": 0.0,
+      "note": "Frozen from the first July 2026 PPI final-demand release."
+    },
+    {
+      "name": "neutral_binary",
+      "probability": 0.50,
+      "note": "Protocol comparator; not an empirical base rate."
+    }
+  ],
+  "resolution_rule": "Use the first U.S. Bureau of Labor Statistics Producer Price Index release for August 2026 scheduled for 2026-09-10 at 08:30 ET. Resolve TRUE if the first-release seasonally adjusted PPI for final demand m/m change is 0.4% or higher at BLS published precision; otherwise FALSE. Score the 0.53 event probability with Brier and log loss. Score the 0.4% point by absolute error against the same first-release value and against the frozen 0.4% external-consensus and 0.0% no-change points. Record whether the first-release value lies inside the frozen -0.2% to 0.9% 80% interval. Do not substitute later revisions or a consensus captured after the evidence cutoff.",
+  "rationale": [
+    "The timestamped external consensus is 0.4%, so the forecast deliberately stays near the market/economist center rather than manufacturing a large claimed edge; the event probability is only modestly above even.",
+    "July final-demand PPI was flat while July core PPI was positive, leaving a volatile but not uniformly hot producer-price pipeline entering August.",
+    "Energy and commodity conditions during August were firmer than the steep producer-energy decline embedded in July, supporting some rebound risk in headline final demand without proving persistent underlying inflation.",
+    "The much larger Sep. 5-8 oil escalation occurred after the August reference period and is explicitly excluded from the forecast's August price rationale."
+  ],
+  "hypothesis_links": ["H001", "H003"],
+  "surprising_if": [
+    "First-release headline final-demand PPI is <=0.0%, which would be materially more disinflationary than the current H003 pipeline concern and the frozen consensus imply.",
+    "First-release headline final-demand PPI is >=0.8%, which would indicate a substantially hotter producer-price pipeline than the current modest-above-even threshold probability captures."
+  ],
+  "source_notes": [
+    "BLS schedules the August 2026 PPI release for Sep. 10 at 08:30 ET.",
+    "Investing.com calendar snapshot captured at cutoff: August headline PPI m/m consensus 0.4%; July first-release actual 0.0%.",
+    "September geopolitical/oil developments are post-reference-period and are not treated as observations of August producer prices."
+  ],
+  "status": "open"
+}

@@ -1,26 +1,31 @@
 # Current Market State
 
 **Model version:** 0.2.14  
-**Status:** Monday Labor Day holiday cycle; no forecasts due; Sep. 5-7 energy escalation ingested; no weight or causal-graph change; no new forecast  
-**Evidence cutoff:** 2026-09-07T17:28:05-04:00
+**Status:** Tuesday Sep. 8 post-close cycle; P000003/P000006/P000007/P000009 resolved; P000008 held pending its dated FRED observation; no weight or causal-graph change; P000028 frozen prospectively  
+**Evidence cutoff:** 2026-09-08T17:50:37-04:00
 
 ## Auditor
-No forecast horizon expired before this cutoff. P000003 and P000006-P000009 resolve on Sep. 8 under their original frozen rules; P000023 resolves Sep. 11; P000027 resolves with the Sep. 16 FOMC statement.
+Forecasts were resolved before post-Sep. 7 evidence was used for model revision.
 
-Lifetime probability scoring remains **n=18**, mean Brier **0.209344**, mean log loss **0.608217**. The precommitted 30-resolution threshold remains unmet; **learning cannot yet be inferred**.
+- **P000003 — SPX one-month distribution:** Sep. 8 close **7,673.52**, below the frozen 7,757.64 starting close, so the 0.54 up-event resolved **FALSE**. Brier **0.2916**, log loss **0.776529**. The 7,820 point missed by **146.48** versus **84.12** for frozen no-change; the 7,215-8,380 80% interval covered. This is a probability and point-forecast miss, not an interval-tail miss.
+- **P000006 — U.S. 10-year CMT:** official Sep. 8 Treasury 10-year constant-maturity yield **4.80%**. The 4.62% point missed by **0.18 pp** versus **0.16 pp** for frozen no-change; the 4.30%-4.95% 80% interval covered.
+- **P000007 — WTI:** front-month NYMEX WTI settled **$93.03/bbl**. The frozen $78.00 point missed by **$15.03** versus **$14.85** for no-change, and the $68-$91 80% interval **missed**. This is a genuine tail/distribution miss and is preserved without retroactive widening.
+- **P000009 — sector leadership:** the frozen Information Technology top-three call resolved **FALSE**. Dividend-adjusted sector-ETF total-return data as of Sep. 8 show Energy **+11.41%**, Health Care **+3.48%**, and Financials **+0.87%**, all above Technology **-0.37%** over the one-month window. Because this uses sector ETFs as a total-return proxy rather than a direct S&P sector-index table, the source-layer limitation is preserved; the ordering is nevertheless sufficient to establish that Technology was not top three.
+- **P000008 — HY OAS:** **not yet resolved.** At this cutoff FRED's BAMLH0A0HYM2 page shows the latest dated observation as Sep. 7 at **2.68%**, updated Sep. 8, with the next release Sep. 9. The original rule targets Sep. 8 or the nearest available observation. Because the exact Sep. 8 observation is expected to publish on Sep. 9, using the Sep. 7 carry-forward now would create avoidable timing ambiguity; resolution is deferred until the dated source is available.
 
-## Observations
-- NYSE and Nasdaq cash equity markets were closed Monday, Sep. 7 for Labor Day, so there is no U.S. cash-equity close to use as an endpoint.
-- Reuters reported that U.S. forces struck three Iranian crude-oil carriers on Sep. 5 after Iranian missile attacks on U.S. Navy ships, materially escalating the already-active Gulf maritime conflict.
-- Reuters reported on Sep. 7 that Brent was near **$97.31/bbl** and WTI near **$92.65/bbl**, roughly six-week highs, while Strait of Hormuz shipping had slowed and Iran threatened additional restrictions and retaliation against energy infrastructure. Reuters also reported OPEC+ leaving October production levels unchanged.
-- The BLS September calendar showed no major macro release on Sep. 7.
+Lifetime **probability** scoring is now **n=19**, mean Brier **0.213674**, mean log loss **0.617075**. The precommitted 30-resolution threshold remains unmet; **learning cannot yet be inferred**. Strict record-level interval coverage is now **17/19 = 89.47%** among resolved forecasts with explicit intervals. That remains a small sample and does not justify widening or narrowing intervals after today's WTI miss.
+
+## Observations — evidence first available after 2026-09-07T17:28:05-04:00
+
+- **OBSERVATION:** Reuters reported further Middle East escalation on Sep. 8, including Houthi attacks on Saudi energy facilities. Brent settled **$97.92** and WTI **$93.03**, with WTI at a six-week high.
+- **OBSERVATION:** The New York Fed's August Survey of Consumer Expectations, reported Sep. 8, showed one-year inflation expectations steady at **3.6%**, five-year expectations steady at **3.0%**, and three-year expectations edging down to **3.2%**. Expectations of higher unemployment rose sharply and confidence in finding a new job worsened.
+- **OBSERVATION:** The official Sep. 8 10-year Treasury constant-maturity yield was **4.80%**. The S&P 500 closed **0.58% lower at 7,673.52**. These are market endpoints and are not treated as unique evidence for any one causal mechanism.
+- **OBSERVATION:** BLS schedules the first August PPI release for Sep. 10 at 08:30 ET. A timestamped Investing.com calendar snapshot at this cutoff shows a **0.4% m/m** headline-final-demand consensus versus July's first-release **0.0%**.
 
 ## Inference
-The new evidence materially strengthens the **persistence and physical-shipping-risk character** of the already-modeled geopolitical energy shock. It is supportive of H003's energy/input-cost/policy-constraint branch, but it does **not** by itself establish persistent core inflation, a Fed hike, or recession. If the shock persists, it also raises a later H002 pathway through real-household-income compression.
+The physical energy-supply-risk branch remains material and P000007 demonstrates that the original Aug. 8 commodity distribution understated the realized tail. But the same-day New York Fed survey does **not** show a corresponding unanchoring of medium-term inflation expectations; its labor/financial expectations instead preserve a growth-negative pathway. The Sep. 8 10-year yield and equity decline are multiply determined downstream endpoints. Therefore the new evidence does not justify treating the oil tail miss as proof of H003's broader core-inflation regime.
 
-The timing boundary is important: the escalation occurred in September and therefore is **not evidence about the already-completed August core-CPI observation window** underlying P000023. Using it to reinterpret that frozen forecast would be hindsight/timing leakage.
-
-The absence of a U.S. cash-market response today is operational, not evidentiary: markets were closed.
+September's escalation is also outside the August PPI/CPI reference period. It may affect later inflation, household income and policy expectations, but it must not be leaked backward into P000023 or P000028 as if it were an August price observation.
 
 ## Hypothesis weights
 - **H001 Soft landing: 0.35** (unchanged)
@@ -28,32 +33,31 @@ The absence of a U.S. cash-market response today is operational, not evidentiary
 - **H003 Fiscal/inflation regime: 0.38** (unchanged)
 - **H004 Productivity boom: 0.12** (unchanged)
 
-No reweighting is made. The post-cutoff evidence is directionally supportive of H003 but is predominantly a continuation/intensification of an energy-risk branch already incorporated on Sep. 4. Without new evidence of sustained pass-through into U.S. underlying inflation/expectations or of downstream growth damage, moving weights today would risk overfitting a holiday geopolitical shock.
+No reweighting is made. H003 receives direct support from persistent physical energy disruption, but stable medium-term survey inflation expectations and worsening consumer labor/financial expectations are meaningful counterevidence. A weight move before the Sep. 10-11 inflation releases would overfit a commodity/market shock whose pass-through remains unresolved.
 
 ## Skeptic
-**Attack on leading H003:** Geopolitical shocks can reverse quickly. Higher oil is not the same thing as persistent core inflation, and pass-through is lagged and state-dependent. The same energy shock can become growth-negative and eventually support H002 through household purchasing-power compression. There is no fresh U.S. labor or credit deterioration in this holiday interval, no U.S. cash-equity endpoint, and the August CPI observation window is already closed.
+**Attack on leading H003:** The strongest contrary evidence is that a large oil move has not yet produced broader inflation-expectation unanchoring. Three- and five-year New York Fed expectations are stable-to-lower, while consumers report worsening labor-market and financial expectations. The oil shock can become growth-negative through household purchasing power rather than persistently inflationary in core prices. The 4.80% 10-year yield and weaker S&P are ambiguous endpoints and cannot identify which path dominates.
 
-**Response:** Physical shipping and supply risk are more concrete than at Friday's cutoff, so the evidence is material and retained as H003-supportive. But the Skeptic blocks a weight change until later inflation, expectations, policy, or real-demand data discriminate among the pathways.
+**Response:** Physical infrastructure/shipping risk is real and the WTI tail miss is material evidence that commodity-risk variance was understated in the original vintage. But one 80% interval miss is expected occasionally in a calibrated system and is not, by itself, grounds to retune the causal model or interval widths. The next useful discrimination comes from producer/consumer inflation and subsequent real-demand/labor evidence.
 
-**What would surprise the current model:** rapid de-escalation with oil returning toward pre-shock levels before the next inflation/policy decisions would weaken the persistence branch; conversely, sustained high oil combined with firmer underlying inflation or inflation expectations would strengthen H003, while sustained high oil followed by clear household/labor deterioration would strengthen H002.
+**What would surprise the current model:** benign PPI/CPI despite persistent energy stress would favor H001 over the immediate H003 pass-through story; broad underlying inflation strength would favor H003; sustained energy stress followed by clear labor/consumer deterioration would strengthen H002.
 
 ## Material model changes
-**None.** Model v0.2.14 remains current. The existing causal graph already contains the needed pathways: geopolitical shock -> commodity prices -> inflation expectations/policy constraint; commodity shock -> retail energy/input costs -> measured inflation with a lag; and commodity shock -> real household purchasing power / consumer demand. No new causal edge or changelog entry is warranted from this interval.
+**None.** Model v0.2.14 remains current. Today's largest error, P000007, is a distributional/tail miss in a pathway already present in the causal graph. Retuning the graph or interval process after one 80% miss would be hindsight fitting; no `MODEL_CHANGELOG.md` entry is warranted. P000003 also lost to no-change on both event and point components, but an equity endpoint remains too causally ambiguous to justify a structural revision by itself.
+
+No new Universal transfer candidate is added. The methodological response to today's failures is already covered by the existing anti-hindsight, baseline-relative, discriminating-measurement, longitudinal-learning, and threshold-versus-distribution safeguards.
 
 ## Learning status
-Lifetime probability metrics remain **n=18**, mean Brier **0.209344**, mean log loss **0.608217**. No forecast resolved today, no model-change credit is added, and the precommitted minimum sample for even a preliminary learning assessment remains unmet.
+Probability metrics: **n=19**, mean Brier **0.213674**, mean log loss **0.617075**. The new P000003 probability resolution worsened the lifetime averages from the n=18 snapshot. This is preserved as negative evidence, but n=19 remains below the precommitted minimum and the target mix is heterogeneous/dependent. No learning claim is permitted.
 
 ## Open forecasts
-- **P000003:** SPX one-month forecast; resolves Sep. 8 close under its original rule.
-- **P000006:** U.S. 10-year Treasury one-month interval; resolves Sep. 8 under its original rule.
-- **P000007:** WTI one-month interval; resolves Sep. 8 settlement under its original rule. Frozen point **$78.00**, 80% interval **$68-$91**. The Sep. 7 Reuters WTI indication above the interval is **not** a resolution and must not be scored early.
-- **P000008:** HY OAS one-month interval; resolves Sep. 8 or nearest available observation under its original rule.
-- **P000009:** Information Technology top-three S&P sector ranking through Sep. 8 close.
+- **P000008:** HY OAS one-month interval; held for the Sep. 8 dated FRED observation or an unambiguous nearest-observation application under its original rule.
 - **P000023:** 54% probability first-release August core CPI is >=0.3% m/m on Sep. 11; point 0.3%, 80% interval 0.1%-0.4%; remains frozen.
 - **P000027:** 58% probability the FOMC raises both bounds of the federal-funds target range by at least 25 bp at the Sep. 15-16 meeting; remains frozen.
+- **P000028:** 53% probability first-release August headline final-demand PPI is >=0.4% m/m on Sep. 10; point 0.4%, 80% interval -0.2%-0.9%; evidence cutoff 2026-09-08T17:50:37-04:00.
 
-## New forecasts
-**None.** U.S. markets were closed and the existing Sep. 8, Sep. 11, and Sep. 16 forecast set already covers the next meaningful discriminators. Adding a closely correlated forecast merely to create activity would pad the sample and violate the learning protocol.
+## New forecast
+**P000028** is frozen from unchanged model v0.2.14. Its 0.4% point deliberately matches the timestamped external consensus, so a good absolute result will **not** be treated as evidence of information beyond consensus. The probability is only modestly above even because August energy conditions were firmer than July's steep producer-energy decline, while July final-demand PPI was flat and the producer-price distribution remains volatile. The much larger Sep. 5-8 oil escalation is excluded from the August observation window.
 
 ## Most important watch
-**Tuesday Sep. 8 resolution of the original Aug. 8 one-month forecast vintage, especially P000007 WTI.** The current oil shock puts that frozen interval under material stress, but no score is assigned until the precommitted settlement rule fires. After the Sep. 8 vintage resolves, Sep. 11 core CPI remains the highest-information near-term H001-vs-H003 macro discriminator.
+**Friday Sep. 11 first-release August core CPI.** PPI on Sep. 10 is an upstream check, but the already-frozen P000023 core-CPI forecast remains the cleaner near-term discriminator between H001 disinflation-with-resilience and H003 persistent-underlying-inflation/policy constraint.

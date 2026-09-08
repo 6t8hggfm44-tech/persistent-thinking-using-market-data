@@ -1,0 +1,39 @@
+{
+  "original_forecast": {
+    "id": "P000009",
+    "target": "SECTOR_LEADERSHIP",
+    "horizon": "1m",
+    "resolution_at": "2026-09-08 close",
+    "forecast_type": "ranking",
+    "forecast": {"probability_up": null, "point_estimate": "Information Technology top-3 S&P sector", "lower_80": null, "upper_80": null},
+    "benchmark": {"name": "equal_sector_chance", "value": "3/11"},
+    "resolution_rule": "Success if S&P 500 Information Technology sector ranks among top three GICS sectors by total return from Aug. 7 close through Sep. 8 close.",
+    "created_at": "2026-08-08T10:30:00-04:00",
+    "evidence_cutoff": "2026-08-08T10:30:00-04:00",
+    "rationale": ["Weak labor data creates easing pressure.", "Inflation/geopolitical risk remains large enough to prevent a narrow forecast.", "Cross-asset confirmation is more informative than SPX alone."],
+    "hypothesis_links": ["H001", "H002", "H003"],
+    "surprising_if": ["Outcome materially contradicts the linked causal story."],
+    "status": "open"
+  },
+  "resolution": {
+    "resolved_at": "2026-09-08T17:50:37-04:00",
+    "outcome": {
+      "information_technology_top_three": false,
+      "proxy_total_returns_percent": {
+        "Energy_XLE": 11.41,
+        "Health_Care_XLV": 3.48,
+        "Financials_XLF": 0.87,
+        "Information_Technology_XLK": -0.37
+      }
+    },
+    "source": "PortfoliosLab dividend-adjusted one-month returns for State Street sector ETFs, last updated Sep. 8, 2026.",
+    "source_url": "https://portfolioslab.com/portfolio/jeymvg5sb7a9likiecl8uadq",
+    "source_layer_note": "The frozen rule names S&P GICS sector total returns. The accessible resolution source is a dividend-adjusted sector-ETF proxy rather than a direct S&P sector-index total-return table. Because at least three corresponding sector ETFs outperformed XLK by clear margins, the proxy is sufficient to establish the categorical top-three failure while preserving this source-layer limitation. Aug. 8, 2026 was a Saturday, so the displayed one-month window aligns operationally with the Aug. 7 trading close start.",
+    "scores": {
+      "categorical_success": 0,
+      "brier": null,
+      "log_loss": null
+    },
+    "audit_note": "Original forecast content is preserved without hindsight alteration. Information Technology was not top three. No model probability was assigned to the ranking, so no proper probability score is manufactured; the equal-sector 3/11 benchmark remains contextual rather than being retrofitted into a model probability."
+  }
+}

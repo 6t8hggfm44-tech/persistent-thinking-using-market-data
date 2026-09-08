@@ -1,0 +1,34 @@
+{
+  "original_forecast": {
+    "id": "P000007",
+    "target": "WTI",
+    "horizon": "1m",
+    "resolution_at": "2026-09-08 settlement",
+    "forecast_type": "interval",
+    "forecast": {"point_estimate": 78.0, "lower_80": 68.0, "upper_80": 91.0},
+    "benchmark": {"name": "no_change", "value": 78.18},
+    "resolution_rule": "Resolve against front-month NYMEX WTI settlement, using a consistent roll convention documented at resolution.",
+    "created_at": "2026-08-08T10:30:00-04:00",
+    "evidence_cutoff": "2026-08-08T10:30:00-04:00",
+    "rationale": ["Weak labor data creates easing pressure.", "Inflation/geopolitical risk remains large enough to prevent a narrow forecast.", "Cross-asset confirmation is more informative than SPX alone."],
+    "hypothesis_links": ["H001", "H002", "H003"],
+    "surprising_if": ["Outcome falls outside the stated 80% interval or materially contradicts the linked causal story."],
+    "status": "open"
+  },
+  "resolution": {
+    "resolved_at": "2026-09-08T17:50:37-04:00",
+    "outcome": {
+      "front_month_nymex_wti_settlement_usd_per_bbl": 93.03
+    },
+    "source": "Reuters Sep. 8, 2026 oil-market close, reporting the active front-month U.S. West Texas Intermediate futures settlement.",
+    "source_url": "https://www.reuters.com/business/energy/oil-rises-risks-prolonged-mideast-conflict-heighten-supply-worries-2026-09-08/",
+    "roll_convention": "Use the active front-month NYMEX WTI contract as quoted in Reuters' Sep. 8 settlement report; no bespoke roll adjustment is introduced at resolution.",
+    "scores": {
+      "point_absolute_error_usd": 15.03,
+      "interval_hit": 0,
+      "no_change_absolute_error_usd": 14.85,
+      "point_skill_vs_no_change": -0.012121
+    },
+    "audit_note": "Original forecast content is preserved without hindsight alteration. The $93.03 settlement was $2.03 above the frozen $91 upper bound, so the stated 80% interval missed and the precommitted surprising condition fired. The $78.00 point also lost slightly to frozen no-change. This is a genuine distributional/tail miss. It is preserved prominently, but one miss from an 80% interval does not by itself justify retroactively widening the model's uncertainty bands or changing the causal graph."
+  }
+}
