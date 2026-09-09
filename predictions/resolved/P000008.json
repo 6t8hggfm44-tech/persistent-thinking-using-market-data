@@ -1,0 +1,35 @@
+{
+  "original_forecast": {
+    "id": "P000008",
+    "target": "HY_OAS",
+    "horizon": "1m",
+    "resolution_at": "2026-09-08",
+    "forecast_type": "interval",
+    "forecast": {"point_estimate": 3.05, "lower_80": 2.55, "upper_80": 3.85},
+    "benchmark": {"name": "latest_verified", "value": 2.84},
+    "resolution_rule": "Resolve against FRED series BAMLH0A0HYM2 for 2026-09-08 or nearest available observation. Baseline is stale July 28 observation and must not be misrepresented.",
+    "created_at": "2026-08-08T10:30:00-04:00",
+    "evidence_cutoff": "2026-08-08T10:30:00-04:00",
+    "rationale": ["Weak labor data creates easing pressure.", "Inflation/geopolitical risk remains large enough to prevent a narrow forecast.", "Cross-asset confirmation is more informative than SPX alone."],
+    "hypothesis_links": ["H001", "H002", "H003"],
+    "surprising_if": ["Outcome falls outside the stated 80% interval or materially contradicts the linked causal story."],
+    "status": "open"
+  },
+  "resolution": {
+    "resolved_at": "2026-09-09T17:17:44-04:00",
+    "outcome": {
+      "fred_series": "BAMLH0A0HYM2",
+      "observation_date": "2026-09-08",
+      "hy_oas_percent": 2.67
+    },
+    "source": "Federal Reserve Bank of St. Louis FRED table data for ICE BofA US High Yield Index Option-Adjusted Spread; exact 2026-09-08 observation published in the Sep. 9 update.",
+    "source_url": "https://fred.stlouisfed.org/data/BAMLH0A0HYM2",
+    "scores": {
+      "point_absolute_error_percent": 0.38,
+      "interval_hit": 1,
+      "frozen_baseline_absolute_error_percent": 0.17,
+      "point_skill_vs_frozen_baseline": -1.235294
+    },
+    "audit_note": "Original forecast content is preserved unchanged. The exact Sep. 8 observation became available after the prior cycle, eliminating the source-timing ambiguity that had justified deferral. The 2.67% outcome lies inside the frozen 2.55%-3.85% 80% interval, but the 3.05% point estimate missed by 0.38 percentage point and lost materially to the explicitly stale 2.84% frozen baseline, which missed by 0.17 point. This is interval coverage without point-forecast skill and receives no broad causal or learning credit."
+  }
+}
