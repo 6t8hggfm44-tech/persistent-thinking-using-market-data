@@ -32,6 +32,8 @@ After the primary resolution ledger is updated, run the applicable Market Repo B
 
 ### Phase 2 — Evidence intake
 
+Also consult the [energy/weather intake and cross-domain reconciliation policy](meta/RESEARCH_REPORT_INTAKE.md) and [research report index](evidence/research/INDEX.md). These reports are canonical versioned research inputs upon complete receipt, with uncertainty and corrections preserved. Reconcile with GEV using actual available versions and shared-source checks during this existing cycle; do not create additional forecasts or alter earlier cutoffs merely because an input arrived.
+
 Consult the [GEV weekly report intake policy](meta/GEV_REPORT_INTAKE.md) and [canonical report index](evidence/gev-weekly/INDEX.md) for relevant reports received by this cycle's evidence cutoff. Pete designates completed, distributed GEV reports as canonical versioned research inputs, retaining their uncertainty and corrections. Preserve actual receipt times, source dependence, immutable forecasts and the existing validation requirements; do not turn intake into an automatic model change.
 Record material new observations since the previous cycle.
 
