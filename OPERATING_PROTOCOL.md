@@ -31,6 +31,8 @@ For each:
 After the primary resolution ledger is updated, run the applicable Market Repo B validation against that frozen ledger before interpreting the result. Any discrepancy between primary and independently recomputed scores must be documented and investigated without altering the original forecast content.
 
 ### Phase 2 — Evidence intake
+
+Consult the [GEV weekly report intake policy](meta/GEV_REPORT_INTAKE.md) and [canonical report index](evidence/gev-weekly/INDEX.md) for relevant reports received by this cycle's evidence cutoff. Pete designates completed, distributed GEV reports as canonical versioned research inputs, retaining their uncertainty and corrections. Preserve actual receipt times, source dependence, immutable forecasts and the existing validation requirements; do not turn intake into an automatic model change.
 Record material new observations since the previous cycle.
 
 For every evidence item include:
