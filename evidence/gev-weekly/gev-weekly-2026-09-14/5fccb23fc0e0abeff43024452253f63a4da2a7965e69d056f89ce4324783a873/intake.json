@@ -1,0 +1,99 @@
+{
+  "delivery_key": "gev-weekly-2026-09-14:5fccb23fc0e0abeff43024452253f63a4da2a7965e69d056f89ce4324783a873",
+  "received_at_utc": "2026-09-15T01:05:27Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true
+  },
+  "integrity": {
+    "supplied_report_sha256": "5fccb23fc0e0abeff43024452253f63a4da2a7965e69d056f89ce4324783a873",
+    "recomputed_received_text_sha256": "5fccb23fc0e0abeff43024452253f63a4da2a7965e69d056f89ce4324783a873",
+    "received_text_matches_supplied_report_sha256": true,
+    "source_byte_integrity_status": "verified_for_received_utf8_report_text",
+    "manifest_sha256": "bc586ae3dc5adf61b91d05b4ffe2b43fc488bfe66f1744a3af4fa42ba3df6db7",
+    "manifest_bytes_available_to_market_intake": false,
+    "manifest_hash_recomputed": false,
+    "limitation": "The originating Mac-only evidence archive, raw traffic, private machine configuration, and manifest bytes were not delivered to this intake. Only the complete report text and shareable envelope were received; the report-text SHA-256 was recomputed locally and matched the supplied report hash."
+  },
+  "archive": {
+    "report_path": "evidence/gev-weekly/gev-weekly-2026-09-14/5fccb23fc0e0abeff43024452253f63a4da2a7965e69d056f89ce4324783a873/Report.md",
+    "intake_path": "evidence/gev-weekly/gev-weekly-2026-09-14/5fccb23fc0e0abeff43024452253f63a4da2a7965e69d056f89ce4324783a873/intake.json"
+  },
+  "canonical_status": {
+    "canonical_from_received_at_utc": "2026-09-15T01:05:27Z",
+    "meaning": "Canonical versioned research input only; preserves original uncertainty, provenance, limitations and corrections and does not establish every claim as fact or automatically alter market-model weights."
+  },
+  "source_envelope": {
+    "schema_version": 1,
+    "domain": "gev",
+    "run_id": "gev-weekly-2026-09-14",
+    "report_version": 1,
+    "report_kind": "final_hypothesis_test",
+    "generated_at_utc": "2026-09-15T01:03:14.276615Z",
+    "available_at_utc": "2026-09-15T01:03:14.276615Z",
+    "event_window_utc": {
+      "start": "2026-09-07T15:02:14.818119Z",
+      "end": "2026-09-14T15:02:14.818119Z"
+    },
+    "report_path": "Report.md",
+    "report_sha256": "5fccb23fc0e0abeff43024452253f63a4da2a7965e69d056f89ce4324783a873",
+    "manifest_path": "manifest.json",
+    "manifest_sha256": "bc586ae3dc5adf61b91d05b4ffe2b43fc488bfe66f1744a3af4fa42ba3df6db7",
+    "workflow_commit": "e9105bf38cdca6e78955f03844a2c894c9abd793",
+    "executed_code_commit": "e9105bf38cdca6e78955f03844a2c894c9abd793",
+    "geography": [
+      "Global documentary discovery",
+      "Baltic/Nordic aircraft pilot",
+      "Eastern Mediterranean aircraft pilot",
+      "Gulf aircraft pilot",
+      "Selected orbital catalogs"
+    ],
+    "actual_coverage": {
+      "requested_hours": 168,
+      "captures": 306,
+      "capture_window_utc": {
+        "start": "2026-09-14T04:53:04.106032Z",
+        "end": "2026-09-14T14:59:38.905779Z"
+      },
+      "aircraft_records": 229959,
+      "satellite_elements": 217,
+      "aircraft_event_days": ["2026-09-12", "2026-09-13", "2026-09-14"],
+      "daily": [
+        {"day_utc":"2026-09-07","interval_start":"2026-09-07T15:02:14.818119Z","interval_end":"2026-09-08T00:00:00Z","duration_hours":8.962550522486369,"capture_requests":0,"aircraft_event_records":0,"aircraft_events_by_source":{},"aircraft_entities":0,"satellite_elements_with_epoch_in_interval":0,"regional_snapshot_counts":{"baltic-nordic":0,"eastern-mediterranean":0,"gulf":0}},
+        {"day_utc":"2026-09-08","interval_start":"2026-09-08T00:00:00Z","interval_end":"2026-09-09T00:00:00Z","duration_hours":24,"capture_requests":0,"aircraft_event_records":0,"aircraft_events_by_source":{},"aircraft_entities":0,"satellite_elements_with_epoch_in_interval":0,"regional_snapshot_counts":{"baltic-nordic":0,"eastern-mediterranean":0,"gulf":0}},
+        {"day_utc":"2026-09-09","interval_start":"2026-09-09T00:00:00Z","interval_end":"2026-09-10T00:00:00Z","duration_hours":24,"capture_requests":0,"aircraft_event_records":0,"aircraft_events_by_source":{},"aircraft_entities":0,"satellite_elements_with_epoch_in_interval":1,"regional_snapshot_counts":{"baltic-nordic":0,"eastern-mediterranean":0,"gulf":0}},
+        {"day_utc":"2026-09-10","interval_start":"2026-09-10T00:00:00Z","interval_end":"2026-09-11T00:00:00Z","duration_hours":24,"capture_requests":0,"aircraft_event_records":0,"aircraft_events_by_source":{},"aircraft_entities":0,"satellite_elements_with_epoch_in_interval":1,"regional_snapshot_counts":{"baltic-nordic":0,"eastern-mediterranean":0,"gulf":0}},
+        {"day_utc":"2026-09-11","interval_start":"2026-09-11T00:00:00Z","interval_end":"2026-09-12T00:00:00Z","duration_hours":24,"capture_requests":0,"aircraft_event_records":0,"aircraft_events_by_source":{},"aircraft_entities":0,"satellite_elements_with_epoch_in_interval":3,"regional_snapshot_counts":{"baltic-nordic":0,"eastern-mediterranean":0,"gulf":0}},
+        {"day_utc":"2026-09-12","interval_start":"2026-09-12T00:00:00Z","interval_end":"2026-09-13T00:00:00Z","duration_hours":24,"capture_requests":0,"aircraft_event_records":60,"aircraft_events_by_source":{"gev:adsb.lol:trace":60},"aircraft_entities":1,"satellite_elements_with_epoch_in_interval":9,"regional_snapshot_counts":{"baltic-nordic":0,"eastern-mediterranean":0,"gulf":0}},
+        {"day_utc":"2026-09-13","interval_start":"2026-09-13T00:00:00Z","interval_end":"2026-09-14T00:00:00Z","duration_hours":24,"capture_requests":0,"aircraft_event_records":120913,"aircraft_events_by_source":{"gev:adsb.lol:trace":120913},"aircraft_entities":64,"satellite_elements_with_epoch_in_interval":117,"regional_snapshot_counts":{"baltic-nordic":0,"eastern-mediterranean":0,"gulf":0}},
+        {"day_utc":"2026-09-14","interval_start":"2026-09-14T00:00:00Z","interval_end":"2026-09-14T15:02:14.818119Z","duration_hours":15.037449477513631,"capture_requests":306,"aircraft_event_records":108986,"aircraft_events_by_source":{"gev:adsb.lol:trace":78520,"gev:opensky:states":30466},"aircraft_entities":3056,"satellite_elements_with_epoch_in_interval":85,"regional_snapshot_counts":{"baltic-nordic":70,"eastern-mediterranean":70,"gulf":70}}
+      ],
+      "baseline_days_available": 0,
+      "truncated_input_sets": []
+    },
+    "sources": [
+      {"id":"GEV-aircraft","upstream_ids":["OpenSky","ADSB.lol"],"independence":"not_established"},
+      {"id":"GEV-satellites","upstream_ids":["CelesTrak","upstream_general_perturbation_catalog"],"independence":"shared_orbital_solutions"},
+      {"id":"Hawaii-SARSAT","upstream_ids":["NOAA-USMCC"],"url":"https://ospo.noaa.gov/data/messages/2026/09/MSG_20260908_1211.html"},
+      {"id":"Taipei-AIP-15-26","upstream_ids":["Taiwan-CAA"],"url":"https://ais.caa.gov.tw/eaip/AIRAC%20AIP%20AMDT%2002-26_2026_05_14/eSUP/15-26_2026_07_01/SUP-en-GB.html"},
+      {"id":"Sentinel6A-NOAA-mirror","upstream_ids":["EUMETSAT-alert-13829","EUMETSAT-alert-13831"],"independence":"NOAA republication is not independent corroboration"},
+      {"id":"GOES18-calibration","upstream_ids":["NOAA-OSPO"],"url":"https://ospo.noaa.gov/data/messages/2026/09/MSG_20260908_1453.html"}
+    ],
+    "claims": [
+      {"id":"H1","status":"supported","scope":"Approximate ordinary precession diagnostic for20 non-equatorial raw RAAN flags"},
+      {"id":"H2","status":"supported","scope":"Near-equatorial angle exaggeration; physical residual cause inconclusive"},
+      {"id":"H3","status":"supported","scope":"22 catalog identifiers reduce to13 exact paired signatures"},
+      {"id":"H4","status":"inconclusive","scope":"No verified physical maneuver, military attribution or economic impact"}
+    ],
+    "supersedes": [],
+    "limitations": [
+      "Partial pilot coverage and empty historical baseline.",
+      "Same-source approximate mean-element diagnostic, not SGP4 or independent precision tracking.",
+      "Report generation and capture times are later than some events; not a contemporaneous knowledge reconstruction.",
+      "Raw archive and private configuration remain local;146 distinct raw bodies are not included in frozen package.",
+      "Weather/energy counterparts not complete at finalization; reconciliation pending.",
+      "No market receipt/persistence time is implied by local availability."
+    ]
+  }
+}
