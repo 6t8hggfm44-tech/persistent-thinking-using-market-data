@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "authorized_at": "2026-09-14",
+  "owner": "6t8hggfm44-tech",
+  "report_contract": "meta/RESEARCH_REPORT_INTAKE.md",
+  "agents": [
+    {
+      "domain": "credit",
+      "title": "Credit and financial stress",
+      "repository": "6t8hggfm44-tech/-Credit-financial-stress-",
+      "role": "independent_upstream_research",
+      "weekly_start": {
+        "timezone": "America/Los_Angeles",
+        "weekday": 0,
+        "hour": 9,
+        "minute": 0
+      },
+      "run_id_pattern": "credit-suite-weekly-YYYY-MM-DD",
+      "status": "workflow_configured",
+      "report_status": "no_report_delivered_by_setup"
+    },
+    {
+      "domain": "labor",
+      "title": "Labor-market activity and pressure",
+      "repository": "6t8hggfm44-tech/-Labor-market-agent",
+      "role": "independent_upstream_research",
+      "weekly_start": {
+        "timezone": "America/Los_Angeles",
+        "weekday": 0,
+        "hour": 12,
+        "minute": 0
+      },
+      "run_id_pattern": "labor-suite-weekly-YYYY-MM-DD",
+      "status": "workflow_configured",
+      "report_status": "no_report_delivered_by_setup"
+    },
+    {
+      "domain": "consumer",
+      "title": "Consumer spending and household activity",
+      "repository": "6t8hggfm44-tech/-Consumer-activity-",
+      "role": "independent_upstream_research",
+      "weekly_start": {
+        "timezone": "America/Los_Angeles",
+        "weekday": 0,
+        "hour": 15,
+        "minute": 0
+      },
+      "run_id_pattern": "consumer-suite-weekly-YYYY-MM-DD",
+      "status": "workflow_configured",
+      "report_status": "no_report_delivered_by_setup"
+    },
+    {
+      "domain": "housing",
+      "title": "Housing and Construction",
+      "repository": "6t8hggfm44-tech/-Housing-construction-",
+      "role": "independent_upstream_research",
+      "weekly_start": {
+        "timezone": "America/Los_Angeles",
+        "weekday": 1,
+        "hour": 9,
+        "minute": 0
+      },
+      "run_id_pattern": "housing-suite-weekly-YYYY-MM-DD",
+      "status": "workflow_configured",
+      "report_status": "no_report_delivered_by_setup"
+    },
+    {
+      "domain": "industry",
+      "title": "Industrial Production",
+      "repository": "6t8hggfm44-tech/-Industrial-production-",
+      "role": "independent_upstream_research",
+      "weekly_start": {
+        "timezone": "America/Los_Angeles",
+        "weekday": 1,
+        "hour": 12,
+        "minute": 0
+      },
+      "run_id_pattern": "industry-suite-weekly-YYYY-MM-DD",
+      "status": "workflow_configured",
+      "report_status": "no_report_delivered_by_setup"
+    },
+    {
+      "domain": "corporate",
+      "title": "Corporate Behavior",
+      "repository": "6t8hggfm44-tech/-Corporate-behavior-",
+      "role": "independent_upstream_research",
+      "weekly_start": {
+        "timezone": "America/Los_Angeles",
+        "weekday": 1,
+        "hour": 15,
+        "minute": 0
+      },
+      "run_id_pattern": "corporate-suite-weekly-YYYY-MM-DD",
+      "status": "workflow_configured",
+      "report_status": "no_report_delivered_by_setup"
+    },
+    {
+      "domain": "fiscal",
+      "title": "Government and Fiscal Activity",
+      "repository": "6t8hggfm44-tech/-Government-fiscal-",
+      "role": "independent_upstream_research",
+      "weekly_start": {
+        "timezone": "America/Los_Angeles",
+        "weekday": 2,
+        "hour": 9,
+        "minute": 0
+      },
+      "run_id_pattern": "fiscal-suite-weekly-YYYY-MM-DD",
+      "status": "workflow_configured",
+      "report_status": "no_report_delivered_by_setup"
+    },
+    {
+      "domain": "trade",
+      "title": "Global trade and China",
+      "repository": "6t8hggfm44-tech/-Global-trade-China",
+      "role": "independent_upstream_research",
+      "weekly_start": {
+        "timezone": "America/Los_Angeles",
+        "weekday": 2,
+        "hour": 12,
+        "minute": 0
+      },
+      "run_id_pattern": "trade-suite-weekly-YYYY-MM-DD",
+      "status": "workflow_configured",
+      "report_status": "no_report_delivered_by_setup"
+    },
+    {
+      "domain": "freight",
+      "title": "Freight and supply-chain activity",
+      "repository": "6t8hggfm44-tech/-Freight-supply-chain",
+      "role": "independent_upstream_research",
+      "weekly_start": {
+        "timezone": "America/Los_Angeles",
+        "weekday": 2,
+        "hour": 15,
+        "minute": 0
+      },
+      "run_id_pattern": "freight-suite-weekly-YYYY-MM-DD",
+      "status": "workflow_configured",
+      "report_status": "no_report_delivered_by_setup"
+    },
+    {
+      "domain": "agriculture",
+      "title": "Agriculture and food",
+      "repository": "6t8hggfm44-tech/-Agriculture-food-",
+      "role": "independent_upstream_research",
+      "weekly_start": {
+        "timezone": "America/Los_Angeles",
+        "weekday": 3,
+        "hour": 9,
+        "minute": 0
+      },
+      "run_id_pattern": "agriculture-suite-weekly-YYYY-MM-DD",
+      "status": "workflow_configured",
+      "report_status": "no_report_delivered_by_setup"
+    },
+    {
+      "domain": "geopolitics",
+      "title": "Geopolitical risk and economic transmission",
+      "repository": "6t8hggfm44-tech/-Geopolitical-risk",
+      "role": "independent_upstream_research",
+      "weekly_start": {
+        "timezone": "America/Los_Angeles",
+        "weekday": 3,
+        "hour": 12,
+        "minute": 0
+      },
+      "run_id_pattern": "geopolitics-suite-weekly-YYYY-MM-DD",
+      "status": "workflow_configured",
+      "report_status": "no_report_delivered_by_setup"
+    },
+    {
+      "domain": "energy",
+      "title": "Energy supply, demand and physical stress",
+      "repository": "6t8hggfm44-tech/-Energy",
+      "role": "independent_upstream_research",
+      "weekly_start": {
+        "timezone": "America/Los_Angeles",
+        "weekday": 3,
+        "hour": 15,
+        "minute": 0
+      },
+      "run_id_pattern": "energy-suite-weekly-YYYY-MM-DD",
+      "status": "workflow_configured",
+      "report_status": "no_report_delivered_by_setup"
+    }
+  ],
+  "existing_producers": [
+    {
+      "domain": "gev",
+      "repository": "6t8hggfm44-tech/satellite-research",
+      "retain_legacy_intake": true
+    },
+    {
+      "domain": "weather",
+      "repository": "6t8hggfm44-tech/weather"
+    },
+    {
+      "domain": "energy",
+      "repository": "6t8hggfm44-tech/energy",
+      "relationship": "Existing petroleum producer; suite Energy reuses exact evidence and adds broader energy research without double-counting."
+    }
+  ]
+}

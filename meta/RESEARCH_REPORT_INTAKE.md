@@ -29,3 +29,7 @@ Test supported linkages against ordinary alternatives and matched controls. Requ
 Weather is due Monday 08:20 and energy 08:40 America/Los_Angeles; GEV is due 08:00. These are start times, not delivery guarantees. A late, missing or stale counterpart stays explicit. Use available evidence and reconcile at the next existing reporting cycle when the missing report arrives. Do not create another schedule or an extra forecast cycle for intake.
 
 Corrections append new versions with supersedes links and changed claims. Retain original report versions and historical use, then review affected downstream interpretations prospectively. No setup notice is a weekly report. No trading, purchases, broader sharing, or Executive Agent activation is authorized by this policy.
+
+## Extension: twelve upstream domain agents
+
+Pete's September 14, 2026 authorization extends this exact intake and canonical-record contract to all producers in [UPSTREAM_AGENT_REGISTRY.json](UPSTREAM_AGENT_REGISTRY.json). Follow [UPSTREAM_RESEARCH_AGENTS.md](UPSTREAM_RESEARCH_AGENTS.md) for the full roster, weekly availability inventory, domain overlap and source-dependence rules. Preserve existing GEV/weather/energy handling, the original Economy boundary and Repo B validation. The additional domain IDs are freight, labor, consumer, housing, industry, credit, corporate, fiscal, trade, agriculture and geopolitics; suite Energy uses energy with a distinct suite run ID. Setup creates no intake row and no extra reporting cycle.
