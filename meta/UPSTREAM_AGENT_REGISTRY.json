@@ -238,8 +238,8 @@
       "domain": "gev",
       "repository": "6t8hggfm44-tech/satellite-research",
       "retain_legacy_intake": true,
-      "cloud_migration_status": "prepared_awaiting_runtime_and_archive_verification",
-      "cloud_activation_verified": false,
+      "cloud_migration_status": "cloud_weekly_active",
+      "cloud_activation_verified": true,
       "cloud_storage_repository": "6t8hggfm44-tech/-Energy",
       "cloud_runtime_path": "cloud/legacy-weekly/",
       "cloud_report_path": "cloud/legacy-weekly/reports/gev/<run-id>/<report-sha256>/",
@@ -251,13 +251,18 @@
         "hour": 8,
         "minute": 0
       },
-      "pending_packet_supported": true
+      "pending_packet_supported": true,
+      "runtime": "cloud",
+      "cloud_activation_verified_at_utc": "2026-09-16T03:31:47Z",
+      "schedule_effective_date": "2026-09-21",
+      "private_archive_restore_verified": true,
+      "collector_status": "private_cloud_archive_verified_continuous_acquisition_awaiting_paid_capacity"
     },
     {
       "domain": "weather",
       "repository": "6t8hggfm44-tech/weather",
-      "cloud_migration_status": "prepared_awaiting_runtime_and_archive_verification",
-      "cloud_activation_verified": false,
+      "cloud_migration_status": "cloud_weekly_active",
+      "cloud_activation_verified": true,
       "cloud_storage_repository": "6t8hggfm44-tech/-Energy",
       "cloud_runtime_path": "cloud/legacy-weekly/",
       "cloud_report_path": "cloud/legacy-weekly/reports/weather/<run-id>/<report-sha256>/",
@@ -266,17 +271,22 @@
       "weekly_start": {
         "timezone": "America/Los_Angeles",
         "weekday": 0,
-        "hour": 8,
-        "minute": 20
+        "hour": 10,
+        "minute": 0
       },
-      "pending_packet_supported": true
+      "pending_packet_supported": true,
+      "runtime": "cloud",
+      "cloud_activation_verified_at_utc": "2026-09-16T03:31:47Z",
+      "schedule_effective_date": "2026-09-21",
+      "private_archive_restore_verified": true,
+      "collector_status": "daily_cloud_collection_active"
     },
     {
       "domain": "energy",
       "repository": "6t8hggfm44-tech/energy",
       "relationship": "Existing petroleum producer; suite Energy reuses exact evidence and adds broader energy research without double-counting.",
-      "cloud_migration_status": "prepared_awaiting_runtime_and_archive_verification",
-      "cloud_activation_verified": false,
+      "cloud_migration_status": "cloud_weekly_active",
+      "cloud_activation_verified": true,
       "cloud_storage_repository": "6t8hggfm44-tech/-Energy",
       "cloud_runtime_path": "cloud/legacy-weekly/",
       "cloud_report_path": "cloud/legacy-weekly/reports/energy/<run-id>/<report-sha256>/",
@@ -285,10 +295,15 @@
       "weekly_start": {
         "timezone": "America/Los_Angeles",
         "weekday": 0,
-        "hour": 8,
-        "minute": 40
+        "hour": 11,
+        "minute": 0
       },
-      "pending_packet_supported": true
+      "pending_packet_supported": true,
+      "runtime": "cloud",
+      "cloud_activation_verified_at_utc": "2026-09-16T03:31:47Z",
+      "schedule_effective_date": "2026-09-21",
+      "private_archive_restore_verified": true,
+      "collector_status": "daily_cloud_collection_active"
     }
   ],
   "cloud_migration": {
@@ -308,10 +323,17 @@
     "native_notification_mute_verified": false
   },
   "legacy_cloud_migration": {
-    "status": "prepared",
-    "activation_verified": false,
+    "status": "cloud_weekly_active",
+    "activation_verified": true,
     "packet_contract": "meta/RESEARCH_REPORT_INTAKE.md#existing-producers-moving-to-cloud",
     "preserve_existing_gev_canonical_key": true,
-    "market_cycle": "next_existing_cycle_only"
+    "market_cycle": "next_existing_cycle_only",
+    "activation_verified_at_utc": "2026-09-16T03:31:47Z",
+    "schedule_effective_date": "2026-09-21",
+    "private_deployment_commit": "9cc3953691f8f8d3398ca3e4074623a7d311eca3",
+    "independent_weekly_workflows": 3,
+    "mac_required": false,
+    "gev_continuous_collection_status": "awaiting_paid_capacity_authorization",
+    "historical_pending_occurrences": "Preserved; migration approval does not authorize missed reports."
   }
 }
