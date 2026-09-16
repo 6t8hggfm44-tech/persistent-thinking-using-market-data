@@ -256,7 +256,27 @@
       "cloud_activation_verified_at_utc": "2026-09-16T03:31:47Z",
       "schedule_effective_date": "2026-09-21",
       "private_archive_restore_verified": true,
-      "collector_status": "private_cloud_archive_verified_continuous_acquisition_awaiting_zero_spend_host_setup"
+      "collector_status": "zero_spend_historical_aircraft_and_satellite_cloud_schedules_configured_native_execution_unverified",
+      "evidence_modes": [
+        "retrospective_completed_utc_day_aircraft_archive",
+        "six_hour_satellite_dataset_opportunities",
+        "preserved_legacy_live_archive"
+      ],
+      "cloud_data_access_verified": true,
+      "live_five_minute_aircraft_collection_active": false,
+      "native_collector_scheduled_execution_verified": false,
+      "collector_schedule": {
+        "daily_aircraft_utc": "05:17",
+        "first_aircraft_occurrence_utc": "2026-09-17T05:17:00Z",
+        "satellite_utc": [
+          "03:17",
+          "09:17",
+          "15:17",
+          "21:17"
+        ],
+        "cached_history_weekly": "Monday 06:37 America/Los_Angeles",
+        "first_satellite_slot_status": "2026-09-16T09:17:00Z not observed; cause unknown; no automatic catchup"
+      }
     },
     {
       "domain": "weather",
@@ -333,7 +353,10 @@
     "private_deployment_commit": "9cc3953691f8f8d3398ca3e4074623a7d311eca3",
     "independent_weekly_workflows": 3,
     "mac_required": false,
-    "gev_continuous_collection_status": "zero_spend_hosting_setup_pending_paid_proposal_on_hold",
-    "historical_pending_occurrences": "Preserved; migration approval does not authorize missed reports."
+    "gev_continuous_collection_status": "five_minute_live_inactive_zero_spend_retrospective_aircraft_and_satellite_schedules_configured",
+    "historical_pending_occurrences": "Preserved; migration approval does not authorize missed reports.",
+    "gev_data_path_status": "source_preservation_replay_and_actual_cloud_model_byte_access_verified",
+    "gev_native_collection_schedule_status": "not_yet_verified_first_satellite_occurrence_not_observed",
+    "maximum_new_hosting_spend_usd": 0
   }
 }
