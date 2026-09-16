@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "delivery_key": "trade:domain-suite-weekly-2026-09-16:3794b30599c25b38d3498da0756680c176acc9b0b871c140853bcc133bad8ce8",
+  "domain": "trade",
+  "run_id": "domain-suite-weekly-2026-09-16",
+  "report_version": 1,
+  "received_at_utc": "2026-09-16T21:15:03Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "integrity": {
+    "supplied_report_sha256": "3794b30599c25b38d3498da0756680c176acc9b0b871c140853bcc133bad8ce8",
+    "computed_report_sha256": "3794b30599c25b38d3498da0756680c176acc9b0b871c140853bcc133bad8ce8",
+    "report_bytes_expected": 4092,
+    "report_bytes_computed": 4092,
+    "supplied_envelope_sha256": "809afe2258337d46068ee2ede6360d1545c9f24ec9385914b05b62f309de4170",
+    "computed_envelope_sha256": "809afe2258337d46068ee2ede6360d1545c9f24ec9385914b05b62f309de4170",
+    "envelope_bytes_expected": 4463,
+    "envelope_bytes_computed": 4463,
+    "packet_identity_consistent": true,
+    "manifest_sha256": "8e716109b81e363d2ea01f466833939b84bff4fd45a34c90eee52b64ce3054e5",
+    "manifest_bytes_available_to_market_intake": false,
+    "manifest_hash_recomputed": false,
+    "limitations": [
+      "The producer manifest and underlying raw publisher bodies were not included in the public Market packet, so Market did not independently recompute the producer manifest hash or raw-source hashes.",
+      "The report itself states that the full WTO publisher body was not persisted by the producer and that several other configured publisher bodies were unavailable or unreviewed."
+    ]
+  },
+  "source_packet": {
+    "staging_commit": "65e987f263d8eedb2cbab561729b9794094c8caf",
+    "staging_path": "evidence/research/pending/trade/domain-suite-weekly-2026-09-16/3794b30599c25b38d3498da0756680c176acc9b0b871c140853bcc133bad8ce8/",
+    "producer_repository": "6t8hggfm44-tech/-Global-trade-China",
+    "producer_commit": "49554ea7498c271a844844dba5ee452e3aa7a149",
+    "producer_report_path": "reports/domain-suite-weekly-2026-09-16/3794b30599c25b38d3498da0756680c176acc9b0b871c140853bcc133bad8ce8/Report.md",
+    "prepared_at_utc": "2026-09-16T19:12:33.986215+00:00"
+  },
+  "availability": {
+    "producer_evidence_cutoff_utc": "2026-09-16T19:06:50.272574+00:00",
+    "producer_generated_at_utc": "2026-09-16T19:11:08.392573+00:00",
+    "producer_available_at_utc": "2026-09-16T19:11:08.392573+00:00",
+    "market_canonical_from_utc": "2026-09-16T21:15:03Z",
+    "note": "Market availability is actual complete receipt/verification time, not producer generation or staging time."
+  },
+  "archive": {
+    "report_path": "evidence/research/trade/domain-suite-weekly-2026-09-16/3794b30599c25b38d3498da0756680c176acc9b0b871c140853bcc133bad8ce8/Report.md",
+    "envelope_path": "evidence/research/trade/domain-suite-weekly-2026-09-16/3794b30599c25b38d3498da0756680c176acc9b0b871c140853bcc133bad8ce8/report-envelope.json",
+    "intake_path": "evidence/research/trade/domain-suite-weekly-2026-09-16/3794b30599c25b38d3498da0756680c176acc9b0b871c140853bcc133bad8ce8/intake.json"
+  },
+  "canonical_status": {
+    "status": "canonical_versioned_research_input",
+    "market_use": "prospective_only_from_market_receipt_time",
+    "automatic_model_weight_change": false,
+    "scored_market_forecast": false,
+    "source_ancestry_audit_required": true,
+    "summary": "Preserve the report's qualified support for positive but uneven global merchandise-trade momentum, its explicit transport divergence and coverage/source limitations. It does not establish a China-wide demand boom, causal final-demand effect, or independent confirmation from its component sources."
+  },
+  "supersedes": []
+}
