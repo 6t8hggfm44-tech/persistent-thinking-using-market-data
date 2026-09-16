@@ -42,3 +42,7 @@ Require executed tests and operational/economic evidence for causal transmission
 Intake alone changes no hypothesis weights or historical forecasts. Preserve original evidence cutoffs, immutable forecast content/outcomes, correction history, the structural Economy handoff boundary and Market Repo B validation. Broad upstream mechanisms are not scored predictions until Market prospectively registers a concrete target, horizon, benchmark, probability/range and resolution/failure rule.
 
 Assess whether these inputs improve later forecasts only prospectively under the existing learning protocol and Repo B's comparable-score and uncertainty checks. More reports, persuasive prose or post-outcome explanations do not establish learning. Preserve unsuccessful tests and avoid source duplication, target substitution and retrospective benchmark selection.
+
+## Remaining cloud migration
+
+GEV, weather and original petroleum research are the three existing producers in addition to the twelve suite workflows. Their cloud packages use private `-Energy/cloud/legacy-weekly/` and the pending-packet contract, preserving Monday 08:00/08:20/08:40 Pacific and their separate occurrence histories. Registry state remains prepared until cloud runtime, archive access and schedule activation are verified. Original petroleum and suite Energy are distinct report workflows sharing EIA ancestry, not independent sensors. All intake remains at the next existing Market cycle.

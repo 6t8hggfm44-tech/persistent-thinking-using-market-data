@@ -35,3 +35,7 @@ Do not automatically revise hypothesis weights, create a scored prediction from 
 A corrected report is a new version with explicit supersedes references and a description of changed claims. Preserve the original report, its receipt time and historical use. Apply new knowledge prospectively; add visible corrections to later assessments without rewriting the earlier record.
 
 This integration adds an input to existing reporting. It does not create a new schedule, request an extra forecast cycle, activate Executive Agent mode, authorize other recipients or change the independent validation process.
+
+## Cloud packet transport
+
+The existing GEV producer may stage a complete, reviewed final report in the atomic cloud packet format described in [RESEARCH_REPORT_INTAKE.md](RESEARCH_REPORT_INTAKE.md#cloud-pending-packets), at `evidence/research/pending/gev/<run-id>/<report-sha256>/`. Preserve this document's original `run_id:report_sha256` key and `evidence/gev-weekly/` canonical archive/index. Inspect for prior complete receipt before accepting or recovering a packet; a new transport path does not reset availability or create a second report. Cloud runtime activation is separately verified. Private archive seeds, collector outputs and setup tests are not final reports and never enter canonical intake.

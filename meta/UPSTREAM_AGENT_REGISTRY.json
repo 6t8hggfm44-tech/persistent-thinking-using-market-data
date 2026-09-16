@@ -237,16 +237,58 @@
     {
       "domain": "gev",
       "repository": "6t8hggfm44-tech/satellite-research",
-      "retain_legacy_intake": true
+      "retain_legacy_intake": true,
+      "cloud_migration_status": "prepared_awaiting_runtime_and_archive_verification",
+      "cloud_activation_verified": false,
+      "cloud_storage_repository": "6t8hggfm44-tech/-Energy",
+      "cloud_runtime_path": "cloud/legacy-weekly/",
+      "cloud_report_path": "cloud/legacy-weekly/reports/gev/<run-id>/<report-sha256>/",
+      "producer_kind": "legacy_gev",
+      "run_id_pattern": "gev-weekly-YYYY-MM-DD",
+      "weekly_start": {
+        "timezone": "America/Los_Angeles",
+        "weekday": 0,
+        "hour": 8,
+        "minute": 0
+      },
+      "pending_packet_supported": true
     },
     {
       "domain": "weather",
-      "repository": "6t8hggfm44-tech/weather"
+      "repository": "6t8hggfm44-tech/weather",
+      "cloud_migration_status": "prepared_awaiting_runtime_and_archive_verification",
+      "cloud_activation_verified": false,
+      "cloud_storage_repository": "6t8hggfm44-tech/-Energy",
+      "cloud_runtime_path": "cloud/legacy-weekly/",
+      "cloud_report_path": "cloud/legacy-weekly/reports/weather/<run-id>/<report-sha256>/",
+      "producer_kind": "legacy_weather",
+      "run_id_pattern": "weather-weekly-YYYY-MM-DD",
+      "weekly_start": {
+        "timezone": "America/Los_Angeles",
+        "weekday": 0,
+        "hour": 8,
+        "minute": 20
+      },
+      "pending_packet_supported": true
     },
     {
       "domain": "energy",
       "repository": "6t8hggfm44-tech/energy",
-      "relationship": "Existing petroleum producer; suite Energy reuses exact evidence and adds broader energy research without double-counting."
+      "relationship": "Existing petroleum producer; suite Energy reuses exact evidence and adds broader energy research without double-counting.",
+      "cloud_migration_status": "prepared_awaiting_runtime_and_archive_verification",
+      "cloud_activation_verified": false,
+      "cloud_storage_repository": "6t8hggfm44-tech/-Energy",
+      "cloud_runtime_path": "cloud/legacy-weekly/",
+      "cloud_report_path": "cloud/legacy-weekly/reports/energy/<run-id>/<report-sha256>/",
+      "producer_kind": "legacy_energy",
+      "run_id_pattern": "energy-weekly-YYYY-MM-DD",
+      "weekly_start": {
+        "timezone": "America/Los_Angeles",
+        "weekday": 0,
+        "hour": 8,
+        "minute": 40
+      },
+      "pending_packet_supported": true
     }
   ],
   "cloud_migration": {
@@ -264,5 +306,12 @@
     "missed_occurrence_policy": "explicit_approval_per_occurrence",
     "policy_change_authorized": true,
     "native_notification_mute_verified": false
+  },
+  "legacy_cloud_migration": {
+    "status": "prepared",
+    "activation_verified": false,
+    "packet_contract": "meta/RESEARCH_REPORT_INTAKE.md#existing-producers-moving-to-cloud",
+    "preserve_existing_gev_canonical_key": true,
+    "market_cycle": "next_existing_cycle_only"
   }
 }

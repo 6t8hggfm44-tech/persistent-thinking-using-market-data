@@ -125,3 +125,7 @@ At minimum compare against:
 The AI must beat useful benchmarks, not merely its own earlier prose.
 
 Benchmark-relative statistics produced in Market Repo B are valid only when the benchmark loss uses the same target, horizon, resolution, and loss units as the model forecast. Never pool unlike quantities merely because they occupy the same ledger column.
+
+### Legacy research cloud transport
+
+During the existing Phase 2 upstream intake, also inspect complete pending packets for GEV, weather and original petroleum under the registered cloud transport in `meta/RESEARCH_REPORT_INTAKE.md`. Keep GEV's original delivery key and canonical archive; original petroleum run IDs remain distinct from suite Energy. Verify actual producer activation, complete received bytes, event/availability times and shared source ancestry. Migration metadata and collector archives are not reports. This adds no cycle or schedule and does not alter frozen forecasts or Repo B validation.
