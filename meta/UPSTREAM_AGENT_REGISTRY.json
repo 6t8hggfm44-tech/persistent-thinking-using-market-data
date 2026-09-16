@@ -256,7 +256,7 @@
       "cloud_activation_verified_at_utc": "2026-09-16T03:31:47Z",
       "schedule_effective_date": "2026-09-21",
       "private_archive_restore_verified": true,
-      "collector_status": "private_cloud_archive_verified_continuous_acquisition_awaiting_paid_capacity"
+      "collector_status": "private_cloud_archive_verified_continuous_acquisition_awaiting_zero_spend_host_setup"
     },
     {
       "domain": "weather",
@@ -333,7 +333,7 @@
     "private_deployment_commit": "9cc3953691f8f8d3398ca3e4074623a7d311eca3",
     "independent_weekly_workflows": 3,
     "mac_required": false,
-    "gev_continuous_collection_status": "awaiting_paid_capacity_authorization",
+    "gev_continuous_collection_status": "zero_spend_hosting_setup_pending_paid_proposal_on_hold",
     "historical_pending_occurrences": "Preserved; migration approval does not authorize missed reports."
   }
 }
