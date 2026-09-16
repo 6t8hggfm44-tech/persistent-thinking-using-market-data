@@ -17,7 +17,9 @@
       },
       "run_id_pattern": "credit-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
-      "report_status": "no_report_delivered_by_setup"
+      "report_status": "no_report_delivered_by_setup",
+      "runtime": "cloud_prepared",
+      "cloud_activation_verified": false
     },
     {
       "domain": "labor",
@@ -32,7 +34,9 @@
       },
       "run_id_pattern": "labor-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
-      "report_status": "no_report_delivered_by_setup"
+      "report_status": "no_report_delivered_by_setup",
+      "runtime": "cloud_prepared",
+      "cloud_activation_verified": false
     },
     {
       "domain": "consumer",
@@ -47,7 +51,9 @@
       },
       "run_id_pattern": "consumer-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
-      "report_status": "no_report_delivered_by_setup"
+      "report_status": "no_report_delivered_by_setup",
+      "runtime": "cloud_prepared",
+      "cloud_activation_verified": false
     },
     {
       "domain": "housing",
@@ -62,7 +68,9 @@
       },
       "run_id_pattern": "housing-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
-      "report_status": "no_report_delivered_by_setup"
+      "report_status": "no_report_delivered_by_setup",
+      "runtime": "cloud_prepared",
+      "cloud_activation_verified": false
     },
     {
       "domain": "industry",
@@ -77,7 +85,9 @@
       },
       "run_id_pattern": "industry-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
-      "report_status": "no_report_delivered_by_setup"
+      "report_status": "no_report_delivered_by_setup",
+      "runtime": "cloud_prepared",
+      "cloud_activation_verified": false
     },
     {
       "domain": "corporate",
@@ -92,7 +102,9 @@
       },
       "run_id_pattern": "corporate-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
-      "report_status": "no_report_delivered_by_setup"
+      "report_status": "no_report_delivered_by_setup",
+      "runtime": "cloud_prepared",
+      "cloud_activation_verified": false
     },
     {
       "domain": "fiscal",
@@ -107,7 +119,9 @@
       },
       "run_id_pattern": "fiscal-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
-      "report_status": "no_report_delivered_by_setup"
+      "report_status": "no_report_delivered_by_setup",
+      "runtime": "cloud_prepared",
+      "cloud_activation_verified": false
     },
     {
       "domain": "trade",
@@ -122,7 +136,9 @@
       },
       "run_id_pattern": "trade-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
-      "report_status": "no_report_delivered_by_setup"
+      "report_status": "no_report_delivered_by_setup",
+      "runtime": "cloud_prepared",
+      "cloud_activation_verified": false
     },
     {
       "domain": "freight",
@@ -137,7 +153,9 @@
       },
       "run_id_pattern": "freight-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
-      "report_status": "no_report_delivered_by_setup"
+      "report_status": "no_report_delivered_by_setup",
+      "runtime": "cloud_prepared",
+      "cloud_activation_verified": false
     },
     {
       "domain": "agriculture",
@@ -152,7 +170,9 @@
       },
       "run_id_pattern": "agriculture-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
-      "report_status": "no_report_delivered_by_setup"
+      "report_status": "no_report_delivered_by_setup",
+      "runtime": "cloud_prepared",
+      "cloud_activation_verified": false
     },
     {
       "domain": "geopolitics",
@@ -167,7 +187,9 @@
       },
       "run_id_pattern": "geopolitics-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
-      "report_status": "no_report_delivered_by_setup"
+      "report_status": "no_report_delivered_by_setup",
+      "runtime": "cloud_prepared",
+      "cloud_activation_verified": false
     },
     {
       "domain": "energy",
@@ -182,7 +204,9 @@
       },
       "run_id_pattern": "energy-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
-      "report_status": "no_report_delivered_by_setup"
+      "report_status": "no_report_delivered_by_setup",
+      "runtime": "cloud_prepared",
+      "cloud_activation_verified": false
     }
   ],
   "existing_producers": [
@@ -200,5 +224,15 @@
       "repository": "6t8hggfm44-tech/energy",
       "relationship": "Existing petroleum producer; suite Energy reuses exact evidence and adds broader energy research without double-counting."
     }
-  ]
+  ],
+  "cloud_migration": {
+    "status": "cloud_prepared",
+    "activation_verified": false,
+    "pending_packet_root": "evidence/research/pending/",
+    "packet_contract": "meta/RESEARCH_REPORT_INTAKE.md#cloud-pending-packets",
+    "market_cycle": "next_existing_cycle_only",
+    "market_repository_visibility": "public",
+    "allowed_market_content": "reviewed_shareable_final_report_prose_and_safe_envelope_transport_metadata",
+    "routine_notification_preference": "muted_requested_controls_require_verification"
+  }
 }

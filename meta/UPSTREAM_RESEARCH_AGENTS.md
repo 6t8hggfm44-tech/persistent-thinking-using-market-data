@@ -1,6 +1,6 @@
 # Twelve upstream research agents
 
-Pete authorized twelve complementary domain agents on September 14, 2026, with staggered weekly reports, the GEV/weather/energy investigation and intake rules, and routine notifications muted. The primary market model remains the integration and forecasting authority. This file configures future intake; it is not a delivered research report, new forecast, trading mandate or extra market cycle.
+Pete authorized twelve complementary domain agents on September 14, 2026, with staggered weekly reports, the GEV/weather/energy investigation and intake rules, and a preference for muted routine notifications. The primary market model remains the integration and forecasting authority. This file configures future intake; it is not a delivered research report, new forecast, trading mandate or extra market cycle.
 
 ## Registered producers
 
@@ -19,7 +19,7 @@ Pete authorized twelve complementary domain agents on September 14, 2026, with s
 | Geopolitical risk and economic transmission | [6t8hggfm44-tech/-Geopolitical-risk](https://github.com/6t8hggfm44-tech/-Geopolitical-risk) | Thursday 12:00 |
 | Energy supply, demand and physical stress | [6t8hggfm44-tech/-Energy](https://github.com/6t8hggfm44-tech/-Energy) | Thursday 15:00 |
 
-The machine-readable [registry](UPSTREAM_AGENT_REGISTRY.json) records exact domain IDs and run patterns. Start times are not arrival guarantees. Local runs require the Mac/runtime and retain occurrence-specific approval for delayed starts. Existing GEV, weather and original energy schedules are unchanged.
+The machine-readable [registry](UPSTREAM_AGENT_REGISTRY.json) records exact domain IDs and run patterns. Start times are not arrival guarantees. The registry marks cloud migration as `cloud_prepared` until activation is verified; this status is not a deployment claim. After verified cutover, cloud-runtime availability replaces Mac availability, while the existing 180-second start gate and occurrence-specific delayed-run approvals remain. Migration grants no catch-up permission. Quiet routine notifications remain requested and depend on verified cloud controls; do not claim native muting without evidence. Existing GEV, weather and original energy schedules are unchanged.
 
 ## Intake and market use
 
@@ -27,7 +27,7 @@ Apply [RESEARCH_REPORT_INTAKE.md](RESEARCH_REPORT_INTAKE.md) to all registered d
 
 Save accepted reports under `evidence/research/<domain>/<run-id>/<report-hash>/` and append the [research index](../evidence/research/INDEX.md). Report acknowledgment and verified durable commit separately. Preserve corrections, supersedes links, provenance, measured coverage and uncertainty. The original energy producer and suite Energy use distinct run IDs in the same domain; reused petroleum observations receive one evidence contribution.
 
-At each existing market cycle, inspect the index and registry for complete inputs available by the current evidence cutoff. Include a compact input inventory identifying latest eligible versions, actual source periods, age/staleness, missing domains and any correction requiring review. For each relevant input say whether it supports, weakens, leaves unchanged, is inconclusive, or has no demonstrated bearing on the current assessment. Do not silently treat absent or old reports as fresh evidence, and do not delay market reporting indefinitely for all twelve.
+At each existing market cycle, inspect `evidence/research/pending/` for complete atomic packets under the [pending-packet contract](RESEARCH_REPORT_INTAKE.md#cloud-pending-packets), then inspect the index and registry for complete inputs actually received by the current evidence cutoff. A staged packet becomes received only when this agent has read all required files and verified their exact bytes; staging, source publication and producer availability are separate timestamps. The public market repository accepts only reviewed shareable final prose and safe envelope/transport metadata, never private checkpoints, raw archives, secrets, task identifiers or machine paths. Include a compact input inventory identifying latest eligible versions, actual source periods, age/staleness, missing domains and any correction requiring review. For each relevant input say whether it supports, weakens, leaves unchanged, is inconclusive, or has no demonstrated bearing on the current assessment. Do not silently treat absent or old reports as fresh evidence, and do not delay market reporting indefinitely for all twelve.
 
 ## Reconciliation and independence
 
