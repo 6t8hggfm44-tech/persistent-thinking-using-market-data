@@ -18,10 +18,10 @@
       "run_id_pattern": "credit-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
       "report_status": "no_report_delivered_by_setup",
-      "runtime": "cloud_activation_pending",
-      "cloud_activation_verified": false,
+      "runtime": "cloud",
+      "cloud_activation_verified": true,
       "cloud_start_boundary_utc": "2026-09-16T16:00:00Z",
-      "cloud_activation_verified_at_utc": null
+      "cloud_activation_verified_at_utc": "2026-09-16T01:34:49.448000Z"
     },
     {
       "domain": "labor",
@@ -37,10 +37,10 @@
       "run_id_pattern": "labor-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
       "report_status": "no_report_delivered_by_setup",
-      "runtime": "cloud_activation_pending",
-      "cloud_activation_verified": false,
+      "runtime": "cloud",
+      "cloud_activation_verified": true,
       "cloud_start_boundary_utc": "2026-09-16T16:00:00Z",
-      "cloud_activation_verified_at_utc": null
+      "cloud_activation_verified_at_utc": "2026-09-16T01:34:49.448000Z"
     },
     {
       "domain": "consumer",
@@ -56,10 +56,10 @@
       "run_id_pattern": "consumer-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
       "report_status": "no_report_delivered_by_setup",
-      "runtime": "cloud_activation_pending",
-      "cloud_activation_verified": false,
+      "runtime": "cloud",
+      "cloud_activation_verified": true,
       "cloud_start_boundary_utc": "2026-09-16T16:00:00Z",
-      "cloud_activation_verified_at_utc": null
+      "cloud_activation_verified_at_utc": "2026-09-16T01:34:49.448000Z"
     },
     {
       "domain": "housing",
@@ -75,10 +75,10 @@
       "run_id_pattern": "housing-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
       "report_status": "no_report_delivered_by_setup",
-      "runtime": "cloud_activation_pending",
-      "cloud_activation_verified": false,
+      "runtime": "cloud",
+      "cloud_activation_verified": true,
       "cloud_start_boundary_utc": "2026-09-16T16:00:00Z",
-      "cloud_activation_verified_at_utc": null
+      "cloud_activation_verified_at_utc": "2026-09-16T01:34:49.448000Z"
     },
     {
       "domain": "industry",
@@ -94,10 +94,10 @@
       "run_id_pattern": "industry-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
       "report_status": "no_report_delivered_by_setup",
-      "runtime": "cloud_activation_pending",
-      "cloud_activation_verified": false,
+      "runtime": "cloud",
+      "cloud_activation_verified": true,
       "cloud_start_boundary_utc": "2026-09-16T16:00:00Z",
-      "cloud_activation_verified_at_utc": null
+      "cloud_activation_verified_at_utc": "2026-09-16T01:34:49.448000Z"
     },
     {
       "domain": "corporate",
@@ -113,10 +113,10 @@
       "run_id_pattern": "corporate-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
       "report_status": "no_report_delivered_by_setup",
-      "runtime": "cloud_activation_pending",
-      "cloud_activation_verified": false,
+      "runtime": "cloud",
+      "cloud_activation_verified": true,
       "cloud_start_boundary_utc": "2026-09-16T16:00:00Z",
-      "cloud_activation_verified_at_utc": null
+      "cloud_activation_verified_at_utc": "2026-09-16T01:34:49.448000Z"
     },
     {
       "domain": "fiscal",
@@ -132,10 +132,10 @@
       "run_id_pattern": "fiscal-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
       "report_status": "no_report_delivered_by_setup",
-      "runtime": "cloud_activation_pending",
-      "cloud_activation_verified": false,
+      "runtime": "cloud",
+      "cloud_activation_verified": true,
       "cloud_start_boundary_utc": "2026-09-16T16:00:00Z",
-      "cloud_activation_verified_at_utc": null
+      "cloud_activation_verified_at_utc": "2026-09-16T01:34:49.448000Z"
     },
     {
       "domain": "trade",
@@ -151,10 +151,10 @@
       "run_id_pattern": "trade-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
       "report_status": "no_report_delivered_by_setup",
-      "runtime": "cloud_activation_pending",
-      "cloud_activation_verified": false,
+      "runtime": "cloud",
+      "cloud_activation_verified": true,
       "cloud_start_boundary_utc": "2026-09-16T16:00:00Z",
-      "cloud_activation_verified_at_utc": null
+      "cloud_activation_verified_at_utc": "2026-09-16T01:34:49.448000Z"
     },
     {
       "domain": "freight",
@@ -170,10 +170,10 @@
       "run_id_pattern": "freight-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
       "report_status": "no_report_delivered_by_setup",
-      "runtime": "cloud_activation_pending",
-      "cloud_activation_verified": false,
+      "runtime": "cloud",
+      "cloud_activation_verified": true,
       "cloud_start_boundary_utc": "2026-09-16T16:00:00Z",
-      "cloud_activation_verified_at_utc": null
+      "cloud_activation_verified_at_utc": "2026-09-16T01:34:49.448000Z"
     },
     {
       "domain": "agriculture",
@@ -189,10 +189,10 @@
       "run_id_pattern": "agriculture-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
       "report_status": "no_report_delivered_by_setup",
-      "runtime": "cloud_activation_pending",
-      "cloud_activation_verified": false,
+      "runtime": "cloud",
+      "cloud_activation_verified": true,
       "cloud_start_boundary_utc": "2026-09-16T16:00:00Z",
-      "cloud_activation_verified_at_utc": null
+      "cloud_activation_verified_at_utc": "2026-09-16T01:34:49.448000Z"
     },
     {
       "domain": "geopolitics",
@@ -208,10 +208,10 @@
       "run_id_pattern": "geopolitics-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
       "report_status": "no_report_delivered_by_setup",
-      "runtime": "cloud_activation_pending",
-      "cloud_activation_verified": false,
+      "runtime": "cloud",
+      "cloud_activation_verified": true,
       "cloud_start_boundary_utc": "2026-09-16T16:00:00Z",
-      "cloud_activation_verified_at_utc": null
+      "cloud_activation_verified_at_utc": "2026-09-16T01:34:49.448000Z"
     },
     {
       "domain": "energy",
@@ -227,10 +227,10 @@
       "run_id_pattern": "energy-suite-weekly-YYYY-MM-DD",
       "status": "workflow_configured",
       "report_status": "no_report_delivered_by_setup",
-      "runtime": "cloud_activation_pending",
-      "cloud_activation_verified": false,
+      "runtime": "cloud",
+      "cloud_activation_verified": true,
       "cloud_start_boundary_utc": "2026-09-16T16:00:00Z",
-      "cloud_activation_verified_at_utc": null
+      "cloud_activation_verified_at_utc": "2026-09-16T01:34:49.448000Z"
     }
   ],
   "existing_producers": [
@@ -250,8 +250,8 @@
     }
   ],
   "cloud_migration": {
-    "status": "cloud_activation_pending",
-    "activation_verified": false,
+    "status": "cloud_active",
+    "activation_verified": true,
     "pending_packet_root": "evidence/research/pending/",
     "packet_contract": "meta/RESEARCH_REPORT_INTAKE.md#cloud-pending-packets",
     "market_cycle": "next_existing_cycle_only",
@@ -259,7 +259,7 @@
     "allowed_market_content": "reviewed_shareable_final_report_prose_and_safe_envelope_transport_metadata",
     "routine_notification_preference": "quiet_routine_output_native_notification_mute_unavailable_user_accepted",
     "cloud_start_boundary_utc": "2026-09-16T16:00:00Z",
-    "activation_verified_at_utc": null,
+    "activation_verified_at_utc": "2026-09-16T01:34:49.448000Z",
     "admission_policy": "verified_observed_execution_start_within_180_seconds",
     "missed_occurrence_policy": "explicit_approval_per_occurrence",
     "policy_change_authorized": true,
