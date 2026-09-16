@@ -1,0 +1,94 @@
+{
+  "domain": "trade",
+  "run_id": "domain-suite-weekly-2026-09-16",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "e7fc7a1490ee19878c32b0fca4de1b623ee95420",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-04-01T00:00:00+00:00",
+    "end": "2026-08-01T00:00:00+00:00"
+  },
+  "actual_coverage": {
+    "geography": "World merchandise trade composite; China only through WTO ancestry/context",
+    "frequency": "April and July 2026 barometer snapshots plus annual 2026 scenarios",
+    "sources_available": 1,
+    "sources_unavailable": 5,
+    "external_requests": 3,
+    "completed_tests": 4
+  },
+  "limitations": [
+    "Four September 15 publisher captures were metadata-only and their original bytes were unavailable in this cloud runtime.",
+    "The scheduled Eurostat collector made one authorized request and failed with temporary DNS resolution; its cooldown is preserved.",
+    "The WTO barometer is a composite leading indicator, not a direct causal estimate or China-only measure.",
+    "No fresh China, Korea, Taiwan, Port of Los Angeles, comparable-volume, unit-value, bilateral-customs or alternate-port table was collected because existing cooldowns remained in force.",
+    "One official composite release cannot establish final-demand causation, route displacement or a broad quantity cycle across individual economies."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-16T19:06:50.272574+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-16T19:11:08.392573+00:00",
+  "available_at_utc": "2026-09-16T19:11:08.392573+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "3794b30599c25b38d3498da0756680c176acc9b0b871c140853bcc133bad8ce8",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "8e716109b81e363d2ea01f466833939b84bff4fd45a34c90eee52b64ce3054e5",
+  "sources": [
+    {
+      "id": "wto_goods_barometer_sep2026",
+      "url": "https://www.wto.org/english/news_e/news_docs/Goods_Trade_Barometer_September_2026.pdf",
+      "upstream_ids": [
+        "wto-secretariat",
+        "wto-unctad-world-merchandise-trade-volume",
+        "sp-global-export-orders",
+        "iata-worldacd-air-freight",
+        "rwi-isl-container-throughput",
+        "tdm-components"
+      ],
+      "integrity_status": "Official wto.org HTTPS PDF surfaced by connected retrieval; line-addressed extract reviewed; full body not persisted."
+    },
+    {
+      "id": "china_nbs_releases",
+      "url": "https://www.stats.gov.cn/english/PressRelease/",
+      "upstream_ids": [
+        "china-nbs-enterprise-surveys",
+        "china-nbs-energy-statistics",
+        "china-customs"
+      ],
+      "integrity_status": "Metadata hash 46d51382bb3b8ccc7ad02f2861f2edb7f0fa31284de1173548abc31b16506273 verified; body unavailable and unreviewed."
+    },
+    {
+      "id": "korea_customs_releases",
+      "url": "https://www.customs.go.kr/kcs/na/ntt/selectNttList.do",
+      "upstream_ids": [
+        "korea-customs-declarations"
+      ],
+      "integrity_status": "Metadata hash a46790b81b0539bfd0a3142daff64e17936e5f8a5a236149330704c35fbfeeac verified; body unavailable and unreviewed."
+    },
+    {
+      "id": "taiwan_mof_trade",
+      "url": "https://www.mof.gov.tw/Eng/multiplehtml/259",
+      "upstream_ids": [
+        "taiwan-customs-declarations"
+      ],
+      "integrity_status": "Metadata hash e201f46f86c783e432f0850e81b4db5d6bdd36be97f057f3450379cd663801bd verified; body unavailable and unreviewed."
+    },
+    {
+      "id": "port_la_containers",
+      "url": "https://portoflosangeles.org/business/statistics/container-statistics",
+      "upstream_ids": [
+        "port-los-angeles-terminal-counts"
+      ],
+      "integrity_status": "Metadata hash ed8e2241b29565b4208fa85e98ded8c59e57f467aa925c8fb1e84d81c531e001 verified; body unavailable and unreviewed."
+    },
+    {
+      "id": "eurostat_industry",
+      "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Industrial_production_(volume)_index_overview",
+      "upstream_ids": [
+        "eurostat-national-statistical-institutes"
+      ],
+      "integrity_status": "Actual result hash 56da4071538a36d835123411b2fd923b5e438cbb32dab9e4a6dcbe28ddc7c4d4; zero captured bodies; cooldown preserved."
+    }
+  ],
+  "delivery_key": "trade:domain-suite-weekly-2026-09-16:3794b30599c25b38d3498da0756680c176acc9b0b871c140853bcc133bad8ce8"
+}

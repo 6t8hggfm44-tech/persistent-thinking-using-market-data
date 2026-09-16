@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "delivery_key": "trade:domain-suite-weekly-2026-09-16:3794b30599c25b38d3498da0756680c176acc9b0b871c140853bcc133bad8ce8",
+  "domain": "trade",
+  "run_id": "domain-suite-weekly-2026-09-16",
+  "report_sha256": "3794b30599c25b38d3498da0756680c176acc9b0b871c140853bcc133bad8ce8",
+  "report_bytes": 4092,
+  "envelope_sha256": "809afe2258337d46068ee2ede6360d1545c9f24ec9385914b05b62f309de4170",
+  "envelope_bytes": 4463,
+  "producer_repository": "6t8hggfm44-tech/-Global-trade-China",
+  "producer_commit": "49554ea7498c271a844844dba5ee452e3aa7a149",
+  "producer_report_path": "reports/domain-suite-weekly-2026-09-16/3794b30599c25b38d3498da0756680c176acc9b0b871c140853bcc133bad8ce8/Report.md",
+  "prepared_at_utc": "2026-09-16T19:12:33.986215+00:00",
+  "source_ancestry": "Exact original report envelope carries the full source list and upstream IDs; no source body is included in this public packet.",
+  "transport_transformations": [
+    "none; Report.md and report-envelope.json are exact UTF-8 copies from the verified private package"
+  ],
+  "limitations": [
+    "Staging is not Market receipt, acknowledgment, canonical persistence, forecast use or model-weight change.",
+    "Private checkpoint state, raw publisher bodies, runtime identifiers and task metadata are excluded.",
+    "The full WTO publisher body was not persisted by the producer; the report uses a reviewed limited connector extract with disclosed limitations."
+  ]
+}
