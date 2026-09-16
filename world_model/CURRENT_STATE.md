@@ -1,48 +1,58 @@
 # Current Market State
 
 **Model version:** 0.2.14  
-**Status:** Tuesday Sep. 15 post-close cycle completed; no forecast expired; no structural or hypothesis-weight change; no new forecast added  
-**Evidence cutoff:** 2026-09-15T17:25:36-04:00
+**Status:** Wednesday Sep. 16 post-FOMC cycle completed; P000027 resolved TRUE and scored; one Trade report canonically ingested; no structural or hypothesis-weight change; no new forecast added  
+**Evidence cutoff:** 2026-09-16T17:15:03-04:00
 
 ## Auditor
 
-No currently authoritative open forecast reached its precommitted resolution rule after the Sep. 14 cutoff and before this cutoff.
+**P000027 resolved TRUE.** The Federal Open Market Committee raised both bounds of the federal-funds target range by 25 basis points to **3.75%-4.00%** at the Sep. 16 meeting, satisfying the frozen resolution rule.
 
-Open forecasts remain:
-- **P000027:** 58% probability the FOMC raises both target-range bounds by at least 25 bp at the Sep. 15-16 meeting; resolves from the official Sep. 16 statement.
+Frozen forecast: **p=0.58**. Independent score check:
+- Brier **0.176400**
+- log loss **0.544727**
+- frozen market p=0.61: Brier **0.152100**, log loss **0.494296**
+- frozen market p=0.584: Brier **0.173056**, log loss **0.537854**
+- neutral p=0.50: Brier **0.250000**, log loss **0.693147**
+
+Thus the forecast beat neutral but **lost to both frozen contemporaneous market-implied probability benchmarks**. It is a favorable prospective directional result for the policy-reaction mapping, not evidence of incremental predictive information beyond those benchmarks and not proof of H003's broader causal mechanism.
+
+The primary probability ledger is now **n=22**, mean Brier **0.212214**, mean log loss **0.614555**. Market Repo B independently recomputed the resolution and aggregate ledger against primary resolution snapshot `50f7ddf26d047e248de5705bb863d2c680e3ab13`; no P000027 arithmetic discrepancy was found. The validation remains descriptive because n<30 and forecast dependence/target heterogeneity reduce effective sample size.
+
+Open authoritative forecasts now remain:
 - **P000004:** three-month S&P distribution, resolving Nov. 9 close.
 - **P000005:** one-year S&P distribution, resolving Aug. 9, 2027 close.
 
-The probability ledger therefore remains **n=21**, mean Brier **0.213919**, mean log loss **0.617880**. No score, outcome, forecast content, benchmark or prior cutoff was altered.
-
-Phase 0 validation initialization used primary pre-cycle snapshot `930a051ba14c79c36bf61b29fa2dedf39d2d1951` and current Market Repo B head `89315ad9399b440de336351756bf6ec3e321acf3`. `VALIDATION_PROTOCOL.md` and `src/validate_forecasts.py` were read. Because no forecast resolved and no calibration/learning metric changed, the protocol does not require a new Repo B validation report this cycle; no validated-skill or learning claim is made from today's evidence.
+No original forecast content, probability, benchmark, resolution rule or prior cutoff was altered.
 
 ## Canonical research-report intake
 
-One complete canonical GEV report is newly eligible after the prior market cutoff: **GEV `gev-weekly-2026-09-14`, version 1**, received by Market at `2026-09-15T01:05:27Z`. Its received report text hash was independently recomputed at intake and matched the supplied report hash; the manifest bytes/raw archive were not delivered to Market.
+One new complete suite report became canonical at this cycle's actual receipt boundary:
 
-The report's orbital diagnostics largely reduce apparent anomalies to ordinary precession/angle-conditioning/repeated catalog solutions, while aircraft discontinuities lack known-fresh eligibility. Its H4 physical/operational attribution remains inconclusive and it establishes **no military attribution, economic loss, transport-volume effect, price effect, supply effect or inflation effect**. It is therefore canonical but has **no demonstrated material bearing on current macro hypothesis weights**. Its underlying NOAA/CAA/EUMETSAT/feed sources receive no second evidentiary vote if encountered elsewhere.
+- **Trade `domain-suite-weekly-2026-09-16`, version 1** — delivery key `trade:domain-suite-weekly-2026-09-16:3794b30599c25b38d3498da0756680c176acc9b0b871c140853bcc133bad8ce8`, received `2026-09-16T21:15:03Z`. Report and envelope SHA-256 values and byte counts independently matched the immutable staging packet. Producer manifest/raw publisher bodies were not delivered to Market and are not claimed as independently verified.
 
-`evidence/research/INDEX.md` still contains no completed Weather, original Energy, or twelve-suite weekly report by this cutoff. Setup/configuration is not evidence; missing producers are not treated as negative observations.
+The Trade report records the WTO July Goods Trade Barometer at **102.0**, up 0.3 point from April, with five of six components above trend, but container shipping below trend at 99.6 and substantial missing current China/customs/port evidence. It mildly supports resilient global merchandise activity but is composite, uneven, and not a direct final-demand or China-wide measurement. It has **no material effect on hypothesis weights**.
 
-## New observations — first available after 2026-09-14T17:37:19-04:00
+The previously canonical GEV v1 remains unchanged and has no demonstrated current macro transmission. No new Weather, original Energy, or other suite report was canonically accepted by this cutoff. Missing reports are not negative evidence.
 
-- **OBSERVATION:** Saudi/Yanbu oil-export disruption worsened operationally. Reuters reported suspended Yanbu loadings and canceled late-September European cargoes after damage to the East-West pipeline, while Hormuz traffic remained sharply reduced. Brent settled **$108.75** and WTI **$105.83**. Repair duration remains disputed: U.S. Energy Secretary Chris Wright said flow should return within days, while other cited estimates extend to five or six weeks.
-- **OBSERVATION:** China's August industrial value added rose **5.2% y/y** and manufacturing **6.1%**, with high-tech manufacturing **16.7%**; retail sales rose only **0.4% y/y**, while January-August fixed-asset investment fell **7.2% y/y**.
-- **OBSERVATION:** The Sep. New York Empire State Manufacturing Survey showed modest positive activity at **7.6**, but worsening supply availability, longer delivery times and stronger price pressure: prices paid **63.1**, prices received **28.1**.
-- **OBSERVATION:** U.S. market endpoints moved further toward a tightening interpretation: the 10-year yield reached about **5.041%** and Fed-funds futures implied roughly **95%** probability of a Sep. 16 hike. These are downstream belief/price endpoints and are post-registration information for P000027.
+## New observations — first available after 2026-09-15T17:25:36-04:00
 
-Full provenance, timing, source links and ancestry treatment are preserved in `evidence/2026-09-15-cycle.md`.
+- **OBSERVATION:** The Sep. 16 FOMC voted 12-0 to raise the target range 25 bp to 3.75%-4.00%. Its statement described economic activity as solid, domestic spending resilient, productivity strong, capital investment robust, job gains as keeping pace with the workforce, and inflation as remaining elevated.
+- **OBSERVATION:** Saudi Arabia began offering more crude to Asian buyers through ship-to-ship transfers off Sohar, Oman, while Yanbu loadings remained suspended and some cargoes remained delayed/cancelled. Reuters reported Brent settling **$105.83** and WTI **$102.43**, both lower on the day.
+- **OBSERVATION:** EIA data showed U.S. commercial crude stocks down only **0.64 million barrels** to **423.4 million**, while gasoline rose **0.794 million** and distillates rose **1.6 million**; refinery utilization remained **96.8%**.
+- **OBSERVATION:** The newly canonical Trade report's WTO composite points to positive but uneven pre-shock global trade momentum, with electronics and air freight stronger than container shipping.
+
+Full provenance, timing and source-ancestry treatment are preserved in `evidence/2026-09-16-cycle.md`.
 
 ## Inference
 
-The new Saudi/Yanbu evidence strengthens the **physical** energy-supply-stress channel relative to yesterday because canceled cargoes and suspended loadings are operational observations rather than price movement alone. That raises near-term H003 inflation/policy-constraint pressure, but the duration is unresolved and the same shock is contractionary through real household purchasing power, margins and financial conditions, which supports an H002 pathway if sustained.
+The FOMC outcome validates the narrow policy-mapping direction encoded prospectively in P000027, but benchmark-relative attribution matters: both contemporaneously frozen market probabilities were better calibrated to the realized event. The result therefore deserves limited model-change credit rather than a narrative upgrade of H003.
 
-China remains compositionally bifurcated: strong industrial/high-tech production coexists with weak retail growth and falling investment. This is not a clean global-growth confirmation for H001 or H004 and not a direct U.S. demand measure.
+The FOMC statement itself is mixed across hypotheses. Elevated inflation and the hike fit H003, while solid activity, resilient spending, strong productivity and robust investment fit H001/H004. Those qualitative statements are policy-maker assessments rather than independent releases of the underlying macro quantities.
 
-The Empire State survey supplies a distinct regional observation of positive activity plus intensified price/supply pressure. Model v0.2.8's regional-to-national safeguard applies: one regional survey cannot be promoted into a national manufacturing or inflation conclusion.
+The energy shock remains real, but today's Saudi logistics adaptation and rising U.S. product stocks show actual shock absorbers. This reduces confidence in the most severe persistent-shortage branch without proving rapid normalization. Yanbu remains offline and Hormuz passage remains constrained, so H003 inflation pressure and H002 real-income/margin drag remain simultaneously plausible if disruption persists.
 
-The roughly 95% market-implied Fed probability and 5%+ 10-year yield do not receive independent causal weight on top of CPI/oil/Fed/fiscal information. They are useful state variables but not independent confirmation of H003, and they cannot rewrite P000027's frozen 58% probability.
+The Trade report mildly weakens an immediate global-collapse reading but cannot be treated as a current post-shock demand measure. Its April-July source window and composite source ancestry limit causal weight.
 
 ## Hypothesis weights
 
@@ -51,35 +61,39 @@ The roughly 95% market-implied Fed probability and 5%+ 10-year yield do not rece
 - **H003 Fiscal/inflation regime: 0.38** (unchanged)
 - **H004 Productivity boom: 0.12** (unchanged)
 
-No reweighting is made. H003 remains the narrow leader. The physical energy disruption is stronger, but its persistence is genuinely unresolved, China adds demand-side weakness, the regional survey is scope-limited, and the strongest apparent policy confirmation is downstream market repricing. Reweighting immediately before the already-frozen Sep. 16 policy discriminator would add narrative flexibility without a new independent causal test.
+No reweighting is made. H003 remains the narrow leader, but today's strongest prospective success did not beat the frozen market benchmark; the Fed statement contains material H001/H004-compatible activity evidence; and physical energy evidence now includes both continued outage and concrete rerouting/inventory buffers. Moving weights on this mixed bundle would overstate discrimination.
 
 ## Skeptic
 
-**Attack on leading H003:** The strongest new contrary fact is the repair-duration uncertainty itself: the U.S. energy secretary expects the East-West pipeline back within days, which could sharply reduce the persistence of today's inflation impulse. The oil shock also destroys real purchasing power and tightens financial conditions; China's retail/investment weakness supplies an independent reminder that production strength can coexist with weak final demand. The Empire State headline slowed materially from August and is only regional. The near-95% FedWatch probability and 5%+ 10-year yield are reactions to overlapping information rather than fresh physical measurements. The newly eligible GEV report provides no verified economic-transmission evidence.
+**Attack on leading H003:** The FOMC hike is not uniquely diagnostic of a persistent fiscal/inflation regime. It was highly anticipated by markets before the decision, and P000027's 58% probability underperformed both frozen market-implied comparators. The Fed simultaneously described resilient spending, strong productivity and robust capital investment, observations compatible with H001/H004. Saudi crude rerouting through Oman and rising U.S. gasoline/distillate stocks demonstrate mechanisms that can damp the energy shock before it becomes a persistent inflation process. The newly received WTO trade signal also shows pre-shock global merchandise resilience rather than broad collapse.
 
-**Response:** H003 remains narrowly plausible because physical export constraints and elevated price/supply pressure are real and inflation had already been firm before today's shock. But the evidence does not discriminate cleanly between a persistent inflation regime and a supply shock that later becomes contractionary. The already-frozen FOMC forecast is a cleaner near-term test than further narrative updating.
+**Response:** H003 remains narrowly plausible because inflation was already elevated before the latest energy shock, the Fed explicitly tightened to support a timelier return to 2%, Yanbu remains offline, Hormuz traffic remains impaired, and refined-fuel constraints remain material. But the evidence still cannot cleanly distinguish persistent inflation from a supply shock that is progressively rerouted and later becomes contractionary.
 
-**What would surprise the current model:** an official Sep. 16 FOMC decision that does **not** raise both target-range bounds by at least 25 bp would directly challenge the prospective policy-reaction mapping encoded in P000027. A hike would support that mapping but would not by itself prove H003's broader fiscal/inflation mechanism.
+**What would surprise the current model:** rapid restoration of East-West/Yanbu export capacity together with materially normalized Hormuz flows and a subsequent benign inflation print despite resilient activity would weaken H003's current lead. Conversely, sustained physical export impairment that fails to lift subsequent inflation or policy pressure would also challenge the current pass-through mapping.
 
 ## Learning state
 
-Unchanged from the Sep. 11 weekly review: **insufficient evidence to assess learning at n=21** resolved probability forecasts. No new outcome entered the ledger today. Short-vintage comparisons remain unstable, target/horizon composition remains heterogeneous, and no model revision has yet demonstrated repeated benchmark-relative improvement on forecasts specifically generated under that revision.
+**Still insufficient evidence to assess learning at n=22.** Lifetime mean Brier is **0.212214** and mean log loss **0.614555**. Market Repo B's descriptive windows are numerically better later than earlier, but target/horizon composition differs and the precommitted n=30 threshold remains unmet. The P000027 success is especially important for anti-hindsight discipline: a correct binary event can still fail to beat the strongest frozen comparator.
+
+No learning claim is made from recent outcomes, process sophistication, additional upstream reports or a favorable aggregate score.
 
 ## Model-change attribution
 
-- **v0.2.8 regional-to-national manufacturing safeguard:** today's Empire State evidence is processed under the safeguard rather than used as a national proxy; this is correct protocol use, not new predictive credit.
-- **v0.2.13 inflation/policy discriminator:** P000027 remains the next direct policy-mapping test and is unresolved.
+- **v0.2.8 regional-to-national manufacturing safeguard:** one positive direct test remains P000024; no additional predictive credit today.
+- **v0.2.13 inflation/policy discriminator:** P000023 was a modest positive inflation-state test; P000027 is now a positive directional policy-mapping test but **negative benchmark-relative evidence versus both frozen market probabilities**. This supports retaining the discriminator while withholding any claim of superior policy forecasting.
 - **v0.2.14 labor measurement bridge:** no later monthly payroll forecast generated under the revision has resolved; learning credit remains zero.
-- **Energy shock pathway:** today's stronger physical disruption is already represented in the causal graph through commodity-price pass-through and opposing real-demand/margin channels; no new structural edge is required.
+- **Energy shock pathway:** today's rerouting and inventory-buffer observations operate through already represented opposing inflation/pass-through and real-demand/margin channels; no new structural edge is required.
 
 ## Material model changes
 
-**None.** Model v0.2.14, `world_model/CAUSAL_GRAPH.md`, measurement bridges and hypothesis weights remain unchanged. No `MODEL_CHANGELOG.md` entry is required because there is no material causal/world-model revision. No new Universal transfer candidate is added; today's source-ancestry, ambiguous-endpoint, regional-proxy and anti-hindsight issues are already represented by existing Universal lessons/failure modes.
+**None.** Model v0.2.14, `world_model/CAUSAL_GRAPH.md`, measurement bridges and hypothesis weights remain unchanged. No `MODEL_CHANGELOG.md` entry is required because there is no material causal/world-model revision.
+
+No new Universal transfer candidate is added. Today's benchmark-relative lesson, source-ancestry audit, ambiguous-endpoint discipline and canonical/validation separation are already covered by existing Universal lessons.
 
 ## New forecast
 
-**None.** P000027 resolves on Sep. 16 and remains the highest-information near-term discriminator. Creating another FOMC/rates forecast after seeing the post-CPI/oil consensus shift would be highly correlated with the frozen forecast, inflate nominal sample size and invite hindsight fitting. No unrelated target at this cutoff offers enough incremental information value to justify manufacturing a forecast.
+**None.** With P000027 just resolved, creating an immediate rates/market forecast from the same FOMC information would be highly correlated and post-event prone. The Trade input is not timely or discriminating enough to justify a new standalone forecast. Existing long-horizon P000004/P000005 remain frozen.
 
 ## Most important watch
 
-**The Sep. 16 FOMC decision resolving P000027.** Judge it against the frozen **58%** probability and its original benchmark/cutoff, not against today's roughly 95% market pricing.
+**Physical restoration versus continued impairment of the Saudi East-West/Yanbu export route, including actual resumed loadings and Hormuz traffic.** This is now the highest-information near-term discriminator between a persistent inflation/policy-constraint branch and a more transient, rerouted shock whose main effect shifts toward real-demand and margin drag.
