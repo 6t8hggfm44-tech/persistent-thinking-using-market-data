@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "delivery_key": "geopolitics:geopolitics-suite-weekly-2026-09-17:efdc2a8d07e578131d34e1985199eeb166905d785e765fdb3c0fc4e76deeca02",
+  "domain": "geopolitics",
+  "run_id": "geopolitics-suite-weekly-2026-09-17",
+  "report_sha256": "efdc2a8d07e578131d34e1985199eeb166905d785e765fdb3c0fc4e76deeca02",
+  "report_bytes": 4442,
+  "envelope_sha256": "64217f3c1c871ae115419b012d4cca031e1dac7cf10a9eb842b6db8335c7505f",
+  "envelope_bytes": 4341,
+  "producer_repository": "6t8hggfm44-tech/-Geopolitical-risk",
+  "producer_commit": "61f154890f08873227416c21eaed81ceeeedf725",
+  "producer_report_path": "reports/geopolitics-suite-weekly-2026-09-17/efdc2a8d07e578131d34e1985199eeb166905d785e765fdb3c0fc4e76deeca02/Report.md",
+  "prepared_at_utc": "2026-09-17T19:08:00.878167Z",
+  "source_ancestry": [
+    {
+      "source_id": "us_ofac_actions_capture_identity",
+      "upstream_ids": [
+        "us-treasury-ofac-official-actions"
+      ]
+    },
+    {
+      "source_id": "us_bis_updates_capture_identity",
+      "upstream_ids": [
+        "us-commerce-bis-official-actions",
+        "us-federal-register"
+      ]
+    },
+    {
+      "source_id": "imo_red_sea_capture_identity",
+      "upstream_ids": [
+        "imo-confirmed-maritime-incident-reports",
+        "member-state-incident-notifications"
+      ]
+    },
+    {
+      "source_id": "idea_democracy_tracker_capture_identity",
+      "upstream_ids": [
+        "international-idea-assessments",
+        "country-election-authorities",
+        "underlying-news-and-official-records"
+      ]
+    }
+  ],
+  "transport_transformations": [
+    "none; Report.md and report-envelope.json preserve exact private frozen-package bytes"
+  ],
+  "transport_limitations": [
+    "The public packet contains no private checkpoints or raw publisher bodies.",
+    "Prior capture hashes prove byte identity only; original publisher bytes were unavailable in the cloud runtime.",
+    "Staging is not Market receipt, acknowledgment, or canonical persistence."
+  ]
+}
