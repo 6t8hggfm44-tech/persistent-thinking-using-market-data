@@ -1,0 +1,103 @@
+{
+  "domain": "agriculture",
+  "run_id": "agriculture-suite-weekly-2026-09-17",
+  "report_version": 2,
+  "report_kind": "final_evidence_gap",
+  "workflow_commit": "ab46d376c2964076a29665d7cf7c1099873f62f0",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-09-10T16:00:00+00:00",
+    "end": "2026-09-17T16:09:08.610418+00:00"
+  },
+  "actual_coverage": {
+    "requested_week": "2026-09-17",
+    "geography": "United States; source-specific published coverage",
+    "usable_numeric_observations": 0,
+    "enabled_source_routes_audited": 4,
+    "due_source_routes_attempted": 2,
+    "http_attempts": 2,
+    "successful_captures": 0,
+    "cloud_available_raw_bodies": 0,
+    "hash_only_prior_captures": 2,
+    "disabled_sources": [
+      "usda_fas_export_sales"
+    ],
+    "indicators_reviewed": [
+      "crop progress/condition/yield",
+      "drought exposure",
+      "commodity balances and stocks-to-use",
+      "fertilizer availability/prices",
+      "livestock inventories/output",
+      "food inventories",
+      "exports/shipments",
+      "HPAI detections"
+    ],
+    "helper_hashes": {
+      "schedule_gate_exact_repository_sha256": "585d910e65fbd95d6daa8896abd0a166a2ff20fdac92e7803b79b1223ee42c7c",
+      "cloud_state_exact_repository_sha256": "0be3baaf0f6f4fd1104e130afa1c90889c5c71f06df8aac8f4a80a23a4ec43a0",
+      "research_agent_exact_repository_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+      "access_resolution_sha256": "e3ef9a9bcd0dcb67b262ee663efbdcfa54819f5162596973b94accac5985a048"
+    },
+    "operational_note": "Initial gate/collector materializations had one extra terminal LF and hashes d429a17b54cc92cbd5aab205985817a08e158c586b01494391bf4f965d66a57a, d94632f948a8e05204a4d952bba0c7fa01b1f8bf2b02f6bece744039ed1b8639, and 4375f96d6f6b45a810841dc4def717d1cacdcd65e9a686f12307b40599bea14f; exact repository bytes were restored and non-mutating verify/gate checks passed before freeze.",
+    "identity_correction": "Run ID corrected to the live Market receiver registry pattern; evidence, cutoff, tests, and verdict are unchanged."
+  },
+  "limitations": [
+    "The two September 15 successful landing-page captures were hash-identifiable but their raw bytes were unavailable in this cloud runtime, so they were not reread or used for numerical claims.",
+    "The bounded due-source collector made two requests; both failed with temporary DNS resolution errors and yielded no response body.",
+    "Authorized web-search recovery returned no relevant official result, exhausting the two-step recovery allowance for each incident without usable evidence.",
+    "The export-sales route remained disabled, and compatible fertilizer quantities, realized shipment histories, crop outcomes, livestock output, and food-inventory measurements were unavailable.",
+    "This report tests evidence sufficiency only; it does not establish that agricultural stress is absent."
+  ],
+  "supersedes": [
+    "agriculture:domain-suite-weekly-2026-09-17:a9df4fc4175f64724d091ca50d7f40f4519b57e76a9969d8d51828e44afd4429"
+  ],
+  "evidence_cutoff_utc": "2026-09-17T16:10:43.564057+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-17T16:15:37.891701+00:00",
+  "available_at_utc": "2026-09-17T16:15:37.891701+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "fdd3365a5db844f33c0cc333d16ab68a1a9c97d7493a2898a85bc8a1135a36a1",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "5bdabb0692a244c4a8b93b02d4816b1775b3b3f487d576e853677125fbdc952c",
+  "sources": [
+    {
+      "id": "usda_wasde_capture_identity",
+      "url": "https://www.usda.gov/about-usda/general-information/staff-offices/office-chief-economist/commodity-markets/wasde-report",
+      "upstream_ids": [
+        "usda-waob",
+        "usda-nass",
+        "usda-fas",
+        "foreign-agriculture-statistics"
+      ],
+      "integrity_status": "SHA-256 identity preserved, but original bytes were missing in this runtime and therefore not analytically inspected."
+    },
+    {
+      "id": "usda_nass_capture_identity",
+      "url": "https://www.nass.usda.gov/Publications/",
+      "upstream_ids": [
+        "usda-nass"
+      ],
+      "integrity_status": "SHA-256 identity preserved, but original bytes were missing in this runtime and therefore not analytically inspected."
+    },
+    {
+      "id": "usdm_current_attempt",
+      "url": "https://droughtmonitor.unl.edu/CurrentMap.aspx",
+      "upstream_ids": [
+        "usdm-authors",
+        "noaa-weather-observations",
+        "usda-field-reports"
+      ],
+      "integrity_status": "Attempt and failure metadata were reconciled and remotely read back; no response bytes existed to hash."
+    },
+    {
+      "id": "usda_aphis_hpai_attempt",
+      "url": "https://www.aphis.usda.gov/h5n1-hpai",
+      "upstream_ids": [
+        "usda-aphis-surveillance",
+        "state-animal-health-reports"
+      ],
+      "integrity_status": "Attempt and failure metadata were reconciled and remotely read back; no response bytes existed to hash."
+    }
+  ],
+  "delivery_key": "agriculture:agriculture-suite-weekly-2026-09-17:fdd3365a5db844f33c0cc333d16ab68a1a9c97d7493a2898a85bc8a1135a36a1"
+}

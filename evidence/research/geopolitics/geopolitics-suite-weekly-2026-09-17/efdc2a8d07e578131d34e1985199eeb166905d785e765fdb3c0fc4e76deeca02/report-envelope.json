@@ -1,0 +1,91 @@
+{
+  "domain": "geopolitics",
+  "run_id": "geopolitics-suite-weekly-2026-09-17",
+  "report_version": 1,
+  "report_kind": "final_evidence_gap",
+  "workflow_commit": "8801ae359bd1a5689afb05909e2bf725ac4056d1",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-09-10T19:00:00+00:00",
+    "end": "2026-09-17T19:02:29.432456+00:00"
+  },
+  "actual_coverage": {
+    "requested_week": "2026-09-17",
+    "geography": "Configured U.S. sanctions/export-control jurisdictions, Red Sea aggregate public coverage, and International IDEA covered countries",
+    "configured_sources_reviewed": 4,
+    "sources_due": 0,
+    "http_attempts": 0,
+    "successful_new_captures": 0,
+    "cloud_available_raw_bodies": 0,
+    "hash_only_prior_captures": 4,
+    "indicators_reviewed": [
+      "sanctions announcements/effective dates/exemptions/removals",
+      "tariffs/trade restrictions/export controls",
+      "civilian shipping chokepoint disruption",
+      "conflict escalation/de-escalation milestones",
+      "elections/government transitions/policy implementation",
+      "public aggregate mobilization effects",
+      "institutional changes",
+      "measured trade/transport/commodity/investment transmission"
+    ],
+    "helper_hashes": {
+      "schedule_gate_sha256": "585d910e65fbd95d6daa8896abd0a166a2ff20fdac92e7803b79b1223ee42c7c",
+      "cloud_state_sha256": "0be3baaf0f6f4fd1104e130afa1c90889c5c71f06df8aac8f4a80a23a4ec43a0",
+      "research_agent_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e"
+    }
+  },
+  "limitations": [
+    "All four prior captures were hash-identifiable, but their original publisher bytes were unavailable in this cloud runtime.",
+    "All four sources remained inside preserved seven-day collection intervals until September 22, so the collector correctly authorized no requests.",
+    "No dated rule/action, event record, route outcome, trade flow, production, cost, duration, election certification, policy implementation, or aggregate economic outcome was available for a test.",
+    "This report tests evidence sufficiency only; it does not establish that geopolitical risk or economic transmission was absent."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-17T19:03:12.620051+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-17T19:05:50.643775+00:00",
+  "available_at_utc": "2026-09-17T19:05:50.643775+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "efdc2a8d07e578131d34e1985199eeb166905d785e765fdb3c0fc4e76deeca02",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "2fb045c428ec1382da96f404cb993d342fb5b5d81a2ffeeb1db0c1e48895d477",
+  "sources": [
+    {
+      "id": "us_ofac_actions_capture_identity",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "upstream_ids": [
+        "us-treasury-ofac-official-actions"
+      ],
+      "integrity_status": "SHA-256 identity preserved; original bytes missing in this runtime and not analytically inspected."
+    },
+    {
+      "id": "us_bis_updates_capture_identity",
+      "url": "https://www.bis.gov/news-updates",
+      "upstream_ids": [
+        "us-commerce-bis-official-actions",
+        "us-federal-register"
+      ],
+      "integrity_status": "SHA-256 identity preserved; original bytes missing in this runtime and not analytically inspected."
+    },
+    {
+      "id": "imo_red_sea_capture_identity",
+      "url": "https://www.imo.org/en/mediacentre/hottopics/pages/red-sea.aspx",
+      "upstream_ids": [
+        "imo-confirmed-maritime-incident-reports",
+        "member-state-incident-notifications"
+      ],
+      "integrity_status": "SHA-256 identity preserved; original bytes missing in this runtime and not analytically inspected."
+    },
+    {
+      "id": "idea_democracy_tracker_capture_identity",
+      "url": "https://www.idea.int/democracytracker/",
+      "upstream_ids": [
+        "international-idea-assessments",
+        "country-election-authorities",
+        "underlying-news-and-official-records"
+      ],
+      "integrity_status": "SHA-256 identity preserved; original bytes missing in this runtime and not analytically inspected."
+    }
+  ],
+  "delivery_key": "geopolitics:geopolitics-suite-weekly-2026-09-17:efdc2a8d07e578131d34e1985199eeb166905d785e765fdb3c0fc4e76deeca02"
+}

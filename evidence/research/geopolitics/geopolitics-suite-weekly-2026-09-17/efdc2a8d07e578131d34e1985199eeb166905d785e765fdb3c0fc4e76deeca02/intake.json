@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "delivery_key": "geopolitics:geopolitics-suite-weekly-2026-09-17:efdc2a8d07e578131d34e1985199eeb166905d785e765fdb3c0fc4e76deeca02",
+  "domain": "geopolitics",
+  "run_id": "geopolitics-suite-weekly-2026-09-17",
+  "report_version": 1,
+  "received_at_utc": "2026-09-17T21:49:48Z",
+  "state": {"received": true, "integrity_checked": true, "archived": true, "acknowledged": true},
+  "integrity": {
+    "supplied_report_sha256": "efdc2a8d07e578131d34e1985199eeb166905d785e765fdb3c0fc4e76deeca02",
+    "computed_report_sha256": "efdc2a8d07e578131d34e1985199eeb166905d785e765fdb3c0fc4e76deeca02",
+    "report_bytes_expected": 4442,
+    "report_bytes_computed": 4442,
+    "supplied_envelope_sha256": "64217f3c1c871ae115419b012d4cca031e1dac7cf10a9eb842b6db8335c7505f",
+    "computed_envelope_sha256": "64217f3c1c871ae115419b012d4cca031e1dac7cf10a9eb842b6db8335c7505f",
+    "envelope_bytes_expected": 4341,
+    "envelope_bytes_computed": 4341,
+    "packet_identity_consistent": true,
+    "manifest_sha256": "2fb045c428ec1382da96f404cb993d342fb5b5d81a2ffeeb1db0c1e48895d477",
+    "manifest_bytes_available_to_market_intake": false,
+    "manifest_hash_recomputed": false,
+    "limitations": ["Producer manifest/raw publisher bodies were not delivered to Market; their hashes were not independently recomputed.", "The final report contains no usable event/outcome bodies and is an evidence-gap record, not evidence of low geopolitical risk."]
+  },
+  "source_packet": {
+    "staging_commit": "d610b36c4e7d8c041bf92121d34406cb8c6e07b6",
+    "staging_path": "evidence/research/pending/geopolitics/geopolitics-suite-weekly-2026-09-17/efdc2a8d07e578131d34e1985199eeb166905d785e765fdb3c0fc4e76deeca02/",
+    "producer_repository": "6t8hggfm44-tech/-Geopolitical-risk",
+    "producer_commit": "61f154890f08873227416c21eaed81ceeeedf725",
+    "prepared_at_utc": "2026-09-17T19:08:00.878167Z"
+  },
+  "availability": {
+    "producer_evidence_cutoff_utc": "2026-09-17T19:03:12.620051Z",
+    "producer_generated_at_utc": "2026-09-17T19:05:50.643775Z",
+    "producer_available_at_utc": "2026-09-17T19:05:50.643775Z",
+    "market_canonical_from_utc": "2026-09-17T21:49:48Z"
+  },
+  "canonical_status": {"status": "canonical_versioned_research_input", "market_use": "prospective_only_from_market_receipt_time", "automatic_model_weight_change": false, "scored_market_forecast": false, "source_ancestry_audit_required": true},
+  "supersedes": []
+}

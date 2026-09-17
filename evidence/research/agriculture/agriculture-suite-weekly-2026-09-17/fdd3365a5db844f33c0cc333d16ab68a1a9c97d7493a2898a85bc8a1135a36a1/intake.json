@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "delivery_key": "agriculture:agriculture-suite-weekly-2026-09-17:fdd3365a5db844f33c0cc333d16ab68a1a9c97d7493a2898a85bc8a1135a36a1",
+  "domain": "agriculture",
+  "run_id": "agriculture-suite-weekly-2026-09-17",
+  "report_version": 2,
+  "received_at_utc": "2026-09-17T21:49:48Z",
+  "state": {"received": true, "integrity_checked": true, "archived": true, "acknowledged": true},
+  "integrity": {
+    "supplied_report_sha256": "fdd3365a5db844f33c0cc333d16ab68a1a9c97d7493a2898a85bc8a1135a36a1",
+    "computed_report_sha256": "fdd3365a5db844f33c0cc333d16ab68a1a9c97d7493a2898a85bc8a1135a36a1",
+    "report_bytes_expected": 4738,
+    "report_bytes_computed": 4738,
+    "supplied_envelope_sha256": "2489c0f250d43385bc2b050834fdfab371d965b3c542a5cd08ed76a247c8af44",
+    "computed_envelope_sha256": "2489c0f250d43385bc2b050834fdfab371d965b3c542a5cd08ed76a247c8af44",
+    "envelope_bytes_expected": 5236,
+    "envelope_bytes_computed": 5236,
+    "packet_identity_consistent": true,
+    "manifest_sha256": "5bdabb0692a244c4a8b93b02d4816b1775b3b3f487d576e853677125fbdc952c",
+    "manifest_bytes_available_to_market_intake": false,
+    "manifest_hash_recomputed": false,
+    "limitations": ["Producer manifest/raw publisher bodies were not delivered to Market; their hashes were not independently recomputed.", "The final report contains zero usable numerical observations and is an evidence-gap record, not evidence of agricultural stability."]
+  },
+  "source_packet": {
+    "staging_commit": "fbf8f3c2fceaed82d42401796247f6ac23b6bbe2",
+    "staging_path": "evidence/research/pending/agriculture/agriculture-suite-weekly-2026-09-17/fdd3365a5db844f33c0cc333d16ab68a1a9c97d7493a2898a85bc8a1135a36a1/",
+    "producer_repository": "6t8hggfm44-tech/-Agriculture-food-",
+    "producer_commit": "5e3f2d0d9c8cb0c2106f0526ee3b63bafa678a3e",
+    "prepared_at_utc": "2026-09-17T16:16:46.439690Z"
+  },
+  "availability": {
+    "producer_evidence_cutoff_utc": "2026-09-17T16:10:43.564057Z",
+    "producer_generated_at_utc": "2026-09-17T16:15:37.891701Z",
+    "producer_available_at_utc": "2026-09-17T16:15:37.891701Z",
+    "market_canonical_from_utc": "2026-09-17T21:49:48Z"
+  },
+  "canonical_status": {"status": "canonical_versioned_research_input", "market_use": "prospective_only_from_market_receipt_time", "automatic_model_weight_change": false, "scored_market_forecast": false, "source_ancestry_audit_required": true},
+  "supersedes": ["agriculture:domain-suite-weekly-2026-09-17:a9df4fc4175f64724d091ca50d7f40f4519b57e76a9969d8d51828e44afd4429"]
+}
