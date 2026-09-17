@@ -70,3 +70,13 @@ A legacy cloud packet identifies `producer_repository` as that private storage r
 Legacy run IDs are `gev-weekly-YYYY-MM-DD`, `weather-weekly-YYYY-MM-DD` and `energy-weekly-YYYY-MM-DD`, with explicit version suffixes where applicable. Suite Energy retains `energy-suite-weekly-YYYY-MM-DD`. Distinct reports using the same EIA observations still share one evidentiary ancestry. The already completed GEV September 14 report must be checked against its existing intake before any delivery recovery; the pending weather and original energy September 14 occurrences remain unapproved.
 
 Routine access failures during authorized intake/research may use the narrow live EA policy at `6t8hggfm44-tech/persistent-ai-agent-/policies/RESEARCH_ACCESS_RESOLUTION.md` and its `research/access_resolution.py` helper after reading applicable controls from the same current commit. The current worker performs the decision through its existing authorized tools. This does not activate EA mode or a separate process, change access permissions, spend money, bypass restrictions or approve missed occurrences.
+
+## Late collection and reports
+
+Use the prospective bounded first-start policy recorded in the live registry.
+A delayed start retains its original occurrence identity and actual start time.
+Evidence completed late enters the next eligible research report, and that
+completed report enters the next existing Market cycle whose actual receipt
+cutoff permits it. Do not backdate availability, rewrite a frozen forecast, wait
+indefinitely for every upstream input, or create an extra cycle. Older pending
+approvals, uncertainty and consumed misses remain intact.

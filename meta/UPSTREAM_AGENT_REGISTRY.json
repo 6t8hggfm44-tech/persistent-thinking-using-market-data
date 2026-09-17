@@ -256,7 +256,7 @@
       "cloud_activation_verified_at_utc": "2026-09-16T03:31:47Z",
       "schedule_effective_date": "2026-09-21",
       "private_archive_restore_verified": true,
-      "collector_status": "zero_spend_historical_aircraft_and_satellite_cloud_schedules_configured_native_execution_unverified",
+      "collector_status": "cloud_schedules_configured_native_satellite_invocation_verified_collection_pending",
       "evidence_modes": [
         "retrospective_completed_utc_day_aircraft_archive",
         "six_hour_satellite_dataset_opportunities",
@@ -275,8 +275,15 @@
           "21:17"
         ],
         "cached_history_weekly": "Monday 06:37 America/Los_Angeles",
-        "first_satellite_slot_status": "2026-09-16T09:17:00Z not observed; cause unknown; no automatic catchup"
-      }
+        "first_satellite_slot_status": "2026-09-16T09:17:00Z invoked at 14:12 UTC; consumed as missed under original 180-second rule; zero source requests",
+        "late_start_policy": {
+          "effective_from_utc": "2026-09-17T03:17:00Z",
+          "satellite_max_initial_delay_seconds": 18000,
+          "daily_aircraft_max_initial_delay_seconds": 21600,
+          "cached_weekly_max_initial_delay_seconds": 3600
+        }
+      },
+      "native_collector_scheduler_invocation_verified": true
     },
     {
       "domain": "weather",
@@ -337,10 +344,17 @@
     "routine_notification_preference": "quiet_routine_output_native_notification_mute_unavailable_user_accepted",
     "cloud_start_boundary_utc": "2026-09-16T16:00:00Z",
     "activation_verified_at_utc": "2026-09-16T01:34:49.448000Z",
-    "admission_policy": "verified_observed_execution_start_within_180_seconds",
-    "missed_occurrence_policy": "explicit_approval_per_occurrence",
+    "admission_policy": "prospective_bounded_observed_initial_start",
+    "missed_occurrence_policy": "historical_and_outside_window_occurrences_retain_specific_approval",
     "policy_change_authorized": true,
-    "native_notification_mute_verified": false
+    "native_notification_mute_verified": false,
+    "late_start_policy": {
+      "effective_from_utc": "2026-09-17T03:17:00Z",
+      "suite_max_initial_delay_seconds": 3600,
+      "legacy_max_initial_delay_seconds": 1800,
+      "historical_pending_and_consumed_misses": "preserved",
+      "automatic_retries_or_backlog": false
+    }
   },
   "legacy_cloud_migration": {
     "status": "cloud_weekly_active",
@@ -356,7 +370,14 @@
     "gev_continuous_collection_status": "five_minute_live_inactive_zero_spend_retrospective_aircraft_and_satellite_schedules_configured",
     "historical_pending_occurrences": "Preserved; migration approval does not authorize missed reports.",
     "gev_data_path_status": "source_preservation_replay_and_actual_cloud_model_byte_access_verified",
-    "gev_native_collection_schedule_status": "not_yet_verified_first_satellite_occurrence_not_observed",
-    "maximum_new_hosting_spend_usd": 0
+    "gev_native_collection_schedule_status": "scheduler_invocation_verified_first_satellite_skipped_late_zero_source_requests",
+    "maximum_new_hosting_spend_usd": 0,
+    "late_start_policy": {
+      "effective_from_utc": "2026-09-17T03:17:00Z",
+      "suite_max_initial_delay_seconds": 3600,
+      "legacy_max_initial_delay_seconds": 1800,
+      "historical_pending_and_consumed_misses": "preserved",
+      "automatic_retries_or_backlog": false
+    }
   }
 }
