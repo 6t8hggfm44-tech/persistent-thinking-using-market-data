@@ -1,0 +1,174 @@
+{
+  "domain": "energy",
+  "run_id": "energy-suite-weekly-2026-09-17",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "55513cafd11d32a8f3de3df4d15846c8c0d52084",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2021-03-26T00:00:00+00:00",
+    "end": "2026-09-04T23:59:59+00:00"
+  },
+  "actual_coverage": {
+    "petroleum_bridge": {
+      "repository_commit": "55513cafd11d32a8f3de3df4d15846c8c0d52084",
+      "manifest_sha256": "d4540aa7d28d2c4496872b75143d3b7705f2b67d2c3041e2f09eb346f2dbd383",
+      "series": 12,
+      "observations": 3420,
+      "week_end_start": "2021-03-26",
+      "week_end_end": "2026-09-04",
+      "first_observed": "2026-09-14",
+      "raw_bodies_available": false,
+      "finalized_parent_report": false
+    },
+    "expansion_sources": {
+      "configured": 2,
+      "due": 0,
+      "http_attempts": 0,
+      "new_captures": 0,
+      "missing_prior_bodies": 2
+    },
+    "indicators_reviewed": [
+      "electricity demand and load",
+      "natural gas consumption and storage",
+      "oil and petroleum-product inventories",
+      "refinery utilization",
+      "gasoline and diesel activity proxies",
+      "power prices and grid stress",
+      "industrial energy consumption"
+    ],
+    "helper_hashes": {
+      "cloud_state_sha256": "0be3baaf0f6f4fd1104e130afa1c90889c5c71f06df8aac8f4a80a23a4ec43a0",
+      "research_agent_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+      "schedule_gate_sha256": "585d910e65fbd95d6daa8896abd0a166a2ff20fdac92e7803b79b1223ee42c7c"
+    }
+  },
+  "limitations": [
+    "Petroleum histories are current-vintage tables first observed September 14, 2026; historical release vintages and original publication timestamps are unknown.",
+    "All twelve series share one EIA weekly petroleum family and are not independent evidence votes.",
+    "Raw EIA publisher bodies were not included in the bridge; this run verified derived bytes, manifest entries, capture lineage, and original row hashes.",
+    "Gas-storage and electricity tests were blocked because preserved bodies/numeric tables were unavailable and neither source was due.",
+    "Product supplied is an imperfect demand proxy; the analysis has no weather, calendar, export-demand, outage, yield, or causal adjustment.",
+    "No eligible finalized original-energy report existed; the bridge is evidence, not an inherited conclusion."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-17T22:14:38.204565Z",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-17T22:16:41.572378+00:00",
+  "available_at_utc": "2026-09-17T22:16:41.572378+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "151ef3821c2ff95961808f2ed1d343eb8aac68329e8617caaaca09d55476ea7d",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "f3b7cded89ac9bb1e7c058867b2f7f212d3c5b7ecb2b9ad265bd2297a9c4e201",
+  "sources": [
+    {
+      "id": "WCESTUS1",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCESTUS1&f=W",
+      "upstream_ids": [
+        "eia:series:WCESTUS1",
+        "EIA_US_weekly_petroleum"
+      ],
+      "integrity_status": "Bridge table and all original row hashes verified at repository commit 55513cafd11d32a8f3de3df4d15846c8c0d52084; bridge manifest d4540aa7d28d2c4496872b75143d3b7705f2b67d2c3041e2f09eb346f2dbd383; original capture body SHA-256 c0f84e9475779faddf55d2d4c69382217a7b937a8e7565f9a0e5c7c99b155fb3 is provenance only because raw publisher body is not included."
+    },
+    {
+      "id": "WCREXUS2",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCREXUS2&f=W",
+      "upstream_ids": [
+        "eia:series:WCREXUS2",
+        "EIA_US_weekly_petroleum"
+      ],
+      "integrity_status": "Bridge table and all original row hashes verified at repository commit 55513cafd11d32a8f3de3df4d15846c8c0d52084; bridge manifest d4540aa7d28d2c4496872b75143d3b7705f2b67d2c3041e2f09eb346f2dbd383; original capture body SHA-256 1742d41c8a003ea9a2ae41f37f0ad4deae47f4c083227f2610ea661ee4585de1 is provenance only because raw publisher body is not included."
+    },
+    {
+      "id": "WCRFPUS2",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCRFPUS2&f=W",
+      "upstream_ids": [
+        "eia:series:WCRFPUS2",
+        "EIA_US_weekly_petroleum"
+      ],
+      "integrity_status": "Bridge table and all original row hashes verified at repository commit 55513cafd11d32a8f3de3df4d15846c8c0d52084; bridge manifest d4540aa7d28d2c4496872b75143d3b7705f2b67d2c3041e2f09eb346f2dbd383; original capture body SHA-256 e1a901e75d76ee1b59d3ba7b3b77a577b05d15f6355c9dc58a242b90c7ffc282 is provenance only because raw publisher body is not included."
+    },
+    {
+      "id": "WCRIMUS2",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCRIMUS2&f=W",
+      "upstream_ids": [
+        "eia:series:WCRIMUS2",
+        "EIA_US_weekly_petroleum"
+      ],
+      "integrity_status": "Bridge table and all original row hashes verified at repository commit 55513cafd11d32a8f3de3df4d15846c8c0d52084; bridge manifest d4540aa7d28d2c4496872b75143d3b7705f2b67d2c3041e2f09eb346f2dbd383; original capture body SHA-256 509c8b9a30fbc4813f77aef6b68445306ca13a169a0c97e711e294b5d1afa475 is provenance only because raw publisher body is not included."
+    },
+    {
+      "id": "WCRRIUS2",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCRRIUS2&f=W",
+      "upstream_ids": [
+        "eia:series:WCRRIUS2",
+        "EIA_US_weekly_petroleum"
+      ],
+      "integrity_status": "Bridge table and all original row hashes verified at repository commit 55513cafd11d32a8f3de3df4d15846c8c0d52084; bridge manifest d4540aa7d28d2c4496872b75143d3b7705f2b67d2c3041e2f09eb346f2dbd383; original capture body SHA-256 c907108a7aa894d0c2ea14df61b4ab91e7253bdabb5c4ffb9f092776e80ab0b6 is provenance only because raw publisher body is not included."
+    },
+    {
+      "id": "WCSSTUS1",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCSSTUS1&f=W",
+      "upstream_ids": [
+        "eia:series:WCSSTUS1",
+        "EIA_US_weekly_petroleum"
+      ],
+      "integrity_status": "Bridge table and all original row hashes verified at repository commit 55513cafd11d32a8f3de3df4d15846c8c0d52084; bridge manifest d4540aa7d28d2c4496872b75143d3b7705f2b67d2c3041e2f09eb346f2dbd383; original capture body SHA-256 f9f1982b590c12eebfc4303d067fc569b4d0f3adc367eee7958655dc5429e1dd is provenance only because raw publisher body is not included."
+    },
+    {
+      "id": "WDISTUS1",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WDISTUS1&f=W",
+      "upstream_ids": [
+        "eia:series:WDISTUS1",
+        "EIA_US_weekly_petroleum"
+      ],
+      "integrity_status": "Bridge table and all original row hashes verified at repository commit 55513cafd11d32a8f3de3df4d15846c8c0d52084; bridge manifest d4540aa7d28d2c4496872b75143d3b7705f2b67d2c3041e2f09eb346f2dbd383; original capture body SHA-256 85793579b8ed9001f1cbc8414ba562663a3cdf28c5e8a12a593a0c9043f1f9b4 is provenance only because raw publisher body is not included."
+    },
+    {
+      "id": "WDIUPUS2",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WDIUPUS2&f=W",
+      "upstream_ids": [
+        "eia:series:WDIUPUS2",
+        "EIA_US_weekly_petroleum"
+      ],
+      "integrity_status": "Bridge table and all original row hashes verified at repository commit 55513cafd11d32a8f3de3df4d15846c8c0d52084; bridge manifest d4540aa7d28d2c4496872b75143d3b7705f2b67d2c3041e2f09eb346f2dbd383; original capture body SHA-256 755eabd8d0210e34da962216f3202110abcc7e705d6b59cf818c6af3a99aaccf is provenance only because raw publisher body is not included."
+    },
+    {
+      "id": "WGFUPUS2",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WGFUPUS2&f=W",
+      "upstream_ids": [
+        "eia:series:WGFUPUS2",
+        "EIA_US_weekly_petroleum"
+      ],
+      "integrity_status": "Bridge table and all original row hashes verified at repository commit 55513cafd11d32a8f3de3df4d15846c8c0d52084; bridge manifest d4540aa7d28d2c4496872b75143d3b7705f2b67d2c3041e2f09eb346f2dbd383; original capture body SHA-256 237de5f9e7657b5303a14090970b9676fd5f586c4b0da9e150b60418586133a6 is provenance only because raw publisher body is not included."
+    },
+    {
+      "id": "WGTSTUS1",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WGTSTUS1&f=W",
+      "upstream_ids": [
+        "eia:series:WGTSTUS1",
+        "EIA_US_weekly_petroleum"
+      ],
+      "integrity_status": "Bridge table and all original row hashes verified at repository commit 55513cafd11d32a8f3de3df4d15846c8c0d52084; bridge manifest d4540aa7d28d2c4496872b75143d3b7705f2b67d2c3041e2f09eb346f2dbd383; original capture body SHA-256 96de674dacaca7db6264413932c56138c94a225b9e8d2b08b8aa2df17a75f40f is provenance only because raw publisher body is not included."
+    },
+    {
+      "id": "WKJUPUS2",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WKJUPUS2&f=W",
+      "upstream_ids": [
+        "eia:series:WKJUPUS2",
+        "EIA_US_weekly_petroleum"
+      ],
+      "integrity_status": "Bridge table and all original row hashes verified at repository commit 55513cafd11d32a8f3de3df4d15846c8c0d52084; bridge manifest d4540aa7d28d2c4496872b75143d3b7705f2b67d2c3041e2f09eb346f2dbd383; original capture body SHA-256 98da2aadd1586f5a37e0bf11f56257e6930a3210b2a4cb823d629b4a98d982f4 is provenance only because raw publisher body is not included."
+    },
+    {
+      "id": "WPULEUS3",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WPULEUS3&f=W",
+      "upstream_ids": [
+        "eia:series:WPULEUS3",
+        "EIA_US_weekly_petroleum"
+      ],
+      "integrity_status": "Bridge table and all original row hashes verified at repository commit 55513cafd11d32a8f3de3df4d15846c8c0d52084; bridge manifest d4540aa7d28d2c4496872b75143d3b7705f2b67d2c3041e2f09eb346f2dbd383; original capture body SHA-256 fec425e3ad545227af3e052fef27f4b074f525bd164e6fddeda8d35b33f4ae74 is provenance only because raw publisher body is not included."
+    }
+  ],
+  "delivery_key": "energy:energy-suite-weekly-2026-09-17:151ef3821c2ff95961808f2ed1d343eb8aac68329e8617caaaca09d55476ea7d"
+}

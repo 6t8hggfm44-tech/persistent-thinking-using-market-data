@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "delivery_key": "energy:energy-suite-weekly-2026-09-17:151ef3821c2ff95961808f2ed1d343eb8aac68329e8617caaaca09d55476ea7d",
+  "domain": "energy",
+  "run_id": "energy-suite-weekly-2026-09-17",
+  "report_sha256": "151ef3821c2ff95961808f2ed1d343eb8aac68329e8617caaaca09d55476ea7d",
+  "report_bytes": 6517,
+  "envelope_sha256": "2b5519b506447b81fc397d17fdfed528da2b208e5f5abd69a3a6e2799e66c1d1",
+  "envelope_bytes": 10356,
+  "producer_repository": "6t8hggfm44-tech/-Energy",
+  "producer_commit": "3215c1867ef69057af8562b79b97e8581ca6ddf8",
+  "producer_report_path": "reports/energy-suite-weekly-2026-09-17/151ef3821c2ff95961808f2ed1d343eb8aac68329e8617caaaca09d55476ea7d/Report.md",
+  "prepared_at_utc": "2026-09-17T22:17:50.569313Z",
+  "source_ancestry": [
+    {
+      "source_family": "EIA_US_weekly_petroleum",
+      "series_count": 12,
+      "observation_count": 3420,
+      "bridge_repository_commit": "55513cafd11d32a8f3de3df4d15846c8c0d52084",
+      "bridge_manifest_sha256": "d4540aa7d28d2c4496872b75143d3b7705f2b67d2c3041e2f09eb346f2dbd383",
+      "first_observed": "2026-09-14",
+      "shared_evidence_note": "All twelve series are one dependent EIA source family and receive no duplicate evidence weight."
+    }
+  ],
+  "transport_transformations": [
+    "none; Report.md and report-envelope.json preserve exact private frozen-package bytes"
+  ],
+  "transport_limitations": [
+    "The public packet contains no private checkpoints, raw publisher bodies, or private bridge tables.",
+    "Historical release vintages are unknown; bridge histories are current-vintage values first observed September 14, 2026.",
+    "Staging is not Market receipt, acknowledgment, or canonical persistence."
+  ]
+}
