@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "delivery_key": "agriculture:agriculture-suite-weekly-2026-09-17:fdd3365a5db844f33c0cc333d16ab68a1a9c97d7493a2898a85bc8a1135a36a1",
+  "domain": "agriculture",
+  "run_id": "agriculture-suite-weekly-2026-09-17",
+  "report_sha256": "fdd3365a5db844f33c0cc333d16ab68a1a9c97d7493a2898a85bc8a1135a36a1",
+  "report_bytes": 4738,
+  "envelope_sha256": "2489c0f250d43385bc2b050834fdfab371d965b3c542a5cd08ed76a247c8af44",
+  "envelope_bytes": 5236,
+  "producer_repository": "6t8hggfm44-tech/-Agriculture-food-",
+  "producer_commit": "5e3f2d0d9c8cb0c2106f0526ee3b63bafa678a3e",
+  "producer_report_path": "reports/agriculture-suite-weekly-2026-09-17/fdd3365a5db844f33c0cc333d16ab68a1a9c97d7493a2898a85bc8a1135a36a1/",
+  "prepared_at_utc": "2026-09-17T16:16:46.439690+00:00",
+  "source_ancestry": [
+    {
+      "source_id": "usda_wasde_capture_identity",
+      "upstream_ids": [
+        "usda-waob",
+        "usda-nass",
+        "usda-fas",
+        "foreign-agriculture-statistics"
+      ],
+      "availability": "hash_identity_only"
+    },
+    {
+      "source_id": "usda_nass_capture_identity",
+      "upstream_ids": [
+        "usda-nass"
+      ],
+      "availability": "hash_identity_only"
+    },
+    {
+      "source_id": "usdm_current_attempt",
+      "upstream_ids": [
+        "usdm-authors",
+        "noaa-weather-observations",
+        "usda-field-reports"
+      ],
+      "availability": "failed_no_bytes"
+    },
+    {
+      "source_id": "usda_aphis_hpai_attempt",
+      "upstream_ids": [
+        "usda-aphis-surveillance",
+        "state-animal-health-reports"
+      ],
+      "availability": "failed_no_bytes"
+    }
+  ],
+  "declared_transformations": [
+    "Report.md staged byte-for-byte from the verified private frozen package.",
+    "report-envelope.json staged byte-for-byte from the verified private frozen package.",
+    "No raw publisher bodies, private checkpoint, secrets, task identifiers, or machine paths included."
+  ],
+  "limitations": [
+    "Final evidence-gap report; zero usable numerical observations.",
+    "Two prior source hashes identified unavailable bytes; two due-source requests failed DNS resolution.",
+    "Staging does not constitute Market receipt, acknowledgment, canonical persistence, or forecast use."
+  ]
+}
