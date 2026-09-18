@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "delivery_key": "energy:energy-suite-weekly-2026-09-17:151ef3821c2ff95961808f2ed1d343eb8aac68329e8617caaaca09d55476ea7d",
+  "domain": "energy",
+  "run_id": "energy-suite-weekly-2026-09-17",
+  "report_version": 1,
+  "received_at_utc": "2026-09-18T22:01:14Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "3bcf62ffbd3bb1cbc71dc9cbc2ab453aa964091f",
+    "staging_path": "evidence/research/pending/energy/energy-suite-weekly-2026-09-17/151ef3821c2ff95961808f2ed1d343eb8aac68329e8617caaaca09d55476ea7d/",
+    "producer_repository": "6t8hggfm44-tech/-Energy",
+    "producer_commit": "3215c1867ef69057af8562b79b97e8581ca6ddf8",
+    "prepared_at_utc": "2026-09-17T22:17:50.569313Z"
+  },
+  "integrity": {
+    "supplied_report_sha256": "151ef3821c2ff95961808f2ed1d343eb8aac68329e8617caaaca09d55476ea7d",
+    "computed_report_sha256": "151ef3821c2ff95961808f2ed1d343eb8aac68329e8617caaaca09d55476ea7d",
+    "report_bytes_expected": 6517,
+    "report_bytes_computed": 6517,
+    "supplied_envelope_sha256": "2b5519b506447b81fc397d17fdfed528da2b208e5f5abd69a3a6e2799e66c1d1",
+    "computed_envelope_sha256": "2b5519b506447b81fc397d17fdfed528da2b208e5f5abd69a3a6e2799e66c1d1",
+    "envelope_bytes_expected": 10356,
+    "envelope_bytes_computed": 10356,
+    "producer_manifest_sha256": "f3b7cded89ac9bb1e7c058867b2f7f212d3c5b7ecb2b9ad265bd2297a9c4e201",
+    "producer_manifest_bytes_available_to_market": false,
+    "producer_manifest_hash_recomputed": false
+  },
+  "canonical_archive": {
+    "report_path": "evidence/research/energy/energy-suite-weekly-2026-09-17/151ef3821c2ff95961808f2ed1d343eb8aac68329e8617caaaca09d55476ea7d/Report.md",
+    "envelope_path": "evidence/research/energy/energy-suite-weekly-2026-09-17/151ef3821c2ff95961808f2ed1d343eb8aac68329e8617caaaca09d55476ea7d/report-envelope.json",
+    "intake_path": "evidence/research/energy/energy-suite-weekly-2026-09-17/151ef3821c2ff95961808f2ed1d343eb8aac68329e8617caaaca09d55476ea7d/intake.json"
+  },
+  "source_ancestry": {
+    "source_family": "EIA_US_weekly_petroleum",
+    "series_count": 12,
+    "observation_count": 3420,
+    "shared_evidence_rule": "Treat all twelve petroleum series as one dependent EIA source family. Do not count reuse by original Energy or other reports as independent confirmation."
+  },
+  "limitations": [
+    "The raw EIA publisher bodies, producer private checkpoints, bridge tables and producer manifest bytes were not delivered to Market and are not independently verified here.",
+    "The petroleum histories are current-vintage values first observed by the producer on 2026-09-14; they do not reconstruct original historical publication vintages.",
+    "Gas-storage and electricity tests were untested in this report.",
+    "Canonical status preserves the report's uncertainty and does not itself change market-model weights or any frozen forecast."
+  ]
+}

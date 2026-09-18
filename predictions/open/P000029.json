@@ -1,0 +1,46 @@
+{
+  "id": "P000029",
+  "created_at": "2026-09-18T22:01:14Z",
+  "evidence_cutoff": "2026-09-18T22:01:14Z",
+  "model_version": "0.2.14",
+  "target": "US_CPI_HEADLINE_MOM_SEP_2026_FIRST_RELEASE",
+  "horizon": "26d",
+  "resolution_at": "2026-10-14 08:30 ET BLS CPI release",
+  "forecast_type": "binary_probability_and_point_distribution",
+  "forecast": {
+    "event": "first-release September 2026 U.S. CPI-U all-items seasonally adjusted month-over-month change is at least +0.4%",
+    "probability": 0.66,
+    "point_percent": 0.5,
+    "interval_80_percent": [0.1, 0.9]
+  },
+  "benchmarks": [
+    {
+      "name": "August_2026_no_change_point",
+      "point_percent": 0.4,
+      "note": "Frozen prior-month headline CPI m/m value; simple no-change point benchmark."
+    },
+    {
+      "name": "neutral_binary",
+      "probability": 0.5,
+      "note": "Protocol comparator only; not an empirical base rate."
+    }
+  ],
+  "resolution_rule": "Use the first Bureau of Labor Statistics CPI news release for September 2026, scheduled for October 14, 2026 at 8:30 a.m. ET. Resolve TRUE if the seasonally adjusted all-items CPI-U month-over-month percent change printed in that first release is >= +0.4%; otherwise FALSE. Score p=0.66 with Brier and log loss. Score the 0.5% point by absolute error against the first-release value and record whether the 0.1%-0.9% 80% interval covers. Compare the point with the frozen August no-change value of 0.4% and the probability with neutral 0.50. Do not retrofit a later economist consensus, energy-price path, revision, or post-cutoff forecast information.",
+  "rationale": [
+    "September entered with an already-elevated inflation state: August headline CPI was +0.4% m/m and core CPI +0.3% m/m.",
+    "By the forecast cutoff, oil remained above $100 per barrel and U.S. diesel prices were at record levels; Reuters reported continued severe Hormuz impairment and Saudi Red Sea export disruption, giving the lagged retail-energy/input-cost channel a concrete September exposure.",
+    "The probability is capped well below certainty because oil retreated late in the week, Saudi Arabia is expanding Gulf/Oman rerouting and pursuing a partial East-West pipeline restart, CPI gasoline seasonal adjustment can differ from spot-price intuition, and core/shelter components may offset part of the energy impulse.",
+    "This forecast is intended to test the existing commodity-shock-to-measured-inflation pathway rather than infer the broader H003 regime from market prices alone."
+  ],
+  "hypothesis_links": ["H001", "H002", "H003"],
+  "surprising_if": [
+    "Headline CPI is <= +0.1% m/m despite sustained September retail-fuel pressure; that would materially weaken the model's near-term energy pass-through calibration.",
+    "Headline CPI is >= +0.8% m/m and the acceleration is not narrowly confined to one volatile component; that would indicate stronger pass-through than the current state assumes."
+  ],
+  "source_notes": [
+    "BLS states that September 2026 CPI is scheduled for October 14, 2026 at 8:30 a.m. ET.",
+    "Reuters September 18 reporting: Brent and WTI remained above $100, Hormuz commodity-vessel traffic remained far below its recent average, and Saudi East-West/Yanbu disruption persisted alongside mitigation efforts.",
+    "Reuters September 18 reporting: EIA national diesel averaged $6.29/gal this week, 68% above a year earlier, with documented farm/freight cost pressure."
+  ],
+  "status": "open"
+}
