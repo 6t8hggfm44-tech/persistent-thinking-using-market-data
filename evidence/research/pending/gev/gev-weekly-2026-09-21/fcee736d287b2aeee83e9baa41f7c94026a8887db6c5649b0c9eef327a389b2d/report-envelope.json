@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "domain": "gev",
+  "run_id": "gev-weekly-2026-09-21",
+  "report_version": 1,
+  "report_kind": "final_evidence_gap",
+  "generated_at_utc": "2026-09-21T15:20:22.158115Z",
+  "available_at_utc": "2026-09-21T15:20:22.158115Z",
+  "event_window_utc": {
+    "start": "2026-09-14T15:08:32.346251Z",
+    "end": "2026-09-21T15:08:32.346251Z"
+  },
+  "report_path": "Report.md",
+  "report_sha256": "fcee736d287b2aeee83e9baa41f7c94026a8887db6c5649b0c9eef327a389b2d",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "171c4cd51537ce1315a43c275fdaf5ff9295c6b2c31654992133537c96360c16",
+  "workflow_commit": "e9105bf38cdca6e78955f03844a2c894c9abd793",
+  "geography": [
+    "Global discovery scope",
+    "Pilot aircraft: Baltic/Nordic, eastern Mediterranean, Gulf",
+    "Selected satellite catalog groups"
+  ],
+  "actual_coverage": {
+    "observation_bytes_verified": false,
+    "scientific_replay_executed": false,
+    "metadata_package_dates": [
+      "2026-09-14",
+      "2026-09-16",
+      "2026-09-17",
+      "2026-09-18",
+      "2026-09-19",
+      "2026-09-20"
+    ],
+    "missing_inventory_date": "2026-09-15",
+    "current_partial_utc_day": "2026-09-21",
+    "physical_coverage": "unknown"
+  },
+  "sources": [
+    {
+      "id": "provider-history-metadata",
+      "upstream_ids": [
+        "adsblol.provider_history"
+      ],
+      "kind": "archive_inventory_only",
+      "raw_bytes_read": false
+    },
+    {
+      "id": "collector-metadata",
+      "upstream_ids": [
+        "adsblol",
+        "celestrak"
+      ],
+      "kind": "archive_inventory_only",
+      "raw_bytes_read": false
+    }
+  ],
+  "claims": [
+    {
+      "kind": "OBSERVATION",
+      "claim": "Required observation exports were not verifiably readable in this investigation"
+    },
+    {
+      "kind": "INFERENCE",
+      "claim": "No positive or negative physical or economic signal established"
+    }
+  ],
+  "supersedes": [],
+  "limitations": [
+    "No trace or element byte verification",
+    "No selected-case reproduction or full-day screening",
+    "No global or continuous coverage claim",
+    "No causal or operational impact test",
+    "Private manifest is a package identity, not proof of public access to underlying sources"
+  ],
+  "availability_scope": "producer_runtime_exact_bytes; remote availability and market receipt tracked separately",
+  "delivery_key": "gev-weekly-2026-09-21:fcee736d287b2aeee83e9baa41f7c94026a8887db6c5649b0c9eef327a389b2d",
+  "executed_scientific_code_commit": null,
+  "pinned_scientific_code_commit": "e9105bf38cdca6e78955f03844a2c894c9abd793",
+  "producer_workflow_repository": "6t8hggfm44-tech/satellite-research",
+  "producer_kind": "legacy_gev",
+  "reconciliation_status": "not_performed_independent_evidence_gap"
+}

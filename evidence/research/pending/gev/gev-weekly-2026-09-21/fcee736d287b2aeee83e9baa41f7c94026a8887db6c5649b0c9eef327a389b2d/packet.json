@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "delivery_key": "gev-weekly-2026-09-21:fcee736d287b2aeee83e9baa41f7c94026a8887db6c5649b0c9eef327a389b2d",
+  "domain": "gev",
+  "run_id": "gev-weekly-2026-09-21",
+  "report_sha256": "fcee736d287b2aeee83e9baa41f7c94026a8887db6c5649b0c9eef327a389b2d",
+  "report_bytes": 7827,
+  "envelope_sha256": "3b8a8a5a7593c69022b594e15728f32f75d157bd945c2ab0433cf793253a6f14",
+  "envelope_bytes": 2751,
+  "producer_repository": "6t8hggfm44-tech/-Energy",
+  "producer_workflow_repository": "6t8hggfm44-tech/satellite-research",
+  "producer_kind": "legacy_gev",
+  "producer_commit": "af136cecd7f71475725c17473acca379c0561299",
+  "producer_report_path": "cloud/legacy-weekly/reports/gev/gev-weekly-2026-09-21/fcee736d287b2aeee83e9baa41f7c94026a8887db6c5649b0c9eef327a389b2d/Report.md",
+  "prepared_at_utc": "2026-09-21T15:22:16.155964158Z",
+  "transport_transformations": [],
+  "limitations": [
+    "Complete safe final evidence-gap report; no raw aircraft or satellite archive included.",
+    "Producer metadata audit does not establish scientific observation integrity.",
+    "Staging is not canonical Market receipt or acknowledgment."
+  ]
+}
