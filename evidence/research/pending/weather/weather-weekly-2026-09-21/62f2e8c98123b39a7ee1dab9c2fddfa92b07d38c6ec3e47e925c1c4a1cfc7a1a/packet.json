@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "delivery_key": "weather:weather-weekly-2026-09-21:62f2e8c98123b39a7ee1dab9c2fddfa92b07d38c6ec3e47e925c1c4a1cfc7a1a",
+  "domain": "weather",
+  "run_id": "weather-weekly-2026-09-21",
+  "report_sha256": "62f2e8c98123b39a7ee1dab9c2fddfa92b07d38c6ec3e47e925c1c4a1cfc7a1a",
+  "report_bytes": 9223,
+  "envelope_sha256": "692b6e4c538b1ac7cc69981c8a5deac721bb477d4b6a9aba90f9f4aafa177ee1",
+  "envelope_bytes": 2024,
+  "producer_repository": "6t8hggfm44-tech/-Energy",
+  "producer_workflow_repository": "6t8hggfm44-tech/weather",
+  "producer_kind": "legacy_weather",
+  "producer_commit": "4084fdb16714597aaedcdba46fdfd1c9e48dc10b",
+  "producer_report_path": "cloud/legacy-weekly/reports/weather/weather-weekly-2026-09-21/62f2e8c98123b39a7ee1dab9c2fddfa92b07d38c6ec3e47e925c1c4a1cfc7a1a/Report.md",
+  "prepared_at_utc": "2026-09-21T17:28:56.756105Z",
+  "transport_transformations": [],
+  "transport_limitations": [
+    "This is staged delivery, not Market receipt or acknowledgment.",
+    "Raw collector archives, private checkpoints, operational identifiers, and credentials are excluded.",
+    "The producer report is an evidence-gap report; it does not claim value-level Weather findings."
+  ]
+}
