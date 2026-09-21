@@ -1,32 +1,36 @@
 # Current Market State
 
 **Model version:** 0.2.14  
-**Status:** Friday Sep. 18 cycle completed; no forecast resolved today; Suite Energy v1 canonically ingested; Friday learning review completed; no structural or hypothesis-weight change; P000029 issued  
-**Evidence cutoff:** 2026-09-18T22:01:14Z
+**Status:** Monday Sep. 21 cycle completed; no forecast resolved; Sep. 21 GEV/weather/original-Energy packets remain staged pending independent byte/hash verification; no structural or hypothesis-weight change; no new forecast  
+**Evidence cutoff:** 2026-09-21T21:31:52Z
 
 ## Auditor
 
-No authoritative forecast horizon expired before this cutoff. P000004 remains due at the Nov. 9, 2026 S&P close and P000005 at the Aug. 9, 2027 close. The resolved probability ledger remains **n=22**, mean Brier **0.212214**, mean log loss **0.614555**. Since the prior Friday review, P000027 resolved TRUE at frozen p=0.58, scoring Brier 0.176400/log loss 0.544727; it beat neutral but lost to both frozen market-implied benchmarks. No frozen record was altered.
+No authoritative forecast horizon expired before this cutoff. P000004 remains due at the Nov. 9, 2026 S&P close, P000005 at the Aug. 9, 2027 close, and P000029 at the Oct. 14, 2026 BLS CPI release. The resolved probability ledger remains **n=22**, mean Brier **0.212214**, mean log loss **0.614555**. No frozen forecast, outcome, benchmark, threshold or score changed.
 
-## Canonical upstream intake
+Market Repo B's live protocol and validation code were re-read. Its latest validation remains bound to primary commit `53983ba6259b87c81098371d5bfa43799e90717e` and score-ledger blob `98979b79478c192ce8f469d3b38a992527210077`. The intervening primary commits before this cycle only staged research packets; the scored ledger is unchanged, so no new learning/skill claim is made.
 
-Energy `energy-suite-weekly-2026-09-17`, v1 became canonical prospectively at actual Market receipt `2026-09-18T22:01:14Z`. Report/envelope hashes and byte lengths matched the staged packet. Producer manifest/raw EIA bodies/private bridge bytes were unavailable to Market. All 12 petroleum series retain one shared `EIA_US_weekly_petroleum` ancestry.
+## Upstream intake status
 
-The report's Sep. 4 baseline found commercial crude/gasoline/distillate below year-ago levels but no exceptional broad four-week draw; refinery input/utilization were higher while product-supplied proxies were lower. Gas/electricity tests were untested. This predates the current Saudi/Hormuz escalation and is baseline context rather than a clean negative on current energy stress.
+Three Sep. 21 legacy packets were fully text-read from immutable staging commits: GEV v1, Weather v1, and original Energy v1. The current runtime did not expose their committed files as a local byte stream permitting independent recomputation of the packet-declared SHA-256 values and byte lengths. Under `meta/RESEARCH_REPORT_INTAKE.md`, they therefore remain **staged/pending rather than canonical**; no receipt timestamp or index row was created.
 
-## Fresh evidence
+Their frozen report conclusions are nevertheless preserved as pending transport content rather than silently promoted: GEV and Weather are evidence-gap reports with no verified measurement signal; original Energy finds no registered anomaly in the twelve configured U.S. EIA petroleum series, but its latest source week ended Sep. 11 and does not observe the requested Sep. 14–20 week. Original Energy also shares EIA ancestry with the already-canonical Suite Energy report and would not constitute an independent evidentiary vote.
 
-- **OBSERVATION:** Sep. 18 Reuters reported Brent $104.87 and WTI $100.30, lower on the day after China sought Iranian help limiting Houthi attacks.
-- **OBSERVATION:** preliminary shipping data cited by Reuters showed four commodity-vessel Hormuz transits Thursday versus a 10-day average near 16; AIS-dark traffic is uncounted.
-- **OBSERVATION:** Saudi Red Sea export disruption is reaching October planning; Aramco is also expanding Gulf/Oman rerouting and pursuing partial East-West restart. The October cancellation report is second-hand and Reuters did not independently verify it.
-- **OBSERVATION:** Reuters reported EIA national diesel at $6.29/gal, +68% y/y, with documented farm/freight cost pressure.
-- **OBSERVATION:** the U.S. 10-year Treasury was around 5% Friday while equities were mixed; these are multiply determined downstream endpoints.
+Existing canonical Trade, Agriculture, Geopolitics, Suite Energy, and Sep. 14 GEV records retain their original receipt times and status. No setup/staging record is treated as new evidence.
+
+## Fresh evidence after the prior cutoff
+
+- **OBSERVATION:** Reuters reported Aramco loaded about 14 million barrels onto seven VLCCs at Ras Tanura on Sep. 20; tracked Saudi exports through Hormuz averaged about 2.9 mbpd over the prior week versus roughly 0.7 mbpd in August. This is material mitigation evidence.
+- **OBSERVATION:** trackable Hormuz traffic remained impaired (17 commodity-vessel weekend transits versus 37 a week earlier), while ship-to-ship transfers near Oman have expanded and VLCC freight costs reportedly exceeded $30/barrel. Workarounds preserve flow at high cost.
+- **OBSERVATION:** November Brent settled Sep. 21 at $100.34/bbl and October WTI at $95.78/bbl, sharply lower on diplomacy/partial-recovery expectations. Market price action is not treated as independent causal confirmation.
+- **OBSERVATION:** Fed Presidents Musalem and Goolsbee separately emphasized persistent inflation pressure from strong demand plus supply/commodity or other non-labor input costs and indicated further tightening may be needed. These speeches describe the policy reaction function, not independent proof of the oil mechanism.
+- **OBSERVATION:** the Nasdaq closed at a record, the S&P 500 rose 1.49%, and the 10-year Treasury yield fell below 5%; these are multiply determined downstream endpoints.
 
 ## Inference and Skeptic
 
-The energy shock now has clearer observed input-cost transmission, supporting H003's near-term inflation/policy-pressure channel. But oil fell, rerouting/restoration/diplomacy are active, pre-shock petroleum data did not show an exceptional broad draw, and the same fuel/rate shock can weaken real demand and margins. H003 therefore remains the leader without a reweight.
+The new evidence strengthens both sides of the existing energy-shock branch. Export rerouting and lower crude prices reduce the probability of a continuously worsening physical shortage, while persistent route impairment, very high freight costs, and hawkish Fed commentary preserve the inflation/policy-pressure channel.
 
-**Skeptic:** record diesel and infrastructure damage do not by themselves establish a durable macro inflation regime; margin absorption, contract lags, source uncertainty, alternative routes and real-demand destruction remain plausible. Long yields near 5% do not identify the oil mechanism.
+**Skeptic attack on H003:** successful rerouting and falling crude are strong contrary evidence to a simple persistent-shortage story. Fed hawkishness is multiply caused by strong demand, services inflation and pre-existing inflation data, so it cannot be double-counted as independent confirmation of the current energy shock. Record equity strength and lower long yields also argue against immediate broad financial amplification. A durable H003 update still requires realized downstream inflation or a comparably discriminating mechanism-bearing observation.
 
 ## Hypothesis weights
 
@@ -37,14 +41,10 @@ The energy shock now has clearer observed input-cost transmission, supporting H0
 
 No material model change; `world_model/CAUSAL_GRAPH.md` and `meta/MODEL_CHANGELOG.md` remain unchanged.
 
-## Learning state
+## Forecast state
 
-Friday review remains **insufficient evidence to assess learning at n=22**, below the precommitted threshold of 30. First-10 versus last-10 and earliest-six versus latest-six scores are numerically better recently, but composition and dependence prevent inference. Interval coverage remains 20/22 = 90.9%, a conservatism warning; S&P point skill versus matched no-change remains negative.
-
-## New forecast
-
-**P000029:** 66% probability first-release September 2026 headline CPI is >= +0.4% m/m; point +0.5%; 80% interval +0.1% to +0.9%; evidence cutoff 2026-09-18T22:01:14Z; resolves from BLS on Oct. 14, 2026 at 08:30 ET. This prospectively tests the existing energy/input-cost-to-measured-inflation pathway. P000004/P000005 remain frozen.
+No new forecast is created. P000029 remains frozen at **66%** probability that first-release September headline CPI is >= +0.4% m/m, point +0.5%, 80% interval +0.1% to +0.9%, resolving Oct. 14. It is already the highest-information prospective test of the unresolved energy/input-cost pass-through mechanism; another near-term oil or Fed forecast would be highly correlated and less discriminating.
 
 ## Most important watch
 
-**P000029's inflation pass-through test, with verified East-West/Yanbu restoration and Hormuz traffic normalization as the main upstream persistence controls.**
+**Whether improving Saudi export workarounds normalize physical/logistics stress without the September shock appearing in consumer inflation. P000029 remains the cleanest registered downstream discriminator.**
