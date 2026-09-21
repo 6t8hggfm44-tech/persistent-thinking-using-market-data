@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "delivery_key": "energy:energy-weekly-2026-09-21:bd9cd24980b0fe56c95966311808e0bda6fc416a2d6e148233f575b18d55aff8",
+  "domain": "energy",
+  "run_id": "energy-weekly-2026-09-21",
+  "report_sha256": "bd9cd24980b0fe56c95966311808e0bda6fc416a2d6e148233f575b18d55aff8",
+  "report_bytes": 11313,
+  "envelope_sha256": "0727083e8a29a9b4065e3287358c8f9733225e13b429f7359c39325de8afcdec",
+  "envelope_bytes": 2656,
+  "producer_repository": "6t8hggfm44-tech/-Energy",
+  "producer_workflow_repository": "6t8hggfm44-tech/energy",
+  "producer_kind": "legacy_energy",
+  "producer_commit": "c1abf610b8624d8e9d7e509a8a359e2d1b380e6f",
+  "producer_report_path": "cloud/legacy-weekly/reports/energy/energy-weekly-2026-09-21/bd9cd24980b0fe56c95966311808e0bda6fc416a2d6e148233f575b18d55aff8/Report.md",
+  "prepared_at_utc": "2026-09-21T18:33:35.778469Z",
+  "transport_transformations": [],
+  "transport_limitations": [
+    "This packet contains reviewed report prose and safe metadata only; raw evidence and private checkpoints remain in authorized private storage.",
+    "Staging is not Market receipt, acknowledgment or canonical persistence."
+  ]
+}
