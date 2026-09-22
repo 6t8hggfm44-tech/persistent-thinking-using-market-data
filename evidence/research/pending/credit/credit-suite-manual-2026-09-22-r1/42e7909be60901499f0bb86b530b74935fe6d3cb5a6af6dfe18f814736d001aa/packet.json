@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "domain": "credit",
+  "run_id": "credit-suite-manual-2026-09-22-r1",
+  "report_version": 2,
+  "delivery_key": "credit:credit-suite-manual-2026-09-22-r1:42e7909be60901499f0bb86b530b74935fe6d3cb5a6af6dfe18f814736d001aa",
+  "report_sha256": "42e7909be60901499f0bb86b530b74935fe6d3cb5a6af6dfe18f814736d001aa",
+  "report_bytes": 6113,
+  "envelope_sha256": "15fe87b51753151a042e602438bc10e4dd041247fa9f1280f4d5d9cd486154ef",
+  "envelope_bytes": 3438,
+  "producer_repository": "6t8hggfm44-tech/-Credit-financial-stress-",
+  "producer_commit": "c530b0d79eab9db8653ec49c2fb1a1119eb69cd9",
+  "producer_report_path": "reports/credit-suite-manual-2026-09-22-r1/42e7909be60901499f0bb86b530b74935fe6d3cb5a6af6dfe18f814736d001aa/Report.md",
+  "producer_envelope_path": "reports/credit-suite-manual-2026-09-22-r1/42e7909be60901499f0bb86b530b74935fe6d3cb5a6af6dfe18f814736d001aa/report-envelope.json",
+  "prepared_at_utc": "2026-09-22T21:10:07.244084+00:00",
+  "source_ancestry": [
+    {
+      "id": "fed_h8",
+      "url": "https://www.federalreserve.gov/releases/h8/current/",
+      "upstream_ids": [
+        "fed-h8-bank-reporting",
+        "ffiec-call-reports"
+      ],
+      "integrity_status": "No economic input bytes available"
+    },
+    {
+      "id": "fed_sloos",
+      "url": "https://www.federalreserve.gov/data/sloos.htm",
+      "upstream_ids": [
+        "fed-sloos-survey"
+      ],
+      "integrity_status": "No economic input bytes available"
+    },
+    {
+      "id": "fed_delinquency",
+      "url": "https://www.federalreserve.gov/releases/chargeoff/delallsa.htm",
+      "upstream_ids": [
+        "ffiec-call-reports"
+      ],
+      "integrity_status": "Exact retained numeric cells checked against transient tool representation; source_sha256 null; original body not verified"
+    },
+    {
+      "id": "fed_cp",
+      "url": "https://www.federalreserve.gov/releases/cp/rates.htm",
+      "upstream_ids": [
+        "fed-cp-dtcc"
+      ],
+      "integrity_status": "No economic input bytes available"
+    },
+    {
+      "id": "fed_h15",
+      "url": "https://www.federalreserve.gov/releases/h15/",
+      "upstream_ids": [
+        "fed-h15-market-rate-inputs",
+        "fed-cp-dtcc"
+      ],
+      "integrity_status": "No economic input bytes available"
+    }
+  ],
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact UTF-8 corrected report and envelope; private reproducibility package is referenced, not published.",
+    "Underlying evidence consists of reviewed extracts; original publisher-body identity and hidden provider traffic were not verified.",
+    "Staging is not Market receipt, acknowledgment or canonical persistence."
+  ],
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false,
+  "supersedes": [
+    "credit:credit-suite-manual-2026-09-22-r1:bd1d70b4dc1f86d161cc9a9283dbafb0198e88a3275b93ea77a2a6b36f150f98"
+  ]
+}
