@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "domain": "energy",
+  "run_id": "energy-legacy-manual-2026-09-22-r1",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "generated_at_utc": "2026-09-22T19:06:12.920892+00:00",
+  "available_at_utc": "2026-09-22T19:06:12.925255+00:00",
+  "event_window_utc": {
+    "start": "2026-09-15T00:00:00Z",
+    "end": "2026-09-22T00:00:00Z"
+  },
+  "report_path": "Report.md",
+  "report_sha256": "87cbc539adb45ab6c9c1aa84a2ae50eaf10b7e9ea39af04365f027561f2cf4c3",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "7b3482215da14b0d7263a00574cda1ca3d8cd810890b5c178bcd5e2af5a31aad",
+  "workflow_commit": "28ea17c51a61f97e17aea6a4ac044a19a434fd98",
+  "geography": [
+    "United States national petroleum aggregates"
+  ],
+  "actual_coverage": {
+    "requested_week_series_with_periods": 0,
+    "source_week_start": "2026-09-05",
+    "source_week_ending": "2026-09-11",
+    "series": 12,
+    "observations_per_series": 286,
+    "latest_value_first_seen_date": "2026-09-17",
+    "latest_capture_date": "2026-09-21",
+    "publication_times": "unknown",
+    "GIE": "disabled",
+    "ALSI_LNG": "notimplemented",
+    "electricity": "notimplemented"
+  },
+  "sources": [
+    {
+      "id": "EIA_WPSR",
+      "upstream_ids": [
+        "EIA",
+        "EIA_Weekly_Petroleum_Status_Report"
+      ],
+      "shared_with": "suiteEnergy"
+    },
+    {
+      "id": "WCESTUS1",
+      "upstream_ids": [
+        "EIA",
+        "EIA_Weekly_Petroleum_Status_Report"
+      ]
+    },
+    {
+      "id": "WGTSTUS1",
+      "upstream_ids": [
+        "EIA",
+        "EIA_Weekly_Petroleum_Status_Report"
+      ]
+    },
+    {
+      "id": "WDISTUS1",
+      "upstream_ids": [
+        "EIA",
+        "EIA_Weekly_Petroleum_Status_Report"
+      ]
+    },
+    {
+      "id": "WCSSTUS1",
+      "upstream_ids": [
+        "EIA",
+        "EIA_Weekly_Petroleum_Status_Report"
+      ]
+    },
+    {
+      "id": "WCRRIUS2",
+      "upstream_ids": [
+        "EIA",
+        "EIA_Weekly_Petroleum_Status_Report"
+      ]
+    },
+    {
+      "id": "WPULEUS3",
+      "upstream_ids": [
+        "EIA",
+        "EIA_Weekly_Petroleum_Status_Report"
+      ]
+    },
+    {
+      "id": "WCRFPUS2",
+      "upstream_ids": [
+        "EIA",
+        "EIA_Weekly_Petroleum_Status_Report"
+      ]
+    },
+    {
+      "id": "WCRIMUS2",
+      "upstream_ids": [
+        "EIA",
+        "EIA_Weekly_Petroleum_Status_Report"
+      ]
+    },
+    {
+      "id": "WCREXUS2",
+      "upstream_ids": [
+        "EIA",
+        "EIA_Weekly_Petroleum_Status_Report"
+      ]
+    },
+    {
+      "id": "WGFUPUS2",
+      "upstream_ids": [
+        "EIA",
+        "EIA_Weekly_Petroleum_Status_Report"
+      ]
+    },
+    {
+      "id": "WDIUPUS2",
+      "upstream_ids": [
+        "EIA",
+        "EIA_Weekly_Petroleum_Status_Report"
+      ]
+    },
+    {
+      "id": "WKJUPUS2",
+      "upstream_ids": [
+        "EIA",
+        "EIA_Weekly_Petroleum_Status_Report"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "E-C1",
+      "claim": "No registered3.5seasonal flag in12laggedUSpetroleum series; narrowgasoline sensitivity crosses3.0",
+      "status": "supported_with_limits"
+    },
+    {
+      "id": "E-C2",
+      "claim": "No requestedSep15\u201321sourceperiodendpoint is available",
+      "status": "supported"
+    },
+    {
+      "id": "E-C3",
+      "claim": "Current crudeproduction weeklychange is\u22123kb/day, correctingpriorflatwording",
+      "status": "supported"
+    },
+    {
+      "id": "E-C4",
+      "claim": "No causalweather,transport ormarketimpact established",
+      "status": "not_tested"
+    }
+  ],
+  "supersedes": [],
+  "limitations": [
+    "LaggedSep5\u201311sourceweek; requestedweekunobserved",
+    "USpetroleum only; noGlobalcoverage",
+    "Nohistoricalfirstreleasevintage",
+    "DependentEIAseriesand sharedsuiteEnergy ancestry",
+    "Noindependentoutage/demand/weather/cargo controls",
+    "Sameanalyst saw frozenWeather result beforeEnergy calculation; planpredeclaredand unchanged"
+  ],
+  "code_commit": "28ea17c51a61f97e17aea6a4ac044a19a434fd98",
+  "producer_kind": "legacy_energy",
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false,
+  "evidence_cutoff_utc": "2026-09-22T18:32:18.824529+00:00"
+}

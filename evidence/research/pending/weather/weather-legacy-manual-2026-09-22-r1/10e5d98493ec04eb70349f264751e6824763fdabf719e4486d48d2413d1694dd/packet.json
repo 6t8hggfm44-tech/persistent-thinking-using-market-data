@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "delivery_key": "weather:weather-legacy-manual-2026-09-22-r1:10e5d98493ec04eb70349f264751e6824763fdabf719e4486d48d2413d1694dd",
+  "domain": "weather",
+  "run_id": "weather-legacy-manual-2026-09-22-r1",
+  "report_sha256": "10e5d98493ec04eb70349f264751e6824763fdabf719e4486d48d2413d1694dd",
+  "report_bytes": 10806,
+  "envelope_sha256": "0dfe5102e51598b0f09d42bd1b5c3fcb38768a757bca526b60cd6d9332a6171a",
+  "envelope_bytes": 2935,
+  "producer_repository": "6t8hggfm44-tech/-Energy",
+  "producer_commit": "e0190fbf710bffe9192d19d15ac77bc39ca85413",
+  "producer_report_path": "cloud/legacy-weekly/reports/weather/weather-legacy-manual-2026-09-22-r1/10e5d98493ec04eb70349f264751e6824763fdabf719e4486d48d2413d1694dd/Report.md",
+  "producer_workflow_repository": "6t8hggfm44-tech/weather",
+  "producer_kind": "legacy_weather",
+  "prepared_at_utc": "2026-09-22T19:12:28.034242+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Narrow4point scope; no global measurement conclusion",
+    "3requested days and1lagged day missing",
+    "Five-year uncalibrated baseline and serial/spatial dependence",
+    "No independent station validation or compatible forecast realization",
+    "No operational/economic impact test",
+    "Original publication times unknown; historical estimates reconstructed as captured"
+  ],
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false
+}

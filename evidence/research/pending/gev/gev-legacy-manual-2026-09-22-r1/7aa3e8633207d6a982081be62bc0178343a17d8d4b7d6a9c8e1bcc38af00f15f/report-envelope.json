@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "domain": "gev",
+  "run_id": "gev-legacy-manual-2026-09-22-r1",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "generated_at_utc": "2026-09-22T19:09:57.331481+00:00",
+  "available_at_utc": "2026-09-22T19:09:57.331481+00:00",
+  "event_window_utc": {
+    "start": "2026-09-15T18:31:48.717047Z",
+    "end": "2026-09-22T18:31:48.717047Z"
+  },
+  "report_path": "Report.md",
+  "report_sha256": "7aa3e8633207d6a982081be62bc0178343a17d8d4b7d6a9c8e1bcc38af00f15f",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "65c41953bf5b08ec4cc85c768da5a63ddf3e6cbaa6d0d8f14dcd570fc71da7cf",
+  "workflow_commit": "e9105bf38cdca6e78955f03844a2c894c9abd793",
+  "code_commit": "e9105bf38cdca6e78955f03844a2c894c9abd793",
+  "producer_kind": "legacy_gev",
+  "geography": [
+    "Baltic/Nordic pilot",
+    "eastern Mediterranean pilot",
+    "Gulf pilot",
+    "selected satellite catalog groups"
+  ],
+  "actual_coverage": {
+    "cached_days": [
+      "2026-09-14",
+      "2026-09-16",
+      "2026-09-17",
+      "2026-09-18",
+      "2026-09-19",
+      "2026-09-20"
+    ],
+    "requested_window_cached_cases": 75,
+    "reproduced_cached_cases": 90,
+    "missing_retrospective_day": "2026-09-15",
+    "absent_from_cached_packet": [
+      "2026-09-21",
+      "2026-09-22"
+    ],
+    "reproduced_screening_candidates": 288,
+    "recomputed_satellite_comparisons": 264,
+    "in_window_satellite_comparisons": 244,
+    "global_reranking": false
+  },
+  "sources": [
+    {
+      "id": "aircraft_provider_archive",
+      "upstream_ids": [
+        "adsb.lol_processed_positions"
+      ],
+      "measurement_type": "processed_ADSB_MLAT_positions"
+    },
+    {
+      "id": "satellite_catalogs",
+      "upstream_ids": [
+        "CelesTrak_catalog_mean_elements"
+      ],
+      "measurement_type": "fitted_mean_elements"
+    }
+  ],
+  "claims": [
+    {
+      "id": "G-C1",
+      "claim": "Retained aircraft coordinate discontinuities reproduced; independent geometry checks92inwindowpairs",
+      "status": "supported_with_limits"
+    },
+    {
+      "id": "G-C2",
+      "claim": "50same-source pairs remain; all numeric position ages unknown",
+      "status": "supported"
+    },
+    {
+      "id": "G-C3",
+      "claim": "Catalog element differences reproduced but no physicalmaneuver or economicimpact established",
+      "status": "not_tested"
+    }
+  ],
+  "supersedes": [],
+  "limitations": [
+    "Bounded retained-case sample; missing retrospectiveSep15 and laterpacketdays; cappedlivebaseline",
+    "No independentphysicaloroperationalcontrols, no global prevalence or attribution",
+    "Related provider ancestry does not establish independent sensing",
+    "Numerical tests saved before Weather/Energy exposure; narrative frozen afterward and not blinded; deterministic packaging arithmetic reverified after exposure",
+    "Exact exposure receive timestamps uninstrumented; bounded19:06:22.935982\u201319:07:26.484478UTC"
+  ],
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false,
+  "evidence_cutoff_utc": "2026-09-22T18:31:48.717047Z",
+  "cloud_evidence_available_at_utc": "2026-09-22T19:00:18.523672+00:00",
+  "cutoff_semantics": "Original observation-selection boundary; existing archives were actually downloaded/verified during continuation afterward, not known to analyst at original cutoff."
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "delivery_key": "gev-legacy-manual-2026-09-22-r1:7aa3e8633207d6a982081be62bc0178343a17d8d4b7d6a9c8e1bcc38af00f15f",
+  "domain": "gev",
+  "run_id": "gev-legacy-manual-2026-09-22-r1",
+  "report_sha256": "7aa3e8633207d6a982081be62bc0178343a17d8d4b7d6a9c8e1bcc38af00f15f",
+  "report_bytes": 11038,
+  "envelope_sha256": "a1eacfa812a21dc48e0bf57106aaee10552939bec33d43f1863f82c9c3fcea13",
+  "envelope_bytes": 3365,
+  "producer_repository": "6t8hggfm44-tech/-Energy",
+  "producer_commit": "e0190fbf710bffe9192d19d15ac77bc39ca85413",
+  "producer_report_path": "cloud/legacy-weekly/reports/gev/gev-legacy-manual-2026-09-22-r1/7aa3e8633207d6a982081be62bc0178343a17d8d4b7d6a9c8e1bcc38af00f15f/Report.md",
+  "producer_workflow_repository": "6t8hggfm44-tech/satellite-research",
+  "producer_kind": "legacy_gev",
+  "prepared_at_utc": "2026-09-22T19:12:28.033606+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Bounded retained-case sample; missing retrospectiveSep15 and laterpacketdays; cappedlivebaseline",
+    "No independentphysicaloroperationalcontrols, no global prevalence or attribution",
+    "Related provider ancestry does not establish independent sensing",
+    "Numerical tests saved before Weather/Energy exposure; narrative frozen afterward and not blinded; deterministic packaging arithmetic reverified after exposure",
+    "Exact exposure receive timestamps uninstrumented; bounded19:06:22.935982\u201319:07:26.484478UTC"
+  ],
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false
+}

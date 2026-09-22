@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "delivery_key": "energy:energy-legacy-manual-2026-09-22-r1:87cbc539adb45ab6c9c1aa84a2ae50eaf10b7e9ea39af04365f027561f2cf4c3",
+  "domain": "energy",
+  "run_id": "energy-legacy-manual-2026-09-22-r1",
+  "report_sha256": "87cbc539adb45ab6c9c1aa84a2ae50eaf10b7e9ea39af04365f027561f2cf4c3",
+  "report_bytes": 12947,
+  "envelope_sha256": "8b3de78f5f2ea2a86c726065e348f240183d5bc446de948131bc09fab31c1e4f",
+  "envelope_bytes": 4210,
+  "producer_repository": "6t8hggfm44-tech/-Energy",
+  "producer_commit": "e0190fbf710bffe9192d19d15ac77bc39ca85413",
+  "producer_report_path": "cloud/legacy-weekly/reports/energy/energy-legacy-manual-2026-09-22-r1/87cbc539adb45ab6c9c1aa84a2ae50eaf10b7e9ea39af04365f027561f2cf4c3/Report.md",
+  "producer_workflow_repository": "6t8hggfm44-tech/energy",
+  "producer_kind": "legacy_energy",
+  "prepared_at_utc": "2026-09-22T19:12:28.034921+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "LaggedSep5\u201311sourceweek; requestedweekunobserved",
+    "USpetroleum only; noGlobalcoverage",
+    "Nohistoricalfirstreleasevintage",
+    "DependentEIAseriesand sharedsuiteEnergy ancestry",
+    "Noindependentoutage/demand/weather/cargo controls",
+    "Sameanalyst saw frozenWeather result beforeEnergy calculation; planpredeclaredand unchanged"
+  ],
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false
+}
