@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "domain": "industry",
+  "run_id": "industry-suite-manual-2026-09-22-r1",
+  "delivery_key": "industry:industry-suite-manual-2026-09-22-r1:e666dda312eca6f5b64f97c7c2de19431b427155c0d2a3ee7f069c6d5f94d8bf",
+  "report_sha256": "e666dda312eca6f5b64f97c7c2de19431b427155c0d2a3ee7f069c6d5f94d8bf",
+  "report_bytes": 5617,
+  "envelope_sha256": "8a2403e3240d9f7bfd9360d34184b2f5526e4969110cd5b933e5491f686d307f",
+  "envelope_bytes": 4152,
+  "producer_repository": "6t8hggfm44-tech/-Industrial-production-",
+  "producer_commit": "ea3889245476903b378bda47682f40c83e9c27d0",
+  "producer_report_path": "reports/industry-suite-manual-2026-09-22-r1/e666dda312eca6f5b64f97c7c2de19431b427155c0d2a3ee7f069c6d5f94d8bf/Report.md",
+  "producer_envelope_path": "reports/industry-suite-manual-2026-09-22-r1/e666dda312eca6f5b64f97c7c2de19431b427155c0d2a3ee7f069c6d5f94d8bf/report-envelope.json",
+  "prepared_at_utc": "2026-09-22T19:20:03.472270+00:00",
+  "source_ancestry": [
+    {
+      "id": "fed_g17",
+      "url": "https://www.federalreserve.gov/releases/g17/current/default.htm",
+      "upstream_ids": [
+        "FRB-G17",
+        "US-CENSUS-INDUSTRIAL-BENCHMARKS",
+        "US-BLS-PRODUCTION-WORKER-HOURS",
+        "USGS-MINERALS"
+      ],
+      "integrity_status": "Exact tool-representation hash and retained numeric strings verified; original publisher byte identity unavailable; semantic review explicitly recorded."
+    },
+    {
+      "id": "census_m3",
+      "url": "https://www.census.gov/manufacturing/m3/index.html",
+      "upstream_ids": [
+        "US-CENSUS-M3"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    },
+    {
+      "id": "ism_manufacturing",
+      "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/",
+      "upstream_ids": [
+        "ISM-MANUFACTURING-SURVEY"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    }
+  ],
+  "declared_transformations": [],
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false,
+  "transport_limitations": [
+    "Prepared for authorized pending staging only; no Market receipt, acknowledgment or canonical acceptance established.",
+    "Exact UTF-8 final Report and original safe envelope are included without transformation; full private evidence package is referenced separately.",
+    "Underlying evidence uses bounded reviewed tool extracts; original publisher byte verification and hidden provider traffic are unavailable."
+  ]
+}

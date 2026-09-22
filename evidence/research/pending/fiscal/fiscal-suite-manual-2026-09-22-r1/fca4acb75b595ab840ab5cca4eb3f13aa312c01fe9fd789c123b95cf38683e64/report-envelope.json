@@ -1,0 +1,88 @@
+{
+  "domain": "fiscal",
+  "run_id": "fiscal-suite-manual-2026-09-22-r1",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "7b872d400ff0056425874ff3b6a9c7052bc39c89",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2025-01-01T00:00:00Z",
+    "end": "2026-08-01T00:00:00Z"
+  },
+  "actual_coverage": {
+    "requested_analysis_date": "2026-09-22",
+    "geography": "United States",
+    "measured_source_ids": [
+      "census_construction_public"
+    ],
+    "numeric_cell_count": 17,
+    "indicator_roster": {
+      "Treasury receipts, outlays and deficit/surplus": "Unmeasured: MTS landing page only",
+      "Federal contracts, obligations, deobligations and outlays": "Disabled USAspending; no obligations/outlays measurement",
+      "Infrastructure appropriations, awards and construction work put in place": "Partial: construction work in nominal ownership categories only",
+      "Defense procurement obligations and deliveries": "Unmeasured: no procurement-to-delivery linkage",
+      "Tax policy and realized receipts": "Unmeasured: no matched tax receipts/policy controls",
+      "Subsidy eligibility, commitments and disbursements": "Unmeasured: commitments/disbursements absent",
+      "Regulatory proposals, final rules and effective dates": "Discovery only: Federal Register current contents; no effective-date impact test",
+      "State and local revenues, spending, balances, debt and assets": "Unmeasured: lagged Census annual tables not extracted"
+    },
+    "scope": "Bounded manual investigation; no monthly/quarterly observations interpolated into weeks"
+  },
+  "limitations": [
+    "Construction estimates measure nominal work put in place; price deflation and funding-source decomposition were not obtained.",
+    "The90% interval covers sampling uncertainty only; preliminary values may revise. No unsupported significance statement is made for the computed annual or cumulative changes.",
+    "Treasury MTS page returned a modified-cash description and links, with no receipts/outlays cells. Cash balance, primary balance and payment-calendar controls are blocked.",
+    "State/local page identifies lagged2024 tables and revised earlier releases, but no fiscal amounts were extracted. A current page date does not make those annual periods current.",
+    "Federal Register contents are policy discovery, not measured expenditure. USAspending remains disabled; procurement and disbursement realization are untested."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-22T19:09:47.683586+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-22T19:20:32.601273+00:00",
+  "available_at_utc": "2026-09-22T19:20:32.601273+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "fca4acb75b595ab840ab5cca4eb3f13aa312c01fe9fd789c123b95cf38683e64",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "35aef89dee155b2c225204cc934cf7ce2972f877e8d00851bdc41b74e155b785",
+  "sources": [
+    {
+      "id": "census_construction_public",
+      "url": "https://www.census.gov/construction/c30/pdf/release.pdf",
+      "upstream_ids": [
+        "US-CENSUS-VIP",
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Exact tool-representation hash and retained numeric strings verified; original publisher byte identity unavailable; semantic review explicitly recorded."
+    },
+    {
+      "id": "treasury_mts",
+      "url": "https://fiscal.treasury.gov/accounting/monthly-treasury-statement",
+      "upstream_ids": [
+        "US-TREASURY-MTS",
+        "US-FEDERAL-ENTITY-ACCOUNTING"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    },
+    {
+      "id": "census_state_local",
+      "url": "https://www.census.gov/programs-surveys/gov-finances.html",
+      "upstream_ids": [
+        "US-CENSUS-GOVERNMENT-FINANCES",
+        "STATE-LOCAL-FINANCIAL-REPORTS"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    },
+    {
+      "id": "federal_register",
+      "url": "https://www.federalregister.gov/documents/current",
+      "upstream_ids": [
+        "US-OFR-FEDERAL-REGISTER",
+        "US-ISSUING-AGENCY-RULEMAKING"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    }
+  ],
+  "delivery_key": "fiscal:fiscal-suite-manual-2026-09-22-r1:fca4acb75b595ab840ab5cca4eb3f13aa312c01fe9fd789c123b95cf38683e64",
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false
+}

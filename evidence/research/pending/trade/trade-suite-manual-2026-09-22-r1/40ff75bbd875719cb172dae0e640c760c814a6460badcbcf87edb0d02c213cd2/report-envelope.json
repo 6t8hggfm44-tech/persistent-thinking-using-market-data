@@ -1,0 +1,95 @@
+{
+  "domain": "trade",
+  "run_id": "trade-suite-manual-2026-09-22-r1",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "2a7a62759947b4aa2cb9ebe00696e3f35fee396e",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2025-08-01T00:00:00Z",
+    "end": "2026-09-01T00:00:00Z"
+  },
+  "actual_coverage": {
+    "requested_analysis_date": "2026-09-22",
+    "geography": "Port of Los Angeles numeric evidence; Asia/Europe discovery only",
+    "measured_source_ids": [
+      "port_la_containers"
+    ],
+    "numeric_cell_count": 10,
+    "indicator_roster": {
+      "China industrial production and product output": "Unmeasured: NBS release index only",
+      "China electricity and energy production": "Unmeasured: no energy output cells",
+      "China property investment, construction and sales": "Unmeasured: no property cells",
+      "China imports and exports by commodity and destination": "Unmeasured: no commodity/destination quantities",
+      "Korea exports including working-day-adjusted and semiconductor detail": "Unmeasured: provisional release listing only",
+      "Taiwan semiconductor and electronics exports": "Unmeasured: ebook listing only",
+      "European manufacturing and industrial production": "Unavailable: Eurostat429, no repeat",
+      "Commodity import volumes and input prices": "Unmeasured: no compatible quantity/price cells",
+      "Container imports, exports, empties and chokepoint flows": "Measured locally: LA loaded/empty TEUs; chokepoints and alternate ports untested"
+    },
+    "scope": "Bounded manual investigation; no monthly/quarterly observations interpolated into weeks"
+  },
+  "limitations": [
+    "One port and one annual matched-month comparison cannot establish a global or nationwide trend. No alternative-port, cargo-composition or congestion control was available.",
+    "NBS index verified dated release links but supplied no selected activity levels. Its bounded publisher-restricted search returned unrelated domains; all returned hits were excluded.",
+    "Korea Customs index identifies a provisional September1–20 release; no trade cells were extracted and partial-month activity is not treated as a full month.",
+    "Taiwan MOF page provided an ebook listing, not measured current semiconductor or quantum data. Eurostat returned429 and was not retried.",
+    "No compatible China commodity imports, physical production, energy/property panel or customs price/volume decomposition was obtained."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-22T19:09:47.685958+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-22T19:19:33.672138+00:00",
+  "available_at_utc": "2026-09-22T19:19:33.672138+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "40ff75bbd875719cb172dae0e640c760c814a6460badcbcf87edb0d02c213cd2",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "4b6590af7d13294f60635e89bb14f58ace21954f44ef4042fd171bc95250a451",
+  "sources": [
+    {
+      "id": "port_la_containers",
+      "url": "https://portoflosangeles.org/business/statistics/container-statistics",
+      "upstream_ids": [
+        "port-los-angeles-terminal-counts"
+      ],
+      "integrity_status": "Exact tool-representation hash and retained numeric strings verified; original publisher byte identity unavailable; semantic review explicitly recorded."
+    },
+    {
+      "id": "china_nbs_releases",
+      "url": "https://www.stats.gov.cn/english/PressRelease/",
+      "upstream_ids": [
+        "china-nbs-enterprise-surveys",
+        "china-nbs-energy-statistics",
+        "china-customs"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    },
+    {
+      "id": "korea_customs_releases",
+      "url": "https://www.customs.go.kr/kcs/na/ntt/selectNttList.do?mi=2891&bbsId=1362",
+      "upstream_ids": [
+        "korea-customs-declarations"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    },
+    {
+      "id": "taiwan_mof_trade",
+      "url": "https://www.mof.gov.tw/Eng/multiplehtml/259",
+      "upstream_ids": [
+        "taiwan-customs-declarations"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    },
+    {
+      "id": "eurostat_industry",
+      "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Industrial_production_(volume)_index_overview",
+      "upstream_ids": [
+        "eurostat-national-statistical-institutes"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    }
+  ],
+  "delivery_key": "trade:trade-suite-manual-2026-09-22-r1:40ff75bbd875719cb172dae0e640c760c814a6460badcbcf87edb0d02c213cd2",
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false
+}
