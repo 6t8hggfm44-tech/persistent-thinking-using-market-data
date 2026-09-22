@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "delivery_key": "housing:housing-suite-weekly-2026-09-22:18e813c8060d5ed0b9d492e2cdba619b56310c5806ba2a03a9c655980735af69",
+  "domain": "housing",
+  "run_id": "housing-suite-weekly-2026-09-22",
+  "report_sha256": "18e813c8060d5ed0b9d492e2cdba619b56310c5806ba2a03a9c655980735af69",
+  "report_bytes": 9151,
+  "envelope_sha256": "47071d2bf0f516c65f6fc2a4217d1f28b29a9fd46bd3e2583e868163f51bb062",
+  "envelope_bytes": 3648,
+  "producer_repository": "6t8hggfm44-tech/-Housing-construction-",
+  "producer_commit": "ceda101a89c3f6af906a44d7b4682aecbe9a9316",
+  "producer_report_path": "reports/housing-suite-weekly-2026-09-22/18e813c8060d5ed0b9d492e2cdba619b56310c5806ba2a03a9c655980735af69/Report.md",
+  "prepared_at_utc": "2026-09-22T16:12:24.696338+00:00",
+  "transport_transformations": [],
+  "transport_limitations": [
+    "Exact final report and original shareable envelope only; private reproducibility package and operational checkpoint are not included.",
+    "Staging is not Market receipt, acknowledgment or canonical persistence."
+  ],
+  "source_ancestry": [
+    {
+      "id": "census_nrc",
+      "upstream_ids": [
+        "US-CENSUS-BPS",
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Missing original bytes; imported hash identifies absent historical body, not current verification."
+    },
+    {
+      "id": "census_nrs",
+      "upstream_ids": [
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Missing original bytes; imported hash identifies absent historical body, not current verification."
+    },
+    {
+      "id": "freddie_pmms",
+      "upstream_ids": [
+        "FREDDIE-MAC-LPA-PMMS"
+      ],
+      "integrity_status": "Missing original bytes; imported hash identifies absent historical body, not current verification."
+    },
+    {
+      "id": "bls_construction_employment",
+      "upstream_ids": [
+        "US-BLS-CES",
+        "US-BLS-CPS"
+      ],
+      "integrity_status": "Historical failed attempt; no original-body hash or current source evidence."
+    },
+    {
+      "id": "fed_sloos_cre",
+      "upstream_ids": [
+        "FRB-SLOOS-RESPONDENT-BANKS"
+      ],
+      "integrity_status": "Missing original bytes; imported hash identifies absent historical body, not current verification."
+    }
+  ]
+}
