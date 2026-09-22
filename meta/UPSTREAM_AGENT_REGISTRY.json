@@ -379,5 +379,34 @@
       "historical_pending_and_consumed_misses": "preserved",
       "automatic_retries_or_backlog": false
     }
+  },
+  "manual_dress_rehearsal_20260922": {
+    "authorization": "Explicit one-off user authorization for all fifteen current manual investigations on 2026-09-22",
+    "scope": "one report per exact listed producer/run identity; identity exception only",
+    "suite_run_ids": {
+      "credit": "credit-suite-manual-2026-09-22-r1",
+      "labor": "labor-suite-manual-2026-09-22-r1",
+      "consumer": "consumer-suite-manual-2026-09-22-r1",
+      "housing": "housing-suite-manual-2026-09-22-r1",
+      "industry": "industry-suite-manual-2026-09-22-r1",
+      "corporate": "corporate-suite-manual-2026-09-22-r1",
+      "fiscal": "fiscal-suite-manual-2026-09-22-r1",
+      "trade": "trade-suite-manual-2026-09-22-r1",
+      "freight": "freight-suite-manual-2026-09-22-r1",
+      "agriculture": "agriculture-suite-manual-2026-09-22-r1",
+      "geopolitics": "geopolitics-suite-manual-2026-09-22-r1",
+      "energy": "energy-suite-manual-2026-09-22-r1"
+    },
+    "legacy_run_ids": {
+      "gev": "gev-legacy-manual-2026-09-22-r1",
+      "weather": "weather-legacy-manual-2026-09-22-r1",
+      "energy": "energy-legacy-manual-2026-09-22-r1"
+    },
+    "scheduled_occurrence_consumed": false,
+    "supersedes_scheduled_reports": false,
+    "market_cycle": "next_existing_regular_cycle_only",
+    "recurring_run_id_patterns": "unchanged",
+    "source_acquisition_authority": "Separate producer-side explicit manual authority; this receiver exception grants no acquisition permission",
+    "intake_contract": "meta/RESEARCH_REPORT_INTAKE.md#one-off-manual-dress-rehearsal-2026-09-22"
   }
 }

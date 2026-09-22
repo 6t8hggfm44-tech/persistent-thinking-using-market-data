@@ -80,3 +80,51 @@ completed report enters the next existing Market cycle whose actual receipt
 cutoff permits it. Do not backdate availability, rewrite a frozen forecast, wait
 indefinitely for every upstream input, or create an extra cycle. Older pending
 approvals, uncertainty and consumed misses remain intact.
+
+## One-off manual dress rehearsal (2026-09-22)
+
+Pete explicitly authorized one current manual investigation from each of the
+fifteen existing producers. The exact identity exception is recorded in
+`UPSTREAM_AGENT_REGISTRY.json` under `manual_dress_rehearsal_20260922`: the twelve
+suite producers use `<domain>-suite-manual-2026-09-22-r1`; GEV, weather and original
+petroleum use `<domain>-legacy-manual-2026-09-22-r1`. This exception does not change
+recurring weekly identities, consume or approve a scheduled/missed occurrence,
+or supersede a prior weekly report. Envelope metadata must identify
+`invocation_kind: authorized_manual_dress_rehearsal` and
+`scheduled_occurrence_consumed: false`. Keep private invocation/authorization
+references out of this public repository. Producer source-access controls remain
+separate; this receiver exception grants no new acquisition permission.
+
+Use the unchanged three-file pending transport, registered producer lineage,
+report versioning, GEV legacy key/archive, exact-byte verification, ancestry and
+correction rules. A correction to one of these manual reports requires a new
+explicit version/supersedes link; never replace its frozen bytes. The manual date
+identifies the investigation, not the dates of all measured observations. An
+honest evidence-gap report remains valid without claiming a measured negative.
+
+This receiver must inspect these packets only during its next existing regular
+cycle and record its actual complete receipt then. Rehearsal staging or a
+separate auditor's byte check is not receiver receipt, acknowledgment, canonical
+acceptance, a forecast, or authority for an extra Market cycle. Preserve the
+Economy boundary and Market Repo B requirements.
+
+### Exact connector text to bytes
+
+If the connector exposes complete UTF-8 file content as a string, it can still
+be verified locally without direct raw-URL access. Fetch the immutable Market
+commit/tree and all three file contents from that same commit. Preserve each
+exact `structuredContent.content` string, including terminal newlines, in a JSON
+bundle with `snapshot` and `files`; each file entry contains `path`, `content`,
+`git_blob_sha` and `expected_git_bytes` from the independently fetched Git tree.
+Do not trim, pretty-print file JSON, concatenate partial output or add a newline.
+Run `python3 tools/verify_pending_bytes.py exact-fetched-bundle.json`.
+
+The helper first matches reconstructed UTF-8 bytes to each immutable Git blob
+(`SHA1("blob " + byte_length + NUL + bytes)`) and tree size, then recomputes the
+packet's report/envelope SHA-256 values and byte lengths and checks identities.
+A mismatch or incomplete representation stays pending. The helper outputs only
+integrity results and creates no receipt. A successful check still requires the
+normal report-content/registration/privacy/supersession review, canonical-key
+deduplication, actual receiver receipt timestamp, atomic canonical/index commit
+and exact readback described above. Existing accepted keys keep their original
+receipt; this method cannot establish an earlier receipt or raw-evidence access.
