@@ -1,0 +1,94 @@
+{
+  "domain": "housing",
+  "run_id": "housing-suite-manual-2026-09-22-r1",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "0198fe390508467dac11bcd098a3a38fc8bb17e9",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-02-01T00:00:00Z",
+    "end": "2026-09-18T00:00:00Z"
+  },
+  "actual_coverage": {
+    "reviewed_numeric_cells": 50,
+    "new_cells": 48,
+    "reused_context_cells": 2,
+    "executed_test_families": 4,
+    "permits_months": 6,
+    "new_sales_months": 6,
+    "starts_completions_months": 2,
+    "inventory_months": 2,
+    "missing": [
+      "36-month financing test",
+      "12-month pipeline flows",
+      "construction labor/material controls",
+      "mortgage applications",
+      "existing-home listings",
+      "price-cut panel",
+      "CRE realized outcomes"
+    ]
+  },
+  "limitations": [
+    "Current revised observations and derived tool extracts only; original publisher bytes unavailable.",
+    "Selected short windows do not establish demand, bottleneck or financing causality.",
+    "Census Survey of Construction ancestry shared; no independent-confirmation claim.",
+    "PMMS September17 extract reused without refresh; later than July sales, so not causal evidence for that month.",
+    "Two visible opens; hidden upstream HTTP totals and tokens unavailable."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-22T19:06:29.651818+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-22T19:08:21.573365+00:00",
+  "available_at_utc": "2026-09-22T19:08:21.573365+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "5a36bedd5e0f752955ae27032abd3eb8c169d5748c12a6bc4839cf78e88a64d6",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "25e2eff6c732e981a5ba30c6c1690d942abbb00e85e8f6b773cfa023be99b53b",
+  "sources": [
+    {
+      "id": "census_nrc",
+      "url": "https://www.census.gov/construction/nrc/pdf/newresconst.pdf",
+      "upstream_ids": [
+        "US-CENSUS-BPS",
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Selected derived cells checked; original publisher bytes unavailable"
+    },
+    {
+      "id": "census_nrs",
+      "url": "https://www.census.gov/construction/nrs/pdf/newressales.pdf",
+      "upstream_ids": [
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Selected derived cells checked; original publisher bytes unavailable"
+    },
+    {
+      "id": "freddie_pmms",
+      "url": "https://www.freddiemac.com/pmms",
+      "upstream_ids": [
+        "FREDDIE-MAC-LPA-PMMS"
+      ],
+      "integrity_status": "Exact checkpoint blob and SHA256 verified before reuse; original body unavailable"
+    },
+    {
+      "id": "bls_construction_employment",
+      "url": "https://www.bls.gov/news.release/empsit.toc.htm",
+      "upstream_ids": [
+        "US-BLS-CES",
+        "US-BLS-CPS"
+      ],
+      "integrity_status": "No economic input captured"
+    },
+    {
+      "id": "fed_sloos_cre",
+      "url": "https://www.federalreserve.gov/data/sloos.htm",
+      "upstream_ids": [
+        "FRB-SLOOS-RESPONDENT-BANKS"
+      ],
+      "integrity_status": "No economic input captured"
+    }
+  ],
+  "delivery_key": "housing:housing-suite-manual-2026-09-22-r1:5a36bedd5e0f752955ae27032abd3eb8c169d5748c12a6bc4839cf78e88a64d6",
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false
+}

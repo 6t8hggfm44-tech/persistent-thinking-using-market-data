@@ -1,0 +1,83 @@
+{
+  "domain": "housing",
+  "run_id": "housing-suite-weekly-2026-09-22",
+  "report_version": 1,
+  "report_kind": "final_evidence_gap",
+  "workflow_commit": "3922207063bd3f0a6fed850be21640c291a8fb10",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-09-15T16:00:00Z",
+    "end": "2026-09-22T16:00:00Z"
+  },
+  "actual_coverage": {
+    "target_geography": "United States and Census regions",
+    "target_window_only": true,
+    "observed_economic_periods": [],
+    "catalog_sources_assessed": 5,
+    "verified_current_source_observations": 0,
+    "economic_tests_executed": 0,
+    "source_requests": 0,
+    "coverage_verdict": "All housing recipes untested; operational availability audit only"
+  },
+  "limitations": [
+    "No current housing numerical observation was obtained; zero economic tests executed.",
+    "Four successful imported capture records have missing original bodies and no reviewed numeric extracts in this runtime; one historical BLS attempt failed HTTP403.",
+    "Direct publisher routes excluded by current runtime egress. Connected extraction could not demonstrate strict upstream request/byte/time compliance; no new source requests or collector pass occurred.",
+    "Monthly/quarterly observation periods and release vintages remain unverified; target weekly window is not measured coverage.",
+    "Mortgage applications, existing-home listings and price cuts, materials, realized CRE outcomes and cross-domain controls remain untested."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-22T16:10:25.689405+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-22T16:10:25.739183+00:00",
+  "available_at_utc": "2026-09-22T16:10:25.739183+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "18e813c8060d5ed0b9d492e2cdba619b56310c5806ba2a03a9c655980735af69",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "12649ec982422b928ffd7cd5865a3485b15881f5fe50c78886f26c0a009c52c1",
+  "sources": [
+    {
+      "id": "census_nrc",
+      "url": "https://www.census.gov/construction/nrc/index.html",
+      "upstream_ids": [
+        "US-CENSUS-BPS",
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Missing original bytes; imported hash identifies absent historical body, not current verification."
+    },
+    {
+      "id": "census_nrs",
+      "url": "https://www.census.gov/construction/nrs/index.html",
+      "upstream_ids": [
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Missing original bytes; imported hash identifies absent historical body, not current verification."
+    },
+    {
+      "id": "freddie_pmms",
+      "url": "https://www.freddiemac.com/pmms",
+      "upstream_ids": [
+        "FREDDIE-MAC-LPA-PMMS"
+      ],
+      "integrity_status": "Missing original bytes; imported hash identifies absent historical body, not current verification."
+    },
+    {
+      "id": "bls_construction_employment",
+      "url": "https://www.bls.gov/news.release/empsit.toc.htm",
+      "upstream_ids": [
+        "US-BLS-CES",
+        "US-BLS-CPS"
+      ],
+      "integrity_status": "Historical failed attempt; no original-body hash or current source evidence."
+    },
+    {
+      "id": "fed_sloos_cre",
+      "url": "https://www.federalreserve.gov/data/sloos.htm",
+      "upstream_ids": [
+        "FRB-SLOOS-RESPONDENT-BANKS"
+      ],
+      "integrity_status": "Missing original bytes; imported hash identifies absent historical body, not current verification."
+    }
+  ],
+  "delivery_key": "housing:housing-suite-weekly-2026-09-22:18e813c8060d5ed0b9d492e2cdba619b56310c5806ba2a03a9c655980735af69"
+}

@@ -1,0 +1,80 @@
+{
+  "domain": "industry",
+  "run_id": "industry-suite-manual-2026-09-22-r1",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "8b6b661e57eb206ae79c0efadc8fbd89df1c3b28",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-03-01T00:00:00Z",
+    "end": "2026-09-01T00:00:00Z"
+  },
+  "actual_coverage": {
+    "requested_analysis_date": "2026-09-22",
+    "geography": "United States",
+    "measured_source_ids": [
+      "fed_g17"
+    ],
+    "numeric_cell_count": 26,
+    "indicator_roster": {
+      "Industrial and manufacturing production": "Measured: G17 six current-vintage months; no sector breadth",
+      "Capacity and utilization": "Partial: rates and historical mean; capacity identity blocked",
+      "Factory orders, shipments, inventories and unfilled orders": "Unmeasured: M3 index only",
+      "Durable goods and nondefense capital goods excluding aircraft": "Unmeasured: no durable/capital-goods cells",
+      "Manufacturing PMIs and components": "Unmeasured: ISM index only",
+      "Semiconductor sales versus physical output": "Unmeasured: no SIA/WSTS release acquired",
+      "Steel output and utilization (dedicated adapter not implemented)": "Unimplemented dedicated adapter",
+      "Cement shipments, output and imports (manual release extraction)": "Unmeasured: USGS release not acquired",
+      "Chemical output and prices (dedicated adapter not implemented)": "Unimplemented dedicated adapter",
+      "Machine tools orders, shipments and backlog (dedicated adapter not implemented)": "Unimplemented dedicated adapter"
+    },
+    "scope": "Bounded manual investigation; no monthly/quarterly observations interpolated into weeks"
+  },
+  "limitations": [
+    "Only six current-vintage monthly observations per index, not the desired36-month baseline; no matched year-ago three-month panel.",
+    "Autos exclusion, sector breadth, matched capacity levels, orders/shipments, deflators and disruption controls unavailable.",
+    "M3 and ISM captures supplied navigation only. An additional M3 command was reserved before interruption but never dispatched; it contributes no evidence.",
+    "SIA/WSTS and USGS cement were not acquired; dedicated steel, chemical and machine-tool adapters are unimplemented."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-22T19:09:47.679133+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-22T19:19:33.304990+00:00",
+  "available_at_utc": "2026-09-22T19:19:33.304990+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "e666dda312eca6f5b64f97c7c2de19431b427155c0d2a3ee7f069c6d5f94d8bf",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "9f95e433dc18358e4aab20fe99a01c0f1812b5b236dd54b59b3a4207ec0b30b5",
+  "sources": [
+    {
+      "id": "fed_g17",
+      "url": "https://www.federalreserve.gov/releases/g17/current/default.htm",
+      "upstream_ids": [
+        "FRB-G17",
+        "US-CENSUS-INDUSTRIAL-BENCHMARKS",
+        "US-BLS-PRODUCTION-WORKER-HOURS",
+        "USGS-MINERALS"
+      ],
+      "integrity_status": "Exact tool-representation hash and retained numeric strings verified; original publisher byte identity unavailable; semantic review explicitly recorded."
+    },
+    {
+      "id": "census_m3",
+      "url": "https://www.census.gov/manufacturing/m3/index.html",
+      "upstream_ids": [
+        "US-CENSUS-M3"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    },
+    {
+      "id": "ism_manufacturing",
+      "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/",
+      "upstream_ids": [
+        "ISM-MANUFACTURING-SURVEY"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    }
+  ],
+  "delivery_key": "industry:industry-suite-manual-2026-09-22-r1:e666dda312eca6f5b64f97c7c2de19431b427155c0d2a3ee7f069c6d5f94d8bf",
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false
+}

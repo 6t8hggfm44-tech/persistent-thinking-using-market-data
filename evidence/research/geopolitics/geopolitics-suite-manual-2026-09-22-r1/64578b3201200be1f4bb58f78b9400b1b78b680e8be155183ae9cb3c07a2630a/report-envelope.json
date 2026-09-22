@@ -1,0 +1,78 @@
+{
+  "domain": "geopolitics",
+  "run_id": "geopolitics-suite-manual-2026-09-22-r1",
+  "report_version": 1,
+  "report_kind": "final_evidence_gap",
+  "workflow_commit": "95cae104d21fcd7ef2aa947894ac4bae9e432ee8",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2023-11-01T00:00:00Z",
+    "end": "2026-09-22T00:00:00Z"
+  },
+  "actual_coverage": {
+    "measured": "Three historical aggregate incident-count cells",
+    "economic_outcomes": "unavailable",
+    "completed_quality_checks": 1,
+    "blocked_domain_tests": 3,
+    "incident_as_of_date": "unknown",
+    "current_week_incidents": "not_measured"
+  },
+  "limitations": [
+    "Exploratory selection; no current market outcomes used to select the case.",
+    "Retained tool extracts do not verify original publisher body bytes or original historical release vintages.",
+    "Missing outcomes or controls are untested, never observations of zero effect.",
+    "No event-aligned economic outcomes or eligible exposure/comparator mapping.",
+    "IMO cumulative total exact as-of date unknown; not a weekly incident count.",
+    "IDEA landing content excluded for current-event claims due to ambiguous dating."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-22T19:04:52.568971+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-22T19:11:20.591023+00:00",
+  "available_at_utc": "2026-09-22T19:11:20.591023+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "64578b3201200be1f4bb58f78b9400b1b78b680e8be155183ae9cb3c07a2630a",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "183de1cd765d52fa4437c0220c0d821e07e850cc98fe92c7b0444b5c4d019521",
+  "sources": [
+    {
+      "id": "us_ofac_actions",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "upstream_ids": [
+        "us-treasury-ofac-official-actions"
+      ],
+      "integrity_status": "Retained selections exact-matched to actual tool representation SHA256 70a2b2583b23efd037d6b407fc2da46075a52b749ec897d1686f62c4ad5bf141; original publisher bytes not verified."
+    },
+    {
+      "id": "us_bis_updates",
+      "url": "https://www.bis.gov/news-updates",
+      "upstream_ids": [
+        "us-commerce-bis-official-actions",
+        "us-federal-register"
+      ],
+      "integrity_status": "Retained selections exact-matched to actual tool representation SHA256 c41dc14ec2683135956f26bc0681a318dbdc0618a94c5412c772af2a38e1fd94; original publisher bytes not verified."
+    },
+    {
+      "id": "imo_red_sea",
+      "url": "https://www.imo.org/en/mediacentre/hottopics/pages/red-sea.aspx",
+      "upstream_ids": [
+        "imo-confirmed-maritime-incident-reports",
+        "member-state-incident-notifications"
+      ],
+      "integrity_status": "Retained selections exact-matched to actual tool representation SHA256 fa96e8261d98edac1e50f9e1645e762ab9acc69d918eb50cfe13fb85cb124830; original publisher bytes not verified."
+    },
+    {
+      "id": "idea_democracy_tracker",
+      "url": "https://www.idea.int/democracytracker/",
+      "upstream_ids": [
+        "international-idea-assessments",
+        "country-election-authorities",
+        "underlying-news-and-official-records"
+      ],
+      "integrity_status": "Retained selections exact-matched to actual tool representation SHA256 b62d1f31a1845795a91471e8f817dd930b087abc6421b08c46003c461d8d0615; original publisher bytes not verified."
+    }
+  ],
+  "delivery_key": "geopolitics:geopolitics-suite-manual-2026-09-22-r1:64578b3201200be1f4bb58f78b9400b1b78b680e8be155183ae9cb3c07a2630a",
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false
+}

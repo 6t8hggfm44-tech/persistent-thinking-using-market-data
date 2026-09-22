@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "domain": "weather",
+  "run_id": "weather-legacy-manual-2026-09-22-r1",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "generated_at_utc": "2026-09-22T19:02:12.300315+00:00",
+  "available_at_utc": "2026-09-22T19:02:12.300315+00:00",
+  "event_window_utc": {
+    "start": "2026-09-15T00:00:00Z",
+    "end": "2026-09-22T00:00:00Z"
+  },
+  "report_path": "Report.md",
+  "report_sha256": "10e5d98493ec04eb70349f264751e6824763fdabf719e4486d48d2413d1694dd",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "343a7083f1064d530dde32517a29354a7a52eac5e0e746e62e0f987cb903013c",
+  "workflow_commit": "a90f8d71ece978f8a1cdbd9edbdd3c87c3c975d0",
+  "geography": [
+    "Houston grid proxy, US",
+    "Chicago grid proxy, US",
+    "Rotterdam grid proxy, NL",
+    "Frankfurt grid proxy, DE"
+  ],
+  "actual_coverage": {
+    "requested_days": 7,
+    "requested_available_dates": [
+      "2026-09-15",
+      "2026-09-16",
+      "2026-09-17",
+      "2026-09-18"
+    ],
+    "lagged_window": {
+      "start": "2026-09-13",
+      "end_exclusive": "2026-09-20",
+      "time_standard": "UTC",
+      "publication_lag_days": 3
+    },
+    "lagged_available_dates": [
+      "2026-09-13",
+      "2026-09-14",
+      "2026-09-15",
+      "2026-09-16",
+      "2026-09-17",
+      "2026-09-18"
+    ],
+    "point_count": 4,
+    "captures": 68,
+    "forecast_periods_in_current_screen": 30
+  },
+  "sources": [
+    {
+      "id": "nasa_power",
+      "upstream_ids": [
+        "NASA_POWER",
+        "GEOS-IT",
+        "MERRA-2"
+      ],
+      "measurement_type": "gridded_assimilated_estimate"
+    },
+    {
+      "id": "nws",
+      "upstream_ids": [
+        "NOAA_NWS_forecasts"
+      ],
+      "measurement_type": "forecast"
+    }
+  ],
+  "claims": [
+    {
+      "id": "W-C1",
+      "claim": "No registered temperature flag among24available pilot comparisons; limited negative screening result only",
+      "status": "supported_with_limits"
+    },
+    {
+      "id": "W-C2",
+      "claim": "Allpoints have4/7requested-week and6/7lagged-window coverage",
+      "status": "supported"
+    },
+    {
+      "id": "W-C3",
+      "claim": "No economic impact or forecast-realization conclusion established",
+      "status": "not_tested"
+    }
+  ],
+  "supersedes": [],
+  "limitations": [
+    "Narrow4point scope; no global measurement conclusion",
+    "3requested days and1lagged day missing",
+    "Five-year uncalibrated baseline and serial/spatial dependence",
+    "No independent station validation or compatible forecast realization",
+    "No operational/economic impact test",
+    "Original publication times unknown; historical estimates reconstructed as captured"
+  ],
+  "code_commit": "a90f8d71ece978f8a1cdbd9edbdd3c87c3c975d0",
+  "producer_kind": "legacy_weather",
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false,
+  "evidence_cutoff_utc": "2026-09-22T18:32:18.824529+00:00"
+}

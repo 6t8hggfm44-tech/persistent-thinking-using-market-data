@@ -1,0 +1,179 @@
+{
+  "domain": "energy",
+  "run_id": "energy-suite-manual-2026-09-22-r1",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "c44bb5ed97f0eac3bb4c3ee0cb2c368bf34f5150",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2025-08-01T00:00:00Z",
+    "end": "2026-09-12T00:00:00Z"
+  },
+  "actual_coverage": {
+    "gas": "Lower48 and regions;weekended2026-09-11",
+    "petroleum_bridge": "12series;96selectedobservations;latest2026-09-04;currentvintage",
+    "inherited_prior_final": "energy-weekly-2026-09-21;actualpetroleumthrough2026-09-11",
+    "electricity": "June2026 releaseindex only",
+    "completed_tests": 3,
+    "blocked_tests": 1,
+    "petroleum_upstream_family_count": 1
+  },
+  "limitations": [
+    "Exploratory selection; no current market outcomes used to select the case.",
+    "Retained tool extracts do not verify original publisher body bytes or original historical release vintages.",
+    "Missing outcomes or controls are untested, never observations of zero effect.",
+    "Stock and product-supplied measures do not establish end-user consumption.",
+    "Petroleum bridge and prior final are different vintages of one EIA family.",
+    "One production cross-vintage discrepancy remains unresolved; no prior report superseded.",
+    "Electricity numeric tables and matched independent weather exposure unavailable."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-22T19:04:51.904750+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-22T19:11:20.597054+00:00",
+  "available_at_utc": "2026-09-22T19:11:20.597054+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "e948b503816c6b30253050e724da9f57b39ad18e57a974a6b9b3fea6476a7f10",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "fd997a685dbbc462ddf256916f8cc3d0b2e72994e23331782f480ac9045a9cdc",
+  "sources": [
+    {
+      "id": "eia_wngsr",
+      "url": "https://ir.eia.gov/ngs/ngs.html",
+      "upstream_ids": [
+        "eia:weekly-natural-gas-storage",
+        "eia:survey:EIA-912"
+      ],
+      "integrity_status": "Retained selections exact-matched to actual tool representation SHA256 44a1f5573ad0b54eae94c242f79ad62a29bfa7585097f44fe3d8b4344f104269; original publisher bytes not verified."
+    },
+    {
+      "id": "eia_epm",
+      "url": "https://www.eia.gov/electricity/monthly/",
+      "upstream_ids": [
+        "eia:electric-power-monthly",
+        "eia:survey:EIA-923",
+        "eia:survey:EIA-861M"
+      ],
+      "integrity_status": "Retained selections exact-matched to actual tool representation SHA256 6d063786a436bbaf1e32dcdfcb336e2f152cdd0530dec21c190f3e87aa6ed575; original publisher bytes not verified."
+    },
+    {
+      "id": "bridge-WCESTUS1",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCESTUS1&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "WCESTUS1"
+      ],
+      "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+    },
+    {
+      "id": "bridge-WGTSTUS1",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WGTSTUS1&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "WGTSTUS1"
+      ],
+      "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+    },
+    {
+      "id": "bridge-WDISTUS1",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WDISTUS1&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "WDISTUS1"
+      ],
+      "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+    },
+    {
+      "id": "bridge-WCSSTUS1",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCSSTUS1&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "WCSSTUS1"
+      ],
+      "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+    },
+    {
+      "id": "bridge-WCRRIUS2",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCRRIUS2&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "WCRRIUS2"
+      ],
+      "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+    },
+    {
+      "id": "bridge-WPULEUS3",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WPULEUS3&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "WPULEUS3"
+      ],
+      "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+    },
+    {
+      "id": "bridge-WCRFPUS2",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCRFPUS2&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "WCRFPUS2"
+      ],
+      "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+    },
+    {
+      "id": "bridge-WCRIMUS2",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCRIMUS2&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "WCRIMUS2"
+      ],
+      "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+    },
+    {
+      "id": "bridge-WCREXUS2",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCREXUS2&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "WCREXUS2"
+      ],
+      "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+    },
+    {
+      "id": "bridge-WGFUPUS2",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WGFUPUS2&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "WGFUPUS2"
+      ],
+      "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+    },
+    {
+      "id": "bridge-WDIUPUS2",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WDIUPUS2&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "WDIUPUS2"
+      ],
+      "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+    },
+    {
+      "id": "bridge-WKJUPUS2",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WKJUPUS2&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "WKJUPUS2"
+      ],
+      "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+    },
+    {
+      "id": "prior-energy-final",
+      "url": "https://github.com/6t8hggfm44-tech/-Energy/blob/2d230346bceffce887ac1ad889413255c758a6c8/cloud/legacy-weekly/reports/energy/energy-weekly-2026-09-21/bd9cd24980b0fe56c95966311808e0bda6fc416a2d6e148233f575b18d55aff8/Report.md",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum"
+      ],
+      "integrity_status": "Exact report and all16 manifest members verified; manifest62186019ae4cd6d41d5a225df837f756cfea447d32ddaf079387c40dd31edec8; underlying current snapshot not reparsed."
+    }
+  ],
+  "delivery_key": "energy:energy-suite-manual-2026-09-22-r1:e948b503816c6b30253050e724da9f57b39ad18e57a974a6b9b3fea6476a7f10",
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false
+}

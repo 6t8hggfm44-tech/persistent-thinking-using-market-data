@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "domain": "energy",
+  "run_id": "energy-weekly-2026-09-21",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "generated_at_utc": "2026-09-21T18:19:15Z",
+  "available_at_utc": "2026-09-21T18:19:15Z",
+  "event_window_utc": {"start":"2026-09-14T00:00:00Z","end":"2026-09-21T00:00:00Z"},
+  "report_path": "Report.md",
+  "report_sha256": "bd9cd24980b0fe56c95966311808e0bda6fc416a2d6e148233f575b18d55aff8",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "62186019ae4cd6d41d5a225df837f756cfea447d32ddaf079387c40dd31edec8",
+  "workflow_commit": "28ea17c51a61f97e17aea6a4ac044a19a434fd98",
+  "geography": ["United States petroleum balance"],
+  "actual_coverage": {
+    "requested_week_period_endpoints": 0,
+    "latest_analyzed_period":{"start":"2026-09-05","end":"2026-09-11"},
+    "series_screened":12,
+    "seasonal_baseline_observations_per_series":55,
+    "normalized_observations_verified":3432,
+    "captures_verified":73,
+    "excluded":"EU gas storage, LNG, electricity, measured Weather and measured GEV"
+  },
+  "sources": [
+    {"id":"eia_petroleum_weekly_current_vintage","kind":"official_statistics","upstream_ids":["eia_api_v2_petroleum"],"latest_period_end":"2026-09-11"},
+    {"id":"private_energy_snapshot","kind":"authorized_private_normalized_store","upstream_ids":["eia_petroleum_weekly_current_vintage"],"state_commit":"313312f2f78776ca63b8c68beff88674eba91557"}
+  ],
+  "claims": [
+    {"id":"C01","classification":"OBSERVATION","text":"No configured petroleum series crossed the registered absolute robust-z threshold of 3.5."},
+    {"id":"C02","classification":"OBSERVATION","text":"Gasoline and distillate inventories were below year-ago levels but both built during the latest measured week."},
+    {"id":"C03","classification":"INFERENCE","text":"The measured evidence does not support a broad new U.S. petroleum scarcity anomaly."},
+    {"id":"C04","classification":"INFERENCE","text":"The requested 14–20 September event week remains unobserved because the latest source week ended 11 September."}
+  ],
+  "supersedes": [],
+  "limitations": [
+    "The requested event week had no configured period endpoints.",
+    "The history is current-vintage and does not prove first-release values.",
+    "The private artifact ZIP returned HTTP 403; exact SQLite bytes were verified via authorized private Git but the full raw fileset was not rehashed.",
+    "Gas, LNG, electricity and matched Weather/GEV controls were untested.",
+    "Product supplied is a flow proxy, not measured end-user consumption.",
+    "Shared EIA ancestry with suite Energy is not independent corroboration."
+  ]
+}

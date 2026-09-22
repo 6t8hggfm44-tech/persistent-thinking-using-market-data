@@ -1,0 +1,88 @@
+{
+  "domain": "credit",
+  "run_id": "credit-suite-manual-2026-09-22-r1",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "94e892021c738291c9185e144d789846c5337f98",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2024-04-01T00:00:00Z",
+    "end": "2026-07-01T00:00:00Z"
+  },
+  "actual_coverage": {
+    "measured": "24 SA all-bank quarterly delinquency-rate cells; 18 changes over3windows",
+    "unmeasured": [
+      "Corporate credit spreads with matched rate, maturity and credit definitions",
+      "Bank lending standards and reported loan demand",
+      "Commercial, consumer and real-estate loan growth",
+      "Business and household bankruptcies",
+      "Commercial-paper rates and outstanding",
+      "Repo funding rates and volumes",
+      "Treasury yield-curve slope and policy-rate context",
+      "Regional-bank deposits, funding and asset-quality exposures"
+    ],
+    "chargeoffs": "not acquired",
+    "geography": "United States"
+  },
+  "limitations": [
+    "Quarterly current-vintage ratios, no current-week measurement.",
+    "Original publisher bytes and first-release revisions unavailable.",
+    "No matched loan-dollar denominator or fixed-bank/borrower-mix causal control."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-22T18:31:32.373484+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-22T18:33:03.739549+00:00",
+  "available_at_utc": "2026-09-22T18:33:03.739549+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "bd1d70b4dc1f86d161cc9a9283dbafb0198e88a3275b93ea77a2a6b36f150f98",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "4709a8e47f1ab5ddf0af8defa8b67f0d22bb7fb0f8aba1c1be4032b33eb0d676",
+  "sources": [
+    {
+      "id": "fed_h8",
+      "url": "https://www.federalreserve.gov/releases/h8/current/",
+      "upstream_ids": [
+        "fed-h8-bank-reporting",
+        "ffiec-call-reports"
+      ],
+      "integrity_status": "No economic input bytes available"
+    },
+    {
+      "id": "fed_sloos",
+      "url": "https://www.federalreserve.gov/data/sloos.htm",
+      "upstream_ids": [
+        "fed-sloos-survey"
+      ],
+      "integrity_status": "No economic input bytes available"
+    },
+    {
+      "id": "fed_delinquency",
+      "url": "https://www.federalreserve.gov/releases/chargeoff/delallsa.htm",
+      "upstream_ids": [
+        "ffiec-call-reports"
+      ],
+      "integrity_status": "Exact retained numeric cells checked against transient tool representation; source_sha256 null; original body not verified"
+    },
+    {
+      "id": "fed_cp",
+      "url": "https://www.federalreserve.gov/releases/cp/rates.htm",
+      "upstream_ids": [
+        "fed-cp-dtcc"
+      ],
+      "integrity_status": "No economic input bytes available"
+    },
+    {
+      "id": "fed_h15",
+      "url": "https://www.federalreserve.gov/releases/h15/",
+      "upstream_ids": [
+        "fed-h15-market-rate-inputs",
+        "fed-cp-dtcc"
+      ],
+      "integrity_status": "No economic input bytes available"
+    }
+  ],
+  "delivery_key": "credit:credit-suite-manual-2026-09-22-r1:bd1d70b4dc1f86d161cc9a9283dbafb0198e88a3275b93ea77a2a6b36f150f98",
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false
+}
