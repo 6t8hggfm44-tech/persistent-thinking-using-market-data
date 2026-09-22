@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "delivery_key": "freight:freight-suite-manual-2026-09-22-r1:a09bb16851c788b7e1c763b4d878a8c3864bd59ec640198e442f059806e29e2e",
+  "domain": "freight",
+  "run_id": "freight-suite-manual-2026-09-22-r1",
+  "report_sha256": "a09bb16851c788b7e1c763b4d878a8c3864bd59ec640198e442f059806e29e2e",
+  "report_bytes": 3279,
+  "envelope_sha256": "8dc001b1edd3fdccb8f3633afcefdceda69a187d45d59acb0b607fcbc91fc54a",
+  "envelope_bytes": 3700,
+  "producer_repository": "6t8hggfm44-tech/-Freight-supply-chain",
+  "producer_commit": "68a4ae1c3f91eebda26071bd0e8fb49ed9b6b1aa",
+  "producer_report_path": "reports/freight-suite-manual-2026-09-22-r1/a09bb16851c788b7e1c763b4d878a8c3864bd59ec640198e442f059806e29e2e/Report.md",
+  "prepared_at_utc": "2026-09-22T19:13:57.386679+00:00",
+  "source_ancestry": [
+    "aar:member-railroad-reports",
+    "aar:railroad-traffic",
+    "ata:truck-tonnage",
+    "bts:air-carrier-traffic",
+    "bts:transportation-services-index",
+    "eia:diesel-prices",
+    "eia:pipeline-movements",
+    "port-of-los-angeles:terminal-container-reports",
+    "usace:waterborne-commerce",
+    "usda:ams:grain-transportation-report"
+  ],
+  "declared_transformations": [
+    "Added only invocation_kind and scheduled_occurrence_consumed to envelope before first publication; report and manifest bytes unchanged."
+  ],
+  "original_helper_envelope_sha256": "87ffcf9258211bd666e0e1b6e1082aacbede54d52af680dbc653da09899703d6",
+  "transport_limitations": [
+    "Exploratory selection; no current market outcomes used to select the case.",
+    "Retained tool extracts do not verify original publisher body bytes or original historical release vintages.",
+    "Missing outcomes or controls are untested, never observations of zero effect.",
+    "One port, no matched port/cargo/operational controls.",
+    "One interrupted source request remains durably uncertain; no replay or second pass.",
+    "Prepared packet is not staging, receipt, acknowledgment or canonical intake."
+  ],
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false
+}

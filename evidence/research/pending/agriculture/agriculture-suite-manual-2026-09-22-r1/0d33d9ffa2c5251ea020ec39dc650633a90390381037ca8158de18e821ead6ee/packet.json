@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "delivery_key": "agriculture:agriculture-suite-manual-2026-09-22-r1:0d33d9ffa2c5251ea020ec39dc650633a90390381037ca8158de18e821ead6ee",
+  "domain": "agriculture",
+  "run_id": "agriculture-suite-manual-2026-09-22-r1",
+  "report_sha256": "0d33d9ffa2c5251ea020ec39dc650633a90390381037ca8158de18e821ead6ee",
+  "report_bytes": 3616,
+  "envelope_sha256": "8c5009cc727414ef6b45d2d304e24e5b1927f3b2bc494af95d5f78d04a535d56",
+  "envelope_bytes": 3656,
+  "producer_repository": "6t8hggfm44-tech/-Agriculture-food-",
+  "producer_commit": "e4afde1c63b8faee88415fb064e3ae301adffda7",
+  "producer_report_path": "reports/agriculture-suite-manual-2026-09-22-r1/0d33d9ffa2c5251ea020ec39dc650633a90390381037ca8158de18e821ead6ee/Report.md",
+  "prepared_at_utc": "2026-09-22T19:13:57.388734+00:00",
+  "source_ancestry": [
+    "foreign-agriculture-statistics",
+    "noaa-weather-observations",
+    "state-animal-health-reports",
+    "usda-aphis-surveillance",
+    "usda-fas",
+    "usda-field-reports",
+    "usda-nass",
+    "usda-waob",
+    "usdm-authors"
+  ],
+  "declared_transformations": [
+    "Added only invocation_kind and scheduled_occurrence_consumed to envelope before first publication; report and manifest bytes unchanged."
+  ],
+  "original_helper_envelope_sha256": "02e7267d6682302b9a6cc646b2012dc94eba5fcb5d41c50746d175e944cbe7a8",
+  "transport_limitations": [
+    "Exploratory selection; no current market outcomes used to select the case.",
+    "Retained tool extracts do not verify original publisher body bytes or original historical release vintages.",
+    "Missing outcomes or controls are untested, never observations of zero effect.",
+    "No crop exposure weights, paired crop/livestock outcome series or commodity-balance cells.",
+    "USDM ancillary point wells cannot measure mainland crop loss.",
+    "Source narrative arithmetic discrepancy retained; source cooldowns honored.",
+    "Prepared packet is not staging, receipt, acknowledgment or canonical intake."
+  ],
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false
+}

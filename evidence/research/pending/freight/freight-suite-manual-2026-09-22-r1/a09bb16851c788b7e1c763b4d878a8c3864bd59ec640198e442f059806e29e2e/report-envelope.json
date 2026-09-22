@@ -1,0 +1,81 @@
+{
+  "domain": "freight",
+  "run_id": "freight-suite-manual-2026-09-22-r1",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "5fbfbfd803aae02fd354a6c4ddf5ddadc04f8a2c",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2025-08-01T00:00:00Z",
+    "end": "2026-09-01T00:00:00Z"
+  },
+  "actual_coverage": {
+    "measured": "PortLosAngeles August2026 versusAugust2025;10TEUcells",
+    "other_sources": "BTS/AAR/USDA discovery only",
+    "completed_tests": 1,
+    "blocked_tests": 2,
+    "collection_replay": false
+  },
+  "limitations": [
+    "Exploratory selection; no current market outcomes used to select the case.",
+    "Retained tool extracts do not verify original publisher body bytes or original historical release vintages.",
+    "Missing outcomes or controls are untested, never observations of zero effect.",
+    "One port, no matched port/cargo/operational controls.",
+    "One interrupted source request remains durably uncertain; no replay or second pass."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-22T19:04:51.567681+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-22T19:11:20.576015+00:00",
+  "available_at_utc": "2026-09-22T19:11:20.576015+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "a09bb16851c788b7e1c763b4d878a8c3864bd59ec640198e442f059806e29e2e",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "500da1662c61d87c2cb289527ac5970883e876f2b3667ff80303e1d5743ac847",
+  "sources": [
+    {
+      "id": "port_la_containers",
+      "url": "https://portoflosangeles.org/business/statistics/container-statistics",
+      "upstream_ids": [
+        "port-of-los-angeles:terminal-container-reports"
+      ],
+      "integrity_status": "Retained selections exact-matched to actual tool representation SHA256 adf97cabdfec1ebc9ad5cc50561e8bce1e713efe4c1fd2176c1e6edcd88b65e9; original publisher bytes not verified."
+    },
+    {
+      "id": "bts_freight_tsi",
+      "url": "https://www.bts.gov/tags/transportation-services-index",
+      "upstream_ids": [
+        "bts:transportation-services-index",
+        "aar:railroad-traffic",
+        "ata:truck-tonnage",
+        "bts:air-carrier-traffic",
+        "eia:pipeline-movements",
+        "usace:waterborne-commerce"
+      ],
+      "integrity_status": "Retained selections exact-matched to actual tool representation SHA256 d76cc20d14fa09936936b3be777c035d4de11bf38070aed9c4c0bd290e49ad64; original publisher bytes not verified."
+    },
+    {
+      "id": "aar_public_rail",
+      "url": "https://www.aar.org/data-center/",
+      "upstream_ids": [
+        "aar:railroad-traffic",
+        "aar:member-railroad-reports"
+      ],
+      "integrity_status": "Retained selections exact-matched to actual tool representation SHA256 e9d0b9b18d16e9d97f74dd3343b1aed1a12c2efafe8e424f62852d77790045d2; original publisher bytes not verified."
+    },
+    {
+      "id": "usda_grain_transport",
+      "url": "https://www.ams.usda.gov/services/transportation-analysis/gtr",
+      "upstream_ids": [
+        "usda:ams:grain-transportation-report",
+        "aar:railroad-traffic",
+        "usace:waterborne-commerce",
+        "eia:diesel-prices"
+      ],
+      "integrity_status": "Retained selections exact-matched to actual tool representation SHA256 29f17107dcadaa5629b3457e9096420eda373335e78d2d9fbc00f6d5f7cb0092; original publisher bytes not verified."
+    }
+  ],
+  "delivery_key": "freight:freight-suite-manual-2026-09-22-r1:a09bb16851c788b7e1c763b4d878a8c3864bd59ec640198e442f059806e29e2e",
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false
+}

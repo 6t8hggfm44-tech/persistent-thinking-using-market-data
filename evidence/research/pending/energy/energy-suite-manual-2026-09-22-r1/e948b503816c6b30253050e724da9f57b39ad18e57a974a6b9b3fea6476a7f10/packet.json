@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "delivery_key": "energy:energy-suite-manual-2026-09-22-r1:e948b503816c6b30253050e724da9f57b39ad18e57a974a6b9b3fea6476a7f10",
+  "domain": "energy",
+  "run_id": "energy-suite-manual-2026-09-22-r1",
+  "report_sha256": "e948b503816c6b30253050e724da9f57b39ad18e57a974a6b9b3fea6476a7f10",
+  "report_bytes": 4755,
+  "envelope_sha256": "6cff9433154f080553604b4d2c98eec3d1aeb6bb8cbf04520a5927b58303142a",
+  "envelope_bytes": 7840,
+  "producer_repository": "6t8hggfm44-tech/-Energy",
+  "producer_commit": "36772aad689bffabd1a5e76711c1526ee5d639ec",
+  "producer_report_path": "reports/energy-suite-manual-2026-09-22-r1/e948b503816c6b30253050e724da9f57b39ad18e57a974a6b9b3fea6476a7f10/Report.md",
+  "prepared_at_utc": "2026-09-22T19:13:57.392055+00:00",
+  "source_ancestry": [
+    "EIA_US_weekly_petroleum",
+    "WCESTUS1",
+    "WCREXUS2",
+    "WCRFPUS2",
+    "WCRIMUS2",
+    "WCRRIUS2",
+    "WCSSTUS1",
+    "WDISTUS1",
+    "WDIUPUS2",
+    "WGFUPUS2",
+    "WGTSTUS1",
+    "WKJUPUS2",
+    "WPULEUS3",
+    "eia:electric-power-monthly",
+    "eia:survey:EIA-861M",
+    "eia:survey:EIA-912",
+    "eia:survey:EIA-923",
+    "eia:weekly-natural-gas-storage"
+  ],
+  "declared_transformations": [
+    "Added only invocation_kind and scheduled_occurrence_consumed to envelope before first publication; report and manifest bytes unchanged."
+  ],
+  "original_helper_envelope_sha256": "077b2e3ebf8c60e1c2f9055d45d6db27c780b120af1214da7333a83273e80ac5",
+  "transport_limitations": [
+    "Exploratory selection; no current market outcomes used to select the case.",
+    "Retained tool extracts do not verify original publisher body bytes or original historical release vintages.",
+    "Missing outcomes or controls are untested, never observations of zero effect.",
+    "Stock and product-supplied measures do not establish end-user consumption.",
+    "Petroleum bridge and prior final are different vintages of one EIA family.",
+    "One production cross-vintage discrepancy remains unresolved; no prior report superseded.",
+    "Electricity numeric tables and matched independent weather exposure unavailable.",
+    "Prepared packet is not staging, receipt, acknowledgment or canonical intake."
+  ],
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false
+}

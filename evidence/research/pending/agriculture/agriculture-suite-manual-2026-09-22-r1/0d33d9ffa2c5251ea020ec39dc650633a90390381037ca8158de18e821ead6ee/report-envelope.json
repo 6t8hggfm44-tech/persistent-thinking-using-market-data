@@ -1,0 +1,79 @@
+{
+  "domain": "agriculture",
+  "run_id": "agriculture-suite-manual-2026-09-22-r1",
+  "report_version": 1,
+  "report_kind": "final_evidence_gap",
+  "workflow_commit": "207396f08fabc116aeef38a5118462ddbe24e588",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2025-09-15T00:00:00Z",
+    "end": "2026-09-16T00:00:00Z"
+  },
+  "actual_coverage": {
+    "measured": "Ancillary8 numeric drought-narrative cells;3pointwells",
+    "crop_livestock_balance_outcomes": "unavailable",
+    "completed_quality_checks": 1,
+    "blocked_domain_tests": 4,
+    "latest_hazard_date": "2026-09-15"
+  },
+  "limitations": [
+    "Exploratory selection; no current market outcomes used to select the case.",
+    "Retained tool extracts do not verify original publisher body bytes or original historical release vintages.",
+    "Missing outcomes or controls are untested, never observations of zero effect.",
+    "No crop exposure weights, paired crop/livestock outcome series or commodity-balance cells.",
+    "USDM ancillary point wells cannot measure mainland crop loss.",
+    "Source narrative arithmetic discrepancy retained; source cooldowns honored."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-22T19:04:52.238079+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-22T19:11:20.584543+00:00",
+  "available_at_utc": "2026-09-22T19:11:20.584543+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "0d33d9ffa2c5251ea020ec39dc650633a90390381037ca8158de18e821ead6ee",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "46b2bdca8ed9047b301e72f1731afbb4f72593b21b8182a29c736ed7695bc399",
+  "sources": [
+    {
+      "id": "usda_wasde",
+      "url": "https://www.usda.gov/about-usda/general-information/staff-offices/office-chief-economist/commodity-markets/wasde-report",
+      "upstream_ids": [
+        "usda-waob",
+        "usda-nass",
+        "usda-fas",
+        "foreign-agriculture-statistics"
+      ],
+      "integrity_status": "Retained selections exact-matched to actual tool representation SHA256 d68a90487e8e2899da4d51e6853856abff82c425288c8c605012e2e4f20269dd; original publisher bytes not verified."
+    },
+    {
+      "id": "usda_nass_publications",
+      "url": "https://www.nass.usda.gov/Publications/",
+      "upstream_ids": [
+        "usda-nass"
+      ],
+      "integrity_status": "Retained selections exact-matched to actual tool representation SHA256 2c355d1bf452293c970c3406cfa0dcb3f9afc83749f986d9f30e6a2ee2cb7f6c; original publisher bytes not verified."
+    },
+    {
+      "id": "usdm_current",
+      "url": "https://droughtmonitor.unl.edu/CurrentMap.aspx",
+      "upstream_ids": [
+        "usdm-authors",
+        "noaa-weather-observations",
+        "usda-field-reports"
+      ],
+      "integrity_status": "Retained selections exact-matched to actual tool representation SHA256 6244c2c009e4a263c41d04586e5a1e52d04b18e8fe6aa8c8ee4215faea847123; original publisher bytes not verified."
+    },
+    {
+      "id": "usda_aphis_hpai",
+      "url": "https://www.aphis.usda.gov/h5n1-hpai",
+      "upstream_ids": [
+        "usda-aphis-surveillance",
+        "state-animal-health-reports"
+      ],
+      "integrity_status": "Retained selections exact-matched to actual tool representation SHA256 f7235e45842ea43ff74e8989660178f50259fcd452d6455d8612547ef291b811; original publisher bytes not verified."
+    }
+  ],
+  "delivery_key": "agriculture:agriculture-suite-manual-2026-09-22-r1:0d33d9ffa2c5251ea020ec39dc650633a90390381037ca8158de18e821ead6ee",
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false
+}

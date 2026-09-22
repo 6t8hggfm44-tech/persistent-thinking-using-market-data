@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "delivery_key": "geopolitics:geopolitics-suite-manual-2026-09-22-r1:64578b3201200be1f4bb58f78b9400b1b78b680e8be155183ae9cb3c07a2630a",
+  "domain": "geopolitics",
+  "run_id": "geopolitics-suite-manual-2026-09-22-r1",
+  "report_sha256": "64578b3201200be1f4bb58f78b9400b1b78b680e8be155183ae9cb3c07a2630a",
+  "report_bytes": 3643,
+  "envelope_sha256": "d1a4d9f44a404e223b18b9afe722f0caa83dbaedb130f22f052cefe6fe164c4d",
+  "envelope_bytes": 3676,
+  "producer_repository": "6t8hggfm44-tech/-Geopolitical-risk",
+  "producer_commit": "0e014722344833d6aa3e5db0b459bedb56e341d3",
+  "producer_report_path": "reports/geopolitics-suite-manual-2026-09-22-r1/64578b3201200be1f4bb58f78b9400b1b78b680e8be155183ae9cb3c07a2630a/Report.md",
+  "prepared_at_utc": "2026-09-22T19:13:57.390568+00:00",
+  "source_ancestry": [
+    "country-election-authorities",
+    "imo-confirmed-maritime-incident-reports",
+    "international-idea-assessments",
+    "member-state-incident-notifications",
+    "underlying-news-and-official-records",
+    "us-commerce-bis-official-actions",
+    "us-federal-register",
+    "us-treasury-ofac-official-actions"
+  ],
+  "declared_transformations": [
+    "Added only invocation_kind and scheduled_occurrence_consumed to envelope before first publication; report and manifest bytes unchanged."
+  ],
+  "original_helper_envelope_sha256": "75a916f80d5b3d88e0a722918e6db33b29aa6742c96af4834bbdec0b2bd887ec",
+  "transport_limitations": [
+    "Exploratory selection; no current market outcomes used to select the case.",
+    "Retained tool extracts do not verify original publisher body bytes or original historical release vintages.",
+    "Missing outcomes or controls are untested, never observations of zero effect.",
+    "No event-aligned economic outcomes or eligible exposure/comparator mapping.",
+    "IMO cumulative total exact as-of date unknown; not a weekly incident count.",
+    "IDEA landing content excluded for current-event claims due to ambiguous dating.",
+    "Prepared packet is not staging, receipt, acknowledgment or canonical intake."
+  ],
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false
+}
