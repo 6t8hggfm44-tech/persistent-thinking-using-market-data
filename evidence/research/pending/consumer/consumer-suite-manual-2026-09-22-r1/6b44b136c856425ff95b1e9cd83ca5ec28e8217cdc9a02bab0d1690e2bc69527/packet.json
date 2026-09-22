@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "domain": "consumer",
+  "run_id": "consumer-suite-manual-2026-09-22-r1",
+  "delivery_key": "consumer:consumer-suite-manual-2026-09-22-r1:6b44b136c856425ff95b1e9cd83ca5ec28e8217cdc9a02bab0d1690e2bc69527",
+  "report_sha256": "6b44b136c856425ff95b1e9cd83ca5ec28e8217cdc9a02bab0d1690e2bc69527",
+  "report_bytes": 4180,
+  "envelope_sha256": "72d7120499bfaafd540d074f1e43d884b4c2fa21e73de33a467348213a7bc0d2",
+  "envelope_bytes": 3068,
+  "producer_repository": "6t8hggfm44-tech/-Consumer-activity-",
+  "producer_commit": "460008449fd6a907cd484b976e3c529aae695d4d",
+  "producer_report_path": "reports/consumer-suite-manual-2026-09-22-r1/6b44b136c856425ff95b1e9cd83ca5ec28e8217cdc9a02bab0d1690e2bc69527/Report.md",
+  "producer_envelope_path": "reports/consumer-suite-manual-2026-09-22-r1/6b44b136c856425ff95b1e9cd83ca5ec28e8217cdc9a02bab0d1690e2bc69527/report-envelope.json",
+  "prepared_at_utc": "2026-09-22T19:05:17.198496+00:00",
+  "source_ancestry": [
+    {
+      "id": "fed_g19",
+      "url": "https://www.federalreserve.gov/releases/g19/current/default.htm",
+      "upstream_ids": [
+        "federal-reserve:consumer-credit:G19"
+      ],
+      "integrity_status": "Selected derived cells checked; original publisher body unavailable"
+    },
+    {
+      "id": "census_retail",
+      "url": "https://www.census.gov/retail/marts/www/marts_current.pdf",
+      "upstream_ids": [
+        "census:advance-monthly-retail-trade",
+        "census:monthly-retail-trade"
+      ],
+      "integrity_status": "Selected derived cells checked; original publisher body unavailable"
+    },
+    {
+      "id": "bea_pce",
+      "url": "https://www.bea.gov/data/consumer-spending/main",
+      "upstream_ids": [
+        "bea:nipa:personal-consumption-expenditures",
+        "census:monthly-retail-trade",
+        "census:quarterly-services-survey"
+      ],
+      "integrity_status": "Selected derived cells checked; original publisher body unavailable"
+    },
+    {
+      "id": "tsa_passengers",
+      "url": "https://www.tsa.gov/travel/passenger-volumes",
+      "upstream_ids": [
+        "tsa:checkpoint-traveler-throughput"
+      ],
+      "integrity_status": "No input acquired"
+    }
+  ],
+  "declared_transformations": [],
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false,
+  "received_at_utc": null,
+  "transport_limitations": [
+    "Reviewed limited tool extracts; original publisher bytes and hidden upstream traffic unexposed.",
+    "Nominal retail and monthly credit do not establish real purchasing power, distress or causality.",
+    "Current-vintage selected months; BEA discovery only; TSA disabled."
+  ],
+  "limitations": [
+    "Reviewed limited tool extracts; original publisher bytes and hidden upstream traffic unexposed.",
+    "Nominal retail and monthly credit do not establish real purchasing power, distress or causality.",
+    "Current-vintage selected months; BEA discovery only; TSA disabled."
+  ]
+}

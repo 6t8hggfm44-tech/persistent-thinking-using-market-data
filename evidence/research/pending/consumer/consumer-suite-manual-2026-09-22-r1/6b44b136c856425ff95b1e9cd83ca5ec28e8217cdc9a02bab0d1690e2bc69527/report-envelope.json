@@ -1,0 +1,85 @@
+{
+  "domain": "consumer",
+  "run_id": "consumer-suite-manual-2026-09-22-r1",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "d9a3fc0f924d1eb148683ad298f826e9e8760e23",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-05-01T00:00:00Z",
+    "end": "2026-09-01T00:00:00Z"
+  },
+  "actual_coverage": {
+    "reviewed_numeric_cells": 27,
+    "economic_input_cells": 25,
+    "discovery_only_cells": 2,
+    "executed_test_families": 3,
+    "credit_months": 3,
+    "nominal_retail_months": 3,
+    "missing": [
+      "real PCE",
+      "income",
+      "price index",
+      "delinquencies",
+      "card panel",
+      "hotel occupancy",
+      "airline bookings",
+      "physical vehicle sales",
+      "TSA proxy"
+    ]
+  },
+  "limitations": [
+    "Reviewed limited tool extracts; original publisher bytes and hidden upstream traffic unexposed.",
+    "Nominal retail and monthly credit do not establish real purchasing power, distress or causality.",
+    "Current-vintage selected months; BEA discovery only; TSA disabled."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-22T19:03:26.108334+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-22T19:05:02.835899+00:00",
+  "available_at_utc": "2026-09-22T19:05:02.835899+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "6b44b136c856425ff95b1e9cd83ca5ec28e8217cdc9a02bab0d1690e2bc69527",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "a1b189ffc5a9f47f80b222680ba86b9937558e537035d2fe6e3523d7dbe099b4",
+  "sources": [
+    {
+      "id": "fed_g19",
+      "url": "https://www.federalreserve.gov/releases/g19/current/default.htm",
+      "upstream_ids": [
+        "federal-reserve:consumer-credit:G19"
+      ],
+      "integrity_status": "Selected derived cells checked; original publisher body unavailable"
+    },
+    {
+      "id": "census_retail",
+      "url": "https://www.census.gov/retail/marts/www/marts_current.pdf",
+      "upstream_ids": [
+        "census:advance-monthly-retail-trade",
+        "census:monthly-retail-trade"
+      ],
+      "integrity_status": "Selected derived cells checked; original publisher body unavailable"
+    },
+    {
+      "id": "bea_pce",
+      "url": "https://www.bea.gov/data/consumer-spending/main",
+      "upstream_ids": [
+        "bea:nipa:personal-consumption-expenditures",
+        "census:monthly-retail-trade",
+        "census:quarterly-services-survey"
+      ],
+      "integrity_status": "Selected derived cells checked; original publisher body unavailable"
+    },
+    {
+      "id": "tsa_passengers",
+      "url": "https://www.tsa.gov/travel/passenger-volumes",
+      "upstream_ids": [
+        "tsa:checkpoint-traveler-throughput"
+      ],
+      "integrity_status": "No input acquired"
+    }
+  ],
+  "delivery_key": "consumer:consumer-suite-manual-2026-09-22-r1:6b44b136c856425ff95b1e9cd83ca5ec28e8217cdc9a02bab0d1690e2bc69527",
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false
+}

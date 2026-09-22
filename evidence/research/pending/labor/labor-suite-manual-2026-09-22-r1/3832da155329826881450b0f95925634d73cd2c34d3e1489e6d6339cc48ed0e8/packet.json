@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "domain": "labor",
+  "run_id": "labor-suite-manual-2026-09-22-r1",
+  "delivery_key": "labor:labor-suite-manual-2026-09-22-r1:3832da155329826881450b0f95925634d73cd2c34d3e1489e6d6339cc48ed0e8",
+  "report_sha256": "3832da155329826881450b0f95925634d73cd2c34d3e1489e6d6339cc48ed0e8",
+  "report_bytes": 4425,
+  "envelope_sha256": "6d7fa8b8b15b764aefb76d9610cbbd0c0b8e6fc27f596a879a2ad4cbfde5eaba",
+  "envelope_bytes": 3021,
+  "producer_repository": "6t8hggfm44-tech/-Labor-market-agent",
+  "producer_commit": "c80afe73616d7b843929c77a714f747298d5b487",
+  "producer_report_path": "reports/labor-suite-manual-2026-09-22-r1/3832da155329826881450b0f95925634d73cd2c34d3e1489e6d6339cc48ed0e8/Report.md",
+  "producer_envelope_path": "reports/labor-suite-manual-2026-09-22-r1/3832da155329826881450b0f95925634d73cd2c34d3e1489e6d6339cc48ed0e8/report-envelope.json",
+  "prepared_at_utc": "2026-09-22T19:01:42.072087+00:00",
+  "source_ancestry": [
+    {
+      "id": "dol_claims",
+      "url": "https://www.dol.gov/ui/data.pdf",
+      "upstream_ids": [
+        "dol:eta:state-unemployment-insurance-claims"
+      ],
+      "integrity_status": "Exact selected numeric cells checked; original publisher body hash unavailable"
+    },
+    {
+      "id": "bls_employment",
+      "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+      "upstream_ids": [
+        "bls:current-employment-statistics",
+        "bls:current-population-survey"
+      ],
+      "integrity_status": "Exact selected numeric cells checked; original publisher body hash unavailable"
+    },
+    {
+      "id": "bls_jolts",
+      "url": "https://www.bls.gov/news.release/jolts.nr0.htm",
+      "upstream_ids": [
+        "bls:job-openings-and-labor-turnover-survey"
+      ],
+      "integrity_status": "Exact selected numeric cells checked; original publisher body hash unavailable"
+    },
+    {
+      "id": "bls_eci",
+      "url": "https://www.bls.gov/news.release/eci.nr0.htm",
+      "upstream_ids": [
+        "bls:national-compensation-survey:employment-cost-index"
+      ],
+      "integrity_status": "Exact selected numeric cells checked; original publisher body hash unavailable"
+    }
+  ],
+  "declared_transformations": [],
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false,
+  "received_at_utc": null,
+  "transport_limitations": [
+    "Original publisher bytes and upstream HTTP/token/account charges are unexposed.",
+    "True periods differ: July JOLTS, August payroll, June ECI and September claims.",
+    "Current-vintage descriptive comparisons; missing sampling errors, detailed breadth and causal controls."
+  ],
+  "limitations": [
+    "Original publisher bytes and upstream HTTP/token/account charges are unexposed.",
+    "True periods differ: July JOLTS, August payroll, June ECI and September claims.",
+    "Current-vintage descriptive comparisons; missing sampling errors, detailed breadth and causal controls."
+  ]
+}
