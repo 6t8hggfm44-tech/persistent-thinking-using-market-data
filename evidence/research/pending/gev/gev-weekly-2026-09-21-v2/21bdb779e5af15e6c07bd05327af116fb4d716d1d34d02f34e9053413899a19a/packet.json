@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "delivery_key": "gev-weekly-2026-09-21-v2:21bdb779e5af15e6c07bd05327af116fb4d716d1d34d02f34e9053413899a19a",
+  "domain": "gev",
+  "run_id": "gev-weekly-2026-09-21-v2",
+  "report_sha256": "21bdb779e5af15e6c07bd05327af116fb4d716d1d34d02f34e9053413899a19a",
+  "report_bytes": 14285,
+  "envelope_sha256": "9e87cf6b1c95402663ff1a1530bfd4a42ca0f65886d86e42217a769215b190d1",
+  "envelope_bytes": 3474,
+  "producer_repository": "6t8hggfm44-tech/-Energy",
+  "producer_workflow_repository": "6t8hggfm44-tech/satellite-research",
+  "producer_kind": "legacy_gev",
+  "producer_commit": "ed4aa59f1617a0fe906f495d2667ffe9ffac1532",
+  "producer_report_path": "cloud/legacy-weekly/reports/gev/gev-weekly-2026-09-21-v2/21bdb779e5af15e6c07bd05327af116fb4d716d1d34d02f34e9053413899a19a/Report.md",
+  "prepared_at_utc": "2026-09-22T01:37:35Z",
+  "transformations": "none; exact reviewed report and original shareable envelope",
+  "limitations": [
+    "Retrospective addendum preserves original report and availability; no full-week aircraft coverage or confirmed physical/economic event.",
+    "Private evidence package is not public and raw archives are not staged.",
+    "Staging is not Market receipt, persistence or acknowledgment; next existing cycle only."
+  ]
+}
