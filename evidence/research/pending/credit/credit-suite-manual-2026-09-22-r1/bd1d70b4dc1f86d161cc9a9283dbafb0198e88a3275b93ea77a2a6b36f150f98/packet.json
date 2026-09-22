@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "domain": "credit",
+  "run_id": "credit-suite-manual-2026-09-22-r1",
+  "delivery_key": "credit:credit-suite-manual-2026-09-22-r1:bd1d70b4dc1f86d161cc9a9283dbafb0198e88a3275b93ea77a2a6b36f150f98",
+  "report_sha256": "bd1d70b4dc1f86d161cc9a9283dbafb0198e88a3275b93ea77a2a6b36f150f98",
+  "report_bytes": 5230,
+  "envelope_sha256": "ec3f4be4487cd0247f1bf755479cb172583000de8dfd620c5202dc8e7f989b5b",
+  "envelope_bytes": 3323,
+  "producer_repository": "6t8hggfm44-tech/-Credit-financial-stress-",
+  "producer_commit": "af094f48b1ed698ff88684cde5d2ce0a54331b21",
+  "producer_report_path": "reports/credit-suite-manual-2026-09-22-r1/bd1d70b4dc1f86d161cc9a9283dbafb0198e88a3275b93ea77a2a6b36f150f98/Report.md",
+  "producer_envelope_path": "reports/credit-suite-manual-2026-09-22-r1/bd1d70b4dc1f86d161cc9a9283dbafb0198e88a3275b93ea77a2a6b36f150f98/report-envelope.json",
+  "prepared_at_utc": "2026-09-22T18:39:49.005Z",
+  "source_ancestry": [
+    "ffiec-call-reports"
+  ],
+  "declared_transformations": [],
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false,
+  "received_at_utc": null,
+  "acknowledged_at_utc": null
+}
