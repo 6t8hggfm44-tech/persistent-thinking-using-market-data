@@ -1,0 +1,641 @@
+{
+  "schema_version": 1,
+  "assessment": "soft-opening-2",
+  "analysis_cutoff_utc": "2026-09-23T01:38:05.858569+00:00",
+  "baseline_primary_commit": "d16c5a30be6a45a7cf2b195365ad5cf69f6f8d1b",
+  "canonical_snapshot": "873ecd2e1d6ec82e0012fa78368ced480068a3ec",
+  "independent_investigations": 15,
+  "accepted_versions": 17,
+  "effective_reports": [
+    {
+      "producer": "corporate",
+      "domain": "corporate",
+      "family": "suite",
+      "run_id": "corporate-suite-manual-2026-09-23-soft-opening-2",
+      "version": 1,
+      "report_sha256": "b108f820b625962aba37ba85866eadd43f19f900ff46c7ed8ba83476752dc751",
+      "report_bytes": 8368,
+      "envelope_sha256": "c6cbf25bdf91b4815930a3b35ca7182f5479f06f023aa6dece1bd8a3860ebf93",
+      "delivery_key": "corporate:corporate-suite-manual-2026-09-23-soft-opening-2:b108f820b625962aba37ba85866eadd43f19f900ff46c7ed8ba83476752dc751",
+      "received_at_utc": "2026-09-23T01:12:13.112345+00:00",
+      "canonical_commit": "2f62c2b88c8edd163380abf2be2c44a6686e2200",
+      "canonical_archive": {
+        "report": "evidence/research/corporate/corporate-suite-manual-2026-09-23-soft-opening-2/b108f820b625962aba37ba85866eadd43f19f900ff46c7ed8ba83476752dc751/Report.md",
+        "envelope": "evidence/research/corporate/corporate-suite-manual-2026-09-23-soft-opening-2/b108f820b625962aba37ba85866eadd43f19f900ff46c7ed8ba83476752dc751/report-envelope.json",
+        "intake": "evidence/research/corporate/corporate-suite-manual-2026-09-23-soft-opening-2/b108f820b625962aba37ba85866eadd43f19f900ff46c7ed8ba83476752dc751/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "credit",
+      "domain": "credit",
+      "family": "suite",
+      "run_id": "credit-suite-manual-2026-09-23-soft-opening-2",
+      "version": 1,
+      "report_sha256": "de63b30a50cd96a30d0b9035ac963a12aac679a67683641547182a141e8cc502",
+      "report_bytes": 6223,
+      "envelope_sha256": "bc99fd16956d371c2d7098801b38d0a43bc591fdc107a3408291af7d50c19326",
+      "delivery_key": "credit:credit-suite-manual-2026-09-23-soft-opening-2:de63b30a50cd96a30d0b9035ac963a12aac679a67683641547182a141e8cc502",
+      "received_at_utc": "2026-09-23T01:12:13.112345+00:00",
+      "canonical_commit": "2f62c2b88c8edd163380abf2be2c44a6686e2200",
+      "canonical_archive": {
+        "report": "evidence/research/credit/credit-suite-manual-2026-09-23-soft-opening-2/de63b30a50cd96a30d0b9035ac963a12aac679a67683641547182a141e8cc502/Report.md",
+        "envelope": "evidence/research/credit/credit-suite-manual-2026-09-23-soft-opening-2/de63b30a50cd96a30d0b9035ac963a12aac679a67683641547182a141e8cc502/report-envelope.json",
+        "intake": "evidence/research/credit/credit-suite-manual-2026-09-23-soft-opening-2/de63b30a50cd96a30d0b9035ac963a12aac679a67683641547182a141e8cc502/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "labor",
+      "domain": "labor",
+      "family": "suite",
+      "run_id": "labor-suite-manual-2026-09-23-soft-opening-2",
+      "version": 1,
+      "report_sha256": "9e04425ed42ce0d8405bdcd7c2e52853f346db049d02293a465c8f7833474de6",
+      "report_bytes": 5775,
+      "envelope_sha256": "c68a816dcccd0aaeb8b8c44903ab5440bcb001de1a80630a1b22b6a9e08ca6a9",
+      "delivery_key": "labor:labor-suite-manual-2026-09-23-soft-opening-2:9e04425ed42ce0d8405bdcd7c2e52853f346db049d02293a465c8f7833474de6",
+      "received_at_utc": "2026-09-23T01:12:13.112345+00:00",
+      "canonical_commit": "2f62c2b88c8edd163380abf2be2c44a6686e2200",
+      "canonical_archive": {
+        "report": "evidence/research/labor/labor-suite-manual-2026-09-23-soft-opening-2/9e04425ed42ce0d8405bdcd7c2e52853f346db049d02293a465c8f7833474de6/Report.md",
+        "envelope": "evidence/research/labor/labor-suite-manual-2026-09-23-soft-opening-2/9e04425ed42ce0d8405bdcd7c2e52853f346db049d02293a465c8f7833474de6/report-envelope.json",
+        "intake": "evidence/research/labor/labor-suite-manual-2026-09-23-soft-opening-2/9e04425ed42ce0d8405bdcd7c2e52853f346db049d02293a465c8f7833474de6/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "agriculture",
+      "domain": "agriculture",
+      "family": "suite",
+      "run_id": "agriculture-suite-manual-2026-09-23-soft-opening-2",
+      "version": 1,
+      "report_sha256": "ab9d41d656ce2a1734ac5faf43463552099e667a20f5ad529532a138cbd9bdce",
+      "report_bytes": 6047,
+      "envelope_sha256": "d9499b02ed3bb1ef6a574676b34c919fb5ba4f2b85ccf1ac4eb8e8c45f500d58",
+      "delivery_key": "agriculture:agriculture-suite-manual-2026-09-23-soft-opening-2:ab9d41d656ce2a1734ac5faf43463552099e667a20f5ad529532a138cbd9bdce",
+      "received_at_utc": "2026-09-23T01:16:11.052215+00:00",
+      "canonical_commit": "35de9515d4660e607363abb6cbaa7eacf1391643",
+      "canonical_archive": {
+        "report": "evidence/research/agriculture/agriculture-suite-manual-2026-09-23-soft-opening-2/ab9d41d656ce2a1734ac5faf43463552099e667a20f5ad529532a138cbd9bdce/Report.md",
+        "envelope": "evidence/research/agriculture/agriculture-suite-manual-2026-09-23-soft-opening-2/ab9d41d656ce2a1734ac5faf43463552099e667a20f5ad529532a138cbd9bdce/report-envelope.json",
+        "intake": "evidence/research/agriculture/agriculture-suite-manual-2026-09-23-soft-opening-2/ab9d41d656ce2a1734ac5faf43463552099e667a20f5ad529532a138cbd9bdce/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "consumer",
+      "domain": "consumer",
+      "family": "suite",
+      "run_id": "consumer-suite-manual-2026-09-23-soft-opening-2",
+      "version": 1,
+      "report_sha256": "308dd310440b0f9a446b8f8e82e224b719e93502839bcac781b7dd896efd2e6a",
+      "report_bytes": 5520,
+      "envelope_sha256": "f25be23ecfe12fa013b2ee9e4c16c9723efd499913ba5a5a6ed56da4e9c9a37a",
+      "delivery_key": "consumer:consumer-suite-manual-2026-09-23-soft-opening-2:308dd310440b0f9a446b8f8e82e224b719e93502839bcac781b7dd896efd2e6a",
+      "received_at_utc": "2026-09-23T01:16:11.052215+00:00",
+      "canonical_commit": "35de9515d4660e607363abb6cbaa7eacf1391643",
+      "canonical_archive": {
+        "report": "evidence/research/consumer/consumer-suite-manual-2026-09-23-soft-opening-2/308dd310440b0f9a446b8f8e82e224b719e93502839bcac781b7dd896efd2e6a/Report.md",
+        "envelope": "evidence/research/consumer/consumer-suite-manual-2026-09-23-soft-opening-2/308dd310440b0f9a446b8f8e82e224b719e93502839bcac781b7dd896efd2e6a/report-envelope.json",
+        "intake": "evidence/research/consumer/consumer-suite-manual-2026-09-23-soft-opening-2/308dd310440b0f9a446b8f8e82e224b719e93502839bcac781b7dd896efd2e6a/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "fiscal",
+      "domain": "fiscal",
+      "family": "suite",
+      "run_id": "fiscal-suite-manual-2026-09-23-soft-opening-2",
+      "version": 1,
+      "report_sha256": "bd3144997c6708ca2a5de15406e658a59005924f415ff0b7fa2683c11aad10b2",
+      "report_bytes": 8192,
+      "envelope_sha256": "2ab38acb0fc08cb0fc594fbb71e276f7c50e75c6340e7a5d7a8a226d3ac19da6",
+      "delivery_key": "fiscal:fiscal-suite-manual-2026-09-23-soft-opening-2:bd3144997c6708ca2a5de15406e658a59005924f415ff0b7fa2683c11aad10b2",
+      "received_at_utc": "2026-09-23T01:16:11.052215+00:00",
+      "canonical_commit": "35de9515d4660e607363abb6cbaa7eacf1391643",
+      "canonical_archive": {
+        "report": "evidence/research/fiscal/fiscal-suite-manual-2026-09-23-soft-opening-2/bd3144997c6708ca2a5de15406e658a59005924f415ff0b7fa2683c11aad10b2/Report.md",
+        "envelope": "evidence/research/fiscal/fiscal-suite-manual-2026-09-23-soft-opening-2/bd3144997c6708ca2a5de15406e658a59005924f415ff0b7fa2683c11aad10b2/report-envelope.json",
+        "intake": "evidence/research/fiscal/fiscal-suite-manual-2026-09-23-soft-opening-2/bd3144997c6708ca2a5de15406e658a59005924f415ff0b7fa2683c11aad10b2/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "geopolitics",
+      "domain": "geopolitics",
+      "family": "suite",
+      "run_id": "geopolitics-suite-manual-2026-09-23-soft-opening-2",
+      "version": 1,
+      "report_sha256": "87480faaf41a76db4f7590b57d7a83330c3b23427aec79bb6fdf2936642327ba",
+      "report_bytes": 6213,
+      "envelope_sha256": "c25b70080e376bd7b986582936fcb4cf3a1d0e978b2e6bb8952182e1bd52a723",
+      "delivery_key": "geopolitics:geopolitics-suite-manual-2026-09-23-soft-opening-2:87480faaf41a76db4f7590b57d7a83330c3b23427aec79bb6fdf2936642327ba",
+      "received_at_utc": "2026-09-23T01:16:11.052215+00:00",
+      "canonical_commit": "35de9515d4660e607363abb6cbaa7eacf1391643",
+      "canonical_archive": {
+        "report": "evidence/research/geopolitics/geopolitics-suite-manual-2026-09-23-soft-opening-2/87480faaf41a76db4f7590b57d7a83330c3b23427aec79bb6fdf2936642327ba/Report.md",
+        "envelope": "evidence/research/geopolitics/geopolitics-suite-manual-2026-09-23-soft-opening-2/87480faaf41a76db4f7590b57d7a83330c3b23427aec79bb6fdf2936642327ba/report-envelope.json",
+        "intake": "evidence/research/geopolitics/geopolitics-suite-manual-2026-09-23-soft-opening-2/87480faaf41a76db4f7590b57d7a83330c3b23427aec79bb6fdf2936642327ba/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "housing",
+      "domain": "housing",
+      "family": "suite",
+      "run_id": "housing-suite-manual-2026-09-23-soft-opening-2",
+      "version": 2,
+      "report_sha256": "b7b409997162d97fe93b959fcfeb37c0097a5177fbfc3b80a23c882af0cffe11",
+      "report_bytes": 6763,
+      "envelope_sha256": "2bae37fb611fb50bb4a27c9adda73b11cdb6b6cf8696575d21fd221249821c21",
+      "delivery_key": "housing:housing-suite-manual-2026-09-23-soft-opening-2:b7b409997162d97fe93b959fcfeb37c0097a5177fbfc3b80a23c882af0cffe11",
+      "received_at_utc": "2026-09-23T01:21:42.919131+00:00",
+      "canonical_commit": "74952afb57d7c56ab86bac776d88f8c1f2c701ce",
+      "canonical_archive": {
+        "report": "evidence/research/housing/housing-suite-manual-2026-09-23-soft-opening-2/b7b409997162d97fe93b959fcfeb37c0097a5177fbfc3b80a23c882af0cffe11/Report.md",
+        "envelope": "evidence/research/housing/housing-suite-manual-2026-09-23-soft-opening-2/b7b409997162d97fe93b959fcfeb37c0097a5177fbfc3b80a23c882af0cffe11/report-envelope.json",
+        "intake": "evidence/research/housing/housing-suite-manual-2026-09-23-soft-opening-2/b7b409997162d97fe93b959fcfeb37c0097a5177fbfc3b80a23c882af0cffe11/intake.json"
+      },
+      "supersedes": [
+        "housing:housing-suite-manual-2026-09-23-soft-opening-2:59e1096ced09dd7f3dd35ca77d7d540c2002211852e8a078de25367cd5e95050"
+      ]
+    },
+    {
+      "producer": "industry",
+      "domain": "industry",
+      "family": "suite",
+      "run_id": "industry-suite-manual-2026-09-23-soft-opening-2",
+      "version": 2,
+      "report_sha256": "4fdf724fcc845c195800fe51dadfc2d1de4baa9d70785f25734d6af8c84d9b31",
+      "report_bytes": 7807,
+      "envelope_sha256": "2b40d7f4d0e437d30e77d6c09654ba09694ad989617a1bda3fad4cc9f00624dd",
+      "delivery_key": "industry:industry-suite-manual-2026-09-23-soft-opening-2:4fdf724fcc845c195800fe51dadfc2d1de4baa9d70785f25734d6af8c84d9b31",
+      "received_at_utc": "2026-09-23T01:21:42.919131+00:00",
+      "canonical_commit": "74952afb57d7c56ab86bac776d88f8c1f2c701ce",
+      "canonical_archive": {
+        "report": "evidence/research/industry/industry-suite-manual-2026-09-23-soft-opening-2/4fdf724fcc845c195800fe51dadfc2d1de4baa9d70785f25734d6af8c84d9b31/Report.md",
+        "envelope": "evidence/research/industry/industry-suite-manual-2026-09-23-soft-opening-2/4fdf724fcc845c195800fe51dadfc2d1de4baa9d70785f25734d6af8c84d9b31/report-envelope.json",
+        "intake": "evidence/research/industry/industry-suite-manual-2026-09-23-soft-opening-2/4fdf724fcc845c195800fe51dadfc2d1de4baa9d70785f25734d6af8c84d9b31/intake.json"
+      },
+      "supersedes": [
+        "industry:industry-suite-manual-2026-09-23-soft-opening-2:a30e15ea622a3da7929c1f9fb1a188f424ddde37e03fd01ad8a94c4ea8422985"
+      ]
+    },
+    {
+      "producer": "freight",
+      "domain": "freight",
+      "family": "suite",
+      "run_id": "freight-suite-manual-2026-09-23-soft-opening-2",
+      "version": 1,
+      "report_sha256": "6723750441b4f9fbdbebc17d3f3538c08b611a5e153fd4893b76d69c1f661b7c",
+      "report_bytes": 7195,
+      "envelope_sha256": "20c25a59156d96f5e6b8e97b275bcac159c2537adbb6d69a766d68cf8e86338e",
+      "delivery_key": "freight:freight-suite-manual-2026-09-23-soft-opening-2:6723750441b4f9fbdbebc17d3f3538c08b611a5e153fd4893b76d69c1f661b7c",
+      "received_at_utc": "2026-09-23T01:19:23.971596+00:00",
+      "canonical_commit": "cc71044fb38553f1235b1918dc3ea53d81cc01bb",
+      "canonical_archive": {
+        "report": "evidence/research/freight/freight-suite-manual-2026-09-23-soft-opening-2/6723750441b4f9fbdbebc17d3f3538c08b611a5e153fd4893b76d69c1f661b7c/Report.md",
+        "envelope": "evidence/research/freight/freight-suite-manual-2026-09-23-soft-opening-2/6723750441b4f9fbdbebc17d3f3538c08b611a5e153fd4893b76d69c1f661b7c/report-envelope.json",
+        "intake": "evidence/research/freight/freight-suite-manual-2026-09-23-soft-opening-2/6723750441b4f9fbdbebc17d3f3538c08b611a5e153fd4893b76d69c1f661b7c/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "trade",
+      "domain": "trade",
+      "family": "suite",
+      "run_id": "trade-suite-manual-2026-09-23-soft-opening-2",
+      "version": 1,
+      "report_sha256": "f9cf0a9948c41d2e7bfed49ff2700be8b7d356111540f5dddcfde7891aa4ac0d",
+      "report_bytes": 8465,
+      "envelope_sha256": "40f8720dd059387f02f6a4f82efa7132cd79f2ff0e6af5b3843a8bd2e145d493",
+      "delivery_key": "trade:trade-suite-manual-2026-09-23-soft-opening-2:f9cf0a9948c41d2e7bfed49ff2700be8b7d356111540f5dddcfde7891aa4ac0d",
+      "received_at_utc": "2026-09-23T01:19:23.971596+00:00",
+      "canonical_commit": "cc71044fb38553f1235b1918dc3ea53d81cc01bb",
+      "canonical_archive": {
+        "report": "evidence/research/trade/trade-suite-manual-2026-09-23-soft-opening-2/f9cf0a9948c41d2e7bfed49ff2700be8b7d356111540f5dddcfde7891aa4ac0d/Report.md",
+        "envelope": "evidence/research/trade/trade-suite-manual-2026-09-23-soft-opening-2/f9cf0a9948c41d2e7bfed49ff2700be8b7d356111540f5dddcfde7891aa4ac0d/report-envelope.json",
+        "intake": "evidence/research/trade/trade-suite-manual-2026-09-23-soft-opening-2/f9cf0a9948c41d2e7bfed49ff2700be8b7d356111540f5dddcfde7891aa4ac0d/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "energy-legacy",
+      "domain": "energy",
+      "family": "legacy",
+      "run_id": "energy-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1",
+      "version": 1,
+      "report_sha256": "01df2c400f89ef52df52414ff1bee4181da734246f43e179458d0c88193e5d36",
+      "report_bytes": 5983,
+      "envelope_sha256": "1017b3b676c5ed0f11c709f19bb005531ddee6bddf664fdd3dd2de8205a85a65",
+      "delivery_key": "energy:energy-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1:01df2c400f89ef52df52414ff1bee4181da734246f43e179458d0c88193e5d36",
+      "received_at_utc": "2026-09-23T01:33:25.942223+00:00",
+      "canonical_commit": "0e35ce9c18b1ac4cd5046faf96703aacafb9d220",
+      "canonical_archive": {
+        "report": "evidence/research/energy/energy-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1/01df2c400f89ef52df52414ff1bee4181da734246f43e179458d0c88193e5d36/Report.md",
+        "envelope": "evidence/research/energy/energy-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1/01df2c400f89ef52df52414ff1bee4181da734246f43e179458d0c88193e5d36/report-envelope.json",
+        "intake": "evidence/research/energy/energy-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1/01df2c400f89ef52df52414ff1bee4181da734246f43e179458d0c88193e5d36/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "energy",
+      "domain": "energy",
+      "family": "suite",
+      "run_id": "energy-suite-manual-2026-09-23-soft-opening-2-admission-correction-1",
+      "version": 2,
+      "report_sha256": "4e41e9d4621c41563e9aeb721a602717800176789f13973c7d82602833456e36",
+      "report_bytes": 5458,
+      "envelope_sha256": "b55388f7519215e168e2c73681d6dda068362a9dd22af4353b3bfa858c74c74d",
+      "delivery_key": "energy:energy-suite-manual-2026-09-23-soft-opening-2-admission-correction-1:4e41e9d4621c41563e9aeb721a602717800176789f13973c7d82602833456e36",
+      "received_at_utc": "2026-09-23T01:33:25.942223+00:00",
+      "canonical_commit": "0e35ce9c18b1ac4cd5046faf96703aacafb9d220",
+      "canonical_archive": {
+        "report": "evidence/research/energy/energy-suite-manual-2026-09-23-soft-opening-2-admission-correction-1/4e41e9d4621c41563e9aeb721a602717800176789f13973c7d82602833456e36/Report.md",
+        "envelope": "evidence/research/energy/energy-suite-manual-2026-09-23-soft-opening-2-admission-correction-1/4e41e9d4621c41563e9aeb721a602717800176789f13973c7d82602833456e36/report-envelope.json",
+        "intake": "evidence/research/energy/energy-suite-manual-2026-09-23-soft-opening-2-admission-correction-1/4e41e9d4621c41563e9aeb721a602717800176789f13973c7d82602833456e36/intake.json"
+      },
+      "supersedes": [
+        "14c1673496effbb2d4d8f22530fc9bbb302fd58b5927fee854f0539b9f5ef173"
+      ]
+    },
+    {
+      "producer": "gev-legacy",
+      "domain": "gev",
+      "family": "legacy",
+      "run_id": "gev-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1",
+      "version": 1,
+      "report_sha256": "7f6752b507f1103934221f6032c115ce0b97a3a3ff621b471421496b4ae6d4e6",
+      "report_bytes": 6047,
+      "envelope_sha256": "813e0d2bdf3c1f8706096c311503172ffd283144e57d71446ec8dc4d51c211e3",
+      "delivery_key": "gev-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1:7f6752b507f1103934221f6032c115ce0b97a3a3ff621b471421496b4ae6d4e6",
+      "received_at_utc": "2026-09-23T01:33:25.942223+00:00",
+      "canonical_commit": "0e35ce9c18b1ac4cd5046faf96703aacafb9d220",
+      "canonical_archive": {
+        "report": "evidence/gev-weekly/gev-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1/7f6752b507f1103934221f6032c115ce0b97a3a3ff621b471421496b4ae6d4e6/Report.md",
+        "envelope": "evidence/gev-weekly/gev-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1/7f6752b507f1103934221f6032c115ce0b97a3a3ff621b471421496b4ae6d4e6/report-envelope.json",
+        "intake": "evidence/gev-weekly/gev-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1/7f6752b507f1103934221f6032c115ce0b97a3a3ff621b471421496b4ae6d4e6/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "weather-legacy",
+      "domain": "weather",
+      "family": "legacy",
+      "run_id": "weather-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1",
+      "version": 1,
+      "report_sha256": "cc4b8452c526914a5f8768c5500763920a400d772c5ee7cffdd60794755ef396",
+      "report_bytes": 5389,
+      "envelope_sha256": "0fba68a1b8ca7c21e2484482d67a99464d48cae0e09f55dd388eda0a06c5150d",
+      "delivery_key": "weather:weather-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1:cc4b8452c526914a5f8768c5500763920a400d772c5ee7cffdd60794755ef396",
+      "received_at_utc": "2026-09-23T01:33:25.942223+00:00",
+      "canonical_commit": "0e35ce9c18b1ac4cd5046faf96703aacafb9d220",
+      "canonical_archive": {
+        "report": "evidence/research/weather/weather-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1/cc4b8452c526914a5f8768c5500763920a400d772c5ee7cffdd60794755ef396/Report.md",
+        "envelope": "evidence/research/weather/weather-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1/cc4b8452c526914a5f8768c5500763920a400d772c5ee7cffdd60794755ef396/report-envelope.json",
+        "intake": "evidence/research/weather/weather-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1/cc4b8452c526914a5f8768c5500763920a400d772c5ee7cffdd60794755ef396/intake.json"
+      },
+      "supersedes": []
+    }
+  ],
+  "all_accepted_versions": [
+    {
+      "producer": "corporate",
+      "domain": "corporate",
+      "family": "suite",
+      "run_id": "corporate-suite-manual-2026-09-23-soft-opening-2",
+      "version": 1,
+      "report_sha256": "b108f820b625962aba37ba85866eadd43f19f900ff46c7ed8ba83476752dc751",
+      "report_bytes": 8368,
+      "envelope_sha256": "c6cbf25bdf91b4815930a3b35ca7182f5479f06f023aa6dece1bd8a3860ebf93",
+      "delivery_key": "corporate:corporate-suite-manual-2026-09-23-soft-opening-2:b108f820b625962aba37ba85866eadd43f19f900ff46c7ed8ba83476752dc751",
+      "received_at_utc": "2026-09-23T01:12:13.112345+00:00",
+      "canonical_commit": "2f62c2b88c8edd163380abf2be2c44a6686e2200",
+      "canonical_archive": {
+        "report": "evidence/research/corporate/corporate-suite-manual-2026-09-23-soft-opening-2/b108f820b625962aba37ba85866eadd43f19f900ff46c7ed8ba83476752dc751/Report.md",
+        "envelope": "evidence/research/corporate/corporate-suite-manual-2026-09-23-soft-opening-2/b108f820b625962aba37ba85866eadd43f19f900ff46c7ed8ba83476752dc751/report-envelope.json",
+        "intake": "evidence/research/corporate/corporate-suite-manual-2026-09-23-soft-opening-2/b108f820b625962aba37ba85866eadd43f19f900ff46c7ed8ba83476752dc751/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "credit",
+      "domain": "credit",
+      "family": "suite",
+      "run_id": "credit-suite-manual-2026-09-23-soft-opening-2",
+      "version": 1,
+      "report_sha256": "de63b30a50cd96a30d0b9035ac963a12aac679a67683641547182a141e8cc502",
+      "report_bytes": 6223,
+      "envelope_sha256": "bc99fd16956d371c2d7098801b38d0a43bc591fdc107a3408291af7d50c19326",
+      "delivery_key": "credit:credit-suite-manual-2026-09-23-soft-opening-2:de63b30a50cd96a30d0b9035ac963a12aac679a67683641547182a141e8cc502",
+      "received_at_utc": "2026-09-23T01:12:13.112345+00:00",
+      "canonical_commit": "2f62c2b88c8edd163380abf2be2c44a6686e2200",
+      "canonical_archive": {
+        "report": "evidence/research/credit/credit-suite-manual-2026-09-23-soft-opening-2/de63b30a50cd96a30d0b9035ac963a12aac679a67683641547182a141e8cc502/Report.md",
+        "envelope": "evidence/research/credit/credit-suite-manual-2026-09-23-soft-opening-2/de63b30a50cd96a30d0b9035ac963a12aac679a67683641547182a141e8cc502/report-envelope.json",
+        "intake": "evidence/research/credit/credit-suite-manual-2026-09-23-soft-opening-2/de63b30a50cd96a30d0b9035ac963a12aac679a67683641547182a141e8cc502/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "labor",
+      "domain": "labor",
+      "family": "suite",
+      "run_id": "labor-suite-manual-2026-09-23-soft-opening-2",
+      "version": 1,
+      "report_sha256": "9e04425ed42ce0d8405bdcd7c2e52853f346db049d02293a465c8f7833474de6",
+      "report_bytes": 5775,
+      "envelope_sha256": "c68a816dcccd0aaeb8b8c44903ab5440bcb001de1a80630a1b22b6a9e08ca6a9",
+      "delivery_key": "labor:labor-suite-manual-2026-09-23-soft-opening-2:9e04425ed42ce0d8405bdcd7c2e52853f346db049d02293a465c8f7833474de6",
+      "received_at_utc": "2026-09-23T01:12:13.112345+00:00",
+      "canonical_commit": "2f62c2b88c8edd163380abf2be2c44a6686e2200",
+      "canonical_archive": {
+        "report": "evidence/research/labor/labor-suite-manual-2026-09-23-soft-opening-2/9e04425ed42ce0d8405bdcd7c2e52853f346db049d02293a465c8f7833474de6/Report.md",
+        "envelope": "evidence/research/labor/labor-suite-manual-2026-09-23-soft-opening-2/9e04425ed42ce0d8405bdcd7c2e52853f346db049d02293a465c8f7833474de6/report-envelope.json",
+        "intake": "evidence/research/labor/labor-suite-manual-2026-09-23-soft-opening-2/9e04425ed42ce0d8405bdcd7c2e52853f346db049d02293a465c8f7833474de6/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "agriculture",
+      "domain": "agriculture",
+      "family": "suite",
+      "run_id": "agriculture-suite-manual-2026-09-23-soft-opening-2",
+      "version": 1,
+      "report_sha256": "ab9d41d656ce2a1734ac5faf43463552099e667a20f5ad529532a138cbd9bdce",
+      "report_bytes": 6047,
+      "envelope_sha256": "d9499b02ed3bb1ef6a574676b34c919fb5ba4f2b85ccf1ac4eb8e8c45f500d58",
+      "delivery_key": "agriculture:agriculture-suite-manual-2026-09-23-soft-opening-2:ab9d41d656ce2a1734ac5faf43463552099e667a20f5ad529532a138cbd9bdce",
+      "received_at_utc": "2026-09-23T01:16:11.052215+00:00",
+      "canonical_commit": "35de9515d4660e607363abb6cbaa7eacf1391643",
+      "canonical_archive": {
+        "report": "evidence/research/agriculture/agriculture-suite-manual-2026-09-23-soft-opening-2/ab9d41d656ce2a1734ac5faf43463552099e667a20f5ad529532a138cbd9bdce/Report.md",
+        "envelope": "evidence/research/agriculture/agriculture-suite-manual-2026-09-23-soft-opening-2/ab9d41d656ce2a1734ac5faf43463552099e667a20f5ad529532a138cbd9bdce/report-envelope.json",
+        "intake": "evidence/research/agriculture/agriculture-suite-manual-2026-09-23-soft-opening-2/ab9d41d656ce2a1734ac5faf43463552099e667a20f5ad529532a138cbd9bdce/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "consumer",
+      "domain": "consumer",
+      "family": "suite",
+      "run_id": "consumer-suite-manual-2026-09-23-soft-opening-2",
+      "version": 1,
+      "report_sha256": "308dd310440b0f9a446b8f8e82e224b719e93502839bcac781b7dd896efd2e6a",
+      "report_bytes": 5520,
+      "envelope_sha256": "f25be23ecfe12fa013b2ee9e4c16c9723efd499913ba5a5a6ed56da4e9c9a37a",
+      "delivery_key": "consumer:consumer-suite-manual-2026-09-23-soft-opening-2:308dd310440b0f9a446b8f8e82e224b719e93502839bcac781b7dd896efd2e6a",
+      "received_at_utc": "2026-09-23T01:16:11.052215+00:00",
+      "canonical_commit": "35de9515d4660e607363abb6cbaa7eacf1391643",
+      "canonical_archive": {
+        "report": "evidence/research/consumer/consumer-suite-manual-2026-09-23-soft-opening-2/308dd310440b0f9a446b8f8e82e224b719e93502839bcac781b7dd896efd2e6a/Report.md",
+        "envelope": "evidence/research/consumer/consumer-suite-manual-2026-09-23-soft-opening-2/308dd310440b0f9a446b8f8e82e224b719e93502839bcac781b7dd896efd2e6a/report-envelope.json",
+        "intake": "evidence/research/consumer/consumer-suite-manual-2026-09-23-soft-opening-2/308dd310440b0f9a446b8f8e82e224b719e93502839bcac781b7dd896efd2e6a/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "fiscal",
+      "domain": "fiscal",
+      "family": "suite",
+      "run_id": "fiscal-suite-manual-2026-09-23-soft-opening-2",
+      "version": 1,
+      "report_sha256": "bd3144997c6708ca2a5de15406e658a59005924f415ff0b7fa2683c11aad10b2",
+      "report_bytes": 8192,
+      "envelope_sha256": "2ab38acb0fc08cb0fc594fbb71e276f7c50e75c6340e7a5d7a8a226d3ac19da6",
+      "delivery_key": "fiscal:fiscal-suite-manual-2026-09-23-soft-opening-2:bd3144997c6708ca2a5de15406e658a59005924f415ff0b7fa2683c11aad10b2",
+      "received_at_utc": "2026-09-23T01:16:11.052215+00:00",
+      "canonical_commit": "35de9515d4660e607363abb6cbaa7eacf1391643",
+      "canonical_archive": {
+        "report": "evidence/research/fiscal/fiscal-suite-manual-2026-09-23-soft-opening-2/bd3144997c6708ca2a5de15406e658a59005924f415ff0b7fa2683c11aad10b2/Report.md",
+        "envelope": "evidence/research/fiscal/fiscal-suite-manual-2026-09-23-soft-opening-2/bd3144997c6708ca2a5de15406e658a59005924f415ff0b7fa2683c11aad10b2/report-envelope.json",
+        "intake": "evidence/research/fiscal/fiscal-suite-manual-2026-09-23-soft-opening-2/bd3144997c6708ca2a5de15406e658a59005924f415ff0b7fa2683c11aad10b2/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "geopolitics",
+      "domain": "geopolitics",
+      "family": "suite",
+      "run_id": "geopolitics-suite-manual-2026-09-23-soft-opening-2",
+      "version": 1,
+      "report_sha256": "87480faaf41a76db4f7590b57d7a83330c3b23427aec79bb6fdf2936642327ba",
+      "report_bytes": 6213,
+      "envelope_sha256": "c25b70080e376bd7b986582936fcb4cf3a1d0e978b2e6bb8952182e1bd52a723",
+      "delivery_key": "geopolitics:geopolitics-suite-manual-2026-09-23-soft-opening-2:87480faaf41a76db4f7590b57d7a83330c3b23427aec79bb6fdf2936642327ba",
+      "received_at_utc": "2026-09-23T01:16:11.052215+00:00",
+      "canonical_commit": "35de9515d4660e607363abb6cbaa7eacf1391643",
+      "canonical_archive": {
+        "report": "evidence/research/geopolitics/geopolitics-suite-manual-2026-09-23-soft-opening-2/87480faaf41a76db4f7590b57d7a83330c3b23427aec79bb6fdf2936642327ba/Report.md",
+        "envelope": "evidence/research/geopolitics/geopolitics-suite-manual-2026-09-23-soft-opening-2/87480faaf41a76db4f7590b57d7a83330c3b23427aec79bb6fdf2936642327ba/report-envelope.json",
+        "intake": "evidence/research/geopolitics/geopolitics-suite-manual-2026-09-23-soft-opening-2/87480faaf41a76db4f7590b57d7a83330c3b23427aec79bb6fdf2936642327ba/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "housing",
+      "domain": "housing",
+      "family": "suite",
+      "run_id": "housing-suite-manual-2026-09-23-soft-opening-2",
+      "version": 1,
+      "report_sha256": "59e1096ced09dd7f3dd35ca77d7d540c2002211852e8a078de25367cd5e95050",
+      "report_bytes": 6064,
+      "envelope_sha256": "2623b26fb8ca025e9714d65c66cd408871b54b32e4dc0e728ef045ebc6746407",
+      "delivery_key": "housing:housing-suite-manual-2026-09-23-soft-opening-2:59e1096ced09dd7f3dd35ca77d7d540c2002211852e8a078de25367cd5e95050",
+      "received_at_utc": "2026-09-23T01:16:11.052215+00:00",
+      "canonical_commit": "35de9515d4660e607363abb6cbaa7eacf1391643",
+      "canonical_archive": {
+        "report": "evidence/research/housing/housing-suite-manual-2026-09-23-soft-opening-2/59e1096ced09dd7f3dd35ca77d7d540c2002211852e8a078de25367cd5e95050/Report.md",
+        "envelope": "evidence/research/housing/housing-suite-manual-2026-09-23-soft-opening-2/59e1096ced09dd7f3dd35ca77d7d540c2002211852e8a078de25367cd5e95050/report-envelope.json",
+        "intake": "evidence/research/housing/housing-suite-manual-2026-09-23-soft-opening-2/59e1096ced09dd7f3dd35ca77d7d540c2002211852e8a078de25367cd5e95050/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "industry",
+      "domain": "industry",
+      "family": "suite",
+      "run_id": "industry-suite-manual-2026-09-23-soft-opening-2",
+      "version": 1,
+      "report_sha256": "a30e15ea622a3da7929c1f9fb1a188f424ddde37e03fd01ad8a94c4ea8422985",
+      "report_bytes": 7046,
+      "envelope_sha256": "800af8ba58bf597c6ff2cc8e480b6b8f5c10480aa7d98f9522a014e6028b7313",
+      "delivery_key": "industry:industry-suite-manual-2026-09-23-soft-opening-2:a30e15ea622a3da7929c1f9fb1a188f424ddde37e03fd01ad8a94c4ea8422985",
+      "received_at_utc": "2026-09-23T01:16:11.052215+00:00",
+      "canonical_commit": "35de9515d4660e607363abb6cbaa7eacf1391643",
+      "canonical_archive": {
+        "report": "evidence/research/industry/industry-suite-manual-2026-09-23-soft-opening-2/a30e15ea622a3da7929c1f9fb1a188f424ddde37e03fd01ad8a94c4ea8422985/Report.md",
+        "envelope": "evidence/research/industry/industry-suite-manual-2026-09-23-soft-opening-2/a30e15ea622a3da7929c1f9fb1a188f424ddde37e03fd01ad8a94c4ea8422985/report-envelope.json",
+        "intake": "evidence/research/industry/industry-suite-manual-2026-09-23-soft-opening-2/a30e15ea622a3da7929c1f9fb1a188f424ddde37e03fd01ad8a94c4ea8422985/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "freight",
+      "domain": "freight",
+      "family": "suite",
+      "run_id": "freight-suite-manual-2026-09-23-soft-opening-2",
+      "version": 1,
+      "report_sha256": "6723750441b4f9fbdbebc17d3f3538c08b611a5e153fd4893b76d69c1f661b7c",
+      "report_bytes": 7195,
+      "envelope_sha256": "20c25a59156d96f5e6b8e97b275bcac159c2537adbb6d69a766d68cf8e86338e",
+      "delivery_key": "freight:freight-suite-manual-2026-09-23-soft-opening-2:6723750441b4f9fbdbebc17d3f3538c08b611a5e153fd4893b76d69c1f661b7c",
+      "received_at_utc": "2026-09-23T01:19:23.971596+00:00",
+      "canonical_commit": "cc71044fb38553f1235b1918dc3ea53d81cc01bb",
+      "canonical_archive": {
+        "report": "evidence/research/freight/freight-suite-manual-2026-09-23-soft-opening-2/6723750441b4f9fbdbebc17d3f3538c08b611a5e153fd4893b76d69c1f661b7c/Report.md",
+        "envelope": "evidence/research/freight/freight-suite-manual-2026-09-23-soft-opening-2/6723750441b4f9fbdbebc17d3f3538c08b611a5e153fd4893b76d69c1f661b7c/report-envelope.json",
+        "intake": "evidence/research/freight/freight-suite-manual-2026-09-23-soft-opening-2/6723750441b4f9fbdbebc17d3f3538c08b611a5e153fd4893b76d69c1f661b7c/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "trade",
+      "domain": "trade",
+      "family": "suite",
+      "run_id": "trade-suite-manual-2026-09-23-soft-opening-2",
+      "version": 1,
+      "report_sha256": "f9cf0a9948c41d2e7bfed49ff2700be8b7d356111540f5dddcfde7891aa4ac0d",
+      "report_bytes": 8465,
+      "envelope_sha256": "40f8720dd059387f02f6a4f82efa7132cd79f2ff0e6af5b3843a8bd2e145d493",
+      "delivery_key": "trade:trade-suite-manual-2026-09-23-soft-opening-2:f9cf0a9948c41d2e7bfed49ff2700be8b7d356111540f5dddcfde7891aa4ac0d",
+      "received_at_utc": "2026-09-23T01:19:23.971596+00:00",
+      "canonical_commit": "cc71044fb38553f1235b1918dc3ea53d81cc01bb",
+      "canonical_archive": {
+        "report": "evidence/research/trade/trade-suite-manual-2026-09-23-soft-opening-2/f9cf0a9948c41d2e7bfed49ff2700be8b7d356111540f5dddcfde7891aa4ac0d/Report.md",
+        "envelope": "evidence/research/trade/trade-suite-manual-2026-09-23-soft-opening-2/f9cf0a9948c41d2e7bfed49ff2700be8b7d356111540f5dddcfde7891aa4ac0d/report-envelope.json",
+        "intake": "evidence/research/trade/trade-suite-manual-2026-09-23-soft-opening-2/f9cf0a9948c41d2e7bfed49ff2700be8b7d356111540f5dddcfde7891aa4ac0d/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "housing",
+      "domain": "housing",
+      "family": "suite",
+      "run_id": "housing-suite-manual-2026-09-23-soft-opening-2",
+      "version": 2,
+      "report_sha256": "b7b409997162d97fe93b959fcfeb37c0097a5177fbfc3b80a23c882af0cffe11",
+      "report_bytes": 6763,
+      "envelope_sha256": "2bae37fb611fb50bb4a27c9adda73b11cdb6b6cf8696575d21fd221249821c21",
+      "delivery_key": "housing:housing-suite-manual-2026-09-23-soft-opening-2:b7b409997162d97fe93b959fcfeb37c0097a5177fbfc3b80a23c882af0cffe11",
+      "received_at_utc": "2026-09-23T01:21:42.919131+00:00",
+      "canonical_commit": "74952afb57d7c56ab86bac776d88f8c1f2c701ce",
+      "canonical_archive": {
+        "report": "evidence/research/housing/housing-suite-manual-2026-09-23-soft-opening-2/b7b409997162d97fe93b959fcfeb37c0097a5177fbfc3b80a23c882af0cffe11/Report.md",
+        "envelope": "evidence/research/housing/housing-suite-manual-2026-09-23-soft-opening-2/b7b409997162d97fe93b959fcfeb37c0097a5177fbfc3b80a23c882af0cffe11/report-envelope.json",
+        "intake": "evidence/research/housing/housing-suite-manual-2026-09-23-soft-opening-2/b7b409997162d97fe93b959fcfeb37c0097a5177fbfc3b80a23c882af0cffe11/intake.json"
+      },
+      "supersedes": [
+        "housing:housing-suite-manual-2026-09-23-soft-opening-2:59e1096ced09dd7f3dd35ca77d7d540c2002211852e8a078de25367cd5e95050"
+      ]
+    },
+    {
+      "producer": "industry",
+      "domain": "industry",
+      "family": "suite",
+      "run_id": "industry-suite-manual-2026-09-23-soft-opening-2",
+      "version": 2,
+      "report_sha256": "4fdf724fcc845c195800fe51dadfc2d1de4baa9d70785f25734d6af8c84d9b31",
+      "report_bytes": 7807,
+      "envelope_sha256": "2b40d7f4d0e437d30e77d6c09654ba09694ad989617a1bda3fad4cc9f00624dd",
+      "delivery_key": "industry:industry-suite-manual-2026-09-23-soft-opening-2:4fdf724fcc845c195800fe51dadfc2d1de4baa9d70785f25734d6af8c84d9b31",
+      "received_at_utc": "2026-09-23T01:21:42.919131+00:00",
+      "canonical_commit": "74952afb57d7c56ab86bac776d88f8c1f2c701ce",
+      "canonical_archive": {
+        "report": "evidence/research/industry/industry-suite-manual-2026-09-23-soft-opening-2/4fdf724fcc845c195800fe51dadfc2d1de4baa9d70785f25734d6af8c84d9b31/Report.md",
+        "envelope": "evidence/research/industry/industry-suite-manual-2026-09-23-soft-opening-2/4fdf724fcc845c195800fe51dadfc2d1de4baa9d70785f25734d6af8c84d9b31/report-envelope.json",
+        "intake": "evidence/research/industry/industry-suite-manual-2026-09-23-soft-opening-2/4fdf724fcc845c195800fe51dadfc2d1de4baa9d70785f25734d6af8c84d9b31/intake.json"
+      },
+      "supersedes": [
+        "industry:industry-suite-manual-2026-09-23-soft-opening-2:a30e15ea622a3da7929c1f9fb1a188f424ddde37e03fd01ad8a94c4ea8422985"
+      ]
+    },
+    {
+      "producer": "energy-legacy",
+      "domain": "energy",
+      "family": "legacy",
+      "run_id": "energy-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1",
+      "version": 1,
+      "report_sha256": "01df2c400f89ef52df52414ff1bee4181da734246f43e179458d0c88193e5d36",
+      "report_bytes": 5983,
+      "envelope_sha256": "1017b3b676c5ed0f11c709f19bb005531ddee6bddf664fdd3dd2de8205a85a65",
+      "delivery_key": "energy:energy-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1:01df2c400f89ef52df52414ff1bee4181da734246f43e179458d0c88193e5d36",
+      "received_at_utc": "2026-09-23T01:33:25.942223+00:00",
+      "canonical_commit": "0e35ce9c18b1ac4cd5046faf96703aacafb9d220",
+      "canonical_archive": {
+        "report": "evidence/research/energy/energy-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1/01df2c400f89ef52df52414ff1bee4181da734246f43e179458d0c88193e5d36/Report.md",
+        "envelope": "evidence/research/energy/energy-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1/01df2c400f89ef52df52414ff1bee4181da734246f43e179458d0c88193e5d36/report-envelope.json",
+        "intake": "evidence/research/energy/energy-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1/01df2c400f89ef52df52414ff1bee4181da734246f43e179458d0c88193e5d36/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "energy",
+      "domain": "energy",
+      "family": "suite",
+      "run_id": "energy-suite-manual-2026-09-23-soft-opening-2-admission-correction-1",
+      "version": 2,
+      "report_sha256": "4e41e9d4621c41563e9aeb721a602717800176789f13973c7d82602833456e36",
+      "report_bytes": 5458,
+      "envelope_sha256": "b55388f7519215e168e2c73681d6dda068362a9dd22af4353b3bfa858c74c74d",
+      "delivery_key": "energy:energy-suite-manual-2026-09-23-soft-opening-2-admission-correction-1:4e41e9d4621c41563e9aeb721a602717800176789f13973c7d82602833456e36",
+      "received_at_utc": "2026-09-23T01:33:25.942223+00:00",
+      "canonical_commit": "0e35ce9c18b1ac4cd5046faf96703aacafb9d220",
+      "canonical_archive": {
+        "report": "evidence/research/energy/energy-suite-manual-2026-09-23-soft-opening-2-admission-correction-1/4e41e9d4621c41563e9aeb721a602717800176789f13973c7d82602833456e36/Report.md",
+        "envelope": "evidence/research/energy/energy-suite-manual-2026-09-23-soft-opening-2-admission-correction-1/4e41e9d4621c41563e9aeb721a602717800176789f13973c7d82602833456e36/report-envelope.json",
+        "intake": "evidence/research/energy/energy-suite-manual-2026-09-23-soft-opening-2-admission-correction-1/4e41e9d4621c41563e9aeb721a602717800176789f13973c7d82602833456e36/intake.json"
+      },
+      "supersedes": [
+        "14c1673496effbb2d4d8f22530fc9bbb302fd58b5927fee854f0539b9f5ef173"
+      ]
+    },
+    {
+      "producer": "gev-legacy",
+      "domain": "gev",
+      "family": "legacy",
+      "run_id": "gev-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1",
+      "version": 1,
+      "report_sha256": "7f6752b507f1103934221f6032c115ce0b97a3a3ff621b471421496b4ae6d4e6",
+      "report_bytes": 6047,
+      "envelope_sha256": "813e0d2bdf3c1f8706096c311503172ffd283144e57d71446ec8dc4d51c211e3",
+      "delivery_key": "gev-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1:7f6752b507f1103934221f6032c115ce0b97a3a3ff621b471421496b4ae6d4e6",
+      "received_at_utc": "2026-09-23T01:33:25.942223+00:00",
+      "canonical_commit": "0e35ce9c18b1ac4cd5046faf96703aacafb9d220",
+      "canonical_archive": {
+        "report": "evidence/gev-weekly/gev-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1/7f6752b507f1103934221f6032c115ce0b97a3a3ff621b471421496b4ae6d4e6/Report.md",
+        "envelope": "evidence/gev-weekly/gev-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1/7f6752b507f1103934221f6032c115ce0b97a3a3ff621b471421496b4ae6d4e6/report-envelope.json",
+        "intake": "evidence/gev-weekly/gev-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1/7f6752b507f1103934221f6032c115ce0b97a3a3ff621b471421496b4ae6d4e6/intake.json"
+      },
+      "supersedes": []
+    },
+    {
+      "producer": "weather-legacy",
+      "domain": "weather",
+      "family": "legacy",
+      "run_id": "weather-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1",
+      "version": 1,
+      "report_sha256": "cc4b8452c526914a5f8768c5500763920a400d772c5ee7cffdd60794755ef396",
+      "report_bytes": 5389,
+      "envelope_sha256": "0fba68a1b8ca7c21e2484482d67a99464d48cae0e09f55dd388eda0a06c5150d",
+      "delivery_key": "weather:weather-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1:cc4b8452c526914a5f8768c5500763920a400d772c5ee7cffdd60794755ef396",
+      "received_at_utc": "2026-09-23T01:33:25.942223+00:00",
+      "canonical_commit": "0e35ce9c18b1ac4cd5046faf96703aacafb9d220",
+      "canonical_archive": {
+        "report": "evidence/research/weather/weather-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1/cc4b8452c526914a5f8768c5500763920a400d772c5ee7cffdd60794755ef396/Report.md",
+        "envelope": "evidence/research/weather/weather-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1/cc4b8452c526914a5f8768c5500763920a400d772c5ee7cffdd60794755ef396/report-envelope.json",
+        "intake": "evidence/research/weather/weather-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1/cc4b8452c526914a5f8768c5500763920a400d772c5ee7cffdd60794755ef396/intake.json"
+      },
+      "supersedes": []
+    }
+  ],
+  "novel_independent_economic_observations": 0,
+  "notes": [
+    "Report receipt is actual Market availability, not the source measurement date.",
+    "Housing and Industry v2 replace v1 for this analysis; both versions remain archived.",
+    "Suite Energy v2 corrects a private frozen candidate that never had an earlier canonical receipt.",
+    "Twelve suite and three legacy reports retain separate identities.",
+    "All shared or previously exposed observations receive no additional evidence weight."
+  ]
+}
