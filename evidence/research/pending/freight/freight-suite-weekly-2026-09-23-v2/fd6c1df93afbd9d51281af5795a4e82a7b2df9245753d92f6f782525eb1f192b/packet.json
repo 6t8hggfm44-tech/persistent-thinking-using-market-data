@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "delivery_key": "freight:freight-suite-weekly-2026-09-23-v2:fd6c1df93afbd9d51281af5795a4e82a7b2df9245753d92f6f782525eb1f192b",
+  "domain": "freight",
+  "run_id": "freight-suite-weekly-2026-09-23-v2",
+  "report_sha256": "fd6c1df93afbd9d51281af5795a4e82a7b2df9245753d92f6f782525eb1f192b",
+  "report_bytes": 9381,
+  "envelope_sha256": "4ecf9b4bd475f87725bcdfd183347c965dbff851da9530eb929e1f3ba2bcbc31",
+  "envelope_bytes": 4517,
+  "producer_repository": "6t8hggfm44-tech/-Freight-supply-chain",
+  "producer_commit": "30d0c604e4c7136e34d5cecedcd652b1da2befe8",
+  "producer_report_path": "reports/freight-suite-weekly-2026-09-23-v2/fd6c1df93afbd9d51281af5795a4e82a7b2df9245753d92f6f782525eb1f192b/Report.md",
+  "prepared_at_utc": "2026-09-23T22:10:30.590730+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact reviewed prose/envelope only; private reproducibility and original publisher bytes are not in public packet.",
+    "Staging is not Market receipt, acknowledgment or canonical persistence.",
+    "Reused ten-cell Port LA evidence adds no fresh observation or independent evidence weight."
+  ],
+  "source_ancestry": [
+    "port-of-los-angeles:terminal-container-reports"
+  ],
+  "source_ancestry_note": "Only Port LA numeric evidence supports completed tests. Other envelope source entries document unavailable coverage, not independent confirmation."
+}

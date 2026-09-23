@@ -1,0 +1,96 @@
+{
+  "domain": "freight",
+  "run_id": "freight-suite-weekly-2026-09-23-v2",
+  "report_version": 2,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "82af20e52145b7b4146b0921aaaaea671905d5a9",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2025-08-01T00:00:00Z",
+    "end": "2026-09-01T00:00:00Z"
+  },
+  "actual_coverage": {
+    "periods": [
+      "2025-08",
+      "2026-08"
+    ],
+    "event_window_note": "Bounding range, not continuous coverage; calendar months with UTC envelope boundaries only.",
+    "geography": "Port of Los Angeles only",
+    "units": "monthly TEUs, not seasonally adjusted",
+    "numeric_cells": 10,
+    "numeric_sources": 1,
+    "discovery_only_sources": 3,
+    "fresh_observations": 0,
+    "publication_at_utc": null,
+    "source_retrieved_at_utc": "2026-09-22T18:33:15.928Z"
+  },
+  "limitations": [
+    "Ten retained Port of Los Angeles numeric cells, August 2026 and August 2025 only; one port and two matched months, not a time series or nationwide freight measure.",
+    "No new publisher acquisition or observations; original representation retrieved September 22, publication timestamp unknown.",
+    "Original publisher bodies and revision history unavailable; exact retained extract hashes do not establish original source-byte identity.",
+    "BTS, AAR and USDA retained records contain only discovery context, not usable index, rail-count or corridor price/volume cells.",
+    "No comparator-port, modal, fuel, operational, tariff-timing or cargo-mix controls; no national demand or bottleneck conclusion.",
+    "Shared Port LA evidence already seen in Trade and manual Freight reports; not blinded and not independent confirmation.",
+    "Existing USDA acquisition uncertainty is preserved; a retained index heading is neither a resolved attempt nor a numerical result."
+  ],
+  "supersedes": [
+    {
+      "run_id": "freight-suite-weekly-2026-09-23",
+      "report_sha256": "89afb71272703d58554f93056e432895aad60fbaf56574d5a9417ee10e45483a",
+      "report_version": 1,
+      "reason": "Correct erroneous private provenance repository identifier; scientific inputs and conclusions unchanged."
+    }
+  ],
+  "evidence_cutoff_utc": "2026-09-23T22:01:19.505484+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-23T22:07:52.991662+00:00",
+  "available_at_utc": "2026-09-23T22:07:52.991662+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "fd6c1df93afbd9d51281af5795a4e82a7b2df9245753d92f6f782525eb1f192b",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "044c77e10785be047399b19dc20d3f4add8f28ec013ccb340c1d19bd63a04712",
+  "sources": [
+    {
+      "id": "bts_freight_tsi",
+      "url": "https://www.bts.gov/tags/transportation-services-index",
+      "upstream_ids": [
+        "bts:transportation-services-index",
+        "aar:railroad-traffic",
+        "ata:truck-tonnage",
+        "bts:air-carrier-traffic",
+        "eia:pipeline-movements",
+        "usace:waterborne-commerce"
+      ],
+      "integrity_status": "Exact retained record verified from live checkpoint and immutable prior report input; original publisher bytes unverified."
+    },
+    {
+      "id": "port_la_containers",
+      "url": "https://portoflosangeles.org/business/statistics/container-statistics",
+      "upstream_ids": [
+        "port-of-los-angeles:terminal-container-reports"
+      ],
+      "integrity_status": "Exact retained record verified from live checkpoint and immutable prior report input; original publisher bytes unverified."
+    },
+    {
+      "id": "usda_grain_transport",
+      "url": "https://www.ams.usda.gov/services/transportation-analysis/gtr",
+      "upstream_ids": [
+        "usda:ams:grain-transportation-report",
+        "aar:railroad-traffic",
+        "usace:waterborne-commerce",
+        "eia:diesel-prices"
+      ],
+      "integrity_status": "Exact retained record verified from live checkpoint and immutable prior report input; original publisher bytes unverified."
+    },
+    {
+      "id": "aar_public_rail",
+      "url": "https://www.aar.org/data-center/",
+      "upstream_ids": [
+        "aar:railroad-traffic",
+        "aar:member-railroad-reports"
+      ],
+      "integrity_status": "Exact retained record verified from live checkpoint and immutable prior report input; original publisher bytes unverified."
+    }
+  ],
+  "delivery_key": "freight:freight-suite-weekly-2026-09-23-v2:fd6c1df93afbd9d51281af5795a4e82a7b2df9245753d92f6f782525eb1f192b"
+}
