@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "domain": "energy",
+  "run_id": "energy-suite-manual-2026-09-23-soft-opening-2-admission-correction-1",
+  "delivery_key": "energy:energy-suite-manual-2026-09-23-soft-opening-2-admission-correction-1:4e41e9d4621c41563e9aeb721a602717800176789f13973c7d82602833456e36",
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false,
+  "report_sha256": "4e41e9d4621c41563e9aeb721a602717800176789f13973c7d82602833456e36",
+  "report_bytes": 5458,
+  "envelope_sha256": "b55388f7519215e168e2c73681d6dda068362a9dd22af4353b3bfa858c74c74d",
+  "envelope_bytes": 2717,
+  "producer_repository": "6t8hggfm44-tech/-Energy",
+  "producer_commit": "48e7ecff0641cf540459ca249ddeac34ce30a450",
+  "producer_report_path": "reports/energy-suite-manual-2026-09-23-soft-opening-2-admission-correction-1/4e41e9d4621c41563e9aeb721a602717800176789f13973c7d82602833456e36/Report.md",
+  "prepared_at_utc": "2026-09-23T01:32:14.371587+00:00",
+  "source_ancestry": [
+    {
+      "id": "eia_wngsr",
+      "url": "https://ir.eia.gov/ngs/ngs.html",
+      "upstream_ids": [
+        "eia:weekly-natural-gas-storage",
+        "eia:survey:EIA-912"
+      ],
+      "integrity_status": "Exact saved bytes/hashes verified; publisher body absent for suite tool extracts; no fresh provider acquisition."
+    },
+    {
+      "id": "petroleum_bridge",
+      "url": "https://www.eia.gov/petroleum/",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum"
+      ],
+      "integrity_status": "Exact saved bytes/hashes verified; publisher body absent for suite tool extracts; no fresh provider acquisition."
+    },
+    {
+      "id": "eia_epm",
+      "url": "https://www.eia.gov/electricity/monthly/",
+      "upstream_ids": [
+        "eia:electric-power-monthly",
+        "eia:survey:EIA-923",
+        "eia:survey:EIA-861M"
+      ],
+      "integrity_status": "Exact saved bytes/hashes verified; publisher body absent for suite tool extracts; no fresh provider acquisition."
+    }
+  ],
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Prepared packet is not Market receipt; root serializes staging and only actual receiver records establish acceptance.",
+    "Underlying exact private evidence package is referenced, not included in public three-file transport.",
+    "Saved evidence has original acquisition and period clocks; no new release or independent confirmation is claimed."
+  ],
+  "shared_observation_identity": "EIA_US_weekly_petroleum",
+  "shared_observation_count_rule": "Suite and legacy original Energy share EIA petroleum ancestry; overlapping observations count once. BridgeSep4 and parentSep11 periods remain distinct."
+}
