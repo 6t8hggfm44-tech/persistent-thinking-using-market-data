@@ -150,3 +150,23 @@ clearly labeled with its original period and vintage. Reuse verifies analysis an
 delivery but cannot prove repaired live acquisition or a later scheduled run.
 An evidence-gap result stays a gap. No new weight, score or forecast follows
 automatically from intake; apply the unchanged Market and Repo B protocols.
+
+## Targeted Agriculture and Geopolitics recovery (2026-09-23)
+
+Pete authorized one new targeted manual retrieval test for Agriculture and one
+for Geopolitics. The two exact run identities are registered under
+`targeted_gap_recovery_20260923`; envelopes identify
+`invocation_kind: authorized_manual_targeted_recovery` and
+`scheduled_occurrence_consumed: false`. This is an identity exception for the
+existing producers and safe transport, not a change to weekly report identities
+or permission to reopen a completed report. Source access remains governed by
+the separately documented, one-use producer-side exception.
+
+Apply the unchanged three-file pending-packet, integrity, privacy, ancestry,
+correction and complete-report rules. Earlier evidence-gap reports remain
+available as historical records. A successful retrieval closes only the
+measurement actually tested, and does not by itself prove broad domain coverage,
+economic transmission or scheduled execution. Read the new complete packets
+during the next existing regular Market cycle; staging is not canonical receipt
+or acknowledgment. No extra synthesis cycle, forecast or weight change is
+authorized by this registration.
