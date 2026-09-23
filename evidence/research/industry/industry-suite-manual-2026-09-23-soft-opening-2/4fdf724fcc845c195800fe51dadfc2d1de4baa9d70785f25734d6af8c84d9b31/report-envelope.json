@@ -1,0 +1,87 @@
+{
+  "domain": "industry",
+  "run_id": "industry-suite-manual-2026-09-23-soft-opening-2",
+  "report_version": 2,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "8a3813c7e53060883cc8947edb4a6a4cdf1b8d6a",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-03-01T00:00:00Z",
+    "end": "2026-09-01T00:00:00Z"
+  },
+  "actual_coverage": {
+    "requested_analysis_date": "2026-09-23",
+    "geography": "United States",
+    "measured_source_ids": [
+      "fed_g17"
+    ],
+    "numeric_cell_count": 26,
+    "indicator_roster": {
+      "Industrial and manufacturing production": "Measured: G17 six current-vintage months; no sector breadth",
+      "Capacity and utilization": "Partial: rates and historical mean; capacity identity blocked",
+      "Factory orders, shipments, inventories and unfilled orders": "Unmeasured: M3 index only",
+      "Durable goods and nondefense capital goods excluding aircraft": "Unmeasured: no durable/capital-goods cells",
+      "Manufacturing PMIs and components": "Unmeasured: ISM index only",
+      "Semiconductor sales versus physical output": "Unmeasured: no SIA/WSTS release acquired",
+      "Steel output and utilization (dedicated adapter not implemented)": "Unimplemented dedicated adapter",
+      "Cement shipments, output and imports (manual release extraction)": "Unmeasured: USGS release not acquired",
+      "Chemical output and prices (dedicated adapter not implemented)": "Unimplemented dedicated adapter",
+      "Machine tools orders, shipments and backlog (dedicated adapter not implemented)": "Unimplemented dedicated adapter"
+    },
+    "scope": "Bounded manual investigation; no monthly/quarterly observations interpolated into weeks",
+    "acquisition_this_run": "No new publisher source calls. Existing reviewed extracts reused with original dates, ancestry and missingness.",
+    "prior_source_acquisition_date": "2026-09-22",
+    "new_numeric_cells_this_run": 0,
+    "reused_numeric_cells_this_run": 26,
+    "publisher_source_commands_this_run": 0
+  },
+  "limitations": [
+    "Only six current-vintage monthly observations per index, not the desired36-month baseline; no matched year-ago three-month panel.",
+    "Autos exclusion, sector breadth, matched capacity levels, orders/shipments, deflators and disruption controls unavailable.",
+    "M3 and ISM captures supplied navigation only. A September 22 M3 command remains reserved/uncertain after interruption. Its acquisition outcome is unknown and it has no verified usable evidence; it was not replayed in this run.",
+    "SIA/WSTS and USGS cement were not acquired; dedicated steel, chemical and machine-tool adapters are unimplemented.",
+    "All numeric observations are reused from the exact September 22 reviewed package; no source freshness or independent corroboration is established.",
+    "The new manual workflow reruns calculations; original publisher byte identity and missing causal controls remain unverified."
+  ],
+  "supersedes": [
+    "industry:industry-suite-manual-2026-09-23-soft-opening-2:a30e15ea622a3da7929c1f9fb1a188f424ddde37e03fd01ad8a94c4ea8422985"
+  ],
+  "evidence_cutoff_utc": "2026-09-23T01:13:57.679614+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-23T01:18:51.000675+00:00",
+  "available_at_utc": "2026-09-23T01:18:51.000675+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "4fdf724fcc845c195800fe51dadfc2d1de4baa9d70785f25734d6af8c84d9b31",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "df4d9442f51f92a88e493094beda8f32333371a3ee39feb693d5a5e95dcda387",
+  "sources": [
+    {
+      "id": "fed_g17",
+      "url": "https://www.federalreserve.gov/releases/g17/current/default.htm",
+      "upstream_ids": [
+        "FRB-G17",
+        "US-CENSUS-INDUSTRIAL-BENCHMARKS",
+        "US-BLS-PRODUCTION-WORKER-HOURS",
+        "USGS-MINERALS"
+      ],
+      "integrity_status": "Exact tool-representation hash and retained numeric strings verified; original publisher byte identity unavailable; semantic review explicitly recorded."
+    },
+    {
+      "id": "census_m3",
+      "url": "https://www.census.gov/manufacturing/m3/index.html",
+      "upstream_ids": [
+        "US-CENSUS-M3"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    },
+    {
+      "id": "ism_manufacturing",
+      "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/",
+      "upstream_ids": [
+        "ISM-MANUFACTURING-SURVEY"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    }
+  ],
+  "delivery_key": "industry:industry-suite-manual-2026-09-23-soft-opening-2:4fdf724fcc845c195800fe51dadfc2d1de4baa9d70785f25734d6af8c84d9b31"
+}

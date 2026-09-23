@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "delivery_key": "housing:housing-suite-manual-2026-09-23-soft-opening-2:b7b409997162d97fe93b959fcfeb37c0097a5177fbfc3b80a23c882af0cffe11",
+  "domain": "housing",
+  "run_id": "housing-suite-manual-2026-09-23-soft-opening-2",
+  "report_version": 2,
+  "report_kind": "final_hypothesis_test",
+  "received_at_utc": "2026-09-23T01:21:42.919131+00:00",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "f2fe85be216f3842856b6604d5b88b106a526180",
+    "staging_path": "evidence/research/pending/housing/housing-suite-manual-2026-09-23-soft-opening-2/b7b409997162d97fe93b959fcfeb37c0097a5177fbfc3b80a23c882af0cffe11/"
+  },
+  "integrity": {
+    "report_sha256": "b7b409997162d97fe93b959fcfeb37c0097a5177fbfc3b80a23c882af0cffe11",
+    "report_bytes": 6763,
+    "envelope_sha256": "2bae37fb611fb50bb4a27c9adda73b11cdb6b6cf8696575d21fd221249821c21",
+    "envelope_bytes": 4279,
+    "verified": true,
+    "method": "Exact immutable connector UTF-8 reconstruction; Git blob and tree byte sizes independently checked, SHA256 recomputed with pinned verify_pending_bytes.py; final report/registration/privacy reviewed"
+  },
+  "canonical_archive": {
+    "report": "evidence/research/housing/housing-suite-manual-2026-09-23-soft-opening-2/b7b409997162d97fe93b959fcfeb37c0097a5177fbfc3b80a23c882af0cffe11/Report.md",
+    "envelope": "evidence/research/housing/housing-suite-manual-2026-09-23-soft-opening-2/b7b409997162d97fe93b959fcfeb37c0097a5177fbfc3b80a23c882af0cffe11/report-envelope.json",
+    "intake": "evidence/research/housing/housing-suite-manual-2026-09-23-soft-opening-2/b7b409997162d97fe93b959fcfeb37c0097a5177fbfc3b80a23c882af0cffe11/intake.json"
+  },
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false,
+  "supersedes": [
+    "housing:housing-suite-manual-2026-09-23-soft-opening-2:59e1096ced09dd7f3dd35ca77d7d540c2002211852e8a078de25367cd5e95050"
+  ],
+  "notes": [
+    "Canonical receipt preserves claim uncertainty and original source periods; it does not prove source truth or fresh acquisition.",
+    "Original publisher bodies and private package contents are not made public; hashes are identity references, not availability proof.",
+    "Reused observations across reports receive no new independent evidence weight.",
+    "Durable archive and acknowledgment are effective through this canonical commit; exact readback verification is recorded separately."
+  ]
+}
