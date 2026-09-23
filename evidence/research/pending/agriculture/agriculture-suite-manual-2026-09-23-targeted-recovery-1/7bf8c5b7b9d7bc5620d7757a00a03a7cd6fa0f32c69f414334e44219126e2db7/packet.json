@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "delivery_key": "agriculture:agriculture-suite-manual-2026-09-23-targeted-recovery-1:7bf8c5b7b9d7bc5620d7757a00a03a7cd6fa0f32c69f414334e44219126e2db7",
+  "domain": "agriculture",
+  "run_id": "agriculture-suite-manual-2026-09-23-targeted-recovery-1",
+  "report_sha256": "7bf8c5b7b9d7bc5620d7757a00a03a7cd6fa0f32c69f414334e44219126e2db7",
+  "report_bytes": 6529,
+  "envelope_sha256": "9461e53003f4d433fda5441a447a0ea91e969605879c659a80edf9b00ae240a0",
+  "envelope_bytes": 3648,
+  "producer_repository": "6t8hggfm44-tech/-Agriculture-food-",
+  "producer_commit": "e7b98165fa362c323c7ee4b7c995209cd12c7671",
+  "producer_report_path": "reports/agriculture-suite-manual-2026-09-23-targeted-recovery-1/7bf8c5b7b9d7bc5620d7757a00a03a7cd6fa0f32c69f414334e44219126e2db7/Report.md",
+  "producer_envelope_path": "reports/agriculture-suite-manual-2026-09-23-targeted-recovery-1/7bf8c5b7b9d7bc5620d7757a00a03a7cd6fa0f32c69f414334e44219126e2db7/report-envelope.json",
+  "prepared_at_utc": "2026-09-23T16:13:58.251552+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Report and envelope are exact verified private UTF-8 bytes; no raw publisher archives or private operational checkpoint is included.",
+    "Reviewed tool representations support limited access findings; their hashes do not establish original publisher-body identity or unmeasured upstream request totals.",
+    "Staging verification does not establish Market receipt, acknowledgment or canonical persistence."
+  ],
+  "invocation_kind": "authorized_manual_targeted_recovery",
+  "scheduled_occurrence_consumed": false,
+  "source_ancestry": [
+    {
+      "id": "usda_wasde",
+      "integrity_status": "Exact limited heading selections matched the actual returned tool representation. Publisher body identity unverified; no report attachment/table bytes retrieved.",
+      "upstream_ids": [
+        "usda-waob",
+        "usda-nass",
+        "usda-fas",
+        "foreign-agriculture-statistics"
+      ],
+      "url": "https://www.usda.gov/about-usda/general-information/staff-offices/office-chief-economist/commodity-markets/wasde-report"
+    }
+  ]
+}
