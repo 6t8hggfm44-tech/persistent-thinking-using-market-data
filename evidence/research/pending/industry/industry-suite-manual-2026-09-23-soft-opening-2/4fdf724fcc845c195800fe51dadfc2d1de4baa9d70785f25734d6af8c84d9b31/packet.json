@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "domain": "industry",
+  "run_id": "industry-suite-manual-2026-09-23-soft-opening-2",
+  "delivery_key": "industry:industry-suite-manual-2026-09-23-soft-opening-2:4fdf724fcc845c195800fe51dadfc2d1de4baa9d70785f25734d6af8c84d9b31",
+  "report_sha256": "4fdf724fcc845c195800fe51dadfc2d1de4baa9d70785f25734d6af8c84d9b31",
+  "report_bytes": 7807,
+  "envelope_sha256": "2b40d7f4d0e437d30e77d6c09654ba09694ad989617a1bda3fad4cc9f00624dd",
+  "envelope_bytes": 4883,
+  "producer_repository": "6t8hggfm44-tech/-Industrial-production-",
+  "producer_commit": "f591d241c92006707507adc752fe52d60a53ec94",
+  "producer_report_path": "reports/industry-suite-manual-2026-09-23-soft-opening-2/4fdf724fcc845c195800fe51dadfc2d1de4baa9d70785f25734d6af8c84d9b31/Report.md",
+  "prepared_at_utc": "2026-09-23T01:19:53.497798+00:00",
+  "source_ancestry": [
+    {
+      "id": "fed_g17",
+      "url": "https://www.federalreserve.gov/releases/g17/current/default.htm",
+      "upstream_ids": [
+        "FRB-G17",
+        "US-CENSUS-INDUSTRIAL-BENCHMARKS",
+        "US-BLS-PRODUCTION-WORKER-HOURS",
+        "USGS-MINERALS"
+      ],
+      "integrity_status": "Exact tool-representation hash and retained numeric strings verified; original publisher byte identity unavailable; semantic review explicitly recorded."
+    },
+    {
+      "id": "census_m3",
+      "url": "https://www.census.gov/manufacturing/m3/index.html",
+      "upstream_ids": [
+        "US-CENSUS-M3"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    },
+    {
+      "id": "ism_manufacturing",
+      "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/",
+      "upstream_ids": [
+        "ISM-MANUFACTURING-SURVEY"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    }
+  ],
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact frozen UTF-8 report and envelope are supplied; private reviewed evidence package is referenced, not published.",
+    "All numeric inputs were reused from September 22 reviewed extracts; original publisher-body identity and freshness were not reverified.",
+    "Publisher sources were not called during this run. Hidden earlier upstream request/byte totals remain unexposed.",
+    "Preparation or staging does not establish Market receipt, acknowledgment or canonical persistence."
+  ],
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false
+}
