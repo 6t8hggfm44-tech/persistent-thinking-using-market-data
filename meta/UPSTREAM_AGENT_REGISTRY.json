@@ -408,5 +408,36 @@
     "recurring_run_id_patterns": "unchanged",
     "source_acquisition_authority": "Separate producer-side explicit manual authority; this receiver exception grants no acquisition permission",
     "intake_contract": "meta/RESEARCH_REPORT_INTAKE.md#one-off-manual-dress-rehearsal-2026-09-22"
+  },
+  "manual_soft_opening_2_20260923": {
+    "authorization": "Explicit user authorization for a second manual end-to-end rehearsal",
+    "authorized_date_utc": "2026-09-23",
+    "scope": "One substantive report per each of fifteen existing producers, followed by one manual Market synthesis and companion validation; no new schedule",
+    "suite_run_ids": {
+      "credit": "credit-suite-manual-2026-09-23-soft-opening-2",
+      "labor": "labor-suite-manual-2026-09-23-soft-opening-2",
+      "consumer": "consumer-suite-manual-2026-09-23-soft-opening-2",
+      "housing": "housing-suite-manual-2026-09-23-soft-opening-2",
+      "industry": "industry-suite-manual-2026-09-23-soft-opening-2",
+      "corporate": "corporate-suite-manual-2026-09-23-soft-opening-2",
+      "fiscal": "fiscal-suite-manual-2026-09-23-soft-opening-2",
+      "trade": "trade-suite-manual-2026-09-23-soft-opening-2",
+      "freight": "freight-suite-manual-2026-09-23-soft-opening-2",
+      "agriculture": "agriculture-suite-manual-2026-09-23-soft-opening-2",
+      "geopolitics": "geopolitics-suite-manual-2026-09-23-soft-opening-2",
+      "energy": "energy-suite-manual-2026-09-23-soft-opening-2-admission-correction-1"
+    },
+    "legacy_run_ids": {
+      "gev": "gev-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1",
+      "weather": "weather-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1",
+      "energy": "energy-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1"
+    },
+    "scheduled_occurrence_consumed": false,
+    "supersedes_scheduled_reports": false,
+    "market_cycle": "explicitly_authorized_one_off_manual_synthesis",
+    "recurring_run_id_patterns": "unchanged",
+    "source_acquisition_authority": "Separate producer-side scoped manual authority; unchanged source cooldowns, uncertainty and budget controls",
+    "intake_contract": "meta/RESEARCH_REPORT_INTAKE.md#second-manual-dress-rehearsal-2026-09-23",
+    "correction_attempt_scope": "Four energy/legacy admission-correction identities preserve invalid operational attempts; one substantive investigation per producer, no reset source attempts"
   }
 }

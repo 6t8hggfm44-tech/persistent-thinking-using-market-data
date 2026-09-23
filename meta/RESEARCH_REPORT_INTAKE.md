@@ -128,3 +128,25 @@ normal report-content/registration/privacy/supersession review, canonical-key
 deduplication, actual receiver receipt timestamp, atomic canonical/index commit
 and exact readback described above. Existing accepted keys keep their original
 receipt; this method cannot establish an earlier receipt or raw-evidence access.
+
+## Second manual dress rehearsal (2026-09-23)
+
+Pete explicitly requested a second end-to-end manual rehearsal. The exact fifteen
+new producer identities are registered under `manual_soft_opening_2_20260923`.
+This current request authorizes one manual Market receipt, synthesis and Repo B
+validation after the independently frozen reports. It creates no scheduled task,
+consumes no weekly occurrence and does not rewrite the September 22 authorization
+or its next-regular-cycle-only restriction. Ordinary recurring intake is unchanged.
+
+Use the existing atomic three-file transport, full immutable-byte verification,
+privacy review, ancestry deduplication, actual complete receipt timestamps,
+canonical persistence and exact readback. Preserve GEV's legacy key/archive.
+Energy/legacy correction-attempt suffixes identify a prospective correction to
+an invalid operational admission attempt; they are not additional scientific
+investigations or evidence votes. Producer operational details stay private.
+
+This rehearsal may use cooled-source evidence already reviewed and retained,
+clearly labeled with its original period and vintage. Reuse verifies analysis and
+delivery but cannot prove repaired live acquisition or a later scheduled run.
+An evidence-gap result stays a gap. No new weight, score or forecast follows
+automatically from intake; apply the unchanged Market and Repo B protocols.
