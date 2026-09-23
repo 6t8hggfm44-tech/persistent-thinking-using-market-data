@@ -1,0 +1,89 @@
+{
+  "domain": "credit",
+  "run_id": "credit-suite-manual-2026-09-23-soft-opening-2",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "670fec69f8dfa7cf52d1828584d0c0966730549e",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2024-04-01T00:00:00Z",
+    "end": "2026-07-01T00:00:00Z"
+  },
+  "actual_coverage": {
+    "measured": "24 SA all-bank quarterly delinquency-rate cells; 18 changes over3windows",
+    "unmeasured": [
+      "Corporate credit spreads with matched rate, maturity and credit definitions",
+      "Bank lending standards and reported loan demand",
+      "Commercial, consumer and real-estate loan growth",
+      "Business and household bankruptcies",
+      "Commercial-paper rates and outstanding",
+      "Repo funding rates and volumes",
+      "Treasury yield-curve slope and policy-rate context",
+      "Regional-bank deposits, funding and asset-quality exposures"
+    ],
+    "chargeoffs": "not acquired",
+    "geography": "United States",
+    "acquisition_this_run": "No new publisher source calls. Existing reviewed extracts reused with original dates, ancestry and missingness."
+  },
+  "limitations": [
+    "Quarterly current-vintage ratios, no current-week measurement.",
+    "Original publisher bytes and first-release revisions unavailable.",
+    "No matched loan-dollar denominator or fixed-bank/borrower-mix causal control.",
+    "All numeric observations are reused from the exact September 22 reviewed package; no source freshness or independent corroboration is established.",
+    "The new manual workflow reruns calculations; original publisher byte identity and missing causal controls remain unverified."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-23T01:06:00.241630+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-23T01:06:00.267798+00:00",
+  "available_at_utc": "2026-09-23T01:06:00.267798+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "de63b30a50cd96a30d0b9035ac963a12aac679a67683641547182a141e8cc502",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "18873b73d4c5a8f2f4bc20ff7ecfac35c1ed6cc457ac056d140ea9ef47dae6ac",
+  "sources": [
+    {
+      "id": "fed_h8",
+      "url": "https://www.federalreserve.gov/releases/h8/current/",
+      "upstream_ids": [
+        "fed-h8-bank-reporting",
+        "ffiec-call-reports"
+      ],
+      "integrity_status": "No economic input bytes available"
+    },
+    {
+      "id": "fed_sloos",
+      "url": "https://www.federalreserve.gov/data/sloos.htm",
+      "upstream_ids": [
+        "fed-sloos-survey"
+      ],
+      "integrity_status": "No economic input bytes available"
+    },
+    {
+      "id": "fed_delinquency",
+      "url": "https://www.federalreserve.gov/releases/chargeoff/delallsa.htm",
+      "upstream_ids": [
+        "ffiec-call-reports"
+      ],
+      "integrity_status": "Exact retained numeric cells checked against transient tool representation; source_sha256 null; original body not verified"
+    },
+    {
+      "id": "fed_cp",
+      "url": "https://www.federalreserve.gov/releases/cp/rates.htm",
+      "upstream_ids": [
+        "fed-cp-dtcc"
+      ],
+      "integrity_status": "No economic input bytes available"
+    },
+    {
+      "id": "fed_h15",
+      "url": "https://www.federalreserve.gov/releases/h15/",
+      "upstream_ids": [
+        "fed-h15-market-rate-inputs",
+        "fed-cp-dtcc"
+      ],
+      "integrity_status": "No economic input bytes available"
+    }
+  ],
+  "delivery_key": "credit:credit-suite-manual-2026-09-23-soft-opening-2:de63b30a50cd96a30d0b9035ac963a12aac679a67683641547182a141e8cc502"
+}

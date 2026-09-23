@@ -1,0 +1,80 @@
+{
+  "domain": "labor",
+  "run_id": "labor-suite-manual-2026-09-23-soft-opening-2",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "189084c76579a4af9c286f52f9abf77666c35772",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2025-04-01T00:00:00Z",
+    "end": "2026-09-13T00:00:00Z"
+  },
+  "actual_coverage": {
+    "reviewed_numeric_cells": 39,
+    "executed_test_families": 4,
+    "claims_weeks": 5,
+    "payroll_months": 3,
+    "jolts_months": 2,
+    "eci_horizons": "quarter/annual rates separately",
+    "unmeasured": [
+      "online postings",
+      "company layoff announcements",
+      "hiring difficulty",
+      "temporary help",
+      "three-month sector-hours breadth"
+    ],
+    "acquisition_this_run": "No new publisher source calls. Existing reviewed extracts reused with original dates, ancestry and missingness."
+  },
+  "limitations": [
+    "Original publisher bytes and upstream HTTP/token/account charges are unexposed.",
+    "True periods differ: July JOLTS, August payroll, June ECI and September claims.",
+    "Current-vintage descriptive comparisons; missing sampling errors, detailed breadth and causal controls.",
+    "All numeric observations are reused from the exact September 22 reviewed package; no source freshness or independent corroboration is established.",
+    "The new manual workflow reruns calculations; original publisher byte identity and missing causal controls remain unverified."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-23T01:08:11.778683+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-23T01:08:11.808823+00:00",
+  "available_at_utc": "2026-09-23T01:08:11.808823+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "9e04425ed42ce0d8405bdcd7c2e52853f346db049d02293a465c8f7833474de6",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "a438eb34ddf2704352df1a3f4f5bc80b4d178ddc029cec97d5c93fe5c71d90d7",
+  "sources": [
+    {
+      "id": "dol_claims",
+      "url": "https://www.dol.gov/ui/data.pdf",
+      "upstream_ids": [
+        "dol:eta:state-unemployment-insurance-claims"
+      ],
+      "integrity_status": "Exact selected numeric cells checked; original publisher body hash unavailable"
+    },
+    {
+      "id": "bls_employment",
+      "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+      "upstream_ids": [
+        "bls:current-employment-statistics",
+        "bls:current-population-survey"
+      ],
+      "integrity_status": "Exact selected numeric cells checked; original publisher body hash unavailable"
+    },
+    {
+      "id": "bls_jolts",
+      "url": "https://www.bls.gov/news.release/jolts.nr0.htm",
+      "upstream_ids": [
+        "bls:job-openings-and-labor-turnover-survey"
+      ],
+      "integrity_status": "Exact selected numeric cells checked; original publisher body hash unavailable"
+    },
+    {
+      "id": "bls_eci",
+      "url": "https://www.bls.gov/news.release/eci.nr0.htm",
+      "upstream_ids": [
+        "bls:national-compensation-survey:employment-cost-index"
+      ],
+      "integrity_status": "Exact selected numeric cells checked; original publisher body hash unavailable"
+    }
+  ],
+  "delivery_key": "labor:labor-suite-manual-2026-09-23-soft-opening-2:9e04425ed42ce0d8405bdcd7c2e52853f346db049d02293a465c8f7833474de6"
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "domain": "corporate",
+  "run_id": "corporate-suite-manual-2026-09-23-soft-opening-2",
+  "delivery_key": "corporate:corporate-suite-manual-2026-09-23-soft-opening-2:b108f820b625962aba37ba85866eadd43f19f900ff46c7ed8ba83476752dc751",
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false,
+  "report_sha256": "b108f820b625962aba37ba85866eadd43f19f900ff46c7ed8ba83476752dc751",
+  "report_bytes": 8368,
+  "envelope_sha256": "c6cbf25bdf91b4815930a3b35ca7182f5479f06f023aa6dece1bd8a3860ebf93",
+  "envelope_bytes": 5413,
+  "producer_repository": "6t8hggfm44-tech/-Corporate-behavior-",
+  "producer_commit": "428a51fbc4019d73388955d4daa7fcbf7f4a31aa",
+  "producer_report_path": "reports/corporate-suite-manual-2026-09-23-soft-opening-2/b108f820b625962aba37ba85866eadd43f19f900ff46c7ed8ba83476752dc751/Report.md",
+  "prepared_at_utc": "2026-09-23T01:09:42.545499+00:00",
+  "source_ancestry": [
+    {
+      "id": "bea_corporate_profits",
+      "url": "https://www.bea.gov/data/income-saving/corporate-profits",
+      "upstream_ids": [
+        "US-BEA-NIPA-CORPORATE-PROFITS",
+        "US-IRS-CORPORATE-TAX",
+        "US-CENSUS-QFR"
+      ],
+      "integrity_status": "Exact tool-representation hash and retained numeric strings verified; original publisher byte identity unavailable; semantic review explicitly recorded."
+    },
+    {
+      "id": "bls_jolts",
+      "url": "https://www.bls.gov/news.release/jolts.nr0.htm",
+      "upstream_ids": [
+        "bls:job-openings-and-labor-turnover-survey"
+      ],
+      "integrity_status": "Exact tool-representation hash and retained numeric strings verified; original publisher byte identity unavailable; semantic review explicitly recorded."
+    },
+    {
+      "id": "microsoft_fy2026q4",
+      "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast",
+      "upstream_ids": [
+        "ISSUER-MSFT-FY2026Q4"
+      ],
+      "integrity_status": "Exact tool-representation hash and retained numeric strings verified; original publisher byte identity unavailable; semantic review explicitly recorded."
+    },
+    {
+      "id": "census_qfr",
+      "url": "https://www.census.gov/econ/qfr/index.html",
+      "upstream_ids": [
+        "US-CENSUS-QFR"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    },
+    {
+      "id": "ftc_hsr",
+      "url": "https://www.ftc.gov/policy/reports/annual-competition-reports",
+      "upstream_ids": [
+        "US-FTC-DOJ-HSR-FILINGS"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    }
+  ],
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Prepared for pending staging and the next existing regular Market cycle; no direct Market task-message capability. Preparation/staging is not Market receipt or canonical intake.",
+    "Evidence is previously reviewed limited extracts with original retrieval dates; no new provider observation or original publisher byte reread in this run."
+  ]
+}

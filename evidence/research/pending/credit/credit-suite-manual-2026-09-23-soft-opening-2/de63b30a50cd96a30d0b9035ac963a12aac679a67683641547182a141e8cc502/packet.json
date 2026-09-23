@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "domain": "credit",
+  "run_id": "credit-suite-manual-2026-09-23-soft-opening-2",
+  "delivery_key": "credit:credit-suite-manual-2026-09-23-soft-opening-2:de63b30a50cd96a30d0b9035ac963a12aac679a67683641547182a141e8cc502",
+  "report_sha256": "de63b30a50cd96a30d0b9035ac963a12aac679a67683641547182a141e8cc502",
+  "report_bytes": 6223,
+  "envelope_sha256": "bc99fd16956d371c2d7098801b38d0a43bc591fdc107a3408291af7d50c19326",
+  "envelope_bytes": 3676,
+  "producer_repository": "6t8hggfm44-tech/-Credit-financial-stress-",
+  "producer_commit": "4fab8fefac886af5b97f2558dbe4670303b38f9e",
+  "producer_report_path": "reports/credit-suite-manual-2026-09-23-soft-opening-2/de63b30a50cd96a30d0b9035ac963a12aac679a67683641547182a141e8cc502/Report.md",
+  "prepared_at_utc": "2026-09-23T01:07:01.458480+00:00",
+  "source_ancestry": [
+    {
+      "id": "fed_h8",
+      "url": "https://www.federalreserve.gov/releases/h8/current/",
+      "upstream_ids": [
+        "fed-h8-bank-reporting",
+        "ffiec-call-reports"
+      ],
+      "integrity_status": "No economic input bytes available"
+    },
+    {
+      "id": "fed_sloos",
+      "url": "https://www.federalreserve.gov/data/sloos.htm",
+      "upstream_ids": [
+        "fed-sloos-survey"
+      ],
+      "integrity_status": "No economic input bytes available"
+    },
+    {
+      "id": "fed_delinquency",
+      "url": "https://www.federalreserve.gov/releases/chargeoff/delallsa.htm",
+      "upstream_ids": [
+        "ffiec-call-reports"
+      ],
+      "integrity_status": "Exact retained numeric cells checked against transient tool representation; source_sha256 null; original body not verified"
+    },
+    {
+      "id": "fed_cp",
+      "url": "https://www.federalreserve.gov/releases/cp/rates.htm",
+      "upstream_ids": [
+        "fed-cp-dtcc"
+      ],
+      "integrity_status": "No economic input bytes available"
+    },
+    {
+      "id": "fed_h15",
+      "url": "https://www.federalreserve.gov/releases/h15/",
+      "upstream_ids": [
+        "fed-h15-market-rate-inputs",
+        "fed-cp-dtcc"
+      ],
+      "integrity_status": "No economic input bytes available"
+    }
+  ],
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact frozen UTF-8 report and envelope are supplied; private reviewed evidence package is referenced, not published.",
+    "All numeric inputs were reused from September 22 reviewed extracts; original publisher-body identity and freshness were not reverified.",
+    "Publisher sources were not called during this run. Hidden earlier upstream request/byte totals remain unexposed.",
+    "Preparation or staging does not establish Market receipt, acknowledgment or canonical persistence."
+  ]
+}

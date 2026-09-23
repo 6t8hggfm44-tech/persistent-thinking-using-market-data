@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "domain": "labor",
+  "run_id": "labor-suite-manual-2026-09-23-soft-opening-2",
+  "delivery_key": "labor:labor-suite-manual-2026-09-23-soft-opening-2:9e04425ed42ce0d8405bdcd7c2e52853f346db049d02293a465c8f7833474de6",
+  "report_sha256": "9e04425ed42ce0d8405bdcd7c2e52853f346db049d02293a465c8f7833474de6",
+  "report_bytes": 5775,
+  "envelope_sha256": "c68a816dcccd0aaeb8b8c44903ab5440bcb001de1a80630a1b22b6a9e08ca6a9",
+  "envelope_bytes": 3374,
+  "producer_repository": "6t8hggfm44-tech/-Labor-market-agent",
+  "producer_commit": "4d2754b4d215a50bef1027ec290019f6da2df3b7",
+  "producer_report_path": "reports/labor-suite-manual-2026-09-23-soft-opening-2/9e04425ed42ce0d8405bdcd7c2e52853f346db049d02293a465c8f7833474de6/Report.md",
+  "prepared_at_utc": "2026-09-23T01:08:49.193198+00:00",
+  "source_ancestry": [
+    {
+      "id": "dol_claims",
+      "url": "https://www.dol.gov/ui/data.pdf",
+      "upstream_ids": [
+        "dol:eta:state-unemployment-insurance-claims"
+      ],
+      "integrity_status": "Exact selected numeric cells checked; original publisher body hash unavailable"
+    },
+    {
+      "id": "bls_employment",
+      "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+      "upstream_ids": [
+        "bls:current-employment-statistics",
+        "bls:current-population-survey"
+      ],
+      "integrity_status": "Exact selected numeric cells checked; original publisher body hash unavailable"
+    },
+    {
+      "id": "bls_jolts",
+      "url": "https://www.bls.gov/news.release/jolts.nr0.htm",
+      "upstream_ids": [
+        "bls:job-openings-and-labor-turnover-survey"
+      ],
+      "integrity_status": "Exact selected numeric cells checked; original publisher body hash unavailable"
+    },
+    {
+      "id": "bls_eci",
+      "url": "https://www.bls.gov/news.release/eci.nr0.htm",
+      "upstream_ids": [
+        "bls:national-compensation-survey:employment-cost-index"
+      ],
+      "integrity_status": "Exact selected numeric cells checked; original publisher body hash unavailable"
+    }
+  ],
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact frozen UTF-8 report and envelope are supplied; private reviewed evidence package is referenced, not published.",
+    "All numeric inputs were reused from September 22 reviewed extracts; original publisher-body identity and freshness were not reverified.",
+    "Publisher sources were not called during this run. Hidden earlier upstream request/byte totals remain unexposed.",
+    "Preparation or staging does not establish Market receipt, acknowledgment or canonical persistence."
+  ]
+}
