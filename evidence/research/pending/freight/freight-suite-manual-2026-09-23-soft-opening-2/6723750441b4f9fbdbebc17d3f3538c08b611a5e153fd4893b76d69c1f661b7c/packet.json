@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "domain": "freight",
+  "run_id": "freight-suite-manual-2026-09-23-soft-opening-2",
+  "delivery_key": "freight:freight-suite-manual-2026-09-23-soft-opening-2:6723750441b4f9fbdbebc17d3f3538c08b611a5e153fd4893b76d69c1f661b7c",
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false,
+  "report_sha256": "6723750441b4f9fbdbebc17d3f3538c08b611a5e153fd4893b76d69c1f661b7c",
+  "report_bytes": 7195,
+  "envelope_sha256": "20c25a59156d96f5e6b8e97b275bcac159c2537adbb6d69a766d68cf8e86338e",
+  "envelope_bytes": 4135,
+  "producer_repository": "6t8hggfm44-tech/-Freight-supply-chain",
+  "producer_commit": "fc312237448321dc19f286c546739faed9f6c1ec",
+  "producer_report_path": "reports/freight-suite-manual-2026-09-23-soft-opening-2/6723750441b4f9fbdbebc17d3f3538c08b611a5e153fd4893b76d69c1f661b7c/Report.md",
+  "prepared_at_utc": "2026-09-23T01:17:23.814373+00:00",
+  "source_ancestry": [
+    {
+      "id": "port_la_containers",
+      "url": "https://portoflosangeles.org/business/statistics/container-statistics",
+      "upstream_ids": [
+        "port-of-los-angeles:terminal-container-reports"
+      ],
+      "integrity_status": "Retained selections exact-matched to actual tool representation SHA256 adf97cabdfec1ebc9ad5cc50561e8bce1e713efe4c1fd2176c1e6edcd88b65e9; original publisher bytes not verified."
+    },
+    {
+      "id": "bts_freight_tsi",
+      "url": "https://www.bts.gov/tags/transportation-services-index",
+      "upstream_ids": [
+        "bts:transportation-services-index",
+        "aar:railroad-traffic",
+        "ata:truck-tonnage",
+        "bts:air-carrier-traffic",
+        "eia:pipeline-movements",
+        "usace:waterborne-commerce"
+      ],
+      "integrity_status": "Retained selections exact-matched to actual tool representation SHA256 d76cc20d14fa09936936b3be777c035d4de11bf38070aed9c4c0bd290e49ad64; original publisher bytes not verified."
+    },
+    {
+      "id": "aar_public_rail",
+      "url": "https://www.aar.org/data-center/",
+      "upstream_ids": [
+        "aar:railroad-traffic",
+        "aar:member-railroad-reports"
+      ],
+      "integrity_status": "Retained selections exact-matched to actual tool representation SHA256 e9d0b9b18d16e9d97f74dd3343b1aed1a12c2efafe8e424f62852d77790045d2; original publisher bytes not verified."
+    },
+    {
+      "id": "usda_grain_transport",
+      "url": "https://www.ams.usda.gov/services/transportation-analysis/gtr",
+      "upstream_ids": [
+        "usda:ams:grain-transportation-report",
+        "aar:railroad-traffic",
+        "usace:waterborne-commerce",
+        "eia:diesel-prices"
+      ],
+      "integrity_status": "Retained selections exact-matched to actual tool representation SHA256 29f17107dcadaa5629b3457e9096420eda373335e78d2d9fbc00f6d5f7cb0092; original publisher bytes not verified."
+    }
+  ],
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Prepared for pending staging and the next existing regular Market cycle; no direct Market task-message capability. Preparation/staging is not Market receipt or canonical intake.",
+    "Evidence is previously reviewed limited extracts with original retrieval dates; no new provider observation or original publisher byte reread in this run."
+  ],
+  "shared_observation_identity": "PORT-LA-CONTAINERS-2026-08-VS-2025-08",
+  "shared_observation_count_rule": "Trade and freight reuse the same underlying Port of Los Angeles monthly observation; count once."
+}

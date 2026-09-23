@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "domain": "trade",
+  "run_id": "trade-suite-manual-2026-09-23-soft-opening-2",
+  "delivery_key": "trade:trade-suite-manual-2026-09-23-soft-opening-2:f9cf0a9948c41d2e7bfed49ff2700be8b7d356111540f5dddcfde7891aa4ac0d",
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false,
+  "report_sha256": "f9cf0a9948c41d2e7bfed49ff2700be8b7d356111540f5dddcfde7891aa4ac0d",
+  "report_bytes": 8465,
+  "envelope_sha256": "40f8720dd059387f02f6a4f82efa7132cd79f2ff0e6af5b3843a8bd2e145d493",
+  "envelope_bytes": 5468,
+  "producer_repository": "6t8hggfm44-tech/-Global-trade-China",
+  "producer_commit": "26fa6a3559716e0450e6f87934ddf4de20abc9d7",
+  "producer_report_path": "reports/trade-suite-manual-2026-09-23-soft-opening-2/f9cf0a9948c41d2e7bfed49ff2700be8b7d356111540f5dddcfde7891aa4ac0d/Report.md",
+  "prepared_at_utc": "2026-09-23T01:14:16.641864+00:00",
+  "source_ancestry": [
+    {
+      "id": "port_la_containers",
+      "url": "https://portoflosangeles.org/business/statistics/container-statistics",
+      "upstream_ids": [
+        "port-los-angeles-terminal-counts"
+      ],
+      "integrity_status": "Exact tool-representation hash and retained numeric strings verified; original publisher byte identity unavailable; semantic review explicitly recorded."
+    },
+    {
+      "id": "china_nbs_releases",
+      "url": "https://www.stats.gov.cn/english/PressRelease/",
+      "upstream_ids": [
+        "china-nbs-enterprise-surveys",
+        "china-nbs-energy-statistics",
+        "china-customs"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    },
+    {
+      "id": "korea_customs_releases",
+      "url": "https://www.customs.go.kr/kcs/na/ntt/selectNttList.do?mi=2891&bbsId=1362",
+      "upstream_ids": [
+        "korea-customs-declarations"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    },
+    {
+      "id": "taiwan_mof_trade",
+      "url": "https://www.mof.gov.tw/Eng/multiplehtml/259",
+      "upstream_ids": [
+        "taiwan-customs-declarations"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    },
+    {
+      "id": "eurostat_industry",
+      "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Industrial_production_(volume)_index_overview",
+      "upstream_ids": [
+        "eurostat-national-statistical-institutes"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    }
+  ],
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Prepared for pending staging and the next existing regular Market cycle; no direct Market task-message capability. Preparation/staging is not Market receipt or canonical intake.",
+    "Evidence is previously reviewed limited extracts with original retrieval dates; no new provider observation or original publisher byte reread in this run."
+  ],
+  "shared_observation_identity": "PORT-LA-CONTAINERS-2026-08-VS-2025-08",
+  "shared_observation_count_rule": "Trade and freight reuse the same underlying Port of Los Angeles monthly observation; count once."
+}
