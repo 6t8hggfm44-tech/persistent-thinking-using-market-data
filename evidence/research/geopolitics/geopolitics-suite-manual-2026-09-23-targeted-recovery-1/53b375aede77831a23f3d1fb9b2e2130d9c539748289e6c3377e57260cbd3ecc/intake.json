@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "delivery_key": "geopolitics:geopolitics-suite-manual-2026-09-23-targeted-recovery-1:53b375aede77831a23f3d1fb9b2e2130d9c539748289e6c3377e57260cbd3ecc",
+  "domain": "geopolitics",
+  "run_id": "geopolitics-suite-manual-2026-09-23-targeted-recovery-1",
+  "report_version": 2,
+  "report_kind": "final_evidence_gap",
+  "received_at_utc": "2026-09-23T21:31:53.833709+00:00",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "bf079fcde59cb4d252cb1acbea440f5d0fd0ee18",
+    "staging_path": "evidence/research/pending/geopolitics/geopolitics-suite-manual-2026-09-23-targeted-recovery-1/53b375aede77831a23f3d1fb9b2e2130d9c539748289e6c3377e57260cbd3ecc/"
+  },
+  "integrity": {
+    "report_sha256": "53b375aede77831a23f3d1fb9b2e2130d9c539748289e6c3377e57260cbd3ecc",
+    "report_bytes": 6868,
+    "envelope_sha256": "102067b39e78cb941d1ad199b9f061387941ea79968f37a5b74ed0cba61eee62",
+    "envelope_bytes": 3400,
+    "verified": true,
+    "method": "Exact connector UTF-8 reconstruction from the immutable staged packet; receiver recomputed SHA-256 and byte lengths and matched packet fields before canonicalization."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/geopolitics/geopolitics-suite-manual-2026-09-23-targeted-recovery-1/53b375aede77831a23f3d1fb9b2e2130d9c539748289e6c3377e57260cbd3ecc/Report.md",
+    "envelope": "evidence/research/geopolitics/geopolitics-suite-manual-2026-09-23-targeted-recovery-1/53b375aede77831a23f3d1fb9b2e2130d9c539748289e6c3377e57260cbd3ecc/report-envelope.json",
+    "intake": "evidence/research/geopolitics/geopolitics-suite-manual-2026-09-23-targeted-recovery-1/53b375aede77831a23f3d1fb9b2e2130d9c539748289e6c3377e57260cbd3ecc/intake.json"
+  },
+  "invocation_kind": "authorized_manual_targeted_recovery",
+  "scheduled_occurrence_consumed": false,
+  "supersedes": [],
+  "notes": [
+    "Canonical receipt preserves the report as an evidence-gap record; it contributes no verified current hard-power event or economic measurement.",
+    "HTTP 403 is an access result, not evidence of geopolitical calm, conflict, or economic transmission.",
+    "Shared UN/member-state/IMO ancestry must not be counted as independent confirmation if later recovered."
+  ]
+}
