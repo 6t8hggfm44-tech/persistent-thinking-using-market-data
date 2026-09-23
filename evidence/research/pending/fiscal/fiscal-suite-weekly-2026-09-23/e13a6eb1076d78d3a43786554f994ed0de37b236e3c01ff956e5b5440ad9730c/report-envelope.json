@@ -1,0 +1,89 @@
+{
+  "domain": "fiscal",
+  "run_id": "fiscal-suite-weekly-2026-09-23",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "285b8fee474723aa5cc6a6f1dbf8e6dc8d63c0aa",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-09-16T16:00:00Z",
+    "end": "2026-09-23T16:00:00Z"
+  },
+  "actual_coverage": {
+    "requested_week": "2026-09-16T16:00:00Z through 2026-09-23T16:00:00Z",
+    "geography": "United States",
+    "retained_cells": 17,
+    "fresh_numeric_cells": 0,
+    "source_observation_periods": [
+      "2026-07",
+      "2026-06",
+      "2025-07",
+      "2026-01/2026-07",
+      "2025-01/2025-07"
+    ],
+    "units": "Nominal USD million SAAR for monthly levels; nominal USD million NSA cumulative for Jan-Jul; percent or percentage points explicitly labeled.",
+    "publication_vintage": "Census September1,2026 releaseCB26-140; July2026 preliminary, June2026 revised, earlier comparators current vintage.",
+    "source_body_integrity": "Verified reviewed extract; original publisher body and historical release vintages not verified.",
+    "completed_test_records": 7,
+    "blocked_recipe_tests": 5,
+    "new_provider_commands": 0,
+    "coverage_scope": "Construction ownership and sampling-interval arithmetic only; no current-week fiscal measurement or fiscal-policy causal test."
+  },
+  "limitations": [
+    "All 17 numeric cells are retained evidence; no fresh source observation in this run.",
+    "Latest monthly observation is July2026, outside the requested September week; no interpolation.",
+    "Original publisher bytes and complete historical tool body unavailable; only reviewed limited extract verified.",
+    "All four enabled sources remain under cooldown; USAspending remains disabled.",
+    "No real/federal fiscal impulse, full federal budget, procurement-delivery, regulatory causality or state/local stress inference.",
+    "Published monthly 90% interval includes zero; same-release arithmetic and parent review are not independent source confirmations.",
+    "Prior results already seen; exploratory rerun, not blinded replication or new market evidence."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-23T17:28:03.126209+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-23T17:33:24.526919+00:00",
+  "available_at_utc": "2026-09-23T17:33:24.526919+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "e13a6eb1076d78d3a43786554f994ed0de37b236e3c01ff956e5b5440ad9730c",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "27432040cead1dfd0f8c000380e25fc0b91771ecb782683d5b4b04fd5cd0b6ef",
+  "sources": [
+    {
+      "id": "census_construction_public",
+      "url": "https://www.census.gov/construction/c30/pdf/release.pdf",
+      "upstream_ids": [
+        "US-CENSUS-VIP",
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Exact retained extract bytes verified against current private Git object and checkpoint SHA256; full historical tool representation and original publisher bytes unavailable in this runtime."
+    },
+    {
+      "id": "treasury_mts",
+      "url": "https://fiscal.treasury.gov/accounting/monthly-treasury-statement",
+      "upstream_ids": [
+        "US-TREASURY-MTS",
+        "US-FEDERAL-ENTITY-ACCOUNTING"
+      ],
+      "integrity_status": "Saved access/discovery metadata only; prior representation body unavailable in this runtime; not economic measurements."
+    },
+    {
+      "id": "census_state_local",
+      "url": "https://www.census.gov/programs-surveys/gov-finances.html",
+      "upstream_ids": [
+        "US-CENSUS-GOVERNMENT-FINANCES",
+        "STATE-LOCAL-FINANCIAL-REPORTS"
+      ],
+      "integrity_status": "Saved access/discovery metadata only; prior representation body unavailable in this runtime; not economic measurements."
+    },
+    {
+      "id": "federal_register",
+      "url": "https://www.federalregister.gov/documents/current",
+      "upstream_ids": [
+        "US-OFR-FEDERAL-REGISTER",
+        "US-ISSUING-AGENCY-RULEMAKING"
+      ],
+      "integrity_status": "Saved access/discovery metadata only; prior representation body unavailable in this runtime; not economic measurements."
+    }
+  ],
+  "delivery_key": "fiscal:fiscal-suite-weekly-2026-09-23:e13a6eb1076d78d3a43786554f994ed0de37b236e3c01ff956e5b5440ad9730c"
+}
