@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "delivery_key": "agriculture:agriculture-suite-manual-2026-09-23-targeted-recovery-1:7bf8c5b7b9d7bc5620d7757a00a03a7cd6fa0f32c69f414334e44219126e2db7",
+  "domain": "agriculture",
+  "run_id": "agriculture-suite-manual-2026-09-23-targeted-recovery-1",
+  "report_version": 1,
+  "report_kind": "final_evidence_gap",
+  "received_at_utc": "2026-09-23T21:31:53.833709+00:00",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "c64a07449a834b8f0f24387bb8e8467ea19713ac",
+    "staging_path": "evidence/research/pending/agriculture/agriculture-suite-manual-2026-09-23-targeted-recovery-1/7bf8c5b7b9d7bc5620d7757a00a03a7cd6fa0f32c69f414334e44219126e2db7/"
+  },
+  "integrity": {
+    "report_sha256": "7bf8c5b7b9d7bc5620d7757a00a03a7cd6fa0f32c69f414334e44219126e2db7",
+    "report_bytes": 6529,
+    "envelope_sha256": "9461e53003f4d433fda5441a447a0ea91e969605879c659a80edf9b00ae240a0",
+    "envelope_bytes": 3648,
+    "verified": true,
+    "method": "Exact connector UTF-8 reconstruction from the immutable staged packet; receiver recomputed SHA-256 and byte lengths and matched packet fields before canonicalization."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/agriculture/agriculture-suite-manual-2026-09-23-targeted-recovery-1/7bf8c5b7b9d7bc5620d7757a00a03a7cd6fa0f32c69f414334e44219126e2db7/Report.md",
+    "envelope": "evidence/research/agriculture/agriculture-suite-manual-2026-09-23-targeted-recovery-1/7bf8c5b7b9d7bc5620d7757a00a03a7cd6fa0f32c69f414334e44219126e2db7/report-envelope.json",
+    "intake": "evidence/research/agriculture/agriculture-suite-manual-2026-09-23-targeted-recovery-1/7bf8c5b7b9d7bc5620d7757a00a03a7cd6fa0f32c69f414334e44219126e2db7/intake.json"
+  },
+  "invocation_kind": "authorized_manual_targeted_recovery",
+  "scheduled_occurrence_consumed": false,
+  "supersedes": [],
+  "notes": [
+    "Canonical receipt preserves the report as an evidence-gap record; it contributes no crop-supply, demand, stocks-to-use or food-price observation.",
+    "The observed source/control failure is operational evidence, not an economic negative.",
+    "USDA ancestry remains shared; later compatible USDA measurements receive one evidence contribution."
+  ]
+}
