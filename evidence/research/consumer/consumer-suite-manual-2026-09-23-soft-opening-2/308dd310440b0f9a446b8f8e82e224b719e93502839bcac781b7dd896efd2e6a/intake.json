@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "delivery_key": "consumer:consumer-suite-manual-2026-09-23-soft-opening-2:308dd310440b0f9a446b8f8e82e224b719e93502839bcac781b7dd896efd2e6a",
+  "domain": "consumer",
+  "run_id": "consumer-suite-manual-2026-09-23-soft-opening-2",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "received_at_utc": "2026-09-23T01:16:11.052215+00:00",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "27fab8231f759054ccb197579ceaecdb7e808c7f",
+    "staging_path": "evidence/research/pending/consumer/consumer-suite-manual-2026-09-23-soft-opening-2/308dd310440b0f9a446b8f8e82e224b719e93502839bcac781b7dd896efd2e6a/"
+  },
+  "integrity": {
+    "report_sha256": "308dd310440b0f9a446b8f8e82e224b719e93502839bcac781b7dd896efd2e6a",
+    "report_bytes": 5520,
+    "envelope_sha256": "f25be23ecfe12fa013b2ee9e4c16c9723efd499913ba5a5a6ed56da4e9c9a37a",
+    "envelope_bytes": 3421,
+    "verified": true,
+    "method": "Exact immutable connector UTF-8 reconstruction; Git blob and tree byte sizes independently checked, SHA256 recomputed with pinned verify_pending_bytes.py; final report/registration/privacy reviewed"
+  },
+  "canonical_archive": {
+    "report": "evidence/research/consumer/consumer-suite-manual-2026-09-23-soft-opening-2/308dd310440b0f9a446b8f8e82e224b719e93502839bcac781b7dd896efd2e6a/Report.md",
+    "envelope": "evidence/research/consumer/consumer-suite-manual-2026-09-23-soft-opening-2/308dd310440b0f9a446b8f8e82e224b719e93502839bcac781b7dd896efd2e6a/report-envelope.json",
+    "intake": "evidence/research/consumer/consumer-suite-manual-2026-09-23-soft-opening-2/308dd310440b0f9a446b8f8e82e224b719e93502839bcac781b7dd896efd2e6a/intake.json"
+  },
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false,
+  "supersedes": [],
+  "notes": [
+    "Canonical receipt preserves claim uncertainty and original source periods; it does not prove source truth or fresh acquisition.",
+    "Original publisher bodies and private package contents are not made public; hashes are identity references, not availability proof.",
+    "Reused observations across reports receive no new independent evidence weight.",
+    "Durable archive and acknowledgment are effective through this canonical commit; exact readback verification is recorded separately."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "delivery_key": "agriculture:agriculture-suite-manual-2026-09-23-soft-opening-2:ab9d41d656ce2a1734ac5faf43463552099e667a20f5ad529532a138cbd9bdce",
+  "domain": "agriculture",
+  "run_id": "agriculture-suite-manual-2026-09-23-soft-opening-2",
+  "report_version": 1,
+  "report_kind": "final_evidence_gap",
+  "received_at_utc": "2026-09-23T01:16:11.052215+00:00",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "27fab8231f759054ccb197579ceaecdb7e808c7f",
+    "staging_path": "evidence/research/pending/agriculture/agriculture-suite-manual-2026-09-23-soft-opening-2/ab9d41d656ce2a1734ac5faf43463552099e667a20f5ad529532a138cbd9bdce/"
+  },
+  "integrity": {
+    "report_sha256": "ab9d41d656ce2a1734ac5faf43463552099e667a20f5ad529532a138cbd9bdce",
+    "report_bytes": 6047,
+    "envelope_sha256": "d9499b02ed3bb1ef6a574676b34c919fb5ba4f2b85ccf1ac4eb8e8c45f500d58",
+    "envelope_bytes": 4372,
+    "verified": true,
+    "method": "Exact immutable connector UTF-8 reconstruction; Git blob and tree byte sizes independently checked, SHA256 recomputed with pinned verify_pending_bytes.py; final report/registration/privacy reviewed"
+  },
+  "canonical_archive": {
+    "report": "evidence/research/agriculture/agriculture-suite-manual-2026-09-23-soft-opening-2/ab9d41d656ce2a1734ac5faf43463552099e667a20f5ad529532a138cbd9bdce/Report.md",
+    "envelope": "evidence/research/agriculture/agriculture-suite-manual-2026-09-23-soft-opening-2/ab9d41d656ce2a1734ac5faf43463552099e667a20f5ad529532a138cbd9bdce/report-envelope.json",
+    "intake": "evidence/research/agriculture/agriculture-suite-manual-2026-09-23-soft-opening-2/ab9d41d656ce2a1734ac5faf43463552099e667a20f5ad529532a138cbd9bdce/intake.json"
+  },
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false,
+  "supersedes": [],
+  "notes": [
+    "Canonical receipt preserves claim uncertainty and original source periods; it does not prove source truth or fresh acquisition.",
+    "Original publisher bodies and private package contents are not made public; hashes are identity references, not availability proof.",
+    "Reused observations across reports receive no new independent evidence weight.",
+    "Durable archive and acknowledgment are effective through this canonical commit; exact readback verification is recorded separately."
+  ]
+}
