@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "delivery_key": "geopolitics:geopolitics-suite-manual-2026-09-23-soft-opening-2:87480faaf41a76db4f7590b57d7a83330c3b23427aec79bb6fdf2936642327ba",
+  "domain": "geopolitics",
+  "run_id": "geopolitics-suite-manual-2026-09-23-soft-opening-2",
+  "report_sha256": "87480faaf41a76db4f7590b57d7a83330c3b23427aec79bb6fdf2936642327ba",
+  "report_bytes": 6213,
+  "envelope_sha256": "c25b70080e376bd7b986582936fcb4cf3a1d0e978b2e6bb8952182e1bd52a723",
+  "envelope_bytes": 4825,
+  "producer_repository": "6t8hggfm44-tech/-Geopolitical-risk",
+  "producer_commit": "28f2be6394d6799d6bd208169d11fe00232d284a",
+  "producer_report_path": "reports/geopolitics-suite-manual-2026-09-23-soft-opening-2/87480faaf41a76db4f7590b57d7a83330c3b23427aec79bb6fdf2936642327ba/Report.md",
+  "prepared_at_utc": "2026-09-23T01:12:55.237047+00:00",
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false,
+  "source_ancestry": [
+    {
+      "id": "imo_red_sea",
+      "url": "https://www.imo.org/en/mediacentre/hottopics/pages/red-sea.aspx",
+      "upstream_ids": [
+        "imo-confirmed-maritime-incident-reports",
+        "member-state-incident-notifications"
+      ],
+      "integrity_status": "Exact persisted reviewed extract verified by checkpoint hash; original publisher bytes unavailable, tool-representation integrity only. No fresh provider access."
+    },
+    {
+      "id": "us_ofac_actions",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "upstream_ids": [
+        "us-treasury-ofac-official-actions"
+      ],
+      "integrity_status": "Exact persisted reviewed extract verified by checkpoint hash; original publisher bytes unavailable, tool-representation integrity only. No fresh provider access."
+    },
+    {
+      "id": "us_bis_updates",
+      "url": "https://www.bis.gov/news-updates",
+      "upstream_ids": [
+        "us-commerce-bis-official-actions",
+        "us-federal-register"
+      ],
+      "integrity_status": "Exact persisted reviewed extract verified by checkpoint hash; original publisher bytes unavailable, tool-representation integrity only. No fresh provider access."
+    },
+    {
+      "id": "idea_democracy_tracker",
+      "url": "https://www.idea.int/democracytracker/",
+      "upstream_ids": [
+        "international-idea-assessments",
+        "country-election-authorities",
+        "underlying-news-and-official-records"
+      ],
+      "integrity_status": "Exact persisted reviewed extract verified by checkpoint hash; original publisher bytes unavailable, tool-representation integrity only. No fresh provider access."
+    },
+    {
+      "id": "un_security_council_records",
+      "url": "https://docs.un.org/",
+      "upstream_ids": [
+        "un-security-council-official-records",
+        "un-secretariat-reporting",
+        "member-state-submissions"
+      ],
+      "integrity_status": "Failed-tool response representation hashed privately; no source body or event evidence verified."
+    }
+  ],
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact frozen report and native envelope bytes copied from verified private repository readback. Native freeze helper emits a fixed envelope field set; manual invocation classification is explicit in this transport record.",
+    "Original publisher bytes and full tool responses are not included; reviewed historical extracts and a failed new UN document acquisition are distinguished.",
+    "Prepared packet has no Market receipt, acknowledgment or canonical persistence until the receiver actually verifies and stores it."
+  ]
+}

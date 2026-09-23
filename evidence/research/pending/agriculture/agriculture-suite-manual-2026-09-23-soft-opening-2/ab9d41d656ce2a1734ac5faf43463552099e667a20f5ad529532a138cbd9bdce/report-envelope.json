@@ -1,0 +1,81 @@
+{
+  "domain": "agriculture",
+  "run_id": "agriculture-suite-manual-2026-09-23-soft-opening-2",
+  "report_version": 1,
+  "report_kind": "final_evidence_gap",
+  "workflow_commit": "551bf6d07aea4db08b9c61f235c3153884b9fb0c",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2025-09-15T00:00:00+00:00",
+    "end": "2026-09-16T00:00:00+00:00"
+  },
+  "actual_coverage": {
+    "crop_progress_condition": "unavailable: no dated numerical crop-stage/progress/condition table",
+    "yield_acreage_production": "unavailable: NASS index only",
+    "drought_soil_moisture": "historical_context_only: eight selected USDM point-well cells; no crop weights or matching crop outcomes",
+    "grain_supply_use_stocks": "blocked: zero of fourteen selected two-vintage balance cells available",
+    "fertilizer": "unavailable: no quantity/price source acquired",
+    "livestock_output_feed": "unavailable: no compatible inventory/output/feed table",
+    "food_cold_storage": "unavailable: no retained stock table",
+    "export_sales_shipments": "unavailable: FAS disabled; no realized shipment series",
+    "disease_output": "discovery_only: APHIS hub without dated counts, removals or output"
+  },
+  "limitations": [
+    "No new publisher acquisition or fresh numeric observations in this run; economic conclusions do not add independent evidence to the September22 report.",
+    "Retained tool extracts are hash-verified derivatives, not original publisher bytes or original historical release vintages.",
+    "The fourteen compatible two-vintage WASDE balance cells are absent; live table-route acceptance remains unverified while cooldowns apply.",
+    "Point-well measurements are not crop acreage-weighted moisture, yields, national output or causal supply evidence.",
+    "Rounding tests assume displayed precision; original publisher correction or definition remains unresolved.",
+    "FAS remains disabled and fertilizer, shipment, output and matched-control inputs are unavailable."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-23T01:04:32.974984+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-23T01:07:37.914597+00:00",
+  "available_at_utc": "2026-09-23T01:07:37.914597+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "ab9d41d656ce2a1734ac5faf43463552099e667a20f5ad529532a138cbd9bdce",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "f0a472caa219f3cf353b994609235bcbd28cd29d115a3bd824f148e1d3b3ae3d",
+  "sources": [
+    {
+      "id": "usda_wasde",
+      "url": "https://www.usda.gov/about-usda/general-information/staff-offices/office-chief-economist/commodity-markets/wasde-report",
+      "upstream_ids": [
+        "usda-waob",
+        "usda-nass",
+        "usda-fas",
+        "foreign-agriculture-statistics"
+      ],
+      "integrity_status": "Exact reviewed-extract file verified against live private checkpoint and reused unchanged; original publisher body and discarded full tool representation unavailable."
+    },
+    {
+      "id": "usda_nass_publications",
+      "url": "https://www.nass.usda.gov/Publications/",
+      "upstream_ids": [
+        "usda-nass"
+      ],
+      "integrity_status": "Exact reviewed-extract file verified against live private checkpoint and reused unchanged; original publisher body and discarded full tool representation unavailable."
+    },
+    {
+      "id": "usdm_current",
+      "url": "https://droughtmonitor.unl.edu/CurrentMap.aspx",
+      "upstream_ids": [
+        "usdm-authors",
+        "noaa-weather-observations",
+        "usda-field-reports"
+      ],
+      "integrity_status": "Exact reviewed-extract file verified against live private checkpoint and reused unchanged; original publisher body and discarded full tool representation unavailable."
+    },
+    {
+      "id": "usda_aphis_hpai",
+      "url": "https://www.aphis.usda.gov/h5n1-hpai",
+      "upstream_ids": [
+        "usda-aphis-surveillance",
+        "state-animal-health-reports"
+      ],
+      "integrity_status": "Exact reviewed-extract file verified against live private checkpoint and reused unchanged; original publisher body and discarded full tool representation unavailable."
+    }
+  ],
+  "delivery_key": "agriculture:agriculture-suite-manual-2026-09-23-soft-opening-2:ab9d41d656ce2a1734ac5faf43463552099e667a20f5ad529532a138cbd9bdce"
+}

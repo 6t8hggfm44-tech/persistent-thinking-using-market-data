@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "domain": "housing",
+  "run_id": "housing-suite-manual-2026-09-23-soft-opening-2",
+  "delivery_key": "housing:housing-suite-manual-2026-09-23-soft-opening-2:59e1096ced09dd7f3dd35ca77d7d540c2002211852e8a078de25367cd5e95050",
+  "report_sha256": "59e1096ced09dd7f3dd35ca77d7d540c2002211852e8a078de25367cd5e95050",
+  "report_bytes": 6064,
+  "envelope_sha256": "2623b26fb8ca025e9714d65c66cd408871b54b32e4dc0e728ef045ebc6746407",
+  "envelope_bytes": 3788,
+  "producer_repository": "6t8hggfm44-tech/-Housing-construction-",
+  "producer_commit": "fdbbf7c186b99f29f4e456d3cb0e8828084c876e",
+  "producer_report_path": "reports/housing-suite-manual-2026-09-23-soft-opening-2/59e1096ced09dd7f3dd35ca77d7d540c2002211852e8a078de25367cd5e95050/Report.md",
+  "prepared_at_utc": "2026-09-23T01:12:54.067973+00:00",
+  "source_ancestry": [
+    {
+      "id": "census_nrc",
+      "url": "https://www.census.gov/construction/nrc/pdf/newresconst.pdf",
+      "upstream_ids": [
+        "US-CENSUS-BPS",
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Selected derived cells checked; original publisher bytes unavailable"
+    },
+    {
+      "id": "census_nrs",
+      "url": "https://www.census.gov/construction/nrs/pdf/newressales.pdf",
+      "upstream_ids": [
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Selected derived cells checked; original publisher bytes unavailable"
+    },
+    {
+      "id": "freddie_pmms",
+      "url": "https://www.freddiemac.com/pmms",
+      "upstream_ids": [
+        "FREDDIE-MAC-LPA-PMMS"
+      ],
+      "integrity_status": "Exact checkpoint blob and SHA256 verified before reuse; original body unavailable"
+    },
+    {
+      "id": "bls_construction_employment",
+      "url": "https://www.bls.gov/news.release/empsit.toc.htm",
+      "upstream_ids": [
+        "US-BLS-CES",
+        "US-BLS-CPS"
+      ],
+      "integrity_status": "No economic input captured"
+    },
+    {
+      "id": "fed_sloos_cre",
+      "url": "https://www.federalreserve.gov/data/sloos.htm",
+      "upstream_ids": [
+        "FRB-SLOOS-RESPONDENT-BANKS"
+      ],
+      "integrity_status": "No economic input captured"
+    }
+  ],
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact frozen UTF-8 report and envelope are supplied; private reviewed evidence package is referenced, not published.",
+    "All numeric inputs were reused from September 22 reviewed extracts; original publisher-body identity and freshness were not reverified.",
+    "Publisher sources were not called during this run. Hidden earlier upstream request/byte totals remain unexposed.",
+    "Preparation or staging does not establish Market receipt, acknowledgment or canonical persistence."
+  ],
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false
+}

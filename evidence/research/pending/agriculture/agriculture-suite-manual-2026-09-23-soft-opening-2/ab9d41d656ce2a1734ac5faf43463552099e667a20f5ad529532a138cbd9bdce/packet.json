@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "domain": "agriculture",
+  "run_id": "agriculture-suite-manual-2026-09-23-soft-opening-2",
+  "delivery_key": "agriculture:agriculture-suite-manual-2026-09-23-soft-opening-2:ab9d41d656ce2a1734ac5faf43463552099e667a20f5ad529532a138cbd9bdce",
+  "report_sha256": "ab9d41d656ce2a1734ac5faf43463552099e667a20f5ad529532a138cbd9bdce",
+  "report_bytes": 6047,
+  "envelope_sha256": "d9499b02ed3bb1ef6a574676b34c919fb5ba4f2b85ccf1ac4eb8e8c45f500d58",
+  "envelope_bytes": 4372,
+  "producer_repository": "6t8hggfm44-tech/-Agriculture-food-",
+  "producer_commit": "0842e9edfc7e6a6f5021bc7a81ccbba8f84714f7",
+  "producer_report_path": "reports/agriculture-suite-manual-2026-09-23-soft-opening-2/ab9d41d656ce2a1734ac5faf43463552099e667a20f5ad529532a138cbd9bdce/Report.md",
+  "prepared_at_utc": "2026-09-23T01:11:18.030362+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Report and envelope are exact private-readback bytes; public packet does not include private evidence/checkpoint files or original publisher bodies.",
+    "Prepared packet is not Market receipt, acknowledgment or canonical intake.",
+    "This report reuses September22 reviewed evidence, acquires no new measurements and does not prove repaired live table access or scheduled execution."
+  ],
+  "source_ancestry": [
+    {
+      "source_id": "usda_wasde",
+      "upstream_ids": [
+        "usda-waob",
+        "usda-nass",
+        "usda-fas",
+        "foreign-agriculture-statistics"
+      ]
+    },
+    {
+      "source_id": "usda_nass_publications",
+      "upstream_ids": [
+        "usda-nass"
+      ]
+    },
+    {
+      "source_id": "usdm_current",
+      "upstream_ids": [
+        "usdm-authors",
+        "noaa-weather-observations",
+        "usda-field-reports"
+      ]
+    },
+    {
+      "source_id": "usda_aphis_hpai",
+      "upstream_ids": [
+        "usda-aphis-surveillance",
+        "state-animal-health-reports"
+      ]
+    }
+  ],
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false,
+  "producer_workflow_family": "suite",
+  "report_novelty": "No fresh economic evidence; exploratory replication and missing-input assessment."
+}
