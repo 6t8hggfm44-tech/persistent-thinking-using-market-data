@@ -1,16 +1,18 @@
 # Current Market State
 
 **Model version:** 0.2.14  
-**Status:** Second manual rehearsal synthesized; 15 effective upstream reports canonically received; no new forecast or weight change  
-**Analysis cutoff:** 2026-09-23T01:38:05.858569+00:00
+**Status:** September 23 regular cycle complete; no forecast resolved, no new forecast, no material model or weight change  
+**Analysis cutoff:** 2026-09-23T21:42:57Z
 
-The [full synthesis](../evaluations/2026-09-23-soft-opening-2.md), [exact intake inventory](../evaluations/2026-09-23-soft-opening-2-intake.json) and [skeptical review](../evaluations/2026-09-23-soft-opening-2-skeptic.md) record the completed analysis. Seventeen public versions represent fifteen investigations; Housing/Industry v2 are effective, and Suite Energy v2 corrects a private frozen candidate.
+The [cycle record](../evaluations/2026-09-23-regular-cycle.md) preserves the evidence inventory, observation/inference separation, source-ancestry audit, Skeptic review and forecast decision. The canonical upstream index records actual Market receipt times rather than producer availability or staging time.
 
 ## Evidence and interpretation
 
-Retained credit, labor and industry measures do not establish broad persistent contraction; nominal consumer/issuer measures are stronger in their windows while housing is mixed. Lagged US petroleum builds and mixed gas comparators oppose uniform scarcity in those periods, but do not resolve later international disruption. Port LA composition is one shared Trade/Freight observation. GEV geometry and historical Weather comparisons reproduce without proving physical/economic transmission. Agriculture and Geopolitics retain material evidence gaps. All replays add zero incremental independent economic observations.
+Four post-prior-cutoff packets were canonically admitted after exact immutable-byte verification: Agriculture targeted recovery v1, Geopolitics targeted recovery v2, Trade weekly v1 and Fiscal weekly v1. Agriculture and Geopolitics are evidence-gap reports and add no economic measurement. Trade reuses the same Port of Los Angeles cells already present in earlier Trade/Freight work; Fiscal reuses the same Census construction release already present in earlier Fiscal/construction work. Those shared observations receive no duplicate evidence contribution.
 
-H003 concerns fiscal/inflation/long-yield mechanisms. Broad activity resilience primarily challenges immediate H002 and does not directly falsify H003. The full mechanism requires matched real-income, inflation, fiscal and yield measurements unavailable in this bundle. Prior September22 pipeline/Hormuz/price reporting remains dated prior context, not freshly verified evidence in this analysis.
+Fresh September 23 evidence shows two offsetting macro channels. S&P Global's flash U.S. Composite PMI rose to 58.4 from 56.0 in August, with stronger new orders/backlogs and higher reported price pressure, supporting near-term demand resilience and weakening an immediate-recession interpretation. Meanwhile Saudi Arabia restarted the East-West Pipeline at reduced flow and U.S. commercial crude inventories rose roughly 3.0 million barrels in the latest EIA week, mitigating a uniformly worsening crude-shortage story. Gasoline and distillate inventories nevertheless fell, preserving refined-product inflation/pass-through risk.
+
+The Skeptic rejected a one-directional H003 update: survey strength may include front-loading/supply responses; survey prices and market yields are downstream proxies rather than direct CPI/fiscal identification; Saudi route normalization is contrary evidence; and crude versus refined-product inventories measure different layers of the energy system. Existing causal edges already represent demand-driven price pressure, energy pass-through, margin/purchasing-power drag and supply normalization.
 
 ## Hypotheses and forecasts
 
@@ -19,16 +21,14 @@ H003 concerns fiscal/inflation/long-yield mechanisms. Broad activity resilience 
 - H003 Fiscal/inflation regime: **0.38**
 - H004 Productivity boom: **0.12**
 
-No causal-graph or model-version change. No new forecast. P000029 retains 66% probability for first-release September headline CPI >=+0.4% m/m, point+0.5%, 80% interval+0.1% to+0.9%, resolving October14 at08:30ET. P000004 and P000005 remain pending their November2026 and August2027 horizons. No currently due outcome was resolved.
+No causal-graph or model-version change. No new forecast. P000029 remains frozen at **66%** for first-release September headline CPI >= +0.4% m/m, point +0.5%, 80% interval +0.1% to +0.9%, resolving October 14, 2026 at 08:30 ET. P000004 and P000005 remain pending their November 2026 and August 2027 horizons.
 
-The unchanged ledger has22 resolved probability forecasts, meanBrier0.212214 and meanlogloss0.614555. Independent arithmetic matches all22; Repo B's generic calibration parser covers20 because it omits two joint-false rows. Coverage20/22 and benchmark diagnostics are descriptive; n<30 cannot establish learning. No forecast/outcome/benchmark bytes were changed.
+No forecast was due today. The probability ledger remains **22 resolved forecasts**, mean **Brier 0.212214** and mean **log loss 0.614555**. With n<30, the experiment still does not claim demonstrated learning.
 
 ## Operational boundary
 
-All15 reports were actually received and canonically archived before this analysis; they are not merely pending staging. This manual test does not prove future scheduled operation or universal fresh-source access. Existing schedules, source restrictions and historical approvals remain preserved. Most analysis reused already reviewed evidence; Agriculture's required balance remains missing, the tested Geopolitics UN route failed, and current Weather/GEV coverage and Energy electricity tests remain incomplete.
+The September 23 Agriculture, Geopolitics, Trade and Fiscal packets are canonical only from their actual Market receipt times and are indexed under `evidence/research/INDEX.md`. Staging, producer availability and source-event dates were not backdated into the Market evidence cutoff. Access failures and missing numerical cells remain explicit gaps rather than negative domain findings.
 
-The September22 regular-cycle state is preserved at [its exact prior commit](https://github.com/6t8hggfm44-tech/persistent-thinking-using-market-data/blob/d16c5a30be6a45a7cf2b195365ad5cf69f6f8d1b/world_model/CURRENT_STATE.md). Its cutoff and prior observations are not rewritten by this manual addition.
+No trade recommendation is produced. The most informative existing near-term test remains whether September's demand and refined-product pressure pass through to headline CPI while Saudi/Hormuz supply routes normalize.
 
-## Verified validation companion
-
-Repo B [validation report](https://github.com/6t8hggfm44-tech/market-repo-B/blob/01beda17148ba8b156ac7dc85814d471a597920f/reports/2026-09-23-soft-opening-2/Report.md) and derived machine summary are now persisted and exact-readback verified. They bind the frozen primary synthesis commit `b6ec3f074cc079254cb380173cebc0ca249ff661`, unchanged ledger hash and pinned validation code. The [validation receipt](../evaluations/2026-09-23-soft-opening-2-validation-receipt.json) records this later verification without changing the synthesis cutoff or any forecast.
+The prior soft-opening synthesis remains preserved in repository history and is not rewritten by this cycle.
