@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "delivery_key": "labor:labor-suite-manual-2026-09-23-soft-opening-2:9e04425ed42ce0d8405bdcd7c2e52853f346db049d02293a465c8f7833474de6",
+  "domain": "labor",
+  "run_id": "labor-suite-manual-2026-09-23-soft-opening-2",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "received_at_utc": "2026-09-23T01:12:13.112345+00:00",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "d48b6e8fdb1336903b5b45e9b8955a8014a60df1",
+    "staging_path": "evidence/research/pending/labor/labor-suite-manual-2026-09-23-soft-opening-2/9e04425ed42ce0d8405bdcd7c2e52853f346db049d02293a465c8f7833474de6/"
+  },
+  "integrity": {
+    "report_sha256": "9e04425ed42ce0d8405bdcd7c2e52853f346db049d02293a465c8f7833474de6",
+    "report_bytes": 5775,
+    "envelope_sha256": "c68a816dcccd0aaeb8b8c44903ab5440bcb001de1a80630a1b22b6a9e08ca6a9",
+    "envelope_bytes": 3374,
+    "verified": true,
+    "method": "Exact immutable connector UTF-8 reconstruction; Git blob and tree byte sizes independently checked, SHA256 recomputed with pinned verify_pending_bytes.py; final report/registration/privacy reviewed"
+  },
+  "canonical_archive": {
+    "report": "evidence/research/labor/labor-suite-manual-2026-09-23-soft-opening-2/9e04425ed42ce0d8405bdcd7c2e52853f346db049d02293a465c8f7833474de6/Report.md",
+    "envelope": "evidence/research/labor/labor-suite-manual-2026-09-23-soft-opening-2/9e04425ed42ce0d8405bdcd7c2e52853f346db049d02293a465c8f7833474de6/report-envelope.json",
+    "intake": "evidence/research/labor/labor-suite-manual-2026-09-23-soft-opening-2/9e04425ed42ce0d8405bdcd7c2e52853f346db049d02293a465c8f7833474de6/intake.json"
+  },
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false,
+  "supersedes": [],
+  "notes": [
+    "Canonical receipt preserves claim uncertainty and original source periods; it does not prove source truth or fresh acquisition.",
+    "Original publisher bodies and private package contents are not made public; hashes are identity references, not availability proof.",
+    "Reused observations across reports receive no new independent evidence weight.",
+    "Durable archive and acknowledgment are effective through this canonical commit; exact readback verification is recorded separately."
+  ]
+}
