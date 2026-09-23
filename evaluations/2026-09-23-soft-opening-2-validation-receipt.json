@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "primary_synthesis_commit": "b6ec3f074cc079254cb380173cebc0ca249ff661",
+  "repo_b_commit": "01beda17148ba8b156ac7dc85814d471a597920f",
+  "repo_b_report_path": "reports/2026-09-23-soft-opening-2/Report.md",
+  "repo_b_summary_path": "reports/2026-09-23-soft-opening-2/validation-summary.json",
+  "actual_readback_recorded_at_utc": "2026-09-23T01:42:35.458738+00:00",
+  "exact_readback_verified": true,
+  "ledger_sha256": "481efcf7b91b194e50d9e088c0053bb3bb7bc3435ec462264c768ed440a3f1f3",
+  "new_outcomes": 0,
+  "authoritative_forecasts_changed": false,
+  "predictive_learning_status": "INSUFFICIENT_EVIDENCE_TO_ASSESS_LEARNING"
+}

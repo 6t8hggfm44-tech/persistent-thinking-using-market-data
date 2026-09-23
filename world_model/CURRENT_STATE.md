@@ -28,3 +28,7 @@ The unchanged ledger has22 resolved probability forecasts, meanBrier0.212214 and
 All15 reports were actually received and canonically archived before this analysis; they are not merely pending staging. This manual test does not prove future scheduled operation or universal fresh-source access. Existing schedules, source restrictions and historical approvals remain preserved. Most analysis reused already reviewed evidence; Agriculture's required balance remains missing, the tested Geopolitics UN route failed, and current Weather/GEV coverage and Energy electricity tests remain incomplete.
 
 The September22 regular-cycle state is preserved at [its exact prior commit](https://github.com/6t8hggfm44-tech/persistent-thinking-using-market-data/blob/d16c5a30be6a45a7cf2b195365ad5cf69f6f8d1b/world_model/CURRENT_STATE.md). Its cutoff and prior observations are not rewritten by this manual addition.
+
+## Verified validation companion
+
+Repo B [validation report](https://github.com/6t8hggfm44-tech/market-repo-B/blob/01beda17148ba8b156ac7dc85814d471a597920f/reports/2026-09-23-soft-opening-2/Report.md) and derived machine summary are now persisted and exact-readback verified. They bind the frozen primary synthesis commit `b6ec3f074cc079254cb380173cebc0ca249ff661`, unchanged ledger hash and pinned validation code. The [validation receipt](../evaluations/2026-09-23-soft-opening-2-validation-receipt.json) records this later verification without changing the synthesis cutoff or any forecast.
