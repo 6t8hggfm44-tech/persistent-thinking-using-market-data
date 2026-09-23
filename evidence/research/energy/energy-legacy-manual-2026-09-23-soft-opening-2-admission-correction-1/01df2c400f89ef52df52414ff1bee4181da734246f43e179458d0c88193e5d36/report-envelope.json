@@ -1,0 +1,44 @@
+{
+  "domain": "energy",
+  "run_id": "energy-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "60a0dac0cec9f9e7398a99594c60dcb8ea77dec1",
+  "executed_code_sha256": "2744916d14eb73984f0309952db9a4a66628411ed52edb794676db29bab8b7e8",
+  "event_window_utc": {
+    "start": "2026-09-16T00:58:46.888238Z",
+    "end": "2026-09-23T00:58:46.888238Z"
+  },
+  "actual_coverage": {
+    "summary": "12US series throughSep11;0requestedweek endpoints"
+  },
+  "limitations": [
+    "Retained evidence is not a new release or independent confirmation.",
+    "Shared ancestry and actual lagged windows remain explicit.",
+    "Missing exposure/outcome controls prevent causal economic claims.",
+    "Exploratory prior exposure disclosed; no blinded rediscovery claim."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-23T01:26:46.719223+00:00",
+  "schema_version": 1,
+  "producer_kind": "legacy_energy",
+  "workflow_repository": "6t8hggfm44-tech/energy",
+  "scientific_code_commit": "28ea17c51a61f97e17aea6a4ac044a19a434fd98",
+  "report_path": "Report.md",
+  "report_sha256": "01df2c400f89ef52df52414ff1bee4181da734246f43e179458d0c88193e5d36",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "1fda17aa49dad1c4fcd6b8cea401df626f9f95f33aa43df2ca1025e41cb90409",
+  "generated_at_utc": "2026-09-23T01:26:46.719223+00:00",
+  "available_at_utc": "2026-09-23T01:26:46.719223+00:00",
+  "sources": [
+    {
+      "id": "energy_archive",
+      "url": "https://www.eia.gov/petroleum/",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum"
+      ],
+      "integrity_status": "Exact saved bytes/hashes verified; publisher body absent for suite tool extracts; no fresh provider acquisition."
+    }
+  ],
+  "delivery_key": "energy:energy-legacy-manual-2026-09-23-soft-opening-2-admission-correction-1:01df2c400f89ef52df52414ff1bee4181da734246f43e179458d0c88193e5d36"
+}

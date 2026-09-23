@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "delivery_key": "energy:energy-suite-manual-2026-09-23-soft-opening-2-admission-correction-1:4e41e9d4621c41563e9aeb721a602717800176789f13973c7d82602833456e36",
+  "domain": "energy",
+  "run_id": "energy-suite-manual-2026-09-23-soft-opening-2-admission-correction-1",
+  "report_version": 2,
+  "report_kind": "final_hypothesis_test",
+  "received_at_utc": "2026-09-23T01:33:25.942223+00:00",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "69ad3e77b495d60ef81ececef6481a85d85d2725",
+    "staging_path": "evidence/research/pending/energy/energy-suite-manual-2026-09-23-soft-opening-2-admission-correction-1/4e41e9d4621c41563e9aeb721a602717800176789f13973c7d82602833456e36/"
+  },
+  "integrity": {
+    "report_sha256": "4e41e9d4621c41563e9aeb721a602717800176789f13973c7d82602833456e36",
+    "report_bytes": 5458,
+    "envelope_sha256": "b55388f7519215e168e2c73681d6dda068362a9dd22af4353b3bfa858c74c74d",
+    "envelope_bytes": 2717,
+    "verified": true,
+    "method": "Exact immutable connector UTF-8 reconstruction; Git blob and tree byte sizes independently checked, SHA256 recomputed with pinned verify_pending_bytes.py; final report/registration/privacy reviewed"
+  },
+  "canonical_archive": {
+    "report": "evidence/research/energy/energy-suite-manual-2026-09-23-soft-opening-2-admission-correction-1/4e41e9d4621c41563e9aeb721a602717800176789f13973c7d82602833456e36/Report.md",
+    "envelope": "evidence/research/energy/energy-suite-manual-2026-09-23-soft-opening-2-admission-correction-1/4e41e9d4621c41563e9aeb721a602717800176789f13973c7d82602833456e36/report-envelope.json",
+    "intake": "evidence/research/energy/energy-suite-manual-2026-09-23-soft-opening-2-admission-correction-1/4e41e9d4621c41563e9aeb721a602717800176789f13973c7d82602833456e36/intake.json"
+  },
+  "invocation_kind": "authorized_manual_dress_rehearsal",
+  "scheduled_occurrence_consumed": false,
+  "supersedes": [
+    "14c1673496effbb2d4d8f22530fc9bbb302fd58b5927fee854f0539b9f5ef173"
+  ],
+  "notes": [
+    "Canonical receipt preserves claim uncertainty and original source periods; it does not prove source truth or fresh acquisition.",
+    "Original publisher bodies and private package contents are not made public; hashes are identity references, not availability proof.",
+    "Reused observations across reports receive no new independent evidence weight.",
+    "Durable archive and acknowledgment are effective through this canonical commit; exact readback verification is recorded separately."
+  ],
+  "correction_provenance": {
+    "prior_report_sha256": "14c1673496effbb2d4d8f22530fc9bbb302fd58b5927fee854f0539b9f5ef173",
+    "prior_state": "preserved_private_frozen_candidate_never_accepted_by_Market",
+    "canonical_superseded_delivery_key": null,
+    "correction": "Five-year gas regional sum 3181 changed to3179; one above national comparator changed to one below. Exact private earlier frozen candidates retained; no earlier Market receipt is fabricated."
+  }
+}
