@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "delivery_key": "geopolitics:geopolitics-suite-manual-2026-09-23-targeted-recovery-1:53b375aede77831a23f3d1fb9b2e2130d9c539748289e6c3377e57260cbd3ecc",
+  "domain": "geopolitics",
+  "run_id": "geopolitics-suite-manual-2026-09-23-targeted-recovery-1",
+  "report_sha256": "53b375aede77831a23f3d1fb9b2e2130d9c539748289e6c3377e57260cbd3ecc",
+  "report_bytes": 6868,
+  "envelope_sha256": "102067b39e78cb941d1ad199b9f061387941ea79968f37a5b74ed0cba61eee62",
+  "envelope_bytes": 3400,
+  "producer_repository": "6t8hggfm44-tech/-Geopolitical-risk",
+  "producer_commit": "d992eccda55098cf8247c3798a40374a9326d478",
+  "producer_report_path": "reports/geopolitics-suite-manual-2026-09-23-targeted-recovery-1/53b375aede77831a23f3d1fb9b2e2130d9c539748289e6c3377e57260cbd3ecc/Report.md",
+  "producer_envelope_path": "reports/geopolitics-suite-manual-2026-09-23-targeted-recovery-1/53b375aede77831a23f3d1fb9b2e2130d9c539748289e6c3377e57260cbd3ecc/report-envelope.json",
+  "prepared_at_utc": "2026-09-23T16:10:03.166554+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Report and envelope are exact verified private UTF-8 bytes; no raw publisher archives or private operational checkpoint is included.",
+    "Reviewed tool representations support limited access findings; their hashes do not establish original publisher-body identity or unmeasured upstream request totals.",
+    "Staging verification does not establish Market receipt, acknowledgment or canonical persistence."
+  ],
+  "invocation_kind": "authorized_manual_targeted_recovery",
+  "scheduled_occurrence_consumed": false,
+  "source_ancestry": [
+    {
+      "id": "un_security_council_records",
+      "integrity_status": "No original publisher bytes or extracted document body returned; observed HTTP403 tool error only.",
+      "upstream_ids": [
+        "un-official-security-council-records",
+        "originating-speakers-and-member-state-notifications-unverified"
+      ],
+      "url": "https://docs.un.org/en/S/PV.9954"
+    },
+    {
+      "id": "access_coverage_audit",
+      "integrity_status": "Actual tool representations hashed runtime-locally; only reviewed limited access extract and metadata retained. These hashes are not publisher-body hashes.",
+      "upstream_ids": [
+        "un_security_council_records-access-attempt"
+      ],
+      "url": "https://docs.un.org/en/S/PV.9954"
+    }
+  ]
+}
