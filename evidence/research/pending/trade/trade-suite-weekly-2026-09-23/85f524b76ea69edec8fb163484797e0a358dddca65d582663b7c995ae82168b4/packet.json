@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "delivery_key": "trade:trade-suite-weekly-2026-09-23:85f524b76ea69edec8fb163484797e0a358dddca65d582663b7c995ae82168b4",
+  "domain": "trade",
+  "run_id": "trade-suite-weekly-2026-09-23",
+  "report_sha256": "85f524b76ea69edec8fb163484797e0a358dddca65d582663b7c995ae82168b4",
+  "report_bytes": 8328,
+  "envelope_sha256": "9e9e957670f910ab7df7eb3031f0bcf1b6d69c1d6615f5c4fa6efb15c6bc3283",
+  "envelope_bytes": 3902,
+  "producer_repository": "6t8hggfm44-tech/-Global-trade-China",
+  "producer_commit": "695ece8f33a2e7f4f5f8d518a603f58a6a949e24",
+  "producer_report_path": "reports/trade-suite-weekly-2026-09-23/85f524b76ea69edec8fb163484797e0a358dddca65d582663b7c995ae82168b4/Report.md",
+  "prepared_at_utc": "2026-09-23T19:15:06.804875+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact reviewed prose/envelope only; private reproducibility and original publisher bytes are not in public packet.",
+    "Staging is not Market receipt, acknowledgment or canonical persistence.",
+    "Reused ten-cell Port LA evidence adds no fresh observation or independent evidence weight."
+  ],
+  "source_ancestry": [
+    "port-los-angeles-terminal-counts"
+  ],
+  "source_ancestry_note": "Only Port LA numeric evidence supports completed tests. Other envelope source entries document unavailable coverage, not independent confirmation."
+}
