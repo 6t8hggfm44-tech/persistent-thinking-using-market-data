@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "delivery_key": "agriculture:agriculture-suite-weekly-2026-09-24:99e93496782e391e767c52ee60ca21bf83cfbbb882b84955716983e607b8a13d",
+  "domain": "agriculture",
+  "run_id": "agriculture-suite-weekly-2026-09-24",
+  "report_sha256": "99e93496782e391e767c52ee60ca21bf83cfbbb882b84955716983e607b8a13d",
+  "report_bytes": 10375,
+  "envelope_sha256": "f99465bfc4d20ee76fa73788f0ae0493076127ba09a068c2d34691000189dea3",
+  "envelope_bytes": 3707,
+  "producer_repository": "6t8hggfm44-tech/-Agriculture-food-",
+  "producer_commit": "73af60312ada8c2edba629ac30db090e649d5774",
+  "producer_report_path": "reports/agriculture-suite-weekly-2026-09-24/99e93496782e391e767c52ee60ca21bf83cfbbb882b84955716983e607b8a13d/Report.md",
+  "prepared_at_utc": "2026-09-24T16:13:01.303238+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact safe prose and envelope only; private evidence and original publisher bodies are not included.",
+    "Staging is not Market receipt, acknowledgment or canonical persistence.",
+    "Reused retained input adds no new observation or independent evidence weight; crop-balance tests remain blocked."
+  ],
+  "source_ancestry": [
+    "usda-waob",
+    "usda-nass",
+    "usda-fas",
+    "foreign-agriculture-statistics",
+    "usdm-authors",
+    "noaa-weather-observations",
+    "usda-field-reports",
+    "usda-aphis-surveillance",
+    "state-animal-health-reports"
+  ],
+  "source_ancestry_note": "Only retained USDM point-depth cells support the measurement diagnostic; USDA records are discovery context, not numerical crop evidence. Shared inputs remain one contribution."
+}
