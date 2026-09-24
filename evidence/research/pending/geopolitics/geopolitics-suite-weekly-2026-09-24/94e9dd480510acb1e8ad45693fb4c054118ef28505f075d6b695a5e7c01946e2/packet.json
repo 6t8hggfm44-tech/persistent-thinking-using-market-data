@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "delivery_key": "geopolitics:geopolitics-suite-weekly-2026-09-24:94e9dd480510acb1e8ad45693fb4c054118ef28505f075d6b695a5e7c01946e2",
+  "domain": "geopolitics",
+  "run_id": "geopolitics-suite-weekly-2026-09-24",
+  "report_sha256": "94e9dd480510acb1e8ad45693fb4c054118ef28505f075d6b695a5e7c01946e2",
+  "report_bytes": 10653,
+  "envelope_sha256": "51454c457758402bfae39c2010b4ddaf7e2018c6cba08dbf53399ff0b9df4276",
+  "envelope_bytes": 4324,
+  "producer_repository": "6t8hggfm44-tech/-Geopolitical-risk",
+  "producer_commit": "f08495cca6877e391c70e45919c82ec93f129193",
+  "producer_report_path": "reports/geopolitics-suite-weekly-2026-09-24/94e9dd480510acb1e8ad45693fb4c054118ef28505f075d6b695a5e7c01946e2/Report.md",
+  "prepared_at_utc": "2026-09-24T19:20:37.891270+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact safe prose and envelope only; private evidence and original publisher bodies are not included.",
+    "Staging is not Market receipt, acknowledgment or canonical persistence.",
+    "Reused retained input adds no new observation or independent evidence weight; current event and economic tests remain blocked."
+  ],
+  "source_ancestry": [
+    "attributed-participant-claims",
+    "country-election-authorities",
+    "imo-confirmed-maritime-incident-reports",
+    "international-idea-assessments",
+    "member-state-incident-notifications",
+    "ukmto-public-maritime-reporting",
+    "un-official-security-council-records",
+    "underlying-news-and-official-records",
+    "us-centcom-public-statements",
+    "us-commerce-bis-official-actions",
+    "us-federal-register",
+    "us-treasury-ofac-official-actions"
+  ],
+  "source_ancestry_note": "Only retained IMO historical count cells support accounting; new error records supply no current event observation. Shared member-state notifications count once."
+}
