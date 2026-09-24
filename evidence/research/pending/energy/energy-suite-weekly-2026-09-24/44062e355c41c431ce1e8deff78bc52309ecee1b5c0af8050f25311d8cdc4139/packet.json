@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "delivery_key": "energy:energy-suite-weekly-2026-09-24:44062e355c41c431ce1e8deff78bc52309ecee1b5c0af8050f25311d8cdc4139",
+  "domain": "energy",
+  "run_id": "energy-suite-weekly-2026-09-24",
+  "report_sha256": "44062e355c41c431ce1e8deff78bc52309ecee1b5c0af8050f25311d8cdc4139",
+  "report_bytes": 7929,
+  "envelope_sha256": "1ccd9e6f945c7f681afc1cb5859102c02e8dd69834671acf9a90e37ced1a72e5",
+  "envelope_bytes": 7647,
+  "producer_repository": "6t8hggfm44-tech/-Energy",
+  "producer_commit": "f2f94f296300bfd762262d31e075cc8dd72aa28e",
+  "producer_report_path": "reports/energy-suite-weekly-2026-09-24/44062e355c41c431ce1e8deff78bc52309ecee1b5c0af8050f25311d8cdc4139/Report.md",
+  "prepared_at_utc": "2026-09-24T22:16:25.982392+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact safe report prose and envelope only; private evidence, raw bodies and operational identifiers excluded.",
+    "Staging is not Market receipt, acknowledgment or canonical persistence.",
+    "No new release was acquired; all petroleum reuse shares one EIA evidence family."
+  ],
+  "source_ancestry": [
+    "EIA_US_weekly_petroleum",
+    "eia:weekly-natural-gas-storage",
+    "eia:survey:EIA-912",
+    "eia:electric-power-monthly",
+    "eia:survey:EIA-923",
+    "eia:survey:EIA-861M"
+  ],
+  "source_ancestry_note": "No new release acquired. Twelve petroleum series and the eligible original-energy parent share one EIA petroleum contribution."
+}
