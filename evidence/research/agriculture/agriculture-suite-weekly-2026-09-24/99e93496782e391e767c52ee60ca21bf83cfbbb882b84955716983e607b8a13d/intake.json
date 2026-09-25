@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "delivery_key": "agriculture:agriculture-suite-weekly-2026-09-24:99e93496782e391e767c52ee60ca21bf83cfbbb882b84955716983e607b8a13d",
+  "domain": "agriculture",
+  "run_id": "agriculture-suite-weekly-2026-09-24",
+  "report_version": 1,
+  "report_kind": "final_evidence_gap",
+  "received_at_utc": "2026-09-25T21:16:11Z",
+  "state": {"received": true, "integrity_checked": true, "archived": true, "acknowledged": true},
+  "integrity": {
+    "report_sha256": "99e93496782e391e767c52ee60ca21bf83cfbbb882b84955716983e607b8a13d",
+    "report_bytes": 10375,
+    "envelope_sha256": "f99465bfc4d20ee76fa73788f0ae0493076127ba09a068c2d34691000189dea3",
+    "envelope_bytes": 3707,
+    "verified": true
+  },
+  "supersedes": [],
+  "notes": ["Zero fresh observations and zero of fourteen required WASDE balance cells; this is an evidence gap, not a crop-supply or food-price finding."]
+}

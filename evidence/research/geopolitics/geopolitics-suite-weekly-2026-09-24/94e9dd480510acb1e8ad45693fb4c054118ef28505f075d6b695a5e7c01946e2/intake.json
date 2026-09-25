@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "delivery_key": "geopolitics:geopolitics-suite-weekly-2026-09-24:94e9dd480510acb1e8ad45693fb4c054118ef28505f075d6b695a5e7c01946e2",
+  "domain": "geopolitics",
+  "run_id": "geopolitics-suite-weekly-2026-09-24",
+  "received_at_utc": "2026-09-25T21:16:11Z",
+  "verified": true,
+  "report_sha256": "94e9dd480510acb1e8ad45693fb4c054118ef28505f075d6b695a5e7c01946e2",
+  "report_bytes": 10653,
+  "envelope_sha256": "51454c457758402bfae39c2010b4ddaf7e2018c6cba08dbf53399ff0b9df4276",
+  "envelope_bytes": 4324,
+  "note": "Evidence-gap packet; no current-window original event document was verified."
+}

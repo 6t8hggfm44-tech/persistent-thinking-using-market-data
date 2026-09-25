@@ -1,0 +1,106 @@
+{
+  "domain": "geopolitics",
+  "run_id": "geopolitics-suite-weekly-2026-09-24",
+  "report_version": 1,
+  "report_kind": "final_evidence_gap",
+  "workflow_commit": "a3d42a041a6506c843bd9844572ed8954c67ea15",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-09-17T19:00:00Z",
+    "end": "2026-09-24T19:00:00Z"
+  },
+  "actual_coverage": {
+    "geography": "Historical Red Sea aggregate only; no current-window original case geography established",
+    "periods": [
+      "November 2023–January 9 2024, separate reporting regime",
+      "January 10 2024–December 31 2025 subset",
+      "January 10 2024–unknown page-as-of cumulative endpoint"
+    ],
+    "retained_records": 7,
+    "numeric_cells": 3,
+    "current_window_original_documents": 0,
+    "new_source_failures": 2,
+    "fresh_numeric_observations": 0
+  },
+  "limitations": [
+    "No current-window original event document; two known access failures do not establish event absence.",
+    "Historical IMO cumulative endpoint and release-vintage history unknown; residual 4 is not an annual or current-week count.",
+    "Retained extracts do not prove original publisher-body identity; no fresh numerical observations.",
+    "No contrary original case, compatible economic outcomes, exposure denominator or causal controls.",
+    "Prior exposure and exploratory diagnostic disclosed; same IMO/member-state observations contribute once."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-24T19:10:24.783147+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-24T19:17:25.306239+00:00",
+  "available_at_utc": "2026-09-24T19:17:25.306239+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "94e9dd480510acb1e8ad45693fb4c054118ef28505f075d6b695a5e7c01946e2",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "b7e24377dcb25809a2c99bb5834ab0b1f15f636597422244d666e6607d41461e",
+  "sources": [
+    {
+      "id": "idea_democracy_tracker",
+      "url": "https://www.idea.int/democracytracker/",
+      "upstream_ids": [
+        "international-idea-assessments",
+        "country-election-authorities",
+        "underlying-news-and-official-records"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher bytes unavailable"
+    },
+    {
+      "id": "imo_red_sea",
+      "url": "https://www.imo.org/en/mediacentre/hottopics/pages/red-sea.aspx",
+      "upstream_ids": [
+        "imo-confirmed-maritime-incident-reports",
+        "member-state-incident-notifications"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher bytes unavailable"
+    },
+    {
+      "id": "ukmto_public_reports",
+      "url": "https://www.ukmto.org/indian-ocean/weekly-reports",
+      "upstream_ids": [
+        "ukmto-public-maritime-reporting",
+        "member-state-incident-notifications"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher bytes unavailable"
+    },
+    {
+      "id": "un_security_council_records",
+      "url": "https://docs.un.org/en/S/PV.9954",
+      "upstream_ids": [
+        "un-official-security-council-records"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher bytes unavailable"
+    },
+    {
+      "id": "us_bis_updates",
+      "url": "https://www.bis.gov/news-updates",
+      "upstream_ids": [
+        "us-commerce-bis-official-actions",
+        "us-federal-register"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher bytes unavailable"
+    },
+    {
+      "id": "us_centcom_public_releases",
+      "url": "https://www.centcom.mil/MEDIA/PRESS-RELEASES/",
+      "upstream_ids": [
+        "us-centcom-public-statements",
+        "attributed-participant-claims"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher bytes unavailable"
+    },
+    {
+      "id": "us_ofac_actions",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "upstream_ids": [
+        "us-treasury-ofac-official-actions"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher bytes unavailable"
+    }
+  ],
+  "delivery_key": "geopolitics:geopolitics-suite-weekly-2026-09-24:94e9dd480510acb1e8ad45693fb4c054118ef28505f075d6b695a5e7c01946e2"
+}

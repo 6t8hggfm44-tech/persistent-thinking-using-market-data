@@ -1,0 +1,14 @@
+{
+  "effective_at": "2026-09-25T21:16:11Z",
+  "model_version": "0.2.15",
+  "weights_before": {"H001": 0.35, "H002": 0.15, "H003": 0.38, "H004": 0.12},
+  "weights_after": {"H001": 0.36, "H002": 0.12, "H003": 0.40, "H004": 0.12},
+  "leader": "H003",
+  "rationale": {
+    "H001": "Resilient real-side activity and low layoffs add modest support.",
+    "H002": "Low claims, revised housing data, capex strength and GDPNow jointly weaken the immediate generalized-contraction path.",
+    "H003": "Strong activity coexists with elevated long yields, higher inflation expectations and high energy prices; update is to the inflation/policy-constraint branch, not a new finding of fiscal causation.",
+    "H004": "Capital-goods strength is investment evidence, not realized economy-wide productivity."
+  },
+  "note": "This dated weight record supplements the hypothesis files because safe in-place read-modify-write was rejected by the connected write path during this run."
+}

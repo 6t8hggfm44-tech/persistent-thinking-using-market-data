@@ -1,34 +1,40 @@
 # Current Market State
 
-**Model version:** 0.2.14  
-**Status:** September 23 regular cycle complete; no forecast resolved, no new forecast, no material model or weight change  
-**Analysis cutoff:** 2026-09-23T21:42:57Z
+**Model version:** 0.2.15
+**Status:** September 25 Friday review complete; no forecast resolved; four pending upstream packets canonically archived; modest hypothesis reweight; no new forecast durably registered
+**Analysis cutoff:** 2026-09-25T21:16:11Z
 
-The [cycle record](../evaluations/2026-09-23-regular-cycle.md) preserves the evidence inventory, observation/inference separation, source-ancestry audit, Skeptic review and forecast decision. The canonical upstream index records actual Market receipt times rather than producer availability or staging time.
+The [Friday review](../evaluations/2026-09-25-weekly-review.md) preserves scoring, benchmark/calibration audit, source ancestry, Skeptic review, model changes and the learning assessment. [Cycle evidence](../evidence/2026-09-25-cycle.md) separates observations from inference. The dated [v0.2.15 change record](../meta/model_changes/2026-09-25-v0.2.15.md), [weight record](../meta/hypothesis_weights/2026-09-25-v0.2.15.json), and [receipt supplement](../evidence/research/INDEX-2026-09-25-supplement.md) preserve the pieces that the connected write path would not safely merge into cumulative read-modify-write files during this run.
 
 ## Evidence and interpretation
 
-Four post-prior-cutoff packets were canonically admitted after exact immutable-byte verification: Agriculture targeted recovery v1, Geopolitics targeted recovery v2, Trade weekly v1 and Fiscal weekly v1. Agriculture and Geopolitics are evidence-gap reports and add no economic measurement. Trade reuses the same Port of Los Angeles cells already present in earlier Trade/Freight work; Fiscal reuses the same Census construction release already present in earlier Fiscal/construction work. Those shared observations receive no duplicate evidence contribution.
+No forecast expired before evidence intake, so the probability ledger remains **22 resolved forecasts**, mean **Brier 0.212214** and mean **log loss 0.614555**. The sample remains below the precommitted 30-resolution threshold; learning is not established.
 
-Fresh September 23 evidence shows two offsetting macro channels. S&P Global's flash U.S. Composite PMI rose to 58.4 from 56.0 in August, with stronger new orders/backlogs and higher reported price pressure, supporting near-term demand resilience and weakening an immediate-recession interpretation. Meanwhile Saudi Arabia restarted the East-West Pipeline at reduced flow and U.S. commercial crude inventories rose roughly 3.0 million barrels in the latest EIA week, mitigating a uniformly worsening crude-shortage story. Gasoline and distillate inventories nevertheless fell, preserving refined-product inflation/pass-through risk.
+Four complete pending packets were first canonically received at 2026-09-25T21:16:11Z: Freight weekly v2, Agriculture weekly, Geopolitics weekly and Suite Energy weekly. Their staged bytes and hashes were independently verified and their exact report/envelope blobs were archived under canonical paths. They add no fresh macro observation: Freight reuses Port LA cells; Agriculture lacks required WASDE balance cells; Geopolitics lacks a verified current-window original event document; Energy acquired no new release. Repeated source ancestry earns no duplicate vote.
 
-The Skeptic rejected a one-directional H003 update: survey strength may include front-loading/supply responses; survey prices and market yields are downstream proxies rather than direct CPI/fiscal identification; Saudi route normalization is contrary evidence; and crude versus refined-product inventories measure different layers of the energy system. Existing causal edges already represent demand-driven price pressure, energy pass-through, margin/purchasing-power drag and supply normalization.
+Post-cutoff evidence points to stronger near-term real activity than the delayed-recession branch expected: initial claims were 197K; August new-home sales were 684K with July revised up to 643K; August core capital-goods orders rose 1.6%; and Atlanta Fed GDPNow estimated Q3 real GDP growth at 5.0%. The housing revision specifically weakens the earlier inference built on the original July 607K print.
+
+The same state is not fully benign. Final September Michigan sentiment was 48.1 while one-year inflation expectations rose to 4.6%; the official September 24 10-year Treasury par yield was 5.18%; and Brent still settled above $104 on Friday despite falling on the day. These jointly strengthen the inflation/policy-constraint branch without uniquely identifying fiscal impulse or realized future inflation.
 
 ## Hypotheses and forecasts
 
-- H001 Soft landing: **0.35**
-- H002 Late-cycle recession: **0.15**
-- H003 Fiscal/inflation regime: **0.38**
+- H001 Soft landing: **0.36**
+- H002 Late-cycle recession: **0.12**
+- H003 Fiscal/inflation regime: **0.40**
 - H004 Productivity boom: **0.12**
 
-No causal-graph or model-version change. No new forecast. P000029 remains frozen at **66%** for first-release September headline CPI >= +0.4% m/m, point +0.5%, 80% interval +0.1% to +0.9%, resolving October 14, 2026 at 08:30 ET. P000004 and P000005 remain pending their November 2026 and August 2027 horizons.
+Model v0.2.15 adds no new causal edge. It formalizes a revision-awareness rule: later official data revisions may change present-state evidence weight, but frozen forecasts retain their original information cutoffs and first-release resolution rules. The July new-home-sales revision is the trigger.
 
-No forecast was due today. The probability ledger remains **22 resolved forecasts**, mean **Brier 0.212214** and mean **log loss 0.614555**. With n<30, the experiment still does not claim demonstrated learning.
+P000029 remains frozen at **66%** for first-release September headline CPI >= +0.4% m/m, point +0.5%, 80% interval +0.1% to +0.9%, resolving October 14, 2026 at 08:30 ET. P000004 and P000005 remain unresolved. An attempted new probabilistic core-PCE record was rejected by the connected write path, so no P000030 is claimed or counted.
+
+## Learning status
+
+Recent probability vintages remain numerically better than early ones, but targets/horizons differ, dependence is substantial, S&P point skill versus matched no-change is slightly negative, and 80% interval coverage remains 90.9%, suggesting conservative intervals. **Insufficient evidence to assess learning** remains the only supported conclusion at n=22.
 
 ## Operational boundary
 
-The September 23 Agriculture, Geopolitics, Trade and Fiscal packets are canonical only from their actual Market receipt times and are indexed under `evidence/research/INDEX.md`. Staging, producer availability and source-event dates were not backdated into the Market evidence cutoff. Access failures and missing numerical cells remain explicit gaps rather than negative domain findings.
+Canonical receipt time is actual Market receipt, not producer availability or staging time. Missing documents/tables remain gaps. Shared Port LA and EIA evidence are deduplicated by causal ancestry. No historical forecast is rewritten.
 
-No trade recommendation is produced. The most informative existing near-term test remains whether September's demand and refined-product pressure pass through to headline CPI while Saudi/Hormuz supply routes normalize.
+The cumulative `evidence/research/INDEX.md`, `meta/MODEL_CHANGELOG.md`, and individual hypothesis files remain unchanged because the connector rejected safe in-place read-modify-write operations. Their dated supplements above are authoritative for this cycle until a later reconciliation merges them without changing history.
 
-The prior soft-opening synthesis remains preserved in repository history and is not rewritten by this cycle.
+No trade recommendation is produced. The next important watch is the September 30 core-PCE release; the highest-information durably registered forecast remains P000029 for October 14 headline CPI.

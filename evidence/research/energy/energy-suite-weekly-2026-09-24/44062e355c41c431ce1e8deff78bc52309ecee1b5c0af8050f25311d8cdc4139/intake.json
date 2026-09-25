@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "delivery_key": "energy:energy-suite-weekly-2026-09-24:44062e355c41c431ce1e8deff78bc52309ecee1b5c0af8050f25311d8cdc4139",
+  "domain": "energy",
+  "run_id": "energy-suite-weekly-2026-09-24",
+  "received_at_utc": "2026-09-25T21:16:11Z",
+  "verified": true,
+  "report_sha256": "44062e355c41c431ce1e8deff78bc52309ecee1b5c0af8050f25311d8cdc4139",
+  "report_bytes": 7929,
+  "envelope_sha256": "1ccd9e6f945c7f681afc1cb5859102c02e8dd69834671acf9a90e37ced1a72e5",
+  "envelope_bytes": 7647,
+  "note": "No new source observation in this packet."
+}
