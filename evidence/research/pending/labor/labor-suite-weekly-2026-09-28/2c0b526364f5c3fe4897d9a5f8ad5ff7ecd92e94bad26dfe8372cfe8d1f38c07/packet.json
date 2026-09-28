@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "delivery_key": "labor:labor-suite-weekly-2026-09-28:2c0b526364f5c3fe4897d9a5f8ad5ff7ecd92e94bad26dfe8372cfe8d1f38c07",
+  "domain": "labor",
+  "run_id": "labor-suite-weekly-2026-09-28",
+  "report_sha256": "2c0b526364f5c3fe4897d9a5f8ad5ff7ecd92e94bad26dfe8372cfe8d1f38c07",
+  "report_bytes": 8244,
+  "envelope_sha256": "00ef283a2e1e0a30bb97cc0498ba63efe944af586561ab94fb1e814d3450c522",
+  "envelope_bytes": 3257,
+  "producer_repository": "6t8hggfm44-tech/-Labor-market-agent",
+  "producer_commit": "034f7db346365dadfb9ba888c17dbb375da3e8d4",
+  "producer_report_path": "reports/labor-suite-weekly-2026-09-28/2c0b526364f5c3fe4897d9a5f8ad5ff7ecd92e94bad26dfe8372cfe8d1f38c07/Report.md",
+  "prepared_at_utc": "2026-09-28T19:15:59.040485+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact UTF-8 report and envelope from verified private commit; full private package and source bodies are not transmitted.",
+    "Publisher-body identity and current availability are not established by retained extracts.",
+    "Staging is not Market receipt, acknowledgment or canonical persistence."
+  ],
+  "source_ancestry": [
+    "bls:current-employment-statistics",
+    "bls:current-population-survey",
+    "bls:job-openings-and-labor-turnover-survey",
+    "bls:national-compensation-survey:employment-cost-index",
+    "dol:eta:state-unemployment-insurance-claims"
+  ]
+}
