@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "delivery_key": "credit:credit-suite-weekly-2026-09-28:e20df45c4abbe937f9abf3bdc364051b3068fca9286e06eda788a9a06c01e5d1",
+  "domain": "credit",
+  "run_id": "credit-suite-weekly-2026-09-28",
+  "report_sha256": "e20df45c4abbe937f9abf3bdc364051b3068fca9286e06eda788a9a06c01e5d1",
+  "report_bytes": 7850,
+  "envelope_sha256": "613258179c250d69570545970d5a40b5c2ac8e8639f9c4efde97658111f219bd",
+  "envelope_bytes": 3601,
+  "producer_repository": "6t8hggfm44-tech/-Credit-financial-stress-",
+  "producer_commit": "b65aab035f05c28a4bac0fcad083f683d6f2f992",
+  "producer_report_path": "reports/credit-suite-weekly-2026-09-28/e20df45c4abbe937f9abf3bdc364051b3068fca9286e06eda788a9a06c01e5d1/Report.md",
+  "prepared_at_utc": "2026-09-28T16:19:26.003918+00:00",
+  "source_ancestry": [
+    {
+      "id": "fed_h8",
+      "upstream_ids": [
+        "fed-h8-bank-reporting",
+        "ffiec-call-reports"
+      ]
+    },
+    {
+      "id": "fed_sloos",
+      "upstream_ids": [
+        "fed-sloos-survey"
+      ]
+    },
+    {
+      "id": "fed_delinquency",
+      "upstream_ids": [
+        "ffiec-call-reports"
+      ]
+    },
+    {
+      "id": "fed_cp",
+      "upstream_ids": [
+        "fed-cp-dtcc"
+      ]
+    },
+    {
+      "id": "fed_h15",
+      "upstream_ids": [
+        "fed-h15-market-rate-inputs",
+        "fed-cp-dtcc"
+      ]
+    }
+  ],
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact producer report and envelope only; private reproducibility package is not copied to public Market.",
+    "Staging does not establish receiver receipt, acknowledgment or canonical persistence.",
+    "Reviewed derived extracts, not original publisher bodies; retained quarterly data are reused and share ancestry."
+  ]
+}
