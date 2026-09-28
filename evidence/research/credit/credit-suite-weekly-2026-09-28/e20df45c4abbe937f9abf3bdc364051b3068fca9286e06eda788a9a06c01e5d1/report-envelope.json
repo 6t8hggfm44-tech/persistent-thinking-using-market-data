@@ -1,0 +1,102 @@
+{
+  "domain": "credit",
+  "run_id": "credit-suite-weekly-2026-09-28",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "20e6fef3132df2aeed852e80ca7486c935babb59",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2024-04-01T00:00:00Z",
+    "end": "2026-09-25T00:00:00Z"
+  },
+  "actual_coverage": {
+    "geography": "U.S. aggregate banks and selected rates",
+    "requested_week": "2026-09-28",
+    "delinquency_quarters": [
+      "2024Q2",
+      "2025Q2",
+      "2026Q1",
+      "2026Q2"
+    ],
+    "h8_week_ending": [
+      "2026-08-26",
+      "2026-09-02",
+      "2026-09-09",
+      "2026-09-16"
+    ],
+    "h8_months": [
+      "2026-07",
+      "2026-08"
+    ],
+    "h15_days": [
+      "2026-09-18",
+      "2026-09-21",
+      "2026-09-22",
+      "2026-09-23",
+      "2026-09-24"
+    ],
+    "reviewed_cells": 71,
+    "new_source_commands": 2
+  },
+  "limitations": [
+    "Selected U.S. aggregates only; no regional bank panel, bankruptcy, charge-off, repo volumes or corporate OAS.",
+    "Quarterly retained observations through 2026Q2 are not current-week measurements or independent new evidence.",
+    "Derived tool extracts identify selected text, not original publisher bodies; upstream HTTP accounting unmeasured under scoped connected authority.",
+    "Supply-demand causality and economic effects untested; missing denominators, ordinary baselines and matched exposure.",
+    "Weekly H.8 stocks not independently break-adjusted; full footnotes unavailable. CP-versus-bill proxy differs by two days of maturity."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-28T16:10:58.698895+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-28T16:17:20.740308+00:00",
+  "available_at_utc": "2026-09-28T16:17:20.740308+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "e20df45c4abbe937f9abf3bdc364051b3068fca9286e06eda788a9a06c01e5d1",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "07d49a32ec0baf7115b3f8488648fa02af45b015c57b67a42836ac27bce22e6f",
+  "sources": [
+    {
+      "id": "fed_h8",
+      "url": "https://www.federalreserve.gov/releases/h8/current/",
+      "upstream_ids": [
+        "fed-h8-bank-reporting",
+        "ffiec-call-reports"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher bytes unavailable"
+    },
+    {
+      "id": "fed_sloos",
+      "url": "https://www.federalreserve.gov/data/sloos.htm",
+      "upstream_ids": [
+        "fed-sloos-survey"
+      ],
+      "integrity_status": "Historical capture metadata only; original bytes missing."
+    },
+    {
+      "id": "fed_delinquency",
+      "url": "https://www.federalreserve.gov/releases/chargeoff/delallsa.htm",
+      "upstream_ids": [
+        "ffiec-call-reports"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher bytes unavailable"
+    },
+    {
+      "id": "fed_cp",
+      "url": "https://www.federalreserve.gov/releases/cp/rates.htm",
+      "upstream_ids": [
+        "fed-cp-dtcc"
+      ],
+      "integrity_status": "Historical capture metadata only; original bytes missing."
+    },
+    {
+      "id": "fed_h15",
+      "url": "https://www.federalreserve.gov/releases/h15/",
+      "upstream_ids": [
+        "fed-h15-market-rate-inputs",
+        "fed-cp-dtcc"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher bytes unavailable"
+    }
+  ],
+  "delivery_key": "credit:credit-suite-weekly-2026-09-28:e20df45c4abbe937f9abf3bdc364051b3068fca9286e06eda788a9a06c01e5d1"
+}
