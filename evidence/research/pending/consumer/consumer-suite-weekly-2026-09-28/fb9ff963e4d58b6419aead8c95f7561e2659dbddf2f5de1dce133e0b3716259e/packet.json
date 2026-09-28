@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "domain": "consumer",
+  "run_id": "consumer-suite-weekly-2026-09-28",
+  "delivery_key": "consumer:consumer-suite-weekly-2026-09-28:fb9ff963e4d58b6419aead8c95f7561e2659dbddf2f5de1dce133e0b3716259e",
+  "report_sha256": "fb9ff963e4d58b6419aead8c95f7561e2659dbddf2f5de1dce133e0b3716259e",
+  "report_bytes": 9301,
+  "envelope_sha256": "7e23968159d70f4448e99bdca2c819491406c6686b5d999acdaa64b59b3bc758",
+  "envelope_bytes": 3260,
+  "producer_repository": "6t8hggfm44-tech/-Consumer-activity-",
+  "producer_commit": "cff754f90bf0c0f47292f67104c235c8ab7eb69a",
+  "producer_report_path": "reports/consumer-suite-weekly-2026-09-28/fb9ff963e4d58b6419aead8c95f7561e2659dbddf2f5de1dce133e0b3716259e/Report.md",
+  "prepared_at_utc": "2026-09-28T22:10:09.069001+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact UTF-8 report/envelope from verified private commit; private evidence package and publisher bodies are not transmitted.",
+    "Retained extract identity does not establish original publisher bodies, latest revisions or current availability.",
+    "Staging is not receiver receipt, acknowledgment or canonical persistence."
+  ],
+  "source_ancestry": [
+    "bea:nipa:personal-consumption-expenditures",
+    "census:advance-monthly-retail-trade",
+    "census:monthly-retail-trade",
+    "census:quarterly-services-survey",
+    "federal-reserve:consumer-credit:G19",
+    "tsa:checkpoint-traveler-throughput"
+  ]
+}
