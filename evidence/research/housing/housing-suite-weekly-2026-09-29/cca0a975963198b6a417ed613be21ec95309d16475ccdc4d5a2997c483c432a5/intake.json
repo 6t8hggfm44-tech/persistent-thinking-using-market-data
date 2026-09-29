@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "delivery_key": "housing:housing-suite-weekly-2026-09-29:cca0a975963198b6a417ed613be21ec95309d16475ccdc4d5a2997c483c432a5",
+  "domain": "housing",
+  "run_id": "housing-suite-weekly-2026-09-29",
+  "report_version": 1,
+  "received_at_utc": "2026-09-29T21:12:15Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "f14bb431884122a27f6b0bca8c877c5840b3a82f"
+  },
+  "integrity": {
+    "report_sha256": "cca0a975963198b6a417ed613be21ec95309d16475ccdc4d5a2997c483c432a5",
+    "report_bytes": 11995,
+    "envelope_sha256": "6e4d41784eb39843b30149adca5b4a55f675b4bdeb68abd9cc1febc83ee53275",
+    "envelope_bytes": 3224,
+    "verified": true
+  },
+  "notes": [
+    "No fresh publisher observation; retained-vintage calculations receive no new evidence vote."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "delivery_key": "consumer:consumer-suite-weekly-2026-09-28:fb9ff963e4d58b6419aead8c95f7561e2659dbddf2f5de1dce133e0b3716259e",
+  "domain": "consumer",
+  "run_id": "consumer-suite-weekly-2026-09-28",
+  "report_version": 1,
+  "received_at_utc": "2026-09-29T21:12:15Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "5b7c995cd41976c442e1e1a5e6fb0b7c0f5dea2e"
+  },
+  "integrity": {
+    "report_sha256": "fb9ff963e4d58b6419aead8c95f7561e2659dbddf2f5de1dce133e0b3716259e",
+    "report_bytes": 9301,
+    "envelope_sha256": "7e23968159d70f4448e99bdca2c819491406c6686b5d999acdaa64b59b3bc758",
+    "envelope_bytes": 3260,
+    "verified": true
+  },
+  "notes": [
+    "Retained September 22 source observations only; no fresh publisher observation and no new evidence vote."
+  ]
+}

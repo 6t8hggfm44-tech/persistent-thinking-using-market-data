@@ -1,0 +1,79 @@
+{
+  "domain": "housing",
+  "run_id": "housing-suite-weekly-2026-09-29",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "8cf96a265f04c0e88eac0ff8edfeda6215f67486",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-09-22T16:00:00Z",
+    "end": "2026-09-29T16:00:00Z"
+  },
+  "actual_coverage": {
+    "requested_week_is_not_observation_period": true,
+    "construction": "March-August2026 retained vintage",
+    "sales": "February-July2026 retained vintage",
+    "mortgage_rates": "September17,2026",
+    "retained_numeric_cells": 50,
+    "new_verified_source_observations": 0,
+    "full_roster_measured": false
+  },
+  "limitations": [
+    "No current publisher refresh verified; one reserved operation remains uncertain.",
+    "50 reused reviewed cells only; original bodies unavailable and revisions unknown.",
+    "Causal and full-history tests blocked; incomplete domain coverage."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-29T16:08:10.146283+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-29T16:08:10.194726+00:00",
+  "available_at_utc": "2026-09-29T16:08:10.194726+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "cca0a975963198b6a417ed613be21ec95309d16475ccdc4d5a2997c483c432a5",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "d09cfe134b41f841a0d90727d63c6d042316c2f6f3b8d7a4a68fe0041114fbed",
+  "sources": [
+    {
+      "id": "freddie_pmms",
+      "url": "https://www.freddiemac.com/pmms",
+      "upstream_ids": [
+        "FREDDIE-MAC-LPA-PMMS"
+      ],
+      "integrity_status": "Exact retained extract and prior frozen input hashes verified; original publisher body unavailable; no current revision/access claim"
+    },
+    {
+      "id": "census_nrc",
+      "url": "https://www.census.gov/construction/nrc/pdf/newresconst.pdf",
+      "upstream_ids": [
+        "US-CENSUS-BPS",
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Exact retained extract and prior frozen input hashes verified; original publisher body unavailable; no current revision/access claim"
+    },
+    {
+      "id": "census_nrs",
+      "url": "https://www.census.gov/construction/nrs/pdf/newressales.pdf",
+      "upstream_ids": [
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Exact retained extract and prior frozen input hashes verified; original publisher body unavailable; no current revision/access claim"
+    },
+    {
+      "id": "bls_construction_employment",
+      "url": "https://www.bls.gov/news.release/empsit.t17.htm",
+      "upstream_ids": [
+        "US-BLS-CES"
+      ],
+      "integrity_status": "No source-body or extract available; timestamp denotes status review only, not source retrieval."
+    },
+    {
+      "id": "fed_sloos_cre",
+      "url": "https://www.federalreserve.gov/data/sloos.htm",
+      "upstream_ids": [
+        "FRB-SLOOS-RESPONDENT-BANKS"
+      ],
+      "integrity_status": "No source-body or extract available; timestamp denotes status review only, not source retrieval."
+    }
+  ],
+  "delivery_key": "housing:housing-suite-weekly-2026-09-29:cca0a975963198b6a417ed613be21ec95309d16475ccdc4d5a2997c483c432a5"
+}

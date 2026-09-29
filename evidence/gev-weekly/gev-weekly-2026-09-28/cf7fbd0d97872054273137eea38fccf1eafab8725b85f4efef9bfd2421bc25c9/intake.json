@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "delivery_key": "gev-weekly-2026-09-28:cf7fbd0d97872054273137eea38fccf1eafab8725b85f4efef9bfd2421bc25c9",
+  "domain": "gev",
+  "run_id": "gev-weekly-2026-09-28",
+  "report_version": 1,
+  "received_at_utc": "2026-09-29T21:12:15Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "458ab0bd3107064fbc5ce290ab7a7e0881b02d27"
+  },
+  "integrity": {
+    "report_sha256": "cf7fbd0d97872054273137eea38fccf1eafab8725b85f4efef9bfd2421bc25c9",
+    "report_bytes": 11337,
+    "envelope_sha256": "7562806e8b07070a936d61012f9c9fe7f2bb4f5f11226bd41bd0a25cb6692674",
+    "envelope_bytes": 3603,
+    "verified": true
+  },
+  "notes": [
+    "Legacy GEV key/archive preserved.",
+    "Later-read evidence is not backdated; no physical cause or economic impact established."
+  ]
+}
