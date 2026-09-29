@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "domain": "gev",
+  "producer_kind": "legacy_gev",
+  "run_id": "gev-weekly-2026-09-28",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "generated_at_utc": "2026-09-29T01:03:08.760996+00:00",
+  "available_at_utc": "2026-09-29T01:03:08.760996+00:00",
+  "availability_scope": "Later continuation final producer-runtime bytes; not morning-known; remote storage and Market receipt recorded separately",
+  "event_window_utc": {
+    "start": "2026-09-21T15:03:12.081641+00:00",
+    "end": "2026-09-28T15:03:12.081641+00:00"
+  },
+  "report_path": "Report.md",
+  "report_sha256": "cf7fbd0d97872054273137eea38fccf1eafab8725b85f4efef9bfd2421bc25c9",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "09b715da34759c28e8f06ecd46ced4298fd88853e5836114b9d2b3d0832998ec",
+  "workflow_commit": "e9105bf38cdca6e78955f03844a2c894c9abd793",
+  "executed_code_commit": "e9105bf38cdca6e78955f03844a2c894c9abd793",
+  "private_control_commit": "320fd2f39780c557676943af056bad88e4c83f08",
+  "producer_workflow_repository": "6t8hggfm44-tech/satellite-research",
+  "actual_coverage": {
+    "retained_cases": 90,
+    "in_window_cases": 85,
+    "excluded_before_window": 5,
+    "in_window_unique_aircraft": 78,
+    "regions": {
+      "baltic-nordic": 27,
+      "eastern-mediterranean": 29,
+      "gulf": 29
+    },
+    "daily_in_window_counts": {
+      "2026-09-21": 10,
+      "2026-09-22": 15,
+      "2026-09-23": 15,
+      "2026-09-24": 15,
+      "2026-09-25": 15,
+      "2026-09-26": 15
+    },
+    "source_switch_cases": 36,
+    "unknown_age_cases": 85,
+    "known_age_only_cases": 0,
+    "satellite_detector_counts": {
+      "satellite_element_discontinuity": 78,
+      "satellite_catalog_stale": 2,
+      "satellite_catalog_conflict": 1
+    },
+    "missing_day": "2026-09-27",
+    "full_week_coverage": false
+  },
+  "sources": [
+    {
+      "id": "adsb-lol-history",
+      "url": "https://www.adsb.lol/",
+      "upstream_ids": [
+        "adsb.lol"
+      ],
+      "integrity_status": "GitHub artifact digest/bytes, safe weekly manifest and raw retained-case replay verified; not independent publisher-body authentication"
+    },
+    {
+      "id": "celestrak-catalogs",
+      "url": "https://celestrak.org/",
+      "upstream_ids": [
+        "CelesTrak"
+      ],
+      "integrity_status": "GitHub artifact digest/bytes, all 39 manifest entries and pinned saved-input replay verified; current provider access blocked"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "kind": "OBSERVATION",
+      "claim": "85 in-window aircraft data candidates and81 satellite flags reproduced within the bounded saved inputs."
+    },
+    {
+      "id": "C2",
+      "kind": "INFERENCE",
+      "claim": "Physical cause, military attribution and economic effects remain unverified."
+    }
+  ],
+  "supersedes": [],
+  "limitations": [
+    "Later-read supplement, not morning-known findings.",
+    "Independent arithmetic on same provider traces is not independent sensing.",
+    "Saved full-scan counters not reproduced from omitted complete daily packages.",
+    "No matched unaffected receiver controls, independent RF/onboard data, operator impact data, or complete rolling week.",
+    "Nonrandom daily selections; all 85 in-window aircraft candidates have unknown position ages.",
+    "Satellite flags are fitted catalog products; no physical maneuver or economic effect verified.",
+    "CelesTrak provider-review block preserved; archive transport success does not clear it."
+  ],
+  "delivery_key": "gev-weekly-2026-09-28:cf7fbd0d97872054273137eea38fccf1eafab8725b85f4efef9bfd2421bc25c9"
+}

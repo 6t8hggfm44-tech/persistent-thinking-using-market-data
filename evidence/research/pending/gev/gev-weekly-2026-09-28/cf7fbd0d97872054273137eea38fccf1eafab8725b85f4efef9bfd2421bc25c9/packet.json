@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "delivery_key": "gev-weekly-2026-09-28:cf7fbd0d97872054273137eea38fccf1eafab8725b85f4efef9bfd2421bc25c9",
+  "domain": "gev",
+  "run_id": "gev-weekly-2026-09-28",
+  "report_sha256": "cf7fbd0d97872054273137eea38fccf1eafab8725b85f4efef9bfd2421bc25c9",
+  "report_bytes": 11337,
+  "envelope_sha256": "7562806e8b07070a936d61012f9c9fe7f2bb4f5f11226bd41bd0a25cb6692674",
+  "envelope_bytes": 3603,
+  "producer_repository": "6t8hggfm44-tech/-Energy",
+  "producer_workflow_repository": "6t8hggfm44-tech/satellite-research",
+  "producer_kind": "legacy_gev",
+  "producer_commit": "5cb8ef874d4eff08b945a8157682d7c676dd5789",
+  "producer_report_path": "cloud/legacy-weekly/reports/gev/gev-weekly-2026-09-28/cf7fbd0d97872054273137eea38fccf1eafab8725b85f4efef9bfd2421bc25c9/Report.md",
+  "prepared_at_utc": "2026-09-29T01:04:30.631672+00:00",
+  "transport_limitations": [
+    "Exact UTF-8 report/envelope privately committed and read back; private reproducibility/raw evidence is not part of public transport.",
+    "Staging is not Market receipt, acknowledgment or canonical persistence.",
+    "Later-read evidence must not be backdated to the original morning availability."
+  ],
+  "declared_transformations": [
+    "None: exact original UTF-8 report and envelope bytes, including terminal newlines."
+  ]
+}
