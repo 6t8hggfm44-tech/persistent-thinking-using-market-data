@@ -1,0 +1,24 @@
+{
+  "effective_at": "2026-09-28T21:38:27Z",
+  "model_version": "0.2.16",
+  "weights_before": {
+    "H001": 0.36,
+    "H002": 0.12,
+    "H003": 0.4,
+    "H004": 0.12
+  },
+  "weights_after": {
+    "H001": 0.36,
+    "H002": 0.12,
+    "H003": 0.4,
+    "H004": 0.12
+  },
+  "leader": "H003",
+  "change": "none",
+  "rationale": {
+    "H001": "No sufficiently fresh independent evidence to raise the soft-landing branch before the September 30 inflation/activity cluster.",
+    "H002": "Credit modestly weakens immediate generalized stress, but coverage is too bounded and partly stale to justify another weight cut.",
+    "H003": "High yields/oil remain compatible with the branch but are causally ambiguous market endpoints; no new underlying inflation release arrived.",
+    "H004": "No new productivity outcome evidence."
+  }
+}

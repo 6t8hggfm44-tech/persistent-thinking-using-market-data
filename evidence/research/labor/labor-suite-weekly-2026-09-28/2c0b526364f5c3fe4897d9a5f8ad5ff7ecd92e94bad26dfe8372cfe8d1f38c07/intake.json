@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "delivery_key": "labor:labor-suite-weekly-2026-09-28:2c0b526364f5c3fe4897d9a5f8ad5ff7ecd92e94bad26dfe8372cfe8d1f38c07",
+  "domain": "labor",
+  "run_id": "labor-suite-weekly-2026-09-28",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "received_at_utc": "2026-09-28T21:38:27Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "ae9d76fe272f1137f6e6b3d4ea7f3142a23d5543",
+    "staging_path": "evidence/research/pending/labor/labor-suite-weekly-2026-09-28/2c0b526364f5c3fe4897d9a5f8ad5ff7ecd92e94bad26dfe8372cfe8d1f38c07/"
+  },
+  "integrity": {
+    "report_sha256": "2c0b526364f5c3fe4897d9a5f8ad5ff7ecd92e94bad26dfe8372cfe8d1f38c07",
+    "report_bytes": 8244,
+    "envelope_sha256": "00ef283a2e1e0a30bb97cc0498ba63efe944af586561ab94fb1e814d3450c522",
+    "envelope_bytes": 3257,
+    "verified": true,
+    "method": "Exact connector UTF-8 reconstruction from the immutable staged packet; receiver recomputed SHA-256 and byte lengths and matched packet fields."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/labor/labor-suite-weekly-2026-09-28/2c0b526364f5c3fe4897d9a5f8ad5ff7ecd92e94bad26dfe8372cfe8d1f38c07/Report.md",
+    "envelope": "evidence/research/labor/labor-suite-weekly-2026-09-28/2c0b526364f5c3fe4897d9a5f8ad5ff7ecd92e94bad26dfe8372cfe8d1f38c07/report-envelope.json",
+    "intake": "evidence/research/labor/labor-suite-weekly-2026-09-28/2c0b526364f5c3fe4897d9a5f8ad5ff7ecd92e94bad26dfe8372cfe8d1f38c07/intake.json"
+  },
+  "supersedes": [],
+  "notes": [
+    "No new publisher observation was acquired; repeated DOL/BLS cells receive no independent evidence vote.",
+    "The packet preserves mixed low-hire/low-fire evidence without promoting a fresh contraction or benign-labor conclusion."
+  ]
+}

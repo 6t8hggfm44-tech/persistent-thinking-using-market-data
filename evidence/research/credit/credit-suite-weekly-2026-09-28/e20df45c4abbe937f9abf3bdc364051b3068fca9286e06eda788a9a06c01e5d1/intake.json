@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "delivery_key": "credit:credit-suite-weekly-2026-09-28:e20df45c4abbe937f9abf3bdc364051b3068fca9286e06eda788a9a06c01e5d1",
+  "domain": "credit",
+  "run_id": "credit-suite-weekly-2026-09-28",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "received_at_utc": "2026-09-28T21:38:27Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "ff1d530d3cc334fde123eca4612319e9c2053c87",
+    "staging_path": "evidence/research/pending/credit/credit-suite-weekly-2026-09-28/e20df45c4abbe937f9abf3bdc364051b3068fca9286e06eda788a9a06c01e5d1/"
+  },
+  "integrity": {
+    "report_sha256": "e20df45c4abbe937f9abf3bdc364051b3068fca9286e06eda788a9a06c01e5d1",
+    "report_bytes": 7850,
+    "envelope_sha256": "613258179c250d69570545970d5a40b5c2ac8e8639f9c4efde97658111f219bd",
+    "envelope_bytes": 3601,
+    "verified": true,
+    "method": "Exact connector UTF-8 reconstruction from the immutable staged packet; receiver recomputed SHA-256 and byte lengths and matched packet fields."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/credit/credit-suite-weekly-2026-09-28/e20df45c4abbe937f9abf3bdc364051b3068fca9286e06eda788a9a06c01e5d1/Report.md",
+    "envelope": "evidence/research/credit/credit-suite-weekly-2026-09-28/e20df45c4abbe937f9abf3bdc364051b3068fca9286e06eda788a9a06c01e5d1/report-envelope.json",
+    "intake": "evidence/research/credit/credit-suite-weekly-2026-09-28/e20df45c4abbe937f9abf3bdc364051b3068fca9286e06eda788a9a06c01e5d1/intake.json"
+  },
+  "supersedes": [],
+  "notes": [
+    "Fresh H.8/H.15 observations receive bounded weight; reused delinquency cells are deduplicated.",
+    "Missing source panels remain gaps rather than negative evidence."
+  ]
+}
