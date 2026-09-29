@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "delivery_key": "housing:housing-suite-weekly-2026-09-29:cca0a975963198b6a417ed613be21ec95309d16475ccdc4d5a2997c483c432a5",
+  "domain": "housing",
+  "run_id": "housing-suite-weekly-2026-09-29",
+  "report_sha256": "cca0a975963198b6a417ed613be21ec95309d16475ccdc4d5a2997c483c432a5",
+  "report_bytes": 11995,
+  "envelope_sha256": "6e4d41784eb39843b30149adca5b4a55f675b4bdeb68abd9cc1febc83ee53275",
+  "envelope_bytes": 3224,
+  "producer_repository": "6t8hggfm44-tech/-Housing-construction-",
+  "producer_commit": "9f300419d293abb23428ac06b1aa8ec23487005b",
+  "producer_report_path": "reports/housing-suite-weekly-2026-09-29/cca0a975963198b6a417ed613be21ec95309d16475ccdc4d5a2997c483c432a5/Report.md",
+  "prepared_at_utc": "2026-09-29T16:09:10.867757+00:00",
+  "declared_transformations": [
+    "None: exact private report/envelope readback bytes."
+  ],
+  "transport_limitations": [
+    "Private evidence package is not included in public transport.",
+    "No new publisher evidence was verified; report uses dated limited reviewed extracts.",
+    "Staging is not Market receipt, acknowledgment or canonical persistence."
+  ]
+}
