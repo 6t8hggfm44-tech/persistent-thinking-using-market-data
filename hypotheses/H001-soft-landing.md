@@ -1,7 +1,7 @@
 # H001: Soft Landing
 
 **Prior weight:** 0.25  
-**Current weight:** 0.35  
+**Current weight:** 0.36  
 **Status:** Active competing hypothesis; close second behind H003
 
 ## Thesis
@@ -40,3 +40,6 @@ Weak labor or demand data accompanied by low layoffs, stable credit, resilient e
 - 2026-08-27 posterior **0.34**: P000020's specific sticky-reemployment joint event failed because continuing claims fell to 1.778 million while initial claims remained only 203,000. The prospective labor result transfers 0.01 from H002 to H001. This is support for current labor resilience, not proof that all hiring weakness has disappeared.
 - 2026-08-28 posterior **0.34 unchanged**: Brent and WTI ended the week more than 5%/4% lower and Warsh said medium-term inflation expectations remain broadly anchored, both preserving the benign path. But his explicit inflation-first reaction-function language and the official 10-year yield rise to 4.73% prevent an upgrade. H001 remains nearly tied with H003 rather than being rejected.
 - 2026-09-04 posterior **0.35**: August payrolls rose 162K, unemployment remained 4.1%, participation rose and June/July payrolls were revised up a combined 55K. This materially weakens the immediate-recession alternative and supports labor resilience. H001 gains only 0.01 because renewed oil pressure and higher rate-hike expectations make the same growth evidence compatible with H003; 3.1% y/y wage growth and higher participation keep the benign path credible pending CPI.
+- 2026-09-25 posterior **0.36**: stronger near-term activity reduced immediate-recession risk, but inflation expectations and long yields capped the benign update.
+- 2026-09-28 posterior **0.36 unchanged**: bounded Credit evidence modestly weakened immediate stress while Labor added no fresh observation.
+- 2026-09-29 posterior **0.36 unchanged**: low layoffs, little-changed hires and nominal house-price resilience preserve H001, while weaker vacancies/confidence and high long rates prevent an upgrade.

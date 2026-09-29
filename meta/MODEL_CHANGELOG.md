@@ -156,3 +156,7 @@
 ## v0.2.16 — 2026-09-28
 
 No active forecast expired. Credit and Labor September 28 packets were integrity-checked and canonically received; Credit contributes bounded H.8/H.15 observations while Labor is a retained-evidence reassessment with no new independent vote. The Skeptic found no basis for reweighting from H001 0.36 / H002 0.12 / H003 0.40 / H004 0.12, and no causal edge changed. P000030 was prospectively registered at p=0.62 for first-release August core PCE >=0.3% m/m on September 30. Learning remains unassessable at n=22. See `meta/model_changes/2026-09-28-v0.2.16.md`.
+
+## v0.2.17 — 2026-09-29
+
+No active forecast expired. Four staged upstream reports were byte/hash verified and canonically received; none supplies a fresh independent macro vote. Fresh JOLTS and Consumer Confidence evidence raises delayed-demand risk while partial oil-supply normalization weakens the assumption of a monotonically worsening energy shock. After the Skeptic pass, weights move from H001 0.36 / H002 0.12 / H003 0.40 / H004 0.12 to **H001 0.36 / H002 0.14 / H003 0.38 / H004 0.12**. No causal edge changes. P000031 is registered at p=0.57 for first-release September payroll growth below 100K. Learning remains unassessable at n=22. See `meta/model_changes/2026-09-29-v0.2.17.md`.

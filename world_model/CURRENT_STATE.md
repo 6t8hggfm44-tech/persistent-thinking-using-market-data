@@ -1,19 +1,25 @@
 # Current Market State
 
-**Model version:** 0.2.16
-**Status:** September 28 post-close cycle complete; no forecast due; Credit and Labor weekly packets received; no hypothesis reweight; P000030 registered
-**Analysis cutoff:** 2026-09-28T21:38:27Z
+**Model version:** 0.2.17  
+**Status:** September 29 post-close cycle complete; no forecast due; four upstream packets canonically received; modest H003→H002 reweight; P000031 registered  
+**Analysis cutoff:** 2026-09-29T21:12:15Z
 
-No active forecast expired. The evaluation ledger remains **26 resolved records**, including **22 probability forecasts**, with mean Brier **0.212214** and mean log loss **0.614555**. Independent recomputation found zero Brier arithmetic mismatches. Interval coverage remains **20/22 = 90.9%**. At n=22, the only supported learning conclusion remains **insufficient evidence to assess learning**.
+No active forecast expired. The ledger remains **26 resolved records**, including **22 probability forecasts**, with mean Brier **0.212214** and mean log loss **0.614555**. Learning remains **insufficient evidence to assess** below the precommitted n=30 threshold.
 
-Credit's September 28 packet supplies bounded fresh H.8/H.15 observations that modestly weaken an immediate broad-credit-stress story but do not identify loan supply versus demand or broad borrower health. Labor's September 28 packet contains no fresh publisher observation and receives no new independent evidence vote. Monday's higher yields/oil and weaker equities are state variables rather than direct proof of H003. No September 28 GEV/weather/original-petroleum packet was available by cutoff; absence is recorded as missingness.
+Fresh September 29 evidence is mixed. August JOLTS job openings fell to **7.079 million** while hires stayed near **5.2 million** and layoffs/discharges near **1.6 million**. Conference Board Consumer Confidence fell to **81.9** and Expectations to **63.6**. Brent fell **2.5% to $102.59** as Middle East export flows improved. July home prices nevertheless rose **0.3% m/m** in FHFA data, and long Treasury yields remain exceptionally high.
 
-Hypothesis weights remain H001 **0.36**, H002 **0.12**, H003 **0.40**, H004 **0.12**. No causal-graph edge changed.
+The four newly received upstream reports do not add independent macro votes: Consumer, Housing and Industry reuse retained prior-vintage evidence; GEV reproduces bounded data-product discontinuities but establishes no physical cause or economic transmission.
 
-P000029 remains frozen at **66%** for first-release September headline CPI >= +0.4% m/m on October 14. New P000030 is frozen at **62%** for first-release August core PCE >= +0.3% m/m on September 30, point **+0.3%**, 80% interval **+0.1% to +0.5%**. The release's annual methodology update may revise history but cannot change P000030's target or scoring rule after publication.
+After the Skeptic pass:
+- H001 Soft landing: **0.36**
+- H002 Late-cycle recession: **0.14**
+- H003 Fiscal/inflation regime: **0.38**
+- H004 Productivity boom: **0.12**
 
-The active unresolved set is P000004, P000005, P000029 and P000030. Legacy already-resolved files duplicated under `predictions/open/` are not active forecasts.
+H003 remains the leader, but its margin narrows. No causal-graph edge changed; the existing distinction between gross labor-flow indicators and CES net payrolls remains the key labor bridge.
 
-**Highest-information watch:** September 30 first-release August core PCE monthly change.
+Open active forecasts are P000004, P000005, P000029, P000030 and P000031. P000030 is **62%** for first-release August core PCE >=0.3% m/m on September 30. P000031 is **57%** that first-release September payroll growth is below 100K, point **+90K**, 80% interval **-20K to +200K**, resolving October 2.
+
+**Highest-information watch:** September 30 first-release core PCE.
 
 No trade recommendation is produced.

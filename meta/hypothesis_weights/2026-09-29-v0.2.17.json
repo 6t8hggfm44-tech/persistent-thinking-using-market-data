@@ -1,0 +1,29 @@
+{
+  "effective_at": "2026-09-29T21:12:15Z",
+  "model_version": "0.2.17",
+  "weights_before": {
+    "H001": 0.36,
+    "H002": 0.12,
+    "H003": 0.4,
+    "H004": 0.12
+  },
+  "weights_after": {
+    "H001": 0.36,
+    "H002": 0.14,
+    "H003": 0.38,
+    "H004": 0.12
+  },
+  "leader": "H003",
+  "changes": {
+    "H001": 0,
+    "H002": 0.02,
+    "H003": -0.02,
+    "H004": 0
+  },
+  "rationale": {
+    "H001": "Low layoffs, little-changed hires and nominal house-price resilience preserve the soft-landing path, but weaker vacancies/confidence and high long rates prevent an upgrade.",
+    "H002": "Weaker August openings and September confidence increase delayed-downturn risk; low layoffs, stable hires and contained recent credit evidence cap the increase.",
+    "H003": "Partial oil-export normalization and softer labor/consumer leading indicators reduce the chance of monotonically intensifying inflation pressure; still-high oil/yields and unresolved core PCE keep H003 narrowly in front.",
+    "H004": "No new productivity or output-per-input evidence."
+  }
+}

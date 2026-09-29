@@ -1,0 +1,53 @@
+{
+  "id": "P000031",
+  "created_at": "2026-09-29T21:12:15Z",
+  "evidence_cutoff": "2026-09-29T21:12:15Z",
+  "model_version": "0.2.17",
+  "target": "US_NONFARM_PAYROLL_MOM_SEP_2026_FIRST_RELEASE",
+  "horizon": "3d",
+  "resolution_at": "2026-10-02 08:30 ET first BLS Employment Situation release for September 2026",
+  "forecast_type": "binary_probability_and_point_distribution",
+  "forecast": {
+    "event": "first-release September 2026 total nonfarm payroll employment change is below +100,000 jobs",
+    "probability": 0.57,
+    "point_estimate": 90000,
+    "lower_80": -20000,
+    "upper_80": 200000,
+    "units": "jobs"
+  },
+  "benchmarks": [
+    {
+      "name": "AP_2026_09_29_economist_expectation",
+      "point_estimate": 95000,
+      "captured_at": "2026-09-29T21:12:15Z",
+      "note": "AP reported analysts expected about +95K for September; point benchmark only."
+    },
+    {
+      "name": "August_2026_first_release_no_change",
+      "point_estimate": 162000,
+      "note": "Frozen prior first-release monthly payroll change."
+    },
+    {
+      "name": "neutral_binary",
+      "probability": 0.5,
+      "note": "Protocol comparator only; not an empirical base rate."
+    }
+  ],
+  "resolution_rule": "Use the first U.S. Bureau of Labor Statistics Employment Situation release for September 2026 published October 2, 2026 at 08:30 ET. Resolve TRUE if the first-published seasonally adjusted change in total nonfarm payroll employment is strictly below +100,000 jobs; otherwise FALSE. Score p=0.57 with Brier and log loss. Score the +90,000 point by absolute error against the same first-release payroll change and against the frozen +95,000 AP expectation and +162,000 prior-month no-change point. Record whether the first-release payroll change lies inside the -20,000 to +200,000 80% interval. Do not substitute later monthly revisions, benchmark revisions or post-cutoff consensus.",
+  "rationale": [
+    "August JOLTS openings fell by 256K to 7.079M, providing a fresh gross labor-demand softening signal.",
+    "Hires remained near 5.2M and layoffs/discharges near 1.6M, so the model does not forecast a broad layoff-driven collapse.",
+    "September consumer expectations fell sharply, increasing downside risk to hiring, while low recent claims and August's +162K payroll print preserve upside uncertainty.",
+    "The point estimate is close to the contemporaneous external expectation rather than claiming a large consensus edge; the main test is whether the revised JOLTS-to-CES bridge avoids the prior P000025 magnitude error."
+  ],
+  "hypothesis_links": [
+    "H001",
+    "H002",
+    "H003"
+  ],
+  "surprising_if": [
+    "First-release payroll growth is at least +175,000.",
+    "First-release payroll growth is negative."
+  ],
+  "status": "open"
+}

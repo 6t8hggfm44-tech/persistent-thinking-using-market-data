@@ -1,7 +1,7 @@
 # H002: Late-Cycle Recession
 
 **Prior weight:** 0.25  
-**Current weight:** 0.15  
+**Current weight:** 0.14  
 **Status:** Active competing hypothesis; reduced but unresolved delayed-downturn rival
 
 ## Thesis
@@ -38,3 +38,6 @@ If labor and consumer-demand weakness persist over 1–3 months and are followed
 - 2026-08-27 posterior **0.19**: P000020's 57% low-initial/high-continuing joint event failed because continuing claims dropped to 1.778 million while initial claims were only 203,000. The direct prospective test weakens the specific sticky-reemployment formulation and shifts 0.01 to H001. The broader low-hire/low-fire possibility remains open and now requires corroboration beyond one continuing-claims threshold.
 - 2026-08-28 posterior **0.18**: the preliminary CES benchmark revision shows historically weaker hiring than previously recorded, especially private employment, and weak sentiment preserves downside risk. But the total benchmark revision is modest and backward-looking, current claims remain low, Warsh characterizes labor as full employment, and the weekly equity response is not broad stress confirmation. H002 therefore loses another 0.01 to H003's policy-constraint branch while remaining a live delayed-downturn rival.
 - 2026-09-04 posterior **0.15**: P000025's precommitted strong-labor surprise occurred: August payrolls were +162K with unemployment 4.1%, participation up, June/July payrolls revised upward by 55K, and claims still low. This is direct contrary evidence to an immediate generalized labor contraction and cuts H002 by 0.03. The hypothesis remains alive as a **delayed** downturn path because household/housing weakness has not vanished, payroll gains were concentrated, long-term unemployment remains elevated, and higher energy/rates could transmit later.
+- 2026-09-25 posterior **0.12**: stronger near-term real activity and low claims reduced the immediate-recession branch; the hypothesis remained a delayed tightening/downturn path.
+- 2026-09-28 posterior **0.12 unchanged**: Credit modestly weakened immediate generalized stress, but coverage was too bounded for another cut.
+- 2026-09-29 posterior **0.14**: August openings fell to 7.079M and September confidence weakened sharply. The +0.02 increase is capped by low layoffs, little-changed hires, contained recent credit evidence and nominal house-price resilience.
