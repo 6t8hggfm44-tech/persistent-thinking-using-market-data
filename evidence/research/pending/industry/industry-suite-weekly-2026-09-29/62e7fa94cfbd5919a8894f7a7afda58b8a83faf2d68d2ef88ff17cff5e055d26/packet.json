@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "domain": "industry",
+  "run_id": "industry-suite-weekly-2026-09-29",
+  "delivery_key": "industry:industry-suite-weekly-2026-09-29:62e7fa94cfbd5919a8894f7a7afda58b8a83faf2d68d2ef88ff17cff5e055d26",
+  "report_sha256": "62e7fa94cfbd5919a8894f7a7afda58b8a83faf2d68d2ef88ff17cff5e055d26",
+  "report_bytes": 12027,
+  "envelope_sha256": "e3a051d5ad8e7734232dd771590c0c908bb290a9af1c8875cbd8422b7d985f16",
+  "envelope_bytes": 3478,
+  "producer_repository": "6t8hggfm44-tech/-Industrial-production-",
+  "producer_commit": "fd4a9df7e33ab42f4129e7b19200aeab069c5550",
+  "producer_report_path": "reports/industry-suite-weekly-2026-09-29/62e7fa94cfbd5919a8894f7a7afda58b8a83faf2d68d2ef88ff17cff5e055d26/Report.md",
+  "prepared_at_utc": "2026-09-29T19:22:03Z",
+  "source_ancestry": [
+    {
+      "id": "fed_g17",
+      "url": "https://www.federalreserve.gov/releases/g17/current/default.htm",
+      "upstream_ids": [
+        "FRB-G17",
+        "US-CENSUS-INDUSTRIAL-BENCHMARKS",
+        "US-BLS-PRODUCTION-WORKER-HOURS",
+        "USGS-MINERALS"
+      ],
+      "integrity_status": "Checkpoint file SHA-256 verified through the frozen prior package; exact selected cells matched the prior tool representation. Original publisher-body bytes are not available or verified in this runtime."
+    },
+    {
+      "id": "census_m3",
+      "url": "https://www.census.gov/manufacturing/m3/index.html",
+      "upstream_ids": [
+        "US-CENSUS-M3"
+      ],
+      "integrity_status": "No usable current-run or retained numeric representation."
+    },
+    {
+      "id": "ism_manufacturing",
+      "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/",
+      "upstream_ids": [
+        "ISM-MANUFACTURING-SURVEY"
+      ],
+      "integrity_status": "No usable numeric representation."
+    },
+    {
+      "id": "sia_sales",
+      "url": "https://www.semiconductors.org/policies/tax/market-data/",
+      "upstream_ids": [
+        "WSTS-SEMICONDUCTOR-SALES"
+      ],
+      "integrity_status": "Not acquired in this run; no durable reviewed numeric extract."
+    },
+    {
+      "id": "usgs_cement",
+      "url": "https://www.usgs.gov/centers/national-minerals-information-center/cement-statistics-and-information",
+      "upstream_ids": [
+        "USGS-CEMENT-PRODUCER-SURVEY",
+        "US-CENSUS-CEMENT-TRADE"
+      ],
+      "integrity_status": "Not acquired in this run; no durable reviewed numeric extract."
+    }
+  ],
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact frozen UTF-8 report and envelope are supplied; the private reviewed evidence and calculation package are referenced, not published.",
+    "Numerical evidence is a retained September 22 tool extract of the September 18 G.17 release; original publisher-body identity and September 29 freshness were not reverified.",
+    "No publisher source was called in this run; unavailable M3, ISM, SIA and USGS evidence remains untested.",
+    "Preparation or staging does not establish Market receipt, acknowledgment or canonical persistence."
+  ]
+}
