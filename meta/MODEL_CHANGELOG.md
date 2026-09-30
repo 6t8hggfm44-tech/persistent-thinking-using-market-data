@@ -164,3 +164,7 @@ No active forecast expired. Four staged upstream reports were byte/hash verified
 ## v0.2.15 historical-entry reconciliation — recorded September 30, 2026
 
 The [September 25 v0.2.15 model-change record](model_changes/2026-09-25-v0.2.15.md) remains the original dated account of that cycle. It was saved separately after the connected write path rejected a safe update of this cumulative changelog. This append restores discoverability without changing its September 25 date, evidence cutoff, claims, hypothesis history, or the current model version. The [corresponding hypothesis-weight record](hypothesis_weights/2026-09-25-v0.2.15.json) and [weekly review](../evaluations/2026-09-25-weekly-review.md) remain preserved. This is a bookkeeping repair, not a new model update or predictive-learning claim.
+
+## Manual deep review — September30,2026; model0.2.17 retained
+
+[Full review](../evaluations/2026-09-30-manual-deep-cycle.md), evidence cutoff `2026-09-30T01:57:20Z`. No forecast expired and no new economic observation warranted a reweight or causal change. Weights remain H0010.36/H0020.14/H0030.38/H0040.12. Corporate is newly received retained evidence, not a new measurement. All15 research families were reviewed; source dependence and missing September28 Weather/original-petroleum reports remain explicit. Repo B recomputed existing proper scores before interpretation. No new forecast, model version, causal edge or predictive-learning credit is claimed. Operational/index repairs restore workflow integrity without changing historical scientific records.

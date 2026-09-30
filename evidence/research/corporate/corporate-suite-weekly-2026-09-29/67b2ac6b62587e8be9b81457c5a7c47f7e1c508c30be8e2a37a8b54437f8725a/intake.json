@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "delivery_key": "corporate:corporate-suite-weekly-2026-09-29:67b2ac6b62587e8be9b81457c5a7c47f7e1c508c30be8e2a37a8b54437f8725a",
+  "domain": "corporate",
+  "run_id": "corporate-suite-weekly-2026-09-29",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "received_at_utc": "2026-09-30T01:56:37Z",
+  "source_packet_commit": "41a25900bd6e5f9e5b0aa6d1db2ceed4bb148a1d",
+  "source_packet_path": "evidence/research/pending/corporate/corporate-suite-weekly-2026-09-29/67b2ac6b62587e8be9b81457c5a7c47f7e1c508c30be8e2a37a8b54437f8725a",
+  "source_staging_commit": "c409dbff2afdba32e5ecacf1ec291ebfceb0043e",
+  "source_staging_time_utc": "2026-09-29T22:14:55Z",
+  "producer_available_at_utc": "2026-09-29T22:10:19.958844+00:00",
+  "prepared_at_utc": "2026-09-29T22:14:13.984482+00:00",
+  "integrity": {
+    "report_sha256": "67b2ac6b62587e8be9b81457c5a7c47f7e1c508c30be8e2a37a8b54437f8725a",
+    "report_bytes": 6995,
+    "envelope_sha256": "530c35452063c36419d6943d85226bc6c9067dcec6b39e3c15cd2db6011439fa",
+    "envelope_bytes": 5285,
+    "git_blob_identity_and_sizes_verified": true,
+    "transport_packet_sha256": "5e292b964881eb006d24cdb89d80cf90cb9033ab36de9325a167c7368c1abd0b",
+    "transport_packet_bytes": 3265
+  },
+  "registration_review": "Registered corporate producer and weekly identity match the pinned registry.",
+  "content_review": "Complete final hypothesis-test report; safe final prose and original shareable envelope reviewed.",
+  "supersedes": [],
+  "acknowledgment": {
+    "method": "This canonical intake record plus the cumulative index provide durable acknowledgment when committed and read back.",
+    "scope": "Receiver receipt and exact packet integrity; not underlying publisher-byte authentication."
+  },
+  "limitations": [
+    "All numeric inputs were originally retrieved September22,2026; this report adds zero new publisher observations or independent macro evidence votes.",
+    "No underlying private manifest/raw publisher bodies were received by Market; hashes reference producer artifacts only.",
+    "JOLTS/BEA/Census ancestry is shared with other domain reports and is not independent confirmation."
+  ],
+  "cycle": "2026-09-30-manual-deep-cycle"
+}

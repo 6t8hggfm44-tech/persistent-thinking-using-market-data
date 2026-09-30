@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "cycle": "2026-09-30-manual-deep-cycle",
+  "completed_by_utc": "2026-09-30T01:57:20Z",
+  "scope": "Bounded official-release/policy and Reuters discovery review; not exhaustive market surveillance.",
+  "commands": {
+    "search_queries": 3,
+    "open": 3,
+    "click": 1
+  },
+  "economic_observations_accepted_after_prior_cutoff": 0,
+  "items": [
+    {
+      "source": "BEA release schedule",
+      "url": "https://www.bea.gov/news/schedule",
+      "publisher_date": "2026-09-29 page modification; no intraday timestamp",
+      "status": "Official schedule successfully read",
+      "observation": "August2026 Personal Income and Outlays scheduled September30 at08:30AM",
+      "use": "Resolution-timing confirmation only; no outcome"
+    },
+    {
+      "source": "Federal Reserve speech index",
+      "url": "https://www.federalreserve.gov/newsevents/2026-speeches.htm",
+      "publisher_date": "2026-09-29; no intraday timestamp",
+      "status": "Official index read after navigation",
+      "use": "No material post-cutoff macro observation established from index metadata"
+    },
+    {
+      "source": "Reuters September29 market roundup",
+      "url": "https://www.reuters.com/business/us-stock-futures-flat-tech-bounce-meets-crude-driven-caution-2026-09-29/",
+      "status": "Discovery representation returned; direct page inaccessible",
+      "limitations": [
+        "Exact update/version timestamp not verified",
+        "Mostly previously known September29 developments"
+      ],
+      "use": "No new quantitative or policy inference admitted; no retry"
+    }
+  ],
+  "operational_context": {
+    "vintage": "Saved September29 collector results, supplied by the operational audit",
+    "eia_requests": 12,
+    "eia_timeouts": 9,
+    "eia_successes": 3,
+    "new_requests_by_this_cycle": 0,
+    "interpretation": "Availability gap only; not a petroleum supply measurement; existing source controls preserved"
+  }
+}

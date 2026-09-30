@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "cycle": "2026-09-30-manual-deep-cycle",
+  "kind": "explicitly_authorized_manual_friday_depth_review",
+  "input_primary_commit": "41a25900bd6e5f9e5b0aa6d1db2ceed4bb148a1d",
+  "evidence_cutoff_utc": "2026-09-30T01:57:20Z",
+  "model_before": "0.2.17",
+  "model_after": "0.2.17",
+  "weights_before": {
+    "H001": 0.36,
+    "H002": 0.14,
+    "H003": 0.38,
+    "H004": 0.12
+  },
+  "weights_after": {
+    "H001": 0.36,
+    "H002": 0.14,
+    "H003": 0.38,
+    "H004": 0.12
+  },
+  "new_resolutions": 0,
+  "new_forecasts": 0,
+  "new_canonical_packets": 1,
+  "new_economic_observations": 0,
+  "new_causal_edges": 0,
+  "resolved_records": 26,
+  "probability_records": 22,
+  "learning_status": "INSUFFICIENT_EVIDENCE_TO_ASSESS_LEARNING",
+  "b_analysis_code_commit": "f83738d7f7c22348b9783317a86b42087170f9f0",
+  "b_baseline_primary_snapshot": "41a25900bd6e5f9e5b0aa6d1db2ceed4bb148a1d",
+  "ledger_sha256": "481efcf7b91b194e50d9e088c0053bb3bb7bc3435ec462264c768ed440a3f1f3",
+  "metrics": {
+    "mean_brier": {
+      "estimate": 0.21221363636363638,
+      "high_95": 0.24143681818181814,
+      "low_95": 0.18257261363636368,
+      "n": 22
+    },
+    "mean_log_loss": {
+      "estimate": 0.6145553474743157,
+      "high_95": 0.6751194812835783,
+      "low_95": 0.5524842049595494,
+      "n": 22
+    },
+    "brier_skill_vs_fixed_neutral_0_5": {
+      "bootstrap_high_95": 0.26970954545454545,
+      "bootstrap_low_95": 0.034252727272727275,
+      "estimate": 0.15114545454545456,
+      "n": 22,
+      "note": "Comparator Brier=0.25; not an empirical base rate or consensus."
+    },
+    "creation_date_cluster_brier": {
+      "high_95": 0.24118471153846152,
+      "low_95": 0.17802116666666667,
+      "n_clusters": 18,
+      "note": "Sensitivity only; serial/cross-date and common-target dependence remain."
+    },
+    "calibration_bins": [
+      {
+        "bin": "(-0.001, 0.2]",
+        "calibration_gap": null,
+        "event_rate": null,
+        "mean_probability": null,
+        "n": 0
+      },
+      {
+        "bin": "(0.2, 0.4]",
+        "calibration_gap": 0.33199999999999996,
+        "event_rate": 0.0,
+        "mean_probability": 0.33199999999999996,
+        "n": 5
+      },
+      {
+        "bin": "(0.4, 0.6]",
+        "calibration_gap": -0.0052941176470588935,
+        "event_rate": 0.5294117647058824,
+        "mean_probability": 0.5241176470588235,
+        "n": 17
+      },
+      {
+        "bin": "(0.6, 0.8]",
+        "calibration_gap": null,
+        "event_rate": null,
+        "mean_probability": null,
+        "n": 0
+      },
+      {
+        "bin": "(0.8, 1.0]",
+        "calibration_gap": null,
+        "event_rate": null,
+        "mean_probability": null,
+        "n": 0
+      }
+    ]
+  },
+  "parity_after_intake": {
+    "research_records": 52,
+    "research_index_rows": 52,
+    "gev_records": 6,
+    "gev_index_rows": 6,
+    "passed": true
+  },
+  "source_review": "evidence/2026-09-30-manual-deep-cycle-sources.json",
+  "input_manifest": "evidence/2026-09-30-manual-deep-cycle-inputs.json",
+  "report": "evaluations/2026-09-30-manual-deep-cycle.md",
+  "validation_record_rule": "Companion must publish its final report against the exact commit containing this result; this source record does not preclaim a future validation commit."
+}
