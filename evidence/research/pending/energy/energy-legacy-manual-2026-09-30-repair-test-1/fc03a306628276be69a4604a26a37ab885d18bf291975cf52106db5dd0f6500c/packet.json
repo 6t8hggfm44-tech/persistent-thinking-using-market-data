@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "delivery_key": "energy:energy-legacy-manual-2026-09-30-repair-test-1:fc03a306628276be69a4604a26a37ab885d18bf291975cf52106db5dd0f6500c",
+  "domain": "energy",
+  "run_id": "energy-legacy-manual-2026-09-30-repair-test-1",
+  "report_sha256": "fc03a306628276be69a4604a26a37ab885d18bf291975cf52106db5dd0f6500c",
+  "report_bytes": 6952,
+  "envelope_sha256": "70d8a7f6e1354cd8824bfac322602211d306e87e23d165377e24f18430944caf",
+  "envelope_bytes": 6934,
+  "producer_repository": "6t8hggfm44-tech/-Energy",
+  "producer_commit": "ce6740e00689591a35bcf3a9d2dc62fb5ca99bfc",
+  "producer_kind": "legacy_energy",
+  "producer_workflow_repository": "6t8hggfm44-tech/energy",
+  "producer_report_path": "cloud/legacy-weekly/reports/energy/energy-legacy-manual-2026-09-30-repair-test-1/fc03a306628276be69a4604a26a37ab885d18bf291975cf52106db5dd0f6500c/Report.md",
+  "prepared_at_utc": "2026-09-30T19:52:50.807800+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Reviewed final prose and shareable envelope only; private checkpoints and original publisher bodies excluded.",
+    "Metadata-only correction preserves earlier private draft; no additional source acquisition or evidence vote.",
+    "Staging is not receipt or canonical acceptance."
+  ]
+}

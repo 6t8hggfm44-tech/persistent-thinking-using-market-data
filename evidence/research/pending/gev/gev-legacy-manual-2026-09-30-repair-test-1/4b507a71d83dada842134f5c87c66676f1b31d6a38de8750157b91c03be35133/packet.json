@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "delivery_key": "gev-legacy-manual-2026-09-30-repair-test-1:4b507a71d83dada842134f5c87c66676f1b31d6a38de8750157b91c03be35133",
+  "domain": "gev",
+  "run_id": "gev-legacy-manual-2026-09-30-repair-test-1",
+  "report_sha256": "4b507a71d83dada842134f5c87c66676f1b31d6a38de8750157b91c03be35133",
+  "report_bytes": 7282,
+  "envelope_sha256": "33c524c91b95d9bed783b6ddcb96517d79b80a9fa3d3a10eac95f0510c0da609",
+  "envelope_bytes": 2670,
+  "producer_repository": "6t8hggfm44-tech/-Energy",
+  "producer_commit": "ce6740e00689591a35bcf3a9d2dc62fb5ca99bfc",
+  "producer_kind": "legacy_gev",
+  "producer_workflow_repository": "6t8hggfm44-tech/satellite-research",
+  "producer_report_path": "cloud/legacy-weekly/reports/gev/gev-legacy-manual-2026-09-30-repair-test-1/4b507a71d83dada842134f5c87c66676f1b31d6a38de8750157b91c03be35133/Report.md",
+  "prepared_at_utc": "2026-09-30T19:52:50.806849+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Reviewed final prose and shareable envelope only; private checkpoints and original publisher bodies excluded.",
+    "Metadata-only correction preserves earlier private draft; no additional source acquisition or evidence vote.",
+    "Staging is not receipt or canonical acceptance."
+  ]
+}

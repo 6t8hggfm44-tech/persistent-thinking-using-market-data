@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "delivery_key": "weather:weather-legacy-manual-2026-09-30-repair-test-1:f32949b0d7fe149d7fbe96594855185158a0c79828926dfe6182ddb90430f616",
+  "domain": "weather",
+  "run_id": "weather-legacy-manual-2026-09-30-repair-test-1",
+  "report_sha256": "f32949b0d7fe149d7fbe96594855185158a0c79828926dfe6182ddb90430f616",
+  "report_bytes": 6614,
+  "envelope_sha256": "b9e7ca6148f0f2b3147b1119fd71be7f6e1866949adbe214e30c5ca3bc3ecf5a",
+  "envelope_bytes": 2539,
+  "producer_repository": "6t8hggfm44-tech/-Energy",
+  "producer_commit": "ce6740e00689591a35bcf3a9d2dc62fb5ca99bfc",
+  "producer_kind": "legacy_weather",
+  "producer_workflow_repository": "6t8hggfm44-tech/weather",
+  "producer_report_path": "cloud/legacy-weekly/reports/weather/weather-legacy-manual-2026-09-30-repair-test-1/f32949b0d7fe149d7fbe96594855185158a0c79828926dfe6182ddb90430f616/Report.md",
+  "prepared_at_utc": "2026-09-30T19:52:50.807428+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Reviewed final prose and shareable envelope only; private checkpoints and original publisher bodies excluded.",
+    "Metadata-only correction preserves earlier private draft; no additional source acquisition or evidence vote.",
+    "Staging is not receipt or canonical acceptance."
+  ]
+}
