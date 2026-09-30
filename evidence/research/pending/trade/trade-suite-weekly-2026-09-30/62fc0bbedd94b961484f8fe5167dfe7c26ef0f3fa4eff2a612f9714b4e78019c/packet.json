@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "delivery_key": "trade:trade-suite-weekly-2026-09-30:62fc0bbedd94b961484f8fe5167dfe7c26ef0f3fa4eff2a612f9714b4e78019c",
+  "domain": "trade",
+  "run_id": "trade-suite-weekly-2026-09-30",
+  "report_sha256": "62fc0bbedd94b961484f8fe5167dfe7c26ef0f3fa4eff2a612f9714b4e78019c",
+  "report_bytes": 6884,
+  "envelope_sha256": "2914ac6640721844cfca08d42bf54eac43b645af636fd0f685758f6cc336f6af",
+  "envelope_bytes": 3972,
+  "producer_repository": "6t8hggfm44-tech/-Global-trade-China",
+  "producer_commit": "d5e20845158c88b495a97a15633de44a2ae2b454",
+  "producer_report_path": "reports/trade-suite-weekly-2026-09-30/62fc0bbedd94b961484f8fe5167dfe7c26ef0f3fa4eff2a612f9714b4e78019c/Report.md",
+  "prepared_at_utc": "2026-09-30T19:15:49.655660+00:00",
+  "source_ancestry": [
+    {
+      "id": "china_nbs_releases",
+      "url": "https://www.stats.gov.cn/english/PressRelease/",
+      "upstream_ids": [
+        "china-nbs-enterprise-surveys",
+        "china-nbs-energy-statistics",
+        "china-customs"
+      ],
+      "integrity_status": "No original body or adequate reviewed numeric inputs available; no invented measurements."
+    },
+    {
+      "id": "korea_customs_releases",
+      "url": "https://www.customs.go.kr/kcs/na/ntt/selectNttList.do?mi=2891&bbsId=1362",
+      "upstream_ids": [
+        "korea-customs-declarations"
+      ],
+      "integrity_status": "No original body or adequate reviewed numeric inputs available; no invented measurements."
+    },
+    {
+      "id": "taiwan_mof_trade",
+      "url": "https://www.mof.gov.tw/Eng/multiplehtml/259",
+      "upstream_ids": [
+        "taiwan-customs-declarations"
+      ],
+      "integrity_status": "No original body or adequate reviewed numeric inputs available; no invented measurements."
+    },
+    {
+      "id": "eurostat_industry",
+      "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Industrial_production_(volume)_index_overview",
+      "upstream_ids": [
+        "eurostat-national-statistical-institutes"
+      ],
+      "integrity_status": "Exact retained bytes verified by remote readback; tool representation only, not original publisher bytes."
+    },
+    {
+      "id": "port_la_containers",
+      "url": "https://portoflosangeles.org/business/statistics/container-statistics",
+      "upstream_ids": [
+        "port-los-angeles-terminal-counts"
+      ],
+      "integrity_status": "Exact retained bytes verified by remote readback; tool representation only, not original publisher bytes."
+    }
+  ],
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact UTF-8 report and original envelope copied from verified private readback. Public packet excludes private calculation/evidence files; receiver cannot infer verification of the full private package.",
+    "Reviewed limited extracts establish neither original publisher-body identity nor hidden tool HTTP accounting.",
+    "Staging is not Market receipt, acknowledgment or canonical persistence."
+  ]
+}
