@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "source": "U.S. Bureau of Economic Analysis",
+  "release_id": "BEA 26-43",
+  "title": "Personal Income and Outlays, August 2026",
+  "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-august-2026",
+  "publication_at_utc": "2026-09-30T12:30:00Z",
+  "observed_at_utc": "2026-09-30T18:02:39Z",
+  "observation_period": "August 2026",
+  "vintage": "First release of August, with annual revisions to earlier months",
+  "representation": "Reader-extracted official publisher HTML; release title, embargo time, displayed summary and table read. No assertion of downloaded full source-byte integrity.",
+  "displayed_percent_change_from_preceding_month": {
+    "core_pce": 0.2,
+    "headline_pce": 0.3,
+    "nominal_pce": 0.9,
+    "real_pce": 0.6,
+    "personal_income": 0.2,
+    "disposable_personal_income": 0.3,
+    "real_disposable_personal_income": 0.0
+  },
+  "displayed_year_over_year_percent": {
+    "core_pce": 3.0,
+    "headline_pce": 3.4
+  },
+  "saving_rate_percent": 4.1,
+  "first_release_forecast_resolution": {
+    "id": "P000030",
+    "frozen_threshold": 0.3,
+    "frozen_probability": 0.62,
+    "event": false,
+    "source_value": 0.2
+  },
+  "revision_caution": "July core PCE now appears 0.1% in current table, but first-release July context was frozen at 0.2%. Never replace frozen forecasts or benchmark with revised history.",
+  "ancestry": [
+    "BEA NIPA/PCE",
+    "BLS CES compensation inputs",
+    "U.S. Treasury government benefit inputs",
+    "Census consumer-spending inputs"
+  ],
+  "independence_caution": "PCE price, real and nominal spending are related accounting series; GDP and domain reports can reuse these inputs. They are not independent macro votes."
+}

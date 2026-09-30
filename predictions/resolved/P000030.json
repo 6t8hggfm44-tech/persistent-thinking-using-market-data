@@ -1,0 +1,75 @@
+{
+  "original_forecast": {
+    "id": "P000030",
+    "created_at": "2026-09-28T21:38:27Z",
+    "evidence_cutoff": "2026-09-28T21:38:27Z",
+    "model_version": "0.2.16",
+    "target": "US_CORE_PCE_MOM_AUG_2026_FIRST_RELEASE",
+    "horizon": "2d",
+    "resolution_at": "2026-09-30 08:30 ET first BEA Personal Income and Outlays release for August 2026",
+    "forecast_type": "binary_probability_and_point_distribution",
+    "forecast": {
+      "event": "first-release August 2026 PCE price index excluding food and energy, seasonally adjusted, increases by at least 0.3% m/m",
+      "probability": 0.62,
+      "point_estimate": 0.3,
+      "lower_80": 0.1,
+      "upper_80": 0.5,
+      "units": "percent month-over-month"
+    },
+    "benchmarks": [
+      {
+        "name": "neutral_binary",
+        "probability": 0.5,
+        "note": "Protocol comparator; not an empirical base rate."
+      },
+      {
+        "name": "BBH_week_of_2026_09_28_consensus",
+        "point_estimate": 0.3,
+        "captured_at": "2026-09-28T21:38:27Z",
+        "note": "Published week-ahead consensus for August core PCE m/m; point benchmark only, not a probability forecast."
+      },
+      {
+        "name": "July_2026_first_release_no_change_context",
+        "point_estimate": 0.2,
+        "note": "Prior first-release monthly core PCE; annual-methodology revisions may reduce strict comparability."
+      }
+    ],
+    "resolution_rule": "Use the first Bureau of Economic Analysis Personal Income and Outlays release for August 2026 published September 30, 2026 at 08:30 ET. Resolve TRUE if the seasonally adjusted PCE price index excluding food and energy month-over-month change for August is 0.3% or higher at the precision shown in that first release; otherwise FALSE. Score p=0.62 with Brier and log loss. Score the 0.3% point by absolute error against the same first-release value and the frozen 0.3% external-consensus point; record whether the first-release value lies inside the 0.1%-0.5% 80% interval. The annual methodology update and revisions to prior months may inform later model state but must not alter this target, threshold or score after publication. Do not substitute later revisions.",
+    "rationale": [
+      "The current H003/H001 split is close enough that a monthly core-price realization is more discriminating than Monday's causally ambiguous yield/equity response.",
+      "July first-release core PCE was +0.2% m/m, while August core CPI was +0.3% and August final-demand PPI was +0.4%; these inputs make a 0.3% core-PCE print plausible without supporting a high-confidence hot-inflation call.",
+      "A week-ahead external consensus also centers on +0.3% m/m, so the model claims only a modest probability edge over even and no point-forecast edge over consensus.",
+      "The September 30 annual methodology update can revise history, so the target is the first-release August monthly change exactly as published."
+    ],
+    "hypothesis_links": [
+      "H001",
+      "H003"
+    ],
+    "surprising_if": [
+      "Core PCE is <=0.1% m/m while contemporaneous growth remains resilient.",
+      "Core PCE is >=0.5% m/m."
+    ],
+    "status": "open"
+  },
+  "resolution": {
+    "resolved_at": "2026-09-30T18:03:43Z",
+    "outcome": {
+      "core_pce_mom_percent": 0.2,
+      "event_ge_0_3": false
+    },
+    "source": "U.S. Bureau of Economic Analysis, first Personal Income and Outlays release for August 2026, BEA 26-43, published September 30, 2026 at 08:30 EDT. At displayed first-release precision, August core PCE increased 0.2% month over month.",
+    "source_url": "https://www.bea.gov/news/2026/personal-income-and-outlays-august-2026",
+    "source_published_at": "2026-09-30T12:30:00Z",
+    "source_observed_at": "2026-09-30T18:02:39Z",
+    "scores": {
+      "brier": 0.3844,
+      "log_loss": 0.967584,
+      "absolute_error": 0.1,
+      "interval_hit": 1,
+      "neutral_binary_brier": 0.25,
+      "BBH_week_of_2026_09_28_consensus_absolute_error": 0.1,
+      "July_2026_first_release_no_change_context_absolute_error": 0.0
+    },
+    "audit_note": "Frozen original forecast preserved without hindsight alteration. The >=0.3% event resolved FALSE at the first-release 0.2%. Probability loss is worse than neutral; model point ties the frozen 0.3% consensus and has larger point error than frozen first-release July 0.2% context. That context is not a formally comparable skill benchmark because annual methodology changes may impair comparability. Today annual revisions changed July to 0.1%; that revised value must not replace the frozen 0.2% benchmark. Interval covers, which does not erase the event miss. August core prices are not a test of September energy pass-through. No learning claim."
+  }
+}

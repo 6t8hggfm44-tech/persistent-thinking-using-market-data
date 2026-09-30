@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "delivery_key": "fiscal:fiscal-suite-weekly-2026-09-30:ec10686bc7f7f8fddb75bf453c6438c1d716d5a72d2419b3ed91e4ca4b2b8e10",
+  "domain": "fiscal",
+  "run_id": "fiscal-suite-weekly-2026-09-30",
+  "report_version": 1,
+  "report_kind": "final_evidence_gap",
+  "received_at_utc": "2026-09-30T18:12:32Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "1d0fe819dc28f9ab1920ed398a0f77e49196e4d5",
+    "staging_path": "evidence/research/pending/fiscal/fiscal-suite-weekly-2026-09-30/ec10686bc7f7f8fddb75bf453c6438c1d716d5a72d2419b3ed91e4ca4b2b8e10/"
+  },
+  "integrity": {
+    "report_sha256": "ec10686bc7f7f8fddb75bf453c6438c1d716d5a72d2419b3ed91e4ca4b2b8e10",
+    "report_bytes": 8015,
+    "envelope_sha256": "d3567947f5f3f1d226f7f2ff3bf83204f1b01921244b1b3d6358f11527d9bfe3",
+    "envelope_bytes": 4786,
+    "verified": true,
+    "method": "Full connector UTF-8 bytes matched immutable Git blob identities and sizes, then packet hashes and lengths; complete report, registered scheduled producer, timestamps and shareable final content reviewed."
+  },
+  "supersedes": [],
+  "notes": [
+    "Fresh retrieval of the September 1 Census release matched 17 old cells and added three older May comparison cells; no new economic release.",
+    "Treasury response was program definitions only. Missing MTS cash observations remain a gap.",
+    "The complete original receipt time is preserved; this intake adds no new measurement release or scientific weight."
+  ],
+  "canonical_archive": {
+    "report": "evidence/research/fiscal/fiscal-suite-weekly-2026-09-30/ec10686bc7f7f8fddb75bf453c6438c1d716d5a72d2419b3ed91e4ca4b2b8e10/Report.md",
+    "envelope": "evidence/research/fiscal/fiscal-suite-weekly-2026-09-30/ec10686bc7f7f8fddb75bf453c6438c1d716d5a72d2419b3ed91e4ca4b2b8e10/report-envelope.json",
+    "intake": "evidence/research/fiscal/fiscal-suite-weekly-2026-09-30/ec10686bc7f7f8fddb75bf453c6438c1d716d5a72d2419b3ed91e4ca4b2b8e10/intake.json"
+  }
+}
