@@ -1,0 +1,80 @@
+{
+  "domain": "trade",
+  "run_id": "trade-suite-weekly-2026-09-30",
+  "report_version": 1,
+  "report_kind": "final_evidence_gap",
+  "workflow_commit": "82d053ab62d3ef1b9dcf8ae31eff0eb8444018a3",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-09-23T19:00:00Z",
+    "end": "2026-09-30T19:10:08.481075+00:00"
+  },
+  "actual_coverage": {
+    "requested_scope": "Global trade and China weekly review through September30,2026",
+    "numeric": "Port of Los Angeles August2026/August2025;10 levels and5 published rates",
+    "definitions_only": "Eurostat article data extraction November2025; no current industry series",
+    "missing": "China real activity/property/energy, Korea/Taiwan export breadth, commodity quantities and alternate ports"
+  },
+  "limitations": [
+    "August2026 versus August2025 at one port; no September monthly observations or global quantity panel.",
+    "Current retrieval confirms the same ten previously reviewed port levels; one upstream contribution, not independent corroboration.",
+    "No compatible comparator-port, customs quantity, cargo-mix, price, working-day or tariff-timing controls.",
+    "Eurostat overview identifies November2025 data extraction; linked newer release contents were not acquired.",
+    "China source has unresolved prior acquisition uncertainty; Korea/Taiwan monthly tables and commodity quantity data unavailable in this bounded pass.",
+    "Only reviewed limited extracts retained; original publisher-body identity and unexposed tool HTTP requests, bytes, redirects and time are not verified."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-30T19:10:08.481075+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-30T19:12:59.051886+00:00",
+  "available_at_utc": "2026-09-30T19:12:59.051886+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "62fc0bbedd94b961484f8fe5167dfe7c26ef0f3fa4eff2a612f9714b4e78019c",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "10175642d5f44961c6baee6d97329ec30303649a5fddcffde7989e3a9688b368",
+  "sources": [
+    {
+      "id": "china_nbs_releases",
+      "url": "https://www.stats.gov.cn/english/PressRelease/",
+      "upstream_ids": [
+        "china-nbs-enterprise-surveys",
+        "china-nbs-energy-statistics",
+        "china-customs"
+      ],
+      "integrity_status": "No original body or adequate reviewed numeric inputs available; no invented measurements."
+    },
+    {
+      "id": "korea_customs_releases",
+      "url": "https://www.customs.go.kr/kcs/na/ntt/selectNttList.do?mi=2891&bbsId=1362",
+      "upstream_ids": [
+        "korea-customs-declarations"
+      ],
+      "integrity_status": "No original body or adequate reviewed numeric inputs available; no invented measurements."
+    },
+    {
+      "id": "taiwan_mof_trade",
+      "url": "https://www.mof.gov.tw/Eng/multiplehtml/259",
+      "upstream_ids": [
+        "taiwan-customs-declarations"
+      ],
+      "integrity_status": "No original body or adequate reviewed numeric inputs available; no invented measurements."
+    },
+    {
+      "id": "eurostat_industry",
+      "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Industrial_production_(volume)_index_overview",
+      "upstream_ids": [
+        "eurostat-national-statistical-institutes"
+      ],
+      "integrity_status": "Exact retained bytes verified by remote readback; tool representation only, not original publisher bytes."
+    },
+    {
+      "id": "port_la_containers",
+      "url": "https://portoflosangeles.org/business/statistics/container-statistics",
+      "upstream_ids": [
+        "port-los-angeles-terminal-counts"
+      ],
+      "integrity_status": "Exact retained bytes verified by remote readback; tool representation only, not original publisher bytes."
+    }
+  ],
+  "delivery_key": "trade:trade-suite-weekly-2026-09-30:62fc0bbedd94b961484f8fe5167dfe7c26ef0f3fa4eff2a612f9714b4e78019c"
+}
