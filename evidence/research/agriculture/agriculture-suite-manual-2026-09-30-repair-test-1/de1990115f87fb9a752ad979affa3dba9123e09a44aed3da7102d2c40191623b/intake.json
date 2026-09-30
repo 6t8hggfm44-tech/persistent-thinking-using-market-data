@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "delivery_key": "agriculture:agriculture-suite-manual-2026-09-30-repair-test-1:de1990115f87fb9a752ad979affa3dba9123e09a44aed3da7102d2c40191623b",
+  "domain": "agriculture",
+  "run_id": "agriculture-suite-manual-2026-09-30-repair-test-1",
+  "report_version": 2,
+  "report_kind": "final_evidence_gap",
+  "received_at_utc": "2026-09-30T19:44:19Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "f05713fa3fa4ffe746eb811f00ae0ae38bd22570",
+    "staging_path": "evidence/research/pending/agriculture/agriculture-suite-manual-2026-09-30-repair-test-1/de1990115f87fb9a752ad979affa3dba9123e09a44aed3da7102d2c40191623b/"
+  },
+  "integrity": {
+    "report_sha256": "de1990115f87fb9a752ad979affa3dba9123e09a44aed3da7102d2c40191623b",
+    "report_bytes": 14321,
+    "envelope_sha256": "3cf40697943d18fa8ab5c0d79e16b4ba7de16b83acb9cd1799ec3791485dfadb",
+    "envelope_bytes": 5236,
+    "verified": true,
+    "method": "Complete exact immutable Git bytes, independent tree sizes and SHA256/identity checks; private producer source bytes also matched."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/agriculture/agriculture-suite-manual-2026-09-30-repair-test-1/de1990115f87fb9a752ad979affa3dba9123e09a44aed3da7102d2c40191623b/Report.md",
+    "envelope": "evidence/research/agriculture/agriculture-suite-manual-2026-09-30-repair-test-1/de1990115f87fb9a752ad979affa3dba9123e09a44aed3da7102d2c40191623b/report-envelope.json",
+    "intake": "evidence/research/agriculture/agriculture-suite-manual-2026-09-30-repair-test-1/de1990115f87fb9a752ad979affa3dba9123e09a44aed3da7102d2c40191623b/intake.json"
+  },
+  "supersedes": [
+    {
+      "run_id": "agriculture-suite-manual-2026-09-30-repair-test-1",
+      "report_sha256": "5e417fb91b93353c22b522ddaa48a451c90a48ce3d0aeaee7031c3220a724cdf",
+      "report_version": 1,
+      "reason": "Correct current-versus-historical limitations, clarify variables and rounded precision, and remove repetitive/irrelevant prose. No new source acquisition or changed numerical inputs."
+    }
+  ],
+  "notes": [
+    "Registered manual test, not a weekly scheduled occurrence.",
+    "Earlier producer correction versions were preserved privately but not canonically accepted here; no extra investigation or evidence vote.",
+    "Publisher bodies/private evidence packages are not part of public transport; data ages, source dependence and missingness remain controlling.",
+    "Unavailable-source record timestamps denote status review rather than actual publisher retrieval."
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "domain": "freight",
+  "run_id": "freight-suite-manual-2026-09-30-repair-test-1",
+  "report_version": 3,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "5df81e79f33e80353dac9ab8e99affa28d532807",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-09-23T00:00:00Z",
+    "end": "2026-09-30T00:00:00Z"
+  },
+  "actual_coverage": {
+    "original_report_coverage": {
+      "periods": [
+        "2025-08",
+        "2026-08"
+      ],
+      "event_window_note": "Bounding range, not continuous coverage; calendar months with UTC envelope boundaries only.",
+      "geography": "Port of Los Angeles only",
+      "units": "monthly TEUs, not seasonally adjusted",
+      "numeric_cells": 10,
+      "numeric_sources": 1,
+      "discovery_only_sources": 3,
+      "fresh_observations": 0,
+      "publication_at_utc": null,
+      "source_retrieved_at_utc": "2026-09-22T18:33:15.928Z"
+    },
+    "new_run_category": "new_extraction_older_headline_unknown_release_date",
+    "source_commands_this_run": 1,
+    "newer_release_vintages_this_run": 0,
+    "original_report_run": "freight-suite-weekly-2026-09-23-v2",
+    "original_report_sha256": "fd6c1df93afbd9d51281af5795a4e82a7b2df9245753d92f6f782525eb1f192b",
+    "scientific_classification": "exploratory; prior exposure recorded",
+    "fresh_numeric_cells": 2
+  },
+  "limitations": [
+    "Two TSI headline magnitudes lack the full index table, revision context and release date; no full multimodal causal comparison is identified.",
+    "Port of Los Angeles values are the same retained source used by Trade. Earlier USDA grain-transport uncertainty remains unresolved.",
+    "The investigation is exploratory: prior domain reports and numerical results were known before these comparisons. No prospective, causal or out-of-sample validation is established.",
+    "Retained selections are verified tool representations, not original publisher-body hashes. Connected upstream HTTP requests, bytes and redirects are not exposed."
+  ],
+  "supersedes": [
+    {
+      "run_id": "freight-suite-manual-2026-09-30-repair-test-1",
+      "report_sha256": "3b7236f5e8f367b6499bac70fea22841241038d821cfda61f930f2ae88018e7e",
+      "report_version": 2,
+      "reason": "Correct current-versus-historical limitations, clarify variables and rounded precision, and remove repetitive/irrelevant prose. No new source acquisition or changed numerical inputs."
+    }
+  ],
+  "evidence_cutoff_utc": "2026-09-30T19:23:49.119527+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-30T19:26:58.345414+00:00",
+  "available_at_utc": "2026-09-30T19:26:58.345414+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "ef2f85f3ab272b7b125773ed80cc8e20ef5088ed3defef8836ca1b82a15efd88",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "7b6827e57bc455d2da44ee1bfa35999b0e986b5408c8d4e007d9422d206a37ca",
+  "sources": [
+    {
+      "id": "bts_freight_tsi",
+      "url": "https://www.bts.gov/tags/transportation-services-index",
+      "upstream_ids": [
+        "bts:transportation-services-index",
+        "aar:railroad-traffic",
+        "ata:truck-tonnage",
+        "bts:air-carrier-traffic",
+        "eia:pipeline-movements",
+        "usace:waterborne-commerce"
+      ],
+      "integrity_status": "Exact retained record verified from live checkpoint and immutable prior report input; original publisher bytes unverified."
+    },
+    {
+      "id": "port_la_containers",
+      "url": "https://portoflosangeles.org/business/statistics/container-statistics",
+      "upstream_ids": [
+        "port-of-los-angeles:terminal-container-reports"
+      ],
+      "integrity_status": "Exact retained record verified from live checkpoint and immutable prior report input; original publisher bytes unverified."
+    },
+    {
+      "id": "usda_grain_transport",
+      "url": "https://www.ams.usda.gov/services/transportation-analysis/gtr",
+      "upstream_ids": [
+        "usda:ams:grain-transportation-report",
+        "aar:railroad-traffic",
+        "usace:waterborne-commerce",
+        "eia:diesel-prices"
+      ],
+      "integrity_status": "Exact retained record verified from live checkpoint and immutable prior report input; original publisher bytes unverified."
+    },
+    {
+      "id": "aar_public_rail",
+      "url": "https://www.aar.org/data-center/",
+      "upstream_ids": [
+        "aar:railroad-traffic",
+        "aar:member-railroad-reports"
+      ],
+      "integrity_status": "Exact retained record verified from live checkpoint and immutable prior report input; original publisher bytes unverified."
+    },
+    {
+      "id": "bts_freight_tsi_fresh",
+      "url": "https://www.bts.gov/tags/transportation-services-index",
+      "upstream_ids": [
+        "bts:transportation-services-index",
+        "aar:railroad-traffic",
+        "ata:truck-tonnage",
+        "bts:air-carrier-traffic",
+        "eia:pipeline-movements",
+        "usace:waterborne-commerce"
+      ],
+      "integrity_status": "Exact selected cells/text matched actual tool representation; original publisher bytes unavailable"
+    }
+  ],
+  "delivery_key": "freight:freight-suite-manual-2026-09-30-repair-test-1:ef2f85f3ab272b7b125773ed80cc8e20ef5088ed3defef8836ca1b82a15efd88",
+  "invocation_kind": "authorized_manual_repair_test",
+  "scheduled_occurrence_consumed": false
+}

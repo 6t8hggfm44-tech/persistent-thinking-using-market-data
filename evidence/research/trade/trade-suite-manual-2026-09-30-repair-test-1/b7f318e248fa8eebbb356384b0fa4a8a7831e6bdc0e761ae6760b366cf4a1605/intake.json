@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "delivery_key": "trade:trade-suite-manual-2026-09-30-repair-test-1:b7f318e248fa8eebbb356384b0fa4a8a7831e6bdc0e761ae6760b366cf4a1605",
+  "domain": "trade",
+  "run_id": "trade-suite-manual-2026-09-30-repair-test-1",
+  "report_version": 3,
+  "report_kind": "final_hypothesis_test",
+  "received_at_utc": "2026-09-30T19:44:19Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "f05713fa3fa4ffe746eb811f00ae0ae38bd22570",
+    "staging_path": "evidence/research/pending/trade/trade-suite-manual-2026-09-30-repair-test-1/b7f318e248fa8eebbb356384b0fa4a8a7831e6bdc0e761ae6760b366cf4a1605/"
+  },
+  "integrity": {
+    "report_sha256": "b7f318e248fa8eebbb356384b0fa4a8a7831e6bdc0e761ae6760b366cf4a1605",
+    "report_bytes": 12337,
+    "envelope_sha256": "6b3373acdbb7082b779b620ceda099c4408200681e7aacd366c6dcccd83196dc",
+    "envelope_bytes": 5306,
+    "verified": true,
+    "method": "Complete exact immutable Git bytes, independent tree sizes and SHA256/identity checks; private producer source bytes also matched."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/trade/trade-suite-manual-2026-09-30-repair-test-1/b7f318e248fa8eebbb356384b0fa4a8a7831e6bdc0e761ae6760b366cf4a1605/Report.md",
+    "envelope": "evidence/research/trade/trade-suite-manual-2026-09-30-repair-test-1/b7f318e248fa8eebbb356384b0fa4a8a7831e6bdc0e761ae6760b366cf4a1605/report-envelope.json",
+    "intake": "evidence/research/trade/trade-suite-manual-2026-09-30-repair-test-1/b7f318e248fa8eebbb356384b0fa4a8a7831e6bdc0e761ae6760b366cf4a1605/intake.json"
+  },
+  "supersedes": [
+    {
+      "run_id": "trade-suite-manual-2026-09-30-repair-test-1",
+      "report_sha256": "6a81f2b22343d63f14bcc6c7f6dbd125a614a121368807ccce94799294426a83",
+      "report_version": 2,
+      "reason": "Correct current-versus-historical limitations, clarify variables and rounded precision, and remove repetitive/irrelevant prose. No new source acquisition or changed numerical inputs."
+    }
+  ],
+  "notes": [
+    "Registered manual test, not a weekly scheduled occurrence.",
+    "Earlier producer correction versions were preserved privately but not canonically accepted here; no extra investigation or evidence vote.",
+    "Publisher bodies/private evidence packages are not part of public transport; data ages, source dependence and missingness remain controlling.",
+    "Unavailable-source record timestamps denote status review rather than actual publisher retrieval.",
+    "The report records its generation-time runtime limitation; later producer terminal reconciliation is separately verified and does not alter its scientific content."
+  ]
+}

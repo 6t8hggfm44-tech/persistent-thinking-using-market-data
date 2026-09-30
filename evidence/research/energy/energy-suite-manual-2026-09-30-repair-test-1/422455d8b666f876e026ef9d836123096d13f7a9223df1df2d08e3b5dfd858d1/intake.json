@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "delivery_key": "energy:energy-suite-manual-2026-09-30-repair-test-1:422455d8b666f876e026ef9d836123096d13f7a9223df1df2d08e3b5dfd858d1",
+  "domain": "energy",
+  "run_id": "energy-suite-manual-2026-09-30-repair-test-1",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "received_at_utc": "2026-09-30T19:44:19Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "f05713fa3fa4ffe746eb811f00ae0ae38bd22570",
+    "staging_path": "evidence/research/pending/energy/energy-suite-manual-2026-09-30-repair-test-1/422455d8b666f876e026ef9d836123096d13f7a9223df1df2d08e3b5dfd858d1/"
+  },
+  "integrity": {
+    "report_sha256": "422455d8b666f876e026ef9d836123096d13f7a9223df1df2d08e3b5dfd858d1",
+    "report_bytes": 13582,
+    "envelope_sha256": "a4459bb97acb47d0a8e4c06cac6ee51993c21c1e76cfb29a4ba7aaf5d687a36c",
+    "envelope_bytes": 8716,
+    "verified": true,
+    "method": "Complete exact immutable Git bytes, independent tree sizes and SHA256/identity checks; private producer source bytes also matched."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/energy/energy-suite-manual-2026-09-30-repair-test-1/422455d8b666f876e026ef9d836123096d13f7a9223df1df2d08e3b5dfd858d1/Report.md",
+    "envelope": "evidence/research/energy/energy-suite-manual-2026-09-30-repair-test-1/422455d8b666f876e026ef9d836123096d13f7a9223df1df2d08e3b5dfd858d1/report-envelope.json",
+    "intake": "evidence/research/energy/energy-suite-manual-2026-09-30-repair-test-1/422455d8b666f876e026ef9d836123096d13f7a9223df1df2d08e3b5dfd858d1/intake.json"
+  },
+  "supersedes": [],
+  "notes": [
+    "Registered manual test, not a weekly scheduled occurrence.",
+    "Earlier producer correction versions were preserved privately but not canonically accepted here; no extra investigation or evidence vote.",
+    "Publisher bodies/private evidence packages are not part of public transport; data ages, source dependence and missingness remain controlling.",
+    "Unavailable-source record timestamps denote status review rather than actual publisher retrieval.",
+    "Common publisher alone does not identify shared measurements: gas WNGSR is distinct from petroleum WPSR; shared petroleum inputs are deduplicated. No EIA measurement is established in this run of GEV."
+  ]
+}

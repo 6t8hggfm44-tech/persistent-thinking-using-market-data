@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "delivery_key": "geopolitics:geopolitics-suite-manual-2026-09-30-repair-test-1:f53b7c962bc4e3973d0db40e7eb086125ed9828f9a694125c6efa903c0d171a1",
+  "domain": "geopolitics",
+  "run_id": "geopolitics-suite-manual-2026-09-30-repair-test-1",
+  "report_version": 3,
+  "report_kind": "final_evidence_gap",
+  "received_at_utc": "2026-09-30T19:44:19Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "f05713fa3fa4ffe746eb811f00ae0ae38bd22570",
+    "staging_path": "evidence/research/pending/geopolitics/geopolitics-suite-manual-2026-09-30-repair-test-1/f53b7c962bc4e3973d0db40e7eb086125ed9828f9a694125c6efa903c0d171a1/"
+  },
+  "integrity": {
+    "report_sha256": "f53b7c962bc4e3973d0db40e7eb086125ed9828f9a694125c6efa903c0d171a1",
+    "report_bytes": 14763,
+    "envelope_sha256": "6ae6a5c407b8568c6da06c5e150908a2c95d2c335c098bb78b8b675a3ada3f85",
+    "envelope_bytes": 5763,
+    "verified": true,
+    "method": "Complete exact immutable Git bytes, independent tree sizes and SHA256/identity checks; private producer source bytes also matched."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/geopolitics/geopolitics-suite-manual-2026-09-30-repair-test-1/f53b7c962bc4e3973d0db40e7eb086125ed9828f9a694125c6efa903c0d171a1/Report.md",
+    "envelope": "evidence/research/geopolitics/geopolitics-suite-manual-2026-09-30-repair-test-1/f53b7c962bc4e3973d0db40e7eb086125ed9828f9a694125c6efa903c0d171a1/report-envelope.json",
+    "intake": "evidence/research/geopolitics/geopolitics-suite-manual-2026-09-30-repair-test-1/f53b7c962bc4e3973d0db40e7eb086125ed9828f9a694125c6efa903c0d171a1/intake.json"
+  },
+  "supersedes": [
+    {
+      "run_id": "geopolitics-suite-manual-2026-09-30-repair-test-1",
+      "report_sha256": "7840939ab9f9027b429d19fceeb183d45a39487f35411041e4dbed9ae412e7bb",
+      "report_version": 2,
+      "reason": "Correct current-versus-historical limitations, clarify variables and rounded precision, and remove repetitive/irrelevant prose. No new source acquisition or changed numerical inputs."
+    }
+  ],
+  "notes": [
+    "Registered manual test, not a weekly scheduled occurrence.",
+    "Earlier producer correction versions were preserved privately but not canonically accepted here; no extra investigation or evidence vote.",
+    "Publisher bodies/private evidence packages are not part of public transport; data ages, source dependence and missingness remain controlling.",
+    "Unavailable-source record timestamps denote status review rather than actual publisher retrieval."
+  ]
+}

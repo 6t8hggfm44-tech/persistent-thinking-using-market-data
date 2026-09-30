@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "delivery_key": "fiscal:fiscal-suite-manual-2026-09-30-repair-test-1:ff854a111a07b4148f5048eb5df429fe9e339fce78a6e58b4eb2039c789a743b",
+  "domain": "fiscal",
+  "run_id": "fiscal-suite-manual-2026-09-30-repair-test-1",
+  "report_version": 3,
+  "report_kind": "final_evidence_gap",
+  "received_at_utc": "2026-09-30T19:44:19Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "f05713fa3fa4ffe746eb811f00ae0ae38bd22570",
+    "staging_path": "evidence/research/pending/fiscal/fiscal-suite-manual-2026-09-30-repair-test-1/ff854a111a07b4148f5048eb5df429fe9e339fce78a6e58b4eb2039c789a743b/"
+  },
+  "integrity": {
+    "report_sha256": "ff854a111a07b4148f5048eb5df429fe9e339fce78a6e58b4eb2039c789a743b",
+    "report_bytes": 11668,
+    "envelope_sha256": "72033cab0b32303b6526be52c6f3d097f56e5099c4d783ed27449aeef500347a",
+    "envelope_bytes": 5496,
+    "verified": true,
+    "method": "Complete exact immutable Git bytes, independent tree sizes and SHA256/identity checks; private producer source bytes also matched."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/fiscal/fiscal-suite-manual-2026-09-30-repair-test-1/ff854a111a07b4148f5048eb5df429fe9e339fce78a6e58b4eb2039c789a743b/Report.md",
+    "envelope": "evidence/research/fiscal/fiscal-suite-manual-2026-09-30-repair-test-1/ff854a111a07b4148f5048eb5df429fe9e339fce78a6e58b4eb2039c789a743b/report-envelope.json",
+    "intake": "evidence/research/fiscal/fiscal-suite-manual-2026-09-30-repair-test-1/ff854a111a07b4148f5048eb5df429fe9e339fce78a6e58b4eb2039c789a743b/intake.json"
+  },
+  "supersedes": [
+    {
+      "run_id": "fiscal-suite-manual-2026-09-30-repair-test-1",
+      "report_sha256": "4c81ab43ed3b12f79c03420d5cfb3c13e84f9c2c785147510a4cf6f5b07c7859",
+      "report_version": 2,
+      "reason": "Correct current-versus-historical limitations, clarify variables and rounded precision, and remove repetitive/irrelevant prose. No new source acquisition or changed numerical inputs."
+    }
+  ],
+  "notes": [
+    "Registered manual test, not a weekly scheduled occurrence.",
+    "Earlier producer correction versions were preserved privately but not canonically accepted here; no extra investigation or evidence vote.",
+    "Publisher bodies/private evidence packages are not part of public transport; data ages, source dependence and missingness remain controlling.",
+    "Unavailable-source record timestamps denote status review rather than actual publisher retrieval."
+  ]
+}

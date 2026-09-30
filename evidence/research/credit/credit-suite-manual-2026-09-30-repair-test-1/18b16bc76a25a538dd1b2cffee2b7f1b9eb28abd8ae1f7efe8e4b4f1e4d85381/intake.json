@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "delivery_key": "credit:credit-suite-manual-2026-09-30-repair-test-1:18b16bc76a25a538dd1b2cffee2b7f1b9eb28abd8ae1f7efe8e4b4f1e4d85381",
+  "domain": "credit",
+  "run_id": "credit-suite-manual-2026-09-30-repair-test-1",
+  "report_version": 3,
+  "report_kind": "final_hypothesis_test",
+  "received_at_utc": "2026-09-30T19:44:19Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "f05713fa3fa4ffe746eb811f00ae0ae38bd22570",
+    "staging_path": "evidence/research/pending/credit/credit-suite-manual-2026-09-30-repair-test-1/18b16bc76a25a538dd1b2cffee2b7f1b9eb28abd8ae1f7efe8e4b4f1e4d85381/"
+  },
+  "integrity": {
+    "report_sha256": "18b16bc76a25a538dd1b2cffee2b7f1b9eb28abd8ae1f7efe8e4b4f1e4d85381",
+    "report_bytes": 11507,
+    "envelope_sha256": "6a7fd48ec4b89f4e60c1848583c61b492a9611811decd93723d321d4457a8152",
+    "envelope_bytes": 4905,
+    "verified": true,
+    "method": "Complete exact immutable Git bytes, independent tree sizes and SHA256/identity checks; private producer source bytes also matched."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/credit/credit-suite-manual-2026-09-30-repair-test-1/18b16bc76a25a538dd1b2cffee2b7f1b9eb28abd8ae1f7efe8e4b4f1e4d85381/Report.md",
+    "envelope": "evidence/research/credit/credit-suite-manual-2026-09-30-repair-test-1/18b16bc76a25a538dd1b2cffee2b7f1b9eb28abd8ae1f7efe8e4b4f1e4d85381/report-envelope.json",
+    "intake": "evidence/research/credit/credit-suite-manual-2026-09-30-repair-test-1/18b16bc76a25a538dd1b2cffee2b7f1b9eb28abd8ae1f7efe8e4b4f1e4d85381/intake.json"
+  },
+  "supersedes": [
+    {
+      "run_id": "credit-suite-manual-2026-09-30-repair-test-1",
+      "report_sha256": "737f22ca1c497d6aed3a4345fa2372f223f1a0c4c02cee23e0c33a70f680872a",
+      "report_version": 2,
+      "reason": "Correct current-versus-historical limitations, clarify variables and rounded precision, and remove repetitive/irrelevant prose. No new source acquisition or changed numerical inputs."
+    }
+  ],
+  "notes": [
+    "Registered manual test, not a weekly scheduled occurrence.",
+    "Earlier producer correction versions were preserved privately but not canonically accepted here; no extra investigation or evidence vote.",
+    "Publisher bodies/private evidence packages are not part of public transport; data ages, source dependence and missingness remain controlling.",
+    "Unavailable-source record timestamps denote status review rather than actual publisher retrieval."
+  ]
+}
