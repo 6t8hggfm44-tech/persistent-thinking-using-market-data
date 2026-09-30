@@ -138,3 +138,7 @@ Initial claims remain a useful direct proxy for separation flow and JOLTS remain
 The refinement **does not erase** the broader asynchronous-labor insight. Low layoffs can coexist with weak hiring indicators, and later deterioration remains possible. It narrows the model from a confident “low-hire/low-fire” monthly payroll characterization to **low layoffs + mixed/asynchronous hiring evidence + separately measured net payroll growth**. This change receives no predictive-learning credit until later forecasts generated under it resolve.
 
 Every material edge should eventually carry sign, expected lag, confidence, evidence, and known failure conditions.
+
+## Review: 2026-09-30 repair test
+
+Reviewed at evidence cutoff19:56:01Z; no edge added, removed or strengthened. P000030 is failure evidence for its August core-inflation target, not identification of September energy transmission. Bounded source access, weather/aircraft diagnostics and shared-source corroboration do not establish new causal links. See [full analysis](../evaluations/2026-09-30-repair-test-1.md).

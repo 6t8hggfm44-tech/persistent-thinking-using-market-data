@@ -1,0 +1,20 @@
+{
+  "effective_at": "2026-09-30T19:56:01Z",
+  "model_version": "0.2.17",
+  "weights_before": {
+    "H001": 0.36,
+    "H002": 0.14,
+    "H003": 0.38,
+    "H004": 0.12
+  },
+  "weights_after": {
+    "H001": 0.36,
+    "H002": 0.14,
+    "H003": 0.38,
+    "H004": 0.12
+  },
+  "leader": "H003",
+  "decision": "reviewed_no_change",
+  "error_considered": "P000030 false at first-release core PCE +0.2%; unchanged frozen probability0.62 scored as a failure",
+  "rationale": "Counterevidence to uniform core-inflation intensification is material, but older/revised periods, flat real income, uneven hiring and missing current exposures prevent a justified fine numerical reallocation."
+}

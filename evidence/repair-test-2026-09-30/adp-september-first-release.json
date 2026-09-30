@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "source": "ADP Research / Stanford Digital Economy Lab",
+  "title": "ADP National Employment Report: Private-Sector Employment Increased by 90,000 Jobs in September",
+  "url": "https://mediacenter.adp.com/2026-09-30-ADP-National-Employment-Report-Private-Sector-Employment-Increased-by-90,000-Jobs-in-September",
+  "publication_date": "2026-09-30",
+  "publication_at_utc": null,
+  "observed_at_utc": "2026-09-30T19:10:16Z",
+  "period": "September 2026",
+  "representation": "Official publisher reader extract; original complete HTML bytes not independently downloaded or hashed.",
+  "selected_measurements": {
+    "private_jobs_change": 90000,
+    "goods_producing_change": 31000,
+    "service_providing_change": 59000,
+    "education_health_services_change": 55000,
+    "financial_activities_change": -16000,
+    "professional_business_services_change": -11000,
+    "august_change_current_vintage": 36000,
+    "august_change_prior_vintage": 38000,
+    "base_pay_growth_yoy_percent": 3.2,
+    "gross_pay_growth_yoy_percent": 4.7
+  },
+  "methodology_vintage": "This release incorporates Q1 QCEW data issued by BLS on August 28, 2026.",
+  "ancestry": [
+    "ADP anonymized payroll transactions",
+    "BLS QCEW benchmarking"
+  ],
+  "limitations": [
+    "Private payroll population and methodology differ from the BLS CES total nonfarm target.",
+    "P000031 remains unresolved until its precommitted first BLS release; coincident 90000 point does not resolve or validate it.",
+    "Official publication date is known; exact current release timestamp is not displayed in the inspected page.",
+    "Sector detail is mixed and gains are concentrated; no economy-wide hiring or causal-learning claim.",
+    "Direct Market acquisition, not a Labor producer source-recovery result."
+  ]
+}

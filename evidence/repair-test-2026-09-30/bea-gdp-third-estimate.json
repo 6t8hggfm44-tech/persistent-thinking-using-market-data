@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "source": "U.S. Bureau of Economic Analysis",
+  "release_id": "BEA 26-42",
+  "title": "GDP (Third Estimate), Industries, Corporate Profits, State GDP, and State Personal Income, 2nd Quarter 2026; State PCE, 2025",
+  "url": "https://www.bea.gov/news/2026/gdp-third-estimate-industries-corporate-profits-state-gdp-and-state-personal-income-2nd",
+  "publication_at_utc": "2026-09-30T12:30:00Z",
+  "observed_at_utc": "2026-09-30T18:04:58Z",
+  "observation_period": "Q2 2026, with annual revisions to earlier periods",
+  "representation": "Reader-extracted official publisher HTML; no assertion of downloaded complete source-byte integrity.",
+  "quarterly_percent_changes_seasonally_adjusted_annual_rate": {
+    "real_gdp": 2.2,
+    "real_final_sales_private_domestic_purchasers": 4.6,
+    "real_gdi": 2.6,
+    "gdp_gdi_average": 2.4,
+    "pce_prices": 5.0,
+    "core_pce_prices": 3.3
+  },
+  "revisions_from_second_estimate_percentage_points": {
+    "real_gdp": 0.7,
+    "real_final_sales_private_domestic_purchasers": 0.4,
+    "real_gdi": 0.4,
+    "core_pce_prices": -0.3
+  },
+  "corporate_profit_increase_billions_usd": 384.0,
+  "ancestry": [
+    "BEA NIPA",
+    "Census inventories",
+    "Census construction",
+    "Census Quarterly Services Survey",
+    "Census retail",
+    "USDA inventory",
+    "BLS CES",
+    "BLS QCEW",
+    "BTS transport"
+  ],
+  "independence_caution": "Revised GDP, GDI, PCE and domain components have common accounting/source ancestry; revised history updates present state only and cannot change earlier frozen scores."
+}

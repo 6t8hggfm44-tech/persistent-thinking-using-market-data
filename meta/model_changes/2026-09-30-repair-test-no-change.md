@@ -1,0 +1,3 @@
+# September30 repair-test Modeler decision
+
+Evidence cutoff2026-09-30T19:56:01Z. Model0.2.17 retained. Weights H0010.36/H0020.14/H0030.38/H0040.12 unchanged. P000030's false core-inflation event is explicit failure evidence; it lowers qualitative confidence in uniform inflation intensification. August spending resilience, flat real income, uneven hiring, higher mortgage rates and incomplete current exposures do not justify an arbitrary fine numerical reallocation or new structural edge. Review completed; no retrospective version credit. No new forecast duplicates existing P000029/P000031. See the complete evaluation and matrix for source timing, ancestry and gaps.

@@ -1,0 +1,1784 @@
+{
+  "schema_version": 1,
+  "run_id": "market-repair-test-2026-09-30-1",
+  "evidence_cutoff_utc": "2026-09-30T19:56:01Z",
+  "intake_snapshot": "a9dc0a7d53078ae929f69f7652c4c8e7c9f1d47e",
+  "age_method": "Date-only observation/release ages are integer calendar-day differences, not invented midnight timestamps. Precise known retrieval/receipt/publication instants use elapsed UTC hours. Unknown publication dates stay null. Source-response metadata are not publisher release times.",
+  "terminal_families": 15,
+  "canonical_families": 15,
+  "source_requests": 11,
+  "known_returned_requests": 10,
+  "known_failed_requests": 1,
+  "newer_numeric_observation_or_vintage_families": 6,
+  "coverage_interpretation": "6/15 is newer-to-producer numeric vintage coverage, including one same-period revision and one narrow hydrology proxy. Labor was already in Market. This is not six independent macro confirmations or full domain recovery. Eight families extracted numeric cells this run, including unchanged Industry and old-period Freight headlines.",
+  "rows": [
+    {
+      "family": "suite_credit",
+      "domain": "credit",
+      "run_id": "credit-suite-manual-2026-09-30-repair-test-1",
+      "delivery_key": "credit:credit-suite-manual-2026-09-30-repair-test-1:18b16bc76a25a538dd1b2cffee2b7f1b9eb28abd8ae1f7efe8e4b4f1e4d85381",
+      "report_version": 3,
+      "report_kind": "final_hypothesis_test",
+      "producer_repository": "6t8hggfm44-tech/-Credit-financial-stress-",
+      "producer_commit": "478799632cf608268d0af4753d777f6723862e4b",
+      "report_sha256": "18b16bc76a25a538dd1b2cffee2b7f1b9eb28abd8ae1f7efe8e4b4f1e4d85381",
+      "report_bytes": 11507,
+      "envelope_sha256": "6a7fd48ec4b89f4e60c1848583c61b492a9611811decd93723d321d4457a8152",
+      "envelope_bytes": 4905,
+      "market_canonical_commit": "13349f84381b61ff86a989e6bd4da46eade13df3",
+      "received_at_utc": "2026-09-30T19:44:19Z",
+      "receipt_age_hours": 0.195,
+      "canonical_report_path": "evidence/research/credit/credit-suite-manual-2026-09-30-repair-test-1/18b16bc76a25a538dd1b2cffee2b7f1b9eb28abd8ae1f7efe8e4b4f1e4d85381/Report.md",
+      "terminal_runtime": true,
+      "canonical_delivery": true,
+      "producer_delivery_ack": {
+        "domain": "credit",
+        "status": "canonical_delivery_persisted",
+        "producer_ack_commit": "055f30759dda0cd45650e42f9844d9bb8d5a5427",
+        "receiver_canonical_commit": "13349f84381b61ff86a989e6bd4da46eade13df3",
+        "receiver_complete_receipt_at_utc": "2026-09-30T19:44:19Z"
+      },
+      "source_requests": 1,
+      "source_returned": 1,
+      "source_failed": 0,
+      "freshness_class": "Discovery only; no new numeric credit measurement",
+      "finding_and_gap": "SLOOS index readable; no numerical table. H.8/H.15 cooldowns through October5 preserved; retained funding/delinquency evidence already known.",
+      "latest_selected_measurement_period_end": "2026-09-24",
+      "latest_selected_measurement_age_calendar_days": 6,
+      "selected_measurement_release_date": "2026-09-25",
+      "selected_measurement_release_age_calendar_days": 5,
+      "tested_source": {
+        "source_id": "fed_sloos",
+        "url": "https://www.federalreserve.gov/data/sloos.htm",
+        "release_date": null,
+        "publication_at_utc": null,
+        "retrieved_at_utc": "2026-09-30T18:57:01.360197+00:00",
+        "retrieval_time_meaning": "Actual tool response persisted after return; upstream HTTP time is unexposed.",
+        "observation_periods": [],
+        "latest_exact_parseable_observation_period_end": null,
+        "unparsed_periods": [],
+        "numeric_cells_selected": 0,
+        "newer_measurement_status": "fresh_discovery_no_numerical_table",
+        "source_upstream_ids": [
+          "fed-sloos-survey"
+        ],
+        "observation_age_calendar_days": null,
+        "release_age_calendar_days": null,
+        "publication_age_hours": null,
+        "retrieval_age_hours": 0.9832
+      },
+      "market_incrementality": "Use stated source scope; not an independent vote for every cell",
+      "ancestry": [
+        {
+          "id": "fed_h8",
+          "url": "https://www.federalreserve.gov/releases/h8/current/",
+          "upstream_ids": [
+            "fed-h8-bank-reporting",
+            "ffiec-call-reports"
+          ],
+          "integrity_status": "Exact retained bytes verified; original publisher bytes unavailable"
+        },
+        {
+          "id": "fed_sloos",
+          "url": "https://www.federalreserve.gov/data/sloos.htm",
+          "upstream_ids": [
+            "fed-sloos-survey"
+          ],
+          "integrity_status": "Historical capture metadata only; original bytes missing."
+        },
+        {
+          "id": "fed_delinquency",
+          "url": "https://www.federalreserve.gov/releases/chargeoff/delallsa.htm",
+          "upstream_ids": [
+            "ffiec-call-reports"
+          ],
+          "integrity_status": "Exact retained bytes verified; original publisher bytes unavailable"
+        },
+        {
+          "id": "fed_cp",
+          "url": "https://www.federalreserve.gov/releases/cp/rates.htm",
+          "upstream_ids": [
+            "fed-cp-dtcc"
+          ],
+          "integrity_status": "Historical capture metadata only; original bytes missing."
+        },
+        {
+          "id": "fed_h15",
+          "url": "https://www.federalreserve.gov/releases/h15/",
+          "upstream_ids": [
+            "fed-h15-market-rate-inputs",
+            "fed-cp-dtcc"
+          ],
+          "integrity_status": "Exact retained bytes verified; original publisher bytes unavailable"
+        },
+        {
+          "id": "fed_sloos_fresh",
+          "url": "https://www.federalreserve.gov/data/sloos.htm",
+          "upstream_ids": [
+            "fed-sloos-survey"
+          ],
+          "integrity_status": "Exact selected cells/text matched actual tool representation; original publisher bytes unavailable"
+        }
+      ],
+      "fresh_retrieval_provides_newer_numeric_vintage": false
+    },
+    {
+      "family": "suite_labor",
+      "domain": "labor",
+      "run_id": "labor-suite-manual-2026-09-30-repair-test-1",
+      "delivery_key": "labor:labor-suite-manual-2026-09-30-repair-test-1:c1e37283ead394763ec77eb4fdd9b95070f5486b17b48d3b86bd4c0c206df7b2",
+      "report_version": 3,
+      "report_kind": "final_hypothesis_test",
+      "producer_repository": "6t8hggfm44-tech/-Labor-market-agent",
+      "producer_commit": "5df55f02167a5717f94bc5bc3ec742674a073e7b",
+      "report_sha256": "c1e37283ead394763ec77eb4fdd9b95070f5486b17b48d3b86bd4c0c206df7b2",
+      "report_bytes": 11855,
+      "envelope_sha256": "92e27440f4e652b20fcf894b0b24373dbef838c0604bd2194c002c9f4bd49219",
+      "envelope_bytes": 4696,
+      "market_canonical_commit": "6f95f566d1950aaac45f77f823fbed15d3e2fa65",
+      "received_at_utc": "2026-09-30T19:35:17Z",
+      "receipt_age_hours": 0.3456,
+      "canonical_report_path": "evidence/research/labor/labor-suite-manual-2026-09-30-repair-test-1/c1e37283ead394763ec77eb4fdd9b95070f5486b17b48d3b86bd4c0c206df7b2/Report.md",
+      "terminal_runtime": true,
+      "canonical_delivery": true,
+      "producer_delivery_ack": {
+        "domain": "labor",
+        "status": "canonical_delivery_persisted",
+        "producer_ack_commit": "bf223292ab3fb475e8a6ef2332f5f6fa34bf5321",
+        "receiver_canonical_commit": "6f95f566d1950aaac45f77f823fbed15d3e2fa65",
+        "receiver_complete_receipt_at_utc": "2026-09-30T19:35:17Z"
+      },
+      "source_requests": 1,
+      "source_returned": 1,
+      "source_failed": 0,
+      "freshness_class": "Newer to producer, already known to Market",
+      "finding_and_gap": "September24 claims: initial197K versus revised198K; old196K comparator would reverse sign. First received by Market in earlier September25 evidence; no second state vote.",
+      "latest_selected_measurement_period_end": "2026-09-19",
+      "latest_selected_measurement_age_calendar_days": 11,
+      "selected_measurement_release_date": "2026-09-24",
+      "selected_measurement_release_age_calendar_days": 6,
+      "tested_source": {
+        "source_id": "dol_claims",
+        "url": "https://www.dol.gov/ui/data.pdf",
+        "release_date": "2026-09-24",
+        "publication_at_utc": "2026-09-24T12:30:00Z",
+        "retrieved_at_utc": "2026-09-30T18:57:01.000189+00:00",
+        "retrieval_time_meaning": "Actual tool response persisted after return; upstream HTTP time is unexposed.",
+        "observation_periods": [
+          "2026-09-19",
+          "2026-09-12",
+          "2026-09-05"
+        ],
+        "latest_exact_parseable_observation_period_end": "2026-09-19",
+        "unparsed_periods": [],
+        "numeric_cells_selected": 8,
+        "newer_measurement_status": "newer_weekly_measurements",
+        "source_upstream_ids": [
+          "dol:eta:state-unemployment-insurance-claims"
+        ],
+        "observation_age_calendar_days": 11,
+        "release_age_calendar_days": 6,
+        "publication_age_hours": 151.4336,
+        "retrieval_age_hours": 0.9833
+      },
+      "market_incrementality": "Already known before this test; no additional state vote",
+      "ancestry": [
+        {
+          "id": "dol_claims",
+          "url": "https://www.dol.gov/ui/data.pdf",
+          "upstream_ids": [
+            "dol:eta:state-unemployment-insurance-claims"
+          ],
+          "integrity_status": "Exact selected numeric cells checked; original publisher body hash unavailable"
+        },
+        {
+          "id": "bls_employment",
+          "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+          "upstream_ids": [
+            "bls:current-employment-statistics",
+            "bls:current-population-survey"
+          ],
+          "integrity_status": "Exact selected numeric cells checked; original publisher body hash unavailable"
+        },
+        {
+          "id": "bls_jolts",
+          "url": "https://www.bls.gov/news.release/jolts.nr0.htm",
+          "upstream_ids": [
+            "bls:job-openings-and-labor-turnover-survey"
+          ],
+          "integrity_status": "Exact selected numeric cells checked; original publisher body hash unavailable"
+        },
+        {
+          "id": "bls_eci",
+          "url": "https://www.bls.gov/news.release/eci.nr0.htm",
+          "upstream_ids": [
+            "bls:national-compensation-survey:employment-cost-index"
+          ],
+          "integrity_status": "Exact selected numeric cells checked; original publisher body hash unavailable"
+        },
+        {
+          "id": "dol_claims_fresh",
+          "url": "https://www.dol.gov/ui/data.pdf",
+          "upstream_ids": [
+            "dol:eta:state-unemployment-insurance-claims"
+          ],
+          "integrity_status": "Exact selected cells/text matched actual tool representation; original publisher bytes unavailable"
+        }
+      ],
+      "fresh_retrieval_provides_newer_numeric_vintage": true
+    },
+    {
+      "family": "suite_consumer",
+      "domain": "consumer",
+      "run_id": "consumer-suite-manual-2026-09-30-repair-test-1",
+      "delivery_key": "consumer:consumer-suite-manual-2026-09-30-repair-test-1:f5120db0c10f7138b6947c0e5a4112e8f4293c8d7a50b9723bc65c79f26a6b50",
+      "report_version": 3,
+      "report_kind": "final_hypothesis_test",
+      "producer_repository": "6t8hggfm44-tech/-Consumer-activity-",
+      "producer_commit": "38ed45470671987370299a328ace92d4acc97919",
+      "report_sha256": "f5120db0c10f7138b6947c0e5a4112e8f4293c8d7a50b9723bc65c79f26a6b50",
+      "report_bytes": 12925,
+      "envelope_sha256": "773db790a1a280ae1dedb88b7e9e16810eafeab25d99db1af091573fc140eef2",
+      "envelope_bytes": 4852,
+      "market_canonical_commit": "6f95f566d1950aaac45f77f823fbed15d3e2fa65",
+      "received_at_utc": "2026-09-30T19:35:17Z",
+      "receipt_age_hours": 0.3456,
+      "canonical_report_path": "evidence/research/consumer/consumer-suite-manual-2026-09-30-repair-test-1/f5120db0c10f7138b6947c0e5a4112e8f4293c8d7a50b9723bc65c79f26a6b50/Report.md",
+      "terminal_runtime": true,
+      "canonical_delivery": true,
+      "producer_delivery_ack": {
+        "domain": "consumer",
+        "status": "canonical_delivery_persisted",
+        "producer_ack_commit": "79064b81fad701e9f9fb4fb80f6bd846dfc6d2f5",
+        "receiver_canonical_commit": "6f95f566d1950aaac45f77f823fbed15d3e2fa65",
+        "receiver_complete_receipt_at_utc": "2026-09-30T19:35:17Z"
+      },
+      "source_requests": 1,
+      "source_returned": 1,
+      "source_failed": 0,
+      "freshness_class": "New August PCE release",
+      "finding_and_gap": "Nominal PCE +0.9% August versus +0.1% July; full real/income/inflation decomposition acquired directly by Market and counted once.",
+      "latest_selected_measurement_period_end": "2026-08-31",
+      "latest_selected_measurement_age_calendar_days": 30,
+      "selected_measurement_release_date": "2026-09-30",
+      "selected_measurement_release_age_calendar_days": 0,
+      "tested_source": {
+        "source_id": "bea_pce",
+        "url": "https://www.bea.gov/data/consumer-spending/main",
+        "release_date": "2026-09-30",
+        "publication_at_utc": null,
+        "retrieved_at_utc": "2026-09-30T18:59:00.739005+00:00",
+        "retrieval_time_meaning": "Actual tool response persisted after return; upstream HTTP time is unexposed.",
+        "observation_periods": [
+          "2026-08",
+          "2026-07"
+        ],
+        "latest_exact_parseable_observation_period_end": "2026-08-31",
+        "unparsed_periods": [],
+        "numeric_cells_selected": 2,
+        "newer_measurement_status": "new_release_headline_cells",
+        "source_upstream_ids": [
+          "bea:nipa:personal-consumption-expenditures",
+          "census:monthly-retail-trade",
+          "census:quarterly-services-survey"
+        ],
+        "observation_age_calendar_days": 30,
+        "release_age_calendar_days": 0,
+        "publication_age_hours": null,
+        "retrieval_age_hours": 0.9501
+      },
+      "market_incrementality": "Combined once with direct Market BEA evidence",
+      "ancestry": [
+        {
+          "id": "fed_g19",
+          "url": "https://www.federalreserve.gov/releases/g19/current/default.htm",
+          "upstream_ids": [
+            "federal-reserve:consumer-credit:G19"
+          ],
+          "integrity_status": "Selected derived cells checked; original publisher body unavailable"
+        },
+        {
+          "id": "census_retail",
+          "url": "https://www.census.gov/retail/marts/www/marts_current.pdf",
+          "upstream_ids": [
+            "census:advance-monthly-retail-trade",
+            "census:monthly-retail-trade"
+          ],
+          "integrity_status": "Selected derived cells checked; original publisher body unavailable"
+        },
+        {
+          "id": "bea_pce",
+          "url": "https://www.bea.gov/data/consumer-spending/main",
+          "upstream_ids": [
+            "bea:nipa:personal-consumption-expenditures",
+            "census:monthly-retail-trade",
+            "census:quarterly-services-survey"
+          ],
+          "integrity_status": "Selected derived cells checked; original publisher body unavailable"
+        },
+        {
+          "id": "tsa_passengers",
+          "url": "https://www.tsa.gov/travel/passenger-volumes",
+          "upstream_ids": [
+            "tsa:checkpoint-traveler-throughput"
+          ],
+          "integrity_status": "No input acquired"
+        },
+        {
+          "id": "bea_pce_fresh",
+          "url": "https://www.bea.gov/data/consumer-spending/main",
+          "upstream_ids": [
+            "bea:nipa:personal-consumption-expenditures",
+            "census:monthly-retail-trade",
+            "census:quarterly-services-survey"
+          ],
+          "integrity_status": "Exact selected cells/text matched actual tool representation; original publisher bytes unavailable"
+        }
+      ],
+      "fresh_retrieval_provides_newer_numeric_vintage": true
+    },
+    {
+      "family": "suite_housing",
+      "domain": "housing",
+      "run_id": "housing-suite-manual-2026-09-30-repair-test-1",
+      "delivery_key": "housing:housing-suite-manual-2026-09-30-repair-test-1:a11157ac13c71142d80559f60084d2925e9a1b635b35a912e49cc5cee0bbdfef",
+      "report_version": 3,
+      "report_kind": "final_hypothesis_test",
+      "producer_repository": "6t8hggfm44-tech/-Housing-construction-",
+      "producer_commit": "d1100433b7e146931a5de2c3785152f4675c3579",
+      "report_sha256": "a11157ac13c71142d80559f60084d2925e9a1b635b35a912e49cc5cee0bbdfef",
+      "report_bytes": 15850,
+      "envelope_sha256": "cf11638b32367dfd8f8a5429321eb4a86f7b28bf67b84265a0aeb843b3dbf840",
+      "envelope_bytes": 5055,
+      "market_canonical_commit": "6f95f566d1950aaac45f77f823fbed15d3e2fa65",
+      "received_at_utc": "2026-09-30T19:35:17Z",
+      "receipt_age_hours": 0.3456,
+      "canonical_report_path": "evidence/research/housing/housing-suite-manual-2026-09-30-repair-test-1/a11157ac13c71142d80559f60084d2925e9a1b635b35a912e49cc5cee0bbdfef/Report.md",
+      "terminal_runtime": true,
+      "canonical_delivery": true,
+      "producer_delivery_ack": {
+        "domain": "housing",
+        "status": "canonical_delivery_persisted",
+        "producer_ack_commit": "93e1592bcef7f1ee507eae351c4263610d71273c",
+        "receiver_canonical_commit": "6f95f566d1950aaac45f77f823fbed15d3e2fa65",
+        "receiver_complete_receipt_at_utc": "2026-09-30T19:35:17Z"
+      },
+      "source_requests": 1,
+      "source_returned": 1,
+      "source_failed": 0,
+      "freshness_class": "Newer weekly mortgage measurements",
+      "finding_and_gap": "September24 PMMS30-year7.03%,15-year6.42%,+8/+16bp. Rate observation does not establish realized housing-demand or construction causality.",
+      "latest_selected_measurement_period_end": "2026-09-23",
+      "latest_selected_measurement_age_calendar_days": 7,
+      "selected_measurement_release_date": "2026-09-24",
+      "selected_measurement_release_age_calendar_days": 6,
+      "tested_source": {
+        "source_id": "freddie_pmms",
+        "url": "https://www.freddiemac.com/pmms",
+        "release_date": "2026-09-24",
+        "publication_at_utc": null,
+        "retrieved_at_utc": "2026-09-30T18:55:19.037789+00:00",
+        "retrieval_time_meaning": "Actual tool response persisted after return; upstream HTTP time is unexposed.",
+        "observation_periods": [
+          "2026-09-17/2026-09-23",
+          "2026-09-10/2026-09-16",
+          "year-ago week reported in 2026-09-24 release; exact dates not exposed"
+        ],
+        "latest_exact_parseable_observation_period_end": "2026-09-23",
+        "unparsed_periods": [
+          "year-ago week reported in 2026-09-24 release; exact dates not exposed"
+        ],
+        "numeric_cells_selected": 6,
+        "newer_measurement_status": "newer_weekly_measurements",
+        "source_upstream_ids": [
+          "FREDDIE-MAC-LPA-PMMS"
+        ],
+        "observation_age_calendar_days": 7,
+        "release_age_calendar_days": 6,
+        "publication_age_hours": null,
+        "retrieval_age_hours": 1.0117
+      },
+      "market_incrementality": "Use stated source scope; not an independent vote for every cell",
+      "ancestry": [
+        {
+          "id": "freddie_pmms",
+          "url": "https://www.freddiemac.com/pmms",
+          "upstream_ids": [
+            "FREDDIE-MAC-LPA-PMMS"
+          ],
+          "integrity_status": "Exact retained extract and prior frozen input hashes verified; original publisher body unavailable; no current revision/access claim"
+        },
+        {
+          "id": "census_nrc",
+          "url": "https://www.census.gov/construction/nrc/pdf/newresconst.pdf",
+          "upstream_ids": [
+            "US-CENSUS-BPS",
+            "US-CENSUS-SOC"
+          ],
+          "integrity_status": "Exact retained extract and prior frozen input hashes verified; original publisher body unavailable; no current revision/access claim"
+        },
+        {
+          "id": "census_nrs",
+          "url": "https://www.census.gov/construction/nrs/pdf/newressales.pdf",
+          "upstream_ids": [
+            "US-CENSUS-SOC"
+          ],
+          "integrity_status": "Exact retained extract and prior frozen input hashes verified; original publisher body unavailable; no current revision/access claim"
+        },
+        {
+          "id": "bls_construction_employment",
+          "url": "https://www.bls.gov/news.release/empsit.t17.htm",
+          "upstream_ids": [
+            "US-BLS-CES"
+          ],
+          "integrity_status": "No source-body or extract available; timestamp denotes status review only, not source retrieval."
+        },
+        {
+          "id": "fed_sloos_cre",
+          "url": "https://www.federalreserve.gov/data/sloos.htm",
+          "upstream_ids": [
+            "FRB-SLOOS-RESPONDENT-BANKS"
+          ],
+          "integrity_status": "No source-body or extract available; timestamp denotes status review only, not source retrieval."
+        },
+        {
+          "id": "freddie_pmms_fresh",
+          "url": "https://www.freddiemac.com/pmms",
+          "upstream_ids": [
+            "FREDDIE-MAC-LPA-PMMS"
+          ],
+          "integrity_status": "Exact selected cells/text matched actual tool representation; original publisher bytes unavailable"
+        }
+      ],
+      "fresh_retrieval_provides_newer_numeric_vintage": true
+    },
+    {
+      "family": "suite_industry",
+      "domain": "industry",
+      "run_id": "industry-suite-manual-2026-09-30-repair-test-1",
+      "delivery_key": "industry:industry-suite-manual-2026-09-30-repair-test-1:8f0b5345bb07b0427cbf4c6882e88be4e7ff0c0d339ac1cd5dfa24e20c85c2be",
+      "report_version": 3,
+      "report_kind": "final_hypothesis_test",
+      "producer_repository": "6t8hggfm44-tech/-Industrial-production-",
+      "producer_commit": "01ddfe92b10c09ea3ce238bc6ae578ee302ae117",
+      "report_sha256": "8f0b5345bb07b0427cbf4c6882e88be4e7ff0c0d339ac1cd5dfa24e20c85c2be",
+      "report_bytes": 15825,
+      "envelope_sha256": "57b2e7c8e8e31964a16bfe75eb5615b4738f337dd04b02ce31caffe585cd3bd3",
+      "envelope_bytes": 5023,
+      "market_canonical_commit": "6f95f566d1950aaac45f77f823fbed15d3e2fa65",
+      "received_at_utc": "2026-09-30T19:35:17Z",
+      "receipt_age_hours": 0.3456,
+      "canonical_report_path": "evidence/research/industry/industry-suite-manual-2026-09-30-repair-test-1/8f0b5345bb07b0427cbf4c6882e88be4e7ff0c0d339ac1cd5dfa24e20c85c2be/Report.md",
+      "terminal_runtime": true,
+      "canonical_delivery": true,
+      "producer_delivery_ack": {
+        "domain": "industry",
+        "status": "canonical_delivery_persisted",
+        "producer_ack_commit": "6babb91b267e843e36b9a19a067b470cc48d48bd",
+        "receiver_canonical_commit": "6f95f566d1950aaac45f77f823fbed15d3e2fa65",
+        "receiver_complete_receipt_at_utc": "2026-09-30T19:35:17Z"
+      },
+      "source_requests": 1,
+      "source_returned": 1,
+      "source_failed": 0,
+      "freshness_class": "Fresh retrieval, unchanged vintage",
+      "finding_and_gap": "24 selected G.17 cells remain September18 release; no newer measurement. Same six-month window, missing independent breadth/M3 constraints.",
+      "latest_selected_measurement_period_end": "2026-08-31",
+      "latest_selected_measurement_age_calendar_days": 30,
+      "selected_measurement_release_date": "2026-09-18",
+      "selected_measurement_release_age_calendar_days": 12,
+      "tested_source": {
+        "source_id": "fed_g17",
+        "url": "https://www.federalreserve.gov/releases/g17/current/default.htm",
+        "release_date": "2026-09-18",
+        "publication_at_utc": null,
+        "retrieved_at_utc": "2026-09-30T18:56:42.367750+00:00",
+        "retrieval_time_meaning": "Actual tool response persisted after return; upstream HTTP time is unexposed.",
+        "observation_periods": [
+          "2026-03",
+          "2026-04",
+          "2026-05",
+          "2026-06",
+          "2026-07",
+          "2026-08"
+        ],
+        "latest_exact_parseable_observation_period_end": "2026-08-31",
+        "unparsed_periods": [],
+        "numeric_cells_selected": 24,
+        "newer_measurement_status": "fresh_retrieval_same_measurement_vintage",
+        "source_upstream_ids": [
+          "FRB-G17",
+          "US-CENSUS-INDUSTRIAL-BENCHMARKS",
+          "US-BLS-PRODUCTION-WORKER-HOURS",
+          "USGS-MINERALS"
+        ],
+        "observation_age_calendar_days": 30,
+        "release_age_calendar_days": 12,
+        "publication_age_hours": null,
+        "retrieval_age_hours": 0.9885
+      },
+      "market_incrementality": "Use stated source scope; not an independent vote for every cell",
+      "ancestry": [
+        {
+          "id": "fed_g17",
+          "url": "https://www.federalreserve.gov/releases/g17/current/default.htm",
+          "upstream_ids": [
+            "FRB-G17",
+            "US-CENSUS-INDUSTRIAL-BENCHMARKS",
+            "US-BLS-PRODUCTION-WORKER-HOURS",
+            "USGS-MINERALS"
+          ],
+          "integrity_status": "Checkpoint file SHA-256 verified through the frozen prior package; exact selected cells matched the prior tool representation. Original publisher-body bytes are not available or verified in this runtime."
+        },
+        {
+          "id": "census_m3",
+          "url": "https://www.census.gov/manufacturing/m3/index.html",
+          "upstream_ids": [
+            "US-CENSUS-M3"
+          ],
+          "integrity_status": "No usable current-run or retained numeric representation."
+        },
+        {
+          "id": "ism_manufacturing",
+          "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/",
+          "upstream_ids": [
+            "ISM-MANUFACTURING-SURVEY"
+          ],
+          "integrity_status": "No usable numeric representation."
+        },
+        {
+          "id": "sia_sales",
+          "url": "https://www.semiconductors.org/policies/tax/market-data/",
+          "upstream_ids": [
+            "WSTS-SEMICONDUCTOR-SALES"
+          ],
+          "integrity_status": "Not acquired in this run; no durable reviewed numeric extract."
+        },
+        {
+          "id": "usgs_cement",
+          "url": "https://www.usgs.gov/centers/national-minerals-information-center/cement-statistics-and-information",
+          "upstream_ids": [
+            "USGS-CEMENT-PRODUCER-SURVEY",
+            "US-CENSUS-CEMENT-TRADE"
+          ],
+          "integrity_status": "Not acquired in this run; no durable reviewed numeric extract."
+        },
+        {
+          "id": "fed_g17_fresh",
+          "url": "https://www.federalreserve.gov/releases/g17/current/default.htm",
+          "upstream_ids": [
+            "FRB-G17",
+            "US-CENSUS-INDUSTRIAL-BENCHMARKS",
+            "US-BLS-PRODUCTION-WORKER-HOURS",
+            "USGS-MINERALS"
+          ],
+          "integrity_status": "Exact selected cells/text matched actual tool representation; original publisher bytes unavailable"
+        }
+      ],
+      "fresh_retrieval_provides_newer_numeric_vintage": false
+    },
+    {
+      "family": "suite_corporate",
+      "domain": "corporate",
+      "run_id": "corporate-suite-manual-2026-09-30-repair-test-1",
+      "delivery_key": "corporate:corporate-suite-manual-2026-09-30-repair-test-1:11fbab7d6822e3379d095051121820391add2f38cccebdfef1ebf62ad1e8171d",
+      "report_version": 3,
+      "report_kind": "final_hypothesis_test",
+      "producer_repository": "6t8hggfm44-tech/-Corporate-behavior-",
+      "producer_commit": "10119473d487246494523d7442e82369fdcdc189",
+      "report_sha256": "11fbab7d6822e3379d095051121820391add2f38cccebdfef1ebf62ad1e8171d",
+      "report_bytes": 11219,
+      "envelope_sha256": "7cd297db66f70727434477697390fa65b4f5e7d3544f579673f6f326c554821c",
+      "envelope_bytes": 6611,
+      "market_canonical_commit": "6f95f566d1950aaac45f77f823fbed15d3e2fa65",
+      "received_at_utc": "2026-09-30T19:35:17Z",
+      "receipt_age_hours": 0.3456,
+      "canonical_report_path": "evidence/research/corporate/corporate-suite-manual-2026-09-30-repair-test-1/11fbab7d6822e3379d095051121820391add2f38cccebdfef1ebf62ad1e8171d/Report.md",
+      "terminal_runtime": true,
+      "canonical_delivery": true,
+      "producer_delivery_ack": {
+        "domain": "corporate",
+        "status": "canonical_delivery_persisted",
+        "producer_ack_commit": "364760401df1e3471c07b47af49dda43f0eb9fac",
+        "receiver_canonical_commit": "6f95f566d1950aaac45f77f823fbed15d3e2fa65",
+        "receiver_complete_receipt_at_utc": "2026-09-30T19:35:17Z"
+      },
+      "source_requests": 1,
+      "source_returned": 1,
+      "source_failed": 0,
+      "freshness_class": "New revision of old quarters",
+      "finding_and_gap": "Q2/Q1 current-production profits4709.5/4325.4 billion; both revised lower than producer prior vintage. Rounded difference384.1 differs from separately published384.0; no unrounded validation.",
+      "latest_selected_measurement_period_end": "2026-06-30",
+      "latest_selected_measurement_age_calendar_days": 92,
+      "selected_measurement_release_date": "2026-09-30",
+      "selected_measurement_release_age_calendar_days": 0,
+      "tested_source": {
+        "source_id": "bea_corporate_profits",
+        "url": "https://www.bea.gov/data/income-saving/corporate-profits",
+        "release_date": "2026-09-30",
+        "publication_at_utc": null,
+        "retrieved_at_utc": "2026-09-30T18:58:58.142944+00:00",
+        "retrieval_time_meaning": "Actual tool response persisted after return; upstream HTTP time is unexposed.",
+        "observation_periods": [
+          "2026-Q2",
+          "2026-Q1"
+        ],
+        "latest_exact_parseable_observation_period_end": "2026-06-30",
+        "unparsed_periods": [],
+        "numeric_cells_selected": 2,
+        "newer_measurement_status": "new_vintage_same_observation_periods",
+        "source_upstream_ids": [
+          "US-BEA-NIPA-CORPORATE-PROFITS",
+          "US-IRS-CORPORATE-TAX",
+          "US-CENSUS-QFR"
+        ],
+        "observation_age_calendar_days": 92,
+        "release_age_calendar_days": 0,
+        "publication_age_hours": null,
+        "retrieval_age_hours": 0.9508
+      },
+      "market_incrementality": "Combined once with direct Market BEA evidence",
+      "ancestry": [
+        {
+          "id": "bea_corporate_profits",
+          "url": "https://www.bea.gov/data/income-saving/corporate-profits",
+          "upstream_ids": [
+            "US-BEA-NIPA-CORPORATE-PROFITS",
+            "US-IRS-CORPORATE-TAX",
+            "US-CENSUS-QFR"
+          ],
+          "integrity_status": "Exact tool-representation hash and retained numeric strings verified; original publisher byte identity unavailable; semantic review explicitly recorded."
+        },
+        {
+          "id": "bls_jolts",
+          "url": "https://www.bls.gov/news.release/jolts.nr0.htm",
+          "upstream_ids": [
+            "bls:job-openings-and-labor-turnover-survey"
+          ],
+          "integrity_status": "Exact tool-representation hash and retained numeric strings verified; original publisher byte identity unavailable; semantic review explicitly recorded."
+        },
+        {
+          "id": "microsoft_fy2026q4",
+          "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast",
+          "upstream_ids": [
+            "ISSUER-MSFT-FY2026Q4"
+          ],
+          "integrity_status": "Exact tool-representation hash and retained numeric strings verified; original publisher byte identity unavailable; semantic review explicitly recorded."
+        },
+        {
+          "id": "census_qfr",
+          "url": "https://www.census.gov/econ/qfr/index.html",
+          "upstream_ids": [
+            "US-CENSUS-QFR"
+          ],
+          "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+        },
+        {
+          "id": "ftc_hsr",
+          "url": "https://www.ftc.gov/policy/reports/annual-competition-reports",
+          "upstream_ids": [
+            "US-FTC-DOJ-HSR-FILINGS"
+          ],
+          "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+        },
+        {
+          "id": "bea_corporate_profits_fresh",
+          "url": "https://www.bea.gov/data/income-saving/corporate-profits",
+          "upstream_ids": [
+            "US-BEA-NIPA-CORPORATE-PROFITS",
+            "US-IRS-CORPORATE-TAX",
+            "US-CENSUS-QFR"
+          ],
+          "integrity_status": "Exact selected cells/text matched actual tool representation; original publisher bytes unavailable"
+        }
+      ],
+      "fresh_retrieval_provides_newer_numeric_vintage": true
+    },
+    {
+      "family": "suite_fiscal",
+      "domain": "fiscal",
+      "run_id": "fiscal-suite-manual-2026-09-30-repair-test-1",
+      "delivery_key": "fiscal:fiscal-suite-manual-2026-09-30-repair-test-1:ff854a111a07b4148f5048eb5df429fe9e339fce78a6e58b4eb2039c789a743b",
+      "report_version": 3,
+      "report_kind": "final_evidence_gap",
+      "producer_repository": "6t8hggfm44-tech/-Government-fiscal-",
+      "producer_commit": "97847d6f123ea19f44acb224439c3bf891f9c4da",
+      "report_sha256": "ff854a111a07b4148f5048eb5df429fe9e339fce78a6e58b4eb2039c789a743b",
+      "report_bytes": 11668,
+      "envelope_sha256": "72033cab0b32303b6526be52c6f3d097f56e5099c4d783ed27449aeef500347a",
+      "envelope_bytes": 5496,
+      "market_canonical_commit": "13349f84381b61ff86a989e6bd4da46eade13df3",
+      "received_at_utc": "2026-09-30T19:44:19Z",
+      "receipt_age_hours": 0.195,
+      "canonical_report_path": "evidence/research/fiscal/fiscal-suite-manual-2026-09-30-repair-test-1/ff854a111a07b4148f5048eb5df429fe9e339fce78a6e58b4eb2039c789a743b/Report.md",
+      "terminal_runtime": true,
+      "canonical_delivery": true,
+      "producer_delivery_ack": {
+        "domain": "fiscal",
+        "status": "canonical_delivery_persisted",
+        "producer_ack_commit": "0ab9876e9d43794aeb5cfce01462e1385f4e701d",
+        "receiver_canonical_commit": "13349f84381b61ff86a989e6bd4da46eade13df3",
+        "receiver_complete_receipt_at_utc": "2026-09-30T19:44:19Z"
+      },
+      "source_requests": 0,
+      "source_returned": 0,
+      "source_failed": 0,
+      "freshness_class": "Reused data under actual cooldown",
+      "finding_and_gap": "Manual source calls0; MTS/Census October7 cooldowns follow scheduled September30 work. Census September1 May-July construction vintage is unchanged; no federal cashflow measurement.",
+      "latest_selected_measurement_period_end": "2026-07-31",
+      "latest_selected_measurement_age_calendar_days": 61,
+      "selected_measurement_release_date": "2026-09-01",
+      "selected_measurement_release_age_calendar_days": 29,
+      "tested_source": null,
+      "market_incrementality": "Use stated source scope; not an independent vote for every cell",
+      "ancestry": [
+        {
+          "id": "treasury_mts",
+          "url": "https://fiscal.treasury.gov/accounting/monthly-treasury-statement",
+          "upstream_ids": [
+            "US-TREASURY-MTS",
+            "US-FEDERAL-ENTITY-ACCOUNTING"
+          ],
+          "integrity_status": "Exact retained extract bytes verified; tool representation only, original publisher bytes unverified."
+        },
+        {
+          "id": "usaspending",
+          "url": "https://www.usaspending.gov/explorer",
+          "upstream_ids": [
+            "US-FEDERAL-AWARD-REPORTING",
+            "US-FPDS-CONTRACTS",
+            "US-DATA-ACT-AGENCY-REPORTING"
+          ],
+          "integrity_status": "No current source body/observations; original prior capture hashes cannot supply missing bytes."
+        },
+        {
+          "id": "census_state_local",
+          "url": "https://www.census.gov/programs-surveys/gov-finances.html",
+          "upstream_ids": [
+            "US-CENSUS-GOVERNMENT-FINANCES",
+            "STATE-LOCAL-FINANCIAL-REPORTS"
+          ],
+          "integrity_status": "No current source body/observations; original prior capture hashes cannot supply missing bytes."
+        },
+        {
+          "id": "census_construction_public",
+          "url": "https://www.census.gov/construction/c30/pdf/release.pdf",
+          "upstream_ids": [
+            "US-CENSUS-VIP",
+            "US-CENSUS-SOC"
+          ],
+          "integrity_status": "Exact retained extract bytes verified; tool representation only, original publisher bytes unverified."
+        },
+        {
+          "id": "federal_register",
+          "url": "https://www.federalregister.gov/documents/current",
+          "upstream_ids": [
+            "US-OFR-FEDERAL-REGISTER",
+            "US-ISSUING-AGENCY-RULEMAKING"
+          ],
+          "integrity_status": "No current source body/observations; original prior capture hashes cannot supply missing bytes."
+        }
+      ],
+      "fresh_retrieval_provides_newer_numeric_vintage": false
+    },
+    {
+      "family": "suite_trade",
+      "domain": "trade",
+      "run_id": "trade-suite-manual-2026-09-30-repair-test-1",
+      "delivery_key": "trade:trade-suite-manual-2026-09-30-repair-test-1:b7f318e248fa8eebbb356384b0fa4a8a7831e6bdc0e761ae6760b366cf4a1605",
+      "report_version": 3,
+      "report_kind": "final_hypothesis_test",
+      "producer_repository": "6t8hggfm44-tech/-Global-trade-China",
+      "producer_commit": "a7ad03093a7da1dc60c2414c289aaad13bdb93f1",
+      "report_sha256": "b7f318e248fa8eebbb356384b0fa4a8a7831e6bdc0e761ae6760b366cf4a1605",
+      "report_bytes": 12337,
+      "envelope_sha256": "6b3373acdbb7082b779b620ceda099c4408200681e7aacd366c6dcccd83196dc",
+      "envelope_bytes": 5306,
+      "market_canonical_commit": "13349f84381b61ff86a989e6bd4da46eade13df3",
+      "received_at_utc": "2026-09-30T19:44:19Z",
+      "receipt_age_hours": 0.195,
+      "canonical_report_path": "evidence/research/trade/trade-suite-manual-2026-09-30-repair-test-1/b7f318e248fa8eebbb356384b0fa4a8a7831e6bdc0e761ae6760b366cf4a1605/Report.md",
+      "terminal_runtime": true,
+      "canonical_delivery": true,
+      "producer_delivery_ack": {
+        "domain": "trade",
+        "status": "canonical_delivery_persisted",
+        "producer_ack_commit": "9076b3a5447e31d27a44d3f4f6f0c71456538491",
+        "receiver_canonical_commit": "13349f84381b61ff86a989e6bd4da46eade13df3",
+        "receiver_complete_receipt_at_utc": "2026-09-30T19:44:19Z"
+      },
+      "source_requests": 1,
+      "source_returned": 1,
+      "source_failed": 0,
+      "freshness_class": "Discovery only; retained port evidence",
+      "finding_and_gap": "NBS index returns dated release titles without numerical tables or eligible exact original-document URL. Port LA August evidence shared with Freight.",
+      "latest_selected_measurement_period_end": "2026-08-31",
+      "latest_selected_measurement_age_calendar_days": 30,
+      "selected_measurement_release_date": null,
+      "selected_measurement_release_age_calendar_days": null,
+      "tested_source": {
+        "source_id": "china_nbs_releases",
+        "url": "https://www.stats.gov.cn/english/PressRelease/",
+        "release_date": null,
+        "publication_at_utc": null,
+        "retrieved_at_utc": "2026-09-30T18:53:33.571298+00:00",
+        "retrieval_time_meaning": "Actual tool response persisted after return; upstream HTTP time is unexposed.",
+        "observation_periods": [],
+        "latest_exact_parseable_observation_period_end": null,
+        "unparsed_periods": [],
+        "numeric_cells_selected": 0,
+        "newer_measurement_status": "fresh_discovery_no_numerical_table",
+        "source_upstream_ids": [
+          "china-nbs-enterprise-surveys",
+          "china-nbs-energy-statistics",
+          "china-customs"
+        ],
+        "observation_age_calendar_days": null,
+        "release_age_calendar_days": null,
+        "publication_age_hours": null,
+        "retrieval_age_hours": 1.041
+      },
+      "market_incrementality": "Use stated source scope; not an independent vote for every cell",
+      "ancestry": [
+        {
+          "id": "china_nbs_releases",
+          "url": "https://www.stats.gov.cn/english/PressRelease/",
+          "upstream_ids": [
+            "china-nbs-enterprise-surveys",
+            "china-nbs-energy-statistics",
+            "china-customs"
+          ],
+          "integrity_status": "Verified metadata only; capture hashes do not provide absent bodies"
+        },
+        {
+          "id": "korea_customs_releases",
+          "url": "https://www.customs.go.kr/kcs/na/ntt/selectNttList.do?mi=2891&bbsId=1362",
+          "upstream_ids": [
+            "korea-customs-declarations"
+          ],
+          "integrity_status": "Verified metadata only; capture hashes do not provide absent bodies"
+        },
+        {
+          "id": "taiwan_mof_trade",
+          "url": "https://www.mof.gov.tw/Eng/multiplehtml/259",
+          "upstream_ids": [
+            "taiwan-customs-declarations"
+          ],
+          "integrity_status": "Verified metadata only; capture hashes do not provide absent bodies"
+        },
+        {
+          "id": "eurostat_industry",
+          "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Industrial_production_(volume)_index_overview",
+          "upstream_ids": [
+            "eurostat-national-statistical-institutes"
+          ],
+          "integrity_status": "Verified metadata only; capture hashes do not provide absent bodies"
+        },
+        {
+          "id": "port_la_containers",
+          "url": "https://portoflosangeles.org/business/statistics/container-statistics",
+          "upstream_ids": [
+            "port-los-angeles-terminal-counts"
+          ],
+          "integrity_status": "Exact retained UTF-8 record verified against live checkpoint; original publisher bytes not verified"
+        },
+        {
+          "id": "china_nbs_releases_fresh",
+          "url": "https://www.stats.gov.cn/english/PressRelease/",
+          "upstream_ids": [
+            "china-nbs-enterprise-surveys",
+            "china-nbs-energy-statistics",
+            "china-customs"
+          ],
+          "integrity_status": "Exact selected cells/text matched actual tool representation; original publisher bytes unavailable"
+        }
+      ],
+      "fresh_retrieval_provides_newer_numeric_vintage": false
+    },
+    {
+      "family": "suite_freight",
+      "domain": "freight",
+      "run_id": "freight-suite-manual-2026-09-30-repair-test-1",
+      "delivery_key": "freight:freight-suite-manual-2026-09-30-repair-test-1:ef2f85f3ab272b7b125773ed80cc8e20ef5088ed3defef8836ca1b82a15efd88",
+      "report_version": 3,
+      "report_kind": "final_hypothesis_test",
+      "producer_repository": "6t8hggfm44-tech/-Freight-supply-chain",
+      "producer_commit": "007395cf00c693b767daeb7b66f801a754f141d7",
+      "report_sha256": "ef2f85f3ab272b7b125773ed80cc8e20ef5088ed3defef8836ca1b82a15efd88",
+      "report_bytes": 12974,
+      "envelope_sha256": "56292088d9f332fc3854be1df012046c2931854bb0bab80444fad9410d0d9fa1",
+      "envelope_bytes": 5368,
+      "market_canonical_commit": "13349f84381b61ff86a989e6bd4da46eade13df3",
+      "received_at_utc": "2026-09-30T19:44:19Z",
+      "receipt_age_hours": 0.195,
+      "canonical_report_path": "evidence/research/freight/freight-suite-manual-2026-09-30-repair-test-1/ef2f85f3ab272b7b125773ed80cc8e20ef5088ed3defef8836ca1b82a15efd88/Report.md",
+      "terminal_runtime": true,
+      "canonical_delivery": true,
+      "producer_delivery_ack": {
+        "domain": "freight",
+        "status": "canonical_delivery_persisted",
+        "producer_ack_commit": "95c49b8d16b9195cc279afe6b04dd1350272431e",
+        "receiver_canonical_commit": "13349f84381b61ff86a989e6bd4da46eade13df3",
+        "receiver_complete_receipt_at_utc": "2026-09-30T19:44:19Z"
+      },
+      "source_requests": 1,
+      "source_returned": 1,
+      "source_failed": 0,
+      "freshness_class": "New extraction of old-period headlines",
+      "finding_and_gap": "July freight TSI -0.7% monthly and -2.0% yearly; exact publication date and full table unavailable. Port LA is shared with Trade; USDA uncertainty preserved.",
+      "latest_selected_measurement_period_end": "2026-07-31",
+      "latest_selected_measurement_age_calendar_days": 61,
+      "selected_measurement_release_date": null,
+      "selected_measurement_release_age_calendar_days": null,
+      "tested_source": {
+        "source_id": "bts_freight_tsi",
+        "url": "https://www.bts.gov/tags/transportation-services-index",
+        "release_date": null,
+        "publication_at_utc": null,
+        "retrieved_at_utc": "2026-09-30T18:59:00.378996+00:00",
+        "retrieval_time_meaning": "Actual tool response persisted after return; upstream HTTP time is unexposed.",
+        "observation_periods": [
+          "2026-07"
+        ],
+        "latest_exact_parseable_observation_period_end": "2026-07-31",
+        "unparsed_periods": [],
+        "numeric_cells_selected": 2,
+        "newer_measurement_status": "new_extraction_older_headline_unknown_release_date",
+        "source_upstream_ids": [
+          "bts:transportation-services-index",
+          "aar:railroad-traffic",
+          "ata:truck-tonnage",
+          "bts:air-carrier-traffic",
+          "eia:pipeline-movements",
+          "usace:waterborne-commerce"
+        ],
+        "observation_age_calendar_days": 61,
+        "release_age_calendar_days": null,
+        "publication_age_hours": null,
+        "retrieval_age_hours": 0.9502
+      },
+      "market_incrementality": "Use stated source scope; not an independent vote for every cell",
+      "ancestry": [
+        {
+          "id": "bts_freight_tsi",
+          "url": "https://www.bts.gov/tags/transportation-services-index",
+          "upstream_ids": [
+            "bts:transportation-services-index",
+            "aar:railroad-traffic",
+            "ata:truck-tonnage",
+            "bts:air-carrier-traffic",
+            "eia:pipeline-movements",
+            "usace:waterborne-commerce"
+          ],
+          "integrity_status": "Exact retained record verified from live checkpoint and immutable prior report input; original publisher bytes unverified."
+        },
+        {
+          "id": "port_la_containers",
+          "url": "https://portoflosangeles.org/business/statistics/container-statistics",
+          "upstream_ids": [
+            "port-of-los-angeles:terminal-container-reports"
+          ],
+          "integrity_status": "Exact retained record verified from live checkpoint and immutable prior report input; original publisher bytes unverified."
+        },
+        {
+          "id": "usda_grain_transport",
+          "url": "https://www.ams.usda.gov/services/transportation-analysis/gtr",
+          "upstream_ids": [
+            "usda:ams:grain-transportation-report",
+            "aar:railroad-traffic",
+            "usace:waterborne-commerce",
+            "eia:diesel-prices"
+          ],
+          "integrity_status": "Exact retained record verified from live checkpoint and immutable prior report input; original publisher bytes unverified."
+        },
+        {
+          "id": "aar_public_rail",
+          "url": "https://www.aar.org/data-center/",
+          "upstream_ids": [
+            "aar:railroad-traffic",
+            "aar:member-railroad-reports"
+          ],
+          "integrity_status": "Exact retained record verified from live checkpoint and immutable prior report input; original publisher bytes unverified."
+        },
+        {
+          "id": "bts_freight_tsi_fresh",
+          "url": "https://www.bts.gov/tags/transportation-services-index",
+          "upstream_ids": [
+            "bts:transportation-services-index",
+            "aar:railroad-traffic",
+            "ata:truck-tonnage",
+            "bts:air-carrier-traffic",
+            "eia:pipeline-movements",
+            "usace:waterborne-commerce"
+          ],
+          "integrity_status": "Exact selected cells/text matched actual tool representation; original publisher bytes unavailable"
+        }
+      ],
+      "fresh_retrieval_provides_newer_numeric_vintage": false
+    },
+    {
+      "family": "suite_agriculture",
+      "domain": "agriculture",
+      "run_id": "agriculture-suite-manual-2026-09-30-repair-test-1",
+      "delivery_key": "agriculture:agriculture-suite-manual-2026-09-30-repair-test-1:de1990115f87fb9a752ad979affa3dba9123e09a44aed3da7102d2c40191623b",
+      "report_version": 2,
+      "report_kind": "final_evidence_gap",
+      "producer_repository": "6t8hggfm44-tech/-Agriculture-food-",
+      "producer_commit": "02be872b834ef32a8c169ac5a1c1bb0cf749d89c",
+      "report_sha256": "de1990115f87fb9a752ad979affa3dba9123e09a44aed3da7102d2c40191623b",
+      "report_bytes": 14321,
+      "envelope_sha256": "3cf40697943d18fa8ab5c0d79e16b4ba7de16b83acb9cd1799ec3791485dfadb",
+      "envelope_bytes": 5236,
+      "market_canonical_commit": "13349f84381b61ff86a989e6bd4da46eade13df3",
+      "received_at_utc": "2026-09-30T19:44:19Z",
+      "receipt_age_hours": 0.195,
+      "canonical_report_path": "evidence/research/agriculture/agriculture-suite-manual-2026-09-30-repair-test-1/de1990115f87fb9a752ad979affa3dba9123e09a44aed3da7102d2c40191623b/Report.md",
+      "terminal_runtime": true,
+      "canonical_delivery": true,
+      "producer_delivery_ack": {
+        "domain": "agriculture",
+        "status": "canonical_delivery_persisted",
+        "producer_ack_commit": "bc83e6935baa611edf9dead871dcb1821d23960c",
+        "receiver_canonical_commit": "13349f84381b61ff86a989e6bd4da46eade13df3",
+        "receiver_complete_receipt_at_utc": "2026-09-30T19:44:19Z"
+      },
+      "source_requests": 1,
+      "source_returned": 1,
+      "source_failed": 0,
+      "freshness_class": "Newer local hydrology proxy; crop gap remains",
+      "finding_and_gap": "Five selected well-depth cells from September24 USDM, validSeptember22; two USVI wells do not measure national crop output. WASDE0/14 cells remains; inherited USDA uncertainty prevented attachment-route test.",
+      "latest_selected_measurement_period_end": "2026-09-22",
+      "latest_selected_measurement_age_calendar_days": 8,
+      "selected_measurement_release_date": "2026-09-24",
+      "selected_measurement_release_age_calendar_days": 6,
+      "tested_source": {
+        "source_id": "usdm_current",
+        "url": "https://droughtmonitor.unl.edu/CurrentMap.aspx",
+        "release_date": "2026-09-24",
+        "publication_at_utc": null,
+        "retrieved_at_utc": "2026-09-30T19:03:26.565248+00:00",
+        "retrieval_time_meaning": "Actual tool response persisted after return; upstream HTTP time is unexposed.",
+        "observation_periods": [
+          "2026-09-22",
+          "2025-09-22",
+          "previous week referenced in September22 observation; exact day not stated"
+        ],
+        "latest_exact_parseable_observation_period_end": "2026-09-22",
+        "unparsed_periods": [
+          "previous week referenced in September22 observation; exact day not stated"
+        ],
+        "numeric_cells_selected": 5,
+        "newer_measurement_status": "newer_drought_proxy_not_crop_measurement",
+        "source_upstream_ids": [
+          "usdm-authors",
+          "noaa-weather-observations",
+          "usda-field-reports"
+        ],
+        "observation_age_calendar_days": 8,
+        "release_age_calendar_days": 6,
+        "publication_age_hours": null,
+        "retrieval_age_hours": 0.8762
+      },
+      "market_incrementality": "Use stated source scope; not an independent vote for every cell",
+      "ancestry": [
+        {
+          "id": "usda_wasde",
+          "url": "https://www.usda.gov/about-usda/general-information/staff-offices/office-chief-economist/commodity-markets/wasde-report",
+          "upstream_ids": [
+            "usda-waob",
+            "usda-nass",
+            "usda-fas",
+            "foreign-agriculture-statistics"
+          ],
+          "integrity_status": "Exact retained checkpoint/prior-package bytes verified; original publisher bytes absent"
+        },
+        {
+          "id": "usda_nass_publications",
+          "url": "https://www.nass.usda.gov/Publications/",
+          "upstream_ids": [
+            "usda-nass"
+          ],
+          "integrity_status": "Exact retained checkpoint/prior-package bytes verified; original publisher bytes absent"
+        },
+        {
+          "id": "usdm_current",
+          "url": "https://droughtmonitor.unl.edu/CurrentMap.aspx",
+          "upstream_ids": [
+            "usdm-authors",
+            "noaa-weather-observations",
+            "usda-field-reports"
+          ],
+          "integrity_status": "Exact retained checkpoint/prior-package bytes verified; original publisher bytes absent"
+        },
+        {
+          "id": "usda_aphis_hpai",
+          "url": "https://www.aphis.usda.gov/h5n1-hpai",
+          "upstream_ids": [
+            "usda-aphis-surveillance",
+            "state-animal-health-reports"
+          ],
+          "integrity_status": "Exact retained checkpoint/prior-package bytes verified; original publisher bytes absent"
+        },
+        {
+          "id": "usdm_current_fresh",
+          "url": "https://droughtmonitor.unl.edu/CurrentMap.aspx",
+          "upstream_ids": [
+            "usdm-authors",
+            "noaa-weather-observations",
+            "usda-field-reports"
+          ],
+          "integrity_status": "Exact selected cells/text matched actual tool representation; original publisher bytes unavailable"
+        }
+      ],
+      "fresh_retrieval_provides_newer_numeric_vintage": true
+    },
+    {
+      "family": "suite_geopolitics",
+      "domain": "geopolitics",
+      "run_id": "geopolitics-suite-manual-2026-09-30-repair-test-1",
+      "delivery_key": "geopolitics:geopolitics-suite-manual-2026-09-30-repair-test-1:f53b7c962bc4e3973d0db40e7eb086125ed9828f9a694125c6efa903c0d171a1",
+      "report_version": 3,
+      "report_kind": "final_evidence_gap",
+      "producer_repository": "6t8hggfm44-tech/-Geopolitical-risk",
+      "producer_commit": "9a4e3185a71b7f32ee557b7e0e61d5353fd30222",
+      "report_sha256": "f53b7c962bc4e3973d0db40e7eb086125ed9828f9a694125c6efa903c0d171a1",
+      "report_bytes": 14763,
+      "envelope_sha256": "6ae6a5c407b8568c6da06c5e150908a2c95d2c335c098bb78b8b675a3ada3f85",
+      "envelope_bytes": 5763,
+      "market_canonical_commit": "13349f84381b61ff86a989e6bd4da46eade13df3",
+      "received_at_utc": "2026-09-30T19:44:19Z",
+      "receipt_age_hours": 0.195,
+      "canonical_report_path": "evidence/research/geopolitics/geopolitics-suite-manual-2026-09-30-repair-test-1/f53b7c962bc4e3973d0db40e7eb086125ed9828f9a694125c6efa903c0d171a1/Report.md",
+      "terminal_runtime": true,
+      "canonical_delivery": true,
+      "producer_delivery_ack": {
+        "domain": "geopolitics",
+        "status": "canonical_delivery_persisted",
+        "producer_ack_commit": "d7e52e8edb657751ba5678039543cf2b9452094d",
+        "receiver_canonical_commit": "13349f84381b61ff86a989e6bd4da46eade13df3",
+        "receiver_complete_receipt_at_utc": "2026-09-30T19:44:19Z"
+      },
+      "source_requests": 1,
+      "source_returned": 0,
+      "source_failed": 1,
+      "freshness_class": "Failed original-document route; evidence gap",
+      "finding_and_gap": "One GOV.UK MOD discovery call returned not accessible via this tool. No current original event document; no retry or inference of low risk. Historical IMO residual is not current incidence.",
+      "latest_selected_measurement_period_end": null,
+      "latest_selected_measurement_age_calendar_days": null,
+      "selected_measurement_release_date": null,
+      "selected_measurement_release_age_calendar_days": null,
+      "tested_source": null,
+      "market_incrementality": "Use stated source scope; not an independent vote for every cell",
+      "ancestry": [
+        {
+          "id": "idea_democracy_tracker",
+          "url": "https://www.idea.int/democracytracker/",
+          "upstream_ids": [
+            "international-idea-assessments",
+            "country-election-authorities",
+            "underlying-news-and-official-records"
+          ],
+          "integrity_status": "Exact retained bytes verified; original publisher bytes unavailable"
+        },
+        {
+          "id": "imo_red_sea",
+          "url": "https://www.imo.org/en/mediacentre/hottopics/pages/red-sea.aspx",
+          "upstream_ids": [
+            "imo-confirmed-maritime-incident-reports",
+            "member-state-incident-notifications"
+          ],
+          "integrity_status": "Exact retained bytes verified; original publisher bytes unavailable"
+        },
+        {
+          "id": "ukmto_public_reports",
+          "url": "https://www.ukmto.org/indian-ocean/weekly-reports",
+          "upstream_ids": [
+            "ukmto-public-maritime-reporting",
+            "member-state-incident-notifications"
+          ],
+          "integrity_status": "Exact retained bytes verified; original publisher bytes unavailable"
+        },
+        {
+          "id": "un_security_council_records",
+          "url": "https://docs.un.org/en/S/PV.9954",
+          "upstream_ids": [
+            "un-official-security-council-records"
+          ],
+          "integrity_status": "Exact retained bytes verified; original publisher bytes unavailable"
+        },
+        {
+          "id": "us_bis_updates",
+          "url": "https://www.bis.gov/news-updates",
+          "upstream_ids": [
+            "us-commerce-bis-official-actions",
+            "us-federal-register"
+          ],
+          "integrity_status": "Exact retained bytes verified; original publisher bytes unavailable"
+        },
+        {
+          "id": "us_centcom_public_releases",
+          "url": "https://www.centcom.mil/MEDIA/PRESS-RELEASES/",
+          "upstream_ids": [
+            "us-centcom-public-statements",
+            "attributed-participant-claims"
+          ],
+          "integrity_status": "Exact retained bytes verified; original publisher bytes unavailable"
+        },
+        {
+          "id": "us_ofac_actions",
+          "url": "https://ofac.treasury.gov/recent-actions",
+          "upstream_ids": [
+            "us-treasury-ofac-official-actions"
+          ],
+          "integrity_status": "Exact retained bytes verified; original publisher bytes unavailable"
+        },
+        {
+          "id": "uk_mod_public_statements_fresh",
+          "url": "https://www.gov.uk/government/organisations/ministry-of-defence",
+          "upstream_ids": [
+            "uk-mod-original-public-statements",
+            "attributed-participant-claims"
+          ],
+          "integrity_status": "Exact selected cells/text matched actual tool representation; original publisher bytes unavailable"
+        }
+      ],
+      "fresh_retrieval_provides_newer_numeric_vintage": false
+    },
+    {
+      "family": "suite_energy",
+      "domain": "energy",
+      "run_id": "energy-suite-manual-2026-09-30-repair-test-1",
+      "delivery_key": "energy:energy-suite-manual-2026-09-30-repair-test-1:422455d8b666f876e026ef9d836123096d13f7a9223df1df2d08e3b5dfd858d1",
+      "report_version": 1,
+      "report_kind": "final_hypothesis_test",
+      "producer_repository": "6t8hggfm44-tech/-Energy",
+      "producer_commit": "6d510b16c9a3d419ebf914b265dbff770e0180cb",
+      "report_sha256": "422455d8b666f876e026ef9d836123096d13f7a9223df1df2d08e3b5dfd858d1",
+      "report_bytes": 13582,
+      "envelope_sha256": "a4459bb97acb47d0a8e4c06cac6ee51993c21c1e76cfb29a4ba7aaf5d687a36c",
+      "envelope_bytes": 8716,
+      "market_canonical_commit": "13349f84381b61ff86a989e6bd4da46eade13df3",
+      "received_at_utc": "2026-09-30T19:44:19Z",
+      "receipt_age_hours": 0.195,
+      "canonical_report_path": "evidence/research/energy/energy-suite-manual-2026-09-30-repair-test-1/422455d8b666f876e026ef9d836123096d13f7a9223df1df2d08e3b5dfd858d1/Report.md",
+      "terminal_runtime": true,
+      "canonical_delivery": true,
+      "producer_delivery_ack": {
+        "domain": "energy",
+        "status": "canonical_delivery_persisted",
+        "producer_ack_commit": "54c9051131fb41aef3384db953e5e8124f50c109",
+        "receiver_canonical_commit": "13349f84381b61ff86a989e6bd4da46eade13df3",
+        "receiver_complete_receipt_at_utc": "2026-09-30T19:44:19Z"
+      },
+      "source_requests": 1,
+      "source_returned": 1,
+      "source_failed": 0,
+      "freshness_class": "Newer natural-gas measurement",
+      "finding_and_gap": "September24 WNGSR weekSeptember18 stocks3351Bcf,weekly+53,year-ago-146,five-year+95. Gas is distinct from the older petroleum bridge shared with original Energy.",
+      "latest_selected_measurement_period_end": "2026-09-18",
+      "latest_selected_measurement_age_calendar_days": 12,
+      "selected_measurement_release_date": "2026-09-24",
+      "selected_measurement_release_age_calendar_days": 6,
+      "tested_source": {
+        "source_id": "eia_wngsr",
+        "url": "https://ir.eia.gov/ngs/ngs.html",
+        "release_date": "2026-09-24",
+        "publication_at_utc": null,
+        "retrieved_at_utc": "2026-09-30T19:19:05.079306+00:00",
+        "retrieval_time_meaning": "Actual tool response persisted after return; upstream HTTP time is unexposed.",
+        "observation_periods": [
+          "2026-09-18",
+          "2026-09-11",
+          "2026-09-11/2026-09-18",
+          "2025-09-18 as labeled by publisher",
+          "2021-2025 comparator for week labeled2026-09-18"
+        ],
+        "latest_exact_parseable_observation_period_end": "2026-09-18",
+        "unparsed_periods": [
+          "2025-09-18 as labeled by publisher",
+          "2021-2025 comparator for week labeled2026-09-18"
+        ],
+        "numeric_cells_selected": 7,
+        "newer_measurement_status": "newer_gas_observation",
+        "source_upstream_ids": [
+          "eia:weekly-natural-gas-storage",
+          "eia:survey:EIA-912"
+        ],
+        "observation_age_calendar_days": 12,
+        "release_age_calendar_days": 6,
+        "publication_age_hours": null,
+        "retrieval_age_hours": 0.6155
+      },
+      "market_incrementality": "Use stated source scope; not an independent vote for every cell",
+      "ancestry": [
+        {
+          "id": "eia_wngsr",
+          "url": "https://ir.eia.gov/ngs/ngs.html",
+          "upstream_ids": [
+            "eia:weekly-natural-gas-storage",
+            "eia:survey:EIA-912"
+          ],
+          "integrity_status": "Retained selections exact-matched to actual tool representation SHA256 44a1f5573ad0b54eae94c242f79ad62a29bfa7585097f44fe3d8b4344f104269; original publisher bytes not verified."
+        },
+        {
+          "id": "eia_epm",
+          "url": "https://www.eia.gov/electricity/monthly/",
+          "upstream_ids": [
+            "eia:electric-power-monthly",
+            "eia:survey:EIA-923",
+            "eia:survey:EIA-861M"
+          ],
+          "integrity_status": "Retained selections exact-matched to actual tool representation SHA256 6d063786a436bbaf1e32dcdfcb336e2f152cdd0530dec21c190f3e87aa6ed575; original publisher bytes not verified."
+        },
+        {
+          "id": "bridge-WCESTUS1",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCESTUS1&f=W",
+          "upstream_ids": [
+            "EIA_US_weekly_petroleum",
+            "WCESTUS1"
+          ],
+          "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+        },
+        {
+          "id": "bridge-WGTSTUS1",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WGTSTUS1&f=W",
+          "upstream_ids": [
+            "EIA_US_weekly_petroleum",
+            "WGTSTUS1"
+          ],
+          "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+        },
+        {
+          "id": "bridge-WDISTUS1",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WDISTUS1&f=W",
+          "upstream_ids": [
+            "EIA_US_weekly_petroleum",
+            "WDISTUS1"
+          ],
+          "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+        },
+        {
+          "id": "bridge-WCSSTUS1",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCSSTUS1&f=W",
+          "upstream_ids": [
+            "EIA_US_weekly_petroleum",
+            "WCSSTUS1"
+          ],
+          "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+        },
+        {
+          "id": "bridge-WCRRIUS2",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCRRIUS2&f=W",
+          "upstream_ids": [
+            "EIA_US_weekly_petroleum",
+            "WCRRIUS2"
+          ],
+          "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+        },
+        {
+          "id": "bridge-WPULEUS3",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WPULEUS3&f=W",
+          "upstream_ids": [
+            "EIA_US_weekly_petroleum",
+            "WPULEUS3"
+          ],
+          "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+        },
+        {
+          "id": "bridge-WCRFPUS2",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCRFPUS2&f=W",
+          "upstream_ids": [
+            "EIA_US_weekly_petroleum",
+            "WCRFPUS2"
+          ],
+          "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+        },
+        {
+          "id": "bridge-WCRIMUS2",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCRIMUS2&f=W",
+          "upstream_ids": [
+            "EIA_US_weekly_petroleum",
+            "WCRIMUS2"
+          ],
+          "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+        },
+        {
+          "id": "bridge-WCREXUS2",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCREXUS2&f=W",
+          "upstream_ids": [
+            "EIA_US_weekly_petroleum",
+            "WCREXUS2"
+          ],
+          "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+        },
+        {
+          "id": "bridge-WGFUPUS2",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WGFUPUS2&f=W",
+          "upstream_ids": [
+            "EIA_US_weekly_petroleum",
+            "WGFUPUS2"
+          ],
+          "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+        },
+        {
+          "id": "bridge-WDIUPUS2",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WDIUPUS2&f=W",
+          "upstream_ids": [
+            "EIA_US_weekly_petroleum",
+            "WDIUPUS2"
+          ],
+          "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+        },
+        {
+          "id": "bridge-WKJUPUS2",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WKJUPUS2&f=W",
+          "upstream_ids": [
+            "EIA_US_weekly_petroleum",
+            "WKJUPUS2"
+          ],
+          "integrity_status": "Exact bridge manifest and original capture lineage verified; raw bodies unavailable; no new extraction claimed."
+        },
+        {
+          "id": "prior-energy-final",
+          "url": "https://github.com/6t8hggfm44-tech/-Energy/blob/2d230346bceffce887ac1ad889413255c758a6c8/cloud/legacy-weekly/reports/energy/energy-weekly-2026-09-21/bd9cd24980b0fe56c95966311808e0bda6fc416a2d6e148233f575b18d55aff8/Report.md",
+          "upstream_ids": [
+            "EIA_US_weekly_petroleum"
+          ],
+          "integrity_status": "Exact report and all16 manifest members verified; manifest62186019ae4cd6d41d5a225df837f756cfea447d32ddaf079387c40dd31edec8; underlying current snapshot not reparsed."
+        },
+        {
+          "id": "eia_wngsr_fresh",
+          "url": "https://ir.eia.gov/ngs/ngs.html",
+          "upstream_ids": [
+            "eia:weekly-natural-gas-storage",
+            "eia:survey:EIA-912"
+          ],
+          "integrity_status": "Selected numeric cells matched tool representation; original publisher body unavailable"
+        }
+      ],
+      "fresh_retrieval_provides_newer_numeric_vintage": true
+    },
+    {
+      "family": "legacy_gev",
+      "domain": "gev",
+      "run_id": "gev-legacy-manual-2026-09-30-repair-test-1",
+      "delivery_key": "gev-legacy-manual-2026-09-30-repair-test-1:4b507a71d83dada842134f5c87c66676f1b31d6a38de8750157b91c03be35133",
+      "report_version": 2,
+      "report_kind": "final_hypothesis_test",
+      "producer_repository": "6t8hggfm44-tech/-Energy",
+      "producer_workflow_repository": "6t8hggfm44-tech/satellite-research",
+      "producer_commit": "ce6740e00689591a35bcf3a9d2dc62fb5ca99bfc",
+      "report_sha256": "4b507a71d83dada842134f5c87c66676f1b31d6a38de8750157b91c03be35133",
+      "report_bytes": 7282,
+      "envelope_sha256": "33c524c91b95d9bed783b6ddcb96517d79b80a9fa3d3a10eac95f0510c0da609",
+      "envelope_bytes": 2670,
+      "market_canonical_commit": "a9dc0a7d53078ae929f69f7652c4c8e7c9f1d47e",
+      "received_at_utc": "2026-09-30T19:53:37Z",
+      "receipt_age_hours": 0.04,
+      "canonical_report_path": "evidence/gev-weekly/gev-legacy-manual-2026-09-30-repair-test-1/4b507a71d83dada842134f5c87c66676f1b31d6a38de8750157b91c03be35133/Report.md",
+      "terminal_runtime": true,
+      "canonical_delivery": true,
+      "producer_delivery_ack": {
+        "status": "canonical_delivery_persisted",
+        "producer_ack_commit": "7329ef06f0947dace4f3ed5420f66fe58a576b49",
+        "receiver_canonical_commit": "a9dc0a7d53078ae929f69f7652c4c8e7c9f1d47e",
+        "receiver_complete_receipt_at_utc": "2026-09-30T19:53:37Z"
+      },
+      "source_requests": 0,
+      "source_returned": 0,
+      "source_failed": 0,
+      "freshness_class": "New computation on saved acquisitions; no fresh publisher request",
+      "finding_and_gap": "50 selected aircraft cases in actual window, all position-age unknown;24 source switches. No validated interference, attribution or economic harm; current catalog eligible count0.",
+      "latest_selected_measurement_period_end": "2026-09-26",
+      "latest_selected_measurement_age_calendar_days": 4,
+      "selected_measurement_release_date": null,
+      "selected_measurement_release_age_calendar_days": null,
+      "publisher_publication_at_utc": null,
+      "retained_sources": [
+        {
+          "id": "adsb_lol_history",
+          "url": "https://www.adsb.lol/",
+          "upstream_ids": [
+            "adsb_lol",
+            "readsb"
+          ],
+          "event_coverage_start": "2026-09-23T19:32:05.150000+00:00",
+          "event_coverage_end": "2026-09-26T22:21:16.790000+00:00",
+          "publisher_publication_at": null,
+          "first_archive_receipt_range": [
+            "2026-09-24T10:07:20.624199Z",
+            "2026-09-27T10:36:09.107192Z"
+          ]
+        },
+        {
+          "id": "CelesTrak",
+          "url": "https://celestrak.org/",
+          "upstream_ids": [
+            "CelesTrak"
+          ],
+          "last_retained_candidate_event_at": "2026-09-23T14:14:52.859311Z",
+          "current_window_eligible_candidates": 0,
+          "publisher_publication_at": null
+        }
+      ],
+      "reuse_reason": "Bounded saved-evidence continuation; prior attempts/reservations and source restrictions preserved. No new collection authorized by this continuation.",
+      "market_incrementality": "Re-screened overlapping earlier aircraft evidence, not new independent sensing",
+      "fresh_retrieval_provides_newer_numeric_vintage": false,
+      "retained_acquisition_ages_hours": {
+        "earliest_selected_first_archive_receipt": 153.8112,
+        "latest_selected_first_archive_receipt": 81.3311,
+        "latest_selected_event": 93.5789
+      }
+    },
+    {
+      "family": "legacy_weather",
+      "domain": "weather",
+      "run_id": "weather-legacy-manual-2026-09-30-repair-test-1",
+      "delivery_key": "weather:weather-legacy-manual-2026-09-30-repair-test-1:f32949b0d7fe149d7fbe96594855185158a0c79828926dfe6182ddb90430f616",
+      "report_version": 2,
+      "report_kind": "final_hypothesis_test",
+      "producer_repository": "6t8hggfm44-tech/-Energy",
+      "producer_workflow_repository": "6t8hggfm44-tech/weather",
+      "producer_commit": "ce6740e00689591a35bcf3a9d2dc62fb5ca99bfc",
+      "report_sha256": "f32949b0d7fe149d7fbe96594855185158a0c79828926dfe6182ddb90430f616",
+      "report_bytes": 6614,
+      "envelope_sha256": "b9e7ca6148f0f2b3147b1119fd71be7f6e1866949adbe214e30c5ca3bc3ecf5a",
+      "envelope_bytes": 2539,
+      "market_canonical_commit": "a9dc0a7d53078ae929f69f7652c4c8e7c9f1d47e",
+      "received_at_utc": "2026-09-30T19:53:37Z",
+      "receipt_age_hours": 0.04,
+      "canonical_report_path": "evidence/research/weather/weather-legacy-manual-2026-09-30-repair-test-1/f32949b0d7fe149d7fbe96594855185158a0c79828926dfe6182ddb90430f616/Report.md",
+      "terminal_runtime": true,
+      "canonical_delivery": true,
+      "producer_delivery_ack": {
+        "status": "canonical_delivery_persisted",
+        "producer_ack_commit": "7329ef06f0947dace4f3ed5420f66fe58a576b49",
+        "receiver_canonical_commit": "a9dc0a7d53078ae929f69f7652c4c8e7c9f1d47e",
+        "receiver_complete_receipt_at_utc": "2026-09-30T19:53:37Z"
+      },
+      "source_requests": 0,
+      "source_returned": 0,
+      "source_failed": 0,
+      "freshness_class": "New computation on saved acquisitions; no fresh publisher request",
+      "finding_and_gap": "Four grid proxies; requested September23-29 window3/7,lagged window5/7 below80% gate. Seasonal tests are exploratory; zero candidates cannot prove normal weather.",
+      "latest_selected_measurement_period_end": "2026-09-25",
+      "latest_selected_measurement_age_calendar_days": 5,
+      "selected_measurement_release_date": null,
+      "selected_measurement_release_age_calendar_days": null,
+      "publisher_publication_at_utc": null,
+      "retained_sources": [
+        {
+          "id": "NASA_POWER",
+          "url": "https://power.larc.nasa.gov/",
+          "upstream_ids": [
+            "GEOSIT",
+            "MERRA2",
+            "NASA_POWER"
+          ],
+          "observation_period_end": "2026-09-25",
+          "publisher_publication_at": null,
+          "latest_capture_at": "2026-09-28T21:35:22.787554Z"
+        },
+        {
+          "id": "NWS",
+          "url": "https://api.weather.gov/",
+          "upstream_ids": [
+            "NWS"
+          ],
+          "publisher_publication_at": null,
+          "issue_times": [
+            "2026-09-28T18:22:18.000000Z",
+            "2026-09-28T21:16:41.000000Z"
+          ],
+          "valid_interval_end": "2026-10-05T11:00:00.000000Z"
+        }
+      ],
+      "reuse_reason": "Bounded saved-evidence continuation; prior attempts/reservations and source restrictions preserved. No new collection authorized by this continuation.",
+      "market_incrementality": "More recent saved endpoint than the earlier canonical legacy report",
+      "fresh_retrieval_provides_newer_numeric_vintage": false,
+      "retained_acquisition_ages_hours": {
+        "earliest_selected_version_first_seen": 144.1487,
+        "latest_selected_version_first_seen": 46.3439
+      }
+    },
+    {
+      "family": "legacy_energy",
+      "domain": "energy",
+      "run_id": "energy-legacy-manual-2026-09-30-repair-test-1",
+      "delivery_key": "energy:energy-legacy-manual-2026-09-30-repair-test-1:fc03a306628276be69a4604a26a37ab885d18bf291975cf52106db5dd0f6500c",
+      "report_version": 2,
+      "report_kind": "final_hypothesis_test",
+      "producer_repository": "6t8hggfm44-tech/-Energy",
+      "producer_workflow_repository": "6t8hggfm44-tech/energy",
+      "producer_commit": "ce6740e00689591a35bcf3a9d2dc62fb5ca99bfc",
+      "report_sha256": "fc03a306628276be69a4604a26a37ab885d18bf291975cf52106db5dd0f6500c",
+      "report_bytes": 6952,
+      "envelope_sha256": "70d8a7f6e1354cd8824bfac322602211d306e87e23d165377e24f18430944caf",
+      "envelope_bytes": 6934,
+      "market_canonical_commit": "a9dc0a7d53078ae929f69f7652c4c8e7c9f1d47e",
+      "received_at_utc": "2026-09-30T19:53:37Z",
+      "receipt_age_hours": 0.04,
+      "canonical_report_path": "evidence/research/energy/energy-legacy-manual-2026-09-30-repair-test-1/fc03a306628276be69a4604a26a37ab885d18bf291975cf52106db5dd0f6500c/Report.md",
+      "terminal_runtime": true,
+      "canonical_delivery": true,
+      "producer_delivery_ack": {
+        "status": "canonical_delivery_persisted",
+        "producer_ack_commit": "7329ef06f0947dace4f3ed5420f66fe58a576b49",
+        "receiver_canonical_commit": "a9dc0a7d53078ae929f69f7652c4c8e7c9f1d47e",
+        "receiver_complete_receipt_at_utc": "2026-09-30T19:53:37Z"
+      },
+      "source_requests": 0,
+      "source_returned": 0,
+      "source_failed": 0,
+      "freshness_class": "New computation on saved acquisitions; no fresh publisher request",
+      "finding_and_gap": "All12 retained petroleum series readable through September18; latest collector3success/9timeouts does not mean9missing series. No endpoint in requested week, no compatible complete balance or causal price/demand test.",
+      "latest_selected_measurement_period_end": "2026-09-18",
+      "latest_selected_measurement_age_calendar_days": 12,
+      "selected_measurement_release_date": null,
+      "selected_measurement_release_age_calendar_days": null,
+      "publisher_publication_at_utc": null,
+      "retained_sources": [
+        {
+          "id": "WCESTUS1",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCESTUS1&f=W",
+          "upstream_ids": [
+            "EIA_petroleum"
+          ],
+          "observation_period_end": "2026-09-18",
+          "publisher_publication_at": null,
+          "first_observed_value_version_at": "2026-09-23T19:26:16Z",
+          "raw_sha256": "50edb4103d1e73374b9b0d3e7b0ae7f6d8fed7701ba47f7122533329728f4699"
+        },
+        {
+          "id": "WGTSTUS1",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WGTSTUS1&f=W",
+          "upstream_ids": [
+            "EIA_petroleum"
+          ],
+          "observation_period_end": "2026-09-18",
+          "publisher_publication_at": null,
+          "first_observed_value_version_at": "2026-09-23T19:26:21Z",
+          "raw_sha256": "648a8ca74256e83761b48d50508c330779a2f481e42b90e1d4d78c3ae33abf5d"
+        },
+        {
+          "id": "WDISTUS1",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WDISTUS1&f=W",
+          "upstream_ids": [
+            "EIA_petroleum"
+          ],
+          "observation_period_end": "2026-09-18",
+          "publisher_publication_at": null,
+          "first_observed_value_version_at": "2026-09-23T19:26:28Z",
+          "raw_sha256": "2532d7ff1a8299bb7e4cf993882aea5670c2b2f0d5e59abbf2d12b8645d86a28"
+        },
+        {
+          "id": "WCSSTUS1",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCSSTUS1&f=W",
+          "upstream_ids": [
+            "EIA_petroleum"
+          ],
+          "observation_period_end": "2026-09-18",
+          "publisher_publication_at": null,
+          "first_observed_value_version_at": "2026-09-23T19:26:33Z",
+          "raw_sha256": "2a19356652c5d4b24cc8911a89251356416ad7d7210ce923414ce01e740813a1"
+        },
+        {
+          "id": "WCRRIUS2",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCRRIUS2&f=W",
+          "upstream_ids": [
+            "EIA_petroleum"
+          ],
+          "observation_period_end": "2026-09-18",
+          "publisher_publication_at": null,
+          "first_observed_value_version_at": "2026-09-23T19:26:39Z",
+          "raw_sha256": "769f3eaf135ad8c067dad2e953454ad2f11e6a82a9b90024b06c3e39d99144c7"
+        },
+        {
+          "id": "WPULEUS3",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WPULEUS3&f=W",
+          "upstream_ids": [
+            "EIA_petroleum"
+          ],
+          "observation_period_end": "2026-09-18",
+          "publisher_publication_at": null,
+          "first_observed_value_version_at": "2026-09-23T19:26:43Z",
+          "raw_sha256": "48cb6a04e8747f1f693a2b0a8a37b2d926f8dc17ef2b34183935929158b1658e"
+        },
+        {
+          "id": "WCRFPUS2",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCRFPUS2&f=W",
+          "upstream_ids": [
+            "EIA_petroleum"
+          ],
+          "observation_period_end": "2026-09-18",
+          "publisher_publication_at": null,
+          "first_observed_value_version_at": "2026-09-23T19:26:57Z",
+          "raw_sha256": "f9f19cf47fdf02a7a865b9263a7dd9aed442caccaa94fd3a38fc24f479f47c9a"
+        },
+        {
+          "id": "WCRIMUS2",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCRIMUS2&f=W",
+          "upstream_ids": [
+            "EIA_petroleum"
+          ],
+          "observation_period_end": "2026-09-18",
+          "publisher_publication_at": null,
+          "first_observed_value_version_at": "2026-09-23T19:27:00Z",
+          "raw_sha256": "be809465ff0fcde747de2ff16b5e35d99e86793481635d68535d0179e7249f43"
+        },
+        {
+          "id": "WCREXUS2",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCREXUS2&f=W",
+          "upstream_ids": [
+            "EIA_petroleum"
+          ],
+          "observation_period_end": "2026-09-18",
+          "publisher_publication_at": null,
+          "first_observed_value_version_at": "2026-09-23T19:27:03Z",
+          "raw_sha256": "5b45b94e0361773b9e83af93003e291d50d4fb4f701c92b316d90dd7577117bc"
+        },
+        {
+          "id": "WGFUPUS2",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WGFUPUS2&f=W",
+          "upstream_ids": [
+            "EIA_petroleum"
+          ],
+          "observation_period_end": "2026-09-18",
+          "publisher_publication_at": null,
+          "first_observed_value_version_at": "2026-09-23T19:27:05Z",
+          "raw_sha256": "f356dca02c08b9450d8f03bb2e0b7afefc70612813314af51a02c31b3f7ade32"
+        },
+        {
+          "id": "WDIUPUS2",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WDIUPUS2&f=W",
+          "upstream_ids": [
+            "EIA_petroleum"
+          ],
+          "observation_period_end": "2026-09-18",
+          "publisher_publication_at": null,
+          "first_observed_value_version_at": "2026-09-23T19:27:08Z",
+          "raw_sha256": "66791e005fafb42860264491bdc7f76e69b28ba12c420db788789c253b39e2a6"
+        },
+        {
+          "id": "WKJUPUS2",
+          "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WKJUPUS2&f=W",
+          "upstream_ids": [
+            "EIA_petroleum"
+          ],
+          "observation_period_end": "2026-09-18",
+          "publisher_publication_at": null,
+          "first_observed_value_version_at": "2026-09-23T19:27:11Z",
+          "raw_sha256": "582c955b29d28a582adc7b5e9b57eae805ae0ff7f28b2c33502eeb7a88226d3e"
+        }
+      ],
+      "reuse_reason": "Bounded saved-evidence continuation; prior attempts/reservations and source restrictions preserved. No new collection authorized by this continuation.",
+      "market_incrementality": "More recent saved endpoint than the earlier canonical legacy report",
+      "fresh_retrieval_provides_newer_numeric_vintage": false,
+      "retained_acquisition_ages_hours": {
+        "earliest_latest_value_version_first_seen": 168.4958,
+        "latest_latest_value_version_first_seen": 168.4806
+      }
+    }
+  ],
+  "producer_delivery_acknowledgments_closed": 15
+}

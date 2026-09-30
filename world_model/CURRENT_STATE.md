@@ -1,16 +1,16 @@
 # Current Market State
 
-**Model version:** 0.2.17 (unchanged)  
-**Latest completed scientific review cutoff:** 2026-09-30T01:57:20Z  
-**Latest auditor update:** P000030 resolved at 2026-09-30T18:03:43Z  
-**Status:** The requested full integration test is in progress; this is an interim resolution and Fiscal intake update
+**Model version:**0.2.17 (reviewed, unchanged)  
+**Latest completed scientific review cutoff:**2026-09-30T19:56:01Z  
+**Run:**market-repair-test-2026-09-30-1  
+**Status:**All15 producer inputs canonically accepted; final scientific phases complete, exact-commit companion validation recorded separately
 
-The [earlier full deep review](../evaluations/2026-09-30-manual-deep-cycle.md) remains the latest completed synthesis. Its model weights remain **H001 0.36 / H002 0.14 / H003 0.38 / H004 0.12**. No new causal-graph edge or forecast has been added.
+[Full repair-and-integration analysis](../evaluations/2026-09-30-repair-test-1.md) and [15-family evidence matrix](../evidence/repair-test-2026-09-30/family-matrix.json).
 
-The [interim test result](../evaluations/2026-09-30-repair-test-1-interim.md) records the newly due P000030 outcome before further model interpretation. First-release August core PCE was +0.2% m/m, below its frozen ≥0.3% event; Brier 0.3844 and log loss 0.967584. The point misses by 0.1 percentage point and ties consensus; interval coverage does not erase this failed event forecast. The current annual revision does not rewrite frozen July context.
+Weights remain **H0010.36 / H0020.14 / H0030.38 / H0040.12**. The Modeler explicitly retained numerical weights and graph after the P000030 failure, resilient spending, uneven hiring, higher mortgage rates and incomplete current exposures. H003 remains a narrow leader; the August core-inflation miss challenges uniform inflation intensification without resolving September transmission. No new forecast duplicates already frozen labor/inflation tests.
 
-There are now 27 resolved records, including 23 probability forecasts. The local companion recomputation gives mean Brier 0.219700 and log loss 0.629904 with no score discrepancy; final exact-commit validation is separate. **INSUFFICIENT EVIDENCE TO ASSESS LEARNING** remains controlling. Existing magnitude and benchmark failures remain preserved.
+P000030 resolved FALSE: first-release August corePCE+0.2% versus frozen≥0.3%; Brier0.3844/log0.967584. Lifetime27 resolved records contain23 probability forecasts; mean Brier0.219700/log0.629904. **INSUFFICIENT EVIDENCE TO ASSESS LEARNING**; neutral-skill uncertainty crosses zero. All historical forecasts and prior score rows preserved.
 
-Active unresolved IDs are **P000004, P000005, P000029 and P000031**. The original/open copy of P000030 is retained for audit but is not an unresolved forecast.
+Active unresolved IDs: **P000004,P000005,P000029,P000031**. P000030's open copy remains audit history. ADP+90K private employment does not resolve the BLS payroll target.
 
-Fiscal September 30 was completely received at 2026-09-30T18:12:32Z. It freshly retrieved unchanged September 1 construction cells and three older comparison cells, not a new measurement release. Full fifteen-family manual execution, updated source ages, Skeptic/Modeler/Forecaster decisions and final validation remain pending. No full-cycle or live-acquisition success is claimed by this interim state.
+All15 manual final reports have actual complete receipts by19:53:37Z. Source requests11,returned10,failed1; six newer-to-producer numeric vintages include old-quarter revisions and narrow hydrology. Labor was already known to Market. Agriculture WASDE0/14, no current original geopolitical document, incomplete Weather/GEV windows and older petroleum endpoints remain explicit. Legacy calculations use retained acquisitions. Shared BEA/EIA/PortLA/BLS ancestry counts once.

@@ -168,3 +168,7 @@ The [September 25 v0.2.15 model-change record](model_changes/2026-09-25-v0.2.15.
 ## Manual deep review — September30,2026; model0.2.17 retained
 
 [Full review](../evaluations/2026-09-30-manual-deep-cycle.md), evidence cutoff `2026-09-30T01:57:20Z`. No forecast expired and no new economic observation warranted a reweight or causal change. Weights remain H0010.36/H0020.14/H0030.38/H0040.12. Corporate is newly received retained evidence, not a new measurement. All15 research families were reviewed; source dependence and missing September28 Weather/original-petroleum reports remain explicit. Repo B recomputed existing proper scores before interpretation. No new forecast, model version, causal edge or predictive-learning credit is claimed. Operational/index repairs restore workflow integrity without changing historical scientific records.
+
+## 2026-09-30 manual repair test: reviewed no change
+
+Model0.2.17 and H0010.36/H0020.14/H0030.38/H0040.12 retained at19:56:01Z after all15 inputs. P000030 failure acknowledged before interpretation. No graph edge or forecast added. [Decision](model_changes/2026-09-30-repair-test-no-change.md); [full analysis](../evaluations/2026-09-30-repair-test-1.md).
