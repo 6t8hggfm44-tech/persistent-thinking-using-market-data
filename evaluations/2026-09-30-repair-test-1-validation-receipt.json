@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "run_id": "market-repair-test-2026-09-30-1",
+  "evidence_cutoff_utc": "2026-09-30T19:56:01Z",
+  "primary_scientific_commit": "62e5701680993f13a7c60b5e5f3d88e2d3479ba0",
+  "companion_repository": "6t8hggfm44-tech/market-repo-B",
+  "companion_commit": "45bfb5427a40a703ed9e4414e51b5e1d57a122ea",
+  "analysis_code_commit": "9ea39bf4dfa5556c2440d010455a560793c76dc0",
+  "validation_completed_at_utc": "2026-09-30T20:07:15.038546+00:00",
+  "companion_report": "reports/2026-09-30-repair-test-1/final-Report.md",
+  "companion_diagnostics": "reports/2026-09-30-repair-test-1/final-validation.json",
+  "complete_primary_files_verified": 602,
+  "primary_regression_tests_passed": 4,
+  "companion_regression_tests_passed": 10,
+  "canonical_research_records": 67,
+  "canonical_gev_records": 7,
+  "manual_families_terminal_and_delivered": 15,
+  "all_producer_acknowledgments_verified": true,
+  "score_discrepancies": [],
+  "mean_brier": 0.21970000000000003,
+  "mean_log_loss": 0.6299044204650718,
+  "probability_forecasts": 23,
+  "total_resolved_records": 27,
+  "protocol_status": "INSUFFICIENT_EVIDENCE_TO_ASSESS_LEARNING",
+  "late_pending_packet": {
+    "run_id": "trade-suite-weekly-2026-09-30",
+    "first_complete_read_at_utc": "2026-09-30T20:03:49Z",
+    "status": "pending_not_canonical",
+    "interpretation": "Unrelated scheduled packet first read after scientific cutoff; excluded from this test synthesis; no backdated receipt or future source use."
+  },
+  "scope": "Exact final statistical validation and delivery closure; does not establish predictive learning, source completeness or unattended future reliability."
+}

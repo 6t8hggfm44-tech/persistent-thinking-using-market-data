@@ -3,7 +3,7 @@
 **Model version:**0.2.17 (reviewed, unchanged)  
 **Latest completed scientific review cutoff:**2026-09-30T19:56:01Z  
 **Run:**market-repair-test-2026-09-30-1  
-**Status:**All15 producer inputs canonically accepted; final scientific phases complete, exact-commit companion validation recorded separately
+**Status:**All15 producer inputs canonically accepted; all six phases complete; exact-commit companion validation passed
 
 [Full repair-and-integration analysis](../evaluations/2026-09-30-repair-test-1.md) and [15-family evidence matrix](../evidence/repair-test-2026-09-30/family-matrix.json).
 
@@ -14,3 +14,5 @@ P000030 resolved FALSE: first-release August corePCE+0.2% versus frozen≥0.3%; 
 Active unresolved IDs: **P000004,P000005,P000029,P000031**. P000030's open copy remains audit history. ADP+90K private employment does not resolve the BLS payroll target.
 
 All15 manual final reports have actual complete receipts by19:53:37Z. Source requests11,returned10,failed1; six newer-to-producer numeric vintages include old-quarter revisions and narrow hydrology. Labor was already known to Market. Agriculture WASDE0/14, no current original geopolitical document, incomplete Weather/GEV windows and older petroleum endpoints remain explicit. Legacy calculations use retained acquisitions. Shared BEA/EIA/PortLA/BLS ancestry counts once.
+
+[Final validation receipt](../evaluations/2026-09-30-repair-test-1-validation-receipt.json) pins scientific primary62e5701680993f13a7c60b5e5f3d88e2d3479ba0 and companion45bfb5427a40a703ed9e4414e51b5e1d57a122ea. Scores/source checks agree;4 Market and10 RepoB tests pass. The unrelated regular Trade packet first read after cutoff remains pending for a later eligible cycle.
