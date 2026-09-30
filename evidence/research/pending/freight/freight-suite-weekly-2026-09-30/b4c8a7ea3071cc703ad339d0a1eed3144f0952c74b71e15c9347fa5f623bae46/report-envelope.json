@@ -1,0 +1,80 @@
+{
+  "domain": "freight",
+  "run_id": "freight-suite-weekly-2026-09-30",
+  "report_version": 1,
+  "report_kind": "final_evidence_gap",
+  "workflow_commit": "95c49b8d16b9195cc279afe6b04dd1350272431e",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-09-23T22:00:00Z",
+    "end": "2026-09-30T22:11:40.081093+00:00"
+  },
+  "actual_coverage": {
+    "port": "August2026 versusAugust2025;10 retained TEU levels, non-seasonally-adjusted; source retrieved September22",
+    "bts": "July2026 two reported decline magnitudes; source retrieved September30 in separate manual investigation, reused byte-exact",
+    "rail": "September30 public page metadata only; no numeric traffic table",
+    "grain": "September22 index metadata only; unresolved acquisition retained",
+    "requested_universe": "US freight and selected grain/port corridors, with broader mode/rate/disruption roster audited"
+  },
+  "limitations": [
+    "Only August2026/August2025 at Port Los Angeles supplies detailed numeric inputs; no September port observations.",
+    "Two July2026 BTS headline decline magnitudes are available, but no full index levels, revisions or modal table; not a same-month comparison with August port data.",
+    "No current public AAR numeric traffic table was obtained. USDA prior acquisition remains unresolved and its retained index contains no corridor price/volume cells.",
+    "No truck spot-price/volume panel, Baltic rates, cargo tonnage, warehouse utilization, delivery times or measured chokepoint-disruption controls.",
+    "Retained extracts identify selected tool text, not original publisher-body bytes; hidden upstream HTTP accounting remains unmeasured.",
+    "Prior port results and Trade conversation are exposed; exploratory interpretation and shared observations count once."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-30T22:11:40.081093+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-30T22:14:54.613576+00:00",
+  "available_at_utc": "2026-09-30T22:14:54.613576+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "b4c8a7ea3071cc703ad339d0a1eed3144f0952c74b71e15c9347fa5f623bae46",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "16e9066a3d29b96e58df690266c7e1391679e516e923c265f37ae684558442e6",
+  "sources": [
+    {
+      "id": "bts_freight_tsi",
+      "url": "https://www.bts.gov/tags/transportation-services-index",
+      "upstream_ids": [
+        "bts:transportation-services-index",
+        "aar:railroad-traffic",
+        "ata:truck-tonnage",
+        "bts:air-carrier-traffic",
+        "eia:pipeline-movements",
+        "usace:waterborne-commerce"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher-body bytes unavailable. Availability refers only to the listed limited extract, not full numeric coverage."
+    },
+    {
+      "id": "port_la_containers",
+      "url": "https://portoflosangeles.org/business/statistics/container-statistics",
+      "upstream_ids": [
+        "port-of-los-angeles:terminal-container-reports"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher-body bytes unavailable. Availability refers only to the listed limited extract, not full numeric coverage."
+    },
+    {
+      "id": "usda_grain_transport",
+      "url": "https://www.ams.usda.gov/services/transportation-analysis/gtr",
+      "upstream_ids": [
+        "usda:ams:grain-transportation-report",
+        "aar:railroad-traffic",
+        "usace:waterborne-commerce",
+        "eia:diesel-prices"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher-body bytes unavailable. Availability refers only to the listed limited extract, not full numeric coverage."
+    },
+    {
+      "id": "aar_public_rail",
+      "url": "https://www.aar.org/data-center/",
+      "upstream_ids": [
+        "aar:railroad-traffic",
+        "aar:member-railroad-reports"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher-body bytes unavailable. Availability refers only to the listed limited extract, not full numeric coverage."
+    }
+  ],
+  "delivery_key": "freight:freight-suite-weekly-2026-09-30:b4c8a7ea3071cc703ad339d0a1eed3144f0952c74b71e15c9347fa5f623bae46"
+}

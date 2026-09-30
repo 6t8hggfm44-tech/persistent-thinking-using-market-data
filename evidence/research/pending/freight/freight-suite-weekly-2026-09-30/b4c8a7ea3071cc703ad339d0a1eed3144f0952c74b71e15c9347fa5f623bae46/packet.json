@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "delivery_key": "freight:freight-suite-weekly-2026-09-30:b4c8a7ea3071cc703ad339d0a1eed3144f0952c74b71e15c9347fa5f623bae46",
+  "domain": "freight",
+  "run_id": "freight-suite-weekly-2026-09-30",
+  "report_sha256": "b4c8a7ea3071cc703ad339d0a1eed3144f0952c74b71e15c9347fa5f623bae46",
+  "report_bytes": 7380,
+  "envelope_sha256": "fdf731c6d78248279099cd82b1cf8b83be55f336723dee46239b60d74ce4945a",
+  "envelope_bytes": 4307,
+  "producer_repository": "6t8hggfm44-tech/-Freight-supply-chain",
+  "producer_commit": "9e6339e6d5f185d7d28c8f030ea5e142ed4047e5",
+  "producer_report_path": "reports/freight-suite-weekly-2026-09-30/b4c8a7ea3071cc703ad339d0a1eed3144f0952c74b71e15c9347fa5f623bae46/Report.md",
+  "prepared_at_utc": "2026-09-30T22:17:19.303059+00:00",
+  "source_ancestry": [
+    {
+      "id": "bts_freight_tsi",
+      "url": "https://www.bts.gov/tags/transportation-services-index",
+      "upstream_ids": [
+        "bts:transportation-services-index",
+        "aar:railroad-traffic",
+        "ata:truck-tonnage",
+        "bts:air-carrier-traffic",
+        "eia:pipeline-movements",
+        "usace:waterborne-commerce"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher-body bytes unavailable. Availability refers only to the listed limited extract, not full numeric coverage."
+    },
+    {
+      "id": "port_la_containers",
+      "url": "https://portoflosangeles.org/business/statistics/container-statistics",
+      "upstream_ids": [
+        "port-of-los-angeles:terminal-container-reports"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher-body bytes unavailable. Availability refers only to the listed limited extract, not full numeric coverage."
+    },
+    {
+      "id": "usda_grain_transport",
+      "url": "https://www.ams.usda.gov/services/transportation-analysis/gtr",
+      "upstream_ids": [
+        "usda:ams:grain-transportation-report",
+        "aar:railroad-traffic",
+        "usace:waterborne-commerce",
+        "eia:diesel-prices"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher-body bytes unavailable. Availability refers only to the listed limited extract, not full numeric coverage."
+    },
+    {
+      "id": "aar_public_rail",
+      "url": "https://www.aar.org/data-center/",
+      "upstream_ids": [
+        "aar:railroad-traffic",
+        "aar:member-railroad-reports"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher-body bytes unavailable. Availability refers only to the listed limited extract, not full numeric coverage."
+    }
+  ],
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact original report/envelope copied from private immutable readback; private evidence/calculations are not part of the public packet.",
+    "Selected tool extracts do not prove original publisher-body identity or hidden HTTP accounting.",
+    "Staging establishes neither Market receipt nor canonical persistence."
+  ]
+}
