@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "delivery_key": "fiscal:fiscal-suite-weekly-2026-09-30:ec10686bc7f7f8fddb75bf453c6438c1d716d5a72d2419b3ed91e4ca4b2b8e10",
+  "domain": "fiscal",
+  "run_id": "fiscal-suite-weekly-2026-09-30",
+  "report_sha256": "ec10686bc7f7f8fddb75bf453c6438c1d716d5a72d2419b3ed91e4ca4b2b8e10",
+  "report_bytes": 8015,
+  "envelope_sha256": "d3567947f5f3f1d226f7f2ff3bf83204f1b01921244b1b3d6358f11527d9bfe3",
+  "envelope_bytes": 4786,
+  "producer_repository": "6t8hggfm44-tech/-Government-fiscal-",
+  "producer_commit": "ea89dfbe8b409491dd270446ead242c210713082",
+  "producer_report_path": "reports/fiscal-suite-weekly-2026-09-30/ec10686bc7f7f8fddb75bf453c6438c1d716d5a72d2419b3ed91e4ca4b2b8e10/Report.md",
+  "prepared_at_utc": "2026-09-30T16:21:02.886032+00:00",
+  "source_ancestry": [
+    {
+      "id": "treasury_mts",
+      "url": "https://fiscal.treasury.gov/accounting/monthly-treasury-statement",
+      "upstream_ids": [
+        "US-TREASURY-MTS",
+        "US-FEDERAL-ENTITY-ACCOUNTING"
+      ],
+      "integrity_status": "Exact retained extract bytes verified; tool representation only, original publisher bytes unverified."
+    },
+    {
+      "id": "usaspending",
+      "url": "https://www.usaspending.gov/explorer",
+      "upstream_ids": [
+        "US-FEDERAL-AWARD-REPORTING",
+        "US-FPDS-CONTRACTS",
+        "US-DATA-ACT-AGENCY-REPORTING"
+      ],
+      "integrity_status": "No current source body/observations; original prior capture hashes cannot supply missing bytes."
+    },
+    {
+      "id": "census_state_local",
+      "url": "https://www.census.gov/programs-surveys/gov-finances.html",
+      "upstream_ids": [
+        "US-CENSUS-GOVERNMENT-FINANCES",
+        "STATE-LOCAL-FINANCIAL-REPORTS"
+      ],
+      "integrity_status": "No current source body/observations; original prior capture hashes cannot supply missing bytes."
+    },
+    {
+      "id": "census_construction_public",
+      "url": "https://www.census.gov/construction/c30/pdf/release.pdf",
+      "upstream_ids": [
+        "US-CENSUS-VIP",
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Exact retained extract bytes verified; tool representation only, original publisher bytes unverified."
+    },
+    {
+      "id": "federal_register",
+      "url": "https://www.federalregister.gov/documents/current",
+      "upstream_ids": [
+        "US-OFR-FEDERAL-REGISTER",
+        "US-ISSUING-AGENCY-RULEMAKING"
+      ],
+      "integrity_status": "No current source body/observations; original prior capture hashes cannot supply missing bytes."
+    }
+  ],
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact reviewed final report and original envelope only; private evidence package and publisher bodies are not included.",
+    "Reviewed source excerpts verify retained representations only; original publisher bytes and hidden upstream HTTP accounting are unverified.",
+    "Staging is not receiver receipt, acknowledgment or canonical persistence."
+  ]
+}

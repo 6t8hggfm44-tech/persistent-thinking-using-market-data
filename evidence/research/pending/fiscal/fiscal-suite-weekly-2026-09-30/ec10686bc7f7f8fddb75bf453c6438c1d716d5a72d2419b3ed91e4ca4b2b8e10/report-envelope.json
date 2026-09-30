@@ -1,0 +1,108 @@
+{
+  "domain": "fiscal",
+  "run_id": "fiscal-suite-weekly-2026-09-30",
+  "report_version": 1,
+  "report_kind": "final_evidence_gap",
+  "workflow_commit": "0d72460c7872baf90edd27543c203c2476050ba3",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-09-23T16:00:00Z",
+    "end": "2026-09-30T16:15:46.735198+00:00"
+  },
+  "actual_coverage": {
+    "geography": "United States national construction; Treasury federal program metadata only",
+    "requested_review_window": {
+      "start": "2026-09-23T16:00:00Z",
+      "end": "2026-09-30T16:15:46.735198+00:00"
+    },
+    "numeric_periods": [
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2025-07",
+      "January-July2026",
+      "January-July2025"
+    ],
+    "release": "Census CB26-140, September1 2026",
+    "retained_fresh_cells": 20,
+    "reused_cells_matched": 17,
+    "changed_shared_cells": 0,
+    "new_measurement_release": false,
+    "live_sources_attempted": 2,
+    "roster_sources": 5,
+    "disabled_sources": 1,
+    "three_month_scope": "May-July levels; no matched preceding/year-earlier three-month panel",
+    "evidence_modes": [
+      "reviewed_limited_tool_extract",
+      "verified_prior_reviewed_extract"
+    ],
+    "prior_exposure": "Prior July numeric inputs and earlier conversation Market context; exploratory classification. No current counterpart report read before freeze."
+  },
+  "limitations": [
+    "Numeric coverage is one national July2026 Census construction release, published September1; no current-week quantitative fiscal measurement.",
+    "Fresh Census extraction repeats the prior release; shared Census VIP/SOC ancestry counts once across reports and domains.",
+    "Nominal ownership-based construction does not identify federal funding, real volume, or a causal policy effect.",
+    "No usable MTS cash table, deduplicated award transactions, contemporaneous state-local fiscal panel, or verified operative-policy/outcome panel.",
+    "Original publisher bytes and historical release vintages unavailable; reviewed tool extracts have exact retained-byte verification only.",
+    "Two permitted alternative transport steps completed; hidden upstream HTTP requests, bytes, redirects and duration remain unmeasured. Unused allowance expired.",
+    "No eligible frozen counterpart report was used for a new cross-domain causal reconciliation."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-09-30T16:15:46.735198+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-30T16:19:07.744528+00:00",
+  "available_at_utc": "2026-09-30T16:19:07.744528+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "ec10686bc7f7f8fddb75bf453c6438c1d716d5a72d2419b3ed91e4ca4b2b8e10",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "d4aafb9e157bad967a70375fc0223194f344706f81087c293887876b90f231ff",
+  "sources": [
+    {
+      "id": "treasury_mts",
+      "url": "https://fiscal.treasury.gov/accounting/monthly-treasury-statement",
+      "upstream_ids": [
+        "US-TREASURY-MTS",
+        "US-FEDERAL-ENTITY-ACCOUNTING"
+      ],
+      "integrity_status": "Exact retained extract bytes verified; tool representation only, original publisher bytes unverified."
+    },
+    {
+      "id": "usaspending",
+      "url": "https://www.usaspending.gov/explorer",
+      "upstream_ids": [
+        "US-FEDERAL-AWARD-REPORTING",
+        "US-FPDS-CONTRACTS",
+        "US-DATA-ACT-AGENCY-REPORTING"
+      ],
+      "integrity_status": "No current source body/observations; original prior capture hashes cannot supply missing bytes."
+    },
+    {
+      "id": "census_state_local",
+      "url": "https://www.census.gov/programs-surveys/gov-finances.html",
+      "upstream_ids": [
+        "US-CENSUS-GOVERNMENT-FINANCES",
+        "STATE-LOCAL-FINANCIAL-REPORTS"
+      ],
+      "integrity_status": "No current source body/observations; original prior capture hashes cannot supply missing bytes."
+    },
+    {
+      "id": "census_construction_public",
+      "url": "https://www.census.gov/construction/c30/pdf/release.pdf",
+      "upstream_ids": [
+        "US-CENSUS-VIP",
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Exact retained extract bytes verified; tool representation only, original publisher bytes unverified."
+    },
+    {
+      "id": "federal_register",
+      "url": "https://www.federalregister.gov/documents/current",
+      "upstream_ids": [
+        "US-OFR-FEDERAL-REGISTER",
+        "US-ISSUING-AGENCY-RULEMAKING"
+      ],
+      "integrity_status": "No current source body/observations; original prior capture hashes cannot supply missing bytes."
+    }
+  ],
+  "delivery_key": "fiscal:fiscal-suite-weekly-2026-09-30:ec10686bc7f7f8fddb75bf453c6438c1d716d5a72d2419b3ed91e4ca4b2b8e10"
+}
