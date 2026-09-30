@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "delivery_key": "trade:trade-suite-manual-2026-09-30-repair-test-1:b7f318e248fa8eebbb356384b0fa4a8a7831e6bdc0e761ae6760b366cf4a1605",
+  "domain": "trade",
+  "run_id": "trade-suite-manual-2026-09-30-repair-test-1",
+  "report_sha256": "b7f318e248fa8eebbb356384b0fa4a8a7831e6bdc0e761ae6760b366cf4a1605",
+  "report_bytes": 12337,
+  "envelope_sha256": "6b3373acdbb7082b779b620ceda099c4408200681e7aacd366c6dcccd83196dc",
+  "envelope_bytes": 5306,
+  "producer_repository": "6t8hggfm44-tech/-Global-trade-China",
+  "producer_commit": "a7ad03093a7da1dc60c2414c289aaad13bdb93f1",
+  "producer_report_path": "reports/trade-suite-manual-2026-09-30-repair-test-1/b7f318e248fa8eebbb356384b0fa4a8a7831e6bdc0e761ae6760b366cf4a1605/Report.md",
+  "prepared_at_utc": "2026-09-30T19:43:13.482493+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Complete reviewed final prose and original shareable envelope only; private operational checkpoint, evidence package and publisher bodies are not included.",
+    "Producer supersession history is preserved; correction versions are not additional investigations or evidence votes.",
+    "Staging is not receiver receipt, acknowledgment or canonical persistence."
+  ]
+}

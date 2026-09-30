@@ -1,0 +1,113 @@
+{
+  "domain": "agriculture",
+  "run_id": "agriculture-suite-manual-2026-09-30-repair-test-1",
+  "report_version": 2,
+  "report_kind": "final_evidence_gap",
+  "workflow_commit": "4e1583a1bc85a3e2b86a941e3c586be94fdd4364",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-09-23T00:00:00Z",
+    "end": "2026-09-30T00:00:00Z"
+  },
+  "actual_coverage": {
+    "original_report_coverage": {
+      "geography": "Three illustrative Virgin Islands wells only; US grain question unmeasured",
+      "periods": [
+        "2025-09-15 comparison as represented in September 2026",
+        "2026-09-15 conditions",
+        "prior-week date not independently established"
+      ],
+      "event_window_note": "Bounding range, not a continuous series; WASDE headings identify editions, not measured balances.",
+      "retained_records": 5,
+      "numeric_cells": 8,
+      "wasde_balance_cells": 0,
+      "missing_balance_cells": 14,
+      "fresh_observations": 0,
+      "enabled_catalog_sources": 4,
+      "disabled_catalog_sources": 1
+    },
+    "new_run_category": "newer_drought_proxy_not_crop_measurement",
+    "source_commands_this_run": 1,
+    "newer_release_vintages_this_run": 1,
+    "original_report_run": "agriculture-suite-weekly-2026-09-24",
+    "original_report_sha256": "99e93496782e391e767c52ee60ca21bf83cfbbb882b84955716983e607b8a13d",
+    "scientific_classification": "exploratory; prior exposure recorded",
+    "fresh_numeric_cells": 5
+  },
+  "limitations": [
+    "Five fresh well-depth cells cover only two US Virgin Islands wells. They cannot establish national crop production, yield or price effects.",
+    "No WASDE request or two-vintage balance was completed. The inherited USDA restriction is conservative uncertainty preservation, not a publisher-wide access-failure claim.",
+    "Independent continuation review occurred after the live start and source call; guard tests establish code behavior only, not source recovery.",
+    "The investigation is exploratory: prior domain reports and numerical results were known before these comparisons. No prospective, causal or out-of-sample validation is established.",
+    "Retained selections are verified tool representations, not original publisher-body hashes. Connected upstream HTTP requests, bytes and redirects are not exposed."
+  ],
+  "supersedes": [
+    {
+      "run_id": "agriculture-suite-manual-2026-09-30-repair-test-1",
+      "report_sha256": "5e417fb91b93353c22b522ddaa48a451c90a48ce3d0aeaee7031c3220a724cdf",
+      "report_version": 1,
+      "reason": "Correct current-versus-historical limitations, clarify variables and rounded precision, and remove repetitive/irrelevant prose. No new source acquisition or changed numerical inputs."
+    }
+  ],
+  "evidence_cutoff_utc": "2026-09-30T19:23:49.002747+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-30T19:26:58.484491+00:00",
+  "available_at_utc": "2026-09-30T19:26:58.484491+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "de1990115f87fb9a752ad979affa3dba9123e09a44aed3da7102d2c40191623b",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "bcf8057eb02d800246eee200698621ce90524e0bc90f179929b73fd459a48220",
+  "sources": [
+    {
+      "id": "usda_wasde",
+      "url": "https://www.usda.gov/about-usda/general-information/staff-offices/office-chief-economist/commodity-markets/wasde-report",
+      "upstream_ids": [
+        "usda-waob",
+        "usda-nass",
+        "usda-fas",
+        "foreign-agriculture-statistics"
+      ],
+      "integrity_status": "Exact retained checkpoint/prior-package bytes verified; original publisher bytes absent"
+    },
+    {
+      "id": "usda_nass_publications",
+      "url": "https://www.nass.usda.gov/Publications/",
+      "upstream_ids": [
+        "usda-nass"
+      ],
+      "integrity_status": "Exact retained checkpoint/prior-package bytes verified; original publisher bytes absent"
+    },
+    {
+      "id": "usdm_current",
+      "url": "https://droughtmonitor.unl.edu/CurrentMap.aspx",
+      "upstream_ids": [
+        "usdm-authors",
+        "noaa-weather-observations",
+        "usda-field-reports"
+      ],
+      "integrity_status": "Exact retained checkpoint/prior-package bytes verified; original publisher bytes absent"
+    },
+    {
+      "id": "usda_aphis_hpai",
+      "url": "https://www.aphis.usda.gov/h5n1-hpai",
+      "upstream_ids": [
+        "usda-aphis-surveillance",
+        "state-animal-health-reports"
+      ],
+      "integrity_status": "Exact retained checkpoint/prior-package bytes verified; original publisher bytes absent"
+    },
+    {
+      "id": "usdm_current_fresh",
+      "url": "https://droughtmonitor.unl.edu/CurrentMap.aspx",
+      "upstream_ids": [
+        "usdm-authors",
+        "noaa-weather-observations",
+        "usda-field-reports"
+      ],
+      "integrity_status": "Exact selected cells/text matched actual tool representation; original publisher bytes unavailable"
+    }
+  ],
+  "delivery_key": "agriculture:agriculture-suite-manual-2026-09-30-repair-test-1:de1990115f87fb9a752ad979affa3dba9123e09a44aed3da7102d2c40191623b",
+  "invocation_kind": "authorized_manual_repair_test",
+  "scheduled_occurrence_consumed": false
+}

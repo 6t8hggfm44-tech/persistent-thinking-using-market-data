@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "delivery_key": "fiscal:fiscal-suite-manual-2026-09-30-repair-test-1:ff854a111a07b4148f5048eb5df429fe9e339fce78a6e58b4eb2039c789a743b",
+  "domain": "fiscal",
+  "run_id": "fiscal-suite-manual-2026-09-30-repair-test-1",
+  "report_sha256": "ff854a111a07b4148f5048eb5df429fe9e339fce78a6e58b4eb2039c789a743b",
+  "report_bytes": 11668,
+  "envelope_sha256": "72033cab0b32303b6526be52c6f3d097f56e5099c4d783ed27449aeef500347a",
+  "envelope_bytes": 5496,
+  "producer_repository": "6t8hggfm44-tech/-Government-fiscal-",
+  "producer_commit": "97847d6f123ea19f44acb224439c3bf891f9c4da",
+  "producer_report_path": "reports/fiscal-suite-manual-2026-09-30-repair-test-1/ff854a111a07b4148f5048eb5df429fe9e339fce78a6e58b4eb2039c789a743b/Report.md",
+  "prepared_at_utc": "2026-09-30T19:43:13.481881+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Complete reviewed final prose and original shareable envelope only; private operational checkpoint, evidence package and publisher bodies are not included.",
+    "Producer supersession history is preserved; correction versions are not additional investigations or evidence votes.",
+    "Staging is not receiver receipt, acknowledgment or canonical persistence."
+  ]
+}

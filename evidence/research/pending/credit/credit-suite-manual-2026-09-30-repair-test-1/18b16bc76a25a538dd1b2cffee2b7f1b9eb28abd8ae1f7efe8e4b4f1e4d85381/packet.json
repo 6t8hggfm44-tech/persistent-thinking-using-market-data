@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "delivery_key": "credit:credit-suite-manual-2026-09-30-repair-test-1:18b16bc76a25a538dd1b2cffee2b7f1b9eb28abd8ae1f7efe8e4b4f1e4d85381",
+  "domain": "credit",
+  "run_id": "credit-suite-manual-2026-09-30-repair-test-1",
+  "report_sha256": "18b16bc76a25a538dd1b2cffee2b7f1b9eb28abd8ae1f7efe8e4b4f1e4d85381",
+  "report_bytes": 11507,
+  "envelope_sha256": "6a7fd48ec4b89f4e60c1848583c61b492a9611811decd93723d321d4457a8152",
+  "envelope_bytes": 4905,
+  "producer_repository": "6t8hggfm44-tech/-Credit-financial-stress-",
+  "producer_commit": "478799632cf608268d0af4753d777f6723862e4b",
+  "producer_report_path": "reports/credit-suite-manual-2026-09-30-repair-test-1/18b16bc76a25a538dd1b2cffee2b7f1b9eb28abd8ae1f7efe8e4b4f1e4d85381/Report.md",
+  "prepared_at_utc": "2026-09-30T19:43:13.481185+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Complete reviewed final prose and original shareable envelope only; private operational checkpoint, evidence package and publisher bodies are not included.",
+    "Producer supersession history is preserved; correction versions are not additional investigations or evidence votes.",
+    "Staging is not receiver receipt, acknowledgment or canonical persistence."
+  ]
+}

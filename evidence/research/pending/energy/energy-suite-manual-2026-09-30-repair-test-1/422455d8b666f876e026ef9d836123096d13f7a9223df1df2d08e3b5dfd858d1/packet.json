@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "delivery_key": "energy:energy-suite-manual-2026-09-30-repair-test-1:422455d8b666f876e026ef9d836123096d13f7a9223df1df2d08e3b5dfd858d1",
+  "domain": "energy",
+  "run_id": "energy-suite-manual-2026-09-30-repair-test-1",
+  "report_sha256": "422455d8b666f876e026ef9d836123096d13f7a9223df1df2d08e3b5dfd858d1",
+  "report_bytes": 13582,
+  "envelope_sha256": "a4459bb97acb47d0a8e4c06cac6ee51993c21c1e76cfb29a4ba7aaf5d687a36c",
+  "envelope_bytes": 8716,
+  "producer_repository": "6t8hggfm44-tech/-Energy",
+  "producer_commit": "6d510b16c9a3d419ebf914b265dbff770e0180cb",
+  "producer_report_path": "reports/energy-suite-manual-2026-09-30-repair-test-1/422455d8b666f876e026ef9d836123096d13f7a9223df1df2d08e3b5dfd858d1/Report.md",
+  "prepared_at_utc": "2026-09-30T19:43:13.485044+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Complete reviewed final prose and original shareable envelope only; private operational checkpoint, evidence package and publisher bodies are not included.",
+    "Producer supersession history is preserved; correction versions are not additional investigations or evidence votes.",
+    "Staging is not receiver receipt, acknowledgment or canonical persistence."
+  ]
+}

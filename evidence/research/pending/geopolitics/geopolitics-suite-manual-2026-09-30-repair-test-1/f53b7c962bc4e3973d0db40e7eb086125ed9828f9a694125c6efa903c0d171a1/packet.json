@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "delivery_key": "geopolitics:geopolitics-suite-manual-2026-09-30-repair-test-1:f53b7c962bc4e3973d0db40e7eb086125ed9828f9a694125c6efa903c0d171a1",
+  "domain": "geopolitics",
+  "run_id": "geopolitics-suite-manual-2026-09-30-repair-test-1",
+  "report_sha256": "f53b7c962bc4e3973d0db40e7eb086125ed9828f9a694125c6efa903c0d171a1",
+  "report_bytes": 14763,
+  "envelope_sha256": "6ae6a5c407b8568c6da06c5e150908a2c95d2c335c098bb78b8b675a3ada3f85",
+  "envelope_bytes": 5763,
+  "producer_repository": "6t8hggfm44-tech/-Geopolitical-risk",
+  "producer_commit": "9a4e3185a71b7f32ee557b7e0e61d5353fd30222",
+  "producer_report_path": "reports/geopolitics-suite-manual-2026-09-30-repair-test-1/f53b7c962bc4e3973d0db40e7eb086125ed9828f9a694125c6efa903c0d171a1/Report.md",
+  "prepared_at_utc": "2026-09-30T19:43:13.484282+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Complete reviewed final prose and original shareable envelope only; private operational checkpoint, evidence package and publisher bodies are not included.",
+    "Producer supersession history is preserved; correction versions are not additional investigations or evidence votes.",
+    "Staging is not receiver receipt, acknowledgment or canonical persistence."
+  ]
+}

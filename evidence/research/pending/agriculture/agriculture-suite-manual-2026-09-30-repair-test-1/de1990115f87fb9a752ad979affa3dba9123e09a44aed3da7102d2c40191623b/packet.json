@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "delivery_key": "agriculture:agriculture-suite-manual-2026-09-30-repair-test-1:de1990115f87fb9a752ad979affa3dba9123e09a44aed3da7102d2c40191623b",
+  "domain": "agriculture",
+  "run_id": "agriculture-suite-manual-2026-09-30-repair-test-1",
+  "report_sha256": "de1990115f87fb9a752ad979affa3dba9123e09a44aed3da7102d2c40191623b",
+  "report_bytes": 14321,
+  "envelope_sha256": "3cf40697943d18fa8ab5c0d79e16b4ba7de16b83acb9cd1799ec3791485dfadb",
+  "envelope_bytes": 5236,
+  "producer_repository": "6t8hggfm44-tech/-Agriculture-food-",
+  "producer_commit": "02be872b834ef32a8c169ac5a1c1bb0cf749d89c",
+  "producer_report_path": "reports/agriculture-suite-manual-2026-09-30-repair-test-1/de1990115f87fb9a752ad979affa3dba9123e09a44aed3da7102d2c40191623b/Report.md",
+  "prepared_at_utc": "2026-09-30T19:43:13.483654+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Complete reviewed final prose and original shareable envelope only; private operational checkpoint, evidence package and publisher bodies are not included.",
+    "Producer supersession history is preserved; correction versions are not additional investigations or evidence votes.",
+    "Staging is not receiver receipt, acknowledgment or canonical persistence."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "delivery_key": "freight:freight-suite-manual-2026-09-30-repair-test-1:ef2f85f3ab272b7b125773ed80cc8e20ef5088ed3defef8836ca1b82a15efd88",
+  "domain": "freight",
+  "run_id": "freight-suite-manual-2026-09-30-repair-test-1",
+  "report_sha256": "ef2f85f3ab272b7b125773ed80cc8e20ef5088ed3defef8836ca1b82a15efd88",
+  "report_bytes": 12974,
+  "envelope_sha256": "56292088d9f332fc3854be1df012046c2931854bb0bab80444fad9410d0d9fa1",
+  "envelope_bytes": 5368,
+  "producer_repository": "6t8hggfm44-tech/-Freight-supply-chain",
+  "producer_commit": "007395cf00c693b767daeb7b66f801a754f141d7",
+  "producer_report_path": "reports/freight-suite-manual-2026-09-30-repair-test-1/ef2f85f3ab272b7b125773ed80cc8e20ef5088ed3defef8836ca1b82a15efd88/Report.md",
+  "prepared_at_utc": "2026-09-30T19:43:13.483120+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Complete reviewed final prose and original shareable envelope only; private operational checkpoint, evidence package and publisher bodies are not included.",
+    "Producer supersession history is preserved; correction versions are not additional investigations or evidence votes.",
+    "Staging is not receiver receipt, acknowledgment or canonical persistence."
+  ]
+}
