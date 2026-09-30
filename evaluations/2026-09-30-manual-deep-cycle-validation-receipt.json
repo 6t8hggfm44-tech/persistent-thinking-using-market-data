@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "kind": "post_publication_companion_validation_receipt",
+  "cycle": "2026-09-30-manual-deep-cycle",
+  "received_and_reviewed_at_utc": "2026-09-30T02:15:23Z",
+  "scientific_primary_repository": "6t8hggfm44-tech/persistent-thinking-using-market-data",
+  "scientific_primary_commit": "9275a6108d75914f4729029ed722a2144ee78bf9",
+  "scientific_report": "evaluations/2026-09-30-manual-deep-cycle.md",
+  "scientific_evidence_cutoff_utc": "2026-09-30T01:57:20Z",
+  "companion_repository": "6t8hggfm44-tech/market-repo-B",
+  "companion_report_commit": "9ea39bf4dfa5556c2440d010455a560793c76dc0",
+  "companion_analysis_code_commit": "f83738d7f7c22348b9783317a86b42087170f9f0",
+  "companion_executed_at_utc": "2026-09-30T02:12:59.433815+00:00",
+  "artifacts": [
+    {
+      "path": "reports/2026-09-30-deep-cycle/Report.md",
+      "git_blob_sha": "a80842acd7c10e9511177ddea6b49d8558141a59",
+      "sha256": "09351269ea466f4dfbf7da63f37c5ab08f10bb95b10b397ba67eca64624aade9",
+      "bytes": 16059,
+      "url": "https://github.com/6t8hggfm44-tech/market-repo-B/blob/9ea39bf4dfa5556c2440d010455a560793c76dc0/reports/2026-09-30-deep-cycle/Report.md"
+    },
+    {
+      "path": "reports/2026-09-30-deep-cycle/validation-summary.json",
+      "git_blob_sha": "b5ae23970aea39fa0eeddb1334f32db3544239f7",
+      "sha256": "dba4fbc06594a2bc0783bde3ac17b867517f4187d5e70bc6af62fec0e75497ff",
+      "bytes": 153451,
+      "url": "https://github.com/6t8hggfm44-tech/market-repo-B/blob/9ea39bf4dfa5556c2440d010455a560793c76dc0/reports/2026-09-30-deep-cycle/validation-summary.json"
+    },
+    {
+      "path": "reports/2026-09-30-deep-cycle/input-manifest.json",
+      "git_blob_sha": "b0c88e2e0d941bd7693ce9ebcf688e9c05574c70",
+      "sha256": "20444ce086bb0f414a70278d0f37729b6be9103c434d2a6f774cd4fd011aeb4e",
+      "bytes": 15192,
+      "url": "https://github.com/6t8hggfm44-tech/market-repo-B/blob/9ea39bf4dfa5556c2440d010455a560793c76dc0/reports/2026-09-30-deep-cycle/input-manifest.json"
+    },
+    {
+      "path": "reports/2026-09-30-deep-cycle/tests.txt",
+      "git_blob_sha": "f0b621b9b7ffbff8e4e9eb0846639f8c7c168be2",
+      "sha256": "761d9018b2beda55596a74cac703d03205b243b951c3d9cc6de742c3ecd6b2f0",
+      "bytes": 1377,
+      "url": "https://github.com/6t8hggfm44-tech/market-repo-B/blob/9ea39bf4dfa5556c2440d010455a560793c76dc0/reports/2026-09-30-deep-cycle/tests.txt"
+    }
+  ],
+  "validation_result": {
+    "primary_inputs_git_verified": 64,
+    "resolved_records": 26,
+    "probability_records": 22,
+    "brier_discrepancies": 0,
+    "log_loss_discrepancies": 0,
+    "raw_record_discrepancies": 0,
+    "regression_tests_passed": 10,
+    "learning_status": "INSUFFICIENT_EVIDENCE_TO_ASSESS_LEARNING"
+  },
+  "scope": "Post-validation provenance and reader pointer only. The exact scientific source remains the earlier primary commit. This receipt adds no cycle, evidence observation, forecast, outcome, model change or learning credit.",
+  "limitations": [
+    "Independent arithmetic and provenance review shares the frozen primary data; no independent historical financial-outcome reacquisition.",
+    "Small, dependent and changing target/horizon groups prevent a learning claim; descriptive favorable scores do not override the protocol threshold."
+  ]
+}
