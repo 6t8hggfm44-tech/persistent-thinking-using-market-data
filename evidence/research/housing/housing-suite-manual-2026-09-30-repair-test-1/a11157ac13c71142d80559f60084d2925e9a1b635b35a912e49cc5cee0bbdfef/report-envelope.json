@@ -1,0 +1,107 @@
+{
+  "domain": "housing",
+  "run_id": "housing-suite-manual-2026-09-30-repair-test-1",
+  "report_version": 3,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "59720519b3c3245cd163fcafdb1a4690c51f164e",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-09-23T00:00:00Z",
+    "end": "2026-09-30T00:00:00Z"
+  },
+  "actual_coverage": {
+    "original_report_coverage": {
+      "requested_week_is_not_observation_period": true,
+      "construction": "March-August2026 retained vintage",
+      "sales": "February-July2026 retained vintage",
+      "mortgage_rates": "September17,2026",
+      "retained_numeric_cells": 50,
+      "new_verified_source_observations": 0,
+      "full_roster_measured": false
+    },
+    "new_run_category": "newer_weekly_measurements",
+    "source_commands_this_run": 1,
+    "newer_release_vintages_this_run": 1,
+    "original_report_run": "housing-suite-weekly-2026-09-29",
+    "original_report_sha256": "cca0a975963198b6a417ed613be21ec95309d16475ccdc4d5a2997c483c432a5",
+    "scientific_classification": "exploratory; prior exposure recorded",
+    "fresh_numeric_cells": 6
+  },
+  "limitations": [
+    "Six fresh PMMS comparison cells accompany retained construction, permits and sales evidence. Only two are the current-week rate observations.",
+    "The September 29 BLS construction request remains an unresolved earlier attempt; no BLS retry was made. Census-family withholding is a conservative cross-repository restriction, not a claim of a Census outage.",
+    "No fresh construction or sales outcomes, full housing history or causal controls were acquired.",
+    "The investigation is exploratory: prior domain reports and numerical results were known before these comparisons. No prospective, causal or out-of-sample validation is established.",
+    "Retained selections are verified tool representations, not original publisher-body hashes. Connected upstream HTTP requests, bytes and redirects are not exposed."
+  ],
+  "supersedes": [
+    {
+      "run_id": "housing-suite-manual-2026-09-30-repair-test-1",
+      "report_sha256": "220e14bfbb631791fd7acca29cd75ec2dd5a7f8c9880c86ebb1390e607c324b2",
+      "report_version": 2,
+      "reason": "Correct current-versus-historical limitations, clarify variables and rounded precision, and remove repetitive/irrelevant prose. No new source acquisition or changed numerical inputs."
+    }
+  ],
+  "evidence_cutoff_utc": "2026-09-30T19:23:49.059031+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-30T19:23:49.166783+00:00",
+  "available_at_utc": "2026-09-30T19:23:49.166783+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "a11157ac13c71142d80559f60084d2925e9a1b635b35a912e49cc5cee0bbdfef",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "eb1bd2395ce3ad88e9461924ef6e10231a82a53aba3993300deb1038579c226b",
+  "sources": [
+    {
+      "id": "freddie_pmms",
+      "url": "https://www.freddiemac.com/pmms",
+      "upstream_ids": [
+        "FREDDIE-MAC-LPA-PMMS"
+      ],
+      "integrity_status": "Exact retained extract and prior frozen input hashes verified; original publisher body unavailable; no current revision/access claim"
+    },
+    {
+      "id": "census_nrc",
+      "url": "https://www.census.gov/construction/nrc/pdf/newresconst.pdf",
+      "upstream_ids": [
+        "US-CENSUS-BPS",
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Exact retained extract and prior frozen input hashes verified; original publisher body unavailable; no current revision/access claim"
+    },
+    {
+      "id": "census_nrs",
+      "url": "https://www.census.gov/construction/nrs/pdf/newressales.pdf",
+      "upstream_ids": [
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Exact retained extract and prior frozen input hashes verified; original publisher body unavailable; no current revision/access claim"
+    },
+    {
+      "id": "bls_construction_employment",
+      "url": "https://www.bls.gov/news.release/empsit.t17.htm",
+      "upstream_ids": [
+        "US-BLS-CES"
+      ],
+      "integrity_status": "No source-body or extract available; timestamp denotes status review only, not source retrieval."
+    },
+    {
+      "id": "fed_sloos_cre",
+      "url": "https://www.federalreserve.gov/data/sloos.htm",
+      "upstream_ids": [
+        "FRB-SLOOS-RESPONDENT-BANKS"
+      ],
+      "integrity_status": "No source-body or extract available; timestamp denotes status review only, not source retrieval."
+    },
+    {
+      "id": "freddie_pmms_fresh",
+      "url": "https://www.freddiemac.com/pmms",
+      "upstream_ids": [
+        "FREDDIE-MAC-LPA-PMMS"
+      ],
+      "integrity_status": "Exact selected cells/text matched actual tool representation; original publisher bytes unavailable"
+    }
+  ],
+  "delivery_key": "housing:housing-suite-manual-2026-09-30-repair-test-1:a11157ac13c71142d80559f60084d2925e9a1b635b35a912e49cc5cee0bbdfef",
+  "invocation_kind": "authorized_manual_repair_test",
+  "scheduled_occurrence_consumed": false
+}

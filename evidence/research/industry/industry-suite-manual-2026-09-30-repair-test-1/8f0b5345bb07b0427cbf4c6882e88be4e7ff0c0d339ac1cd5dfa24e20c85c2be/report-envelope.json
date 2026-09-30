@@ -1,0 +1,113 @@
+{
+  "domain": "industry",
+  "run_id": "industry-suite-manual-2026-09-30-repair-test-1",
+  "report_version": 3,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "8634b3860bd8084f51de9a1d2d750bf196ea0368",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-09-23T00:00:00Z",
+    "end": "2026-09-30T00:00:00Z"
+  },
+  "actual_coverage": {
+    "original_report_coverage": {
+      "geography": "United States industrial sector",
+      "frequency": "Monthly retained G.17 aggregates",
+      "periods": "March-August 2026",
+      "sources_available": 1,
+      "sources_unavailable": 4,
+      "numeric_cells": 26,
+      "executed_tests": 2,
+      "blocked_tests": 2
+    },
+    "new_run_category": "fresh_retrieval_same_measurement_vintage",
+    "source_commands_this_run": 1,
+    "newer_release_vintages_this_run": 0,
+    "original_report_run": "industry-suite-weekly-2026-09-29",
+    "original_report_sha256": "62e7fa94cfbd5919a8894f7a7afda58b8a83faf2d68d2ef88ff17cff5e055d26",
+    "scientific_classification": "exploratory; prior exposure recorded",
+    "fresh_numeric_cells": 24
+  },
+  "limitations": [
+    "The fresh 24-cell selection has the same release and periods as retained G.17 evidence. It is not a newer measurement or independent source.",
+    "Demand, industry breadth and physical bottleneck explanations remain unidentified; Census M3 uncertainty remains unresolved.",
+    "The investigation is exploratory: prior domain reports and numerical results were known before these comparisons. No prospective, causal or out-of-sample validation is established.",
+    "Retained selections are verified tool representations, not original publisher-body hashes. Connected upstream HTTP requests, bytes and redirects are not exposed."
+  ],
+  "supersedes": [
+    {
+      "run_id": "industry-suite-manual-2026-09-30-repair-test-1",
+      "report_sha256": "d3626cd19ae653b4c0eb483d2b680c7f005e03f4c46b38b4fe04baebf7fcf146",
+      "report_version": 2,
+      "reason": "Correct current-versus-historical limitations, clarify variables and rounded precision, and remove repetitive/irrelevant prose. No new source acquisition or changed numerical inputs."
+    }
+  ],
+  "evidence_cutoff_utc": "2026-09-30T19:23:49.107566+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-30T19:26:58.201018+00:00",
+  "available_at_utc": "2026-09-30T19:26:58.201018+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "8f0b5345bb07b0427cbf4c6882e88be4e7ff0c0d339ac1cd5dfa24e20c85c2be",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "23ddcfa4b20eb59ae148a6baa2a7f998f9cb0e0a504a83e77028682789049eda",
+  "sources": [
+    {
+      "id": "fed_g17",
+      "url": "https://www.federalreserve.gov/releases/g17/current/default.htm",
+      "upstream_ids": [
+        "FRB-G17",
+        "US-CENSUS-INDUSTRIAL-BENCHMARKS",
+        "US-BLS-PRODUCTION-WORKER-HOURS",
+        "USGS-MINERALS"
+      ],
+      "integrity_status": "Checkpoint file SHA-256 verified through the frozen prior package; exact selected cells matched the prior tool representation. Original publisher-body bytes are not available or verified in this runtime."
+    },
+    {
+      "id": "census_m3",
+      "url": "https://www.census.gov/manufacturing/m3/index.html",
+      "upstream_ids": [
+        "US-CENSUS-M3"
+      ],
+      "integrity_status": "No usable current-run or retained numeric representation."
+    },
+    {
+      "id": "ism_manufacturing",
+      "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/",
+      "upstream_ids": [
+        "ISM-MANUFACTURING-SURVEY"
+      ],
+      "integrity_status": "No usable numeric representation."
+    },
+    {
+      "id": "sia_sales",
+      "url": "https://www.semiconductors.org/policies/tax/market-data/",
+      "upstream_ids": [
+        "WSTS-SEMICONDUCTOR-SALES"
+      ],
+      "integrity_status": "Not acquired in this run; no durable reviewed numeric extract."
+    },
+    {
+      "id": "usgs_cement",
+      "url": "https://www.usgs.gov/centers/national-minerals-information-center/cement-statistics-and-information",
+      "upstream_ids": [
+        "USGS-CEMENT-PRODUCER-SURVEY",
+        "US-CENSUS-CEMENT-TRADE"
+      ],
+      "integrity_status": "Not acquired in this run; no durable reviewed numeric extract."
+    },
+    {
+      "id": "fed_g17_fresh",
+      "url": "https://www.federalreserve.gov/releases/g17/current/default.htm",
+      "upstream_ids": [
+        "FRB-G17",
+        "US-CENSUS-INDUSTRIAL-BENCHMARKS",
+        "US-BLS-PRODUCTION-WORKER-HOURS",
+        "USGS-MINERALS"
+      ],
+      "integrity_status": "Exact selected cells/text matched actual tool representation; original publisher bytes unavailable"
+    }
+  ],
+  "delivery_key": "industry:industry-suite-manual-2026-09-30-repair-test-1:8f0b5345bb07b0427cbf4c6882e88be4e7ff0c0d339ac1cd5dfa24e20c85c2be",
+  "invocation_kind": "authorized_manual_repair_test",
+  "scheduled_occurrence_consumed": false
+}

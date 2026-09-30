@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "delivery_key": "consumer:consumer-suite-manual-2026-09-30-repair-test-1:f5120db0c10f7138b6947c0e5a4112e8f4293c8d7a50b9723bc65c79f26a6b50",
+  "domain": "consumer",
+  "run_id": "consumer-suite-manual-2026-09-30-repair-test-1",
+  "report_version": 3,
+  "report_kind": "final_hypothesis_test",
+  "received_at_utc": "2026-09-30T19:35:17Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "4dfcd3ecc2bae6c7d0347150a27a8e640fd54a5f",
+    "staging_path": "evidence/research/pending/consumer/consumer-suite-manual-2026-09-30-repair-test-1/f5120db0c10f7138b6947c0e5a4112e8f4293c8d7a50b9723bc65c79f26a6b50/"
+  },
+  "integrity": {
+    "report_sha256": "f5120db0c10f7138b6947c0e5a4112e8f4293c8d7a50b9723bc65c79f26a6b50",
+    "report_bytes": 12925,
+    "envelope_sha256": "773db790a1a280ae1dedb88b7e9e16810eafeab25d99db1af091573fc140eef2",
+    "envelope_bytes": 4852,
+    "verified": true,
+    "method": "Complete exact immutable Git bytes, independent tree sizes and SHA256/identity checks; private producer source bytes also matched."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/consumer/consumer-suite-manual-2026-09-30-repair-test-1/f5120db0c10f7138b6947c0e5a4112e8f4293c8d7a50b9723bc65c79f26a6b50/Report.md",
+    "envelope": "evidence/research/consumer/consumer-suite-manual-2026-09-30-repair-test-1/f5120db0c10f7138b6947c0e5a4112e8f4293c8d7a50b9723bc65c79f26a6b50/report-envelope.json",
+    "intake": "evidence/research/consumer/consumer-suite-manual-2026-09-30-repair-test-1/f5120db0c10f7138b6947c0e5a4112e8f4293c8d7a50b9723bc65c79f26a6b50/intake.json"
+  },
+  "supersedes": [
+    {
+      "run_id": "consumer-suite-manual-2026-09-30-repair-test-1",
+      "report_sha256": "b458121892e6d269ec28828a4b21723aaf02eeef44b923f553dc3e33f66ec6e6",
+      "report_version": 2,
+      "reason": "Correct current-versus-historical limitations, clarify variables and rounded precision, and remove repetitive/irrelevant prose. No new source acquisition or changed numerical inputs."
+    }
+  ],
+  "notes": [
+    "Registered one-time manual test, not a weekly scheduled occurrence.",
+    "Producer packaging correction preserves earlier frozen private version; that superseded version was not canonically accepted by Market.",
+    "Original publisher bodies and full private evidence package were not received by this public transport; source age/ancestry and uncertainty remain explicit.",
+    "Unavailable-source record timestamps denote status review, not verified publisher retrieval.",
+    "The September30 BEA release vintage overlaps direct Market BEA observations; source dependence must be preserved."
+  ]
+}

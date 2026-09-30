@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "delivery_key": "housing:housing-suite-manual-2026-09-30-repair-test-1:a11157ac13c71142d80559f60084d2925e9a1b635b35a912e49cc5cee0bbdfef",
+  "domain": "housing",
+  "run_id": "housing-suite-manual-2026-09-30-repair-test-1",
+  "report_version": 3,
+  "report_kind": "final_hypothesis_test",
+  "received_at_utc": "2026-09-30T19:35:17Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "4dfcd3ecc2bae6c7d0347150a27a8e640fd54a5f",
+    "staging_path": "evidence/research/pending/housing/housing-suite-manual-2026-09-30-repair-test-1/a11157ac13c71142d80559f60084d2925e9a1b635b35a912e49cc5cee0bbdfef/"
+  },
+  "integrity": {
+    "report_sha256": "a11157ac13c71142d80559f60084d2925e9a1b635b35a912e49cc5cee0bbdfef",
+    "report_bytes": 15850,
+    "envelope_sha256": "cf11638b32367dfd8f8a5429321eb4a86f7b28bf67b84265a0aeb843b3dbf840",
+    "envelope_bytes": 5055,
+    "verified": true,
+    "method": "Complete exact immutable Git bytes, independent tree sizes and SHA256/identity checks; private producer source bytes also matched."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/housing/housing-suite-manual-2026-09-30-repair-test-1/a11157ac13c71142d80559f60084d2925e9a1b635b35a912e49cc5cee0bbdfef/Report.md",
+    "envelope": "evidence/research/housing/housing-suite-manual-2026-09-30-repair-test-1/a11157ac13c71142d80559f60084d2925e9a1b635b35a912e49cc5cee0bbdfef/report-envelope.json",
+    "intake": "evidence/research/housing/housing-suite-manual-2026-09-30-repair-test-1/a11157ac13c71142d80559f60084d2925e9a1b635b35a912e49cc5cee0bbdfef/intake.json"
+  },
+  "supersedes": [
+    {
+      "run_id": "housing-suite-manual-2026-09-30-repair-test-1",
+      "report_sha256": "220e14bfbb631791fd7acca29cd75ec2dd5a7f8c9880c86ebb1390e607c324b2",
+      "report_version": 2,
+      "reason": "Correct current-versus-historical limitations, clarify variables and rounded precision, and remove repetitive/irrelevant prose. No new source acquisition or changed numerical inputs."
+    }
+  ],
+  "notes": [
+    "Registered one-time manual test, not a weekly scheduled occurrence.",
+    "Producer packaging correction preserves earlier frozen private version; that superseded version was not canonically accepted by Market.",
+    "Original publisher bodies and full private evidence package were not received by this public transport; source age/ancestry and uncertainty remain explicit.",
+    "Unavailable-source record timestamps denote status review, not verified publisher retrieval."
+  ]
+}
