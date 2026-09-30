@@ -160,3 +160,7 @@ No active forecast expired. Credit and Labor September 28 packets were integrity
 ## v0.2.17 — 2026-09-29
 
 No active forecast expired. Four staged upstream reports were byte/hash verified and canonically received; none supplies a fresh independent macro vote. Fresh JOLTS and Consumer Confidence evidence raises delayed-demand risk while partial oil-supply normalization weakens the assumption of a monotonically worsening energy shock. After the Skeptic pass, weights move from H001 0.36 / H002 0.12 / H003 0.40 / H004 0.12 to **H001 0.36 / H002 0.14 / H003 0.38 / H004 0.12**. No causal edge changes. P000031 is registered at p=0.57 for first-release September payroll growth below 100K. Learning remains unassessable at n=22. See `meta/model_changes/2026-09-29-v0.2.17.md`.
+
+## v0.2.15 historical-entry reconciliation — recorded September 30, 2026
+
+The [September 25 v0.2.15 model-change record](model_changes/2026-09-25-v0.2.15.md) remains the original dated account of that cycle. It was saved separately after the connected write path rejected a safe update of this cumulative changelog. This append restores discoverability without changing its September 25 date, evidence cutoff, claims, hypothesis history, or the current model version. The [corresponding hypothesis-weight record](hypothesis_weights/2026-09-25-v0.2.15.json) and [weekly review](../evaluations/2026-09-25-weekly-review.md) remain preserved. This is a bookkeeping repair, not a new model update or predictive-learning claim.
