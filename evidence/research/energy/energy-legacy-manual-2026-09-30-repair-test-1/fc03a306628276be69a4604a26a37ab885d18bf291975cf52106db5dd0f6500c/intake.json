@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "delivery_key": "energy:energy-legacy-manual-2026-09-30-repair-test-1:fc03a306628276be69a4604a26a37ab885d18bf291975cf52106db5dd0f6500c",
+  "domain": "energy",
+  "run_id": "energy-legacy-manual-2026-09-30-repair-test-1",
+  "report_version": 2,
+  "report_kind": "final_hypothesis_test",
+  "received_at_utc": "2026-09-30T19:53:37Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "78c3d1369132faafee58e6160f435ada29361259",
+    "staging_path": "evidence/research/pending/energy/energy-legacy-manual-2026-09-30-repair-test-1/fc03a306628276be69a4604a26a37ab885d18bf291975cf52106db5dd0f6500c/"
+  },
+  "integrity": {
+    "report_sha256": "fc03a306628276be69a4604a26a37ab885d18bf291975cf52106db5dd0f6500c",
+    "report_bytes": 6952,
+    "envelope_sha256": "70d8a7f6e1354cd8824bfac322602211d306e87e23d165377e24f18430944caf",
+    "envelope_bytes": 6934,
+    "verified": true,
+    "method": "Complete immutable Git bytes, tree sizes and SHA256/identity checks; source producer bytes matched."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/energy/energy-legacy-manual-2026-09-30-repair-test-1/fc03a306628276be69a4604a26a37ab885d18bf291975cf52106db5dd0f6500c/Report.md",
+    "envelope": "evidence/research/energy/energy-legacy-manual-2026-09-30-repair-test-1/fc03a306628276be69a4604a26a37ab885d18bf291975cf52106db5dd0f6500c/report-envelope.json",
+    "intake": "evidence/research/energy/energy-legacy-manual-2026-09-30-repair-test-1/fc03a306628276be69a4604a26a37ab885d18bf291975cf52106db5dd0f6500c/intake.json"
+  },
+  "supersedes": [
+    "62d08baca4cdb0c4a61860d14589b7be55cea3453e5d7befe27f47feb673e554"
+  ],
+  "notes": [
+    "Registered manual test; no scheduled occurrence consumed.",
+    "Earlier packaging draft preserved privately; no additional evidence vote.",
+    "Fresh calculations use retained acquisitions; collection timestamps do not establish publisher publication times."
+  ]
+}

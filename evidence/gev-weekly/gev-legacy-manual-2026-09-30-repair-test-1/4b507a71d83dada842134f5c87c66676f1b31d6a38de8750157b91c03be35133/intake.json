@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "delivery_key": "gev-legacy-manual-2026-09-30-repair-test-1:4b507a71d83dada842134f5c87c66676f1b31d6a38de8750157b91c03be35133",
+  "domain": "gev",
+  "run_id": "gev-legacy-manual-2026-09-30-repair-test-1",
+  "report_version": 2,
+  "report_kind": "final_hypothesis_test",
+  "received_at_utc": "2026-09-30T19:53:37Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "78c3d1369132faafee58e6160f435ada29361259",
+    "staging_path": "evidence/research/pending/gev/gev-legacy-manual-2026-09-30-repair-test-1/4b507a71d83dada842134f5c87c66676f1b31d6a38de8750157b91c03be35133/"
+  },
+  "integrity": {
+    "report_sha256": "4b507a71d83dada842134f5c87c66676f1b31d6a38de8750157b91c03be35133",
+    "report_bytes": 7282,
+    "envelope_sha256": "33c524c91b95d9bed783b6ddcb96517d79b80a9fa3d3a10eac95f0510c0da609",
+    "envelope_bytes": 2670,
+    "verified": true,
+    "method": "Complete immutable Git bytes, tree sizes and SHA256/identity checks; source producer bytes matched."
+  },
+  "canonical_archive": {
+    "report": "evidence/gev-weekly/gev-legacy-manual-2026-09-30-repair-test-1/4b507a71d83dada842134f5c87c66676f1b31d6a38de8750157b91c03be35133/Report.md",
+    "envelope": "evidence/gev-weekly/gev-legacy-manual-2026-09-30-repair-test-1/4b507a71d83dada842134f5c87c66676f1b31d6a38de8750157b91c03be35133/report-envelope.json",
+    "intake": "evidence/gev-weekly/gev-legacy-manual-2026-09-30-repair-test-1/4b507a71d83dada842134f5c87c66676f1b31d6a38de8750157b91c03be35133/intake.json"
+  },
+  "supersedes": [
+    "8bbadd86540766adfddde28410d0021e3cdf3c2155157fe01b41562feb227649"
+  ],
+  "notes": [
+    "Registered manual test; no scheduled occurrence consumed.",
+    "Earlier packaging draft was preserved privately and not accepted canonically; no additional investigation or evidence vote.",
+    "Fresh calculations use retained acquisitions; publisher publication times remain unknown where not established.",
+    "GEV aircraft/catalog ancestry is separate from petroleum; no EIA measurement appears in this GEV report."
+  ]
+}
