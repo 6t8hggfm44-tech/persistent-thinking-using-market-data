@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "delivery_key": "corporate:corporate-suite-manual-2026-09-30-repair-test-1:11fbab7d6822e3379d095051121820391add2f38cccebdfef1ebf62ad1e8171d",
+  "domain": "corporate",
+  "run_id": "corporate-suite-manual-2026-09-30-repair-test-1",
+  "report_sha256": "11fbab7d6822e3379d095051121820391add2f38cccebdfef1ebf62ad1e8171d",
+  "report_bytes": 11219,
+  "envelope_sha256": "7cd297db66f70727434477697390fa65b4f5e7d3544f579673f6f326c554821c",
+  "envelope_bytes": 6611,
+  "producer_repository": "6t8hggfm44-tech/-Corporate-behavior-",
+  "producer_commit": "10119473d487246494523d7442e82369fdcdc189",
+  "producer_report_path": "reports/corporate-suite-manual-2026-09-30-repair-test-1/11fbab7d6822e3379d095051121820391add2f38cccebdfef1ebf62ad1e8171d/Report.md",
+  "prepared_at_utc": "2026-09-30T19:31:56.149177+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Complete reviewed final prose and original shareable envelope only; private operational checkpoint, evidence package and publisher bodies are not included.",
+    "A packaging correction supersedes an earlier producer version that Market did not canonically accept; this is not another investigation or evidence vote.",
+    "Staging is not receiver receipt, acknowledgment or canonical persistence."
+  ]
+}

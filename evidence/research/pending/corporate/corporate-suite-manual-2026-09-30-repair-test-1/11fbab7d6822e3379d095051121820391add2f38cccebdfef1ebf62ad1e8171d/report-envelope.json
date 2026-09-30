@@ -1,0 +1,125 @@
+{
+  "domain": "corporate",
+  "run_id": "corporate-suite-manual-2026-09-30-repair-test-1",
+  "report_version": 3,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "26e0e5b3109102c24b4fba47a4309d4a2ad643b1",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-09-23T00:00:00Z",
+    "end": "2026-09-30T00:00:00Z"
+  },
+  "actual_coverage": {
+    "original_report_coverage": {
+      "requested_analysis_date": "2026-09-29",
+      "geography": "United States",
+      "measured_source_ids": [
+        "bea_corporate_profits",
+        "bls_jolts",
+        "microsoft_fy2026q4"
+      ],
+      "numeric_cell_count": 32,
+      "indicator_roster": {
+        "Capital expenditure and investment plans": "Partial: no verified cash capex/lease reconciliation",
+        "Hiring freezes and vacancies": "Partial: aggregate openings only; issuer hiring freezes untested",
+        "Layoff announcements and realized layoffs": "Partial: JOLTS aggregate flows; no matched announcement outcomes",
+        "Corporate inventories and working capital": "Unmeasured: no compatible inventory-turnover/working-capital panel",
+        "Share repurchases authorized versus executed": "Unmeasured: no isolated executed buyback cells",
+        "Insider transactions and transaction-code context (adapter not implemented)": "Unimplemented dedicated adapter",
+        "Management guidance and revisions": "Unmeasured: no guidance-vintage comparison",
+        "Earnings, margins and cash flow": "Measured: issuer income identities; cash conversion blocked",
+        "Mergers and acquisitions announced versus completed": "Unmeasured: HSR index only; no completed deals",
+        "Restructuring charges, closures and cash payments": "Unmeasured: no matched charge/payment data"
+      },
+      "scope": "Bounded scheduled investigation using verified retained extracts; no monthly or quarterly observations interpolated into weeks",
+      "new_provider_observations": 0
+    },
+    "new_run_category": "new_vintage_same_observation_periods",
+    "source_commands_this_run": 1,
+    "newer_release_vintages_this_run": 1,
+    "original_report_run": "corporate-suite-weekly-2026-09-29",
+    "original_report_sha256": "67b2ac6b62587e8be9b81457c5a7c47f7e1c508c30be8e2a37a8b54437f8725a",
+    "scientific_classification": "exploratory; prior exposure recorded",
+    "fresh_numeric_cells": 2
+  },
+  "limitations": [
+    "Quarterly overview units are USD billions with IVA/CCAdj; the retrieved page does not restate annualization, so no unsupported SAAR label is added.",
+    "The 8.88% figure is a ratio of displayed quarterly levels. It is not annualized growth and does not measure cash flow. Rounded-level subtraction is not a check of unrounded official changes.",
+    "No new issuer panel, capital-expenditure/cash-flow reconciliation, industry profit breakdown or causal controls were acquired.",
+    "The investigation is exploratory: prior domain reports and numerical results were known before these comparisons. No prospective, causal or out-of-sample validation is established.",
+    "Retained selections are verified tool representations, not original publisher-body hashes. Connected upstream HTTP requests, bytes and redirects are not exposed."
+  ],
+  "supersedes": [
+    {
+      "run_id": "corporate-suite-manual-2026-09-30-repair-test-1",
+      "report_sha256": "44924d9a57091e4fe68d0894d78ce21180f65ee385595adf2f8e2066c640e6f5",
+      "report_version": 2,
+      "reason": "Correct current-versus-historical limitations, clarify variables and rounded precision, and remove repetitive/irrelevant prose. No new source acquisition or changed numerical inputs."
+    }
+  ],
+  "evidence_cutoff_utc": "2026-09-30T19:23:49.101170+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-30T19:26:58.151854+00:00",
+  "available_at_utc": "2026-09-30T19:26:58.151854+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "11fbab7d6822e3379d095051121820391add2f38cccebdfef1ebf62ad1e8171d",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "abd6818e4b8319b1be1c4c732fa4f8f0c5e3ac03b2ceb5b2c6da5386e87ffa97",
+  "sources": [
+    {
+      "id": "bea_corporate_profits",
+      "url": "https://www.bea.gov/data/income-saving/corporate-profits",
+      "upstream_ids": [
+        "US-BEA-NIPA-CORPORATE-PROFITS",
+        "US-IRS-CORPORATE-TAX",
+        "US-CENSUS-QFR"
+      ],
+      "integrity_status": "Exact tool-representation hash and retained numeric strings verified; original publisher byte identity unavailable; semantic review explicitly recorded."
+    },
+    {
+      "id": "bls_jolts",
+      "url": "https://www.bls.gov/news.release/jolts.nr0.htm",
+      "upstream_ids": [
+        "bls:job-openings-and-labor-turnover-survey"
+      ],
+      "integrity_status": "Exact tool-representation hash and retained numeric strings verified; original publisher byte identity unavailable; semantic review explicitly recorded."
+    },
+    {
+      "id": "microsoft_fy2026q4",
+      "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast",
+      "upstream_ids": [
+        "ISSUER-MSFT-FY2026Q4"
+      ],
+      "integrity_status": "Exact tool-representation hash and retained numeric strings verified; original publisher byte identity unavailable; semantic review explicitly recorded."
+    },
+    {
+      "id": "census_qfr",
+      "url": "https://www.census.gov/econ/qfr/index.html",
+      "upstream_ids": [
+        "US-CENSUS-QFR"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    },
+    {
+      "id": "ftc_hsr",
+      "url": "https://www.ftc.gov/policy/reports/annual-competition-reports",
+      "upstream_ids": [
+        "US-FTC-DOJ-HSR-FILINGS"
+      ],
+      "integrity_status": "Representation hash recorded; no publisher byte identity or economic evidence completeness asserted."
+    },
+    {
+      "id": "bea_corporate_profits_fresh",
+      "url": "https://www.bea.gov/data/income-saving/corporate-profits",
+      "upstream_ids": [
+        "US-BEA-NIPA-CORPORATE-PROFITS",
+        "US-IRS-CORPORATE-TAX",
+        "US-CENSUS-QFR"
+      ],
+      "integrity_status": "Exact selected cells/text matched actual tool representation; original publisher bytes unavailable"
+    }
+  ],
+  "delivery_key": "corporate:corporate-suite-manual-2026-09-30-repair-test-1:11fbab7d6822e3379d095051121820391add2f38cccebdfef1ebf62ad1e8171d",
+  "invocation_kind": "authorized_manual_repair_test",
+  "scheduled_occurrence_consumed": false
+}

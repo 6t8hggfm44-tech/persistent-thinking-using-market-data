@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "delivery_key": "labor:labor-suite-manual-2026-09-30-repair-test-1:c1e37283ead394763ec77eb4fdd9b95070f5486b17b48d3b86bd4c0c206df7b2",
+  "domain": "labor",
+  "run_id": "labor-suite-manual-2026-09-30-repair-test-1",
+  "report_sha256": "c1e37283ead394763ec77eb4fdd9b95070f5486b17b48d3b86bd4c0c206df7b2",
+  "report_bytes": 11855,
+  "envelope_sha256": "92e27440f4e652b20fcf894b0b24373dbef838c0604bd2194c002c9f4bd49219",
+  "envelope_bytes": 4696,
+  "producer_repository": "6t8hggfm44-tech/-Labor-market-agent",
+  "producer_commit": "5df55f02167a5717f94bc5bc3ec742674a073e7b",
+  "producer_report_path": "reports/labor-suite-manual-2026-09-30-repair-test-1/c1e37283ead394763ec77eb4fdd9b95070f5486b17b48d3b86bd4c0c206df7b2/Report.md",
+  "prepared_at_utc": "2026-09-30T19:31:56.148397+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Complete reviewed final prose and original shareable envelope only; private operational checkpoint, evidence package and publisher bodies are not included.",
+    "A packaging correction supersedes an earlier producer version that Market did not canonically accept; this is not another investigation or evidence vote.",
+    "Staging is not receiver receipt, acknowledgment or canonical persistence."
+  ]
+}

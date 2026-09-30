@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "delivery_key": "industry:industry-suite-manual-2026-09-30-repair-test-1:8f0b5345bb07b0427cbf4c6882e88be4e7ff0c0d339ac1cd5dfa24e20c85c2be",
+  "domain": "industry",
+  "run_id": "industry-suite-manual-2026-09-30-repair-test-1",
+  "report_sha256": "8f0b5345bb07b0427cbf4c6882e88be4e7ff0c0d339ac1cd5dfa24e20c85c2be",
+  "report_bytes": 15825,
+  "envelope_sha256": "57b2e7c8e8e31964a16bfe75eb5615b4738f337dd04b02ce31caffe585cd3bd3",
+  "envelope_bytes": 5023,
+  "producer_repository": "6t8hggfm44-tech/-Industrial-production-",
+  "producer_commit": "01ddfe92b10c09ea3ce238bc6ae578ee302ae117",
+  "producer_report_path": "reports/industry-suite-manual-2026-09-30-repair-test-1/8f0b5345bb07b0427cbf4c6882e88be4e7ff0c0d339ac1cd5dfa24e20c85c2be/Report.md",
+  "prepared_at_utc": "2026-09-30T19:31:56.149553+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Complete reviewed final prose and original shareable envelope only; private operational checkpoint, evidence package and publisher bodies are not included.",
+    "A packaging correction supersedes an earlier producer version that Market did not canonically accept; this is not another investigation or evidence vote.",
+    "Staging is not receiver receipt, acknowledgment or canonical persistence."
+  ]
+}

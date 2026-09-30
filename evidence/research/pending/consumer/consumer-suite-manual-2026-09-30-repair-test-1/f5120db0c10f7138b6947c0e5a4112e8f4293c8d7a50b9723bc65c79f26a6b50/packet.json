@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "delivery_key": "consumer:consumer-suite-manual-2026-09-30-repair-test-1:f5120db0c10f7138b6947c0e5a4112e8f4293c8d7a50b9723bc65c79f26a6b50",
+  "domain": "consumer",
+  "run_id": "consumer-suite-manual-2026-09-30-repair-test-1",
+  "report_sha256": "f5120db0c10f7138b6947c0e5a4112e8f4293c8d7a50b9723bc65c79f26a6b50",
+  "report_bytes": 12925,
+  "envelope_sha256": "773db790a1a280ae1dedb88b7e9e16810eafeab25d99db1af091573fc140eef2",
+  "envelope_bytes": 4852,
+  "producer_repository": "6t8hggfm44-tech/-Consumer-activity-",
+  "producer_commit": "38ed45470671987370299a328ace92d4acc97919",
+  "producer_report_path": "reports/consumer-suite-manual-2026-09-30-repair-test-1/f5120db0c10f7138b6947c0e5a4112e8f4293c8d7a50b9723bc65c79f26a6b50/Report.md",
+  "prepared_at_utc": "2026-09-30T19:31:56.148706+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Complete reviewed final prose and original shareable envelope only; private operational checkpoint, evidence package and publisher bodies are not included.",
+    "A packaging correction supersedes an earlier producer version that Market did not canonically accept; this is not another investigation or evidence vote.",
+    "Staging is not receiver receipt, acknowledgment or canonical persistence."
+  ]
+}
