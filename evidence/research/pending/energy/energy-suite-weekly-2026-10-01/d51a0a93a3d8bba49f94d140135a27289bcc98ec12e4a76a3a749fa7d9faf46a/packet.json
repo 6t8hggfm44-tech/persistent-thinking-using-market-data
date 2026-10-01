@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "delivery_key": "energy:energy-suite-weekly-2026-10-01:d51a0a93a3d8bba49f94d140135a27289bcc98ec12e4a76a3a749fa7d9faf46a",
+  "domain": "energy",
+  "run_id": "energy-suite-weekly-2026-10-01",
+  "report_sha256": "d51a0a93a3d8bba49f94d140135a27289bcc98ec12e4a76a3a749fa7d9faf46a",
+  "report_bytes": 8831,
+  "envelope_sha256": "3814744f0e63965d47b7336f601bfff385254124b069af224d80c45dc99629b9",
+  "envelope_bytes": 9577,
+  "producer_repository": "6t8hggfm44-tech/-Energy",
+  "producer_commit": "6e325681c2887a63c3c78a4cb7bbb356a63173fd",
+  "producer_report_path": "reports/energy-suite-weekly-2026-10-01/d51a0a93a3d8bba49f94d140135a27289bcc98ec12e4a76a3a749fa7d9faf46a/Report.md",
+  "prepared_at_utc": "2026-10-01T22:28:39.640791+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact final report and shareable envelope only; full private evidence package and raw source representations not transported.",
+    "Staging does not establish Market receipt, acknowledgment, canonical intake or forecast availability.",
+    "Physical source dates remain lagged and petroleum is shared EIA evidence; no independent evidence vote from reuse."
+  ],
+  "source_ancestry": [
+    "EIA_US_weekly_petroleum",
+    "EIA_petroleum",
+    "eia:electric-power-monthly",
+    "eia:series:WCESTUS1",
+    "eia:series:WCREXUS2",
+    "eia:series:WCRFPUS2",
+    "eia:series:WCRIMUS2",
+    "eia:series:WCRRIUS2",
+    "eia:series:WCSSTUS1",
+    "eia:series:WDISTUS1",
+    "eia:series:WDIUPUS2",
+    "eia:series:WGFUPUS2",
+    "eia:series:WGTSTUS1",
+    "eia:series:WKJUPUS2",
+    "eia:series:WPULEUS3",
+    "eia:survey:EIA-861M",
+    "eia:survey:EIA-912",
+    "eia:survey:EIA-923",
+    "eia:weekly-natural-gas-storage"
+  ]
+}
