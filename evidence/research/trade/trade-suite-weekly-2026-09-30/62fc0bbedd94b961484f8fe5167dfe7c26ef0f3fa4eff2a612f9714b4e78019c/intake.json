@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "delivery_key": "trade:trade-suite-weekly-2026-09-30:62fc0bbedd94b961484f8fe5167dfe7c26ef0f3fa4eff2a612f9714b4e78019c",
+  "domain": "trade",
+  "run_id": "trade-suite-weekly-2026-09-30",
+  "report_version": 1,
+  "report_kind": "final_evidence_gap",
+  "received_at_utc": "2026-09-30T20:03:49Z",
+  "source_packet": {
+    "staging_commit": "00d85f6431b313c4d63882f4387f9025bf0dabdd",
+    "staging_path": "evidence/research/pending/trade/trade-suite-weekly-2026-09-30/62fc0bbedd94b961484f8fe5167dfe7c26ef0f3fa4eff2a612f9714b4e78019c/"
+  },
+  "integrity": {
+    "report_sha256": "62fc0bbedd94b961484f8fe5167dfe7c26ef0f3fa4eff2a612f9714b4e78019c",
+    "report_bytes": 6884,
+    "envelope_sha256": "2914ac6640721844cfca08d42bf54eac43b645af636fd0f685758f6cc336f6af",
+    "envelope_bytes": 3972,
+    "verified": true
+  },
+  "supersedes": []
+}

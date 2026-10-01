@@ -1,0 +1,122 @@
+{
+  "domain": "geopolitics",
+  "run_id": "geopolitics-suite-weekly-2026-10-01",
+  "report_version": 1,
+  "report_kind": "final_evidence_gap",
+  "workflow_commit": "d7e52e8edb657751ba5678039543cf2b9452094d",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-09-24T19:00:00Z",
+    "end": "2026-10-01T19:00:00Z"
+  },
+  "actual_coverage": {
+    "requested_geography": "Red Sea civilian-commerce high-level hard-power case",
+    "original_current_week_event_documents": 0,
+    "current_source_representation": "IMO aggregate page observed October 1; dates of cumulative endpoints unspecified",
+    "historical_context": "September 22 retained IMO/OFAC/BIS/IDEA extracts; prior document-access outcomes preserved",
+    "measurement": "Three selected cumulative incident cells at two retrieval dates; one underlying IMO/member-state notification family",
+    "event_verdict": "insufficient_evidence",
+    "economic_transmission": "not_tested"
+  },
+  "limitations": [
+    "Current-week original hard-power event evidence remains insufficient; two scoped searches returning no candidates do not establish absence of events.",
+    "Cumulative incident endpoint and exposure denominator unavailable; unchanged displayed cells do not establish no additional incidents.",
+    "Tool extracts and retained evidence are not original publisher bodies; source publication/update time is unknown.",
+    "Economic outcomes and controls missing; transmission not tested.",
+    "Red Sea case scope is not a global conflict, sanctions, election or instability survey."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-10-01T19:12:44.658291+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-01T19:16:50.148733+00:00",
+  "available_at_utc": "2026-10-01T19:16:50.148733+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "86e8a39f8f06f844dcc3af83955c11965a14253ce92341aa8cc9b615d6110dee",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "89e2d08b60dc4fb2e34014fa9fa683369b83e6f63b5e5b22bd8e87671fe130b4",
+  "sources": [
+    {
+      "id": "imo_red_sea_prior",
+      "url": "https://www.imo.org/en/mediacentre/hottopics/pages/red-sea.aspx",
+      "upstream_ids": [
+        "imo-confirmed-maritime-incident-reports",
+        "member-state-incident-notifications"
+      ],
+      "integrity_status": "Exact retained UTF-8 bytes verified; tool representation identity only, original publisher body unverified."
+    },
+    {
+      "id": "imo_red_sea_current",
+      "url": "https://www.imo.org/en/mediacentre/hottopics/pages/red-sea.aspx",
+      "upstream_ids": [
+        "imo-confirmed-maritime-incident-reports",
+        "member-state-incident-notifications"
+      ],
+      "integrity_status": "Exact retained UTF-8 bytes verified; tool representation identity only, original publisher body unverified."
+    },
+    {
+      "id": "us_ofac_actions",
+      "url": "https://ofac.treasury.gov/recent-actions",
+      "upstream_ids": [
+        "us-treasury-ofac-official-actions"
+      ],
+      "integrity_status": "Exact retained UTF-8 bytes verified; tool representation identity only, original publisher body unverified."
+    },
+    {
+      "id": "us_bis_updates",
+      "url": "https://www.bis.gov/news-updates",
+      "upstream_ids": [
+        "us-commerce-bis-official-actions",
+        "us-federal-register"
+      ],
+      "integrity_status": "Exact retained UTF-8 bytes verified; tool representation identity only, original publisher body unverified."
+    },
+    {
+      "id": "idea_democracy_tracker",
+      "url": "https://www.idea.int/democracytracker/",
+      "upstream_ids": [
+        "international-idea-assessments",
+        "country-election-authorities",
+        "underlying-news-and-official-records"
+      ],
+      "integrity_status": "Exact retained UTF-8 bytes verified; tool representation identity only, original publisher body unverified."
+    },
+    {
+      "id": "us_centcom_public_releases",
+      "url": "https://www.centcom.mil/MEDIA/PRESS-RELEASES/",
+      "upstream_ids": [
+        "us-centcom-public-statements",
+        "attributed-participant-claims"
+      ],
+      "integrity_status": "Known returned search outcome"
+    },
+    {
+      "id": "uk_mod_public_statements",
+      "url": "https://www.gov.uk/government/organisations/ministry-of-defence",
+      "upstream_ids": [
+        "uk-mod-original-public-statements",
+        "attributed-participant-claims"
+      ],
+      "integrity_status": "Known returned search outcome"
+    },
+    {
+      "id": "ukmto_public_reports",
+      "url": "https://www.ukmto.org/indian-ocean",
+      "upstream_ids": [
+        "ukmto-public-maritime-reporting",
+        "member-state-incident-notifications"
+      ],
+      "integrity_status": "Verified saved limited access record; not event evidence."
+    },
+    {
+      "id": "un_security_council_records",
+      "url": "https://docs.un.org/",
+      "upstream_ids": [
+        "un-security-council-official-records",
+        "un-secretariat-reporting",
+        "member-state-submissions"
+      ],
+      "integrity_status": "Verified saved limited access record; not event evidence."
+    }
+  ],
+  "delivery_key": "geopolitics:geopolitics-suite-weekly-2026-10-01:86e8a39f8f06f844dcc3af83955c11965a14253ce92341aa8cc9b615d6110dee"
+}

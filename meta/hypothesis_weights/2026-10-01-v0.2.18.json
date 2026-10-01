@@ -1,0 +1,29 @@
+{
+  "effective_at": "2026-10-01T21:42:46Z",
+  "model_version": "0.2.18",
+  "weights_before": {
+    "H001": 0.36,
+    "H002": 0.14,
+    "H003": 0.38,
+    "H004": 0.12
+  },
+  "weights_after": {
+    "H001": 0.36,
+    "H002": 0.13,
+    "H003": 0.39,
+    "H004": 0.12
+  },
+  "leader": "H003",
+  "changes": {
+    "H001": 0,
+    "H002": -0.01,
+    "H003": 0.01,
+    "H004": 0
+  },
+  "rationale": {
+    "H001": "Low layoffs and stronger activity preserve the soft-landing path, but the sharp ISM prices reading prevents an upgrade.",
+    "H002": "197K initial claims, lower insured unemployment, stronger new orders/employment, and +0.9% August construction modestly reduce near-term delayed-contraction weight; JOLTS/confidence softness still keeps the branch material.",
+    "H003": "Strong activity coexists with ISM prices 77.9 and slow supplier deliveries, modestly strengthening the inflation/policy-constraint branch; the P000030 miss and survey-to-realized-price gap cap the increase.",
+    "H004": "No new output-per-input or productivity evidence."
+  }
+}

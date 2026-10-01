@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "delivery_key": "agriculture:agriculture-suite-weekly-2026-10-01:38421dc3ec855eb10e112ff812deafcc3d7f733cb3fe0f01459d00da562087a3",
+  "domain": "agriculture",
+  "run_id": "agriculture-suite-weekly-2026-10-01",
+  "report_version": 1,
+  "report_kind": "final_evidence_gap",
+  "received_at_utc": "2026-10-01T21:42:46Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "cb29aae9aaf583dd06c23d44f3e0642602512ecd",
+    "staging_path": "evidence/research/pending/agriculture/agriculture-suite-weekly-2026-10-01/38421dc3ec855eb10e112ff812deafcc3d7f733cb3fe0f01459d00da562087a3/"
+  },
+  "integrity": {
+    "report_sha256": "38421dc3ec855eb10e112ff812deafcc3d7f733cb3fe0f01459d00da562087a3",
+    "report_bytes": 10754,
+    "envelope_sha256": "5cf0b22a5f3662bcc08ef6a7f8b9e67f1a9d558b0a756909751fa2c213b8a414",
+    "envelope_bytes": 4353,
+    "verified": true,
+    "method": "Exact connector UTF-8 reconstruction from the immutable staged packet; receiver recomputed SHA-256 and byte lengths and matched packet fields."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/agriculture/agriculture-suite-weekly-2026-10-01/38421dc3ec855eb10e112ff812deafcc3d7f733cb3fe0f01459d00da562087a3/Report.md",
+    "envelope": "evidence/research/agriculture/agriculture-suite-weekly-2026-10-01/38421dc3ec855eb10e112ff812deafcc3d7f733cb3fe0f01459d00da562087a3/report-envelope.json",
+    "intake": "evidence/research/agriculture/agriculture-suite-weekly-2026-10-01/38421dc3ec855eb10e112ff812deafcc3d7f733cb3fe0f01459d00da562087a3/intake.json"
+  },
+  "supersedes": [],
+  "notes": [
+    "Zero new numeric source observations; retained USVI groundwater comparisons do not measure national crop supply.",
+    "Zero of fourteen required WASDE balance cells remain available; missingness is not evidence of normal supply."
+  ]
+}

@@ -172,3 +172,12 @@ The [September 25 v0.2.15 model-change record](model_changes/2026-09-25-v0.2.15.
 ## 2026-09-30 manual repair test: reviewed no change
 
 Model0.2.17 and H0010.36/H0020.14/H0030.38/H0040.12 retained at19:56:01Z after all15 inputs. P000030 failure acknowledged before interpretation. No graph edge or forecast added. [Decision](model_changes/2026-09-30-repair-test-no-change.md); [full analysis](../evaluations/2026-09-30-repair-test-1.md).
+
+## v0.2.18 — 2026-10-01
+
+- No forecast newly expired; validated lifetime probability metrics remain n=23, mean Brier 0.219700 and log loss 0.629904.
+- Reconciled the branch-only September 30 Trade intake into main with original receipt time; received and verified Freight, Agriculture and Geopolitics packets without double-counting repeated or missing evidence.
+- Fresh DOL/ISM/Census observations show low layoffs and resilient activity alongside sharply elevated manufacturing input-price pressure.
+- After Skeptic review, H002 falls 0.14 -> 0.13 and H003 rises 0.38 -> 0.39; H001 remains 0.36 and H004 0.12. No causal edge changes.
+- No new forecast; P000031 and P000029 remain the near-term discriminators. No new Universal transfer candidate.
+- See meta/model_changes/2026-10-01-v0.2.18.md and evaluations/2026-10-01-regular-cycle.md.
