@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "delivery_key": "geopolitics:geopolitics-suite-weekly-2026-10-01:86e8a39f8f06f844dcc3af83955c11965a14253ce92341aa8cc9b615d6110dee",
+  "domain": "geopolitics",
+  "run_id": "geopolitics-suite-weekly-2026-10-01",
+  "report_sha256": "86e8a39f8f06f844dcc3af83955c11965a14253ce92341aa8cc9b615d6110dee",
+  "report_bytes": 7724,
+  "envelope_sha256": "4415237547eea92834681bf37626142f93154f7a9f37edf9342410ed2c20b11c",
+  "envelope_bytes": 5329,
+  "producer_repository": "6t8hggfm44-tech/-Geopolitical-risk",
+  "producer_commit": "71d2025becd73d5248b39854416e32e8c4ea20b1",
+  "producer_report_path": "reports/geopolitics-suite-weekly-2026-10-01/86e8a39f8f06f844dcc3af83955c11965a14253ce92341aa8cc9b615d6110dee/Report.md",
+  "prepared_at_utc": "2026-10-01T19:19:16.022949+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Only complete safe final report and original envelope are staged; private inputs/calculations/checkpoints and publisher bodies are not transported.",
+    "Exact report bytes and envelope identity do not establish original publisher body identity or scientific truth.",
+    "Staging is not Market complete receipt, acknowledgment or canonical persistence; next existing regular cycle performs intake.",
+    "Repeated IMO/member-state incident measurements contribute once; current-week event evidence and economic outcomes remain insufficient."
+  ],
+  "source_ancestry": [
+    "attributed-participant-claims",
+    "country-election-authorities",
+    "imo-confirmed-maritime-incident-reports",
+    "international-idea-assessments",
+    "member-state-incident-notifications",
+    "member-state-submissions",
+    "uk-mod-original-public-statements",
+    "ukmto-public-maritime-reporting",
+    "un-secretariat-reporting",
+    "un-security-council-official-records",
+    "underlying-news-and-official-records",
+    "us-centcom-public-statements",
+    "us-commerce-bis-official-actions",
+    "us-federal-register",
+    "us-treasury-ofac-official-actions"
+  ]
+}
