@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "checked_primary_commit": "284d048203b16f356f94459d5e07835561b37f47",
+  "scope": "live_tree_canonical_index_parity",
+  "research": {
+    "canonical_records": 71,
+    "index_rows": 71,
+    "missing_index_keys": [],
+    "index_keys_without_canonical_record": [],
+    "duplicate_index_keys": [],
+    "duplicate_canonical_keys": []
+  },
+  "gev": {
+    "canonical_records": 7,
+    "index_rows": 7,
+    "missing_index_keys": [],
+    "index_keys_without_canonical_record": [],
+    "duplicate_index_keys": [],
+    "duplicate_canonical_keys": []
+  },
+  "new_intake_readback": {
+    "count": 4,
+    "delivery_key_path_matches": 4,
+    "integrity_verified": 4
+  },
+  "passed": true,
+  "execution_note": "Connector-only authenticated private repository access; reproduced tools/check_intake_index.py path/index comparison logic against live tree rather than invoking python3 on a local clone."
+}
