@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "delivery_key": "energy:energy-suite-weekly-2026-10-01:d51a0a93a3d8bba49f94d140135a27289bcc98ec12e4a76a3a749fa7d9faf46a",
+  "domain": "energy",
+  "run_id": "energy-suite-weekly-2026-10-01",
+  "received_at_utc": "2026-10-02T21:52:44Z",
+  "verified": true,
+  "report_sha256": "d51a0a93a3d8bba49f94d140135a27289bcc98ec12e4a76a3a749fa7d9faf46a",
+  "report_bytes": 8831,
+  "envelope_sha256": "3814744f0e63965d47b7336f601bfff385254124b069af224d80c45dc99629b9",
+  "envelope_bytes": 9577,
+  "note": "Exact staged report and envelope SHA-256 and UTF-8 byte counts independently recomputed and matched. Evidence is largely lagged/reused; shared petroleum ancestry receives no duplicate vote."
+}
