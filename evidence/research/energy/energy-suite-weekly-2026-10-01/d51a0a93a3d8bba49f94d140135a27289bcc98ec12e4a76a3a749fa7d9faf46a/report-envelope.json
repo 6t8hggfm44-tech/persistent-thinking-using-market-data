@@ -1,0 +1,187 @@
+{
+  "domain": "energy",
+  "run_id": "energy-suite-weekly-2026-10-01",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "71d65873e4340eb97580537f209fff197a8fcc56",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-09-24T22:00:00Z",
+    "end": "2026-10-01T22:00:00Z"
+  },
+  "actual_coverage": {
+    "requested_week": "September24–October1,2026; no current-week physical observation endpoints in selected numeric sources",
+    "petroleum_bridge": "12series/3420verifiedrows,2021-03-26..2026-09-04;96selectedcells;current-vintagefirstobservedSeptember14",
+    "gas": "Lower48 weekendedSeptember18,September24release;reusedSeptember30extract",
+    "electricity": "50states+DC;July2025/2026 andJanuary-July2025/2026;20cells;September24release",
+    "parent": "CompleteoriginalEnergySeptember30v2;September18sourceweek;sharedEIAfamily",
+    "coverage_gaps": [
+      "hourlyload",
+      "prices",
+      "gridstress",
+      "totalindustrialenergy",
+      "globalgas/LNG",
+      "matchedweathercontrols"
+    ],
+    "source_refresh_cutoff_utc": "2026-10-01T22:18:45.040388+00:00",
+    "reconciliation_cutoff_utc": "2026-10-01T22:26:30.229176+00:00"
+  },
+  "limitations": [
+    "US-only sampled coverage; no complete contemporary or global energy assessment.",
+    "Petroleum bridge ends September4; newer original Energy parent ends September18. Keep distinct vintages and one shared EIA petroleum contribution.",
+    "Gas observation September18, not the current week; current source cooldown preserved. Missing implied-flow and sampling-error cells block those controls.",
+    "Electricity July2026 sales and January-July totals are preliminary; billing timing, classification and weather can affect comparison. No hourly load or gridstress measurement.",
+    "No matched independent weather controls, prices, margins, outages or downstream outcomes; causal growth/inflation/earnings effects not tested.",
+    "Tool extracts verify retained representation, not original publisher bytes or unexposed upstream traffic.",
+    "Exploratory selection, disclosed prior exposure and correlated series; no calibrated probability, first-release backtest or independent replication.",
+    "Historical crude-production cross-vintage discrepancy remains unresolved; no series splicing or prior-version overwrite."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-10-01T22:26:30.229176+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-01T22:26:30.297675+00:00",
+  "available_at_utc": "2026-10-01T22:26:30.297675+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "d51a0a93a3d8bba49f94d140135a27289bcc98ec12e4a76a3a749fa7d9faf46a",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "9593f4a560ab8e3f43a72c3eb4bd48f98ccb4e04fbddecf99a6aaba1cdeeb74d",
+  "sources": [
+    {
+      "id": "WCESTUS1",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCESTUS1&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "eia:series:WCESTUS1"
+      ],
+      "integrity_status": "Bridge file SHA256 and all reconstructed row hashes verified; original body checks are export attestation, not current body reread. Reused once across suite/original Energy."
+    },
+    {
+      "id": "WGTSTUS1",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WGTSTUS1&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "eia:series:WGTSTUS1"
+      ],
+      "integrity_status": "Bridge file SHA256 and all reconstructed row hashes verified; original body checks are export attestation, not current body reread. Reused once across suite/original Energy."
+    },
+    {
+      "id": "WDISTUS1",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WDISTUS1&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "eia:series:WDISTUS1"
+      ],
+      "integrity_status": "Bridge file SHA256 and all reconstructed row hashes verified; original body checks are export attestation, not current body reread. Reused once across suite/original Energy."
+    },
+    {
+      "id": "WCSSTUS1",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCSSTUS1&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "eia:series:WCSSTUS1"
+      ],
+      "integrity_status": "Bridge file SHA256 and all reconstructed row hashes verified; original body checks are export attestation, not current body reread. Reused once across suite/original Energy."
+    },
+    {
+      "id": "WCRRIUS2",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCRRIUS2&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "eia:series:WCRRIUS2"
+      ],
+      "integrity_status": "Bridge file SHA256 and all reconstructed row hashes verified; original body checks are export attestation, not current body reread. Reused once across suite/original Energy."
+    },
+    {
+      "id": "WPULEUS3",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WPULEUS3&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "eia:series:WPULEUS3"
+      ],
+      "integrity_status": "Bridge file SHA256 and all reconstructed row hashes verified; original body checks are export attestation, not current body reread. Reused once across suite/original Energy."
+    },
+    {
+      "id": "WCRFPUS2",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCRFPUS2&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "eia:series:WCRFPUS2"
+      ],
+      "integrity_status": "Bridge file SHA256 and all reconstructed row hashes verified; original body checks are export attestation, not current body reread. Reused once across suite/original Energy."
+    },
+    {
+      "id": "WCRIMUS2",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCRIMUS2&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "eia:series:WCRIMUS2"
+      ],
+      "integrity_status": "Bridge file SHA256 and all reconstructed row hashes verified; original body checks are export attestation, not current body reread. Reused once across suite/original Energy."
+    },
+    {
+      "id": "WCREXUS2",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCREXUS2&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "eia:series:WCREXUS2"
+      ],
+      "integrity_status": "Bridge file SHA256 and all reconstructed row hashes verified; original body checks are export attestation, not current body reread. Reused once across suite/original Energy."
+    },
+    {
+      "id": "WGFUPUS2",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WGFUPUS2&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "eia:series:WGFUPUS2"
+      ],
+      "integrity_status": "Bridge file SHA256 and all reconstructed row hashes verified; original body checks are export attestation, not current body reread. Reused once across suite/original Energy."
+    },
+    {
+      "id": "WDIUPUS2",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WDIUPUS2&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "eia:series:WDIUPUS2"
+      ],
+      "integrity_status": "Bridge file SHA256 and all reconstructed row hashes verified; original body checks are export attestation, not current body reread. Reused once across suite/original Energy."
+    },
+    {
+      "id": "WKJUPUS2",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WKJUPUS2&f=W",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "eia:series:WKJUPUS2"
+      ],
+      "integrity_status": "Bridge file SHA256 and all reconstructed row hashes verified; original body checks are export attestation, not current body reread. Reused once across suite/original Energy."
+    },
+    {
+      "id": "eia_wngsr",
+      "url": "https://ir.eia.gov/ngs/ngs.html",
+      "upstream_ids": [
+        "eia:weekly-natural-gas-storage",
+        "eia:survey:EIA-912"
+      ],
+      "integrity_status": "Exact retained extract verified; tool representation hash does not verify original publisher bytes. Reused September30 review without new gas request."
+    },
+    {
+      "id": "eia_epm",
+      "url": "https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_1",
+      "upstream_ids": [
+        "eia:electric-power-monthly",
+        "eia:survey:EIA-923",
+        "eia:survey:EIA-861M"
+      ],
+      "integrity_status": "Exact retained extract verified; tool representation hash does not verify original publisher bytes. Current opened official Table5.1; paired cells independently recomputed."
+    },
+    {
+      "id": "original-energy-parent",
+      "url": "https://github.com/6t8hggfm44-tech/-Energy/blob/71d65873e4340eb97580537f209fff197a8fcc56/cloud/legacy-weekly/reports/energy/energy-legacy-manual-2026-09-30-repair-test-1/fc03a306628276be69a4604a26a37ab885d18bf291975cf52106db5dd0f6500c/Report.md",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "EIA_petroleum"
+      ],
+      "integrity_status": "Exact final report, envelope and full manifest members verified; all12 saved weekly differences/seasonal scores independently checked. Original source bodies not reread in this invocation."
+    }
+  ],
+  "delivery_key": "energy:energy-suite-weekly-2026-10-01:d51a0a93a3d8bba49f94d140135a27289bcc98ec12e4a76a3a749fa7d9faf46a"
+}
