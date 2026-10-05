@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "delivery_key": "credit:credit-suite-weekly-2026-10-05:462528d1934b83089ae10f525feb77ad8d00085807b37c20985fd8278112bb97",
+  "domain": "credit",
+  "run_id": "credit-suite-weekly-2026-10-05",
+  "report_sha256": "462528d1934b83089ae10f525feb77ad8d00085807b37c20985fd8278112bb97",
+  "report_bytes": 8594,
+  "envelope_sha256": "b1bee4edc263ae888ea1259278641a3f733a8ace1f8b48f637131d7ae2216814",
+  "envelope_bytes": 3753,
+  "producer_repository": "6t8hggfm44-tech/-Credit-financial-stress-",
+  "producer_commit": "efcfddcfbb11db3198c956eea4ae206fcc2d5b56",
+  "producer_report_path": "reports/credit-suite-weekly-2026-10-05/462528d1934b83089ae10f525feb77ad8d00085807b37c20985fd8278112bb97/Report.md",
+  "prepared_at_utc": "2026-10-05T16:33:06.183287+00:00",
+  "source_ancestry": [
+    {
+      "id": "fed_cp",
+      "url": "https://www.federalreserve.gov/releases/cp/rates.htm",
+      "upstream_ids": [
+        "fed-cp-dtcc"
+      ],
+      "integrity_status": "Verified retained bytes and selected numeric membership; original publisher bytes unavailable."
+    },
+    {
+      "id": "fed_delinquency",
+      "url": "https://www.federalreserve.gov/releases/chargeoff/delallsa.htm",
+      "upstream_ids": [
+        "ffiec-call-reports"
+      ],
+      "integrity_status": "Verified retained bytes and selected numeric membership; original publisher bytes unavailable."
+    },
+    {
+      "id": "fed_h8",
+      "url": "https://www.federalreserve.gov/releases/h8/current/",
+      "upstream_ids": [
+        "fed-h8-bank-reporting",
+        "ffiec-call-reports"
+      ],
+      "integrity_status": "Verified retained bytes and selected numeric membership; original publisher bytes unavailable."
+    },
+    {
+      "id": "fed_h15",
+      "url": "https://www.federalreserve.gov/releases/h15/",
+      "upstream_ids": [
+        "fed-h15-market-rate-inputs",
+        "fed-cp-dtcc"
+      ],
+      "integrity_status": "Verified retained bytes and selected numeric membership; original publisher bytes unavailable."
+    }
+  ],
+  "transport_limitations": [
+    "Staged repository packet only; no Market receipt or canonical persistence claimed.",
+    "Private reproducibility package is not included in this public transport. Evidence consists of reviewed limited extracts; original publisher bytes are not independently verified.",
+    "No raw publisher bodies, private checkpoints or operational invocation identifiers included."
+  ],
+  "declared_transformations": []
+}
