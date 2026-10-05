@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "domain": "consumer",
+  "run_id": "consumer-suite-weekly-2026-10-05",
+  "delivery_key": "consumer:consumer-suite-weekly-2026-10-05:28a9a972e2c12054819506396b3731710fb93b0831d5cba9a9694cf1e8094311",
+  "report_sha256": "28a9a972e2c12054819506396b3731710fb93b0831d5cba9a9694cf1e8094311",
+  "report_bytes": 6438,
+  "envelope_sha256": "2338b1d986a1315eaab05943f1a4842f54de0b3ee08520d0a478bc4e190af694",
+  "envelope_bytes": 3281,
+  "producer_repository": "6t8hggfm44-tech/-Consumer-activity-",
+  "producer_commit": "863637e7251f8a9f0e7bfbfe4f9f128b485c4359",
+  "producer_report_path": "reports/consumer-suite-weekly-2026-10-05/28a9a972e2c12054819506396b3731710fb93b0831d5cba9a9694cf1e8094311/Report.md",
+  "prepared_at_utc": "2026-10-05T22:12:42.544047+00:00",
+  "source_ancestry": [
+    {
+      "source_id": "bea_pce",
+      "upstream_ids": [
+        "bea:nipa:personal-consumption-expenditures",
+        "census:monthly-retail-trade",
+        "census:quarterly-services-survey"
+      ]
+    },
+    {
+      "source_id": "census_retail",
+      "upstream_ids": [
+        "census:advance-monthly-retail-trade",
+        "census:monthly-retail-trade"
+      ]
+    },
+    {
+      "source_id": "fed_g19",
+      "upstream_ids": [
+        "federal-reserve:consumer-credit:G19"
+      ]
+    }
+  ],
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Complete exact reviewed report and envelope only; private evidence/checkpoint and raw publisher bodies excluded.",
+    "Staged transport is not Market receipt, acknowledgment or canonical persistence.",
+    "Economic source limits remain in original report/envelope; no hidden upstream accounting or original-body identity is established by connected text."
+  ]
+}
