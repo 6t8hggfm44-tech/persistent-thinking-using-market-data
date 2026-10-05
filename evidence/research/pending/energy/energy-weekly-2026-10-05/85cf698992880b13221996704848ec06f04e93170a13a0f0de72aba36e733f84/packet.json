@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "delivery_key": "energy:energy-weekly-2026-10-05:85cf698992880b13221996704848ec06f04e93170a13a0f0de72aba36e733f84",
+  "domain": "energy",
+  "run_id": "energy-weekly-2026-10-05",
+  "report_sha256": "85cf698992880b13221996704848ec06f04e93170a13a0f0de72aba36e733f84",
+  "report_bytes": 9824,
+  "envelope_sha256": "4c2d58138387f166a7e75e9449d7d82a85100eab9820faf075169cec3f23c9d4",
+  "envelope_bytes": 2745,
+  "producer_repository": "6t8hggfm44-tech/-Energy",
+  "producer_workflow_repository": "6t8hggfm44-tech/energy",
+  "producer_kind": "legacy_energy",
+  "producer_commit": "a73ee33664a8a2b3ef149f2788c528486e290090",
+  "producer_report_path": "cloud/legacy-weekly/reports/energy/energy-weekly-2026-10-05/85cf698992880b13221996704848ec06f04e93170a13a0f0de72aba36e733f84/Report.md",
+  "prepared_at_utc": "2026-10-05T18:20:00Z",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Public transport contains only the reviewed final report, shareable envelope, and this packet; the private manifest, calculations, checkpoints, collector archive, and raw bodies are not included.",
+    "Staging establishes neither Market receipt nor canonical persistence; the next existing Market cycle must independently verify and record those states."
+  ],
+  "received_at_utc": null,
+  "acknowledged_at_utc": null,
+  "persisted_at_utc": null
+}
