@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "delivery_key": "credit:credit-suite-weekly-2026-10-05:462528d1934b83089ae10f525feb77ad8d00085807b37c20985fd8278112bb97",
+  "domain": "credit",
+  "run_id": "credit-suite-weekly-2026-10-05",
+  "report_version": 1,
+  "received_at_utc": "2026-10-05T21:07:49Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_path": "evidence/research/pending/credit/credit-suite-weekly-2026-10-05/462528d1934b83089ae10f525feb77ad8d00085807b37c20985fd8278112bb97/"
+  },
+  "integrity": {
+    "report_sha256": "462528d1934b83089ae10f525feb77ad8d00085807b37c20985fd8278112bb97",
+    "report_bytes": 8594,
+    "envelope_sha256": "b1bee4edc263ae888ea1259278641a3f733a8ace1f8b48f637131d7ae2216814",
+    "envelope_bytes": 3753,
+    "verified": true,
+    "method": "Receiver independently recomputed SHA-256 and UTF-8 byte lengths from the staged report/envelope and matched packet declarations before canonical intake."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/credit/credit-suite-weekly-2026-10-05/462528d1934b83089ae10f525feb77ad8d00085807b37c20985fd8278112bb97/Report.md",
+    "envelope": "evidence/research/credit/credit-suite-weekly-2026-10-05/462528d1934b83089ae10f525feb77ad8d00085807b37c20985fd8278112bb97/report-envelope.json",
+    "intake": "evidence/research/credit/credit-suite-weekly-2026-10-05/462528d1934b83089ae10f525feb77ad8d00085807b37c20985fd8278112bb97/intake.json"
+  },
+  "notes": [
+    "Exact staged report/envelope SHA-256 and byte counts independently matched; fresh CP/delinquency observations are bounded and mixed; reused H.8/H.15 and shared source ancestry receive no duplicate weight."
+  ]
+}

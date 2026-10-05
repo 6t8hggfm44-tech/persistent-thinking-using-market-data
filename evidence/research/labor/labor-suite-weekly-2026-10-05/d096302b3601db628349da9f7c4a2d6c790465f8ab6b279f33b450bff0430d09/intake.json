@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "delivery_key": "labor:labor-suite-weekly-2026-10-05:d096302b3601db628349da9f7c4a2d6c790465f8ab6b279f33b450bff0430d09",
+  "domain": "labor",
+  "run_id": "labor-suite-weekly-2026-10-05",
+  "report_version": 1,
+  "received_at_utc": "2026-10-05T21:07:49Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_path": "evidence/research/pending/labor/labor-suite-weekly-2026-10-05/d096302b3601db628349da9f7c4a2d6c790465f8ab6b279f33b450bff0430d09/"
+  },
+  "integrity": {
+    "report_sha256": "d096302b3601db628349da9f7c4a2d6c790465f8ab6b279f33b450bff0430d09",
+    "report_bytes": 10440,
+    "envelope_sha256": "7b94400801b93cb38326830188efbfd6694d3b83234b03ca7eb5a3e14dd6bd19",
+    "envelope_bytes": 3350,
+    "verified": true,
+    "method": "Receiver independently recomputed SHA-256 and UTF-8 byte lengths from the staged report/envelope and matched packet declarations before canonical intake."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/labor/labor-suite-weekly-2026-10-05/d096302b3601db628349da9f7c4a2d6c790465f8ab6b279f33b450bff0430d09/Report.md",
+    "envelope": "evidence/research/labor/labor-suite-weekly-2026-10-05/d096302b3601db628349da9f7c4a2d6c790465f8ab6b279f33b450bff0430d09/report-envelope.json",
+    "intake": "evidence/research/labor/labor-suite-weekly-2026-10-05/d096302b3601db628349da9f7c4a2d6c790465f8ab6b279f33b450bff0430d09/intake.json"
+  },
+  "notes": [
+    "Exact staged report/envelope SHA-256 and byte counts independently matched; central September jobs/JOLTS observations were already known by the prior cutoff and older claims/ECI are reused, so this packet adds no independent fresh macro vote."
+  ]
+}

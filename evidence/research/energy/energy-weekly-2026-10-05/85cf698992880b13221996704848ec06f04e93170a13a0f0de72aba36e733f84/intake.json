@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "delivery_key": "energy:energy-weekly-2026-10-05:85cf698992880b13221996704848ec06f04e93170a13a0f0de72aba36e733f84",
+  "domain": "energy",
+  "run_id": "energy-weekly-2026-10-05",
+  "report_version": 1,
+  "received_at_utc": "2026-10-05T21:07:49Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_path": "evidence/research/pending/energy/energy-weekly-2026-10-05/85cf698992880b13221996704848ec06f04e93170a13a0f0de72aba36e733f84/"
+  },
+  "integrity": {
+    "report_sha256": "85cf698992880b13221996704848ec06f04e93170a13a0f0de72aba36e733f84",
+    "report_bytes": 9824,
+    "envelope_sha256": "4c2d58138387f166a7e75e9449d7d82a85100eab9820faf075169cec3f23c9d4",
+    "envelope_bytes": 2745,
+    "verified": true,
+    "method": "Receiver independently recomputed SHA-256 and UTF-8 byte lengths from the staged report/envelope and matched packet declarations before canonical intake."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/energy/energy-weekly-2026-10-05/85cf698992880b13221996704848ec06f04e93170a13a0f0de72aba36e733f84/Report.md",
+    "envelope": "evidence/research/energy/energy-weekly-2026-10-05/85cf698992880b13221996704848ec06f04e93170a13a0f0de72aba36e733f84/report-envelope.json",
+    "intake": "evidence/research/energy/energy-weekly-2026-10-05/85cf698992880b13221996704848ec06f04e93170a13a0f0de72aba36e733f84/intake.json"
+  },
+  "notes": [
+    "Exact staged report/envelope SHA-256 and byte counts independently matched; latest verified EIA week ends September 25 and no registered broad petroleum anomaly appears; requested event week remains unobserved and shared EIA ancestry is deduplicated."
+  ]
+}

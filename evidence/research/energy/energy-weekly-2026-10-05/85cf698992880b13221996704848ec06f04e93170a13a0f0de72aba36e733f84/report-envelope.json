@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "domain": "energy",
+  "run_id": "energy-weekly-2026-10-05",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "generated_at_utc": "2026-10-05T18:13:50Z",
+  "available_at_utc": "2026-10-05T18:13:50Z",
+  "event_window_utc": {"start": "2026-09-28T00:00:00Z", "end": "2026-10-05T00:00:00Z"},
+  "knowledge_cutoff_utc": "2026-10-05T18:12:24.206454245Z",
+  "report_path": "Report.md",
+  "report_sha256": "85cf698992880b13221996704848ec06f04e93170a13a0f0de72aba36e733f84",
+  "report_bytes": 9824,
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "528c8ae9dca6d2f8e55ff1c91a0f712dffc8ab402c98584973c9ab0d7981eae2",
+  "workflow_commit": "28ea17c51a61f97e17aea6a4ac044a19a434fd98",
+  "producer_kind": "legacy_energy",
+  "geography": ["United States"],
+  "actual_coverage": {
+    "family": "EIA weekly petroleum",
+    "series": 12,
+    "latest_period_end": "2026-09-25",
+    "requested_week_observed": false,
+    "history_start": "2021-03-26",
+    "normalized_observations": 3456
+  },
+  "sources": [
+    {
+      "publisher": "U.S. Energy Information Administration",
+      "family": "Weekly Petroleum Status/current-vintage history",
+      "ancestry": "One shared source family across all twelve series and any overlapping suite Energy use",
+      "capture_completed_at_utc": "2026-10-04T19:10:19.253886Z",
+      "snapshot_staged_at_utc": "2026-10-04T19:10:23.411378Z",
+      "publication_times": "unknown",
+      "provider_vintages": "unknown"
+    }
+  ],
+  "claims": [
+    {"type":"OBSERVATION","text":"Zero of twelve U.S. petroleum series crossed the predeclared absolute robust-z threshold of 3.5."},
+    {"type":"OBSERVATION","text":"Gasoline and distillate stocks were 7.40% and 14.89% below comparable year-earlier levels and both drew in the latest source week."},
+    {"type":"INFERENCE","text":"The verified evidence does not support a registered broad petroleum anomaly or isolate a causal explanation."},
+    {"type":"EVIDENCE_GAP","text":"The latest source week ended 25 September, so the requested 28 September–4 October week, gas/LNG/electricity, and matched Weather/GEV controls remain unobserved."}
+  ],
+  "supersedes": [],
+  "limitations": [
+    "Current-vintage history cannot establish historical first-release values or surprise revisions.",
+    "All measured series share EIA ancestry and are correlated; suite Energy overlap is not independent confirmation.",
+    "The requested event week has no source-period endpoint in the verified archive.",
+    "Gas, LNG, electricity, operator-outage, and matched Weather/GEV controls were unavailable or unimplemented.",
+    "Product supplied is a flow proxy rather than end-user consumption; the robust-z threshold is uncalibrated."
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "domain": "credit",
+  "run_id": "credit-suite-weekly-2026-10-05",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "055f30759dda0cd45650e42f9844d9bb8d5a5427",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2024-04-01T00:00:00Z",
+    "end": "2026-10-02T00:00:00Z"
+  },
+  "actual_coverage": {
+    "geography": "U.S. commercial-bank aggregates and eligible U.S. commercial-paper issuers; no fixed regional-bank panel",
+    "fresh_selected_cells": 40,
+    "fresh_source_count": 2,
+    "reused_h8_cells": 22,
+    "reused_h15_cells": 25,
+    "delinquency_periods": [
+      "2024Q2",
+      "2025Q2",
+      "2026Q1",
+      "2026Q2"
+    ],
+    "cp_periods": "2026-Aug/Sept monthly; September25,28,29,30 and October1 daily",
+    "h8_periods": "August26-September16 weekly stocks; July/August annualized growth retained but not interpreted as monthly changes",
+    "h15_periods": "September18,21,22,23,24",
+    "missing_cp_positions": 5,
+    "source_ancestry": "CP/H15 overlap via fed-cp-dtcc; H8/delinquency share ffiec-call-reports; no independent-source vote count."
+  },
+  "limitations": [
+    "Selected official tool extracts, not original publisher bodies; exact retained bytes verified.",
+    "Quarterly delinquency ends 2026Q2; H8/H15 reused September28 extracts are historical inputs, not October5 observations.",
+    "CP: sixteen numerical cells and five missing positions. Only one matched daily financial/nonfinancial pair; no volumes, ordinary-period distribution or causally aligned policy control.",
+    "Loan-dollar denominators, fixed bank panel, matched SLOOS standards/demand, charge-offs, bankruptcies and repo rates/volumes unavailable.",
+    "Current revised historical values do not reconstruct original release vintages. Shared FFIEC/CP inputs are not independent confirmation."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-10-05T16:14:59.777481+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-05T16:19:29.116619+00:00",
+  "available_at_utc": "2026-10-05T16:19:29.116619+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "462528d1934b83089ae10f525feb77ad8d00085807b37c20985fd8278112bb97",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "5fd9aa501cf5b3ed2023114945fb1127426304efb2bc6355e5a539df5442b456",
+  "sources": [
+    {
+      "id": "fed_cp",
+      "url": "https://www.federalreserve.gov/releases/cp/rates.htm",
+      "upstream_ids": [
+        "fed-cp-dtcc"
+      ],
+      "integrity_status": "Verified retained bytes and selected numeric membership; original publisher bytes unavailable."
+    },
+    {
+      "id": "fed_delinquency",
+      "url": "https://www.federalreserve.gov/releases/chargeoff/delallsa.htm",
+      "upstream_ids": [
+        "ffiec-call-reports"
+      ],
+      "integrity_status": "Verified retained bytes and selected numeric membership; original publisher bytes unavailable."
+    },
+    {
+      "id": "fed_h8",
+      "url": "https://www.federalreserve.gov/releases/h8/current/",
+      "upstream_ids": [
+        "fed-h8-bank-reporting",
+        "ffiec-call-reports"
+      ],
+      "integrity_status": "Verified retained bytes and selected numeric membership; original publisher bytes unavailable."
+    },
+    {
+      "id": "fed_h15",
+      "url": "https://www.federalreserve.gov/releases/h15/",
+      "upstream_ids": [
+        "fed-h15-market-rate-inputs",
+        "fed-cp-dtcc"
+      ],
+      "integrity_status": "Verified retained bytes and selected numeric membership; original publisher bytes unavailable."
+    }
+  ],
+  "delivery_key": "credit:credit-suite-weekly-2026-10-05:462528d1934b83089ae10f525feb77ad8d00085807b37c20985fd8278112bb97"
+}

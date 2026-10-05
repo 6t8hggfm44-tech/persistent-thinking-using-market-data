@@ -1,0 +1,23 @@
+{
+  "effective_at": "2026-10-05T21:07:49Z",
+  "model_version": "0.2.20",
+  "weights_before": {
+    "H001": 0.37,
+    "H002": 0.16,
+    "H003": 0.35,
+    "H004": 0.12
+  },
+  "weights_after": {
+    "H001": 0.37,
+    "H002": 0.14,
+    "H003": 0.37,
+    "H004": 0.12
+  },
+  "leader": "tie H001/H003",
+  "rationale": {
+    "H001": "Cooling payrolls and possible incomplete input-cost pass-through remain compatible with soft landing; no change.",
+    "H002": "Expansionary services activity, strong new orders, and slight services-employment expansion reduce immediate broad-contraction weight by 0.02.",
+    "H003": "The 0.02 released from H002 moves here because services Prices rose to 74.0 with slower deliveries while energy/logistics constraints remain live.",
+    "H004": "No new realized productivity outcome evidence."
+  }
+}

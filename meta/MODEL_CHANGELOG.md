@@ -181,3 +181,13 @@ Model0.2.17 and H0010.36/H0020.14/H0030.38/H0040.12 retained at19:56:01Z after a
 - After Skeptic review, H002 falls 0.14 -> 0.13 and H003 rises 0.38 -> 0.39; H001 remains 0.36 and H004 0.12. No causal edge changes.
 - No new forecast; P000031 and P000029 remain the near-term discriminators. No new Universal transfer candidate.
 - See meta/model_changes/2026-10-01-v0.2.18.md and evaluations/2026-10-01-regular-cycle.md.
+
+## v0.2.19 historical-entry reconciliation — recorded October 5, 2026
+
+The October 2 Friday model state and learning review moved weights to H001 0.37 / H002 0.16 / H003 0.35 / H004 0.12 after P000031 resolved TRUE. The cumulative changelog append failed during that cycle; `evaluations/2026-10-02-weekly-review.md` and the preserved v0.2.19 `world_model/CURRENT_STATE.md` were the durable records. This entry restores cumulative discoverability without changing the October 2 cutoff, forecast, score, weights, or interpretation. It is bookkeeping repair, not a new update or learning claim.
+
+
+## v0.2.20 — 2026-10-05
+
+No forecast expired; probability metrics remain n=24 / Brier 0.218250 / log loss 0.627080 and learning remains unassessable. October 5 Credit, original-Energy, and Labor packets were exact-byte/hash checked and canonically received with reused ancestry deduplicated and missing current-window evidence preserved as missingness. Fresh ISM Services evidence combines expansionary activity/orders with Prices 74.0 and slower deliveries. After Skeptic review, weights move from H001 0.37 / H002 0.16 / H003 0.35 / H004 0.12 to **H001 0.37 / H002 0.14 / H003 0.37 / H004 0.12**. No causal edge changes and no new forecast is added; P000029 remains the highest-information near-term discriminator. See `meta/model_changes/2026-10-05-v0.2.20.md`.
+
