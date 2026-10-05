@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "domain": "labor",
+  "run_id": "labor-suite-weekly-2026-10-05",
+  "delivery_key": "labor:labor-suite-weekly-2026-10-05:d096302b3601db628349da9f7c4a2d6c790465f8ab6b279f33b450bff0430d09",
+  "report_sha256": "d096302b3601db628349da9f7c4a2d6c790465f8ab6b279f33b450bff0430d09",
+  "report_bytes": 10440,
+  "envelope_sha256": "7b94400801b93cb38326830188efbfd6694d3b83234b03ca7eb5a3e14dd6bd19",
+  "envelope_bytes": 3350,
+  "producer_repository": "6t8hggfm44-tech/-Labor-market-agent",
+  "producer_commit": "294d49868818e98635e6e31830ba26ee0de79800",
+  "producer_report_path": "reports/labor-suite-weekly-2026-10-05/d096302b3601db628349da9f7c4a2d6c790465f8ab6b279f33b450bff0430d09/Report.md",
+  "prepared_at_utc": "2026-10-05T19:20:02.411010+00:00",
+  "source_ancestry": [
+    {
+      "id": "bls_employment",
+      "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+      "upstream_ids": [
+        "bls:current-employment-statistics",
+        "bls:current-population-survey"
+      ],
+      "integrity_status": "Exact retained extract SHA256 verified; derived tool representation only, original publisher bytes unavailable."
+    },
+    {
+      "id": "bls_jolts",
+      "url": "https://www.bls.gov/news.release/jolts.nr0.htm",
+      "upstream_ids": [
+        "bls:job-openings-and-labor-turnover-survey"
+      ],
+      "integrity_status": "Exact retained extract SHA256 verified; derived tool representation only, original publisher bytes unavailable."
+    },
+    {
+      "id": "dol_claims",
+      "url": "https://www.dol.gov/ui/data.pdf",
+      "upstream_ids": [
+        "dol:eta:state-unemployment-insurance-claims"
+      ],
+      "integrity_status": "Exact retained extract SHA256 verified; derived tool representation only, original publisher bytes unavailable."
+    },
+    {
+      "id": "bls_eci",
+      "url": "https://www.bls.gov/news.release/eci.nr0.htm",
+      "upstream_ids": [
+        "bls:national-compensation-survey:employment-cost-index"
+      ],
+      "integrity_status": "Exact retained extract SHA256 verified; derived tool representation only, original publisher bytes unavailable."
+    }
+  ],
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact final report and envelope only; private evidence/checkpoints and original publisher bodies are not included.",
+    "Staging is not Market receipt, acknowledgment or canonical persistence; the next existing cycle determines actual receipt."
+  ]
+}
