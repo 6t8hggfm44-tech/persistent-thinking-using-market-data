@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "delivery_key": "housing:housing-suite-weekly-2026-10-06:040e843577aa00535ab4962d1ae208b7b9dbead97daec7835fe50e2f0d8c7a71",
+  "domain": "housing",
+  "run_id": "housing-suite-weekly-2026-10-06",
+  "report_sha256": "040e843577aa00535ab4962d1ae208b7b9dbead97daec7835fe50e2f0d8c7a71",
+  "report_bytes": 9805,
+  "envelope_sha256": "8ccc4aa29f137dc525811fb02421b8f4258bbf1829b6ecf5497234241e03b1f8",
+  "envelope_bytes": 3554,
+  "producer_repository": "6t8hggfm44-tech/-Housing-construction-",
+  "producer_commit": "791dde988f921b60f5d1c60702133943e44ead19",
+  "producer_report_path": "reports/housing-suite-weekly-2026-10-06/040e843577aa00535ab4962d1ae208b7b9dbead97daec7835fe50e2f0d8c7a71/Report.md",
+  "prepared_at_utc": "2026-10-06T16:24:45.600341+00:00",
+  "source_ancestry": [
+    {
+      "id": "nrs_current",
+      "url": "https://www.census.gov/construction/nrs/pdf/newressales.pdf",
+      "upstream_ids": [
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher body unavailable; model semantic review of limited extract"
+    },
+    {
+      "id": "nrs_prior",
+      "url": "https://www.census.gov/construction/nrs/pdf/newressales.pdf",
+      "upstream_ids": [
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher body unavailable; model semantic review of limited extract"
+    },
+    {
+      "id": "nrc_retained",
+      "url": "https://www.census.gov/construction/nrc/pdf/newresconst.pdf",
+      "upstream_ids": [
+        "US-CENSUS-BPS",
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher body unavailable; model semantic review of limited extract"
+    },
+    {
+      "id": "pmms_retained",
+      "url": "https://www.freddiemac.com/pmms",
+      "upstream_ids": [
+        "FREDDIE-MAC-LPA-PMMS"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher body unavailable; model semantic review of limited extract"
+    }
+  ],
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact private final report and envelope bytes; full evidence/calculation package remains private.",
+    "Limited reviewed tool extracts and reused vintages; original publisher-body identity unverified.",
+    "One fresh sales release; construction refresh not executed, labor/CRE tests incomplete.",
+    "Shared Census SOC and repeated rate observations count once.",
+    "Staging does not establish Market receipt, acknowledgment or canonical persistence."
+  ]
+}

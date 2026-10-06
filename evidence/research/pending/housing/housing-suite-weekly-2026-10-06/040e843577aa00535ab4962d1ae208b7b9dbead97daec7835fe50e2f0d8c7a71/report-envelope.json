@@ -1,0 +1,80 @@
+{
+  "domain": "housing",
+  "run_id": "housing-suite-weekly-2026-10-06",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "93e1592bcef7f1ee507eae351c4263610d71273c",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-09-29T00:00:00Z",
+    "end": "2026-10-06T16:17:16.834538+00:00"
+  },
+  "actual_coverage": {
+    "geography": "United States national, new single-family houses and private construction; PMMS eligible mortgage applications",
+    "sales": "February-August2026 current September24 vintage plus August2025 comparator; August25 vintage retained for revisions",
+    "construction": "March-August2026 permits; July-August starts/completions; September17 vintage reused",
+    "mortgage_rates": "September24 and September17 PMMS plus displayed year-ago comparators; reused September30 extract",
+    "missing": [
+      "existing homes",
+      "purchase/refinance application volume",
+      "listing price cuts",
+      "constant-quality prices",
+      "materials",
+      "current construction CES",
+      "under-construction stocks",
+      "realized CRE outcomes"
+    ]
+  },
+  "limitations": [
+    "Limited tool extracts, not original publisher bodies; byte hashes prove retained identity only.",
+    "Construction refresh not invoked because its allowed start deadline elapsed; conservative reservation remains unresolved.",
+    "Existing BLS uncertainty preserved; PMMS cooldown preserved.",
+    "Short exploratory national windows; revisions, sampling uncertainty, mix and source dependence.",
+    "No complete 36month baseline or identified causal counterfactual."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-10-06T16:17:16.834538+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-06T16:21:59.160926+00:00",
+  "available_at_utc": "2026-10-06T16:21:59.160926+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "040e843577aa00535ab4962d1ae208b7b9dbead97daec7835fe50e2f0d8c7a71",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "06c2a8c5af716d3adcde35a3effe7309ffa7c8a80d83fd6064430bda231999ff",
+  "sources": [
+    {
+      "id": "nrs_current",
+      "url": "https://www.census.gov/construction/nrs/pdf/newressales.pdf",
+      "upstream_ids": [
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher body unavailable; model semantic review of limited extract"
+    },
+    {
+      "id": "nrs_prior",
+      "url": "https://www.census.gov/construction/nrs/pdf/newressales.pdf",
+      "upstream_ids": [
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher body unavailable; model semantic review of limited extract"
+    },
+    {
+      "id": "nrc_retained",
+      "url": "https://www.census.gov/construction/nrc/pdf/newresconst.pdf",
+      "upstream_ids": [
+        "US-CENSUS-BPS",
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher body unavailable; model semantic review of limited extract"
+    },
+    {
+      "id": "pmms_retained",
+      "url": "https://www.freddiemac.com/pmms",
+      "upstream_ids": [
+        "FREDDIE-MAC-LPA-PMMS"
+      ],
+      "integrity_status": "Exact retained bytes verified; original publisher body unavailable; model semantic review of limited extract"
+    }
+  ],
+  "delivery_key": "housing:housing-suite-weekly-2026-10-06:040e843577aa00535ab4962d1ae208b7b9dbead97daec7835fe50e2f0d8c7a71"
+}
