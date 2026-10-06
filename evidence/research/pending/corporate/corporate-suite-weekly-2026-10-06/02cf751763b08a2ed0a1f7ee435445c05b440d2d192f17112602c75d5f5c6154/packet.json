@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "domain": "corporate",
+  "run_id": "corporate-suite-weekly-2026-10-06",
+  "delivery_key": "corporate:corporate-suite-weekly-2026-10-06:02cf751763b08a2ed0a1f7ee435445c05b440d2d192f17112602c75d5f5c6154",
+  "invocation_kind": "scheduled_weekly",
+  "scheduled_occurrence_consumed": true,
+  "report_sha256": "02cf751763b08a2ed0a1f7ee435445c05b440d2d192f17112602c75d5f5c6154",
+  "report_bytes": 8549,
+  "envelope_sha256": "b1e921874a7530909ec2ab182feffe42cc643655c8d43cc50a1a41e048035182",
+  "envelope_bytes": 4430,
+  "producer_repository": "6t8hggfm44-tech/-Corporate-behavior-",
+  "producer_commit": "caa89b0f7b001a8bfca79428b8226d30b3a451ea",
+  "producer_report_path": "reports/corporate-suite-weekly-2026-10-06/02cf751763b08a2ed0a1f7ee435445c05b440d2d192f17112602c75d5f5c6154/Report.md",
+  "prepared_at_utc": "2026-10-06T22:13:23Z",
+  "source_ancestry": [
+    {
+      "id": "bea_corporate_profits_aug26",
+      "url": "https://www.bea.gov/data/income-saving/corporate-profits",
+      "upstream_ids": [
+        "US-BEA-NIPA-CORPORATE-PROFITS",
+        "US-IRS-CORPORATE-TAX",
+        "US-CENSUS-QFR"
+      ],
+      "integrity_status": "Exact retained reviewed record hash verified; original publisher bytes unavailable in this runtime."
+    },
+    {
+      "id": "bea_corporate_profits_sep30",
+      "url": "https://www.bea.gov/data/income-saving/corporate-profits",
+      "upstream_ids": [
+        "US-BEA-NIPA-CORPORATE-PROFITS",
+        "US-IRS-CORPORATE-TAX",
+        "US-CENSUS-QFR"
+      ],
+      "integrity_status": "Exact retained reviewed record hash verified; original publisher bytes unavailable in this runtime."
+    },
+    {
+      "id": "bls_jolts",
+      "url": "https://www.bls.gov/news.release/jolts.nr0.htm",
+      "upstream_ids": [
+        "bls:job-openings-and-labor-turnover-survey"
+      ],
+      "integrity_status": "Exact retained reviewed record hash verified; original publisher bytes unavailable in this runtime."
+    },
+    {
+      "id": "microsoft_fy2026q4",
+      "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast",
+      "upstream_ids": [
+        "ISSUER-MSFT-FY2026Q4"
+      ],
+      "integrity_status": "Exact retained reviewed record hash verified; original publisher bytes unavailable in this runtime."
+    },
+    {
+      "id": "census_qfr",
+      "url": "https://www.census.gov/econ/qfr/index.html",
+      "upstream_ids": [
+        "US-CENSUS-QFR"
+      ],
+      "integrity_status": "Representation hash exists; no original-byte or economic-completeness claim."
+    },
+    {
+      "id": "ftc_hsr",
+      "url": "https://www.ftc.gov/policy/reports/annual-competition-reports",
+      "upstream_ids": [
+        "US-FTC-DOJ-HSR-FILINGS"
+      ],
+      "integrity_status": "Representation hash exists; no original-byte or completed-deal claim."
+    }
+  ],
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Prepared for pending repository staging and the next existing regular Market cycle; preparation and staging are not Market receipt, acknowledgment or canonical intake.",
+    "Evidence consists only of previously reviewed limited extracts; this run made no provider command, no new provider observation and no original publisher-body reread.",
+    "The September 30 BEA release-vintage revision is new to this weekly analysis, but it does not add a new economic observation quarter."
+  ],
+  "received_at_utc": null,
+  "market_received_at_utc": null,
+  "acknowledged_at_utc": null,
+  "receipt_at_utc": null,
+  "persisted_at_utc": null
+}
