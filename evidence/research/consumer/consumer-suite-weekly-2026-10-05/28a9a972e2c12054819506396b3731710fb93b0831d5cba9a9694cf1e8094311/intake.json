@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "delivery_key": "consumer:consumer-suite-weekly-2026-10-05:28a9a972e2c12054819506396b3731710fb93b0831d5cba9a9694cf1e8094311",
+  "domain": "consumer",
+  "run_id": "consumer-suite-weekly-2026-10-05",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "received_at_utc": "2026-10-06T21:38:27Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "573058483ab6c1e43264283d2740166a51bfddc6",
+    "staging_path": "evidence/research/pending/consumer/consumer-suite-weekly-2026-10-05/28a9a972e2c12054819506396b3731710fb93b0831d5cba9a9694cf1e8094311/"
+  },
+  "integrity": {
+    "report_sha256": "28a9a972e2c12054819506396b3731710fb93b0831d5cba9a9694cf1e8094311",
+    "report_bytes": 6438,
+    "envelope_sha256": "2338b1d986a1315eaab05943f1a4842f54de0b3ee08520d0a478bc4e190af694",
+    "envelope_bytes": 3281,
+    "verified": true,
+    "method": "Exact connector UTF-8 reconstruction from the immutable staged packet; receiver recomputed SHA-256 and byte lengths and matched packet declarations."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/consumer/consumer-suite-weekly-2026-10-05/28a9a972e2c12054819506396b3731710fb93b0831d5cba9a9694cf1e8094311/Report.md",
+    "envelope": "evidence/research/consumer/consumer-suite-weekly-2026-10-05/28a9a972e2c12054819506396b3731710fb93b0831d5cba9a9694cf1e8094311/report-envelope.json",
+    "intake": "evidence/research/consumer/consumer-suite-weekly-2026-10-05/28a9a972e2c12054819506396b3731710fb93b0831d5cba9a9694cf1e8094311/intake.json"
+  },
+  "supersedes": [],
+  "notes": [
+    "Exact staged report/envelope UTF-8 bytes independently SHA-256/byte-count matched. Retail numbers are an explicitly superseded vintage with revised values missing; BEA/G.19 observations are reused, so no independent new macro vote is assigned."
+  ]
+}

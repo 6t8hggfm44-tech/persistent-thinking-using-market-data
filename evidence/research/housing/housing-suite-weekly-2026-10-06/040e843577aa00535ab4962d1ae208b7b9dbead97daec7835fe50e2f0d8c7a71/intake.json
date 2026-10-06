@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "delivery_key": "housing:housing-suite-weekly-2026-10-06:040e843577aa00535ab4962d1ae208b7b9dbead97daec7835fe50e2f0d8c7a71",
+  "domain": "housing",
+  "run_id": "housing-suite-weekly-2026-10-06",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "received_at_utc": "2026-10-06T21:38:27Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "8703dbebe11e9ec3d090f842110b89daf71b490a",
+    "staging_path": "evidence/research/pending/housing/housing-suite-weekly-2026-10-06/040e843577aa00535ab4962d1ae208b7b9dbead97daec7835fe50e2f0d8c7a71/"
+  },
+  "integrity": {
+    "report_sha256": "040e843577aa00535ab4962d1ae208b7b9dbead97daec7835fe50e2f0d8c7a71",
+    "report_bytes": 9805,
+    "envelope_sha256": "8ccc4aa29f137dc525811fb02421b8f4258bbf1829b6ecf5497234241e03b1f8",
+    "envelope_bytes": 3554,
+    "verified": true,
+    "method": "Exact connector UTF-8 reconstruction from the immutable staged packet; receiver recomputed SHA-256 and byte lengths and matched packet declarations."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/housing/housing-suite-weekly-2026-10-06/040e843577aa00535ab4962d1ae208b7b9dbead97daec7835fe50e2f0d8c7a71/Report.md",
+    "envelope": "evidence/research/housing/housing-suite-weekly-2026-10-06/040e843577aa00535ab4962d1ae208b7b9dbead97daec7835fe50e2f0d8c7a71/report-envelope.json",
+    "intake": "evidence/research/housing/housing-suite-weekly-2026-10-06/040e843577aa00535ab4962d1ae208b7b9dbead97daec7835fe50e2f0d8c7a71/intake.json"
+  },
+  "supersedes": [],
+  "notes": [
+    "Exact staged report/envelope UTF-8 bytes independently SHA-256/byte-count matched. The September 24 sales revision is useful provenance but was already reflected in the Market state; reused Census/PMMS ancestry receives no duplicate macro vote."
+  ]
+}

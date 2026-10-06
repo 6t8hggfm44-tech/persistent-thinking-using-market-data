@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "delivery_key": "industry:industry-suite-weekly-2026-10-06:400861b40a9f5ffbb3027ab92c257457e89386eef06653796f09f69241a411a0",
+  "domain": "industry",
+  "run_id": "industry-suite-weekly-2026-10-06",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "received_at_utc": "2026-10-06T21:38:27Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "f04aac462f7b434898271a042572ffd1be9994b3",
+    "staging_path": "evidence/research/pending/industry/industry-suite-weekly-2026-10-06/400861b40a9f5ffbb3027ab92c257457e89386eef06653796f09f69241a411a0/"
+  },
+  "integrity": {
+    "report_sha256": "400861b40a9f5ffbb3027ab92c257457e89386eef06653796f09f69241a411a0",
+    "report_bytes": 8303,
+    "envelope_sha256": "ceedd6f9f0c2290442bc5dbabf133bbc83695d1ccaf244128dcca51ee05fa18b",
+    "envelope_bytes": 3916,
+    "verified": true,
+    "method": "Exact connector UTF-8 reconstruction from the immutable staged packet; receiver recomputed SHA-256 and byte lengths and matched packet declarations."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/industry/industry-suite-weekly-2026-10-06/400861b40a9f5ffbb3027ab92c257457e89386eef06653796f09f69241a411a0/Report.md",
+    "envelope": "evidence/research/industry/industry-suite-weekly-2026-10-06/400861b40a9f5ffbb3027ab92c257457e89386eef06653796f09f69241a411a0/report-envelope.json",
+    "intake": "evidence/research/industry/industry-suite-weekly-2026-10-06/400861b40a9f5ffbb3027ab92c257457e89386eef06653796f09f69241a411a0/intake.json"
+  },
+  "supersedes": [],
+  "notes": [
+    "Exact staged report/envelope UTF-8 bytes independently SHA-256/byte-count matched. G.17 observations are reused; SIA/WSTS adds nominal semiconductor-sales acceleration but release-vintage sensitivity and missing physical-unit/final-demand measures bound its evidentiary weight."
+  ]
+}
