@@ -1,0 +1,85 @@
+{
+  "domain": "industry",
+  "run_id": "industry-suite-weekly-2026-10-06",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "6babb91b267e843e36b9a19a067b470cc48d48bd",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-03-01T00:00:00Z",
+    "end": "2026-08-31T23:59:59Z"
+  },
+  "actual_coverage": {
+    "geography": "United States industrial aggregates plus global semiconductor nominal sales",
+    "frequency": "Monthly and quarterly publisher releases; no weekly interpolation",
+    "periods": "G.17 March-August 2026; SIA/WSTS May-July 2026 and 2026-Q2",
+    "sources_available": 2,
+    "sources_unavailable": 3,
+    "numeric_cells_used": 36,
+    "executed_tests": 3,
+    "blocked_tests": 2
+  },
+  "limitations": [
+    "G.17 coverage is a reused current-vintage six-month aggregate panel, not a 36-month historical or sector panel.",
+    "SIA/WSTS observations are nominal global sales and cannot establish physical chip output, fabrication geography, price/mix, inventories or final demand.",
+    "The June 2026 SIA sales value differs across consecutive release summaries, making release-vintage sensitivity material.",
+    "Census M3 remains blocked by an unresolved prior reservation; ISM and USGS were not acquired in this bounded pass.",
+    "Original publisher-body identity is not established for either tool-derived representation."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-10-06T19:15:11.667150+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-06T19:20:09.851232+00:00",
+  "available_at_utc": "2026-10-06T19:20:09.851232+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "400861b40a9f5ffbb3027ab92c257457e89386eef06653796f09f69241a411a0",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "8d81d9e6bc273819b24e078ec7d2ef571b7275adc129b451e5771f3e50f5ec92",
+  "sources": [
+    {
+      "id": "fed_g17",
+      "url": "https://www.federalreserve.gov/releases/g17/current/default.htm",
+      "upstream_ids": [
+        "FRB-G17",
+        "US-CENSUS-INDUSTRIAL-BENCHMARKS",
+        "US-BLS-PRODUCTION-WORKER-HOURS",
+        "USGS-MINERALS"
+      ],
+      "integrity_status": "Reused reviewed record SHA-256 9cfd9fe1638a1c412d296f07ab70ab9a057195c57f5372e82c6033c7883def6f; tool extract only, not publisher-body identity."
+    },
+    {
+      "id": "census_m3",
+      "url": "https://www.census.gov/manufacturing/m3/index.html",
+      "upstream_ids": [
+        "US-CENSUS-M3"
+      ],
+      "integrity_status": "No usable numeric representation; unresolved prior command preserved."
+    },
+    {
+      "id": "sia_sales",
+      "url": "https://www.semiconductors.org/policies/tax/market-data/",
+      "upstream_ids": [
+        "WSTS-SEMICONDUCTOR-SALES"
+      ],
+      "integrity_status": "Retained v2 record SHA-256 5cbef877f83d29a96d9d2e632a2fc4075179dfdce57a2da38172f932a5367305; exact selections matched tool representation ba3a6415ab408723b86e1cffb49a683d1f6d0ac96fca37c1661db753ccb28380; original publisher bytes not verified."
+    },
+    {
+      "id": "ism_manufacturing",
+      "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/",
+      "upstream_ids": [
+        "ISM-MANUFACTURING-SURVEY"
+      ],
+      "integrity_status": "Prior representation supplied navigation only; no numeric evidence used."
+    },
+    {
+      "id": "usgs_cement",
+      "url": "https://www.usgs.gov/centers/national-minerals-information-center/cement-statistics-and-information",
+      "upstream_ids": [
+        "USGS-CEMENT-PRODUCER-SURVEY",
+        "US-CENSUS-CEMENT-TRADE"
+      ],
+      "integrity_status": "Publication index metadata only; no reviewed physical quantity table."
+    }
+  ],
+  "delivery_key": "industry:industry-suite-weekly-2026-10-06:400861b40a9f5ffbb3027ab92c257457e89386eef06653796f09f69241a411a0"
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "domain": "industry",
+  "run_id": "industry-suite-weekly-2026-10-06",
+  "delivery_key": "industry:industry-suite-weekly-2026-10-06:400861b40a9f5ffbb3027ab92c257457e89386eef06653796f09f69241a411a0",
+  "report_sha256": "400861b40a9f5ffbb3027ab92c257457e89386eef06653796f09f69241a411a0",
+  "report_bytes": 8303,
+  "envelope_sha256": "ceedd6f9f0c2290442bc5dbabf133bbc83695d1ccaf244128dcca51ee05fa18b",
+  "envelope_bytes": 3916,
+  "producer_repository": "6t8hggfm44-tech/-Industrial-production-",
+  "producer_commit": "f1198a36759b64608a104e65bf2cc1c7ed731c64",
+  "producer_report_path": "reports/industry-suite-weekly-2026-10-06/400861b40a9f5ffbb3027ab92c257457e89386eef06653796f09f69241a411a0/Report.md",
+  "prepared_at_utc": "2026-10-06T19:22:39Z",
+  "source_ancestry": [
+    {"id": "fed_g17", "url": "https://www.federalreserve.gov/releases/g17/current/default.htm", "upstream_ids": ["FRB-G17", "US-CENSUS-INDUSTRIAL-BENCHMARKS", "US-BLS-PRODUCTION-WORKER-HOURS", "USGS-MINERALS"], "integrity_status": "Reused reviewed record SHA-256 ea69bfc75538479b4590eb9d00830c86244eb352cb01f29dd68ef7339d81c257; tool extract only, not publisher-body identity."},
+    {"id": "sia_sales", "url": "https://www.semiconductors.org/policies/tax/market-data/", "upstream_ids": ["WSTS-SEMICONDUCTOR-SALES"], "integrity_status": "Reviewed record SHA-256 5cbef877f83d29a96d9d2e632a2fc4075179dfdce57a2da38172f932a5367305 matched tool representation ba3a6415ab408723b86e1cffb49a683d1f6d0ac96fca37c1661db753ccb28380; original publisher bytes not verified."},
+    {"id": "census_m3", "url": "https://www.census.gov/manufacturing/m3/index.html", "upstream_ids": ["US-CENSUS-M3"], "integrity_status": "No usable numeric representation; unresolved prior command preserved."},
+    {"id": "ism_manufacturing", "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/", "upstream_ids": ["ISM-MANUFACTURING-SURVEY"], "integrity_status": "No usable numeric representation."},
+    {"id": "usgs_cement", "url": "https://www.usgs.gov/centers/national-minerals-information-center/cement-statistics-and-information", "upstream_ids": ["USGS-CEMENT-PRODUCER-SURVEY", "US-CENSUS-CEMENT-TRADE"], "integrity_status": "No reviewed physical-quantity representation."}
+  ],
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact frozen UTF-8 report and envelope are supplied; the private reviewed evidence and calculation package are referenced, not published.",
+    "G.17 evidence is a retained current-vintage limited extract; SIA evidence is a limited connected-tool representation. Original publisher-body identity is not established.",
+    "SIA/WSTS is one lineage, and the June value differs across consecutive release summaries; nominal sales are not physical output or final demand.",
+    "M3 remains blocked by unresolved prior uncertainty; unavailable ISM and USGS evidence remains untested.",
+    "Preparation or staging does not establish Market receipt, acknowledgment or canonical persistence."
+  ]
+}
