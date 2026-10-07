@@ -1,0 +1,68 @@
+{
+  "domain": "fiscal",
+  "run_id": "fiscal-suite-weekly-2026-10-07",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "0ab9876e9d43794aeb5cfce01462e1385f4e701d",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-08-01T00:00:00Z",
+    "end": "2026-09-01T00:00:00Z"
+  },
+  "actual_coverage": {
+    "geography": "United States",
+    "principal_period": "August 2026",
+    "comparisons": [
+      "revised July and June 2026",
+      "August 2025",
+      "January-August 2025 and 2026"
+    ],
+    "units": "Nominal USD million SAAR for monthly levels; nominal USD million NSA for cumulative levels",
+    "sources": "One new Census construction release plus two exact reused reviewed extracts"
+  },
+  "limitations": [
+    "New quantitative evidence is one preliminary national monthly release.",
+    "Retained evidence contains reviewed tool extracts, not verified original publisher bytes.",
+    "No price deflator, period-compatible federal cash-flow panel or causal project exposure design was available.",
+    "Published monthly sampling intervals include zero and revisions materially changed prior point estimates."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-10-07T16:15:08.189042+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-07T16:20:47.249513+00:00",
+  "available_at_utc": "2026-10-07T16:20:47.249513+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "b81cbad34b2b5cb9337ae575be9ecb3bd397ef3e5fb54c8d1c32f7d75dcc0831",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "1346034ba71a05d0be842519c33fd2f55e7e675ea8470f44b5dd7b3c91d5d576",
+  "sources": [
+    {
+      "id": "census_construction_august",
+      "url": "https://www.census.gov/construction/c30/pdf/release.pdf",
+      "upstream_ids": [
+        "US-CENSUS-VIP",
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Connected tool representation SHA256 99e5d1647293d638931e846eb763e1c47ae6d03b89e965c7df37d74980ee5466; original publisher bytes not verified; retained cells semantically reviewed."
+    },
+    {
+      "id": "census_construction_july_prior",
+      "url": "https://www.census.gov/construction/c30/pdf/release.pdf",
+      "upstream_ids": [
+        "US-CENSUS-VIP",
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Exact reused extract SHA256 0f0b6c95408d1647e53dfff273a28ef452592da86dbdb3aeee31d65820dbb8cb; original publisher bytes unavailable."
+    },
+    {
+      "id": "treasury_mts_definition",
+      "url": "https://fiscal.treasury.gov/accounting/monthly-treasury-statement",
+      "upstream_ids": [
+        "US-TREASURY-MTS",
+        "US-FEDERAL-ENTITY-ACCOUNTING"
+      ],
+      "integrity_status": "Exact reused extract SHA256 1b8aaeacca46c00dc5de1804ea393d2a4429d09700b911315fa92f1f579c8abc; tool representation only."
+    }
+  ],
+  "delivery_key": "fiscal:fiscal-suite-weekly-2026-10-07:b81cbad34b2b5cb9337ae575be9ecb3bd397ef3e5fb54c8d1c32f7d75dcc0831"
+}

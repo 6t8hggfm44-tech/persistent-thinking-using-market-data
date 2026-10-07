@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "delivery_key": "fiscal:fiscal-suite-weekly-2026-10-07:b81cbad34b2b5cb9337ae575be9ecb3bd397ef3e5fb54c8d1c32f7d75dcc0831",
+  "domain": "fiscal",
+  "run_id": "fiscal-suite-weekly-2026-10-07",
+  "report_sha256": "b81cbad34b2b5cb9337ae575be9ecb3bd397ef3e5fb54c8d1c32f7d75dcc0831",
+  "report_bytes": 9616,
+  "envelope_sha256": "c77d6f7ee91f4e2b71f43185af02060788ea89b678916771af76ac69206f606a",
+  "envelope_bytes": 3022,
+  "producer_repository": "6t8hggfm44-tech/-Government-fiscal-",
+  "producer_commit": "a23deac98d7c6d62a2f7f4151f0580347ce684f2",
+  "producer_report_path": "reports/fiscal-suite-weekly-2026-10-07/b81cbad34b2b5cb9337ae575be9ecb3bd397ef3e5fb54c8d1c32f7d75dcc0831/Report.md",
+  "prepared_at_utc": "2026-10-07T16:24:43.596544+00:00",
+  "source_ancestry": [
+    {
+      "id": "census_construction_august",
+      "url": "https://www.census.gov/construction/c30/pdf/release.pdf",
+      "upstream_ids": [
+        "US-CENSUS-VIP",
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Connected tool representation SHA256 99e5d1647293d638931e846eb763e1c47ae6d03b89e965c7df37d74980ee5466; original publisher bytes not verified; retained cells semantically reviewed."
+    },
+    {
+      "id": "census_construction_july_prior",
+      "url": "https://www.census.gov/construction/c30/pdf/release.pdf",
+      "upstream_ids": [
+        "US-CENSUS-VIP",
+        "US-CENSUS-SOC"
+      ],
+      "integrity_status": "Exact reused extract SHA256 0f0b6c95408d1647e53dfff273a28ef452592da86dbdb3aeee31d65820dbb8cb; original publisher bytes unavailable."
+    },
+    {
+      "id": "treasury_mts_definition",
+      "url": "https://fiscal.treasury.gov/accounting/monthly-treasury-statement",
+      "upstream_ids": [
+        "US-TREASURY-MTS",
+        "US-FEDERAL-ENTITY-ACCOUNTING"
+      ],
+      "integrity_status": "Exact reused extract SHA256 1b8aaeacca46c00dc5de1804ea393d2a4429d09700b911315fa92f1f579c8abc; tool representation only."
+    }
+  ],
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact reviewed final report and original envelope only; private evidence package, checkpoint state and publisher bodies are not included.",
+    "Connected-tool representation and reviewed extracts do not prove original publisher-body identity or hidden upstream HTTP accounting.",
+    "Staging is not receiver receipt, acknowledgment or canonical persistence; the next existing regular Market cycle must perform intake independently."
+  ]
+}
