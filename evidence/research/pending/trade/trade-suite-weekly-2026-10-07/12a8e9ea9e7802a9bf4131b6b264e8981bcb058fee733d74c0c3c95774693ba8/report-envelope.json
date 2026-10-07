@@ -1,0 +1,80 @@
+{
+  "domain": "trade",
+  "run_id": "trade-suite-weekly-2026-10-07",
+  "report_version": 1,
+  "report_kind": "final_evidence_gap",
+  "workflow_commit": "9076b3a5447e31d27a44d3f4f6f0c71456538491",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-09-30T19:00:00Z",
+    "end": "2026-10-07T19:13:33.880195+00:00"
+  },
+  "actual_coverage": {
+    "requested_scope": "Global trade and China weekly review through October 7, 2026",
+    "numeric": "Recalculation of retained Port of Los Angeles August 2026 versus August 2025: 10 levels and 5 published rates",
+    "fresh_metadata": "Taiwan MOF External Trade Statistics E-Books index: one monthly book title dated September 23, 2026; page last updated October 2, 2026",
+    "definitions_only": "Retained Eurostat overview metadata; no current compatible industry series",
+    "missing": "Current China activity and customs quantities; Korea/Taiwan trade values, quantum/unit-value and chip breadth; commodity quantities; alternate ports"
+  },
+  "limitations": [
+    "No fresh numerical trade observation was obtained; the only fresh source representation was Taiwan publication-index metadata.",
+    "Port results cover one matched August month at one port and were already known in the September 30 report.",
+    "No comparator-port, customs quantity, cargo-mix, working-day, price, currency, tariff-timing or seasonal controls.",
+    "Tool extracts do not verify original publisher-body identity or hidden upstream requests, bytes, redirects or in-flight duration.",
+    "China, Korea, Taiwan numerical, European current-volume and commodity measurement gaps prevent a broad global conclusion."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-10-07T19:13:33.880195+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-07T19:16:37.183704+00:00",
+  "available_at_utc": "2026-10-07T19:16:37.183704+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "12a8e9ea9e7802a9bf4131b6b264e8981bcb058fee733d74c0c3c95774693ba8",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "79180af4934884a2c541873fe2e826923e950ad953dbff1f69bf2bb6dfb55935",
+  "sources": [
+    {
+      "id": "china_nbs_releases",
+      "url": "https://www.stats.gov.cn/english/PressRelease/",
+      "upstream_ids": [
+        "china-nbs-enterprise-surveys",
+        "china-nbs-energy-statistics",
+        "china-customs"
+      ],
+      "integrity_status": "Missing current reviewed numerical evidence; no measurement inferred."
+    },
+    {
+      "id": "korea_customs_releases",
+      "url": "https://www.customs.go.kr/kcs/na/ntt/selectNttList.do?mi=2891&bbsId=1362",
+      "upstream_ids": [
+        "korea-customs-declarations"
+      ],
+      "integrity_status": "Missing current reviewed numerical evidence; no measurement inferred."
+    },
+    {
+      "id": "taiwan_mof_trade",
+      "url": "https://www.mof.gov.tw/Eng/multiplehtml/259",
+      "upstream_ids": [
+        "taiwan-customs-declarations"
+      ],
+      "integrity_status": "Exact retained selections verified and remotely checkpointed; tool representation only, not original publisher bytes."
+    },
+    {
+      "id": "eurostat_industry",
+      "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Industrial_production_(volume)_index_overview",
+      "upstream_ids": [
+        "eurostat-national-statistical-institutes"
+      ],
+      "integrity_status": "Exact retained extract hash verified; tool representation only."
+    },
+    {
+      "id": "port_la_containers",
+      "url": "https://portoflosangeles.org/business/statistics/container-statistics",
+      "upstream_ids": [
+        "port-los-angeles-terminal-counts"
+      ],
+      "integrity_status": "Exact retained extract hash verified; tool representation only, not current publisher bytes."
+    }
+  ],
+  "delivery_key": "trade:trade-suite-weekly-2026-10-07:12a8e9ea9e7802a9bf4131b6b264e8981bcb058fee733d74c0c3c95774693ba8"
+}
