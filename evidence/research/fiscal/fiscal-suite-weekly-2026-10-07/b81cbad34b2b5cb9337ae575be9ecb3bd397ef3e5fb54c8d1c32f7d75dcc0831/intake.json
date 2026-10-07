@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "delivery_key": "fiscal:fiscal-suite-weekly-2026-10-07:b81cbad34b2b5cb9337ae575be9ecb3bd397ef3e5fb54c8d1c32f7d75dcc0831",
+  "domain": "fiscal",
+  "run_id": "fiscal-suite-weekly-2026-10-07",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "received_at_utc": "2026-10-07T21:56:49Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "192ec4b83bdcb9a8c500cd1232568f81b3d4f126",
+    "staging_path": "evidence/research/pending/fiscal/fiscal-suite-weekly-2026-10-07/b81cbad34b2b5cb9337ae575be9ecb3bd397ef3e5fb54c8d1c32f7d75dcc0831/",
+    "producer_repository": "6t8hggfm44-tech/-Government-fiscal-",
+    "producer_prepared_at_utc": "2026-10-07T16:24:43.596544+00:00"
+  },
+  "integrity": {
+    "report_sha256": "b81cbad34b2b5cb9337ae575be9ecb3bd397ef3e5fb54c8d1c32f7d75dcc0831",
+    "report_bytes": 9616,
+    "envelope_sha256": "c77d6f7ee91f4e2b71f43185af02060788ea89b678916771af76ac69206f606a",
+    "envelope_bytes": 3022,
+    "verified": true,
+    "method": "Receiver reconstructed exact UTF-8 bytes of Report.md and report-envelope.json from one pinned immutable GitHub snapshot; independently recomputed SHA-256 and byte lengths, all matching packet declarations. Underlying original publisher/evidence-package bytes not verified."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/fiscal/fiscal-suite-weekly-2026-10-07/b81cbad34b2b5cb9337ae575be9ecb3bd397ef3e5fb54c8d1c32f7d75dcc0831/Report.md",
+    "envelope": "evidence/research/fiscal/fiscal-suite-weekly-2026-10-07/b81cbad34b2b5cb9337ae575be9ecb3bd397ef3e5fb54c8d1c32f7d75dcc0831/report-envelope.json",
+    "intake": "evidence/research/fiscal/fiscal-suite-weekly-2026-10-07/b81cbad34b2b5cb9337ae575be9ecb3bd397ef3e5fb54c8d1c32f7d75dcc0831/intake.json"
+  },
+  "source_ancestry_limit": "Reused primary-source measurements across research agents count only once; byte integrity does not establish scientific validity or original publisher-body identity.",
+  "notes": [
+    "October 1 August Census construction measurements and July/June revisions are reconciled without double-counting prior market exposure. Public construction contributed just 0.0486 percentage points of 0.854% August total nominal growth; no current federal cash-flow evidence."
+  ]
+}

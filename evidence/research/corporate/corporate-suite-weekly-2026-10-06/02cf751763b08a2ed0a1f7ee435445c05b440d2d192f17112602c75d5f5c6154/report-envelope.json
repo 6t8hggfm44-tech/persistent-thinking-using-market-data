@@ -1,0 +1,98 @@
+{
+  "domain": "corporate",
+  "run_id": "corporate-suite-weekly-2026-10-06",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "364760401df1e3471c07b47af49dda43f0eb9fac",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2025-04-01T00:00:00Z",
+    "end": "2026-08-01T00:00:00Z"
+  },
+  "actual_coverage": {
+    "requested_analysis_date": "2026-10-06",
+    "geography": "United States aggregates plus one global issuer",
+    "measured_source_ids": [
+      "bea_corporate_profits_aug26",
+      "bea_corporate_profits_sep30",
+      "bls_jolts",
+      "microsoft_fy2026q4"
+    ],
+    "numeric_cell_count": 34,
+    "new_provider_observations": 0,
+    "new_to_weekly_analysis": "September 30 BEA release-vintage revision comparison",
+    "scope": "Bounded scheduled investigation using exact retained reviewed extracts; no monthly or quarterly observation interpolated into a week"
+  },
+  "limitations": [
+    "One issuer and two fiscal quarters are not a broad issuer panel; currency, acquisitions and discrete items are incompletely controlled.",
+    "Cash capex, leases, acquisitions, executed repurchases, working capital, guidance vintages and restructuring cash payments remain unavailable.",
+    "BEA revision sensitivity uses two aggregate quarters and rounded displayed levels; it is not an industry decomposition or issuer-GAAP comparator.",
+    "JOLTS covers total nonfarm establishments and its July period is stale for an October 6 current-status claim.",
+    "Original publisher bytes are absent; exact permitted reviewed extracts were integrity checked and reused with their representation limitations.",
+    "Prior own-domain reports and results were visible before analysis, so replication is not independent economic confirmation."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-10-06T22:08:51Z",
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-06T22:11:51.414574+00:00",
+  "available_at_utc": "2026-10-06T22:11:51.414574+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "02cf751763b08a2ed0a1f7ee435445c05b440d2d192f17112602c75d5f5c6154",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "1fa3201a1c628eca9ffc84ed59f92f81189fdc7e3879cbeb42988ddd051dc549",
+  "sources": [
+    {
+      "id": "bea_corporate_profits_aug26",
+      "url": "https://www.bea.gov/data/income-saving/corporate-profits",
+      "upstream_ids": [
+        "US-BEA-NIPA-CORPORATE-PROFITS",
+        "US-IRS-CORPORATE-TAX",
+        "US-CENSUS-QFR"
+      ],
+      "integrity_status": "Exact retained reviewed record hash verified; original publisher bytes unavailable in this runtime."
+    },
+    {
+      "id": "bea_corporate_profits_sep30",
+      "url": "https://www.bea.gov/data/income-saving/corporate-profits",
+      "upstream_ids": [
+        "US-BEA-NIPA-CORPORATE-PROFITS",
+        "US-IRS-CORPORATE-TAX",
+        "US-CENSUS-QFR"
+      ],
+      "integrity_status": "Exact retained reviewed record hash verified; original publisher bytes unavailable in this runtime."
+    },
+    {
+      "id": "bls_jolts",
+      "url": "https://www.bls.gov/news.release/jolts.nr0.htm",
+      "upstream_ids": [
+        "bls:job-openings-and-labor-turnover-survey"
+      ],
+      "integrity_status": "Exact retained reviewed record hash verified; original publisher bytes unavailable in this runtime."
+    },
+    {
+      "id": "microsoft_fy2026q4",
+      "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast",
+      "upstream_ids": [
+        "ISSUER-MSFT-FY2026Q4"
+      ],
+      "integrity_status": "Exact retained reviewed record hash verified; original publisher bytes unavailable in this runtime."
+    },
+    {
+      "id": "census_qfr",
+      "url": "https://www.census.gov/econ/qfr/index.html",
+      "upstream_ids": [
+        "US-CENSUS-QFR"
+      ],
+      "integrity_status": "Representation hash exists; no original-byte or economic-completeness claim."
+    },
+    {
+      "id": "ftc_hsr",
+      "url": "https://www.ftc.gov/policy/reports/annual-competition-reports",
+      "upstream_ids": [
+        "US-FTC-DOJ-HSR-FILINGS"
+      ],
+      "integrity_status": "Representation hash exists; no original-byte or completed-deal claim."
+    }
+  ],
+  "delivery_key": "corporate:corporate-suite-weekly-2026-10-06:02cf751763b08a2ed0a1f7ee435445c05b440d2d192f17112602c75d5f5c6154"
+}

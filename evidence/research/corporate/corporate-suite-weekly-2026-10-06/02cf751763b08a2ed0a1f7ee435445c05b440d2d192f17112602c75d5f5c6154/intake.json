@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "delivery_key": "corporate:corporate-suite-weekly-2026-10-06:02cf751763b08a2ed0a1f7ee435445c05b440d2d192f17112602c75d5f5c6154",
+  "domain": "corporate",
+  "run_id": "corporate-suite-weekly-2026-10-06",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "received_at_utc": "2026-10-07T21:56:49Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "192ec4b83bdcb9a8c500cd1232568f81b3d4f126",
+    "staging_path": "evidence/research/pending/corporate/corporate-suite-weekly-2026-10-06/02cf751763b08a2ed0a1f7ee435445c05b440d2d192f17112602c75d5f5c6154/",
+    "producer_repository": "6t8hggfm44-tech/-Corporate-behavior-",
+    "producer_prepared_at_utc": "2026-10-06T22:13:23Z"
+  },
+  "integrity": {
+    "report_sha256": "02cf751763b08a2ed0a1f7ee435445c05b440d2d192f17112602c75d5f5c6154",
+    "report_bytes": 8549,
+    "envelope_sha256": "b1e921874a7530909ec2ab182feffe42cc643655c8d43cc50a1a41e048035182",
+    "envelope_bytes": 4430,
+    "verified": true,
+    "method": "Receiver reconstructed exact UTF-8 bytes of Report.md and report-envelope.json from one pinned immutable GitHub snapshot; independently recomputed SHA-256 and byte lengths, all matching packet declarations. Underlying original publisher/evidence-package bytes not verified."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/corporate/corporate-suite-weekly-2026-10-06/02cf751763b08a2ed0a1f7ee435445c05b440d2d192f17112602c75d5f5c6154/Report.md",
+    "envelope": "evidence/research/corporate/corporate-suite-weekly-2026-10-06/02cf751763b08a2ed0a1f7ee435445c05b440d2d192f17112602c75d5f5c6154/report-envelope.json",
+    "intake": "evidence/research/corporate/corporate-suite-weekly-2026-10-06/02cf751763b08a2ed0a1f7ee435445c05b440d2d192f17112602c75d5f5c6154/intake.json"
+  },
+  "source_ancestry_limit": "Reused primary-source measurements across research agents count only once; byte integrity does not establish scientific validity or original publisher-body identity.",
+  "notes": [
+    "New BEA release-vintage revision narrows Q2-versus-Q1 profit growth magnitude without reversing direction; reused JOLTS and one-issuer Microsoft evidence do not establish broad corporate realization."
+  ]
+}

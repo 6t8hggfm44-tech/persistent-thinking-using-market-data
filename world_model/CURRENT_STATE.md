@@ -1,36 +1,27 @@
 # Current Market State
 
 **Model version:** 0.2.20  
-**Latest evidence cutoff:** 2026-10-06T21:38:27Z  
-**Status:** October 6 regular cycle complete; no forecast due; three pending research packets canonically received; no hypothesis reweight; no new forecast.
+**Latest evidence cutoff:** 2026-10-07T21:59:44.132Z  
+**Status:** October 7 regular cycle complete; no forecast due; Corporate, Fiscal and Trade packets canonically received with exact byte/hash checks; no hypothesis reweight or new forecast.
 
-## Scoring
+## Audit before intake
+No active forecast expired. The frozen primary ledger remains **28 resolved records / 24 probability forecasts**, mean Brier **0.218250** and mean log loss **0.627080**. Read-only replication of Market Repo B's formula/parser on the exact primary ledger found zero Brier/log mismatches and interval coverage **22/24 = 91.7%**. The actual Python validator was not executed during this connector-only run; this is a formula-equivalent check, not an independent code execution. Learning remains **INSUFFICIENT EVIDENCE TO ASSESS** at n=24, below the precommitted 30 threshold.
 
-No active forecast expired. The frozen ledger remains 28 resolved records / **24 probability forecasts**, mean Brier **0.218250** and mean log loss **0.627080**, with zero applicable recomputation mismatches. Under the precommitted n<30 rule: **INSUFFICIENT EVIDENCE TO ASSESS LEARNING**.
+## Evidence after the October 6 cutoff
+Three complete upstream packets were newly received at 2026-10-07T21:56:49Z: Corporate October 6, Fiscal October 7 and Trade October 7. Exact report and envelope bytes/hashes were checked and preserved in canonical archive/index. Fiscal reconciles the Oct 1 Census August nominal construction release: private +1.074% m/m drove +0.8054pp of total +0.854%, while public +0.194% contributed just +0.0486pp. Public construction may be relatively resilient but provides no demonstrated new federal cash impulse, and underlying Census ancestry was already in the Market information set. Corporate reports BEA profit-direction robustness despite a downward revision of its gain and retains a limited Microsoft one-issuer result; older BEA/JOLTS ancestry gets no new vote. Trade contributes Taiwan MOF publication metadata and no fresh numeric trade; existing Port LA TEUs are reused.
 
-## Evidence and interpretation
+Fresh Oct 7 public data: EIA reported a commercial crude **3.2M-barrel draw** alongside a **0.382M-barrel gasoline build** and almost flat distillates, which remain below seasonal norms. October 7 published FOMC minutes document participants' **September** inflation-policy concerns and a likely further 2026 hike in their then-view, not fresh realized October inflation. Source timing and shared ancestry limit the weight of both.
 
-The October 6 BEA/Census trade release puts the August goods-and-services deficit at **$105.6B**, with exports **$315.2B** and imports **$420.8B**. Imports rose faster than exports. This can coexist with resilient domestic absorption while the wider trade gap mechanically drags GDP, so the release does not cleanly discriminate among H001/H002/H003.
-
-Consumer's delayed October 5 packet primarily adds a data-vintage warning: the retained retail figures were explicitly superseded and the revised values are unavailable. Housing's October 6 packet formalizes the September 24 new-home-sales revision already reflected in Market state, so it does not earn a duplicate macro vote. Industry's October 6 packet adds strong nominal SIA/WSTS semiconductor sales, but a 2.53% cross-release June-vintage difference and missing physical-unit/final-demand measures prevent treating nominal sales as realized H004 productivity evidence.
-
-The October 6 EIA STEO raises crude-price forecasts, but EIA says its model inputs were finalized October 1 and omit subsequent market events. It is therefore a newly available external forecast with an older information set, not a realized observation.
-
-## Hypotheses
-
+## Hypotheses and alternatives
 - H001 Soft landing: **0.37**
 - H002 Late-cycle recession: **0.14**
 - H003 Fiscal/inflation regime: **0.37**
 - H004 Productivity boom: **0.12**
 
-The Skeptic attacked co-leading H003. The mixed trade channels, stale-within-release STEO cutoff, housing/consumer revision limits, and nominal-only semiconductor signal do not justify another reweight. The H001/H003 tie is retained.
+After the Skeptic challenged H003, H001/H003 remain tied; no causal edge or weight changed. Labor softness and gas inventory builds offset parts of the oil/policy-stress story; private nominal investment is not proof of H004 productivity and rising yields do not uniquely identify H003.
 
-No structural causal edge changes in this cycle.
+## Prospective forecasts
+P000029 stays frozen from Sep 18 at **66%** for first-release September headline CPI ≥ +0.4% m/m on **October 14, 2026**, point +0.5%, 80% interval +0.1%–+0.9%; no revision or duplicate forecast. Other active IDs: P000004 (Nov 9), P000005 (Aug 9 2027).
 
-## Forecasts
-
-Active unresolved IDs remain P000004, P000005 and P000029. No new forecast is added merely to create activity.
-
-**Highest-information discriminator:** P000029, first-release September headline CPI on October 14: frozen p=0.66 that m/m CPI is at least +0.4%, point +0.5%, 80% interval +0.1% to +0.9%.
-
-No trade recommendation is produced.
+**Highest-information watch:** October 14 first-release September headline CPI.
+No trading advice or Universal direct writes.

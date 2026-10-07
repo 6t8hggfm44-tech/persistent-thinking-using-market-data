@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "delivery_key": "trade:trade-suite-weekly-2026-10-07:12a8e9ea9e7802a9bf4131b6b264e8981bcb058fee733d74c0c3c95774693ba8",
+  "domain": "trade",
+  "run_id": "trade-suite-weekly-2026-10-07",
+  "report_version": 1,
+  "report_kind": "final_evidence_gap",
+  "received_at_utc": "2026-10-07T21:56:49Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "192ec4b83bdcb9a8c500cd1232568f81b3d4f126",
+    "staging_path": "evidence/research/pending/trade/trade-suite-weekly-2026-10-07/12a8e9ea9e7802a9bf4131b6b264e8981bcb058fee733d74c0c3c95774693ba8/",
+    "producer_repository": "6t8hggfm44-tech/-Global-trade-China",
+    "producer_prepared_at_utc": "2026-10-07T19:17:23.487571Z"
+  },
+  "integrity": {
+    "report_sha256": "12a8e9ea9e7802a9bf4131b6b264e8981bcb058fee733d74c0c3c95774693ba8",
+    "report_bytes": 6597,
+    "envelope_sha256": "6d31c20b32090cde020f639f1362b190beb6c6ef04a9998f73e946a092a9cc4f",
+    "envelope_bytes": 3990,
+    "verified": true,
+    "method": "Receiver reconstructed exact UTF-8 bytes of Report.md and report-envelope.json from one pinned immutable GitHub snapshot; independently recomputed SHA-256 and byte lengths, all matching packet declarations. Underlying original publisher/evidence-package bytes not verified."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/trade/trade-suite-weekly-2026-10-07/12a8e9ea9e7802a9bf4131b6b264e8981bcb058fee733d74c0c3c95774693ba8/Report.md",
+    "envelope": "evidence/research/trade/trade-suite-weekly-2026-10-07/12a8e9ea9e7802a9bf4131b6b264e8981bcb058fee733d74c0c3c95774693ba8/report-envelope.json",
+    "intake": "evidence/research/trade/trade-suite-weekly-2026-10-07/12a8e9ea9e7802a9bf4131b6b264e8981bcb058fee733d74c0c3c95774693ba8/intake.json"
+  },
+  "source_ancestry_limit": "Reused primary-source measurements across research agents count only once; byte integrity does not establish scientific validity or original publisher-body identity.",
+  "notes": [
+    "No fresh numerical trade measurement; Taiwan MOF index metadata only. Previously reviewed Port of Los Angeles August TEUs are retained context, not a second independent trade vote."
+  ]
+}

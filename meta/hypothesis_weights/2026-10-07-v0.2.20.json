@@ -1,0 +1,24 @@
+{
+  "effective_at": "2026-10-07T21:59:44.132Z",
+  "model_version": "0.2.20",
+  "weights_before": {
+    "H001": 0.37,
+    "H002": 0.14,
+    "H003": 0.37,
+    "H004": 0.12
+  },
+  "weights_after": {
+    "H001": 0.37,
+    "H002": 0.14,
+    "H003": 0.37,
+    "H004": 0.12
+  },
+  "leader": "tie H001/H003",
+  "change": "none",
+  "rationale": {
+    "H001": "September labor softness limits soft-landing confidence; August private construction and resilient activity are compatible, but older release vintages overlap existing evidence.",
+    "H002": "Low-hire labor risk stays live, but October 7 physical inventories and backward-looking September Fed minutes are not new broad recession evidence.",
+    "H003": "FOMC September minutes published October 7 document then-current policy/inflation concerns, not a new realized inflation print. October 7 EIA stocks are mixed: crude draw, gasoline build, low distillates. Public construction did not dominate August gains. No clean causal evidence warrants reweighting.",
+    "H004": "Microsoft issuer growth and nominal technology investment provide no new verified broad realized productivity."
+  }
+}
