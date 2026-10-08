@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "delivery_key": "agriculture:agriculture-suite-weekly-2026-10-08:156856543fd1386b3109be76cf89c0015fe30b61e4b86aafa25d488a8e08ca21",
+  "domain": "agriculture",
+  "run_id": "agriculture-suite-weekly-2026-10-08",
+  "report_sha256": "156856543fd1386b3109be76cf89c0015fe30b61e4b86aafa25d488a8e08ca21",
+  "report_bytes": 9942,
+  "envelope_sha256": "47a7aa44986fa0be9cf9541c0dc0485a0733aea727307b4a5a7592205f431095",
+  "envelope_bytes": 3890,
+  "producer_repository": "6t8hggfm44-tech/-Agriculture-food-",
+  "producer_commit": "c80091f075236b4bfe13ca9198d7b4c0f0ff6f14",
+  "producer_report_path": "reports/agriculture-suite-weekly-2026-10-08/156856543fd1386b3109be76cf89c0015fe30b61e4b86aafa25d488a8e08ca21/Report.md",
+  "prepared_at_utc": "2026-10-08T16:12:44.759516Z",
+  "source_ancestry": [
+    {"id":"usda_wasde","url":"https://www.usda.gov/about-usda/general-information/staff-offices/office-chief-economist/commodity-markets/wasde-report","upstream_ids":["usda-waob","usda-nass","usda-fas","foreign-agriculture-statistics"],"integrity_status":"Exact retained limited record verified; headings only, original publisher body and latest availability unverified."},
+    {"id":"usda_nass_publications","url":"https://www.nass.usda.gov/Publications/","upstream_ids":["usda-nass"],"integrity_status":"Exact retained limited record verified; discovery only, original publisher body unavailable."},
+    {"id":"usdm_current","url":"https://droughtmonitor.unl.edu/CurrentMap.aspx","upstream_ids":["unl-usdm","noaa","usda"],"integrity_status":"Exact retained limited records verified; derived tool extracts, not publisher-body hashes."},
+    {"id":"usda_aphis_hpai","url":"https://www.aphis.usda.gov/h5n1-hpai","upstream_ids":["usda-aphis"],"integrity_status":"Exact retained limited record verified; no production-effect measurement."},
+    {"id":"usda_fas_export_sales","url":"https://www.fas.usda.gov/programs/export-sales-reporting-program","upstream_ids":["usda-fas"],"integrity_status":"Configured source disabled; no activity measurement."}
+  ],
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Exact original report and envelope copied from private immutable readback; private evidence, checkpoint and calculations are excluded from the public packet.",
+    "Retained tool extracts do not prove original publisher-body identity or current source availability.",
+    "No current-week provider observation was acquired; USDA shared-provider uncertainty remains unresolved.",
+    "Staging establishes neither Market receipt, acknowledgment nor canonical persistence."
+  ]
+}
+
