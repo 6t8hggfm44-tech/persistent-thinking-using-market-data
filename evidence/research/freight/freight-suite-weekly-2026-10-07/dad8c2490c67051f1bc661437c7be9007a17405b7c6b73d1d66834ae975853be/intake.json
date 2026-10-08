@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "delivery_key": "freight:freight-suite-weekly-2026-10-07:dad8c2490c67051f1bc661437c7be9007a17405b7c6b73d1d66834ae975853be",
+  "domain": "freight",
+  "run_id": "freight-suite-weekly-2026-10-07",
+  "report_version": 1,
+  "received_at_utc": "2026-10-08T21:31:19.648Z",
+  "canonically_eligible_from_utc": "2026-10-08T21:31:19.648Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "2ab7265f3a3c34e7a742de19a47420271b5e6c2e",
+    "staging_path": "evidence/research/pending/freight/freight-suite-weekly-2026-10-07/dad8c2490c67051f1bc661437c7be9007a17405b7c6b73d1d66834ae975853be/"
+  },
+  "integrity": {
+    "verified": true,
+    "report_sha256": "dad8c2490c67051f1bc661437c7be9007a17405b7c6b73d1d66834ae975853be",
+    "report_bytes": 7303,
+    "envelope_sha256": "9a968c0f54bc00a86652512b6dbf92e58beab8a0942735251818ec6a575bc9d8",
+    "envelope_bytes": 3926,
+    "method": "Independent SHA-256 computation of GitHub UTF-8 Report.md and report-envelope.json readbacks using tested SHA-256; byte lengths matched original packet.json."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/freight/freight-suite-weekly-2026-10-07/dad8c2490c67051f1bc661437c7be9007a17405b7c6b73d1d66834ae975853be/Report.md",
+    "envelope": "evidence/research/freight/freight-suite-weekly-2026-10-07/dad8c2490c67051f1bc661437c7be9007a17405b7c6b73d1d66834ae975853be/report-envelope.json",
+    "intake": "evidence/research/freight/freight-suite-weekly-2026-10-07/dad8c2490c67051f1bc661437c7be9007a17405b7c6b73d1d66834ae975853be/intake.json"
+  },
+  "supersedes": [],
+  "notes": [
+    "BTS May–July Freight TSI −1.3%, −0.3%, −0.7% m/m (current-vintage rounded headings) adds a lagged national freight-weakness panel. August Port LA loaded/empty is reused; no current bottleneck demonstrated.",
+    "Original publisher-body hashes and private evidence packages were not checked by Market; source claims remain bounded and source ancestry is deduplicated."
+  ]
+}

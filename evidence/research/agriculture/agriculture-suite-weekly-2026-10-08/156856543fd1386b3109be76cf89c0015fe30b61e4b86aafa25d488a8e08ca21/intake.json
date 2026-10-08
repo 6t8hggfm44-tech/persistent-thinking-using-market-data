@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "delivery_key": "agriculture:agriculture-suite-weekly-2026-10-08:156856543fd1386b3109be76cf89c0015fe30b61e4b86aafa25d488a8e08ca21",
+  "domain": "agriculture",
+  "run_id": "agriculture-suite-weekly-2026-10-08",
+  "report_version": 1,
+  "received_at_utc": "2026-10-08T21:31:19.648Z",
+  "canonically_eligible_from_utc": "2026-10-08T21:31:19.648Z",
+  "state": {
+    "received": true,
+    "integrity_checked": true,
+    "archived": true,
+    "acknowledged": true
+  },
+  "source_packet": {
+    "staging_commit": "f059f14e3b068bfaf27fe56caa27ddef62eee191",
+    "staging_path": "evidence/research/pending/agriculture/agriculture-suite-weekly-2026-10-08/156856543fd1386b3109be76cf89c0015fe30b61e4b86aafa25d488a8e08ca21/"
+  },
+  "integrity": {
+    "verified": true,
+    "report_sha256": "156856543fd1386b3109be76cf89c0015fe30b61e4b86aafa25d488a8e08ca21",
+    "report_bytes": 9942,
+    "envelope_sha256": "47a7aa44986fa0be9cf9541c0dc0485a0733aea727307b4a5a7592205f431095",
+    "envelope_bytes": 3890,
+    "method": "Independent SHA-256 computation of GitHub UTF-8 Report.md and report-envelope.json readbacks using tested SHA-256; byte lengths matched original packet.json."
+  },
+  "canonical_archive": {
+    "report": "evidence/research/agriculture/agriculture-suite-weekly-2026-10-08/156856543fd1386b3109be76cf89c0015fe30b61e4b86aafa25d488a8e08ca21/Report.md",
+    "envelope": "evidence/research/agriculture/agriculture-suite-weekly-2026-10-08/156856543fd1386b3109be76cf89c0015fe30b61e4b86aafa25d488a8e08ca21/report-envelope.json",
+    "intake": "evidence/research/agriculture/agriculture-suite-weekly-2026-10-08/156856543fd1386b3109be76cf89c0015fe30b61e4b86aafa25d488a8e08ca21/intake.json"
+  },
+  "supersedes": [],
+  "notes": [
+    "No fresh crop-production evidence; compatible two-vintage WASDE cells 0/14 and local September Virgin Islands well-depth cells cannot support a national food-price update.",
+    "Original publisher-body hashes and private evidence packages were not checked by Market; source claims remain bounded and source ancestry is deduplicated."
+  ]
+}

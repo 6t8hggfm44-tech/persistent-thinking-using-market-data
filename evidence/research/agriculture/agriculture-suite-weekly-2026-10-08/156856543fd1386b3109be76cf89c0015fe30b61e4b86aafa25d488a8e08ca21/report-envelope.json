@@ -1,0 +1,89 @@
+{
+  "domain": "agriculture",
+  "run_id": "agriculture-suite-weekly-2026-10-08",
+  "report_version": 1,
+  "report_kind": "final_evidence_gap",
+  "workflow_commit": "aaf87225c24dea43cdadd8c3753d85552a1b01fd",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-09-15T00:00:00Z",
+    "end": "2026-10-08T16:10:34.849713Z"
+  },
+  "actual_coverage": {
+    "requested_week": "2026-10-08",
+    "fresh_provider_observations": 0,
+    "retained_numeric_cells": 13,
+    "retained_numeric_periods": [
+      "2026-09-15",
+      "2026-09-22"
+    ],
+    "retained_geography": "Selected point wells in St Croix, St John and St Thomas, U.S. Virgin Islands",
+    "compatible_wasde_balance_cells": 0,
+    "required_wasde_balance_cells": 14,
+    "source_access_outcome": "EA access helper selected verified retained evidence; no provider command was reserved or executed."
+  },
+  "limitations": [
+    "No current-week provider observation was acquired.",
+    "USDA provider acquisition remains blocked by an unresolved shared-provider reservation in verified Freight state.",
+    "USDM retained evidence is local point-well context, not national crop-weighted exposure or production.",
+    "Original publisher bodies for retained extracts are unavailable in this runtime; exact reviewed records were hash-verified.",
+    "FAS source remains disabled."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-10-08T16:10:34.849713Z",
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-08T16:11:59.061486+00:00",
+  "available_at_utc": "2026-10-08T16:11:59.061486+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "156856543fd1386b3109be76cf89c0015fe30b61e4b86aafa25d488a8e08ca21",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "e6a024a6a27b235282f959615d3997eb7e7552d601844674fa66c22b2c8eea38",
+  "sources": [
+    {
+      "id": "usda_wasde",
+      "url": "https://www.usda.gov/about-usda/general-information/staff-offices/office-chief-economist/commodity-markets/wasde-report",
+      "upstream_ids": [
+        "usda-waob",
+        "usda-nass",
+        "usda-fas",
+        "foreign-agriculture-statistics"
+      ],
+      "integrity_status": "Retained record SHA256 ab1f545f5161d1025cdbe7fa964db99a3f4432b10e2a5630b1036123e5a21183 verified; original publisher body and latest availability unverified."
+    },
+    {
+      "id": "usda_nass_publications",
+      "url": "https://www.nass.usda.gov/Publications/",
+      "upstream_ids": [
+        "usda-nass"
+      ],
+      "integrity_status": "Retained record SHA256 deb9284fa7c512bb7710092e88a35eaec149dcaacf485d23fbdb9e5d80f37848 verified; original publisher body unavailable."
+    },
+    {
+      "id": "usdm_current",
+      "url": "https://droughtmonitor.unl.edu/CurrentMap.aspx",
+      "upstream_ids": [
+        "unl-usdm",
+        "noaa",
+        "usda"
+      ],
+      "integrity_status": "Retained records SHA256 d5467c210f0702637b609a95a66e1ee4bc9e65079718ac1436a60ddc43c36cf2 and 5fb75af446fa11ac3bce060a18e0d5666fc9572470949ac3f19e0ea7deee352f verified; derived tool extracts, not publisher-body hashes."
+    },
+    {
+      "id": "usda_aphis_hpai",
+      "url": "https://www.aphis.usda.gov/h5n1-hpai",
+      "upstream_ids": [
+        "usda-aphis"
+      ],
+      "integrity_status": "Retained record SHA256 616a20190f5d24dc43fa0119f9d113253219071158c25a0694cb38eaef6bc128 verified; no production-effect measurement."
+    },
+    {
+      "id": "usda_fas_export_sales",
+      "url": "https://www.fas.usda.gov/programs/export-sales-reporting-program",
+      "upstream_ids": [
+        "usda-fas"
+      ],
+      "integrity_status": "Configuration state verified; absence is not evidence of zero sales or shipments."
+    }
+  ],
+  "delivery_key": "agriculture:agriculture-suite-weekly-2026-10-08:156856543fd1386b3109be76cf89c0015fe30b61e4b86aafa25d488a8e08ca21"
+}
