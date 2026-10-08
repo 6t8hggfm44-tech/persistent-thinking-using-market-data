@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "delivery_key": "energy:energy-suite-weekly-2026-10-08:e4a2dc2abbf1de2abd3db522a8bdb074d5424206e77c4e439d3a8101ad22ca6d",
+  "domain": "energy",
+  "run_id": "energy-suite-weekly-2026-10-08",
+  "report_sha256": "e4a2dc2abbf1de2abd3db522a8bdb074d5424206e77c4e439d3a8101ad22ca6d",
+  "report_bytes": 7409,
+  "envelope_sha256": "6064ae16df34c6e29520f6829f24621a29c717c0e35773165f323fb9338257cd",
+  "envelope_bytes": 4125,
+  "producer_repository": "6t8hggfm44-tech/-Energy",
+  "producer_commit": "76f74d438fd9b2fb837d5d71be406bd6ffc6c7dc",
+  "producer_report_path": "reports/energy-suite-weekly-2026-10-08/e4a2dc2abbf1de2abd3db522a8bdb074d5424206e77c4e439d3a8101ad22ca6d/Report.md",
+  "prepared_at_utc": "2026-10-08T22:17:15.280269027Z",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Only the exact safe final Report.md, report-envelope.json and packet.json are staged; private evidence, checkpoint state and raw tool output are excluded.",
+    "Staging does not establish Market receipt, acknowledgment, canonical intake or forecast availability.",
+    "Gas is an October 8 release for the October 2 storage week; electricity and petroleum are lagged reused EIA evidence with shared ancestry and no independent vote from reuse."
+  ],
+  "source_ancestry": [
+    "EIA_US_weekly_petroleum",
+    "bridge:energy-petroleum-2026-09-15",
+    "eia:electric-power-monthly",
+    "eia:survey:EIA-861M",
+    "eia:survey:EIA-912",
+    "eia:survey:EIA-923",
+    "eia:weekly-natural-gas-storage"
+  ]
+}
