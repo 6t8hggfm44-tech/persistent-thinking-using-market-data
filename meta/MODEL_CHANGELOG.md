@@ -199,3 +199,8 @@ No forecast expired; probability metrics remain n=24 / Brier 0.218250 / log loss
 ## 2026-10-07 — v0.2.20 reviewed, no model change
 
 No active forecast expired. Probability ledger n=24, mean Brier 0.218250 and log loss 0.627080; insufficient evidence to assess learning. Corporate, Fiscal and Trade packets were exactly integrity-checked and canonically received, with shared BEA/Census/JOLTS/Port LA ancestry discounted. October 7 EIA crude/product balances were mixed; the newly published FOMC minutes describe September deliberations. After Skeptic review of co-leading H003, weights remain **H001 0.37 / H002 0.14 / H003 0.37 / H004 0.12** and the causal graph is unchanged. No model version increment, no correlated new forecast, and no Universal transfer candidate. See `meta/model_changes/2026-10-07-v0.2.20-no-change.md` and `evaluations/2026-10-07-regular-cycle.md`.
+
+## 2026-10-08 — v0.2.20 reviewed, no model change
+
+No active forecast expired; 24 probability outcomes retain Brier 0.218250 / log loss 0.627080 (read-only equivalent score check, not direct Market Repo B Python execution). Freight Oct 7 and Agriculture Oct 8 completed packets were exact-byte/hash verified and canonically indexed, with original source dates and common ancestry preserved. New October 8 claims of 197K, August wholesale sales +1.8%, inventories +0.5% and oil/bond moves yield mixed low-layoff, nominal-demand, freight-softness, and supply-shock evidence. After Skeptic review of co-leading H003, **H001 0.37 / H002 0.14 / H003 0.37 / H004 0.12** remain unchanged; no causal edge, model version or new forecast. P000029 resolves October 14. See `meta/model_changes/2026-10-08-v0.2.20-no-change.md` and `evidence/2026-10-08-cycle.md`.
+
