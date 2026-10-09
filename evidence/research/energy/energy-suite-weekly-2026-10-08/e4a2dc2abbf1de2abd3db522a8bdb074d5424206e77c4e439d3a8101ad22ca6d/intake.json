@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "delivery_key": "energy:energy-suite-weekly-2026-10-08:e4a2dc2abbf1de2abd3db522a8bdb074d5424206e77c4e439d3a8101ad22ca6d",
+  "domain": "energy",
+  "run_id": "energy-suite-weekly-2026-10-08",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "received_at_utc": "2026-10-09T21:26:36.686Z",
+  "producer_available_at_utc": "2026-10-08T22:15:25.632802+00:00",
+  "producer_evidence_cutoff_utc": "2026-10-08T22:12:11.057370+00:00",
+  "prepared_at_utc": "2026-10-08T22:17:15.280269027Z",
+  "source_packet_commit": "b0da5cf49099b4f4c6024bc95d6f6f8c46ee3060",
+  "source_packet_path": "evidence/research/pending/energy/energy-suite-weekly-2026-10-08/e4a2dc2abbf1de2abd3db522a8bdb074d5424206e77c4e439d3a8101ad22ca6d",
+  "producer_repository": "6t8hggfm44-tech/-Energy",
+  "producer_commit": "76f74d438fd9b2fb837d5d71be406bd6ffc6c7dc",
+  "verified": true,
+  "report_sha256": "e4a2dc2abbf1de2abd3db522a8bdb074d5424206e77c4e439d3a8101ad22ca6d",
+  "report_bytes": 7409,
+  "envelope_sha256": "6064ae16df34c6e29520f6829f24621a29c717c0e35773165f323fb9338257cd",
+  "envelope_bytes": 4125,
+  "verification_method": "independently recomputed exact UTF-8 byte lengths and SHA-256 for complete GitHub-fetched staged Report.md and report-envelope.json at immutable source commit; manifest and original EIA publisher bytes not independently reread",
+  "evidence_status": "qualified mixed physical-storage observation; no measured price/GDP/September-CPI transmission",
+  "source_ancestry": [
+    "eia:weekly-natural-gas-storage",
+    "eia:survey:EIA-912",
+    "eia:electric-power-monthly",
+    "EIA_US_weekly_petroleum"
+  ],
+  "notes": [
+    "Canonical only prospectively from complete Market receipt on October 9; not available at October 8 cutoffs.",
+    "EIA Oct 8 report for gas week ended Oct 2 is new; reused electricity July and petroleum through Sep 4 are not new independent votes.",
+    "Report and envelope bytes verified; upstream manifest and original publisher body not verified.",
+    "Durable acknowledgment requires verified commit/index readback."
+  ]
+}

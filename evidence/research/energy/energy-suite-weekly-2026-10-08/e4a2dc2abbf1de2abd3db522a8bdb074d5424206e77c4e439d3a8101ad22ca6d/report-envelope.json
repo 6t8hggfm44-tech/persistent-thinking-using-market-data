@@ -1,0 +1,74 @@
+{
+  "domain": "energy",
+  "run_id": "energy-suite-weekly-2026-10-08",
+  "report_version": 1,
+  "report_kind": "final_hypothesis_test",
+  "workflow_commit": "e75a0c1b0467f2f008685b8fe05bc9b2a7feb778",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-10-01T22:00:00Z",
+    "end": "2026-10-08T22:00:00Z"
+  },
+  "actual_coverage": {
+    "requested_week": "October 1-8, 2026; WNGSR release and retrieval occurred October 8, with underlying gas observation through October 2.",
+    "gas": "Lower-48 and five storage regions; week ending October 2; October 8 release; current/prior/year-ago/five-year cells plus sampling variability.",
+    "petroleum": "Twelve US series, 3,420 verified bridge rows through September 4; current-vintage histories first observed September 14; no duplicate collection.",
+    "electricity": "Reused July 2025/2026 US sector sales and January-July sensitivity from the September 24 EPM release.",
+    "coverage_gaps": [
+      "gas consumption/production and weather controls",
+      "hourly electricity load",
+      "power and motor-fuel prices",
+      "grid stress/outages",
+      "total industrial energy consumption",
+      "global gas/LNG"
+    ]
+  },
+  "limitations": [
+    "US-only and unevenly lagged coverage; the gas observation is current to October 2, electricity to July and petroleum to September 4.",
+    "Storage is not consumption; no matched weather, production, pipeline-flow or price controls were executed.",
+    "Petroleum is one reused EIA family and current-vintage history, not fresh evidence or a historical release-vintage archive.",
+    "Electricity sales are preliminary monthly billing quantities, not hourly load or total industrial energy use.",
+    "Tool-extract integrity does not establish original publisher-body identity or hidden upstream request/byte/redirect totals.",
+    "Exploratory analysis with prior exposure; no calibrated probability, causal model, market-return forecast or trade recommendation."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-10-08T22:12:11.057370+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-08T22:15:25.632802+00:00",
+  "available_at_utc": "2026-10-08T22:15:25.632802+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "e4a2dc2abbf1de2abd3db522a8bdb074d5424206e77c4e439d3a8101ad22ca6d",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "2d624d2aa722db7350e0be7927793bc7e62e6c85c1be86d07f023a3294469dfc",
+  "sources": [
+    {
+      "id": "petroleum_bridge",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/",
+      "upstream_ids": [
+        "EIA_US_weekly_petroleum",
+        "bridge:energy-petroleum-2026-09-15"
+      ],
+      "integrity_status": "All 16 bridge payload byte counts and SHA-256 values matched the verified manifest; 3,420 rows and recorded row-hash shapes were checked. Original-body and reconstructed-row equality remain the export validation attestation, not a current raw-body reread. One shared EIA family, no duplicate acquisition."
+    },
+    {
+      "id": "eia_wngsr",
+      "url": "https://ir.eia.gov/ngs/ngs.html",
+      "upstream_ids": [
+        "eia:weekly-natural-gas-storage",
+        "eia:survey:EIA-912"
+      ],
+      "integrity_status": "Exact retained numeric selections matched the one returned official tool representation. Original publisher bytes and hidden upstream transport totals are unverified; ephemeral redirect parameters were not retained."
+    },
+    {
+      "id": "eia_epm",
+      "url": "https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_1",
+      "upstream_ids": [
+        "eia:electric-power-monthly",
+        "eia:survey:EIA-923",
+        "eia:survey:EIA-861M"
+      ],
+      "integrity_status": "Exact prior retained extract SHA-256 5bc25db36a314e85be1ab31353d5aa6e6fbe5521207764f51151375fc4fa7d99 verified in the immutable October 1 run. No fresh EPM access; saved cooldown preserved."
+    }
+  ],
+  "delivery_key": "energy:energy-suite-weekly-2026-10-08:e4a2dc2abbf1de2abd3db522a8bdb074d5424206e77c4e439d3a8101ad22ca6d"
+}
