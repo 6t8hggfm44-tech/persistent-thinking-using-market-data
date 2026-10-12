@@ -1,0 +1,77 @@
+{
+  "domain": "credit",
+  "run_id": "credit-suite-weekly-2026-10-12",
+  "report_version": 1,
+  "report_kind": "final_evidence_gap",
+  "workflow_commit": "e88f78565036706952b44517d3b37a16b6da0b72",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2024-04-01T00:00:00Z",
+    "end": "2026-10-02T00:00:00Z"
+  },
+  "actual_coverage": {
+    "geography": "United States aggregate commercial-bank tables and eligible U.S. commercial-paper issuer categories; no identified regional-bank panel",
+    "fresh_sources_this_run": 0,
+    "reused_extracts": 4,
+    "latest_observation_date": "2026-10-01 CP daily; latest bank delinquency 2026Q2; latest H8 2026-09-16; H15 2026-09-24",
+    "cp_numeric_cells": 16,
+    "cp_missing_positions": 5,
+    "delinquency_cells": 24,
+    "lineage": "H8/delinquency share FFIEC Call Report ancestry; CP/H15 CP values share fed-cp-dtcc ancestry"
+  },
+  "limitations": [
+    "No new source acquisition or current observation after October 1; current Oct12 financial-stress state is not measured.",
+    "Direct egress capability was not exposed/verified; offline preflight granted no selected source routes.",
+    "Connected-web policy does not extend to missed-occurrence catch-up.",
+    "Retained values are reviewed tool extracts, not publisher body bytes; exact extract hashes verified.",
+    "H8 and H15 are stale as of their last saved coverage.",
+    "SLOOS numerical standards/demand, spreads, repo, bankruptcy, charge-off and regional-bank panel absent.",
+    "Existing data are current-vintage histories, not reconstructed initial release vintages."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-10-12T18:42:06Z",
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-12T18:43:57.207995+00:00",
+  "available_at_utc": "2026-10-12T18:43:57.207995+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "e5b1c93a8183d26d04d2530e8e680f80eaf521783ac556458189e2e7b6e639b5",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "1a7242f6428b15174a70b65dd8322a4155a34ef32dd472cd4a1925c4914a1bce",
+  "sources": [
+    {
+      "id": "fed_cp",
+      "url": "https://www.federalreserve.gov/releases/cp/rates.htm",
+      "upstream_ids": [
+        "fed-cp-dtcc"
+      ],
+      "integrity_status": "Exact retained extract bytes verified; original publisher body unavailable."
+    },
+    {
+      "id": "fed_delinquency",
+      "url": "https://www.federalreserve.gov/releases/chargeoff/delallsa.htm",
+      "upstream_ids": [
+        "ffiec-call-reports"
+      ],
+      "integrity_status": "Exact retained extract bytes verified; original publisher body unavailable."
+    },
+    {
+      "id": "fed_h8",
+      "url": "https://www.federalreserve.gov/releases/h8/current/",
+      "upstream_ids": [
+        "fed-h8-bank-reporting",
+        "ffiec-call-reports"
+      ],
+      "integrity_status": "Exact retained extract bytes verified; original publisher body unavailable."
+    },
+    {
+      "id": "fed_h15",
+      "url": "https://www.federalreserve.gov/releases/h15/",
+      "upstream_ids": [
+        "fed-h15-market-rate-inputs",
+        "fed-cp-dtcc"
+      ],
+      "integrity_status": "Exact retained extract bytes verified; original publisher body unavailable."
+    }
+  ],
+  "delivery_key": "credit:credit-suite-weekly-2026-10-12:e5b1c93a8183d26d04d2530e8e680f80eaf521783ac556458189e2e7b6e639b5"
+}

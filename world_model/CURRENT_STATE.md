@@ -1,22 +1,26 @@
 # Current Market State
 
-**Model version:** 0.2.20 (unchanged). **Latest evidence cutoff:** 2026-10-08T21:34:07.228Z. **Status:** October 8 regular cycle: no expired forecast; two new reports received; no weight, causal-edge or forecast change.
+**Model version:** 0.2.20 (unchanged). **Latest evidence cutoff:** 2026-10-12T21:17:24.097Z. **Status:** October 12 post-close regular cycle: no newly expired forecast; three complete producer packets independently verified and canonically received; no material hypothesis/causal-edge change or new scored forecast.
 
-## Audit
-Frozen ledger: 28 resolved records, n=24 binary probability outcomes. Read-only JS implementation of Market Repo B's scoring/parser checks: Brier 0.218250, log loss 0.627080, zero score mismatches, and 22/24 row-level 80% interval flags. Repo B validation code `45bfb5427a40a703ed9e4414e51b5e1d57a122ea` was reviewed, **but its Python validator was not directly executed**. Learning remains unassessable (n<30); no independent companion-validation success or statistical learning is claimed.
+## Forecast audit and validation
 
-## Observations and interpretation
-Freight Oct 7 and Agriculture Oct 8 reports were exact-byte/hash checked and canonically received at 2026-10-08T21:31:19.648Z, preserving original evidence age and ancestry. National BTS for-hire freight headlines declined May–July (−1.3/−0.3/−0.7% m/m) but do not establish an October disruption; Port LA numbers are duplicated from older source data. Agriculture provided no current national crop production data or compatible WASDE balance cells; no benign food-price conclusion follows.
+Frozen primary ledger: **28 resolved** total, **24 scored binary probability forecasts**, mean **Brier 0.218250** and **log loss 0.627080**. Local read-only port of Market Repo B's score/parsing methods found **zero arithmetic disagreements** and 22/24 row-level interval flags. Market Repo B reference code commit `45bfb5427a40a703ed9e4414e51b5e1d57a122ea` was read but its Python validator **not directly executed**, so this is a local deterministic arithmetic check, not completed companion validation. Learning cannot be assessed (n<30) and comparative skill remains unproven; fixed 0.5 comparator is not an economic benchmark.
 
-October 8 DOL initial claims were 197K, continuing claims 1.716M; August wholesale sales rose 1.8% m/m and inventories rose 0.5% after a downward advance-vintage revision. Oil-price escalation remains an inflation cost risk, but afternoon Treasury-auction buying reversed the yield move. Low separations coexist with weak hiring; lagged freight softness coexists with nominal wholesale-demand resilience. No source uniquely identifies a durable inflation/recession mechanism. See [the full dated evidence and provenance audit](../evidence/2026-10-08-cycle.md).
+## New observations and source limits
 
-## Hypotheses
+**OBSERVATION:** October 12 AP reported S&P 500 7,807.24 (-0.1%), Brent $106.65 (+1.8%); bond market closed for the federal holiday. Reuters reported oil/geopolitical concerns and Federal Reserve inflation rhetoric. These overlap rather than independently confirm a durable inflation or policy channel.
+
+**OBSERVATION:** At actual complete Market receipt `2026-10-12T21:17:24.097Z`, Weather 2026-10-12 version 2 had zero qualifying anomalies in four NASA POWER gridded point proxies with only four of seven requested-week days; Credit 2026-10-12 had no new observations beyond October 1; GEV 2026-10-12 had no current verified aircraft/satellite artifacts. **INFERENCE:** these are bounded screen findings or source/availability gaps, not proof of nationwide benign conditions or market effects. Exact original cutoffs/source ancestry retained. See [dated evidence](../evidence/2026-10-12-cycle.md).
+
+## Competing hypotheses and Skeptic
+
 - H001 soft landing **0.37**
 - H002 late-cycle recession **0.14**
 - H003 fiscal/inflation regime **0.37**
 - H004 productivity boom **0.12**
 
-Skeptic attacked co-leading H003; weights and causal graph remain unchanged. No model version increment. No new forecast manufactured from mixed/correlated evidence.
+Co-leading H003 and H001 were challenged against weak hiring/household demand, shared oil-source ancestry, limited weather sample, missing current credit/GEV measurements and the closed Treasury cash market. No change from v0.2.20, and no new causal-edge credit. Refer [Skeptic](../meta/SKEPTIC_2026-10-12.md) and [no-change disposition](../meta/model_changes/2026-10-12-v0.2.20-no-change.md).
 
-## Forecasts
-P000029 is frozen at **66%** for first-release September headline CPI **>=+0.4% m/m** on **October 14, 2026**, still the highest-information near-term test. P000004 (Nov 9) and P000005 (Aug 9, 2027) remain open. No trading advice. No direct Universal writes.
+## Pending discriminating tests
+
+P000029 (registered September 18) remains immutable: **66%** probability that the first BLS September all-items CPI-U seasonally-adjusted monthly reading on **October 14, 2026 at 08:30 ET** is **>=+0.4%**. P000004 resolves November 9 and P000005 August 9, 2027. No new correlated forecast. No trades; no direct Universal truth writes.
