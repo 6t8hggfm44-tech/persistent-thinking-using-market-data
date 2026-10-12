@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "delivery_key": "credit:credit-suite-weekly-2026-10-12:e5b1c93a8183d26d04d2530e8e680f80eaf521783ac556458189e2e7b6e639b5",
+  "domain": "credit",
+  "run_id": "credit-suite-weekly-2026-10-12",
+  "report_sha256": "e5b1c93a8183d26d04d2530e8e680f80eaf521783ac556458189e2e7b6e639b5",
+  "report_bytes": 9160,
+  "envelope_sha256": "fbcc922e1b831e9fbf12e91909e9a88a2bab89aa3ab0aa63f94ddd01ecdcdf78",
+  "envelope_bytes": 3409,
+  "producer_repository": "6t8hggfm44-tech/-Credit-financial-stress-",
+  "producer_commit": "82e2344eb362013d64afa9ca2299df08784b0406",
+  "producer_report_path": "reports/credit-suite-weekly-2026-10-12/e5b1c93a8183d26d04d2530e8e680f80eaf521783ac556458189e2e7b6e639b5/Report.md",
+  "prepared_at_utc": "2026-10-12T18:44:30Z",
+  "source_ancestry": [
+    {
+      "id": "fed_cp",
+      "url": "https://www.federalreserve.gov/releases/cp/rates.htm",
+      "upstream_ids": [
+        "fed-cp-dtcc"
+      ],
+      "integrity_status": "Exact retained extract bytes verified; original publisher body unavailable."
+    },
+    {
+      "id": "fed_delinquency",
+      "url": "https://www.federalreserve.gov/releases/chargeoff/delallsa.htm",
+      "upstream_ids": [
+        "ffiec-call-reports"
+      ],
+      "integrity_status": "Exact retained extract bytes verified; original publisher body unavailable."
+    },
+    {
+      "id": "fed_h8",
+      "url": "https://www.federalreserve.gov/releases/h8/current/",
+      "upstream_ids": [
+        "fed-h8-bank-reporting",
+        "ffiec-call-reports"
+      ],
+      "integrity_status": "Exact retained extract bytes verified; original publisher body unavailable."
+    },
+    {
+      "id": "fed_h15",
+      "url": "https://www.federalreserve.gov/releases/h15/",
+      "upstream_ids": [
+        "fed-h15-market-rate-inputs",
+        "fed-cp-dtcc"
+      ],
+      "integrity_status": "Exact retained extract bytes verified; original publisher body unavailable."
+    }
+  ],
+  "transport_limitations": [
+    "Staged repository packet only; no Market receipt or canonical persistence is claimed.",
+    "Private reproducibility package is not included in this public transport. Evidence uses reviewed limited extracts; original publisher bytes are not independently verified.",
+    "No raw publisher bodies, private checkpoints, access tokens or operational invocation identifiers are included."
+  ],
+  "declared_transformations": [
+    "Basis-point differences are percentage-rate differences multiplied by 100.",
+    "Historical H.8 stock changes are displayed in USD billions without annualization.",
+    "Monthly and daily CP comparisons are kept separate; missing cells are not imputed."
+  ]
+}
