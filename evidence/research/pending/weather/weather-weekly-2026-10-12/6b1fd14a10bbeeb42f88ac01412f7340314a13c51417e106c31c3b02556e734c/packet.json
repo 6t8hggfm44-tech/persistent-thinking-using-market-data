@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "delivery_key": "weather:weather-weekly-2026-10-12:6b1fd14a10bbeeb42f88ac01412f7340314a13c51417e106c31c3b02556e734c",
+  "domain": "weather",
+  "run_id": "weather-weekly-2026-10-12",
+  "report_sha256": "6b1fd14a10bbeeb42f88ac01412f7340314a13c51417e106c31c3b02556e734c",
+  "report_bytes": 10085,
+  "envelope_sha256": "97e8c09334ef9e62bd6e7a70054f118899afc8472233be0dcefffb3438040acd",
+  "envelope_bytes": 2108,
+  "producer_repository": "6t8hggfm44-tech/-Energy",
+  "producer_workflow_repository": "6t8hggfm44-tech/weather",
+  "producer_kind": "legacy_weather",
+  "producer_commit": "514e07497579adc0d9d14ff9fb4fccd4fd1115f1",
+  "producer_report_path": "cloud/legacy-weekly/reports/weather/weather-weekly-2026-10-12/6b1fd14a10bbeeb42f88ac01412f7340314a13c51417e106c31c3b02556e734c/Report.md",
+  "prepared_at_utc": "2026-10-12T17:24:36.987632174Z",
+  "declared_transformations": ["None; Report.md and report-envelope.json are staged byte-for-byte from the verified private immutable package."],
+  "transport_limitations": ["The public packet contains reviewed final prose and safe metadata only; private checkpoint, raw archive, operational identifiers, and publisher bodies are excluded.","Staging is not Market receipt, acknowledgment, canonical persistence, or model use."],
+  "received_at_utc": null
+}
