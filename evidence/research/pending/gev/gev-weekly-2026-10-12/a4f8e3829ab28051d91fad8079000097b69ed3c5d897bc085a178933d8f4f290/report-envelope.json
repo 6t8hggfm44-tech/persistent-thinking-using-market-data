@@ -1,0 +1,62 @@
+{
+  "domain": "gev",
+  "run_id": "gev-weekly-2026-10-12",
+  "report_version": 1,
+  "report_kind": "final_evidence_gap",
+  "workflow_commit": "e9105bf38cdca6e78955f03844a2c894c9abd793",
+  "executed_code_sha256": "cebdb0ffca1529059d018d59860b3e3dc9f7506830aad0e93da9b498c59c9d0e",
+  "event_window_utc": {
+    "start": "2026-10-05T15:02:25.610405+00:00",
+    "end": "2026-10-12T15:02:25.610405+00:00"
+  },
+  "actual_coverage": {
+    "workflow_run_pages_checked": 3,
+    "workflow_run_records_checked": 90,
+    "current_occurrence_matching_export_runs": 0,
+    "current_occurrence_readable_artifacts": 0,
+    "current_aircraft_days_verified": 0,
+    "current_satellite_records_verified": 0,
+    "latest_matching_cached_weekly_run_id": 37374433874,
+    "latest_matching_live_export_run_id": 37376516068,
+    "latest_matching_run_date_utc": "2026-10-05",
+    "global_coverage": false
+  },
+  "limitations": [
+    "No October 12 cached-weekly or live-export run was surfaced within the permitted three-page repository-level discovery bound.",
+    "The bounded listing does not prove that a delayed workflow will not start later or that durable private inputs do not exist.",
+    "No current artifact bytes were available to verify, extract, replay or use scientifically.",
+    "Missing evidence cannot establish normal traffic, absence of anomalies, source health, physical cause, military attribution or economic effect.",
+    "The prior September 28 report was viewed for package-format guidance before this report was frozen; no claim of blinded comparison is made."
+  ],
+  "supersedes": [],
+  "evidence_cutoff_utc": "2026-10-12T15:11:28.316531+00:00",
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-12T15:13:20.250098+00:00",
+  "available_at_utc": "2026-10-12T15:13:20.250098+00:00",
+  "report_path": "Report.md",
+  "report_sha256": "a4f8e3829ab28051d91fad8079000097b69ed3c5d897bc085a178933d8f4f290",
+  "manifest_path": "manifest.json",
+  "manifest_sha256": "e930bca971155b483448f7bff803959a8b3432c6b70e5ebcd5768087cf7da8ee",
+  "sources": [
+    {
+      "id": "github-actions-run-metadata",
+      "url": "https://api.github.com/repos/6t8hggfm44-tech/-Energy/actions/runs?per_page=30",
+      "upstream_ids": [
+        "GitHub Actions",
+        "6t8hggfm44-tech/-Energy"
+      ],
+      "integrity_status": "Read through the authorized GitHub connector from the repository-level Actions collection. This verifies returned run metadata, not artifact bytes, provider bodies, complete repository history or future workflow availability."
+    },
+    {
+      "id": "current-gev-artifacts",
+      "url": "https://github.com/6t8hggfm44-tech/-Energy/actions",
+      "upstream_ids": [
+        "GitHub Actions",
+        "adsb.lol",
+        "CelesTrak"
+      ],
+      "integrity_status": "Unavailable: no current artifact ID, trusted outer byte count/digest, fresh connector download reference, inner manifest or replay result existed in this invocation."
+    }
+  ],
+  "delivery_key": "gev-weekly-2026-10-12:a4f8e3829ab28051d91fad8079000097b69ed3c5d897bc085a178933d8f4f290"
+}

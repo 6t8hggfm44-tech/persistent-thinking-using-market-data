@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "delivery_key": "gev-weekly-2026-10-12:a4f8e3829ab28051d91fad8079000097b69ed3c5d897bc085a178933d8f4f290",
+  "domain": "gev",
+  "run_id": "gev-weekly-2026-10-12",
+  "report_sha256": "a4f8e3829ab28051d91fad8079000097b69ed3c5d897bc085a178933d8f4f290",
+  "report_bytes": 6772,
+  "envelope_sha256": "fc3158c808401e7dc4330794213667fbb98ad63d5b288569b74780f108a776ee",
+  "envelope_bytes": 3064,
+  "producer_repository": "6t8hggfm44-tech/-Energy",
+  "producer_workflow_repository": "6t8hggfm44-tech/satellite-research",
+  "producer_kind": "legacy_gev",
+  "producer_commit": "d67a5509026c0d3bd55b8603334cdcc81020ef73",
+  "producer_report_path": "cloud/legacy-weekly/reports/gev/gev-weekly-2026-10-12/a4f8e3829ab28051d91fad8079000097b69ed3c5d897bc085a178933d8f4f290/Report.md",
+  "prepared_at_utc": "2026-10-12T15:17:21.839382+00:00",
+  "declared_transformations": [],
+  "transport_limitations": [
+    "Only reviewed final report prose and safe envelope/transport metadata are staged; private checkpoint and operational records are excluded.",
+    "No current GEV artifact bytes were available; the report is an evidence-gap result, not a scientific negative.",
+    "Staging is not Market receipt, acknowledgment or canonical persistence."
+  ],
+  "received_at_utc": null,
+  "market_received_at_utc": null,
+  "acknowledged_at_utc": null,
+  "receipt_at_utc": null,
+  "persisted_at_utc": null
+}
