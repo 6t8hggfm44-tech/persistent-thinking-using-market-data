@@ -1,0 +1,15 @@
+{
+  "files": [
+    {
+      "base64": "U1lOVEhFVElDIHBlcnNpc3RlbmNlIGNhbmFyeS4gTm8gZm9yZWNhc3Qgb3IgZWNvbm9taWMgZXZpZGVuY2UuDQpFeGFjdC1ieXRlIHJlY292ZXJ5IHRlc3QuCg==",
+      "bytes": 91,
+      "path": "canary.txt",
+      "sha256": "c7cd90d1eef97e2d25ceec6a2027458f6a01d5274a4eb933e355d75fe2d31d43"
+    }
+  ],
+  "kind": "synthetic-test",
+  "repository": "6t8hggfm44-tech/persistent-thinking-using-market-data",
+  "run_id": "synthetic-persistence-2026-10-16",
+  "schema": "market-output-checkpoint-v1",
+  "source_commit": "eb5f1724e38414a03f746cfa181c623867d22cea"
+}

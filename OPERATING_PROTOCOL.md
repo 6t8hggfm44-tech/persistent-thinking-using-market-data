@@ -131,3 +131,9 @@ Benchmark-relative statistics produced in Market Repo B are valid only when the 
 ### Legacy research cloud transport
 
 During the existing Phase 2 upstream intake, also inspect complete pending packets for GEV, weather and original petroleum under the registered cloud transport in `meta/RESEARCH_REPORT_INTAKE.md`. Keep GEV's original delivery key and canonical archive; original petroleum run IDs remain distinct from suite Energy. Verify actual producer activation, complete received bytes, event/availability times and shared source ancestry. Migration metadata and collector archives are not reports. This adds no cycle or schedule and does not alter frozen forecasts or Repo B validation.
+
+
+## Output persistence and recovery
+
+Before each phase's canonical publication, preserve its complete generated original bytes with the [Market checkpoint and recovery procedure](persistence/README.md). Verify the checkpoint on the immutable remote commit before proceeding with dependent canonical writes. A checkpoint is transport preservation only, not a resolution, score update, canonical intake or independent validation. Stop on a denied write rather than bypassing it; report local-only or unverified state accurately. Recovery goes to a new quarantine directory and never automatically overwrites canonical state. This adds no occurrence, schedule, research permission or Repo B action. Actual producer adoption must be evidenced by a real checkpoint/readback receipt, not inferred from these instructions or a synthetic test.
+
