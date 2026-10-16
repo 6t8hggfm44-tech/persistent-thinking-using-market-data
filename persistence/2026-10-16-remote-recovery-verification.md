@@ -1,0 +1,11 @@
+# Remote checkpoint recovery verification — 2026-10-16
+
+This is a bounded follow-through on Pete's approved Market saving/recovery repair. It is not a research cycle, forecast resolution, scoring run, intake check or independent validation.
+
+At 02:01:29 UTC the coordinating assistant fetched all six changed files from immutable implementation commit a5f0e229405a8c26a58dba2b3306288d46ce0245 using the connected GitHub file reader. Each full UTF-8 content matched the prepared local bytes and its Git blob identity. The saved synthetic checkpoint is 562 bytes, Git blob f48f823f12caa0f917127a3bfdd4362baadabd6e, SHA-256 cadfddafa19fffca8671e502b83a3d6537ae995114b199b43495b881bb4e0635.
+
+The retrieved implementation verified that package against the immutable blob identity and length, then recovered it into a new quarantine. The final byte comparison completed at 02:02:05 UTC: recovered payload/canary.txt exactly matched the original 91-byte synthetic input, SHA-256 c7cd90d1eef97e2d25ceec6a2027458f6a01d5274a4eb933e355d75fe2d31d43. RECOVERY_COMPLETE.json reports quarantine_bytes_verified_not_canonical_or_validated. The initial separate comparison command used canary.txt rather than payload/canary.txt and returned file-not-found; inspecting the documented quarantine layout and comparing the actual payload succeeded. No second extraction or overwritten output occurred.
+
+This establishes one complete synthetic prepare/publish/remote-readback/quarantine-recovery path. Nineteen isolated implementation tests had passed before publication, including a separate reviewer's rerun. It does not establish production adoption, semantic completeness of future checkpoint inventories, immunity to GitHub approval blocks, independent backup, or unattended reliability. The next already-authorized producer must demonstrate its actual original-output checkpoint and canonical disposition. No producer was triggered here. October 13–15 original full cycle outputs remain unrecovered; forecast/model/score records and Repo B are unchanged.
+
+Implementation publication was verified after an execution-capacity interruption; this receipt records checks actually completed afterward with available tools, not a presumed worker completion. No capacity purchase or reserve release occurred.
