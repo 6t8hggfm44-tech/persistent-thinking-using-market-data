@@ -24,3 +24,8 @@ Co-leading H003 and H001 were challenged against weak hiring/household demand, s
 ## Pending discriminating tests
 
 P000029 (registered September 18) remains immutable: **66%** probability that the first BLS September all-items CPI-U seasonally-adjusted monthly reading on **October 14, 2026 at 08:30 ET** is **>=+0.4%**. P000004 resolves November 9 and P000005 August 9, 2027. No new correlated forecast. No trades; no direct Universal truth writes.
+
+
+## Publication-recovery notice — October 17, 2026
+
+This October 12 snapshot is retained as historical model context. A bounded, user-approved recovery publishes the exact October 16 original P000029 resolution and appends its preserved score row: the canonical ledger consequently contains 29 resolved records, including 25 probability scores, once this commit is on main. This is publication recovery, not a new cycle, model interpretation, or independent validation. The original `resolved_at` remains the October 16 assessment time; canonical publication occurs October 17. Scores remain provisional with respect to Market Repo B validation. P000032 remains prepared in the original checkpoint, **not canonically registered**. No hypothesis weights, causal edges, learning metrics, or evidence cutoff are advanced here. See [recovery receipt](../persistence/2026-10-17-publication-recovery.json).

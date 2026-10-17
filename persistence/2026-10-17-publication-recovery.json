@@ -1,0 +1,69 @@
+{
+  "schema": "market-publication-recovery-v1",
+  "status": "prepared_for_guarded_publication",
+  "prepared_at": "2026-10-17T17:50:10Z",
+  "authority": "Pete explicitly approved bounded Market recovery on 2026-10-17 at 17:47:16 UTC (Sentinel_132f60155c288191a59af6282fc05db2).",
+  "governance_commit": "6aa6296a6dbfebe437ccb658a88704384381edf3",
+  "source_checkpoint_commit": "9d1e0da9dc5fa9fa5ab7533691e762082cb6142d",
+  "source_checkpoint_path": "persistence/checkpoints/market-cycle-2026-10-16-2136Z-original-r1.json",
+  "source_checkpoint_blob": "25d54fa4047874092e0b59a9e155daa8798b4b82",
+  "source_checkpoint_bytes": 64186,
+  "source_checkpoint_sha256": "c8a0cf9299e124c0cec946a0cf8c6483f642dbc7313e8c978dc16e86cb673309",
+  "recovery": "All nine original files (46642 bytes) decoded and verified in a new quarantine; RECOVERY_COMPLETE.json written by repository recovery tool. No original October13-15 payloads reconstructed.",
+  "ownership_observation": "No competing visible Market worker in current collaboration inventory; repository-wide Actions has zero runs; latest saved Market producer delivery Oct16 21:40:42Z reports canonical blocked. No ownership/lock file present in complete repository tree. Hidden activity not observable; expected-head nonforce guard required.",
+  "allowed_scope": "OPERATING_PROTOCOL Phase0 permits preserving objectively due forecast resolutions when RepoB unavailable; Phase1 resolution+score ledger precede companion validation. No new calculation, cycle, validation or interpretation performed.",
+  "promoted_originals": [
+    {
+      "path": "evaluations/prediction_scores.csv",
+      "bytes": 14084,
+      "sha256": "65bb9318c278ad7dd5c44ec36ac517d8c184f2437eecc32c93ad4de300b69d4d"
+    },
+    {
+      "path": "predictions/resolved/P000029.json",
+      "bytes": 5029,
+      "sha256": "422b42bc7eef866f83794a00adad76ead198ec8fccfdbd4f4ceaf09fb37419fa"
+    }
+  ],
+  "reconciliation": "Current main equals source checkpoint commit. Recovered original_forecast object equals frozen predictions/open/P000029.json; original open file retained. Existing score CSV is exact prefix of recovered CSV; one P000029 row appended. No prior row modified.",
+  "status_limits": "Publication is Oct17 recovery, not an Oct16 canonical publication. Embedded resolved_at is original assessment time. Scores remain provisional with respect to independent companion validation. No claim of predictive learning.",
+  "withheld": [
+    {
+      "path": "evaluations/2026-10-16-weekly-review.md",
+      "bytes": 6471,
+      "sha256": "1caef1ad27ff6014f9d550e43403f190c111654f8417d09492e4c13166d4c374"
+    },
+    {
+      "path": "evaluations/learning_metrics.csv",
+      "bytes": 4859,
+      "sha256": "984689c8f0d86f67f3240addf639f96ff8e34e8782407a44ac34552b01c2284c"
+    },
+    {
+      "path": "evidence/2026-10-16-weekly-cycle.md",
+      "bytes": 4998,
+      "sha256": "f54711ad3f25546be757c5e5bb8efd956e1bccfd9a5a9e59592cf02ea026f3c8"
+    },
+    {
+      "path": "meta/model_changes/2026-10-16-v0.2.20-no-change.md",
+      "bytes": 1647,
+      "sha256": "22deadf860e5324710b1ec3963dc01d0f4037c36417b6a77a698f58722f6db19"
+    },
+    {
+      "path": "meta/SKEPTIC_2026-10-16.md",
+      "bytes": 2671,
+      "sha256": "ca0eaafd599012759c3889033f9b09140aa9baa87ba301dcbd02e1e2c4979aa2"
+    },
+    {
+      "path": "predictions/open/P000032.json",
+      "bytes": 3619,
+      "sha256": "41c4450b9f30e741a41691c45a7aa77c9d1e6d459f56f7801441a2c6cb939585"
+    },
+    {
+      "path": "world_model/CURRENT_STATE.md",
+      "bytes": 3264,
+      "sha256": "ad4201060f85195eb40089d49338ae0f23b2111c203fceca8eeca213e7f5b830"
+    }
+  ],
+  "withheld_reason": "The other seven files remain intact in original checkpoint. P000032 is prepared, NOT registered; recovered state/report text describes it as registered Oct16, which cannot be adopted. Native intake-index and independent RepoB gates were not executed. No learning metrics/model state promotion or backdated registration.",
+  "next_decision": "Primary producer can address pending validation and decide prospectively whether/how to register the preserved candidate with honest publication time. No independent RepoB edits/validators or schedule changes authorized here.",
+  "verification": "Preparation record. Branch promotion and immutable readback must be verified separately; presence of blob/commit alone is not completion."
+}
