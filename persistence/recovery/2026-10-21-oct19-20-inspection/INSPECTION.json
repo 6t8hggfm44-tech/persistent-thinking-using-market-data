@@ -1,0 +1,97 @@
+{
+  "schema": "market-bounded-preservation-inspection-v1",
+  "status": "partial_recovery_original_output_and_diagnostics_unavailable",
+  "actual_started_at": "2026-10-21T00:54:34Z",
+  "inspection_finished_at": "2026-10-21T00:57:54Z",
+  "publication_state": "prepared; subsequent branch update and exact immutable readback required",
+  "authority": {
+    "user_message_id": "Sentinel_ae64433eb41c8191ac36a9934c62028e",
+    "at": "2026-10-21T00:54:13Z",
+    "instruction": "Go ahead",
+    "approved_scope": "Bounded inspection and preservation repair of Market checkpoint save, without rerunning model or independent validator."
+  },
+  "governance": {
+    "ea_commit": "6aa6296a6dbfebe437ccb658a88704384381edf3",
+    "dot_manifest_commit": "645551e54096255dea6d619d3df613a2bcaa01aa",
+    "manifest_path": "GOVERNANCE.md",
+    "loaded_ea_paths": [
+      "AGENT_CONSTITUTION.md",
+      "SECURITY_AND_APPROVALS.md",
+      "governance/AMENDMENT_HISTORY.md",
+      "governance/CONSTITUTION_DRAFT.md",
+      "governance/proposals/2026-09-03_MISSION_HIERARCHY_IDENTITY_ABC.md",
+      "ACCOUNTS_AND_SERVICES.md",
+      "services/CONNECTED_APPS.md",
+      "preferences/USER_PROFILE.md",
+      "preferences/VALUES.md",
+      "policies/AGENT_MODE_CONTROL.md",
+      "policies/ACTION_MATRIX.md",
+      "policies/STANDING_AUTHORIZATIONS.md",
+      "policies/ACCOUNT_PURPOSE_AND_DELEGATION.md",
+      "policies/AUTHENTICATION_ACCESS.md",
+      "policies/DATA_PRIVACY.md",
+      "policies/DATA_COMPARTMENTALIZATION.md",
+      "policies/PRIVATE_SESSION_MODE.md",
+      "policies/COMMUNICATION.md",
+      "policies/FAILURE_AMBIGUITY.md",
+      "policies/AUDIT_LOGGING.md",
+      "policies/VERIFICATION_COMPLETION_MEMORY.md",
+      "policies/REPOSITORY_STRUCTURE.md",
+      "policies/SERVICE_ROUTING.md",
+      "policies/SERVICE_LEARNING.md",
+      "policies/DESCRIPTIVE_OPERATIONAL_FACTS.md",
+      "policies/RESEARCH_ACCESS_RESOLUTION.md",
+      "research/ACCESS_RESOLUTION.md"
+    ],
+    "loaded_market_paths": [
+      "AGENT_CONSTITUTION.md",
+      "OPERATING_PROTOCOL.md",
+      "persistence/README.md",
+      "persistence/2026-10-17-publication-recovery.json",
+      "persistence/2026-10-17-publication-readback.md"
+    ],
+    "service_profile": "No separate GitHub SOP in live services tree; ACCOUNTS_AND_SERVICES.md and services/CONNECTED_APPS.md control."
+  },
+  "source_commit": "73fefe1773c904b49f22a464ce0fd305d13d1561",
+  "source_tree": "3d9cebf4ff56f86055c94b638b69071e5243f36d",
+  "observations": [
+    "Main complete recursive tree has 1185 entries, truncated=false; no 2026-10-19 or 2026-10-20 path, and only the Oct16 original-output checkpoint.",
+    "All three branch heads inspected: main73fefe1773c904b49f22a464ce0fd305d13d1561, cloud-migration75bd5fc4b09ffcb84b17ad0a705258fd4e92ed72, market-cycle-Sept30 924ddcf5c286588f472fea336e36e04ce485554f. The other complete trees have126 and946 entries and no Oct19/20 checkpoint.",
+    "Repository-wide Actions total_count=0. Main commits since2026-10-18 returned empty. These facts do not establish absence of hidden product-managed activity.",
+    "Saved original producer messages for Oct19 and Oct20 were read with complete selected text. They report checkpoint blocking and unexecuted intake and independent validator.",
+    "Searches of saved conversations and relevant maintained recovery notes exposed no exact failed tool arguments/denial response or original package/object/localpath identity.",
+    "Accessible workspace filename searches found no Oct19/20 Market original package; available Market copies are older September work. This is current-workspace nonavailability, not proof of global deletion.",
+    "Library search and complete created_after2026-10-19 listing exposed no Market original package. No unrelated Library file contents were read.",
+    "Only an empty partial direct-child cloud task listing was obtained; historical scheduler internals and producer tool transcripts remain unobserved."
+  ],
+  "ownership": {
+    "repair_worker": "/root/repair_market_checkpoint_preservation",
+    "visible_competing_market_worker": false,
+    "repository_lock_file": "none observed in complete tree",
+    "hidden_activity": "unverified",
+    "mutation_guard": "fresh main read, preserve base tree, force=false, expected_sha"
+  },
+  "preserved": {
+    "path": "producer-messages.json",
+    "bytes": 4194,
+    "sha256": "5b4547f48fb8583cbf748f18a1b28e911401953e8142eadbcc80ff4d7f631654",
+    "kind": "exact delivered visible messages with source metadata, quarantined; not complete original phase files"
+  },
+  "unresolved": {
+    "original_oct19_output_package": "unavailable",
+    "original_oct20_output_package": "unavailable",
+    "exact_failed_operation_and_tool_arguments": "unavailable",
+    "exact_denial_text_and_cause": "unverified",
+    "known_new_object_ids": "none exposed",
+    "historical_original_checkpoint_repair": "not performed; cannot faithfully retry unknown operation or recreate absent original bytes"
+  },
+  "preserved_existing_state": "No canonical forecasts, scores, model, evidence/intake, indices, protocols or previous checkpoint files changed. Oct17 partial recovery remains intact; old missing Oct13-15 originals not reconstructed.",
+  "not_performed": [
+    "No new model run, evidence review, economic source fetch or forecast creation.",
+    "No intake checker, RepoB validator, scores/calibration/learning recomputation.",
+    "No RepoB writes, other repository writes, schedules, permissions, credentials, governance or spending changes.",
+    "No recreation of absent files or backdated original-output checkpoint.",
+    "No denied operation retry; exact original action/arguments are unknown."
+  ],
+  "next_bounded_decision": "To recover the original Oct19/20 full outputs, obtain their exact prepared checkpoint/package bytes and non-secret failed-tool diagnostic from the original producing context, if still available. Verify their identity and reconcile current head before a narrowly authorized retry. If unavailable, retain an explicit gap; any newly generated research would be a separately authorized new occurrence, never recovered originals. A successful publication of this factual record establishes only this record's persistence, not repair of the unknown historical operation."
+}

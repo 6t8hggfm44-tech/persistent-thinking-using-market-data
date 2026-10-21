@@ -1,0 +1,37 @@
+{
+  "schema": "market-delivered-message-preservation-v1",
+  "classification": "quarantined historical producer communications; not original checkpoint files or canonical evidence intake",
+  "retrieved_at": "2026-10-21T00:55:55Z",
+  "conversation_id": "6a920a4e-976c-83ea-bb56-f75d03cf17b3",
+  "source_api": "global_search.read_conversation_context",
+  "reader_limitations": "Whole context marked truncated, but both selected producer messages had content_omitted=false, start_offset=0 and complete visible text. Internal tool calls and original generated file bytes were not exposed.",
+  "messages": [
+    {
+      "message_id": "7ec3a44e-a547-4590-b853-a35ea3ce350e",
+      "role": "assistant",
+      "created_at": "2026-10-19T21:17:36.046689Z",
+      "updated_at": "2026-10-19T21:17:36.046689Z",
+      "text": "**Monday, October 19 — Market model review**\n\n**Resolved:** None newly due. The canonical record contains 25 scored probability forecasts: mean Brier **0.214144**, mean log loss **0.618617**. Independent arithmetic checks found no discrepancies. Predictive learning remains unproven.\n\n**Model:** No change proposed. H001 **37%**, H002 **14%**, H003 **37%**, H004 **12%**. September producer prices rose 1.3%, industrial production rose 0.7%, and October homebuilder confidence fell to **29**, its lowest since June 2012. The Skeptic found meaningful evidence for both inflation pressure and weakening demand, insufficient to establish either leading hypothesis. citeturn740254view2turn740254view1turn740254view0\n\n**New forecasts:** None registered. **Most important watch:** October 29 core PCE, which should help distinguish broad inflation persistence from an energy-driven price shock. citeturn240256search0\n\n**Persistence exception:** A safety check blocked the attempted GitHub checkpoint operation. Readback confirmed that `main` remains unchanged at `73fefe1`; today's analysis was **not committed**. Intake-index parity passed read-only checks, but the required native Python checker and Market Repo B validator remain unexecuted.",
+      "url": "https://chatgpt.com/c/6a920a4e-976c-83ea-bb56-f75d03cf17b3?messageId=7ec3a44e-a547-4590-b853-a35ea3ce350e",
+      "start_offset": 0,
+      "end_offset": 1246,
+      "content_omitted": false
+    },
+    {
+      "message_id": "605a53b7-09e8-475d-9391-f4179cf20981",
+      "role": "assistant",
+      "created_at": "2026-10-20T22:03:11.701041Z",
+      "updated_at": "2026-10-20T22:03:11.701041Z",
+      "text": "**Tuesday, October 20 — Market-model review**\n\n**Resolved:** None newly due. The canonical record remains at **25 probability forecasts**, with mean Brier **0.214144** and log loss **0.618617**. Read-only recalculation found no scoring discrepancies. Predictive learning remains unproven.\n\n**Model:** No change proposed. Hypothesis weights remain **37% soft landing, 14% recession, 37% inflation regime, 12% productivity boom**.\n\n**New evidence:** September pending home sales fell **7.3%**, builder confidence reached **29**, and housing starts were estimated down **5.2%**. The starts decline was statistically inconclusive. The Skeptic's concern is that mortgage-rate pressure could explain housing weakness without establishing an economy-wide recession. citeturn234646search0turn234646search1turn216754search0\n\n**New forecasts:** None. **Most important watch:** October 29 core PCE, testing whether inflation pressure extends beyond energy. citeturn216754search1\n\n**Persistence exception:** GitHub's safety controls blocked the required checkpoint, so today's evidence review was **not committed**. The native intake checker and independent Market Repo B Python validator also remain unexecuted.",
+      "url": "https://chatgpt.com/c/6a920a4e-976c-83ea-bb56-f75d03cf17b3?messageId=605a53b7-09e8-475d-9391-f4179cf20981",
+      "start_offset": 0,
+      "end_offset": 1208,
+      "content_omitted": false
+    }
+  ],
+  "exclusions": [
+    "No economic claims revalidated or adopted.",
+    "No full original output package recovered or reconstructed.",
+    "No forecast registration, score update, evidence intake, model change or validation."
+  ]
+}
