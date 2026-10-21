@@ -1,0 +1,40 @@
+{
+  "schema": "market-preservation-inspection-readback-v1",
+  "status": "quarantined_history_and_gap_record_verified",
+  "verified_at": "2026-10-21T00:59:42Z",
+  "publication_commit": "da85ef57929b430c3d93334a4e6fee26fe02e444",
+  "parent_commit": "73fefe1773c904b49f22a464ce0fd305d13d1561",
+  "publication_tree": "b233b1d1c9e39693a1398a7586845c419986466b",
+  "guard": {
+    "branch": "main",
+    "force": false,
+    "expected_sha": "73fefe1773c904b49f22a464ce0fd305d13d1561",
+    "update_returned_success": true,
+    "subsequent_main_matches": true
+  },
+  "files": [
+    {
+      "path": "persistence/recovery/2026-10-21-oct19-20-inspection/INSPECTION.json",
+      "blob": "455c42d7a96623e0971675035fc28701f8f28b69",
+      "bytes": 6296,
+      "sha256": "38d3d403ba5bf4841b51a9839e9a1e442d0b7f20c9addf9f1e638c435c842e38",
+      "exact_readback": true
+    },
+    {
+      "path": "persistence/recovery/2026-10-21-oct19-20-inspection/producer-messages.json",
+      "blob": "7fc9ea571d3d4a89d7d86efe42e2f707b0253422",
+      "bytes": 4194,
+      "sha256": "5b4547f48fb8583cbf748f18a1b28e911401953e8142eadbcc80ff4d7f631654",
+      "exact_readback": true
+    }
+  ],
+  "complete_tree_comparison": {
+    "added_blobs": 2,
+    "modified_existing_blobs": 0,
+    "removed_paths": 0,
+    "truncated": false
+  },
+  "outcome": "Partial preservation only. Original full Oct19/20 output payloads and exact failed operation/denial diagnostics remain unavailable. No faithful original-checkpoint retry or full recovery was performed. The two delivered summaries are now durably preserved as historical messages, not substitutes for original phase outputs or canonical model evidence.",
+  "exclusions": "No model/intake/validator rerun, no forecast/score/model/evidence/index promotion or rewrite, no RepoB/other repository writes, no schedules/permissions/governance/spending changes.",
+  "next_required_input": "Exact original prepared Oct19/20 checkpoint/package bytes and exact non-secret failed-tool action, target, expected head, denial response and any returned object IDs from the original producer context, if still available."
+}
