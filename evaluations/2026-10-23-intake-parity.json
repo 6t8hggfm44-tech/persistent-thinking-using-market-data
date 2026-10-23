@@ -1,0 +1,28 @@
+{
+  "schema": "market-intake-parity-connector-equivalent-v1",
+  "snapshot": "e8c94d6f7e7c8ea426d874507a8ffdf6206d0acc",
+  "as_of": "2026-10-23T21:48:51.739Z",
+  "method": "94 individually fetched Git blob JSON parses over eight bounded batches plus independent cumulative index parse; not native Python execution",
+  "research": {
+    "canonical": 86,
+    "index_rows": 86,
+    "missing": [],
+    "extra": [],
+    "duplicates": [],
+    "delivery_key_path_errors": []
+  },
+  "gev": {
+    "canonical": 8,
+    "index_rows": 8,
+    "missing": [],
+    "extra": [],
+    "duplicates": [],
+    "delivery_key_path_errors": []
+  },
+  "passed": true,
+  "limitations": [
+    "bookkeeping only",
+    "not packet integrity/scientific validity",
+    "native tool/check_intake_index.py not executed"
+  ]
+}
