@@ -1,0 +1,26 @@
+{
+  "schema": "market-delivered-message-preservation-v1",
+  "recorded_at_utc": "2026-10-25T22:49:21Z",
+  "status": "partial_preservation_exact_visible_messages_not_original_phase_packages",
+  "authority": {
+    "initial_request_message_id": "Sentinel_6535ae48458481918e7534e9af64c0cc",
+    "specific_additive_write_approval_message_id": "Sentinel_8cd109a436f88191bd637e36e35cb0e6",
+    "scope": "New preservation files only; no existing files overwritten or forecasts, conclusions, schedules, permissions, spending changed."
+  },
+  "base_commit": "ccd4d6f037c62302bf6e6ce4ade77cc5b3d58181",
+  "file": {
+    "path": "producer-messages.json",
+    "bytes": 3147,
+    "sha256": "30ff1e6ed7e18a6754c511ecafb5f29f9b488094a1c87377dad3969cf8b194d5",
+    "encoding": "UTF-8",
+    "serialization": "Exact retrieved message strings and returned source metadata in a JSON array, two-space indent and one final newline. Source text itself unchanged."
+  },
+  "ownership": "No domain occurrence claimed, no hidden-worker activity inferred absent. Additive preservation only with fresh-head expected-sha guard, complete parent-tree preservation and exact immutable readback.",
+  "limitations": [
+    "Source records contain message URLs, IDs, timestamps, complete offsets and content_omitted=false.",
+    "These are exact delivered messages, not complete original phase outputs/checkpoints or denied tool-call diagnostics.",
+    "No source facts, scores, model weights or producer validation claims independently revalidated; citation markers retained as historical text.",
+    "Original Oct21/22 phase packages and exact failed-operation diagnostics remain unavailable. Library search non-retrieval does not prove permanent loss.",
+    "No canonical forecasts, resolutions, model state, evidence intake, indices, protocol or Repo B files changed; no research or validator rerun."
+  ]
+}
