@@ -1,0 +1,72 @@
+{
+  "original_forecast": {
+    "id": "P000033",
+    "created_at": "2026-10-23T21:48:51.739Z",
+    "evidence_cutoff": "2026-10-23T21:48:51.739Z",
+    "model_version": "0.2.20",
+    "target": "US_CORE_PCE_MOM_SEP_2026_FIRST_RELEASE",
+    "horizon": "6d",
+    "resolution_at": "2026-10-29 08:30 ET (first BEA September 2026 Personal Income and Outlays release; if postponed, first actual release)",
+    "forecast_type": "binary_probability_and_point_distribution",
+    "forecast": {
+      "event": "First-published seasonally adjusted September 2026 PCE price index excluding food and energy monthly change is at least +0.3% (at BEA reported one-decimal percent precision)",
+      "probability": 0.56,
+      "point_estimate": 0.3,
+      "lower_80": 0.1,
+      "upper_80": 0.5,
+      "units": "percentage points m/m"
+    },
+    "benchmarks": [
+      {
+        "name": "August_2026_core_PCE_first_release_no_change",
+        "point_estimate": 0.2,
+        "source": "2026-09-30 BEA first August release; frozen before forecast"
+      },
+      {
+        "name": "neutral_binary",
+        "probability": 0.5,
+        "note": "comparison only, not empirical history or consensus"
+      }
+    ],
+    "resolution_rule": "Only the first published BEA September 2026 Personal Income and Outlays core-PCE monthly percentage change counts; TRUE iff the first displayed one-decimal, seasonally adjusted m/m figure is >= +0.3%, FALSE otherwise. Resolve on the initial BEA release scheduled October 29 at 08:30 ET; if delayed, hold pending until first official release. Freeze p=.56, point .3, 80% interval [.1,.5] and the August first-release .2 no-change benchmark now; do not substitute revisions, later consensus or prior generated P000032. Binary Brier=(.56-outcome)^2, log loss, point absolute error, interval hit and no-change error all calculated separately.",
+    "rationale": [
+      "September first-release core CPI was +0.3% while gasoline dominated headline +0.6%; the measures have different weights and cannot be treated as identical.",
+      "September final-demand PPI excluding food, energy and trade services rose +0.5% but supplier pricing need not fully reach core PCE.",
+      "August first-release core PCE was +0.2%, creating a meaningful disinflation alternative. P000030 previously missed with .62 probability and limits confidence.",
+      "October flash PMI and current oil stress inform current regime review but do not revise the realized September price basket. The modest .56 probability is not claimed to exceed economic consensus."
+    ],
+    "hypothesis_links": [
+      "H001",
+      "H003",
+      "H002"
+    ],
+    "surprising_if": [
+      "First-release September core PCE is <= +0.1%, providing stronger disinflation evidence.",
+      "First-release September core PCE is >= +0.5%, suggesting broader price pressure than the central estimate."
+    ],
+    "status": "open",
+    "identity_note": "Separate newly prospective forecast. The earlier October 16 checkpoint-only P000032 was never registered; no backdated publication or ID reuse."
+  },
+  "resolution": {
+    "resolved_at": "2026-10-29T21:46:57.782Z",
+    "outcome": {
+      "core_pce_sa_mom_percent": 0.3,
+      "core_pce_yoy_percent": 3.1,
+      "headline_pce_sa_mom_percent": 0.5,
+      "event_ge_0_3": true
+    },
+    "source": "U.S. Bureau of Economic Analysis, Personal Income and Outlays, September 2026, BEA 26-46, first release on October 29 2026 at 08:30 EDT.",
+    "source_url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026",
+    "source_published_at": "2026-10-29T12:30:00Z",
+    "source_observed_at": "2026-10-29T21:46:57.782Z",
+    "scores": {
+      "brier": 0.1936,
+      "log_loss": 0.579818,
+      "point_absolute_error": 0,
+      "interval_hit": 1,
+      "neutral_binary_brier": 0.25,
+      "August_2026_first_release_no_change_point_absolute_error": 0.1
+    },
+    "audit_note": "Original Oct 23 forecast immutable. The first October 29 BEA September core PCE monthly release printed +0.3% (not the 3.1% annual figure), making the >=0.3 event TRUE. Frozen p=.56 gives Brier=.1936 and log loss=.579818; forecast point .3 exactly matches, and 80% interval [.1,.5] covers. Frozen August first-release .2 benchmark has .1pp error; October 29 release now shows revised August .3, not substituted into the original benchmark. This one correct threshold outcome does not show consensus-relative skill or model learning."
+  }
+}
