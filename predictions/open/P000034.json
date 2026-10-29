@@ -1,0 +1,58 @@
+{
+  "id": "P000034",
+  "created_at": "2026-10-29T21:51:14.449Z",
+  "evidence_cutoff": "2026-10-29T21:51:14.449Z",
+  "model_version": "0.2.20",
+  "target": "US_NONFARM_PAYROLL_MOM_OCT_2026_FIRST_RELEASE",
+  "horizon": "8d",
+  "resolution_at": "2026-11-06 08:30 America/New_York, first BLS Employment Situation October 2026 release; if postponed, first actual release",
+  "forecast_type": "binary_probability_and_point_distribution",
+  "forecast": {
+    "event": "First-published October 2026 seasonally adjusted total nonfarm payroll employment change is at least +100000 jobs",
+    "probability": 0.4,
+    "point_estimate_jobs": 60000,
+    "interval_80_jobs": [
+      -40000,
+      160000
+    ]
+  },
+  "benchmarks": [
+    {
+      "name": "September_2026_payroll_first_release_no_change",
+      "point_estimate_jobs": 29000,
+      "source": "BLS first September Employment Situation release on 2026-10-02; precommitted historical first-release value"
+    },
+    {
+      "name": "FactSet_survey_as_reported_by_AP_2026_10_29",
+      "point_estimate_jobs": 55000,
+      "source": "https://apnews.com/article/929f6739871efc054ae72afca2b68c3a",
+      "captured_at": "2026-10-29T21:51:14.449Z",
+      "note": "External consensus point only; no consensus probability is inferred"
+    },
+    {
+      "name": "neutral_binary_probability",
+      "probability": 0.5,
+      "note": "Mechanical comparator only; no claimed economic skill"
+    }
+  ],
+  "resolution_rule": "Freeze the first BLS Employment Situation release describing October 2026, expected November 6, 2026 at 08:30 EST. Use the first-published seasonally adjusted one-month CHANGE in total nonfarm payroll employment (in jobs or thousands), not private employment, household employment, later revisions, a rolling average or an updated consensus. Event TRUE iff the first displayed payroll change is >=100000 jobs. Otherwise FALSE. Score frozen p=.40 with Brier and log loss. Independently score point +60000 jobs by absolute error, nominal 80% interval [-40000,160000] by coverage, and both frozen September +29000 and FactSet +55000 points by absolute error. If publication is delayed, hold pending to first actual release without changing this forecast or its cutoff.",
+  "rationale": [
+    "Q3 advance real GDP was +3.4% annualized and private domestic final sales +4.9%; strong spending and capital investment favor activity resilience but the estimates measure a past quarter and are composition-sensitive.",
+    "October 29 initial claims for the week ending October 24 were only 194000; low separations do not establish high hiring (low-hire/low-fire distinction).",
+    "The first September payroll change was +29000 and an October 29 FactSet survey reported a +55000 consensus. The point +60000 is near, not demonstrably superior to, the external consensus.",
+    "September real disposable income fell 0.3% and real consumption was approximately flat m/m; energy-driven nominal strength and AI equipment/inventory spending can coexist with modest employment growth.",
+    "The p=.40 threshold tests whether aggregate GDP resilience is propagating to broad payroll gains; it is not a calibrated posterior backed by sufficient within-target repetitions."
+  ],
+  "hypothesis_links": [
+    "H001",
+    "H002",
+    "H003",
+    "H004"
+  ],
+  "surprising_if": [
+    "First-release payroll growth is >=+160000, signaling unusually strong hiring despite recent subdued employment creation.",
+    "First-release payroll employment falls by more than 40000, indicating a sharper labor-demand break despite low current unemployment claims."
+  ],
+  "status": "open",
+  "source_timing_note": "No information released after evidence_cutoff is permitted to change this event, probability, point, interval or benchmarks."
+}
