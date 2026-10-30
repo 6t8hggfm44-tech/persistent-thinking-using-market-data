@@ -1,0 +1,170 @@
+{
+  "schema": "market-longitudinal-weekly-v2",
+  "review_date": "2026-10-30",
+  "primary_input_commit": "1812e9dadfd965c445faeb54692a776ff3847c2a",
+  "repo_b_analysis_code_commit": "d6e70aab36d969a2f6ef615ed5fa4d1d7141a8e8",
+  "forecast_ledger_path": "evaluations/prediction_scores.csv",
+  "probability_forecast_n": 26,
+  "resolved_record_n": 30,
+  "excluded_from_binary_aggregation": [
+    "P000006",
+    "P000007",
+    "P000008",
+    "P000009"
+  ],
+  "zero_arithmetic_mismatch_ids": [],
+  "probability": {
+    "mean_brier": 0.21335384615384617,
+    "mean_log_loss": 0.6171251741563384,
+    "mean_probability": 0.4992307692307693,
+    "event_rate": 0.46153846153846156,
+    "neutral_fixed_p_0_5_brier": 0.25,
+    "neutral_fixed_p_0_5_log_loss": 0.6931471805599453,
+    "neutral_brier_skill": 0.1465846153846153,
+    "neutral_log_loss_skill": 0.10967657163691269,
+    "mean_abs_distance_from_0_5": 0.07615384615384617,
+    "n_probability_0_4_to_0_6": 19,
+    "calibration_bins": [
+      {
+        "lower_exclusive": 0.2,
+        "upper_inclusive": 0.4,
+        "n": 5,
+        "mean_p": 0.332,
+        "event_rate": 0
+      },
+      {
+        "lower_exclusive": 0.4,
+        "upper_inclusive": 0.6,
+        "n": 19,
+        "mean_p": 0.528421052631579,
+        "event_rate": 0.5789473684210527
+      },
+      {
+        "lower_exclusive": 0.6,
+        "upper_inclusive": 0.8,
+        "n": 2,
+        "mean_p": 0.64,
+        "event_rate": 0.5
+      }
+    ],
+    "probability_discrimination": {
+      "mean_p_when_event": 0.5491666666666668,
+      "mean_p_when_nonevent": 0.45642857142857146
+    }
+  },
+  "uncertainty": {
+    "bootstrap_draws": 20000,
+    "method": "deterministic JavaScript arithmetic port, not NumPy native Repo B",
+    "row_mean_brier_95_percent": [
+      0.1842346153846154,
+      0.2423346153846153
+    ],
+    "creation_date_cluster_n": 22,
+    "creation_date_cluster_95_percent": [
+      0.18165199999999998,
+      0.24246666666666664
+    ],
+    "limitations": "Descriptive only, mixed target families, within and cross-date common-cause dependencies, no causal learning claim."
+  },
+  "vintages": {
+    "first_six": {
+      "n": 6,
+      "mean_brier": 0.2274,
+      "mean_log_loss": 0.6478762190887415,
+      "event_rate": 0.6666666666666666
+    },
+    "last_six": {
+      "n": 6,
+      "mean_brier": 0.21108333333333332,
+      "mean_log_loss": 0.6143250330825573,
+      "event_rate": 0.8333333333333334
+    },
+    "first_ten": {
+      "n": 10,
+      "mean_brier": 0.21474,
+      "mean_log_loss": 0.621653798471185,
+      "event_rate": 0.5
+    },
+    "last_ten": {
+      "n": 10,
+      "mean_brier": 0.19343,
+      "mean_log_loss": 0.5744384505376703,
+      "event_rate": 0.6
+    },
+    "comparability": "Changed targets/horizons/event mixture; no matched vintage proof."
+  },
+  "intervals": {
+    "strict_row_level_flag_n": 26,
+    "strict_row_level_covered": 24,
+    "observed_coverage": 0.9230769230769231,
+    "nominal_coverage": 0.8,
+    "spx_width_by_horizon_index_points": {
+      "one_day": [
+        271,
+        245,
+        400,
+        295
+      ],
+      "one_week": [
+        660,
+        555
+      ],
+      "one_month": [
+        1165
+      ]
+    },
+    "payroll_width_jobs": {
+      "P000025": 175000,
+      "P000031": 220000,
+      "P000034_unresolved": 200000
+    },
+    "warning": "Mixed units, non-independent components, coverage and sharpness must be evaluated jointly."
+  },
+  "point_benchmarks": {
+    "SPX": {
+      "n": 7,
+      "model_mae": 47.895714285714284,
+      "no_change_mae": 46.26571428571429,
+      "skill": -0.03523127277218552,
+      "by_horizon": [
+        {
+          "horizon": "1d",
+          "n": 4,
+          "model_mae": 18.1,
+          "no_change_mae": 25.0575
+        },
+        {
+          "horizon": "1w",
+          "n": 2,
+          "model_mae": 58.195,
+          "no_change_mae": 69.755
+        },
+        {
+          "horizon": "1m",
+          "n": 1,
+          "model_mae": 146.48,
+          "no_change_mae": 84.12
+        }
+      ]
+    },
+    "P000027_fomc": {
+      "model_brier": 0.1764,
+      "frozen_market_implied_brier": 0.1521
+    },
+    "generic_benchmark_score_pooled": false
+  },
+  "model_version": "0.2.20",
+  "weights": {
+    "H001": 0.37,
+    "H002": 0.14,
+    "H003": 0.37,
+    "H004": 0.12
+  },
+  "learning_status": "INSUFFICIENT_EVIDENCE_TO_ASSESS_LEARNING",
+  "native_intake_checker_executed": false,
+  "native_repo_b_validator_executed": false,
+  "source_ancestry": "One frozen primary ledger; Repo B code used as explicit scoring specification, not independent new economic observations.",
+  "forecast_registered_this_cycle": [],
+  "next_discriminating_forecast": "P000034",
+  "current_evidence_cutoff": "2026-10-30T21:25:18.523Z"
+}
