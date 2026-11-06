@@ -1,0 +1,168 @@
+{
+  "schema": "market-longitudinal-weekly-v2",
+  "review_date": "2026-11-06",
+  "primary_input_commit": "27b1773fa3d6596b35f34f920f4506a4f622cf24",
+  "repo_b_analysis_code_commit": "39f7e921bdaa3428bf88fe6d2b9d51a533d05fbb",
+  "forecast_ledger_path": "evaluations/prediction_scores.csv",
+  "probability_forecast_n": 27,
+  "resolved_record_n": 31,
+  "excluded_from_binary_aggregation": [
+    "P000006",
+    "P000007",
+    "P000008",
+    "P000009"
+  ],
+  "zero_arithmetic_mismatch_ids": [],
+  "probability": {
+    "mean_brier": 0.2187851851851852,
+    "mean_log_loss": 0.6282053799977391,
+    "mean_probability": 0.49555555555555564,
+    "event_rate": 0.48148148148148145,
+    "neutral_fixed_p_0_5_brier": 0.25,
+    "neutral_fixed_p_0_5_log_loss": 0.6931471805599453,
+    "neutral_brier_skill": 0.12485925925925923,
+    "neutral_log_loss_skill": 0.093691213617495,
+    "mean_abs_distance_from_0_5": 0.07703703703703706,
+    "n_probability_0_4_to_0_6": 20,
+    "calibration_bins": [
+      {
+        "lower_exclusive": -0.001,
+        "upper_inclusive": 0.2,
+        "n": 0,
+        "mean_probability": null,
+        "event_rate": null
+      },
+      {
+        "lower_exclusive": 0.2,
+        "upper_inclusive": 0.4,
+        "n": 6,
+        "mean_probability": 0.3433333333333333,
+        "event_rate": 0.16666666666666666
+      },
+      {
+        "lower_exclusive": 0.4,
+        "upper_inclusive": 0.6,
+        "n": 19,
+        "mean_probability": 0.528421052631579,
+        "event_rate": 0.5789473684210527
+      },
+      {
+        "lower_exclusive": 0.6,
+        "upper_inclusive": 0.8,
+        "n": 2,
+        "mean_probability": 0.64,
+        "event_rate": 0.5
+      },
+      {
+        "lower_exclusive": 0.8,
+        "upper_inclusive": 1,
+        "n": 0,
+        "mean_probability": null,
+        "event_rate": null
+      }
+    ],
+    "probability_discrimination": {
+      "mean_p_when_event": 0.5376923076923078,
+      "mean_p_when_nonevent": 0.45642857142857146
+    }
+  },
+  "uncertainty": {
+    "bootstrap_draws": 20000,
+    "method": "Deterministic JavaScript arithmetic port, not native Repo B Python/NumPy; descriptive 95% row/date-cluster sensitivity",
+    "row_mean_brier_95_percent": [
+      0.1891,
+      0.24953
+    ],
+    "creation_date_cluster_n": 23,
+    "creation_date_cluster_95_percent": [
+      0.18662,
+      0.24831
+    ],
+    "limitations": "Dependent forecast targets and vintages; row iid and date-cluster resampling cannot establish architecture-driven learning."
+  },
+  "vintages": {
+    "first_six": {
+      "n": 6,
+      "mean_brier": 0.22739999999999996,
+      "mean_log_loss": 0.6478762190887415
+    },
+    "last_six": {
+      "n": 6,
+      "mean_brier": 0.2358166666666667,
+      "mean_log_loss": 0.6643424651576136
+    },
+    "first_ten": {
+      "n": 10,
+      "mean_brier": 0.21474,
+      "mean_log_loss": 0.621653798471185
+    },
+    "last_ten": {
+      "n": 10,
+      "mean_brier": 0.22414,
+      "mean_log_loss": 0.639931047311645
+    },
+    "comparability": "Resolution-order vintage target and horizon composition differ; recent worsening is descriptive and not proof of deterioration or no learning."
+  },
+  "intervals": {
+    "strict_row_level_flag_n": 27,
+    "strict_row_level_covered": 24,
+    "observed_coverage": 0.8888888888888888,
+    "nominal_coverage": 0.8,
+    "spx_width_by_horizon_index_points": {
+      "one_day": [
+        271,
+        245,
+        400,
+        295
+      ],
+      "one_week": [
+        660,
+        555
+      ],
+      "one_month": [
+        1165
+      ]
+    },
+    "payroll_width_jobs": {
+      "P000025": 175000,
+      "P000031": 220000,
+      "P000034": 200000
+    },
+    "warning": "Do not pool width across units/horizons; current P000034 misses despite 200K-wide interval."
+  },
+  "point_benchmarks": {
+    "SPX": {
+      "n": 7,
+      "model_mae": 47.895714285714284,
+      "no_change_mae": 46.26571428571429,
+      "skill": -0.03523127277218552
+    },
+    "P000034_payroll": {
+      "model_error_jobs": 105000,
+      "first_release_no_change_error_jobs": 136000,
+      "frozen_consensus_error_jobs": 110000
+    },
+    "P000027_FOMC": {
+      "model_brier": 0.1764,
+      "market_implied_brier": 0.1521
+    },
+    "generic_benchmark_score_pooled": false
+  },
+  "model_version": "0.2.21",
+  "weights": {
+    "H001": 0.39,
+    "H002": 0.1,
+    "H003": 0.39,
+    "H004": 0.12
+  },
+  "learning_status": "INSUFFICIENT_EVIDENCE_TO_ASSESS_LEARNING",
+  "native_intake_checker_executed": false,
+  "native_repo_b_validator_executed": false,
+  "source_ancestry": "Primary ledger frozen at auditor commit; companion calculations use same records, not independent economy samples.",
+  "forecast_registered_this_cycle": [
+    "P000035"
+  ],
+  "next_discriminating_forecast": "P000035",
+  "current_evidence_cutoff": "2026-11-06T22:51:08.824Z",
+  "highest_information_note": "First-release October core CPI >= +0.4% m/m on November 10, 2026; month-over-month index because some YoY comparisons unavailable."
+}

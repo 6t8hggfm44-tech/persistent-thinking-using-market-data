@@ -1,0 +1,29 @@
+{
+  "effective_at": "2026-11-06T22:54:32.435Z",
+  "model_version": "0.2.21",
+  "source_commit_for_audit": "27b1773fa3d6596b35f34f920f4506a4f622cf24",
+  "evidence_cutoff": "2026-11-06T22:51:08.824Z",
+  "weights_before": {
+    "H001": 0.37,
+    "H002": 0.14,
+    "H003": 0.37,
+    "H004": 0.12
+  },
+  "weights_after": {
+    "H001": 0.39,
+    "H002": 0.1,
+    "H003": 0.39,
+    "H004": 0.12
+  },
+  "leader": "tie H001/H003",
+  "status": "judgmental_small_update_not_estimated_likelihood_ratio",
+  "resolution_error_motivator": "P000034 first-release October +165K against +60K point, 80% [-40K,160K] miss and >=160K precommitted surprise",
+  "rationale": {
+    "H001": "Strong total nonfarm hiring +165K and stable 4.1% unemployment reduce immediate labor-contraction risk, but cannot establish painless disinflation; +0.02.",
+    "H002": "Strong hiring versus +60K forecast and near-stable 4.1% unemployment weaken near-term recession/low-net-hiring expectation; -0.04. Revisions and sector composition still matter.",
+    "H003": "Same strong hiring, along with high services price diffusion and supply inflation risks, keeps demand/inflation regime plausible despite easing survey expectations; +0.02.",
+    "H004": "Strong quarterly productivity and AI-capex evidence do not establish sustained AI-caused realized productivity; unchanged .12."
+  },
+  "causal_graph_change": "none; existing gross-hiring/separations/net payroll measurement bridge retained, magnitude failure recognized rather than retroactively fitted",
+  "noncredit": "This is an ex-post belief revision only. No predictive credit until later prospective forecasts resolve."
+}

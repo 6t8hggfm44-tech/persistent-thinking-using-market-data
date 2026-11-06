@@ -1,23 +1,23 @@
 # Current Market State
 
-**Model version:** 0.2.20 (unchanged). **Current evidence cutoff:** 2026-11-05T22:08:46Z. **Last full substantive review:** Friday, 2026-10-30. Prior canonical economic cutoff was 2026-10-12T21:17:24.097Z. Historical October 13-22 incomplete publication is not silently repaired or backdated. See [Friday review](../evaluations/2026-10-23-weekly-review.md).
+**Model version:** 0.2.21 (Friday November 6 revised weights only). **Current evidence cutoff:** 2026-11-06T22:51:08.824Z. **Last full substantive review:** Friday, 2026-11-06. Historical October 13–22 incomplete publication remains explicitly uncorrected, never backdated.
 
 ## Forecast audit
-30 canonically resolved records, of which 26 contain scored binary probability outcomes. Mean Brier 0.213354, mean log loss 0.617125, zero deterministic score mismatches. P000033 newly resolved TRUE against first BEA September core PCE at +0.3% with Brier .1936 and log loss .579818. P000004 resolves November 9, 2026; P000005 August 9, 2027. Primary frozen ledger remains immutable. Latest twenty-six probability scores n<30: predictive learning not established. Native Repo B Python validator not run; see exact source-bound companion status rather than claiming independent certification.
+31 canonically resolved records, 27 binary probability outcomes (13 TRUE). Mean recomputed Brier **0.218785185185**, log loss **0.628205379998**, zero deterministic score mismatches. P000034 (created October 29) was TRUE at first BLS October payroll +165K; p=.40 Brier .36/log .916291, point +60K missed by 105K and 80% [-40K,+160K] missed by 5K. Frozen +29K no-change / +55K FactSet point MAE were 136K / 110K. Both event and magnitude dimensions retained. Open P000004 November 9, P000005 August 9 2027; new P000035 November 10. n=27 probability forecasts remains below n=30 threshold for preliminary learning assessment. Source-bound companion statistical report pending; native Python checker/validator not executed.
 
 ## Model hypotheses
-- H001 soft landing 0.37
-- H002 late-cycle recession 0.14
-- H003 fiscal/inflation regime 0.37
-- H004 productivity boom 0.12
+- H001 soft landing **0.39** (from .37)
+- H002 late-cycle recession **0.10** (from .14)
+- H003 fiscal/inflation regime **0.39** (from .37)
+- H004 productivity boom **0.12** (unchanged)
 
-The October 23 Skeptic considered energy-heavy CPI and PPI, higher October price diffusion, low jobless claims and strong business-survey demand against weaker housing contracts and household sentiment. Evidence is causally ambiguous: the expected price/real-demand split remains the leading discriminator. Causal graph unchanged; no new material model change.
+November 6's unexpectedly strong payroll first print reduced near-term contraction weight but did not identify H001 versus H003. Michigan expectations eased even as input-cost pressure remains material. Changes are qualitative and explicitly error-linked; no new causal graph edge. See `meta/model_changes/2026-11-06-v0.2.21.md` and Skeptic. The prior v0.2.14 payroll bridge's magnitude forecast failure remains a model liability, not retrospectively explained away.
 
 ## Prospective tests
-P000033's first-release September core PCE >=0.3% test was prospectively registered at p=.56 on Oct 23 and resolved TRUE on Oct 29; P000034 is newly prospective for November 6 October payroll >=100K at p=.40. A prior checkpoint-only P000032 remains unregistered and never retrospectively activated. No trades.
+P000035 created after auditor and v0.2.21 revision: 30% probability October first-release core CPI (BLS November 10 at 08:30 EST) >=+0.4% m/m, point .3%, nominal 80% [.1,.5] and frozen September/RBC/TD benchmark points. Only first published m/m core CPI resolves, not unavailable year-on-year comparisons. Pre-existing P000004 Nov 9 and P000005 Aug 2027 remain open. P000034 is resolved and must never be regenerated; P000032 remains unregistered checkpoint-only history. No trades.
 
 ## Upstream and validation gates
-All 94 existing intake.json keys were checked against their canonical paths, and 86 research plus 8 GEV cumulative index entries showed one-to-one parity with zero duplicates in a connector-side equivalent audit. Native Python checker was not run. All available staged triplets are historical through October 12, not new receipts. No new GEV/economic packet was canonically accepted today.
+94 existing canonical intake keys with 86 research + 8 GEV cumulative index rows retain one-to-one Git-tree/index parity; 93 staged packet triplets are historical through October 12 and not new receipts. No canonical intake today. Direct native Python checker and Repo B native validator could not run against a full local checkout; Git-content/score arithmetic equivalence is explicitly not full named validation or evidence truth certification. Friday longitudinal metrics in `evaluations/2026-11-06-learning-metrics.json` are descriptive; source-bound Repo B weekly review required after primary publication.
 
 ## Monday, 2026-10-26 post-close cycle
 
@@ -66,3 +66,7 @@ At cutoff `2026-11-04T22:12:16Z` (prior `2026-11-03T22:30:00Z`) the Auditor foun
 ## Thursday November 5, 2026 post-close cycle
 
 At cutoff `2026-11-05T22:08:46Z` following `2026-11-04T22:12:16Z`, no uniquely due open forecast; frozen 30-row/26-binary record unchanged at Brier **0.213353846154** and log loss **0.617125174156** with zero arithmetic discrepancies, but native Python validation remains unexecuted. DOL claims **189K**, continuing claims **1.718m**, BLS Q3 productivity **+3.6% annualized** with unit labor costs **-0.7%**, S&P **7,353.73 (-4.4%)** and Nasdaq **24,315 (-5.5%)** were observed November 5. Low layoffs are not a sufficient hiring proxy, a quarterly productivity result does not identify AI causation, and equity repricing does not prove a GDP or productivity mechanism. **Model v0.2.20, causal graph and hypothesis weights H001 .37 / H002 .14 / H003 .37 / H004 .12 unchanged.** No new forecast or intake; 86 research and eight GEV historical index blobs unchanged (native intake checker not executed). Frozen **P000034 p=.40 for first-release October payroll >=100K on November 6** is next. See [evidence](../evidence/2026-11-05-cycle.md), [Skeptic](../meta/SKEPTIC_2026-11-05.md), [no-change](../meta/model_changes/2026-11-05-v0.2.20-no-change.md), [cycle](../evaluations/2026-11-05-cycle.md). No trades or direct universal writes.
+
+## Friday November 6 post-close update
+
+At 2026-11-06T22:51:08.824Z, P000034 resolved first-release payroll +165K, p=.40 Brier .36, 105K point miss and 80% tail failure; 27 probabilistic events lifetime mean Brier .218785 and log loss .628205. November 6 consumer sentiment preliminary 51.0 with 1-year inflation expectations 4.3% was an independent survey measure, not payroll corroboration. After formal Skeptic, v0.2.21 H001 .39/H002 .10/H003 .39/H004 .12; causal graph unchanged. New prospective P000035 tests first-release October core CPI >=.4% on November 10 at p=.30. The most recent 6/10 probability forecasts now score worse than earliest 6/10 on raw Brier, reversing last week's favorable impression. Neither improvement nor deterioration is established across comparable held-out families, and n27 remains below 30. Read dated evidence/review and Repo B once published.
