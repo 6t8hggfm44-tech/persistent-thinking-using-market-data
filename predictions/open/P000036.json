@@ -1,0 +1,56 @@
+{
+  "id": "P000036",
+  "created_at": "2026-11-10T22:33:12.670Z",
+  "evidence_cutoff": "2026-11-10T22:33:12.670Z",
+  "model_version": "0.2.21",
+  "target": "US_PPI_FINAL_DEMAND_EX_FOOD_ENERGY_TRADE_MOM_OCT_2026_FIRST_RELEASE",
+  "horizon": "3d",
+  "resolution_at": "2026-11-13 08:30 America/New_York; first BLS PPI October 2026 report, or first actual release if delayed",
+  "forecast_type": "binary_probability_and_point_distribution",
+  "forecast": {
+    "event": "First-published seasonally adjusted BLS October 2026 final demand PPI less foods, energy, and trade services monthly change >= +0.5% at printed one-decimal precision",
+    "probability": 0.44,
+    "point_estimate": 0.4,
+    "lower_80": 0,
+    "upper_80": 0.9,
+    "units": "percentage points month-over-month"
+  },
+  "benchmarks": [
+    {
+      "name": "September_2026_core_core_PPI_first_release_no_change",
+      "point_estimate": 0.5,
+      "source": "https://www.bls.gov/news.release/archives/ppi_10152026.htm",
+      "note": "Frozen initial September +0.5% value, not future-revised."
+    },
+    {
+      "name": "August_September_first_release_two_month_mean",
+      "point_estimate": 0.4,
+      "source": "https://www.bls.gov/news.release/archives/ppi_10152026.htm",
+      "note": "Frozen +0.3 August, +0.5 September initial reported values mean."
+    },
+    {
+      "name": "neutral_binary_probability",
+      "probability": 0.5,
+      "note": "Mechanical comparator, not historical economic base rate."
+    }
+  ],
+  "resolution_rule": "Use ONLY the first official October 2026 BLS PRODUCER Price Index for final demand excluding FOODS, ENERGY AND TRADE SERVICES, seasonally adjusted one-month percent change at displayed one-decimal precision. First expected release Nov 13 at 08:30 EST; if delayed, first actual release. TRUE iff reported October monthly change >=+0.5%, else FALSE. If this specific figure omitted, remain PENDING until first actual official publication; do not infer, impute or substitute October consumer core/headline CPI, PPI less only food and energy, full PPI, yoy, later revisions or contemporary consensus. Freeze p=.44, point +0.4%, 80% [0.0%,0.9%], first September core-core PPI +0.5 and two-month first-release average +0.4 point benchmarks before any October PPI outcome. Score Brier/log loss, point MAE, interval hit/width and benchmark point errors separately. All original forecast content immutable.",
+  "rationale": [
+    "October 2026 core CPI was +0.3% again, with slowing shelter and services, but headline +0.4 and prior producer pricing leave upstream inflation pressure unresolved; consumer and producer baskets are not interchangeable.",
+    "September first core-core PPI was +0.5% versus August +0.3%, yielding frozen two-month +0.4 point baseline; model also estimates +0.4, so no prospective claim of an advantage over this simple baseline.",
+    "This intermediate producer-price release tests an upstream-cost persistence channel for H003 versus rapid cooling compatible with H001, but cannot alone establish actual future consumer pass-through.",
+    "Judgmental p=.44 reflects uncertainty; it is not demonstrated calibration on a homogeneous target history. Existing weights H001 .39/H002 .10/H003 .39/H004 .12 remain unchanged; forecast adds a distinct target rather than duplicating today's CPI."
+  ],
+  "hypothesis_links": [
+    "H003",
+    "H001",
+    "H002",
+    "H004"
+  ],
+  "surprising_if": [
+    "First-release October core-core PPI >=+1.0% m/m, above the upper nominal 80% interval.",
+    "First-release October core-core PPI <=-0.2% m/m, below the nominal lower interval."
+  ],
+  "status": "open",
+  "source_timing_note": "Created after independently committed November 10 Auditor resolution P000035 and post-resolution Skeptic. Future BLS November 13 observation cannot alter evidence cutoff/probability/point/interval/benchmark. No trading."
+}
