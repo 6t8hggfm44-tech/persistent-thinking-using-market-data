@@ -1,0 +1,87 @@
+{
+  "original_forecast": {
+    "id": "P000035",
+    "created_at": "2026-11-06T22:54:32.435Z",
+    "evidence_cutoff": "2026-11-06T22:51:08.824Z",
+    "model_version": "0.2.21",
+    "target": "US_CORE_CPI_MOM_OCT_2026_FIRST_RELEASE",
+    "horizon": "4d",
+    "resolution_at": "2026-11-10 08:30 America/New_York, first BLS Consumer Price Index report for October 2026; if postponed, first actual release",
+    "forecast_type": "binary_probability_and_point_distribution",
+    "forecast": {
+      "event": "First-published October 2026 seasonally adjusted CPI-U all items less food and energy monthly percentage change >= +0.4% at BLS printed one-decimal precision",
+      "probability": 0.3,
+      "point_estimate": 0.3,
+      "lower_80": 0.1,
+      "upper_80": 0.5,
+      "units": "percentage points m/m"
+    },
+    "benchmarks": [
+      {
+        "name": "September_2026_core_CPI_first_release_no_change",
+        "point_estimate": 0.3,
+        "source": "https://www.bls.gov/news.release/archives/cpi_10142026.htm; first October 14 release of September core m/m +0.3%"
+      },
+      {
+        "name": "RBC_Economics_Nov_05_forecast_reported_Nov_06",
+        "point_estimate": 0.3,
+        "source": "https://www.stocktitan.net/articles/october-2026-cpi-preview-no-yearly-rate",
+        "note": "Secondary report quoting dated RBC November 5 core CPI +0.3%; preserved as attributed point, not an independently verified original forecast or probability"
+      },
+      {
+        "name": "TD_Securities_Oct_19_early_forecast",
+        "point_estimate": 0.21,
+        "source": "https://www.tmgm-market.com/en/analysis/market-news/article/united-states-october-inflation-seen-cooling-td-securities-202610191339",
+        "note": "Dated early point forecast; not updated post hoc"
+      },
+      {
+        "name": "neutral_binary_probability",
+        "probability": 0.5,
+        "note": "Mechanical neutral comparator only, no historical base-rate information"
+      }
+    ],
+    "resolution_rule": "Use only the FIRST Bureau of Labor Statistics Consumer Price Index for October 2026 (scheduled Tuesday November 10, 2026 at 08:30 EST). The series is seasonally adjusted CPI-U all items less food and energy monthly percentage change, at first-release BLS one-decimal percentage-point precision. TRUE iff first reported core CPI monthly change is >=+0.4%, otherwise FALSE. If BLS does not publish this specific month-over-month figure in the first release, remain PENDING and record non-resolution; do not substitute YoY rates, core PCE, revisions, forecasts, or imputed unpublished figures. Score frozen p=.30 by Brier/log loss; also point +0.3%, nominal 80% [0.1%,0.5%] and fixed +0.3% September first-release and attributed external point benchmarks separately. If official release is delayed, defer resolution to first actual publication; no forecast edits.",
+    "rationale": [
+      "Recent October total payroll growth +165K and strong services demand make broad price-pressure propagation possible, but do not directly measure prices; H003 increases core-tail risk.",
+      "September first core CPI was +0.3% m/m, and professional estimates range from ~+0.21% (earlier TD report) to +0.3% (RBC), so the >=+0.4% threshold is deliberately an upside-core surprise event rather than a base case.",
+      "Preliminary Michigan 1-year inflation expectations eased to 4.3% from 4.7% despite low sentiment; survey expectations are not measured October CPI and cannot substitute for the official first release.",
+      "Energy-driven headline inflation can coexist with contained core prices. The p=.30 is a judgmental distributional forecast under v0.2.21, not empirically calibrated within a homogeneous target family.",
+      "Some October 2025 annual comparison series are unavailable due to 2025 shutdown; therefore only October 2026 month-over-month core CPI is the target."
+    ],
+    "hypothesis_links": [
+      "H001",
+      "H003",
+      "H002",
+      "H004"
+    ],
+    "surprising_if": [
+      "Core CPI first print >=+0.5% m/m, above forecast upper central expectation and strongly challenging contained-core model.",
+      "Core CPI first print <=+0.1% m/m, consistent with rapid core deceleration despite high nominal demand and input-price surveys."
+    ],
+    "status": "open",
+    "source_timing_note": "Only information available by evidence cutoff is used; score from first future BLS publication. The model did not foresee the current payroll surprise; P000034's failure is not overwritten by this new test."
+  },
+  "resolution": {
+    "resolved_at": "2026-11-10T22:18:29Z",
+    "outcome": {
+      "core_cpi_sa_mom_percent": 0.3,
+      "headline_cpi_sa_mom_percent": 0.4,
+      "event_ge_0_4": false
+    },
+    "source": "US Bureau of Labor Statistics, Consumer Price Index - October 2026, initial Nov 10 2026 release, USDL-26-1685",
+    "source_url": "https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+    "source_published_at": "2026-11-10T13:30:00Z",
+    "source_observed_at": "2026-11-10T22:18:29Z",
+    "scores": {
+      "brier": 0.09,
+      "log_loss": 0.35667494393873245,
+      "point_absolute_error": 0,
+      "interval_hit": 1,
+      "neutral_binary_brier": 0.25,
+      "September_2026_no_change_point_absolute_error": 0,
+      "RBC_2026_11_05_attributed_point_absolute_error": 0,
+      "TD_2026_10_19_point_absolute_error": 0.09
+    },
+    "audit_note": "Auditor-only application of the frozen Nov 6 event: first BLS October core CPI seasonally adjusted m/m +0.3% at one-decimal precision, below >=0.4% threshold; event FALSE, p=.30 Brier .09 log loss .356675. Frozen point +.3 exact and 80% [.1,.5] covers. September and attributed RBC point .3 also exact; no model advantage over those points. Headline +.4 is a different series and does not resolve core event. No later revisions or model interpretations entered original."
+  }
+}
