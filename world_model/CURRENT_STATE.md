@@ -1,6 +1,10 @@
 # Current Market State
 
-**Model version:** 0.2.21 (unchanged Wednesday November 11). **Current evidence cutoff:** 2026-11-11T22:26:50Z. **Last full substantive review:** Friday, 2026-11-06; latest weekday cycle Wednesday November 11. Historical October 13–22 incomplete publication remains explicitly uncorrected, never backdated.
+**Model version:** 0.2.21 (unchanged Thursday November 12). **Current evidence cutoff:** 2026-11-12T22:10:08Z. **Last full substantive review:** Friday, 2026-11-06; latest weekday cycle Thursday November 12. Historical October 13–22 incomplete publication remains explicitly uncorrected, never backdated.
+
+## Thursday November 12, 2026 post-close cycle
+
+No due forecasts: open P000005 resolves August 2027, P000036 first actual November 13 October core-core PPI. Frozen 33 resolutions, 29 binary scores (Brier .217231034483/log .624714755176); learning unproven. November 12 DOL initial claims 200K (+9K revised), continuing 1.697M (−20K); NAR October existing-home sales −5.5% to 3.75M with 5.1-month inventory; SPX 7,592.40, about −0.4%, is market pricing, not national macro causation. After Skeptic, no material change to model 0.2.21, causal graph or H001 .39/H002 .10/H003 .39/H004 .12. No new forecast. Historical 86 research and 8 GEV Git index-path parity, no new final upstream receipt; required native full-checkout index and Repo B Python validators not run. See evidence/2026-11-12-cycle.md, meta/SKEPTIC_2026-11-12.md, meta/model_changes/2026-11-12-v0.2.21-no-change.md, evaluations/2026-11-12-cycle.md.
 
 ## Wednesday November 11, 2026 post-close cycle
 
