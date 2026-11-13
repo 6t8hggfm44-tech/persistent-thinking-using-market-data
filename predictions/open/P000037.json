@@ -1,0 +1,57 @@
+{
+  "id": "P000037",
+  "created_at": "2026-11-13T22:18:40.858Z",
+  "evidence_cutoff": "2026-11-13T22:18:40.858Z",
+  "model_version": "0.2.21",
+  "target": "US_CORE_PCE_MOM_OCT_2026_FIRST_RELEASE",
+  "horizon": "12d",
+  "resolution_at": "2026-11-25 08:30 America/New_York, first actual BEA Personal Income and Outlays October 2026 publication if delayed",
+  "forecast_type": "binary_probability_and_point_distribution",
+  "forecast": {
+    "event": "First-published BEA October 2026 seasonally adjusted PCE price index excluding food and energy month-over-month change >= +0.4% at one-decimal printed percentage precision",
+    "probability": 0.4,
+    "point_estimate": 0.3,
+    "lower_80": 0.1,
+    "upper_80": 0.5,
+    "units": "percentage points month-over-month"
+  },
+  "benchmarks": [
+    {
+      "name": "September_2026_core_PCE_first_release_no_change",
+      "point_estimate": 0.3,
+      "source": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026",
+      "note": "Freeze September +0.3% as shown on BEA first October 29 release; do not substitute later revised September."
+    },
+    {
+      "name": "Conference_Board_2026_11_10_external_core_PCE_estimate",
+      "point_estimate": 0.3,
+      "source": "https://www.conference-board.org/research/global-economy-briefs/cpi-insights-october-2026",
+      "note": "Published November 10 (before October PPI release); archived external point, not an independently verified probability benchmark."
+    },
+    {
+      "name": "neutral_binary_probability",
+      "probability": 0.5,
+      "note": "Mechanical comparator only, not economic historical base rate."
+    }
+  ],
+  "resolution_rule": "Use ONLY first BEA Personal Income and Outlays October 2026 report's seasonally adjusted core PCE price index excluding food and energy month-over-month percentage change as printed to one decimal. Scheduled Nov 25 2026 08:30 EST, else first actual official release. TRUE iff first printed October value >=+0.4%, else FALSE. If source omits this specific monthly core measure, remain pending. Never substitute core CPI, core-core PPI, headline PCE, YoY, unofficial nowcasts, revisions or future consensus. Frozen p=.40 and point +.3% and 80% [.1%,.5%] and frozen two point +.3% benchmarks; score proper Brier/log, absolute error, interval hit/width and comparable frozen benchmark point errors. Preserve original fields and record revisions separately.",
+  "rationale": [
+    "BLS October 10 core CPI +.3% is an already-observed consumer price measure, but BEA core PCE uses distinct basket weights; producer core-core PPI +.5% (November 13 initial release) can affect components differently.",
+    "Contemporaneous November 13 Reuters commentary and November 10 Conference Board estimate point near +.3% monthly core PCE; threshold >=+.4% is an upside transmission test, not the base case.",
+    "H001/H003 remain equally weighted .39, so p=.40 is judgmental and not a calibrated homogeneous PCE frequency. Even a +.4 print cannot alone prove H003 because weighted PCE pathways and policy effects may offset.",
+    "An eventual downside core-PCE print despite sticky narrow PPI would challenge mechanical pass-through, while a high print would challenge overly rapid normalization; retain competing mechanisms.",
+    "No claim of point advantage: both frozen September no-change and external point are also +.3%. No trading or post-hoc benchmark switching."
+  ],
+  "hypothesis_links": [
+    "H001",
+    "H003",
+    "H002",
+    "H004"
+  ],
+  "surprising_if": [
+    "First BEA October 2026 core PCE m/m >= +0.6% above nominal 80% upper interval.",
+    "First BEA October core PCE m/m <=0.0% below nominal 80% lower interval."
+  ],
+  "status": "open",
+  "source_timing_note": "Registered only after November 13 Auditor P000036 canonical scoring and Skeptic review, using evidence available by this timestamp. First future BEA report November 25 cannot be incorporated retrospectively."
+}

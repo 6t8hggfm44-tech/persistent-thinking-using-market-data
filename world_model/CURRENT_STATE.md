@@ -1,6 +1,10 @@
 # Current Market State
 
-**Model version:** 0.2.21 (unchanged Thursday November 12). **Current evidence cutoff:** 2026-11-12T22:10:08Z. **Last full substantive review:** Friday, 2026-11-06; latest weekday cycle Thursday November 12. Historical October 13–22 incomplete publication remains explicitly uncorrected, never backdated.
+**Model version:** 0.2.21 (unchanged Friday November 13). **Current evidence cutoff:** 2026-11-13T22:18:40.858Z. **Last full substantive review:** Friday, 2026-11-13; latest cycle Friday November 13. Historical October 13–22 publication gaps remain uncorrected and never backdated.
+
+## Friday November 13, 2026 post-close weekly cycle
+
+Auditor-first P000036 core-core PPI at first BLS Nov13 publication **+0.5%**, event >=0.5 TRUE at p=.44, Brier .3136/log .820981; point +.4 missed .1pp versus frozen September no-change exact, 80% [0,.9] covered with broad .9pp width. Total **34 resolved, 30 probability scores**, mean Brier **0.220443333**, mean log **0.631256948**; 30–49 preliminary-only learning stage, **no demonstrated learning**. Eight SPX point forecasts still lose to frozen no-change (MAE 87.541 vs 66.445); descriptive six-/ten-window later Brier 0.2292/0.2333 versus earlier 0.2274/0.2147, heterogeneous target/horizon mix. Nominal 80% intervals cover 27/30, but widths vary and missed payroll remains. BLS core-core +.5% versus headline +.3% and producer transport pressures do not independently establish core PCE pass-through. Skeptic retained both H001/H003; **v0.2.21 causal graph and H001 .39/H002 .10/H003 .39/H004 .12 unchanged**. One new prospectively registered P000037 first Nov25 BEA October core PCE m/m >=+.4% p=.40, point +.3%, 80% [.1,.5]. Research/GEV Git/index path parity 86+8, no new canonical report. Native primary index and Repo B Python validators unexecuted; full independent validation and learning remain unproven. See evidence/2026-11-13-cycle.md, meta/SKEPTIC_2026-11-13.md, dated no-change disposition and evaluations/2026-11-13-weekly-review.md. No trades or direct Universal write.
 
 ## Thursday November 12, 2026 post-close cycle
 

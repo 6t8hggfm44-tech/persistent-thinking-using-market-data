@@ -1,0 +1,155 @@
+{
+  "schema": "market-longitudinal-weekly-v3",
+  "review_date": "2026-11-13",
+  "primary_auditor_commit": "5b7336c4b3f0bfc165d213ea9222b45904870131",
+  "repo_b_analysis_code_commit_at_run": "19ae50f35454e6c051f409235c1433442ade5188",
+  "scoring_input": "evaluations/prediction_scores.csv",
+  "n_resolved": 34,
+  "n_probability": 30,
+  "excluded_from_binary_aggregation": [
+    "P000006",
+    "P000007",
+    "P000009",
+    "P000008"
+  ],
+  "probability": {
+    "mean_brier": 0.22044333333333335,
+    "mean_log_loss": 0.6312569484055096,
+    "mean_probability": 0.4890000000000001,
+    "event_rate": 0.4666666666666667,
+    "neutral_p_0_5_brier": 0.25,
+    "neutral_brier_skill": 0.11822666666666659,
+    "neutral_p_0_5_log": 0.6931471805599453,
+    "neutral_log_skill": 0.08928873100867096,
+    "n_p_0_4_to_0_6": 22,
+    "bins": [
+      {
+        "lower_exclusive": 0,
+        "upper_inclusive": 0.2,
+        "n": 0,
+        "mean_probability": null,
+        "event_rate": null
+      },
+      {
+        "lower_exclusive": 0.2,
+        "upper_inclusive": 0.4,
+        "n": 7,
+        "mean_probability": 0.33714285714285713,
+        "event_rate": 0.14285714285714285
+      },
+      {
+        "lower_exclusive": 0.4,
+        "upper_inclusive": 0.6,
+        "n": 21,
+        "mean_probability": 0.5252380952380953,
+        "event_rate": 0.5714285714285714
+      },
+      {
+        "lower_exclusive": 0.6,
+        "upper_inclusive": 0.8,
+        "n": 2,
+        "mean_probability": 0.64,
+        "event_rate": 0.5
+      },
+      {
+        "lower_exclusive": 0.8,
+        "upper_inclusive": 1,
+        "n": 0,
+        "mean_probability": null,
+        "event_rate": null
+      }
+    ]
+  },
+  "vintages": {
+    "first6": {
+      "n": 6,
+      "brier": 0.22739999999999996,
+      "log": 0.6478762190887415
+    },
+    "last6": {
+      "n": 6,
+      "brier": 0.2292166666666667,
+      "log": 0.6479646438858496
+    },
+    "first10": {
+      "n": 10,
+      "brier": 0.21474,
+      "log": 0.621653798471185
+    },
+    "last10": {
+      "n": 10,
+      "brier": 0.23326000000000002,
+      "log": 0.6578404122595833
+    },
+    "target_horizon_mix_comparable": false,
+    "formal_matched_window_ineligible": true
+  },
+  "uncertainty": {
+    "method": "seeded 10000-draw connector-side JS descriptive percentile bootstrap, not native Repo B Python or causal inference",
+    "row_brier_95_percent": [
+      0.19155999999999998,
+      0.24955666666666673
+    ],
+    "creation_date_clusters": 25,
+    "cluster_brier_95_percent": [
+      0.18626,
+      0.24964062500000006
+    ]
+  },
+  "intervals": {
+    "strict_row_level_n": 30,
+    "covered": 27,
+    "coverage": 0.9,
+    "nominal": 0.8,
+    "spx_one_day_widths_index_points": [
+      271,
+      245,
+      400,
+      295
+    ],
+    "spx_one_week_widths_index_points": [
+      660,
+      555
+    ],
+    "ppi_P000036_width_pp": 0.9,
+    "ppi_P000036_hit": 1,
+    "payroll_P000034_width_jobs": 200000,
+    "payroll_P000034_hit": 0,
+    "cross_unit_width_pooling": false
+  },
+  "benchmark_point": {
+    "SPX": {
+      "n": 8,
+      "model_mae": 87.54124999999999,
+      "nochange_mae": 66.445,
+      "skill": -0.31749943562344796
+    },
+    "P000036": {
+      "model_absolute_error_pp": 0.1,
+      "September_nochange_absolute_error_pp": 0,
+      "August_September_mean_absolute_error_pp": 0.1,
+      "neutral_binary_brier": 0.25,
+      "model_binary_brier": 0.3136
+    }
+  },
+  "model_version": "0.2.21",
+  "weights": {
+    "H001": 0.39,
+    "H002": 0.1,
+    "H003": 0.39,
+    "H004": 0.12
+  },
+  "native_intake_checker_executed": false,
+  "native_repo_b_python_validator_executed": false,
+  "connector_probability_score_mismatch_ids": [],
+  "registered_forecast_this_cycle": [
+    "P000037"
+  ],
+  "new_evidence_cutoff": "2026-11-13T22:18:40.858Z",
+  "learning_status": "PRELIMINARY_FRAGILE_NOT_DEMONSTRATED",
+  "cautions": [
+    "30 forecast outcomes include heterogeneous targets and dependent creation dates; neutral .5 comparator is weak",
+    "No verified native Python full-checkout validation; unsupported structured P000036 field in existing Repo B adapter",
+    "No prospective paired old-vs-new model test or eligible 20-of-40 comparable rolling window"
+  ]
+}
