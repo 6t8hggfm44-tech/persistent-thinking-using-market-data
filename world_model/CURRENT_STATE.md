@@ -1,6 +1,10 @@
 # Current Market State
 
-**Model version:** 0.2.21 (unchanged Friday November 13). **Current evidence cutoff:** 2026-11-13T22:18:40.858Z. **Last full substantive review:** Friday, 2026-11-13; latest cycle Friday November 13. Historical October 13–22 publication gaps remain uncorrected and never backdated.
+**Model version:** 0.2.21 (unchanged Monday November 16). **Current evidence cutoff:** 2026-11-16T22:11:27Z. **Last full substantive review:** Friday, 2026-11-13; latest cycle Monday November 16. Historical October 13–22 publication gaps remain uncorrected and never backdated.
+
+## Monday November 16, 2026 post-close cycle
+
+No new resolution: 34 historical resolutions / 30 binary scores, Brier 0.220443333, log loss 0.631256948. New official NY Fed November manufacturing: headline +7.8 from +25.5, orders +3.0, hiring +18.1, input-price diffusion +45.9; one regional survey does not prove a national regime shift. AP S&P 500 close 7,416.59 (-1.9%), a market-pricing observation. Skeptic kept both H001/H003 plausible; **no change** to v0.2.21 graph or H001 .39/H002 .10/H003 .39/H004 .12. No new forecast. Open P000037 first Nov25 BEA October core PCE and P000005 Aug 2027 unchanged. Primary Git-tree/index path parity 86+8, no new canonical upstream receipt or pending change, but native full-checkout Python intake and Repo B validators not executed. See evidence/2026-11-16-cycle.md, meta/SKEPTIC_2026-11-16.md, meta/model_changes/2026-11-16-v0.2.21-no-change.md, and evaluations/2026-11-16-cycle.md. Learning unproven, no trades or Universal write.
 
 ## Friday November 13, 2026 post-close weekly cycle
 
