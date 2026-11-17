@@ -1,6 +1,10 @@
 # Current Market State
 
-**Model version:** 0.2.21 (unchanged Monday November 16). **Current evidence cutoff:** 2026-11-16T22:11:27Z. **Last full substantive review:** Friday, 2026-11-13; latest cycle Monday November 16. Historical October 13–22 publication gaps remain uncorrected and never backdated.
+**Model version:** 0.2.21 (unchanged Tuesday November 17). **Current evidence cutoff:** 2026-11-17T22:17:09Z. **Last full substantive review:** Friday, 2026-11-13; latest cycle Tuesday November 17. Historical October 13–22 publication gaps remain uncorrected and never backdated.
+
+## Tuesday November 17, 2026 post-close cycle
+
+No new uniquely due forecast: P000037 resolves only at the first actual November 25 BEA October core-PCE release, P000005 August 2027. Canonical **34 resolved / 30 binary** unchanged, mean Brier **0.220443333**, mean log loss **0.631256948**, 0 direct connector-side arithmetic discrepancies; native Repo B validator unexecuted. Material new public evidence: October import prices +1.1% / nonfuel +0.8%; Census nominal retail +0.2% (±0.4pp, 90% interval includes zero), ex autos and gasoline +0.5%; Fed October IP -0.4%, manufacturing +0.3%, utilities -4.3%; NAHB November HMI 25; S&P 500 7,340.53 (market pricing only). Skeptic found conflicting signs for H001/H003 and insufficient identification; **no model version, graph or hypothesis-weight change**: H001 .39/H002 .10/H003 .39/H004 .12. No new forecast. Git-tree/index path parity 86 research + 8 GEV; existing 279 pending historical packet files unchanged and no new verified complete receipt. **Full checkout native intake checker and native Repo B Python validators unexecuted**; only narrower Git/index and arithmetic checks, so full validation/learning unproven. Evidence `evidence/2026-11-17-cycle.md`, Skeptic `meta/SKEPTIC_2026-11-17.md`, dated no-change disposition and `evaluations/2026-11-17-cycle.md`. No trade or Universal truth write.
 
 ## Monday November 16, 2026 post-close cycle
 
