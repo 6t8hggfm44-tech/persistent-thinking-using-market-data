@@ -1,5 +1,11 @@
 # Current Market State
 
+**Model version:** 0.2.21 (unchanged Wednesday November 18). **Current evidence cutoff:** 2026-11-18T23:03:20.694Z. **Last full substantive review:** Friday 2026-11-13; latest cycle Wednesday November 18. Historical October 13-22 publication gaps remain uncorrected and never backdated.
+
+## Wednesday November 18 post-close cycle
+
+No forecast matured: 34 historical resolutions and 30 binary scores unchanged (Brier 0.220443333, log loss 0.631256948); connector-side arithmetic zero discrepancies but native Repo B validator not run. October housing starts +9.9% m/m had 90% uncertainty +/-16.8pp, while permits -7.4%; Nov18 EIA crude stocks +3.380m barrels and gasoline +5.192m; Oct27-28 FOMC minutes published Nov18 emphasize inflation risk and potential further tightening but represent October deliberations. Nov18 S&P 500 7,323.63 is price action, not national activity proof. Skeptic preserved H001/H003 ambiguity; **no model version, causal graph or hypothesis weight change**, H001 .39/H002 .10/H003 .39/H004 .12. No new forecast; P000037 Nov25 core PCE and P000005 Aug2027 unchanged. New matched payroll-vintage comparison first eligible Nov24-27, not today. No new canonical upstream receipt; previous 86+8 Git-index path parity not natively recertified; full checkout/native intake and Repo B checks unavailable. Sources in evidence/2026-11-18-cycle.md; rationale in meta/SKEPTIC_2026-11-18.md, dated no-change disposition and evaluations/2026-11-18-cycle.md. Learning unproven; no trades or Universal write.
+
 **Model version:** 0.2.21 (unchanged Tuesday November 17). **Current evidence cutoff:** 2026-11-17T22:17:09Z. **Last full substantive review:** Friday, 2026-11-13; latest cycle Tuesday November 17. Historical October 13–22 publication gaps remain uncorrected and never backdated.
 
 ## Tuesday November 17, 2026 post-close cycle
