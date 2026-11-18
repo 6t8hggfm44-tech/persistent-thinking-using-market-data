@@ -168,3 +168,7 @@ Profitability is not the success criterion.
 ## 15. Scientific integrity rule
 
 If the experiment does not demonstrate learning, record that result plainly. The purpose of this repository is to discover whether persistent model revision works, not to prove in advance that it does.
+
+## 16. Prospective paired payroll comparison (November 18, 2026)
+
+Apply the frozen v0.2.21 and v0.2.20 hypothesis weights to the same four cutoff-bound conditional payroll probabilities for 12 consecutive BLS releases. The dated [design and issuance rules](evaluations/vintage_pairs/README.md) fix the event, 7–10-day lead, first-release historical benchmark (30/36), and Brier/log losses. Report loss differences and losing margins alongside win counts. Score each reference month once. The primary repository issues both arms; Market Repo B validates the same immutable outcome for both. The rationale is the v0.2.21 payroll-error-driven reweighting. This design isolates that revision while avoiding the target-mix confound in earlier vintage comparisons. Earlier forecasts and all existing learning thresholds retain their original definitions.

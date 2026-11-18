@@ -1,0 +1,27 @@
+{
+  "experiment": "payroll-weight-revision-2026-11",
+  "first_month": "2026-11",
+  "last_month": "2027-10",
+  "threshold_jobs": 100000,
+  "window_calendar_days_before_release": [7, 10],
+  "calendar_source": "https://www.bls.gov/schedule/news_release/empsit.htm",
+  "calendar_zone": "America/New_York",
+  "calendar_vintage": "2026-11-09",
+  "weight_records": {
+    "current": {"version": "0.2.21", "commit": "8beef86c0f7c157f85b64468112de3585ec4776e", "path": "meta/hypothesis_weights/2026-11-06-v0.2.21.json", "weights_after": {"H001": 0.39, "H002": 0.10, "H003": 0.39, "H004": 0.12}},
+    "previous": {"version": "0.2.20", "commit": "f5b6eb086685e73ef2a2ccc949bc24cb1236f571", "path": "meta/hypothesis_weights/2026-10-07-v0.2.20.json", "weights_after": {"H001": 0.37, "H002": 0.14, "H003": 0.37, "H004": 0.12}}
+  },
+  "benchmark": {
+    "method": "bls_first_release_base_rate_2023_2025",
+    "source": "https://www.bls.gov/web/empsit/cesnaicsrev.htm",
+    "table_as_of": "2026-11-06",
+    "latest_observation_first_published": "2026-01-09T13:30:00Z",
+    "units": "thousands of seasonally adjusted total nonfarm payroll jobs, first published one-month change, January through December",
+    "first_release_by_year": {
+      "2023": [517, 311, 236, 253, 339, 209, 187, 187, 336, 150, 199, 216],
+      "2024": [353, 275, 303, 175, 272, 206, 114, 142, 254, 12, 227, 256],
+      "2025": [143, 151, 228, 177, 139, 147, 73, 22, 119, -105, 64, 50]
+    },
+    "note": "October 2025 first appeared in the second estimate column, explicitly marked initial release in footnote B during the funding lapse. Archive: https://www.bls.gov/news.release/archives/empsit_12162025.pdf . All 36 observations were public by https://www.bls.gov/news.release/archives/empsit_01092026.htm ."
+  }
+}

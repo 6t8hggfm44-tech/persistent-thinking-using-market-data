@@ -86,6 +86,8 @@ Commit these records before later information is used.
 
 New forecasts are created only in the primary repository. Market Repo B does not create competing forecasts unless a future protocol change explicitly establishes a separately labeled benchmark model prospectively.
 
+For each already authorized post-close occurrence, inspect the [prospective payroll vintage comparison](evaluations/vintage_pairs/README.md) with `python3 tools/payroll_vintage_pair.py status`. At the first eligible Phase 5 in the predeclared window, stage the canonical payroll forecast and the two frozen-weight arms using its producer command. Checkpoint and commit both records together before the release. At a later Phase 1 resolve the single canonical event by its initial BLS publication, with the structured payroll change and event fields required by the comparison. Closed windows without an eligible forecast receive a dated missed record. Include the full opportunity denominator and independent paired Brier/log-loss results at Friday and month-end reviews.
+
 ### Phase 6 — Validation record
 After the primary run is committed, use Market Repo B to record the validation analysis for the exact primary commit/snapshot when there is new resolved data or when the cadence requires a learning/calibration review.
 
