@@ -1,6 +1,10 @@
 # Current Market State
 
-**Model version:** 0.2.21 (unchanged Wednesday November 18). **Current evidence cutoff:** 2026-11-18T23:03:20.694Z. **Last full substantive review:** Friday 2026-11-13; latest cycle Wednesday November 18. Historical October 13-22 publication gaps remain uncorrected and never backdated.
+**Model version:** 0.2.21 (unchanged Thursday November 19). **Current evidence cutoff:** 2026-11-19T22:53:24Z. **Last full substantive review:** Friday 2026-11-13; latest cycle Thursday November 19. Historical October 13-22 publication gaps remain uncorrected and never backdated.
+
+## Thursday November 19 post-close cycle
+
+No registered forecast matured: 34 historical resolutions / 30 binary scores unchanged, mean Brier **0.220443333** and log loss **0.631256948**; fresh connector-side score arithmetic found zero discrepancies, but native Repo B and full-checkout intake Python validators were NOT executed. New November 19 public evidence: DOL initial claims 203K (revised prior 202K), continuing claims 1.763m (+70K, different reference week); Philadelphia manufacturing activity 6.3 from 20.9, orders -0.4, prices paid 58.2, received 47.0, employment 11.6; S&P 500 close 7,175.83 (-2.0%) is market price action. Skeptic found competing cost/slowdown signals, insufficient to distinguish H001/H003; **no model-version, causal-graph or weight change**. H001 .39/H002 .10/H003 .39/H004 .12 unchanged. No new forecast; P000037 first actual Nov25 core-PCE and P000005 Aug2027 remain open. Prospective payroll-vintage first eligible post-close Nov24-27, no early issuance; 12 total planned reference months, zero registrations so far. Canonical upstream indexes and 279 historical pending staging files unchanged on pinned tree, with no post-cutoff final delivery verified; native checker unavailable. Evidence `evidence/2026-11-19-cycle.md`, Skeptic `meta/SKEPTIC_2026-11-19.md`, no-change disposition and `evaluations/2026-11-19-cycle.md`. Learning unproven; no trades or Universal writes.
 
 ## Wednesday November 18 post-close cycle
 
