@@ -1,0 +1,151 @@
+{
+  "schema": "market-longitudinal-weekly-v3",
+  "review_date": "2026-11-20",
+  "source_primary_commit_at_start": "d9752cdad8e138121c942d0c7351de2cdd157f98",
+  "primary_ledger_path": "evaluations/prediction_scores.csv",
+  "primary_ledger_blob_sha": "ef002f36a14df05d5311ee4269b62975995c7125",
+  "source_cutoff_utc": "2026-11-20T22:41:00.478Z",
+  "validation_status": {
+    "connector_side_recompute": true,
+    "eligible_probability_score_discrepancies": 0,
+    "native_repo_b_python_executed": false,
+    "native_intake_full_checkout_executed": false,
+    "complete_native_validation": false
+  },
+  "resolved": {
+    "n_resolved": 34,
+    "n_new": 0,
+    "n_probability": 30,
+    "excluded_nonbinary": [
+      "P000006",
+      "P000007",
+      "P000008",
+      "P000009"
+    ],
+    "event_true": 14
+  },
+  "proper_scores": {
+    "brier_mean": 0.22044333333333335,
+    "log_loss_mean": 0.6312569484055096,
+    "mechanical_neutral_brier": 0.25,
+    "neutral_brier_skill": 0.11822666666666659,
+    "mechanical_neutral_log": 0.6931471805599453,
+    "neutral_log_skill": 0.08928873100867096,
+    "informative_economic_binary_benchmark_pool_available": false
+  },
+  "calibration": {
+    "mean_p": 0.489,
+    "event_rate": 0.4666666666666667,
+    "n_probability_between_point4_point6_inclusive": 22,
+    "bins": [
+      {
+        "range": "(0,.2]",
+        "n": 0
+      },
+      {
+        "range": "(.2,.4]",
+        "n": 7,
+        "mean_p": 0.33714285714285713,
+        "event_rate": 0.14285714285714285
+      },
+      {
+        "range": "(.4,.6]",
+        "n": 21,
+        "mean_p": 0.5252380952380953,
+        "event_rate": 0.5714285714285714
+      },
+      {
+        "range": "(.6,.8]",
+        "n": 2,
+        "mean_p": 0.64,
+        "event_rate": 0.5
+      },
+      {
+        "range": "(.8,1]",
+        "n": 0
+      }
+    ]
+  },
+  "vintage_resolution_order": {
+    "first6_brier": 0.2274,
+    "last6_brier": 0.2292166666666667,
+    "first10_brier": 0.21474,
+    "last10_brier": 0.23326,
+    "first6_log": 0.6478762190887415,
+    "last6_log": 0.6479646438858496,
+    "first10_log": 0.621653798471185,
+    "last10_log": 0.6578404122595833,
+    "matched_target_horizon": false,
+    "formal_20_of_40_eligible": false
+  },
+  "point_benchmark": {
+    "SPX": {
+      "n": 8,
+      "model_mae": 87.54125,
+      "no_change_mae": 66.445,
+      "skill": -0.31749943562344796,
+      "horizon_mix_heterogeneous": true
+    }
+  },
+  "intervals": {
+    "nominal_80_n": 30,
+    "covered": 27,
+    "coverage": 0.9,
+    "SPX_one_day_widths_index_points": [
+      271,
+      245,
+      400,
+      295
+    ],
+    "SPX_one_week_widths_index_points": [
+      660,
+      555
+    ],
+    "P000034_payroll_interval_width_jobs": 200000,
+    "P000034_interval_missed": true,
+    "P000036_ppi_interval_width_percentage_points": 0.9,
+    "P000036_interval_covered": true,
+    "pool_widths_across_units": false
+  },
+  "uncertainty": {
+    "prior_unchanged_2026_11_13_source": "evaluations/2026-11-13-learning-metrics.json",
+    "row_bootstrap_brier_95": [
+      0.19156,
+      0.24956
+    ],
+    "creation_date_cluster_brier_95": [
+      0.18626,
+      0.24964
+    ],
+    "cluster_count": 25,
+    "not_a_causal_learning_test": true
+  },
+  "model": {
+    "version": "0.2.21",
+    "weights": {
+      "H001": 0.39,
+      "H002": 0.1,
+      "H003": 0.39,
+      "H004": 0.12
+    },
+    "no_change": true,
+    "revision_effectiveness": "unproven"
+  },
+  "paired_payroll_cohort": {
+    "precommitted_months": 12,
+    "registered": 0,
+    "scored": 0,
+    "missed": 0,
+    "upcoming": 12,
+    "first_eligible_issuance_window": "2026-11-24/2026-11-27",
+    "first_BLS_release": "2026-12-04T13:30:00Z",
+    "no_paired_result_available": true
+  },
+  "new_forecasts": [],
+  "open_forecasts": [
+    "P000037",
+    "P000005"
+  ],
+  "verdict": "PRELIMINARY_FRAGILE_NO_DEMONSTRATED_LEARNING",
+  "note": "Unchanged 30-probability-outcome source data from Nov13; this is a versioned Nov20 review and source-binding, not 30 additional independent observations or a completed native Repo B run."
+}

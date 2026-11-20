@@ -1,5 +1,11 @@
 # Current Market State
 
+**Model version:** 0.2.21 (unchanged Friday November 20). **Current evidence cutoff:** 2026-11-20T22:41:00.478Z. **Last full substantive review:** Friday, 2026-11-20. Historical October 13–22 publication gaps remain uncorrected; no retroactive backdating.
+
+## Friday November 20, 2026 post-close weekly cycle
+
+No forecast matured: **34 resolved / 30 binary** unchanged; connector-side 30-case Brier **0.220443333**, log **0.631256948**, arithmetic zero mismatch; native Repo B validator and full checkout intake checker NOT executed. Newly published Michigan November final consumer sentiment 51.5 vs October 48 (below 4.8-point significance threshold), with easing inflation expectations; S&P 500 AP close **6,910.39 (−3.7%)**, weekly **−8.6%**, is pricing and AI/valuation stress, not proof of recession. Skeptic rejected causal identification from the index alone: **v0.2.21 graph and H001 .39/H002 .10/H003 .39/H004 .12 unchanged**. No forecast issued. P000037 first Nov25 core PCE and P000005 Aug2027 open; the prospective payroll-vintage cohort has 12 planned months, 0 registrations/misses, first eligible November 24–27. Connector-side 86+8 research/GEV Git-index parity, 279 historical pending files, no new verified complete receipt; native validation unavailable. Friday lifetime calibration, benchmarks, model-change follow-up, competing mechanisms and uncertainty in `evaluations/2026-11-20-weekly-review.md`; new source record `evidence/2026-11-20-cycle.md`; Skeptic and no-change note dated November 20. **Predictive learning not demonstrated at n30; no trades or Universal write.**
+
 **Model version:** 0.2.21 (unchanged Thursday November 19). **Current evidence cutoff:** 2026-11-19T22:53:24Z. **Last full substantive review:** Friday 2026-11-13; latest cycle Thursday November 19. Historical October 13-22 publication gaps remain uncorrected and never backdated.
 
 ## Thursday November 19 post-close cycle
