@@ -1,0 +1,560 @@
+{
+  "schema": "connector-partial-weekly-review-v1",
+  "source_snapshot": "9b6e1f2645a365c6c825de41d09de84f10983682",
+  "ledger_blob": "85a67ff80a3375e46f7e337b60df4e6e2cb8e225",
+  "repo_b_code_snapshot": "7c23632e37e60aa59897f4b6625300fb7f464db5",
+  "rows": 35,
+  "probability": {
+    "n": 31,
+    "brier": 0.2184935483870968,
+    "log": 0.6273720669655252,
+    "ids": [
+      "P000001",
+      "P000010",
+      "P000011",
+      "P000012",
+      "P000013",
+      "P000002",
+      "P000015",
+      "P000016",
+      "P000017",
+      "P000018",
+      "P000014",
+      "P000019",
+      "P000021",
+      "P000020",
+      "P000022",
+      "P000024",
+      "P000026",
+      "P000025",
+      "P000003",
+      "P000028",
+      "P000023",
+      "P000027",
+      "P000030",
+      "P000031",
+      "P000029",
+      "P000033",
+      "P000034",
+      "P000004",
+      "P000035",
+      "P000036",
+      "P000037"
+    ]
+  },
+  "excluded_probability_ids": [
+    "P000006",
+    "P000007",
+    "P000009",
+    "P000008"
+  ],
+  "brier_mismatches": [],
+  "log_mismatches": [],
+  "neutral_brier_skill": 0.12602580645161277,
+  "neutral_log_skill": 0.09489343019657814,
+  "mean_p": 0.48612903225806464,
+  "event_rate": 0.45161290322580644,
+  "mean_p_true": 0.5307142857142859,
+  "mean_p_false": 0.4494117647058824,
+  "compression_n": 23,
+  "bins": [
+    {
+      "range": "0-0.2",
+      "n": 0,
+      "p": null,
+      "y": null
+    },
+    {
+      "range": "0.2-0.4",
+      "n": 8,
+      "p": 0.345,
+      "y": 0.125
+    },
+    {
+      "range": "0.4-0.6",
+      "n": 21,
+      "p": 0.5252380952380953,
+      "y": 0.5714285714285714
+    },
+    {
+      "range": "0.6-0.8",
+      "n": 2,
+      "p": 0.64,
+      "y": 0.5
+    },
+    {
+      "range": "0.8-1",
+      "n": 0,
+      "p": null,
+      "y": null
+    }
+  ],
+  "early6": {
+    "n": 6,
+    "brier": 0.22739999999999996,
+    "log": 0.6478762190887415,
+    "ids": [
+      "P000001",
+      "P000010",
+      "P000011",
+      "P000012",
+      "P000013",
+      "P000002"
+    ]
+  },
+  "late6": {
+    "n": 6,
+    "brier": 0.2366166666666667,
+    "log": 0.663849673853237,
+    "ids": [
+      "P000033",
+      "P000034",
+      "P000004",
+      "P000035",
+      "P000036",
+      "P000037"
+    ]
+  },
+  "early10": {
+    "n": 10,
+    "brier": 0.21474,
+    "log": 0.621653798471185,
+    "ids": [
+      "P000001",
+      "P000010",
+      "P000011",
+      "P000012",
+      "P000013",
+      "P000002",
+      "P000015",
+      "P000016",
+      "P000017",
+      "P000018"
+    ]
+  },
+  "late10": {
+    "n": 10,
+    "brier": 0.22810000000000005,
+    "log": 0.6473043606938007,
+    "ids": [
+      "P000027",
+      "P000030",
+      "P000031",
+      "P000029",
+      "P000033",
+      "P000034",
+      "P000004",
+      "P000035",
+      "P000036",
+      "P000037"
+    ]
+  },
+  "iid_brier_interval": [
+    0.1901741935483871,
+    0.24737741935483876
+  ],
+  "creation_date_cluster_interval": [
+    0.18505714285714286,
+    0.24703823529411775
+  ],
+  "clusters": 26,
+  "bootstrap_draws": 20000,
+  "bootstrap_seed": 20260908,
+  "bootstrap_method": "connector JS LCG resampling; not native numpy; descriptive sensitivity",
+  "interval_flags": {
+    "n": 31,
+    "hits": 28
+  },
+  "spx": {
+    "n": 8,
+    "mae": 87.54124999999999,
+    "no_change_mae": 66.445,
+    "skill": -0.31749943562344796
+  },
+  "probability_rows": [
+    {
+      "id": "P000001",
+      "created": "2026-08-08T10:30:00-04:00",
+      "target": "SPX",
+      "horizon": "1d",
+      "p": 0.49,
+      "y": 0,
+      "brier": 0.24009999999999998,
+      "log": 0.6733445532637656,
+      "stored_brier": 0.2401,
+      "stored_log": 0.673345
+    },
+    {
+      "id": "P000010",
+      "created": "2026-08-10T17:05:00-04:00",
+      "target": "SPX",
+      "horizon": "1d",
+      "p": 0.47,
+      "y": 0,
+      "brier": 0.22089999999999999,
+      "log": 0.6348782724359695,
+      "stored_brier": 0.2209,
+      "stored_log": 0.634878
+    },
+    {
+      "id": "P000011",
+      "created": "2026-08-11T17:03:43-04:00",
+      "target": "SPX",
+      "horizon": "1d",
+      "p": 0.52,
+      "y": 1,
+      "brier": 0.2304,
+      "log": 0.6539264674066639,
+      "stored_brier": 0.2304,
+      "stored_log": 0.653926
+    },
+    {
+      "id": "P000012",
+      "created": "2026-08-11T17:03:43-04:00",
+      "target": "US_CPI_HEADLINE_YOY_JUL_2026",
+      "horizon": "event",
+      "p": 0.55,
+      "y": 1,
+      "brier": 0.20249999999999996,
+      "log": 0.5978370007556204,
+      "stored_brier": 0.2025,
+      "stored_log": 0.597837
+    },
+    {
+      "id": "P000013",
+      "created": "2026-08-12T17:54:19-04:00",
+      "target": "SPX",
+      "horizon": "1d",
+      "p": 0.51,
+      "y": 1,
+      "brier": 0.24009999999999998,
+      "log": 0.6733445532637656,
+      "stored_brier": 0.2401,
+      "stored_log": 0.673345
+    },
+    {
+      "id": "P000002",
+      "created": "2026-08-08T10:30:00-04:00",
+      "target": "SPX",
+      "horizon": "1w",
+      "p": 0.52,
+      "y": 1,
+      "brier": 0.2304,
+      "log": 0.6539264674066639,
+      "stored_brier": 0.2304,
+      "stored_log": 0.653926
+    },
+    {
+      "id": "P000015",
+      "created": "2026-08-14T17:25:18-04:00",
+      "target": "US_INDUSTRIAL_PRODUCTION_MOM_JUL_2026",
+      "horizon": "event",
+      "p": 0.57,
+      "y": 0,
+      "brier": 0.32489999999999997,
+      "log": 0.8439700702945289,
+      "stored_brier": 0.3249,
+      "stored_log": 0.84397
+    },
+    {
+      "id": "P000016",
+      "created": "2026-08-17T17:37:38-04:00",
+      "target": "US_10Y_TREASURY_CONSTANT_MATURITY_2026-08-18",
+      "horizon": "1d",
+      "p": 0.58,
+      "y": 1,
+      "brier": 0.17640000000000003,
+      "log": 0.5447271754416722,
+      "stored_brier": 0.1764,
+      "stored_log": 0.544727
+    },
+    {
+      "id": "P000017",
+      "created": "2026-08-18T17:18:59-04:00",
+      "target": "US_INITIAL_JOBLESS_CLAIMS_WEEK_ENDING_2026-08-15",
+      "horizon": "event",
+      "p": 0.36,
+      "y": 0,
+      "brier": 0.1296,
+      "log": 0.4462871026284195,
+      "stored_brier": 0.1296,
+      "stored_log": 0.446287
+    },
+    {
+      "id": "P000018",
+      "created": "2026-08-19T17:34:00-04:00",
+      "target": "US_10Y_CMT_2026-08-20",
+      "horizon": "1d",
+      "p": 0.39,
+      "y": 0,
+      "brier": 0.1521,
+      "log": 0.4942963218147801,
+      "stored_brier": 0.1521,
+      "stored_log": 0.494296
+    },
+    {
+      "id": "P000014",
+      "created": "2026-08-14T17:25:18-04:00",
+      "target": "SPX",
+      "horizon": "1w",
+      "p": 0.49,
+      "y": 0,
+      "brier": 0.24009999999999998,
+      "log": 0.6733445532637656,
+      "stored_brier": 0.2401,
+      "stored_log": 0.673345
+    },
+    {
+      "id": "P000019",
+      "created": "2026-08-20T17:03:00-04:00",
+      "target": "SP_GLOBAL_US_MANUFACTURING_PMI_FLASH_AUG_2026",
+      "horizon": "event",
+      "p": 0.56,
+      "y": 0,
+      "brier": 0.31360000000000005,
+      "log": 0.8209805520698303,
+      "stored_brier": 0.3136,
+      "stored_log": 0.820981
+    },
+    {
+      "id": "P000021",
+      "created": "2026-08-24T17:36:26-04:00",
+      "target": "US_CORE_PCE_MOM_JUL_2026_FIRST_RELEASE",
+      "horizon": "event",
+      "p": 0.36,
+      "y": 0,
+      "brier": 0.1296,
+      "log": 0.4462871026284195,
+      "stored_brier": 0.1296,
+      "stored_log": 0.446287
+    },
+    {
+      "id": "P000020",
+      "created": "2026-08-21T17:24:57-04:00",
+      "target": "US_WEEKLY_CLAIMS_JOINT_FLOW_TEST_2026_08_27",
+      "horizon": "event",
+      "p": 0.57,
+      "y": 0,
+      "brier": 0.32489999999999997,
+      "log": 0.8439700702945289,
+      "stored_brier": 0.3249,
+      "stored_log": 0.84397
+    },
+    {
+      "id": "P000022",
+      "created": "2026-08-27T17:34:30-04:00",
+      "target": "US_10Y_CMT_2026_08_28_POST_JACKSON_HOLE",
+      "horizon": "1d",
+      "p": 0.47,
+      "y": 1,
+      "brier": 0.28090000000000004,
+      "log": 0.7550225842780328,
+      "stored_brier": 0.2809,
+      "stored_log": 0.755023
+    },
+    {
+      "id": "P000024",
+      "created": "2026-08-31T17:12:44-04:00",
+      "target": "US_ISM_MANUFACTURING_PMI_AUG_2026_FIRST_RELEASE",
+      "horizon": "1d",
+      "p": 0.42,
+      "y": 0,
+      "brier": 0.17639999999999997,
+      "log": 0.5447271754416719,
+      "stored_brier": 0.1764,
+      "stored_log": 0.544727
+    },
+    {
+      "id": "P000026",
+      "created": "2026-09-02T17:17:57-04:00",
+      "target": "US_INITIAL_JOBLESS_CLAIMS_WEEK_ENDED_2026_08_29_FIRST_RELEASE",
+      "horizon": "15h12m",
+      "p": 0.23,
+      "y": 0,
+      "brier": 0.0529,
+      "log": 0.2613647641344075,
+      "stored_brier": 0.0529,
+      "stored_log": 0.261365
+    },
+    {
+      "id": "P000025",
+      "created": "2026-09-01T17:47:13-04:00",
+      "target": "US_EMPLOYMENT_SITUATION_AUG_2026_FIRST_RELEASE",
+      "horizon": "3d",
+      "p": 0.32,
+      "y": 0,
+      "brier": 0.1024,
+      "log": 0.3856624808119848,
+      "stored_brier": 0.1024,
+      "stored_log": 0.385662
+    },
+    {
+      "id": "P000003",
+      "created": "2026-08-08T10:30:00-04:00",
+      "target": "SPX",
+      "horizon": "1m",
+      "p": 0.54,
+      "y": 0,
+      "brier": 0.2916,
+      "log": 0.7765287894989964,
+      "stored_brier": 0.2916,
+      "stored_log": 0.776529
+    },
+    {
+      "id": "P000028",
+      "created": "2026-09-08T17:50:37-04:00",
+      "target": "US_PPI_FINAL_DEMAND_MOM_AUG_2026_FIRST_RELEASE",
+      "horizon": "2d",
+      "p": 0.53,
+      "y": 1,
+      "brier": 0.22089999999999999,
+      "log": 0.6348782724359695,
+      "stored_brier": 0.2209,
+      "stored_log": 0.634878
+    },
+    {
+      "id": "P000023",
+      "created": "2026-08-28T18:07:44-04:00",
+      "target": "US_CORE_CPI_MOM_AUG_2026_FIRST_RELEASE",
+      "horizon": "14d",
+      "p": 0.54,
+      "y": 1,
+      "brier": 0.21159999999999995,
+      "log": 0.616186139423817,
+      "stored_brier": 0.2116,
+      "stored_log": 0.616186
+    },
+    {
+      "id": "P000027",
+      "created": "2026-09-04T17:21:38-04:00",
+      "target": "FOMC_SEP_2026_POLICY_DECISION",
+      "horizon": "12d",
+      "p": 0.58,
+      "y": 1,
+      "brier": 0.17640000000000003,
+      "log": 0.5447271754416722,
+      "stored_brier": 0.1764,
+      "stored_log": 0.544727
+    },
+    {
+      "id": "P000030",
+      "created": "2026-09-28T21:38:27Z",
+      "target": "US_CORE_PCE_MOM_AUG_2026_FIRST_RELEASE",
+      "horizon": "2d",
+      "p": 0.62,
+      "y": 0,
+      "brier": 0.3844,
+      "log": 0.9675840262617056,
+      "stored_brier": 0.3844,
+      "stored_log": 0.967584
+    },
+    {
+      "id": "P000031",
+      "created": "2026-09-29T21:12:15Z",
+      "target": "US_NONFARM_PAYROLL_MOM_SEP_2026_FIRST_RELEASE",
+      "horizon": "3d",
+      "p": 0.57,
+      "y": 1,
+      "brier": 0.18490000000000004,
+      "log": 0.5621189181535413,
+      "stored_brier": 0.1849,
+      "stored_log": 0.562119
+    },
+    {
+      "id": "P000029",
+      "created": "2026-09-18T22:01:14Z",
+      "target": "US_CPI_HEADLINE_MOM_SEP_2026_FIRST_RELEASE",
+      "horizon": "26d",
+      "p": 0.66,
+      "y": 1,
+      "brier": 0.11559999999999998,
+      "log": 0.4155154439616658,
+      "stored_brier": 0.1156,
+      "stored_log": 0.415515
+    },
+    {
+      "id": "P000033",
+      "created": "2026-10-23T21:48:51.739Z",
+      "target": "US_CORE_PCE_MOM_SEP_2026_FIRST_RELEASE",
+      "horizon": "6d",
+      "p": 0.56,
+      "y": 1,
+      "brier": 0.19359999999999997,
+      "log": 0.579818495252942,
+      "stored_brier": 0.1936,
+      "stored_log": 0.579818
+    },
+    {
+      "id": "P000034",
+      "created": "2026-10-29T21:51:14.449Z",
+      "target": "US_NONFARM_PAYROLL_MOM_OCT_2026_FIRST_RELEASE",
+      "horizon": "8d",
+      "p": 0.4,
+      "y": 1,
+      "brier": 0.36,
+      "log": 0.916290731874155,
+      "stored_brier": 0.36,
+      "stored_log": 0.916291
+    },
+    {
+      "id": "P000004",
+      "created": "2026-08-08T10:30:00-04:00",
+      "target": "SPX",
+      "horizon": "3m",
+      "p": 0.55,
+      "y": 0,
+      "brier": 0.30250000000000005,
+      "log": 0.7985076962177717,
+      "stored_brier": 0.3025,
+      "stored_log": 0.798508
+    },
+    {
+      "id": "P000035",
+      "created": "2026-11-06T22:54:32.435Z",
+      "target": "US_CORE_CPI_MOM_OCT_2026_FIRST_RELEASE",
+      "horizon": "4d",
+      "p": 0.3,
+      "y": 0,
+      "brier": 0.09,
+      "log": 0.35667494393873245,
+      "stored_brier": 0.09,
+      "stored_log": 0.356675
+    },
+    {
+      "id": "P000036",
+      "created": "2026-11-10T22:33:12.670Z",
+      "target": "US_PPI_FINAL_DEMAND_EX_FOOD_ENERGY_TRADE_MOM_OCT_2026_FIRST_RELEASE",
+      "horizon": "3d",
+      "p": 0.44,
+      "y": 1,
+      "brier": 0.31360000000000005,
+      "log": 0.8209805520698302,
+      "stored_brier": 0.3136,
+      "stored_log": 0.820981
+    },
+    {
+      "id": "P000037",
+      "created": "2026-11-13T22:18:40.858Z",
+      "target": "US_CORE_PCE_MOM_OCT_2026_FIRST_RELEASE",
+      "horizon": "12d",
+      "p": 0.4,
+      "y": 0,
+      "brier": 0.16000000000000003,
+      "log": 0.5108256237659907,
+      "stored_brier": 0.16,
+      "stored_log": 0.510826
+    }
+  ],
+  "cohort": {
+    "planned": 12,
+    "registered": 0,
+    "scored": 0,
+    "closed_missed": 0,
+    "first_window_final_eligible_cycle_blocked": true,
+    "remaining_future": 11,
+    "first_window_unfilled": 1
+  },
+  "native_intake": "blocked: git DNS failure",
+  "native_repo_b": "not executed",
+  "learning": "not demonstrated; descriptive only"
+}
